@@ -278,4 +278,18 @@ module.exports = {
   plugins: [],
 }
 ```
+## 4.3 - Fuentes de caracteres.
+Toda la información sobre este apartado <a href="https://tailwindcss.com/docs/font-family">aquí</a>
+### 4.3.1 - Tamaño de fuentes.
+Si escribimos el código siguiente y lo pintamos en pantalla veremos que Tailwind no respeta el tamaño nativo de la etiquetas HTML.
+```
+<body>
+    <h1>Texto en tamaño h1</h1>
+    <h3>Texto en tamaño h3</h3>
+    <h5>Texto en tamaño h5</h5>
+    <p>Esto es un párrafo</p>
+</body>
+```
+Si consultamos la documentación de tailwind vemos que la forma de cambiar el tamaño de fuente se realiza con la propiedad `
+
 
