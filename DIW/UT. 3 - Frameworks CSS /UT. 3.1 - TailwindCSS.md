@@ -310,7 +310,7 @@ para incorporarlas a nuestros elementos escribiremos `font-**`
 >2. Personalizarlos con 2 tipos de fuentes y tamaños de fuentes distintos.
 >3. Realizar la modificaciones necesarios para que, **al pasar el ratón por encima del texto** cambie el tipo de fuente así como su tamaño.
 
-### 4.3.3 - Fuentes de caracteres personalizadas..
+### 4.3.3 - Fuentes de caracteres personalizadas.
 Para usar fuentes de carácteres personalizadas (para el ejmplo usaremos **roboto**, podemos hacer lo siguiente:
 1. Importar la fuente desde Google Fonts en el archivo input.css
 2. Configurar la fuente en tailwind.config.js.
@@ -360,3 +360,11 @@ module.exports = {
 >**Actividad**
 >1. Importar 2 fuentes de caracteres. Una de las cuales será **Rubik Dirt**. 
 >2. Definir 2 párrafos con las fuentes importadas.
+
+### 4.3.2 - Estilos de fuentes de caracteres.
+Para definir los estilos de las fuentes, negrita subrayado, cursiva, ... consultar la documentación oficial.
+
+>**Actividad**
+>1. Generar un párrafo de texto con loremipsum
+>2. Poner en negrita 1 palabra del texto.
+>3. Poner en cursiva toda una frase del párrrafo.
