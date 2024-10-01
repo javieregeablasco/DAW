@@ -290,6 +290,73 @@ Si escribimos el código siguiente y lo pintamos en pantalla veremos que Tailwin
     <p>Esto es un párrafo</p>
 </body>
 ```
-Si consultamos la documentación de tailwind vemos que la forma de cambiar el tamaño de fuente se realiza con la propiedad `
+Si consultamos la documentación de tailwind vemos que la forma de cambiar el tamaño de fuente se realiza con la propiedad `text-*`
+>Actividad
+>Cambiar el tamaño de fuente de las etiquetas h1, h2, h3 y p de forma coherente.
+>Sobreescribir los estilos **text-xs**, **text-sm** y **text-base** para obtener unos tamaños de fuente 13, 15 y 17px respectivamente.
+>Añadir al documento 3 párrafos junto a los anteriores para ver la diferencia.
 
+### 4.3.2 - Fuentes de caracteres.
+En el framework de CSS Tailwind, vienen definidas 5 fuentes de caracteres principales
 
+1. **sans**: Utiliza una fuente sans-serif, que incluye las fuentes del sistema.
+2. **serif**: Una fuente con serifas, generalmente Times New Roman o similares.
+3. **mono**: Una fuente monoespaciada, comúnmente utilizada para código, como Menlo, Consolas o monospace.
+
+para incorporarlas a nuestros elementos escribiremos `font-**`
+
+>**Actividad**
+>1. Definir 2 elementos h1, h2.
+>2. Personalizarlos con 2 tipos de fuentes y tamaños de fuentes distintos.
+>3. Realizar la modificaciones necesarios para que, **al pasar el ratón por encima del texto** cambie el tipo de fuente así como su tamaño.
+
+### 4.3.3 - Fuentes de caracteres personalizadas..
+Para usar fuentes de carácteres personalizadas (para el ejmplo usaremos **roboto**, podemos hacer lo siguiente:
+1. Importar la fuente desde Google Fonts en el archivo input.css
+2. Configurar la fuente en tailwind.config.js.
+3. Usar la clase personalizada.
+
+**input.css** quedará de la  siguiente manera:
+```
+/*
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+```
+
+**tailwind.config.js** 
+```
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js,json}"],
+  theme: {
+    extend: {
+      fontFamily: {
+        roboto: ['Roboto'],
+      },
+    },
+  },
+  plugins: [],
+}
+```
+/*
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+```
+
+>**Actividad**
+>1. Importar 2 fuentes de caracteres. Una de las cuales será **Rubik Dirt**. 
+>2. Definir 2 párrafos con las fuentes importadas.
