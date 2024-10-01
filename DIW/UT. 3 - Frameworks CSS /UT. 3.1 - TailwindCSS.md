@@ -223,7 +223,7 @@ El código del botón quedará de la siguiente manera:
 
 Para definir el color de los diferentes estados, simplemente empezar a escribir el estado y dejar que el código se autocomplete.
 >**Actividad**  
->Definir el color de varios estados de un botón. Por ejemplo :hover y active.
+>Definir el color de varios estados de un botón. Por ejemplo :hover y :active.
 
 ### 4.1.2 - Trabajando con gradientes.
 Toda la información sobre gradientes disponible en la <a href="https://tailwindcss.com/docs/gradient-color-stops#basic-usage)">página oficial de Tailwind</a>.
