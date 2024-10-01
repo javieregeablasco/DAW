@@ -1,9 +1,8 @@
-
 ---
 Título: UD. 3.1 - Frameworks - Tailwind CSS
 Autor: Javier Egea Blasco
 Año: 24-25
-palabras clave: DAW, DIW
+Palabras clave: DAW, DIW
 ---
 
 
