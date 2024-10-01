@@ -251,4 +251,31 @@ Para realizar gradientes de colores aplicados sobre texto poder usar el siguient
     <div class="bg-gradient-to-r from-blue-200 to to-blue-900 bg-clip-text text-transparent">Mi primer gradiente sobre texto</div>
   </div>
 ```
-En este caso usamos la función de recortar el fondo según el texto (clip background) `bg-clip-text`y para poder visualizarlo haremos que el texto sea transparente con `text-transparent`.  
+En este caso usamos la función de recortar el fondo según el texto (clip background) `bg-clip-text`y para poder visualizarlo haremos que el texto sea transparente con `text-transparent`. 
+
+## 4.2 - Particularidades del archivo tailwind.config.js
+Hemos visto que podemos añadir estilos nuevos declarándolos en el archivo ´tailwind.config.js´  
+De momento, nos hemos limitado a añadir los nuevos estilos **dentro** de la carpeta `extend.`  
+Pero, ¿qué ocurre si en vez de añadir los estilos en `extend` los hacemos directamente dentro de `theme`?
+>**Actividad**  
+>Desplazar los nuevos estilos de colores creados anteriormente y analizar los resultados.
+El resultado debería ser similar a este:
+```
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js,json}"],
+  theme: {
+    
+    colors: {
+      verdecaqui: '#363112',
+      azulpetroleo: '#1b4a50',
+      azulelectrico: '#242c6b',
+    },
+    
+    extend: {
+    },
+  },
+  plugins: [],
+}
+```
+
