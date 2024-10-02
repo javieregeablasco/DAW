@@ -359,8 +359,8 @@ Para definir los estilos de las fuentes, negrita subrayado, cursiva, ... consult
 >3. Poner en cursiva toda una frase del párrrafo.
 
 
-## 5.1 - Espacios: border, margin & padding
-### 5.1.1 - Border.
+## 4.4 - Espacios: border, margin & padding
+### 4.4.1 - Border.
 Permite definir todas las propiedades del borde.  
 Toda la información sobre bordes <a href="https://tailwindcss.com/docs/border-radius">aquí</a>.
 
@@ -378,7 +378,7 @@ Para definir el borde, su ancho, el radio etc... iremos añadiendo propiedades.
 >1. Borde de tamaño 8px.
 >2. Redondeado de 6px solo en la esquinas superiores. 
 
-### 5.1.2 - Margin.
+### 4.4.2 - Margin.
 Permite definir los margenes de un elemento.
 Toda la información sobre margenes <a href="https://tailwindcss.com/docs/margin#add-margin-to-a-single-side">aquí</a>.
 
@@ -387,7 +387,7 @@ Toda la información sobre margenes <a href="https://tailwindcss.com/docs/margin
 <h3 class="bg-yellow-950 text-white border-blue-400 border-4 text-center m-1">Definiendo margin</h3>
 ```
 
-### 5.1.3 - Padding.
+### 4.4.3 - Padding.
 Permite definir los margenes **dentro** de un elemento.
 Toda la información sobre padding <a href="https://tailwindcss.com/docs/padding">aquí</a>.
 
@@ -396,8 +396,26 @@ Toda la información sobre padding <a href="https://tailwindcss.com/docs/padding
 <h3 class="bg-green-950 text-white border-yellow-500 border-4  text-center w-64 h-20">Definiendo dimensiones de elementos</h3>
 ```
 
-## 5.2 - Medidas de los elementos.
-Permite definir las medidas (ancho y alto) de los diferentes elementos.
+### 4.4.4 - Space between
+Se utiliza en sistemas de diseño con **Flexbox** o **Grid** para distribuir automáticamente el espacio entre **los elementos hijos** dentro de un contenedor.
+Toda la información sobre padding <a href="https://tailwindcss.com/docs/space">aquí</a>.
+
+**Space Between** proporciona utilidades como `space-x-{0,1, n}` o `space-y-{0,1, n}` para agregar espacio horizontal o vertical entre **los elementos secundarios** de un **contenedor flex o grid**.
+
+>**Ejemplo**: `space-x-4` añade un margen entre los elementos hijos de 1rem  o 4px en el eje horizontal.
+>En este caso, solo habrá espacio **entre los elementos**, y no alrededor de los elementos o entre elementos y el borde del contenedor.
+```
+html
+<div class="flex space-x-4">
+  <div>Item 1</div>
+  <div>Item 2</div>
+  <div>Item 3</div>
+</div>
+```
+
+## 4.5 - Medidas de los elementos.
+Permite definir las medidas (ancho y alto) de los diferentes elementos.  
+
 Toda la información sobre medidas (sizing) <a href="https://tailwindcss.com/docs/witdh">aquí</a>.
 
 >**Ejemplo** donde tenemos un ancho de elemanto de 64px.
@@ -405,6 +423,7 @@ Toda la información sobre medidas (sizing) <a href="https://tailwindcss.com/doc
  <h3 class="bg-green-950 text-white border-yellow-500 rounded-b-lg border-4  text-center w-64 flex justify-center">Definiendo dimensiones de elementos</h3>
 ```
 <br></br>    
+## 4.6 - Actividad.
 >**Actividad**: Crear una tarjeta de presentación para familiarizarse con las clases de Tailwind CSS márgenes, padding, colores, etc.
 > 
 >1. **Estructura de la tarjeta**:
