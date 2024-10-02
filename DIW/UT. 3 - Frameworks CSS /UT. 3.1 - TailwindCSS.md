@@ -393,14 +393,34 @@ Toda la información sobre padding <a href="https://tailwindcss.com/docs/padding
 
 >**Ejemplo** donde tenemos un padding **superior e inferior** de 8px.
 ```
-<h3 class="bg-yellow-950 text-white border-blue-400 border-4 text-center m-1">Definiendo margin</h3>
+<h3 class="bg-green-950 text-white border-yellow-500 border-4  text-center w-64 h-20">Definiendo dimensiones de elementos</h3>
 ```
 
->**Actividad**
->1. Generar un HTML que tenga los sigiuientes estilos:
->2. El body tendrá un color gray-200
->3. El elemento interior será de color blanco.
->4. Con las esquinas redondeadas  
->5. Poner en negrita 1 palabra del texto.
->6. Poner en cursiva toda una frase del párrrafo.
-  
+## 5.2 - Medidas de los elementos.
+Permite definir las medidas (ancho y alto) de los diferentes elementos.
+Toda la información sobre padding <a href="https://tailwindcss.com/docs/witdh">aquí</a>.
+
+>**Ejemplo** donde tenemos un ancho de elemanto de 64px.
+```
+ <h3 class="bg-green-950 text-white border-yellow-500 rounded-b-lg border-4  text-center w-64 flex justify-center">Definiendo dimensiones de elementos</h3>
+```
+
+
+>**Actividad**: Crear una tarjeta de presentación para  
+>familiarizarse con las clases de Tailwind CSS márgenes, padding, colores, etc.
+>El resultado se puede ver a continuación.
+> 
+>1. **Estructura de la tarjeta**:
+>    - La tarjeta es un contenedor `div` con fondo blanco, bordes redondeados y sombra (usando clases como `bg-white`, `rounded-lg`, y `shadow-lg`).
+>    - La imagen de perfil tiene bordes redondeados (`rounded-full`) y un borde azul alrededor (`border-4 border-blue-500`).
+>   
+>2. **Márgenes y Padding**:
+>    - La tarjeta tiene `m-4` para margen externo.
+>    - Se usa `p-6` para el padding interno de la tarjeta y `px-4 py-2` para los botones.
+>   
+>3. **Colores y estilos**:
+>    - Se aplican clases de color de fondo para el botón principal `bg-blue-500`, y para el botón secundario `bg-gray-300`.
+>    - Los textos tienen colores personalizados como `text-gray-800` y `text-gray-600`.
+>
+>4. **Bordes redondeados**:
+>    - La tarjeta tiene bordes redondeados con `rounded-lg` y los botones con `rounded-full`.
