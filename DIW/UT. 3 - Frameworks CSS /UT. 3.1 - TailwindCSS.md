@@ -411,16 +411,22 @@ Toda la información sobre padding <a href="https://tailwindcss.com/docs/witdh">
 >El resultado se puede ver a continuación.
 > 
 >1. **Estructura de la tarjeta**:
->    - La tarjeta es un contenedor `div` con fondo blanco, bordes redondeados y sombra (usando clases como `bg-white`, `rounded-lg`, y `shadow-lg`).
+>    - La tarjeta es un contenedor `div` con fondo blanco, bordes redondeados y sombra (clases `bg-white`, `rounded-lg`, `shadow-lg`).
 >    - La imagen de perfil tiene bordes redondeados (`rounded-full`) y un borde azul alrededor (`border-4 border-blue-500`).
+>    - Enlace de la foto: https://secure.gravatar.com/avatar/34147b9eecf59779b777eb68a1805113.jpg?s=600&d=mm
+>    - El ancho de la tarjeta será de 96px (`w-96`).
+>    - El fondo es de color gris (`bg-gray-200`).
 >   
->2. **Márgenes y Padding**:
+>2. **Márgenes y Padding de la tarjeta**:
 >    - La tarjeta tiene `m-4` para margen externo.
 >    - Se usa `p-6` para el padding interno de la tarjeta y `px-4 py-2` para los botones.
 >   
->3. **Colores y estilos**:
->    - Se aplican clases de color de fondo para el botón principal `bg-blue-500`, y para el botón secundario `bg-gray-300`.
->    - Los textos tienen colores personalizados como `text-gray-800` y `text-gray-600`.
+>3. **Colores y estilos de texto y botones**:
+>    - Color de fondo para el botón principal `bg-blue-500`, y para el botón secundario `bg-gray-300`.
+>    - Los textos tienen colores personalizados `text-gray-800` y `text-gray-600`.
 >
 >4. **Bordes redondeados**:
 >    - La tarjeta tiene bordes redondeados con `rounded-lg` y los botones con `rounded-full`.
+>  
+>   **Nota:** Para que los botones queden alineados y centrados usar  <div class= ... flex justify-center space-x-4">
+> Veremos flex más adelante y `spce-x-4 es la separación entre elementos (botones).
