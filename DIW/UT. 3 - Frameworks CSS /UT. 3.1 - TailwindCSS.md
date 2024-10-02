@@ -382,9 +382,7 @@ Para definir el borde, su ancho, el radio etc... iremos añadiendo propiedades.
 Permite definir los margenes de un elemento.
 Toda la información sobre bordes <a href="https://tailwindcss.com/docs/margin#add-margin-to-a-single-side">aquí</a>.
 
->**Ejemplo donde tenemos:
->1. Margin de 1px
-
+>**Ejemplo** donde tenemos un margin de 1px
 ```
 <h3 class="bg-yellow-950 text-white border-blue-400 border-4 text-center m-1">Definiendo margin</h3>
 ```
