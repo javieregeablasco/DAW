@@ -404,11 +404,8 @@ Toda la información sobre medidas (sizing) <a href="https://tailwindcss.com/doc
 ```
  <h3 class="bg-green-950 text-white border-yellow-500 rounded-b-lg border-4  text-center w-64 flex justify-center">Definiendo dimensiones de elementos</h3>
 ```
-
-
->**Actividad**: Crear una tarjeta de presentación para  
->familiarizarse con las clases de Tailwind CSS márgenes, padding, colores, etc.
->El resultado se puede ver a continuación.
+<br></br>    
+>**Actividad**: Crear una tarjeta de presentación para familiarizarse con las clases de Tailwind CSS márgenes, padding, colores, etc.
 > 
 >1. **Estructura de la tarjeta**:
 >    - La tarjeta es un contenedor `div` con fondo blanco, bordes redondeados y sombra (clases `bg-white`, `rounded-lg`, `shadow-lg`).
@@ -430,4 +427,9 @@ Toda la información sobre medidas (sizing) <a href="https://tailwindcss.com/doc
 >  
 >   **Nota:** Para que los botones queden alineados y centrados usar  <div class= ... flex justify-center space-x-4">
 >
-> Veremos flex más adelante y `space-x-4` es la separación entre elementos (botones).
+> Veremos `flex` más adelante y `space-x-4` es la separación entre elementos (botones).
+<br></br>  
+**El resultado de la actividad se puede ver a continuación:**  
+
+<img src="https://drive.google.com/uc?export=view&id=1m1wSxtPtQeUBjaWEXlZfpClbbKP_9UXC" width=40%>
+
