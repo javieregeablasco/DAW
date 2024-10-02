@@ -429,4 +429,5 @@ Toda la información sobre padding <a href="https://tailwindcss.com/docs/witdh">
 >    - La tarjeta tiene bordes redondeados con `rounded-lg` y los botones con `rounded-full`.
 >  
 >   **Nota:** Para que los botones queden alineados y centrados usar  <div class= ... flex justify-center space-x-4">
-> Veremos flex más adelante y `spce-x-4 es la separación entre elementos (botones).
+>
+> Veremos flex más adelante y `space-x-4` es la separación entre elementos (botones).
