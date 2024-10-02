@@ -359,7 +359,7 @@ Para definir los estilos de las fuentes, negrita subrayado, cursiva, ... consult
 >3. Poner en cursiva toda una frase del párrrafo.
 
 
-## 5.1 - Espacios, border, margin & padding
+## 5.1 - Espacios: border, margin & padding
 ### 5.1.1 - Border.
 Permite definir todas las propiedades del borde.  
 Toda la información sobre bordes <a href="https://tailwindcss.com/docs/border-radius">aquí</a>.
@@ -378,12 +378,18 @@ Para definir el borde, su ancho, el radio etc... iremos añadiendo propiedades.
 >1. Borde de tamaño 8px.
 >2. Redondeado de 6px solo en la esquinas superiores. 
 
-### 5.1.1 - Margin.
+### 5.1.2 - Margin.
 Permite definir los margenes de un elemento.
-Toda la información sobre bordes <a href="https://tailwindcss.com/docs/margin#add-margin-to-a-single-side">aquí</a>.
+Toda la información sobre margenes <a href="https://tailwindcss.com/docs/margin#add-margin-to-a-single-side">aquí</a>.
 
 >**Ejemplo** donde tenemos un margin de 1px
 ```
 <h3 class="bg-yellow-950 text-white border-blue-400 border-4 text-center m-1">Definiendo margin</h3>
 ```
+
+### 5.1.3 - Padding.
+Permite definir los margenes **dentro** de un elemento.
+Toda la información sobre padding <a href="https://tailwindcss.com/docs/padding">aquí</a>.
+
+
   
