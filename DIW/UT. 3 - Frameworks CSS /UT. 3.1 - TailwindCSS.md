@@ -359,4 +359,33 @@ Para definir los estilos de las fuentes, negrita subrayado, cursiva, ... consult
 >3. Poner en cursiva toda una frase del párrrafo.
 
 
-## 5.1 - Espacios, margin & padding
+## 5.1 - Espacios, border, margin & padding
+### 5.1.1 - Border.
+Permite definir todas las propiedades del borde.  
+Toda la información sobre bordes <a href="https://tailwindcss.com/docs/border-radius">aquí</a>.
+
+Para definir el borde, su ancho, el radio etc... iremos añadiendo propiedades. 
+
+>**Ejemplo** donde tenemos:
+>1. Un border: border-width de 4px
+>2. Un color de borde: border-yellow-500
+>3. Un radio de 8px solo en esquinas inferiores: rounded-b-lg
+```
+<h3 class="bg-green-950 text-white border-yellow-500 rounded-b-lg border-4  text-center">Definiendo border</h3>
+```
+>**Actividad**
+>Generar un párrafo de texto con loremipsum que tenga el borde siguiente:
+>1. Borde de tamaño 8px.
+>2. Redondeado de 6px solo en la esquinas superiores. 
+
+### 5.1.1 - Margin.
+Permite definir los margenes de un elemento.
+Toda la información sobre bordes <a href="https://tailwindcss.com/docs/margin#add-margin-to-a-single-side">aquí</a>.
+
+>**Ejemplo donde tenemos:
+>1. Margin de 1px
+
+```
+<h3 class="bg-yellow-950 text-white border-blue-400 border-4 text-center m-1">Definiendo margin</h3>
+```
+  
