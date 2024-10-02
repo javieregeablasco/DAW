@@ -398,7 +398,7 @@ Toda la información sobre padding <a href="https://tailwindcss.com/docs/padding
 
 ## 5.2 - Medidas de los elementos.
 Permite definir las medidas (ancho y alto) de los diferentes elementos.
-Toda la información sobre padding <a href="https://tailwindcss.com/docs/witdh">aquí</a>.
+Toda la información sobre medidas (sizing) <a href="https://tailwindcss.com/docs/witdh">aquí</a>.
 
 >**Ejemplo** donde tenemos un ancho de elemanto de 64px.
 ```
