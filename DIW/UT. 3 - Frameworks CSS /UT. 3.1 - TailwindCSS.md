@@ -202,12 +202,12 @@ Con la función de autocompletado, saldrán todos los colores que vienen por def
 ### 4.1.1 - Colores de botones.
 Los botones tienen varios estados y habitualmente el color de esos estados se realiza con pseudo clases.
 >**Principales estados de los botones**  
->**:hover** — cuando el ratón está sobre el botón.  
->**:focus** — cuando el botón recibe foco.  
->**:active** — cuando el botón es presionado.  
->**:disabled** — cuando el botón está deshabilitado.  
->**:visited** — cuando un enlace ha sido visitado.  
->**:focus-visible** — cuando el foco es visible, según el contexto de uso.
+>**hover:** — cuando el ratón está sobre el botón.  
+>**focus:** — cuando el botón recibe foco.  
+>**active:** — cuando el botón es presionado.  
+>**disabled:** — cuando el botón está deshabilitado.  
+>**visited:** — cuando un enlace ha sido visitado.  
+>**focus-visible:** — cuando el foco es visible, según el contexto de uso.
 
 Ahora vamos a ver como se definen esos estados en tailwind, para ello empezaremos declarando un color con el siguiente código:
 ```
@@ -223,7 +223,7 @@ El código del botón quedará de la siguiente manera:
 
 Para definir el color de los diferentes estados, simplemente empezar a escribir el estado y dejar que el código se autocomplete.
 >**Actividad**  
->Definir el color de varios estados de un botón. Por ejemplo :hover y :active.
+>Definir el color de varios estados de un botón. Por ejemplo hover: y active:.
 
 ### 4.1.2 - Trabajando con gradientes.
 Toda la información sobre gradientes disponible en la <a href="https://tailwindcss.com/docs/gradient-color-stops#basic-usage)">página oficial de Tailwind</a>.
