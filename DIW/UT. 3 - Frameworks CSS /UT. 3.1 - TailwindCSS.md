@@ -391,5 +391,16 @@ Toda la información sobre margenes <a href="https://tailwindcss.com/docs/margin
 Permite definir los margenes **dentro** de un elemento.
 Toda la información sobre padding <a href="https://tailwindcss.com/docs/padding">aquí</a>.
 
+>**Ejemplo** donde tenemos un padding **superior e inferior** de 8px.
+```
+<h3 class="bg-yellow-950 text-white border-blue-400 border-4 text-center m-1">Definiendo margin</h3>
+```
 
+>**Actividad**
+>1. Generar un HTML que tenga los sigiuientes estilos:
+>2. El body tendrá un color gray-200
+>3. El elemento interior será de color blanco.
+>4. Con las esquinas redondeadas  
+>5. Poner en negrita 1 palabra del texto.
+>6. Poner en cursiva toda una frase del párrrafo.
   
