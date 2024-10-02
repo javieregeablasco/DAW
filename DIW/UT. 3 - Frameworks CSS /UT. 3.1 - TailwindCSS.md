@@ -345,17 +345,6 @@ module.exports = {
   plugins: [],
 }
 ```
-/*
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-*/
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
-
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-```
 
 >**Actividad**
 >1. Importar 2 fuentes de caracteres. Una de las cuales será **Rubik Dirt**. 
@@ -368,3 +357,6 @@ Para definir los estilos de las fuentes, negrita subrayado, cursiva, ... consult
 >1. Generar un párrafo de texto con loremipsum
 >2. Poner en negrita 1 palabra del texto.
 >3. Poner en cursiva toda una frase del párrrafo.
+
+
+## 5.1 - Espacios, margin & padding
