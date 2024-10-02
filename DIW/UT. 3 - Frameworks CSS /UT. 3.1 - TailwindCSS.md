@@ -236,7 +236,7 @@ Para definir el color final de un fondo usar `bg-gradient-to-r from-cyan500 to-.
 <h1 class="bg-gradient-to-r from-blue-200 to to-blue-900 w-60 mx-auto block my-6">Mi primer gradiente</h1>
 ```
 >**Actividad**  
->Añadir un borde de cualquier color y de cualquier grosor al elemento.>
+>Añadir un borde de cualquier color y de cualquier grosor al elemento.
 
 #### 4.1.2.2 - Gradiente de 3 colores:
 Lo mismo que para 2 colores pero esta vez tendremos que definir el color intermedio con `via-*`. 
