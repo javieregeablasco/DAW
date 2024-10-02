@@ -124,7 +124,7 @@ npx tailwindcss init
   
 # 4 - Clases utilitarias de Tailwind CSS.
 ## 4.1 - Colores
-  Tailwind incopora una paleta de colores que se puede consultar <a href="https://tailwindcss.com/docs/customizing-colors)">aquí</a>.  
+  Tailwind incopora una paleta de colores que se puede consultar <a href="https://tailwindcss.com/docs/customizing-colors">aquí</a>.  
 - **Cambiar el color de texto:**
 
 Por ejemplo escribir: 
