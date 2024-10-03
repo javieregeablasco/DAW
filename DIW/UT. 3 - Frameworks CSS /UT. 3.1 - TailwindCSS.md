@@ -507,7 +507,7 @@ Toda la información sobre medidas (sizing) <a href="https://tailwindcss.com/doc
  <h3 class="bg-green-950 text-white border-yellow-500 rounded-b-lg border-4  text-center w-64 flex justify-center">Definiendo dimensiones de elementos</h3>
 ```
 <br></br>    
-## 4.6 - Actividad.
+## 4.6 - Tarea.
 >**Actividad**: Crear una tarjeta de presentación para familiarizarse con las clases de Tailwind CSS márgenes, padding, colores, etc.
 > 
 >1. **Estructura de la tarjeta**:
