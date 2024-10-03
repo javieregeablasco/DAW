@@ -576,7 +576,19 @@ Para incorporarlos a nuestras etiquetas bastará con escribir el nombre del brea
 Para definir los nuevos breakpoint iremos al archivo `railwind.config.js`y lo editaremos.
 
 Por ejemplo para **añadir** un punto personalizado en 850px lo definiremos por clave-valor dentro de `theme` y luego `extend`.
-El archivo de configuración quedará de la siguinte manera. 
+El archivo de configuración quedará de la siguiente manera. 
 ```
+
+```
+
+Para el ejemplo, al superar el `viewport` la resolución de 1000px, el fondo cambiará a amarillo, el texto del texo de <h1> a gris oscuro y el texto de <p> no se pintará en pantalla. 
+```
+<body class="bg-gray-300">
+  <div class="border-2 border-rose-700 p-6 w-1/4 mx-auto rounded-md mt-10 bg-indigo-300 xl:bg-cyan-200 md:bg-cyan-800 puntonuevo:bg-yellow-400">
+    <h1 class="text-xl font-mono font-bold text-center text-blue-800 md:text-cyan-100 xl:text-gray-900 puntonuevo:text-blue-950">Mi primer diseño responsivo.</h1>
+    <p class="mt-4 text-center text-sm text-green-800 md:text-yellow-400 xl:text-green-900 puntonuevo:text-transparent">Contenido del párrafo con las explicaciones de la funcionalidad.</p>  
+  </div>
+</body>
+``` 
 
 
