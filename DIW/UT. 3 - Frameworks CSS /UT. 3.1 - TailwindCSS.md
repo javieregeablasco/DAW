@@ -578,10 +578,21 @@ Para definir los nuevos breakpoint iremos al archivo `railwind.config.js`y lo ed
 Por ejemplo para **añadir** un punto personalizado en 850px lo definiremos por clave-valor dentro de `theme` y luego `extend`.
 El archivo de configuración quedará de la siguiente manera. 
 ```
-
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js,json}"],
+  theme: {
+    extend: {
+      screens:{
+        puntonuevo: '1000px',
+      }
+    },
+  },
+  plugins: [],
+}
 ```
 
-Para el ejemplo, al superar el `viewport` la resolución de 1000px, el fondo cambiará a amarillo, el texto del texo de <h1> a gris oscuro y el texto de <p> no se pintará en pantalla. 
+Para el ejemplo, al superar el `viewport` la resolución de 1000px, el fondo cambiará a amarillo, el texto del texo de `h1` a gris oscuro y el texto de `p` no se pintará en pantalla. 
 ```
 <body class="bg-gray-300">
   <div class="border-2 border-rose-700 p-6 w-1/4 mx-auto rounded-md mt-10 bg-indigo-300 xl:bg-cyan-200 md:bg-cyan-800 puntonuevo:bg-yellow-400">
