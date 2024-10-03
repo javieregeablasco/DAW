@@ -602,4 +602,4 @@ Para el ejemplo, al superar el `viewport` la resolución de 1000px, el fondo cam
 </body>
 ``` 
 
-
+# 6 - Flexbox.
