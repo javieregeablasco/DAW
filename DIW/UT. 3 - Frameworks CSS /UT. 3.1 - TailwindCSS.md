@@ -350,7 +350,7 @@ module.exports = {
 >1. Importar 2 fuentes de caracteres. Una de las cuales será **Rubik Dirt**. 
 >2. Definir 2 párrafos con las fuentes importadas.
 
-### 4.3.2 - Estilos de fuentes de caracteres.
+### 4.3.4 - Estilos de fuentes de caracteres.
 Para definir los estilos de las fuentes, negrita subrayado, cursiva, ... consultar la documentación oficial.
 
 >**Actividad**
@@ -358,6 +358,90 @@ Para definir los estilos de las fuentes, negrita subrayado, cursiva, ... consult
 >2. Poner en negrita 1 palabra del texto.
 >3. Poner en cursiva toda una frase del párrrafo.
 
+### 4.3.5 - Ejercicio.
+>**Crear un HTML que haga lo siguiente:**  
+>1. Dibujar el texto ´Fuente Roboto´ con la fuente Roboto y como fondo un color personalizado.
+>2. Dibujar el texto ´Fuente Rubik Dirt´ con la fuente Rubik-Dirt y como fondo otro color personalizado.
+>3. Al pasar el ratón por encima del primer texto, la etiqueta copiará los estilos de la segunda etiqueta.
+>4. Al pasar el ratón por encima del segundo texto, la etiqueta copiará los estilos de la primera etiqueta.
+>
+>**Nota:** Podéis usar `javascript` o crear un pseudo elemento com `::after`.   
+
+**Solución:**  
+
+* **Archivo input.css**
+```
+/*
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+```
+* **Archivo tailwind.confij.js.css**
+```
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js,json}"],
+  theme: {
+    
+    extend: {
+      
+      fontFamily: {
+        roboto: ['Roboto'],
+        'rubik-dirt': ['Rubik Dirt']
+      },
+
+      colors: {
+        verdecaqui: '#363112',
+        azulpetroleo: '#1b4a50',
+        azulelectrico: '#242c6b',
+      },
+            
+    },
+  },
+  plugins: [],
+}
+```
+* **Archivo index.html**
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+h5::after {
+  content:'Fuente Roboto';
+}
+h5:hover::after{
+  content:'Fuente Rubik Dirt';
+} 
+
+p::after {
+  content:'Fuente Rubik Dirt';
+}
+p:hover::after{
+  content:'Fuente Roboto';
+} 
+
+</style>
+<body>
+    <h5 class="m-4 font-roboto text-3xl hover:font-rubik-dirt hover:w-72 hover:bg-azulpetroleo bg-verdecaqui w-52 h-20 text-yellow-400"></h5>
+
+    <p class=" m-4 font-rubik-dirt text-3xl hover:font-roboto hover:w-52 hover:bg-verdecaqui bg-azulpetroleo text-yellow-300 w-72 h-20"></p>
+</body>
+</html>
+```
 
 ## 4.4 - Espacios: border, margin & padding
 ### 4.4.1 - Border.
