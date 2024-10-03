@@ -536,7 +536,11 @@ Toda la información sobre medidas (sizing) <a href="https://tailwindcss.com/doc
 
 <img src="https://drive.google.com/uc?export=view&id=1m1wSxtPtQeUBjaWEXlZfpClbbKP_9UXC" width=40%>
 
-# 5 - Responsive design.
+# 5 - Clases persoanlizadas
+Para crear clases personalizadas y evitar de estar reescribiendo el mismo código para definir estilos que se repinen a lo largo del documento HTML, se puede utilizar **la capa de componentes**.
+Por convención, esas clases tendrán nombre como `tarjeta, btn, insignia, ese tipo de cosas`.
+
+# 6 - Responsive design.
 El **responsive design** (diseño responsivo) es un enfoque en el desarrollo web que busca crear páginas que se adapten de manera óptima a diferentes tamaños de pantalla y dispositivos.
 Toda la información sobre las herramientas de responsive design de Tailwind <a href="https://tailwindcss.com/docs/responsive-design">aquí</a>. 
 
@@ -549,7 +553,7 @@ En Tailwind disponemos, por defecto, de los siguientes `break points`.
 | xl                | 1280px       | `@media (min-width: 1280px) { ... }`   |
 | 2xl               | 1536px       | `@media (min-width: 1536px) { ... }`   |
 
-## 5.1. - Responsive design con los breakpoints de Tailwind.
+## 6.1. - Responsive design con los breakpoints de Tailwind.
 Para incorporarlos a nuestras etiquetas bastará con escribir el nombre del breakpoint.
 **Ejemplo:**
 `Sin breakpoints:` 
@@ -572,7 +576,7 @@ Para incorporarlos a nuestras etiquetas bastará con escribir el nombre del brea
 </body>
 ```
 
-## 5.2. - Responsive design con breakpoints customizados.
+## 6.2. - Responsive design con breakpoints customizados.
 Para definir los nuevos breakpoint iremos al archivo `railwind.config.js`y lo editaremos.
 
 Por ejemplo para **añadir** un punto personalizado en 850px lo definiremos por clave-valor dentro de `theme` y luego `extend`.
@@ -602,4 +606,4 @@ Para el ejemplo, al superar el `viewport` la resolución de 1000px, el fondo cam
 </body>
 ``` 
 
-# 6 - Flexbox.
+# 7 - Flexbox.
