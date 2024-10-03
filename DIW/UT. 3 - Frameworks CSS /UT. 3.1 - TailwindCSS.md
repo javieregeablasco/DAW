@@ -536,3 +536,18 @@ Toda la información sobre medidas (sizing) <a href="https://tailwindcss.com/doc
 
 <img src="https://drive.google.com/uc?export=view&id=1m1wSxtPtQeUBjaWEXlZfpClbbKP_9UXC" width=40%>
 
+# 5 - Responsive design.
+El **responsive design** (diseño responsivo) es un enfoque en el desarrollo web que busca crear páginas que se adapten de manera óptima a diferentes tamaños de pantalla y dispositivos.
+Toda la información sobre las herramientas de responsive design de Tailwind <a href="https://tailwindcss.com/docs/responsive-design">aquí</a>. 
+
+En Tailwind disponemos, por defecto, de los siguientes `break points`. 
+| Breakpoint prefix | Minimum width | CSS                                      |
+|-------------------|---------------|------------------------------------------|
+| sm                | 640px        | `@media (min-width: 640px) { ... }`    |
+| md                | 768px        | `@media (min-width: 768px) { ... }`    |
+| lg                | 1024px       | `@media (min-width: 1024px) { ... }`   |
+| xl                | 1280px       | `@media (min-width: 1280px) { ... }`   |
+| 2xl               | 1536px       | `@media (min-width: 1536px) { ... }`   |
+
+
+
