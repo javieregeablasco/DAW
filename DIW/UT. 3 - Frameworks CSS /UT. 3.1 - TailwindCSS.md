@@ -419,25 +419,25 @@ module.exports = {
     <link href="./output.css" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <style>
-h5::after {
-  content:'Fuente Roboto';
-}
-h5:hover::after{
-  content:'Fuente Rubik Dirt';
-} 
+  h5::after {
+    content:'Fuente Roboto';
+  }
+  h5:hover::after{
+    content:'Fuente Rubik Dirt';
+  } 
 
-p::after {
-  content:'Fuente Rubik Dirt';
-}
-p:hover::after{
-  content:'Fuente Roboto';
-} 
-
+  p::after {
+    content:'Fuente Rubik Dirt';
+  }
+  p:hover::after{
+    content:'Fuente Roboto';
+  } 
 </style>
+
 <body>
     <h5 class="m-4 font-roboto text-3xl hover:font-rubik-dirt hover:w-72 hover:bg-azulpetroleo bg-verdecaqui w-52 h-20 text-yellow-400"></h5>
-
     <p class=" m-4 font-rubik-dirt text-3xl hover:font-roboto hover:w-52 hover:bg-verdecaqui bg-azulpetroleo text-yellow-300 w-72 h-20"></p>
 </body>
 </html>
