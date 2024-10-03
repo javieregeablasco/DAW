@@ -639,6 +639,9 @@ Para el ejemplo, al superar el `viewport` la resolución de 1000px, el fondo cam
 # 7 - Flexbox.
 Para activar el comportamiento de Flexbox en un contenedor, se utiliza la clase `flex` de Tailwind. 
 Esto convierte al elemento en un contenedor flex, permitiendo que sus hijos sean distribuidos de acuerdo con las reglas de Flexbox.
+
+Toda la información está disponible <a href="https://tailwindcss.com/docs/flex">aquí</a>
+ 
 ## 7.1 Contenedor Flex: `flex`
 ```
 <div class="flex">
