@@ -536,9 +536,39 @@ Toda la información sobre medidas (sizing) <a href="https://tailwindcss.com/doc
 
 <img src="https://drive.google.com/uc?export=view&id=1m1wSxtPtQeUBjaWEXlZfpClbbKP_9UXC" width=40%>
 
-# 5 - Clases persoanlizadas
+# 5 - Clases personalizadas
 Para crear clases personalizadas y evitar de estar reescribiendo el mismo código para definir estilos que se repinen a lo largo del documento HTML, se puede utilizar **la capa de componentes**.
-Por convención, esas clases tendrán nombre como `tarjeta, btn, insignia, ese tipo de cosas`.
+Por convención, esas clases tendrán como nombres `card, btn, badge`.
+**Nota:**
+Aunque crear clases personalizadas se puede interpretar como una simplifcación del código HTML para darle más claridad, esa práctica añade una capa de abstracción que contraviene el espíritu **utility first** de tailwind... 
+## 5.1 - Creación de clases personalizadas: @layer components
+**Ejemplo:**
+Archivo `import.css`:
+```
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+  .btn {
+    background-color: theme('colors.white');
+    border-radius: theme('borderRadius.lg');
+    padding: theme('spacing.6');
+    box-shadow: theme('boxShadow.xl');
+  }
+  /* ... */
+}
+```
+ ## 5.2 - Reutilización de clases personalizadas: @apply
+Si deseamos ampliar una clase personalizada sin modificarla, usaremos la directiva @apply.
+**Ejemplo**
+```
+@layer components {
+  .btn-1 {
+    @apply rounded-b-lg shadow-md;
+  }
+}
+```
 
 # 6 - Responsive design.
 El **responsive design** (diseño responsivo) es un enfoque en el desarrollo web que busca crear páginas que se adapten de manera óptima a diferentes tamaños de pantalla y dispositivos.
@@ -607,3 +637,104 @@ Para el ejemplo, al superar el `viewport` la resolución de 1000px, el fondo cam
 ``` 
 
 # 7 - Flexbox.
+Para activar el comportamiento de Flexbox en un contenedor, se utiliza la clase `flex` de Tailwind. 
+Esto convierte al elemento en un contenedor flex, permitiendo que sus hijos sean distribuidos de acuerdo con las reglas de Flexbox.
+## 7.1 Contenedor Flex: `flex`
+```
+<div class="flex">
+  <div>Elemento 1</div>
+  <div>Elemento 2</div>
+  <div>Elemento 3</div>
+</div>
+```
+
+## 7.2 Dirección de los elementos: `flex-direction`
+Tailwind ofrece varias clases para definir la dirección de los elementos dentro de un contenedor flex.
+
+- `flex-row`: Elementos alineados en fila.
+- `flex-col`: Elementos alineados en columna.
+
+```
+<div class="flex flex-row">
+  <div>Elemento 1</div>
+  <div>Elemento 2</div>
+  <div>Elemento 3</div>
+</div>
+```
+
+## 7.3 Justificación de contenido: `justify-content`
+Permite controlar cómo se distribuye el espacio entre los elementos a lo largo del eje principal.
+
+- `justify-start`: Los elementos se alinean al inicio.
+- `justify-center`: Los elementos se centran.
+- `justify-end`: Los elementos se alinean al final.
+- `justify-between`: Espacio distribuido equitativamente entre los elementos.
+- `justify-around`: Espacio distribuido alrededor de los elementos.
+
+```
+<div class="flex justify-center">
+  <div>Elemento 1</div>
+  <div>Elemento 2</div>
+  <div>Elemento 3</div>
+</div>
+```
+
+## 7.4 Alineación de elementos: `align-items`
+Controla cómo se alinean los elementos a lo largo del eje transversal.
+
+- `items-start`: Alinea los elementos al inicio.
+- `items-center`: Alinea los elementos en el centro.
+- `items-end`: Alinea los elementos al final.
+- `items-stretch`: Los elementos se estiran para llenar el contenedor.
+
+```
+<div class="flex items-center">
+  <div>Elemento 1</div>
+  <div>Elemento 2</div>
+  <div>Elemento 3</div>
+</div>
+```
+
+## 7.5 Tamaño de los elementos: `flex-grow`, `flex-shrink` y `flex-basis`
+- `grow`: Hace que un elemento crezca para ocupar el espacio disponible.
+- `shrink`: Permite que los elementos se reduzcan en tamaño si es necesario.
+- `basis`: Define el tamaño inicial de un elemento.
+
+```
+<div class="flex">
+  <div class="flex-grow">Elemento 1 (crece)</div>
+  <div>Elemento 2</div>
+  <div>Elemento 3</div>
+</div>
+```
+
+## 7.6 Envolver de elementos: `flex-wrap`
+Controla si los elementos dentro de un contenedor flex deben ser forzados a permanecer en una sola línea o pueden envolver a la siguiente línea.
+
+- `flex-wrap`: Permite que los elementos se envuelvan en múltiples líneas.
+- `flex-nowrap`: Fuerza a los elementos a estar en una sola línea.
+
+```
+<div class="flex flex-wrap">
+  <div>Elemento 1</div>
+  <div>Elemento 2</div>
+  <div>Elemento 3</div>
+</div>
+```
+
+## 7.7 Alineación del contenido del contenedor: `align-content`
+Alinea el contenido de un contenedor flex en el eje transversal cuando hay espacio adicional.
+
+- `content-start`, `content-center`, `content-end`, `content-between`, `content-around`.
+
+```
+<div class="flex flex-wrap content-center">
+  <div>Elemento 1</div>
+  <div>Elemento 2</div>
+  <div>Elemento 3</div>
+</div>
+```
+
+## 7.8 Actividades.
+
+
