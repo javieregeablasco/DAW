@@ -584,8 +584,9 @@ En Tailwind disponemos, por defecto, de los siguientes `break points`.
 | 2xl               | 1536px       | `@media (min-width: 1536px) { ... }`   |
 
 ## 6.1. - Responsive design con los breakpoints de Tailwind.
-Para incorporarlos a nuestras etiquetas bastará con escribir el nombre del breakpoint.
-**Ejemplo:**
+Para incorporarlos a nuestras etiquetas bastará con escribir el nombre del breakpoint.  
+
+**Ejemplo:**  
 `Sin breakpoints:` 
 ```
 <body class="bg-gray-300">
@@ -596,7 +597,7 @@ Para incorporarlos a nuestras etiquetas bastará con escribir el nombre del brea
 </body>
 ```
 `Con breakpoints:`
-(En el ejemplo, solo hemos cambiado los colores del texto y del contenedor.
+
 ```
 <body class="bg-gray-300">
   <div class="border-2 border-rose-700 p-6 w-1/4 mx-auto rounded-md mt-10 bg-indigo-300 xl:bg-cyan-200 md:bg-cyan-800">
