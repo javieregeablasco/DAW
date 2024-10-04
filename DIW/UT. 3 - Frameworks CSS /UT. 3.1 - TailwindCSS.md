@@ -647,7 +647,7 @@ Para incorporarlos a nuestras etiquetas bastará con escribir el nombre del brea
 ## 6.2 - Responsive design con breakpoints customizados.
 Para definir los nuevos breakpoint iremos al archivo `railwind.config.js`y lo editaremos.
 
-Por ejemplo para **añadir** un punto personalizado en 850px lo definiremos por clave-valor dentro de `theme` y luego `extend`.
+Por ejemplo para **añadir** un punto personalizado en 850px lo definiremos por clave-valor dentro de `theme` y luego `extend`.  
 El archivo de configuración quedará de la siguiente manera. 
 ```
 /** @type {import('tailwindcss').Config} */
