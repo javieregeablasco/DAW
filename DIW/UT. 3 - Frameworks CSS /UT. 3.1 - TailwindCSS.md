@@ -586,7 +586,7 @@ Si deseamos ampliar una clase personalizada sin modificarla, usaremos la directi
 ```
 ## 5.4 - Actividad #2 - Creación de un botón.
 1. Define una clase personalizada `btn` que utilice `@layer components` para definir los estilos de un botón básico.
-2. Utiliza las siguientes propiedades:
+2. Utiliza las siguientes propiedades para definir la clase `btn`:
   - background-color: gray.200
   - border-radius: lg
   - padding: 4
