@@ -384,7 +384,7 @@ Para definir los estilos de las fuentes, negrita subrayado, cursiva, ... consult
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 ```
-* **Archivo tailwind.confij.js.css**
+* **Archivo tailwind.config.js.css**
 ```
 /** @type {import('tailwindcss').Config} */
 module.exports = {
