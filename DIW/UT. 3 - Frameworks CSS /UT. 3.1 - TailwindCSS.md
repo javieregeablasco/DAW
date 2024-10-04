@@ -695,9 +695,9 @@ div class="overflow-x-auto overflow- border-2 border-rose-700 p-6 w-1/4 mx-auto 
 3. Crear un breakpoint personalizado x2l: '1200px'
 
 Contenido del HTML  
-Título: Título Responsive  
-Párrafo 1: Este párrafo con breakpoints.  
-Párrafo 2: Este párrafo con breakpoint personalizado.  
+- Título: Título Responsive  
+- Párrafo 1: Este párrafo con breakpoints.  
+- Párrafo 2: Este párrafo con breakpoint personalizado.  
 
 # 7 - Flexbox.
 Para activar el comportamiento de Flexbox en un contenedor, se utiliza la clase `flex` de Tailwind. 
