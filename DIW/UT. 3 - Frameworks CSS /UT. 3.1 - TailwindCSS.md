@@ -584,54 +584,27 @@ Si deseamos ampliar una clase personalizada sin modificarla, usaremos la directi
 </div>
 ```
 ## 5.4 - Actividad #2 - Creación de un botón.
-1. Define una clase personalizada llamada `btn` que utilice `@layer components` para definir los estilos de un botón básico.
-2. Usa propiedades como `background-color`, `border-radius`, `padding`, y `box-shadow`.
-3. Luego, crea una nueva clase llamada `btn-primary` utilizando la directiva `@apply`, que extienda la clase `btn` y añada estilos adicionales, como un fondo de color más oscuro y un efecto `hover`.
-4. Utiliza ambas clases (`btn` y `btn-primary`) en tu archivo HTML para crear dos botones con estilos distintos.
+1. Define una clase personalizada `btn` que utilice `@layer components` para definir los estilos de un botón básico.
+2. Utiliza las siguientes propiedades:
+  - background-color: gray.200
+  - border-radius: lg
+  - padding: 4
+  - box-shadow: md
+3. Define una clase `btn-primary` utilizando la directiva `@apply`, que extienda la clase `btn`.
+4. La clase `btn-primary` añade estilos adicionales:
+  - Estado primary: background-color: blue 500
+  - Estado hover: background-color: blue 700
+6. Utiliza las clases `btn` y `btn-primary` en el archivo HTML dado a continuación.
 
-**Código ejemplo para el archivo CSS**:
-
-```css
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
-@layer components {
-  .btn {
-    background-color: theme('colors.gray.200');
-    border-radius: theme('borderRadius.lg');
-    padding: theme('spacing.4');
-    box-shadow: theme('boxShadow.md');
-  }
-
-  .btn-primary {
-    @apply btn;
-    background-color: theme('colors.blue.500');
-    color: white;
-    &:hover {
-      background-color: theme('colors.blue.700');
-    }
-  }
-}
 ```
-
-**HTML:**
-
-```html
-<button class="btn">
+<button>
   Botón Secundario
 </button>
 
-<button class="btn-primary">
+<button>
   Botón Primario
 </button>
 ```
-
----
-
-Estos dos ejercicios te permitirán practicar la creación de clases personalizadas con `@layer components` y su reutilización usando la directiva `@apply` en Tailwind.
-
-
 
 # 6 - Responsive design.
 El **responsive design** (diseño responsivo) es un enfoque en el desarrollo web que busca crear páginas que se adapten de manera óptima a diferentes tamaños de pantalla y dispositivos.
