@@ -846,7 +846,8 @@ El tamaño de las columnas y filas se define con `grid-col-[...]
 - `grid-cols-[fr]`: Asigna un tamaño flexible basado en la fracción disponible.
 - `grid-cols-[100px]`: Especifica un tamaño fijo.
 
-```html
+**Ejemplo**
+```
 <div class="grid grid-cols-[100px,2fr,1fr] gap-4">
   <div>Elemento 1</div>
   <div>Elemento 2</div>
