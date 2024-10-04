@@ -944,11 +944,13 @@ Para definir el ancho de las celdas por columnas usaremos `raw-span-`.
      <div class="bg-red-500 rounded-md flex justify-center items-center h-10">11</div>
   </div>
 </div>
-```
->**Actividad 1**
+```  
+
+### 8.7.3 - Actividades.
+>**Actividad 1**  
 >Crear una cuadrícula de 3 columnas con un espacio uniforme de 16px entre los elementos.  
 
->**Actividad 2**
+>**Actividad 2**  
 >Crear una cuadrícula de 2 filas y 2 columnas, centrando los elementos tanto vertical como horizontalmente.
 
 >**Actividad 3**  
