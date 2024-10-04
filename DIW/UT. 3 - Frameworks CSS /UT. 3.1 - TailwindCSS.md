@@ -758,7 +758,7 @@ Controla cómo se alinean los elementos a lo largo del eje transversal.
 </div>
 ```
 
-## 7.6 Envolver de elementos: flex-wrap
+## 7.6 Envolver elementos: flex-wrap
 Controla si los elementos dentro de un contenedor flex deben ser forzados a permanecer en una sola línea o pueden envolver a la siguiente línea.
 
 - `flex-wrap`: Permite que los elementos se envuelvan en múltiples líneas.
@@ -784,9 +784,7 @@ Alinea el contenido de un contenedor flex en el eje transversal cuando hay espac
   <div>Elemento 3</div>
 </div>
 ```
-
-## 7.8 Actividades.
-
+  
 # 8 - Grid.
 Para convertir un contenedor en un grid, se utiliza la clase `grid`. Esto permite organizar los elementos dentro de una cuadrícula.
 Toda la información sobre las utilidades de grid de Tailwind <a href="https://tailwindcss.com/docs/grid-template-columns">aquí</a>.  
@@ -948,9 +946,9 @@ Para definir el ancho de las celdas por columnas usaremos `raw-span-`.
 </div>
 ```
 ### Actividades:
-1. **Ejercicio 1**: Crear una cuadrícula de 3 columnas con un espacio uniforme de 16px entre los elementos.
-2. **Ejercicio 2**: Crear una cuadrícula de 2 filas y 2 columnas, centrando los elementos tanto vertical como horizontalmente.
-3. **Ejercicio 3**: Crear un layout responsivo que cambie de 1 columna a 2 y luego a 3 columnas en diferentes puntos de quiebre (`breakpoints`).
+**Ejercicio 1**: Crear una cuadrícula de 3 columnas con un espacio uniforme de 16px entre los elementos.
+**Ejercicio 2**: Crear una cuadrícula de 2 filas y 2 columnas, centrando los elementos tanto vertical como horizontalmente.
+**Ejercicio 3**: Crear un layout responsivo que cambie de 1 columna a 2 y luego a 3 columnas en diferentes puntos de quiebre (`breakpoints`).
 
 ---
 
