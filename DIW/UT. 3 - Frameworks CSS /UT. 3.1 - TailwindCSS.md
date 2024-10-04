@@ -565,7 +565,8 @@ Si deseamos ampliar una clase personalizada sin modificarla, usaremos la directi
 ```
 @layer components {
   .btn-1 {
-    @apply rounded-b-lg shadow-md;
+    @apply btn;
+      rounded-b-lg shadow-md;
   }
 }
 ```
