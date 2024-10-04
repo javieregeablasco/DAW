@@ -946,9 +946,9 @@ Para definir el ancho de las celdas por columnas usaremos `raw-span-`.
 </div>
 ```
 ### Actividades:
-**Ejercicio 1**: Crear una cuadrícula de 3 columnas con un espacio uniforme de 16px entre los elementos.
-**Ejercicio 2**: Crear una cuadrícula de 2 filas y 2 columnas, centrando los elementos tanto vertical como horizontalmente.
-**Ejercicio 3**: Crear un layout responsivo que cambie de 1 columna a 2 y luego a 3 columnas en diferentes puntos de quiebre (`breakpoints`).
+**Ejercicio 1**: Crear una cuadrícula de 3 columnas con un espacio uniforme de 16px entre los elementos.  
+**Ejercicio 2**: Crear una cuadrícula de 2 filas y 2 columnas, centrando los elementos tanto vertical como horizontalmente.  
+**Ejercicio 3**: Crear un layout responsivo que cambie de 1 columna a 2 y luego a 3 columnas en diferentes puntos de quiebre (`breakpoints`).  
 
 ---
 
