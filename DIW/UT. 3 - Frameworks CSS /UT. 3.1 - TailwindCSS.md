@@ -741,4 +741,142 @@ Alinea el contenido de un contenedor flex en el eje transversal cuando hay espac
 
 ## 7.8 Actividades.
 
+# 8 - Grid.
+Para convertir un contenedor en un grid, se utiliza la clase `grid`. Esto permite organizar los elementos dentro de una cuadrícula.
+Toda la información sobre las utilidades de grid de Tailwind <a href="https://tailwindcss.com/docs/grid-template-columns">aquí</a>.  
+
+Algunas de las propiedades más importantes para definir y gestionar la estructura de un Grid son:
+- grid: Define un contenedor como Grid.
+- grid-cols-: Establece el número de columnas.
+- grid-rows-: Establece el número de filas.
+- gap-: Controla el espaciado entre las celdas del Grid.
+
+**Ejemplo** 
+Para activar el Grid, se utiliza la clase `grid`.
+```
+html
+<div class="grid">
+  <div>Elemento 1</div>
+  <div>Elemento 2</div>
+  <div>Elemento 3</div>
+</div>
+```
+
+## 8.1 - Definir columnas: `grid-cols`
+El número de columnas de una cuadrícula se define con `grid-cols-n`, donde `n` es el número de columnas.
+**Ejemplos**
+- `grid-cols-1`: Una columna.
+- `grid-cols-2`: Dos columnas.
+- `grid-cols-3`: Tres columnas, y así sucesivamente.
+
+El HTML quedará de la siguiente manera.
+```
+<div class="grid grid-cols-3">
+  <div>Elemento 1</div>
+  <div>Elemento 2</div>
+  <div>Elemento 3</div>
+</div>
+```
+
+## 8.2 - Definir Filas: `grid-rows`
+Se define el número de filas de una cuadrícula con clases como `grid-rows-n`, donde `n` es el número de columnas.
+
+**Ejemplos**
+- `grid-rows-1`: Una fila.
+- `grid-rows-2`: Dos filas.
+
+```
+<div class="grid grid-rows-2">
+  <div>Elemento 1</div>
+  <div>Elemento 2</div>
+  <div>Elemento 3</div>
+</div>
+```
+## 8.3 - Diseño responsive con la clase `grid`.
+Para obtener un **diseño responsive** podemos utilizar `grid-cols-1` a `grid-cols-12` (define de 1 a 12 columnas de un grid) conjutamente con los `breakpoints` vistos en el aprtado #6.
+**Ejemplos**
+- sm:grid-cols-2,
+- md:grid-cols-4,
+- etc.:
+Con estos breakpoints, definiremos definiremos el número de columnas en función del tamaño del `viewport`, obteniendo un diseño responsive.
+
+## 8.4  - Espaciado entre elementos: `gap`
+Tailwind permite definir el espaciado entre filas y columnas con la propiedad `gap`.
+
+- `gap-{size}`: Define el espacio entre filas y columnas.
+- `gap-x-{size}`: Espacio horizontal entre columnas.
+- `gap-y-{size}`: Espacio vertical entre filas.
+
+**Ejemplo**  
+`gap-4` define un espacio uniforme de 1rem (16px).
+
+```
+<div class="grid grid-cols-3 gap-4">
+  <div>Elemento 1</div>
+  <div>Elemento 2</div>
+  <div>Elemento 3</div>
+</div>
+```
+
+## 8.5 - Alineación y Justificación de Contenido.
+Los elementos dentro de un grid se pueden alinear con:
+
+- **Justificar contenido horizontalmente (`justify-items`)**:
+  - `justify-items-start`: Alinea los elementos al inicio de la celda.
+  - `justify-items-center`: Centra los elementos dentro de la celda.
+  - `justify-items-end`: Alinea los elementos al final de la celda.
+
+- **Alinear contenido verticalmente (`items-start`, `items-center`, `items-end`)**:
+  - `items-start`: Alinea los elementos al inicio.
+  - `items-center`: Centra los elementos verticalmente.
+  - `items-end`: Alinea los elementos al final.
+
+**Ejemplo**
+```
+<div class="grid grid-cols-3 justify-items-center items-center">
+  <div>Elemento 1</div>
+  <div>Elemento 2</div>
+  <div>Elemento 3</div>
+</div>
+```
+
+## 8.6 - Tamaño de las columnas y de las filas
+El tamaño de las columnas y filas se define con `grid-col-[...]
+- `grid-cols-[auto]`: El tamaño de la columna se ajusta automáticamente al contenido.
+- `grid-cols-[fr]`: Asigna un tamaño flexible basado en la fracción disponible.
+- `grid-cols-[100px]`: Especifica un tamaño fijo.
+
+```html
+<div class="grid grid-cols-[100px,2fr,1fr] gap-4">
+  <div>Elemento 1</div>
+  <div>Elemento 2</div>
+  <div>Elemento 3</div>
+</div>
+```
+
+
+col-span-*`.
+
+#### 8. **Uso avanzado: Grid Template Areas**
+Tailwind no incluye soporte directo para `grid-template-areas`, pero se puede implementar con las clases `grid` junto con clases personalizadas si es necesario.
+
+---
+
+### Actividades:
+1. **Ejercicio 1**: Crear una cuadrícula de 3 columnas con un espacio uniforme de 16px entre los elementos.
+2. **Ejercicio 2**: Crear una cuadrícula de 2 filas y 2 columnas, centrando los elementos tanto vertical como horizontalmente.
+3. **Ejercicio 3**: Crear un layout responsivo que cambie de 1 columna a 2 y luego a 3 columnas en diferentes puntos de quiebre (`breakpoints`).
+
+---
+
+### Evaluación:
+- Desarrollar una página con un diseño basado en grid utilizando las clases de Tailwind vistas en esta unidad.
+- Explicar cómo se pueden usar `fr` y `gap` para crear una cuadrícula flexible.
+
+---
+
+Esta unidad proporcionará una comprensión completa de cómo gestionar layouts complejos utilizando las propiedades de grid en Tailwind CSS para obtener diseños eficientes y responsivos.
+
+
+
 
