@@ -569,6 +569,69 @@ Si deseamos ampliar una clase personalizada sin modificarla, usaremos la directi
   }
 }
 ```
+## 5.3 - Actividad #1 - Creación de un componente de personalizado.  
+1. Crea una clase personalizada llamada `card`.
+2. Utiliza las siguientes propiedades de tailwind:
+  - background-color: gray.100
+  - border-radius: md
+  - padding: 6
+  - box-shadow: lg  
+3. Utiliza en el HTML a continuación la clase card.
+```
+<div>
+  <h2">Tarjeta 1</h2>
+  <p>Esta es la tarjeta personalizada.</p>
+</div>
+```
+## 5.4 - Actividad #2 - Creación de un botón.
+1. Define una clase personalizada llamada `btn` que utilice `@layer components` para definir los estilos de un botón básico.
+2. Usa propiedades como `background-color`, `border-radius`, `padding`, y `box-shadow`.
+3. Luego, crea una nueva clase llamada `btn-primary` utilizando la directiva `@apply`, que extienda la clase `btn` y añada estilos adicionales, como un fondo de color más oscuro y un efecto `hover`.
+4. Utiliza ambas clases (`btn` y `btn-primary`) en tu archivo HTML para crear dos botones con estilos distintos.
+
+**Código ejemplo para el archivo CSS**:
+
+```css
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+  .btn {
+    background-color: theme('colors.gray.200');
+    border-radius: theme('borderRadius.lg');
+    padding: theme('spacing.4');
+    box-shadow: theme('boxShadow.md');
+  }
+
+  .btn-primary {
+    @apply btn;
+    background-color: theme('colors.blue.500');
+    color: white;
+    &:hover {
+      background-color: theme('colors.blue.700');
+    }
+  }
+}
+```
+
+**HTML:**
+
+```html
+<button class="btn">
+  Botón Secundario
+</button>
+
+<button class="btn-primary">
+  Botón Primario
+</button>
+```
+
+---
+
+Estos dos ejercicios te permitirán practicar la creación de clases personalizadas con `@layer components` y su reutilización usando la directiva `@apply` en Tailwind.
+
+
 
 # 6 - Responsive design.
 El **responsive design** (diseño responsivo) es un enfoque en el desarrollo web que busca crear páginas que se adapten de manera óptima a diferentes tamaños de pantalla y dispositivos.
@@ -643,7 +706,7 @@ Esto convierte al elemento en un contenedor flex, permitiendo que sus hijos sean
 
 Toda la información está disponible <a href="https://tailwindcss.com/docs/flex">aquí</a>
  
-## 7.1 Contenedor Flex: `flex`
+## 7.1 Contenedor Flex: flex
 ```
 <div class="flex">
   <div>Elemento 1</div>
@@ -652,7 +715,7 @@ Toda la información está disponible <a href="https://tailwindcss.com/docs/flex
 </div>
 ```
 
-## 7.2 Dirección de los elementos: `flex-direction`
+## 7.2 Dirección de los elementos: flex-direction
 Tailwind ofrece varias clases para definir la dirección de los elementos dentro de un contenedor flex.
 
 - `flex-row`: Elementos alineados en fila.
@@ -666,7 +729,7 @@ Tailwind ofrece varias clases para definir la dirección de los elementos dentro
 </div>
 ```
 
-## 7.3 Justificación de contenido: `justify-content`
+## 7.3 Justificación de contenido: justify-content
 Permite controlar cómo se distribuye el espacio entre los elementos a lo largo del eje principal.
 
 - `justify-start`: Los elementos se alinean al inicio.
@@ -683,7 +746,7 @@ Permite controlar cómo se distribuye el espacio entre los elementos a lo largo 
 </div>
 ```
 
-## 7.4 Alineación de elementos: `align-items`
+## 7.4 Alineación de elementos: align-items
 Controla cómo se alinean los elementos a lo largo del eje transversal.
 
 - `items-start`: Alinea los elementos al inicio.
@@ -699,7 +762,7 @@ Controla cómo se alinean los elementos a lo largo del eje transversal.
 </div>
 ```
 
-## 7.5 Tamaño de los elementos: `flex-grow`, `flex-shrink` y `flex-basis`
+## 7.5 Tamaño de los elementos: flex-grow, flex-shrink y flex-basis
 - `grow`: Hace que un elemento crezca para ocupar el espacio disponible.
 - `shrink`: Permite que los elementos se reduzcan en tamaño si es necesario.
 - `basis`: Define el tamaño inicial de un elemento.
@@ -712,7 +775,7 @@ Controla cómo se alinean los elementos a lo largo del eje transversal.
 </div>
 ```
 
-## 7.6 Envolver de elementos: `flex-wrap`
+## 7.6 Envolver de elementos: flex-wrap
 Controla si los elementos dentro de un contenedor flex deben ser forzados a permanecer en una sola línea o pueden envolver a la siguiente línea.
 
 - `flex-wrap`: Permite que los elementos se envuelvan en múltiples líneas.
@@ -726,7 +789,7 @@ Controla si los elementos dentro de un contenedor flex deben ser forzados a perm
 </div>
 ```
 
-## 7.7 Alineación del contenido del contenedor: `align-content`
+## 7.7 Alineación del contenido del contenedor: align-content
 Alinea el contenido de un contenedor flex en el eje transversal cuando hay espacio adicional.
 
 - `content-start`, `content-center`, `content-end`, `content-between`, `content-around`.
@@ -762,7 +825,7 @@ html
 </div>
 ```
 
-## 8.1 - Definir columnas: `grid-cols`
+## 8.1 - Definir columnas: grid-cols
 El número de columnas de una cuadrícula se define con `grid-cols-n`, donde `n` es el número de columnas.
 **Ejemplos**
 - `grid-cols-1`: Una columna.
@@ -778,7 +841,7 @@ El HTML quedará de la siguiente manera.
 </div>
 ```
 
-## 8.2 - Definir Filas: `grid-rows`
+## 8.2 - Definir Filas: grid-rows
 Se define el número de filas de una cuadrícula con clases como `grid-rows-n`, donde `n` es el número de columnas.
 
 **Ejemplos**
@@ -792,7 +855,7 @@ Se define el número de filas de una cuadrícula con clases como `grid-rows-n`, 
   <div>Elemento 3</div>
 </div>
 ```
-## 8.3 - Diseño responsive con la clase `grid`.
+## 8.3 - Diseño responsive con la clase grid.
 Para obtener un **diseño responsive** podemos utilizar `grid-cols-1` a `grid-cols-12` (define de 1 a 12 columnas de un grid) conjutamente con los `breakpoints` vistos en el aprtado #6.
 **Ejemplos**
 - sm:grid-cols-2,
@@ -800,7 +863,7 @@ Para obtener un **diseño responsive** podemos utilizar `grid-cols-1` a `grid-co
 - etc.:
 Con estos breakpoints, definiremos definiremos el número de columnas en función del tamaño del `viewport`, obteniendo un diseño responsive.
 
-## 8.4  - Espaciado entre elementos: `gap`
+## 8.4  - Espaciado entre elementos: gap.
 Tailwind permite definir el espaciado entre filas y columnas con la propiedad `gap`.
 
 - `gap-{size}`: Define el espacio entre filas y columnas.
@@ -821,12 +884,12 @@ Tailwind permite definir el espaciado entre filas y columnas con la propiedad `g
 ## 8.5 - Alineación y Justificación de Contenido.
 Los elementos dentro de un grid se pueden alinear con:
 
-- **Justificar contenido horizontalmente (`justify-items`)**:
+- **Justificar contenido horizontalmente justify-items**:
   - `justify-items-start`: Alinea los elementos al inicio de la celda.
   - `justify-items-center`: Centra los elementos dentro de la celda.
   - `justify-items-end`: Alinea los elementos al final de la celda.
 
-- **Alinear contenido verticalmente (`items-start`, `items-center`, `items-end`)**:
+- **Alinear contenido verticalmente items-start, items-center, items-end**:
   - `items-start`: Alinea los elementos al inicio.
   - `items-center`: Centra los elementos verticalmente.
   - `items-end`: Alinea los elementos al final.
@@ -881,29 +944,32 @@ Para definir el ancho de las celdas por columnas usaremos `col-span-*`.
 ```
 
 ### 8.7.2 - Amplitud de las celdas por filas.
-Para definir el ancho de las celdas por columnas usaremos `raw-span-*`. 
+Para definir el ancho de las celdas por columnas usaremos `raw-span-`.
 
-
-#### 8. **Uso avanzado: Grid Template Areas**
-Tailwind no incluye soporte directo para `grid-template-areas`, pero se puede implementar con las clases `grid` junto con clases personalizadas si es necesario.
-
----
-
+**Ejemplo**
+```
+<div class="bg-gray-300 m-2 p-2 border-2 border-black rounded-xl">
+   <div class="grid grid-cols-3 gap-4 m-1">
+     <div class="bg-red-500 rounded-md flex justify-center items-center h-10">01</div>
+     <div class="bg-red-500 rounded-md flex justify-center items-center h-10">02</div>
+     <div class="bg-red-500 rounded-md flex justify-center items-center h-10">03</div>
+     <div class="bg-red-900 rounded-md flex justify-center items-center h-auto row-span-3">04</div>
+     <div class="bg-red-500 rounded-md flex justify-center items-center h-10">05</div>
+     <div class="bg-red-900 rounded-md flex justify-center items-center h-auto row-span-2">06</div>
+     <div class="bg-red-500 rounded-md flex justify-center items-center h-10">07</div>
+     <div class="bg-red-900 rounded-md flex justify-center items-center h-auto row-span-2">08</div>
+     <div class="bg-red-500 rounded-md flex justify-center items-center h-10">09</div>
+     <div class="bg-red-500 rounded-md flex justify-center items-center h-10">10</div>
+     <div class="bg-red-500 rounded-md flex justify-center items-center h-10">11</div>
+  </div>
+</div>
+```
 ### Actividades:
 1. **Ejercicio 1**: Crear una cuadrícula de 3 columnas con un espacio uniforme de 16px entre los elementos.
 2. **Ejercicio 2**: Crear una cuadrícula de 2 filas y 2 columnas, centrando los elementos tanto vertical como horizontalmente.
 3. **Ejercicio 3**: Crear un layout responsivo que cambie de 1 columna a 2 y luego a 3 columnas en diferentes puntos de quiebre (`breakpoints`).
 
 ---
-
-### Evaluación:
-- Desarrollar una página con un diseño basado en grid utilizando las clases de Tailwind vistas en esta unidad.
-- Explicar cómo se pueden usar `fr` y `gap` para crear una cuadrícula flexible.
-
----
-
-Esta unidad proporcionará una comprensión completa de cómo gestionar layouts complejos utilizando las propiedades de grid en Tailwind CSS para obtener diseños eficientes y responsivos.
-
 
 
 
