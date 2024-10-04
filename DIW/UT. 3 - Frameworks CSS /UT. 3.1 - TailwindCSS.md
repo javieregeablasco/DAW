@@ -675,10 +675,12 @@ Para el ejemplo, al superar el `viewport` la resolución de 1000px, el fondo cam
 ## 6.3 - Ejercicio.
 1. Crear un componente que muestre un título y un párrafo que cambie de color y tamaño según el tamaño de la pantalla.
 2. Utilizar al menos tres breakpoints diferentes para modificar los estilos del texto y el contenedor.
-3. Crear un breakpoint personalizado xs: '475px'
+3. Crear un breakpoint personalizado x2l: '1200px'
 
+Contenido del HTML
 Título: Título Responsive
-Párrafo: Este párrafo cambia de tamaño y color según el breakpoint. 
+Párrafo 1: Este párrafo con breakpoints.
+Párrafo 2: Este párrafo con breakpoint personalizado.
 
 # 7 - Flexbox.
 Para activar el comportamiento de Flexbox en un contenedor, se utiliza la clase `flex` de Tailwind. 
