@@ -840,23 +840,49 @@ Los elementos dentro de un grid se pueden alinear con:
 </div>
 ```
 
-## 8.6 - Tamaño de las columnas y de las filas
+## 8.6 - Tamaño de las columnas y de las filas.
 El tamaño de las columnas y filas se define con `grid-col-[...]
 - `grid-cols-[auto]`: El tamaño de la columna se ajusta automáticamente al contenido.
 - `grid-cols-[fr]`: Asigna un tamaño flexible basado en la fracción disponible.
 - `grid-cols-[100px]`: Especifica un tamaño fijo.
+- `grid-cols-[10vw]`: Especifica un tamaño en función del viewport weight.
+- ...
 
 **Ejemplo**
 ```
-<div class="grid grid-cols-[100px,2fr,1fr] gap-4">
-  <div>Elemento 1</div>
-  <div>Elemento 2</div>
-  <div>Elemento 3</div>
+<div class="grid grid-cols-[150px,2vw,1fr] gap-4 m-4">
+  <div class="bg-slate-400 h-28 flex items-center justify-center">Elemento 1</div>
+  <div class="bg-blue-400 flex items-center justify-center">Elemento 2</div>
+  <div class="bg-red-400 flex items-center justify-center">Elemento 3</div>
 </div>
 ```
 
+## 8.7 - Amplitud de las celdas del grid.
+### 8.7.1 - Amplitud de las celdas por columnas.
+Para definir el ancho de las celdas por columnas usaremos `col-span-*`.  
 
-col-span-*`.
+**Ejemplo**
+```
+<div class="bg-gray-300 m-2 p-2 border-2 border-black rounded-xl">
+  <div class="grid grid-cols-3 gap-4 m-1">
+    <div class="bg-red-500 rounded-md flex justify-center items-center h-10">01</div>
+    <div class="bg-red-500 rounded-md flex justify-center items-center h-10">02</div>
+    <div class="bg-red-500 rounded-md flex justify-center items-center h-10">03</div>
+    <div class="bg-red-900 rounded-md flex justify-center items-center h-10 col-span-2">04</div>
+    <div class="bg-red-500 rounded-md flex justify-center items-center h-10">05</div>
+    <div class="bg-red-500 rounded-md flex justify-center items-center h-10">06</div>
+    <div class="bg-red-900 rounded-md flex justify-center items-center h-10 col-span-2">07</div>
+    <div class="bg-red-900 rounded-md flex justify-center items-center h-10 col-span-3">08</div>
+    <div class="bg-red-500 rounded-md flex justify-center items-center h-10">09</div>
+    <div class="bg-red-500 rounded-md flex justify-center items-center h-10">10</div>
+    <div class="bg-red-500 rounded-md flex justify-center items-center h-10">11</div>
+  </div>
+</html>
+```
+
+### 8.7.2 - Amplitud de las celdas por filas.
+Para definir el ancho de las celdas por columnas usaremos `raw-span-*`. 
+
 
 #### 8. **Uso avanzado: Grid Template Areas**
 Tailwind no incluye soporte directo para `grid-template-areas`, pero se puede implementar con las clases `grid` junto con clases personalizadas si es necesario.
