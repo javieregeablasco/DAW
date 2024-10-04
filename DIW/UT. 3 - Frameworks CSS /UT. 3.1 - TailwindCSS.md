@@ -590,10 +590,10 @@ Si deseamos ampliar una clase personalizada sin modificarla, usaremos la directi
   - border-radius: lg
   - padding: 4
   - box-shadow: md
-3. Define una clase `btn-primary` utilizando la directiva `@apply`, que extienda la clase `btn`.
+3. Define una clase `btn-primary` que extienda la clase `btn`con la directiva `@apply`.
 4. La clase `btn-primary` añade estilos adicionales:
-  - Estado primary: background-color: blue 500
-  - Estado hover: background-color: blue 700
+  - Estado primary: background-color: blue 500 y color de texto white.
+  - Estado hover: background-color: blue 900
 6. Utiliza las clases `btn` y `btn-primary` en el archivo HTML dado a continuación.
 
 ```
@@ -619,7 +619,7 @@ En Tailwind disponemos, por defecto, de los siguientes `break points`.
 | xl                | 1280px       | `@media (min-width: 1280px) { ... }`   |
 | 2xl               | 1536px       | `@media (min-width: 1536px) { ... }`   |
 
-## 6.1. - Responsive design con los breakpoints de Tailwind.
+## 6.1 - Responsive design con los breakpoints de Tailwind.
 Para incorporarlos a nuestras etiquetas bastará con escribir el nombre del breakpoint.  
 
 **Ejemplo:**  
@@ -643,7 +643,7 @@ Para incorporarlos a nuestras etiquetas bastará con escribir el nombre del brea
 </body>
 ```
 
-## 6.2. - Responsive design con breakpoints customizados.
+## 6.2 - Responsive design con breakpoints customizados.
 Para definir los nuevos breakpoint iremos al archivo `railwind.config.js`y lo editaremos.
 
 Por ejemplo para **añadir** un punto personalizado en 850px lo definiremos por clave-valor dentro de `theme` y luego `extend`.
@@ -672,6 +672,13 @@ Para el ejemplo, al superar el `viewport` la resolución de 1000px, el fondo cam
   </div>
 </body>
 ``` 
+## 6.3 - Ejercicio.
+1. Crear un componente que muestre un título y un párrafo que cambie de color y tamaño según el tamaño de la pantalla.
+2. Utilizar al menos tres breakpoints diferentes para modificar los estilos del texto y el contenedor.
+3. Crear un breakpoint personalizado xs: '475px'
+
+Título: Título Responsive
+Párrafo: Este párrafo cambia de tamaño y color según el breakpoint. 
 
 # 7 - Flexbox.
 Para activar el comportamiento de Flexbox en un contenedor, se utiliza la clase `flex` de Tailwind. 
