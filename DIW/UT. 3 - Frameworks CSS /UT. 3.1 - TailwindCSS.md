@@ -614,11 +614,11 @@ Toda la información sobre las herramientas de responsive design de Tailwind <a 
 En Tailwind disponemos, por defecto, de los siguientes `break points`. 
 | Breakpoint prefix | Minimum width | CSS                                      |
 |-------------------|---------------|------------------------------------------|
-| sm                | 640px        | `@media (min-width: 640px) { ... }`    |
-| md                | 768px        | `@media (min-width: 768px) { ... }`    |
-| lg                | 1024px       | `@media (min-width: 1024px) { ... }`   |
-| xl                | 1280px       | `@media (min-width: 1280px) { ... }`   |
-| 2xl               | 1536px       | `@media (min-width: 1536px) { ... }`   |
+| sm                | 640px        | @media (min-width: 640px) { ... }    |
+| md                | 768px        | @media (min-width: 768px) { ... }    |
+| lg                | 1024px       | @media (min-width: 1024px) { ... }   |
+| xl                | 1280px       | @media (min-width: 1280px) { ... }   |
+| 2xl               | 1536px       | @media (min-width: 1536px) { ... }   |
 
 ## 6.1 - Responsive design con los breakpoints de Tailwind.
 Para incorporarlos a nuestras etiquetas bastará con escribir el nombre del breakpoint.  
@@ -672,7 +672,23 @@ Para el ejemplo, al superar el `viewport` la resolución de 1000px, el fondo cam
     <p class="mt-4 text-center text-sm text-green-800 md:text-yellow-400 xl:text-green-900 puntonuevo:text-transparent">Contenido del párrafo con las explicaciones de la funcionalidad.</p>  
   </div>
 </body>
-``` 
+```
+
+**Nota**  
+Al reducir mucho la ventana vemos que el texto tiende a salirse de los contenedores.  
+Para evitar ese comportamiento, se pueden aplicar el layout de tailwind que controla el desbordamiento `overflow`.  
+Más información sobre overflow <a href="https://tailwindcss.com/docs/overflow">aquí</a>  
+Por ejemplo, añadiendo la propiedad `overflow-hidden` el texto ya no se saldrá de su contenedor, aunque ya no podremos leerlo.
+```
+div class="overflow-clip overflow- border-2 border-rose-700 p-6 w-1/4 mx-auto rounded-md mt-10 bg-indigo-300 xl:bg-cyan-200 md:bg-cyan-800">
+...
+```
+Si queremos mantener la información disponible podremos usar `overflow-x-auto`.
+```
+div class="overflow-x-auto overflow- border-2 border-rose-700 p-6 w-1/4 mx-auto rounded-md mt-10 bg-indigo-300 xl:bg-cyan-200 md:bg-cyan-800">
+...
+```
+
 ## 6.3 - Ejercicio.
 1. Crear un componente que muestre un título y un párrafo que cambie de color y tamaño según el tamaño de la pantalla.
 2. Utilizar al menos tres breakpoints diferentes para modificar los estilos del texto y el contenedor.
@@ -786,7 +802,7 @@ Alinea el contenido de un contenedor flex en el eje transversal cuando hay espac
 ```
   
 # 8 - Grid.
-Para convertir un contenedor en un grid, se utiliza la clase `grid`. Esto permite organizar los elementos dentro de una cuadrícula.
+Para convertir un contenedor en un grid, se utiliza la clase `grid`. Esto permite organizar los elementos dentro de una cuadrícula.  
 Toda la información sobre las utilidades de grid de Tailwind <a href="https://tailwindcss.com/docs/grid-template-columns">aquí</a>.  
 
 Algunas de las propiedades más importantes para definir y gestionar la estructura de un Grid son:
