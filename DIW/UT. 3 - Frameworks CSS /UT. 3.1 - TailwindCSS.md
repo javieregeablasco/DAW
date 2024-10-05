@@ -1070,3 +1070,68 @@ Este ejemplo convierte la imagen a tonos de gris.
   <img src="https://aguacatec.es/wp-content/uploads/2023/10/e5a978b8-6772-4c85-a50e-15581af7d483.png" alt="Placeholder Image" class="object-cover"> 
 </div>
 ```
+## 10 Transiciones y animaciones.
+Las transiciones son efectos visuales que permiten cambiar suavemente de un estado a otro.  
+En el contexto web, se utilizan para mejorar la experiencia del usuario (UX) y también acaparar su atención.
+
+## 10.1 Transiciones
+Para más información sobre las transiciones en Tailwind, consultar la documentacion oficial <a href="https://tailwindcss.com/docs/transition-property">aquí</a>.   
+**Clases de transiciones:**
+- `transition` – Activa la transición en un elemento.
+- `duration-...` – Define la duración de la transición (`duration-300` -> 300ms).
+- `ease-...` – Define la función de temporización de la transición (`ease-in`, `ease-out`, `ease-in-out`).
+
+**Ejemplo:**
+```
+<div class="bg-gray-200 flex items-center justify-center h-screen">
+  <button class="border-2 border-blue-950 p-4 rounded-full transition ease-in-out delay-150 bg-blue-500 
+    hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300
+    hover:border-indigo-950  ">
+    Guardar cambios
+  </button>
+</div>
+```
+## 10.2 Animaciones
+Las animaciones permiten crear efectos más complejos que las transiciones. Se basan en la modificación de propiedades CSS a lo largo del tiempo, como, por ejemplo, animar un elemento al ser cargado.  
+
+**Clases de animaciones**
+- Animaciones predefinidas: `animate-...`
+- Animaciones personalizadas: Se pueden definir en el archivo input.css utilizando `@keyframes`.  
+
+**Ejemplos:**
+```css
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+}
+```
+```html
+<div class="animate-bounce">¡Bouncing!</div>
+```
+
+### 5. Ejemplos de Uso
+1. **Transición de Color**: Un botón que cambia de color.
+2. **Animación de Carga**: Un ícono que rota al cargar.
+3. **Desvanecimiento**: Un texto que aparece y desaparece.
+
+### 6. Buenas Prácticas
+- Utiliza transiciones y animaciones con moderación para no distraer al usuario.
+- Asegúrate de que las animaciones no afecten la accesibilidad.
+- Proporciona alternativas para usuarios que deseen reducir el movimiento.
+
+### 7. Ejercicio Práctico
+Crea un pequeño proyecto donde implementes lo aprendido:
+1. Un botón con transición de color.
+2. Un ícono que rota al pasar el ratón.
+3. Un texto que aparece al hacer clic en un botón.
+
+## Conclusión
+Las transiciones y animaciones en Tailwind CSS son herramientas poderosas para mejorar la experiencia del usuario. Aprender a implementarlas correctamente puede hacer que tus interfaces sean más dinámicas y atractivas.
+
+---
+
+Esta unidad didáctica puede servir como base para un taller o curso sobre Tailwind CSS. Si necesitas más detalles o ejemplos específicos, ¡hazmelo saber!
