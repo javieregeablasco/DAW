@@ -1004,12 +1004,25 @@ Podemos ver los diferentes tipos de fusión cambiando la propiedad.
   </div>
 </body>
 ```
+**Ejemplo 2:**
+Sobreponiendo 2 imágenes.
+```
+<body class="bg-gray-300 h-screen">
+  <div class="flex items-center justify-center h-full relative">
+    <div class="absolute -translate-x-1/2 -translate-y-1/2 mix-blend-overlay w-80 h-80">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Red_x.svg" alt="Placeholder Image" class="object-cover w-full h-full">
+    </div>
+    <div class="absolute -translate-x-1/2 -translate-y-1/2 mix-blend-overlay w-80 h-80">
+      <img src="https://img.freepik.com/fotos-premium/imagen-fondo_910766-187.jpg?w=826" alt="Placeholder Image" class="object-cover w-full h-full">
+    </div>
+  </div>
+</body>
+```
+## 9.2 Blur (Desenfoque).
+El efecto *blur* permite desenfocar un elemento para crear una sensación de profundidad o para dirigir la atención a otras áreas de la interfaz.  
+Puede ser útil para fondos, encabezados o cuando se desea suavizar un área visual.
 
-
-### 2. **Blur (Desenfoque)**
-El efecto *blur* permite desenfocar un elemento para crear una sensación de profundidad o para dirigir la atención a otras áreas de la interfaz. Puede ser útil para fondos, encabezados o cuando se desea suavizar un área visual.
-
-#### Clases de Tailwind:
+**Clases de Tailwind:**
 - `blur-none`: Sin desenfoque.
 - `blur-sm`: Desenfoque leve.
 - `blur`: Desenfoque estándar.
@@ -1018,54 +1031,42 @@ El efecto *blur* permite desenfocar un elemento para crear una sensación de pro
 - `blur-xl`: Desenfoque extra grande.
 - `blur-2xl`: Desenfoque muy pronunciado.
 
-#### Ejemplo:
-```html
-<div class="blur-md bg-blue-500 p-4">
-  Texto desenfocado
+**Ejemplo:**
+```
+<div class="blur-md w-80 h-80">
+  <img src="https://aguacatec.es/wp-content/uploads/2023/10/e5a978b8-6772-4c85-a50e-15581af7d483.png" alt="Placeholder Image" class="object-cover"> 
 </div>
 ```
-Este div tiene un desenfoque medio que suaviza su contenido.
 
-### 3. **Brightness (Brillo)**
+## 9.3 Brightness (Brillo):
 El ajuste de brillo permite controlar la cantidad de luz o luminosidad aplicada a un elemento. Este efecto es útil para resaltar o atenuar imágenes y otros contenidos visuales.
 
-#### Clases de Tailwind:
+**Clases de Tailwind:**
 - `brightness-0`: Elimina el brillo (totalmente oscuro).
 - `brightness-50`: Reduce el brillo al 50%.
 - `brightness-100`: Brillo normal (por defecto).
 - `brightness-150`: Aumenta el brillo al 150%.
 - `brightness-200`: Duplica el brillo.
 
-#### Ejemplo:
-```html
-<img src="imagen.jpg" class="brightness-150" alt="Imagen con brillo aumentado">
+**Ejemplo:**
 ```
-Este ejemplo aumenta el brillo de una imagen al 150%.
-
-### 4. **Grayscale (Escala de grises)**
-El efecto de escala de grises convierte un elemento (generalmente imágenes) en una versión monocromática, eliminando los colores y presentando solo tonos de gris. Es útil para reducir la saturación visual o para imágenes en segundo plano.
-
-#### Clases de Tailwind:
-- `grayscale-0`: Sin efecto de escala de grises (color normal).
-- `grayscale`: Convierte el elemento completamente en escala de grises.
-
-#### Ejemplo:
-```html
-<img src="imagen.jpg" class="grayscale" alt="Imagen en escala de grises">
+<div class="brightness-150 w-80 h-80">
+  <img src="https://aguacatec.es/wp-content/uploads/2023/10/e5a978b8-6772-4c85-a50e-15581af7d483.png" alt="Placeholder Image" class="object-cover"> 
+</div>
 ```
-Este ejemplo convierte la imagen completamente en tonos de gris.
 
-### Conclusión
-Los efectos visuales como *blend*, *blur*, *brightness* y *grayscale* en Tailwind CSS ofrecen herramientas poderosas para mejorar la experiencia visual de los usuarios. Estos efectos permiten jugar con la percepción de los elementos y crear diseños más atractivos sin comprometer el rendimiento o la complejidad del código.
+## 9.4 Grayscale (Escala de grises)
+Convierte un elemento en una versión monocromática, eliminando los colores y presentando solo tonos de gris.  
+Es útil para reducir la saturación visual o para imágenes en segundo plano.  
 
-### Ejercicios Prácticos:
-1. Aplica un efecto de *blur* grande a un fondo y un modo de fusión *multiply* a una imagen superpuesta.
-2. Experimenta con el brillo y la escala de grises en una galería de imágenes para generar una interfaz dinámica que cambie al interactuar con el usuario.
-3. Crea un efecto de desenfoque al pasar el ratón sobre un botón utilizando `hover:blur`.
+**Clases de Tailwind:**  
+- `grayscale-0`: Sin efecto de escala de grises (color normal).  
+- `grayscale`: Convierte el elemento completamente en escala de grises.  
 
-#### Recursos adicionales:
-- [Documentación oficial de Tailwind CSS: Efectos](https://tailwindcss.com/docs)
-
-
-
-
+**Ejemplo:**  
+Este ejemplo convierte la imagen a tonos de gris.  
+```
+<div class="grayscale w-80 h-80 mb-10">
+  <img src="https://aguacatec.es/wp-content/uploads/2023/10/e5a978b8-6772-4c85-a50e-15581af7d483.png" alt="Placeholder Image" class="object-cover"> 
+</div>
+```
