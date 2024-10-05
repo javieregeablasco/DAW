@@ -972,7 +972,90 @@ Para definir el ancho de las celdas por columnas usaremos `raw-span-`.
 >**Actividad 3**  
 >Crear un layout responsivo que cambie de 1 columna a 2 y luego a 3 columnas en diferentes puntos de quiebre (`breakpoints`).  
 
----
+# 9 - Efectos.  
+Tailwind CSS ofrece una variedad de efectos visuales que permiten modificar la apariencia de los elementos sin necesidad de utilizar código personalizado.  
+Toda la información sobre efectos en Tailwind <a href="https://tailwindcss.com/docs/box-shadow">aquí</a>.
+
+## 9.1 Blend.
+Los modos de fusión o *blend modes* permiten controlar cómo se combinan los colores de un elemento con su fondo.  
+Estos efectos son útiles para aplicar interacciones visuales dinámicas, como solapar imágenes o capas de color.
+
+**Clases de Tailwind:**
+- `mix-blend-normal`: Comportamiento por defecto.
+- `mix-blend-multiply`: Multiplica los colores del elemento y su fondo.
+- `mix-blend-screen`: Inversa del modo *multiply*.
+- `mix-blend-overlay`: Combina el modo *multiply* y *screen*.
+- `mix-blend-darken`: Selecciona los píxeles más oscuros.
+- `mix-blend-lighten`: Selecciona los píxeles más claros.
+
+#### Ejemplo:
+```html
+<div class="mix-blend-overlay bg-red-500">
+  <img src="imagen.jpg" alt="imagen">
+</div>
+```
+Este ejemplo superpone una imagen con una capa roja que utiliza el modo de fusión `overlay`.
+
+### 2. **Blur (Desenfoque)**
+El efecto *blur* permite desenfocar un elemento para crear una sensación de profundidad o para dirigir la atención a otras áreas de la interfaz. Puede ser útil para fondos, encabezados o cuando se desea suavizar un área visual.
+
+#### Clases de Tailwind:
+- `blur-none`: Sin desenfoque.
+- `blur-sm`: Desenfoque leve.
+- `blur`: Desenfoque estándar.
+- `blur-md`: Desenfoque medio.
+- `blur-lg`: Desenfoque grande.
+- `blur-xl`: Desenfoque extra grande.
+- `blur-2xl`: Desenfoque muy pronunciado.
+
+#### Ejemplo:
+```html
+<div class="blur-md bg-blue-500 p-4">
+  Texto desenfocado
+</div>
+```
+Este div tiene un desenfoque medio que suaviza su contenido.
+
+### 3. **Brightness (Brillo)**
+El ajuste de brillo permite controlar la cantidad de luz o luminosidad aplicada a un elemento. Este efecto es útil para resaltar o atenuar imágenes y otros contenidos visuales.
+
+#### Clases de Tailwind:
+- `brightness-0`: Elimina el brillo (totalmente oscuro).
+- `brightness-50`: Reduce el brillo al 50%.
+- `brightness-100`: Brillo normal (por defecto).
+- `brightness-150`: Aumenta el brillo al 150%.
+- `brightness-200`: Duplica el brillo.
+
+#### Ejemplo:
+```html
+<img src="imagen.jpg" class="brightness-150" alt="Imagen con brillo aumentado">
+```
+Este ejemplo aumenta el brillo de una imagen al 150%.
+
+### 4. **Grayscale (Escala de grises)**
+El efecto de escala de grises convierte un elemento (generalmente imágenes) en una versión monocromática, eliminando los colores y presentando solo tonos de gris. Es útil para reducir la saturación visual o para imágenes en segundo plano.
+
+#### Clases de Tailwind:
+- `grayscale-0`: Sin efecto de escala de grises (color normal).
+- `grayscale`: Convierte el elemento completamente en escala de grises.
+
+#### Ejemplo:
+```html
+<img src="imagen.jpg" class="grayscale" alt="Imagen en escala de grises">
+```
+Este ejemplo convierte la imagen completamente en tonos de gris.
+
+### Conclusión
+Los efectos visuales como *blend*, *blur*, *brightness* y *grayscale* en Tailwind CSS ofrecen herramientas poderosas para mejorar la experiencia visual de los usuarios. Estos efectos permiten jugar con la percepción de los elementos y crear diseños más atractivos sin comprometer el rendimiento o la complejidad del código.
+
+### Ejercicios Prácticos:
+1. Aplica un efecto de *blur* grande a un fondo y un modo de fusión *multiply* a una imagen superpuesta.
+2. Experimenta con el brillo y la escala de grises en una galería de imágenes para generar una interfaz dinámica que cambie al interactuar con el usuario.
+3. Crea un efecto de desenfoque al pasar el ratón sobre un botón utilizando `hover:blur`.
+
+#### Recursos adicionales:
+- [Documentación oficial de Tailwind CSS: Efectos](https://tailwindcss.com/docs)
+
 
 
 
