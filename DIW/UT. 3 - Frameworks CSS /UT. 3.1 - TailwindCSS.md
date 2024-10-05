@@ -1149,6 +1149,7 @@ Cargando...
 - Proporcionar alternativas para usuarios que deseen reducir el movimiento.
 
 ## 10.4 Enlaces de interés
+La mayoría de las animaciones son de pago pero al menos, podemos ver multitud de ejemplos de animación, con las clases de Tailwind. 
 <a href="https://tw-elements.com/docs/standard/content-styles/animations/">Tailwind Animations</a>
 
 ## 10.5 Ejercicios
