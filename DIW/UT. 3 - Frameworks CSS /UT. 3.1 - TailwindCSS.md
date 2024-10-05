@@ -988,7 +988,7 @@ Estos efectos son útiles para aplicar interacciones visuales dinámicas, como s
 - `mix-blend-darken`: Selecciona los píxeles más oscuros.
 - `mix-blend-lighten`: Selecciona los píxeles más claros.
 
-**Ejemplo 1:**
+**Ejemplo 1:**  
 Este ejemplo superpone 2 circulos.  
 Podemos ver los diferentes tipos de fusión cambiando la propiedad. 
 ```
@@ -1004,7 +1004,7 @@ Podemos ver los diferentes tipos de fusión cambiando la propiedad.
   </div>
 </body>
 ```
-**Ejemplo 2:**
+**Ejemplo 2:**  
 Sobreponiendo 2 imágenes.
 ```
 <body class="bg-gray-300 h-screen">
