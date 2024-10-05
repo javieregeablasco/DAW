@@ -1127,7 +1127,7 @@ Cargando...
 </button>
 ```  
 
-- **Cargando usando calses de posicionamiento:**
+- **Cargando usando clases de posicionamiento:**
 ```
 <div class="relative bg-slate-600 m-4 p-4">
   <button class="bg-blue-500 text-white p-3 rounded-md border-2 border-cyan-900 flex items-center m-4">
@@ -1143,14 +1143,16 @@ Cargando...
 </div>
 ```
 
+## 10.3 Buenas Prácticas
+- Utilizar transiciones y animaciones con moderación para no distraer al usuario.
+- Asegúrarse de que las animaciones no afecten la accesibilidad.
+- Proporcionar alternativas para usuarios que deseen reducir el movimiento.
 
-### 6. Buenas Prácticas
-- Utiliza transiciones y animaciones con moderación para no distraer al usuario.
-- Asegúrate de que las animaciones no afecten la accesibilidad.
-- Proporciona alternativas para usuarios que deseen reducir el movimiento.
+## 10.4 Enlaces de interés
+<a href="https://tw-elements.com/docs/standard/content-styles/animations/">Tailwind Animations</a>
 
-### 7. Ejercicio Práctico
-Crea un pequeño proyecto donde implementes lo aprendido:
+## 10.5 Ejercicios
+Crear un proyecto donde se utiliza:
 1. Un botón con transición de color.
 2. Un ícono que rota al pasar el ratón.
 3. Un texto que aparece al hacer clic en un botón.
