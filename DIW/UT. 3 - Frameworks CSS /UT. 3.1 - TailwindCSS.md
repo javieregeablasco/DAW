@@ -988,13 +988,23 @@ Estos efectos son útiles para aplicar interacciones visuales dinámicas, como s
 - `mix-blend-darken`: Selecciona los píxeles más oscuros.
 - `mix-blend-lighten`: Selecciona los píxeles más claros.
 
-#### Ejemplo:
-```html
-<div class="mix-blend-overlay bg-red-500">
-  <img src="imagen.jpg" alt="imagen">
-</div>
+**Ejemplo 1:**
+Este ejemplo superpone 2 circulos.  
+Podemos ver los diferentes tipos de fusión cambiando la propiedad. 
 ```
-Este ejemplo superpone una imagen con una capa roja que utiliza el modo de fusión `overlay`.
+<body>
+  <div class="flex justify-center -space-x-14 m-4 ">
+    <div class="mix-blend-normal bg-blue-400 rounded-full text-8xl text-transparent">xx</div>
+    <div class="mix-blend-normal bg-pink-400 rounded-full text-8xl text-transparent">yy</div>
+  </div>
+      
+  <div class="flex justify-center -space-x-14 m-4">
+    <div class="mix-blend-multiply bg-blue-400 rounded-full text-8xl text-transparent">xx</div>
+    <div class="mix-blend-multiply bg-pink-400 rounded-full text-8xl text-transparent">yy</div>
+  </div>
+</body>
+```
+
 
 ### 2. **Blur (Desenfoque)**
 El efecto *blur* permite desenfocar un elemento para crear una sensación de profundidad o para dirigir la atención a otras áreas de la interfaz. Puede ser útil para fondos, encabezados o cuando se desea suavizar un área visual.
