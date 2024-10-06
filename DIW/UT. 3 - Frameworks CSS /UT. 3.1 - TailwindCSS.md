@@ -1161,8 +1161,10 @@ Crear un proyecto donde se utiliza:
 # 11 Conceptos centrales (core concepts) de Tailwind.  
 Tailwind CSS es un framework flexible, basado en un enfoque de **utility-first**. Para aprovecharlo al máximo, es necesario entender los "core concepts".  
 Ya hemos utilizado algunos de ellos (pseudo clases, media queries, ...) y en este cápitulo los iremos describiendo para entenderlos mejor y saber utilizarlos correctamente.   
-# 11.1 Pseudo Clases  
--  Las **pseudo clases hover, focus y active** permiten aplicar estilos cuando un elemento se encuentra en un estado específico.  
+# 11.1 Pseudo Clases 
+Más información sobre pseudo clases <a href="https://tailwindcss.com/docs/hover-focus-and-other-states#pseudo-classes">aquí</a>.  
+-  Las **pseudo clases hover, focus y active** permiten aplicar estilos cuando un elemento se encuentra en un estado específico.
+
 **`:hover`**: Aplica estilos cuando el usuario pasa el ratón sobre un elemento.
   ```
   <button class="bg-blue-500 hover:bg-blue-700 text-white">
@@ -1219,8 +1221,8 @@ Si pintamos el código siguiente, veremos que el `padding p-6` de la linea 3 `<u
     </ul>
   </div>
 </div>
-```  **
-Para solucionarlo rápidamente podremos aplicar la regla de **padding 0 al primer y último hijo** con `first:pt-0 last:pb-0`
+```  
+Para solucionarlo rápidamente podremos aplicar la regla de **padding 0 al primer y último hijo de la lista** con `first:pt-0 last:pb-0`  
 El código quedará de la siguiente manera:
 ```
 <div class="rounded-lg border-2 m-1 border-yellow-400">
@@ -1228,9 +1230,6 @@ El código quedará de la siguiente manera:
     <ul class="p-6 divide-y divide-slate-200 first:pt-0 last:pb-0">
 ...
 ```
-
-
-
 Más pseudo clases: `:focus-within`, `:disabled`, `:checked`, entre otras.  
 ## 11.2 Pseudo Elementos en Tailwind
 Los **pseudo elementos** permiten aplicar estilos a una parte específica de un elemento, como el primer carácter o una sección creada dinámicamente.   
