@@ -1157,3 +1157,118 @@ Crear un proyecto donde se utiliza:
 1. Un botón con transición de color.
 2. Un ícono que rota al pasar el ratón.
 3. Un texto que aparece al hacer clic en un botón.
+
+# 11 Conceptos centrales (core concepts) de Tailwind.  
+Tailwind CSS es un framework flexible, basado en un enfoque de **utility-first**. Para aprovecharlo al máximo, es necesario entender los "core concepts".  
+Ya hemos utilizado algunos de ellos (pseudo clases, media queries, ...) y en este cápitulo los iremos describiendo para entenderlos mejor y saber utilizarlos correctamente.   
+# 11.1 Pseudo Clases  
+-  Las **pseudo clases hover, focus y active** permiten aplicar estilos cuando un elemento se encuentra en un estado específico.  
+**`:hover`**: Aplica estilos cuando el usuario pasa el ratón sobre un elemento.
+  ```
+  <button class="bg-blue-500 hover:bg-blue-700 text-white">
+    Hover sobre mí
+  </button>
+  ```
+
+**`:focus`**: Aplica estilos cuando un elemento recibe el foco, generalmente al aparecer en pantalla después de un scroll.
+  ```
+  <input class="border focus:border-blue-500" type="text">
+  ```
+
+**`:active`**: Aplica estilos cuando un elemento está siendo activamente clicado.
+  ```
+  <button class="bg-gray-500 active:bg-gray-700 text-white">
+    Activo
+  </button>
+  ```
+-  Las **pseudo clases first, last, odd y even** permiten aplicar estilos a los hijos de un contenedor padre, dependiendo del orden.   
+#### Ejemplo:
+
+
+Tailwind tiene soporte para una variedad de pseudo clases, como `:focus-within`, `:disabled`, `:checked`, entre otras.
+
+#### Ejemplo:
+```
+<button class="bg-blue-500 hover:bg-blue-700 active:bg-red-500 focus:outline-none">
+  Interactúa conmigo
+</button>
+```
+
+---
+
+### 2. Pseudo Elementos en Tailwind
+
+Los **pseudo elementos** permiten aplicar estilos a una parte específica de un elemento, como el primer carácter o una sección creada dinámicamente. Aunque Tailwind no incluye soporte directo para pseudo elementos como `::before` y `::after`, se pueden combinar con el uso de clases personalizadas.
+
+Ejemplo con pseudo elementos en CSS:
+```css
+.button::before {
+  content: "🔥";
+  margin-right: 5px;
+}
+```
+
+Para usar pseudo elementos en Tailwind, necesitarás personalizar tu configuración o añadir reglas CSS externas.
+
+---
+
+### 3. Media Queries en Tailwind
+
+Las **media queries** permiten aplicar estilos en función del tamaño de la pantalla o características del dispositivo. Tailwind proporciona un sistema basado en las siguientes *breakpoints* predeterminadas:
+
+- **sm**: Mínimo 640px
+- **md**: Mínimo 768px
+- **lg**: Mínimo 1024px
+- **xl**: Mínimo 1280px
+- **2xl**: Mínimo 1536px
+
+#### Ejemplo de uso de media queries en Tailwind:
+```html
+<div class="bg-gray-200 p-4 sm:bg-red-200 md:bg-blue-200 lg:bg-green-200">
+  Este div cambia de color según el tamaño de la pantalla.
+</div>
+```
+
+En este ejemplo, el color de fondo cambia dependiendo del tamaño de la pantalla: rojo para dispositivos pequeños, azul para medianos, y verde para grandes.
+
+---
+
+### 4. Feature Queries en Tailwind
+
+Las **feature queries** permiten aplicar estilos en función de si el navegador soporta una determinada característica CSS. Si bien Tailwind no proporciona un soporte directo para esto dentro de sus utilidades predeterminadas, puedes implementar feature queries con código CSS personalizado.
+
+Ejemplo de feature queries en CSS:
+```css
+@supports (display: grid) {
+  .grid-enabled {
+    display: grid;
+  }
+}
+```
+
+---
+
+### 5. Selectores de Atributos en Tailwind
+
+Los **selectores de atributos** permiten aplicar estilos a los elementos que contienen un atributo específico. Aunque Tailwind no tiene selectores de atributos predeterminados, puedes usarlos dentro de tus hojas de estilo personalizadas junto con las clases de Tailwind.
+
+Ejemplo de selectores de atributos en CSS:
+```css
+input[type="text"] {
+  border: 2px solid blue;
+}
+```
+
+Este código aplicará un borde azul a cualquier campo `input` con el atributo `type="text"`. Para personalizar aún más, puedes combinar esto con utilidades de Tailwind.
+
+---
+
+### Conclusión
+
+Comprender cómo funcionan las pseudo clases, pseudo elementos, media queries, feature queries y selectores de atributos en Tailwind te permitirá crear interfaces de usuario más dinámicas y adaptables. Aunque algunos de estos conceptos, como los pseudo elementos y las feature queries, requieren personalización adicional en Tailwind, su integración te proporciona un control total sobre los estilos de tus componentes.
+
+Con estos fundamentos, puedes empezar a explorar cómo optimizar tu flujo de trabajo y escribir CSS de manera más eficiente usando Tailwind CSS.
+
+
+
+
