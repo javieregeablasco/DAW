@@ -1376,4 +1376,132 @@ input[type="text"] {
    ...
    @config "./tailwind.admin.config.js";
    ```
+
+### 11.6.2 Funciones
+
+### Unidad Didáctica: Funciones `theme()` y `screen()` en Tailwind CSS
+
+#### Introducción
+Tailwind CSS es un framework altamente configurable que permite personalizar muchos aspectos de los estilos de una página web. Entre las herramientas más potentes para la personalización se encuentran las funciones `theme()` y `screen()`. En esta unidad didáctica, exploraremos qué son estas funciones y cómo se pueden utilizar para mejorar la personalización y la respuesta a diferentes tamaños de pantalla en tus proyectos.
+
+---
+
+### 1. Función `theme()`
+
+#### 1.1. ¿Qué es la función `theme()`?
+
+La función `theme()` en Tailwind se utiliza para acceder a los valores definidos en la configuración del tema dentro del archivo `tailwind.config.js`. Esto incluye colores, fuentes, espacios, sombras, entre otros. Utilizando `theme()`, puedes reutilizar estos valores dentro de tus estilos personalizados, ya sea en clases de utilidades o en archivos CSS personalizados, como el que estás utilizando en tu proyecto, `input.css`.
+
+#### 1.2. Sintaxis de `theme()`
+
+```css
+@import 'tailwindcss/utilities';
+
+.my-class {
+  padding: theme('spacing.4');
+  color: theme('colors.red.500');
+}
+```
+
+En este ejemplo:
+- `theme('spacing.4')` accede al valor de espaciado definido en la configuración del tema bajo `spacing.4`.
+- `theme('colors.red.500')` accede al color rojo con la intensidad 500 desde la paleta de colores.
+
+#### 1.3. Ventajas de usar `theme()`
+- **Consistencia**: Asegura que los valores utilizados en las personalizaciones coincidan exactamente con los definidos en el tema global.
+- **Facilidad de mantenimiento**: Si cambias un valor en la configuración del tema, todos los lugares donde se use `theme()` se actualizarán automáticamente.
+
+#### 1.4. Ejemplo práctico
+
+```css
+/* Archivo input.css */
+.card {
+  padding: theme('spacing.6');
+  background-color: theme('colors.blue.100');
+  border-radius: theme('borderRadius.lg');
+}
+```
+En este caso, la clase `card` aplicará un padding, un color de fondo y un borde redondeado basados en los valores configurados globalmente en Tailwind.
+
+---
+
+### 2. Función `screen()`
+
+#### 2.1. ¿Qué es la función `screen()`?
+
+La función `screen()` se utiliza para aplicar estilos basados en los puntos de corte o "breakpoints" definidos en el sistema de diseño responsive de Tailwind. Permite que los estilos sean reactivos según el tamaño de la pantalla, garantizando que tu diseño sea adaptable y optimizado para diferentes dispositivos.
+
+#### 2.2. Sintaxis de `screen()`
+
+```css
+@media (min-width: theme('screens.md')) {
+  .example {
+    font-size: 1.25rem;
+  }
+}
+```
+
+En este ejemplo, `theme('screens.md')` accede al valor del punto de corte definido para pantallas medianas (como tablets).
+
+#### 2.3. Ventajas de usar `screen()`
+- **Adaptabilidad**: Permite un diseño fluido que responde al tamaño de la pantalla.
+- **Simplificación**: Tailwind ya define un conjunto de breakpoints, por lo que no necesitas definir manualmente las resoluciones para distintos dispositivos.
+
+#### 2.4. Ejemplo práctico
+
+```css
+/* Archivo input.css */
+@media (min-width: theme('screens.lg')) {
+  .header {
+    padding: theme('spacing.8');
+    font-size: theme('fontSize.xl');
+  }
+}
+```
+Aquí, la clase `header` aplicará un mayor padding y un tamaño de fuente más grande solo en pantallas de tamaño "large" o superior.
+
+---
+
+### 3. Configuración personalizada en `tailwind.config.js`
+
+Ambas funciones, `theme()` y `screen()`, dependen de la configuración en el archivo `tailwind.config.js`. Aquí es donde puedes definir tus propios valores de colores, espacios, puntos de corte, etc.
+
+#### 3.1. Ejemplo de archivo `tailwind.config.js`
+
+```js
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        customBlue: '#1DA1F2',
+      },
+      spacing: {
+        '72': '18rem',
+      },
+      screens: {
+        '3xl': '1600px',
+      },
+    },
+  },
+};
+```
+
+En este ejemplo:
+- Se agrega un nuevo color llamado `customBlue`.
+- Se define un nuevo valor de espaciado `72` (18rem).
+- Se agrega un punto de corte adicional `3xl` para pantallas de al menos 1600px de ancho.
+
+---
+
+### 4. Conclusión
+
+Las funciones `theme()` y `screen()` son herramientas esenciales para crear estilos personalizados y responsivos en Tailwind CSS. Te permiten aprovechar al máximo la configuración del tema, asegurando consistencia y adaptabilidad a diferentes tamaños de pantalla. Implementar estas funciones en tus proyectos te ahorrará tiempo y esfuerzo, además de mejorar la coherencia visual de tus aplicaciones web.
+
+---
+
+#### Ejercicio práctico:
+- Implementa una clase personalizada usando `theme()` para aplicar un padding y un color de fondo definidos en tu configuración de Tailwind.
+- Crea una regla de media query usando `screen()` que cambie el diseño de una tarjeta (`card`) cuando la pantalla sea mayor a `1024px`.
+
+¿Tienes alguna pregunta o quieres profundizar en algún aspecto de estas funciones?
    
