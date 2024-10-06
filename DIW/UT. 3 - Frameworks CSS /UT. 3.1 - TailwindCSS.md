@@ -1183,11 +1183,54 @@ Ya hemos utilizado algunos de ellos (pseudo clases, media queries, ...) y en est
   ```
 -  Las **pseudo clases first, last, odd y even** permiten aplicar estilos a los hijos de un contenedor padre, dependiendo del orden.   
 #### Ejemplo:
+Si pintamos el código siguiente, veremos que el `padding p-6` de la linea 3 `<ul class="p-6 divide-y divide-slate-200">` tiene como consecuencia un descuadre vertical de la lista.
 ```
-<button class="bg-blue-500 hover:bg-blue-700 active:bg-red-500 focus:transition-shadow delay-1000 rounded-md p-2 border-red-300 border-4 ">
-Botón
-</button>
+<div class="rounded-lg border-2 m-1 border-yellow-400">
+  <div class="bg-slate-700 rounded-md">
+    <ul class="p-6 divide-y divide-slate-200">
+      <li class="flex py-4 items-center">
+        <img class="h-20 w-20 rounded-full" src="https://tenimage.es/wp-content/uploads/2014/10/Fotolia_hexagonal.jpg" alt="Kristen Ramos" />
+        <div class="ml-3">
+          <p class="text-sm font-medium text-yellow-50">Kristen Ramos</p>
+          <p class="text-sm text-indigo-300 truncate">kristen.ramos@example.com</p>
+        </div>
+      </li>
+      <li class="flex py-4 items-center">
+        <img class="h-20 w-20 rounded-full" src="https://tenimage.es/wp-content/uploads/2014/10/Fotolia_triangular.jpg" alt="Floyd Miles" />
+        <div class="ml-3">
+          <p class="text-sm font-medium text-yellow-50">Floyd Miles</p>
+          <p class="text-sm text-indigo-300 truncate">floyd.miles@example.com</p>
+        </div>
+      </li>
+      <li class="flex py-4 items-center">
+        <img class="h-20 w-20 rounded-full" src="https://tenimage.es/wp-content/uploads/2014/10/Fotolia_rectangular.jpg" alt="Courtney Henry" />
+        <div class="ml-3">
+          <p class="text-sm font-medium text-yellow-50">Courtney Henry</p>
+          <p class="text-sm text-indigo-300 truncate">courtney.henry@example.com</p>
+        </div>
+      </li>
+      <li class="flex py-4 items-center">
+        <img class="h-20 w-20 rounded-full" src="https://tenimage.es/wp-content/uploads/2014/10/Fotolia_alargado.jpg" alt="Ted Fox" />
+        <div class="ml-3">
+          <p class="text-sm font-medium text-yellow-50">Ted Fox</p>
+          <p class="text-sm text-indigo-300 truncate">ted.fox@example.com</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+```  **
+Para solucionarlo rápidamente podremos aplicar la regla de **padding 0 al primer y último hijo** con `first:pt-0 last:pb-0`
+El código quedará de la siguiente manera:
 ```
+<div class="rounded-lg border-2 m-1 border-yellow-400">
+  <div class="bg-slate-700 rounded-md">
+    <ul class="p-6 divide-y divide-slate-200 first:pt-0 last:pb-0">
+...
+```
+
+
+
 Más pseudo clases: `:focus-within`, `:disabled`, `:checked`, entre otras.  
 ## 11.2 Pseudo Elementos en Tailwind
 Los **pseudo elementos** permiten aplicar estilos a una parte específica de un elemento, como el primer carácter o una sección creada dinámicamente.   
