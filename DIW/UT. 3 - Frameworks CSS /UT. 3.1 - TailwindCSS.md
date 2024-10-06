@@ -1207,12 +1207,14 @@ Para usar pseudo elementos en Tailwind, necesitarás personalizar tu configuraci
 
 ## 11.3 Media Queries  
 Las **media queries** permiten aplicar estilos en función del tamaño de la pantalla o características del dispositivo. 
-Ya lo vimos en detalle en el capítulo `Responsive`
-- **sm**: Mínimo 640px
-- **md**: Mínimo 768px
-- **lg**: Mínimo 1024px
-- **xl**: Mínimo 1280px
-- **2xl**: Mínimo 1536px
+Ya lo hemos visto en detalle en `6 - Responsive design`.
+Como recordatorio tenemos los siguientes breakpoints predefinidos a los cuales podemos añadir otros mediante personalización. 
+- **sm** - 640px	@media (min-width: 640px)
+- **md** -	768px	@media (min-width: 768px)
+- **lg** -	1024px	@media (min-width: 1024px)
+- **xl**	- 1280px	@media (min-width: 1280px)
+- **2xl** -	1536px	@media (min-width: 1536px)
+
 
 #### Ejemplo de uso de media queries en Tailwind:
 ```html
