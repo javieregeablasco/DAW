@@ -1378,23 +1378,14 @@ input[type="text"] {
    ```
 
 ### 11.6.2 Funciones
+Entre las herramientas más potentes para la personalización se encuentran las funciones `theme()` y `screen()`.  
 
-### Unidad Didáctica: Funciones `theme()` y `screen()` en Tailwind CSS
+-  **Función theme()**
+La función `theme()` se utiliza para acceder a los valores definidos en la configuración del `theme` (tema) dentro del archivo `tailwind.config.js`.  
+Esto incluye colores, fuentes, espacios, sombras, entre otros. 
 
-#### Introducción
-Tailwind CSS es un framework altamente configurable que permite personalizar muchos aspectos de los estilos de una página web. Entre las herramientas más potentes para la personalización se encuentran las funciones `theme()` y `screen()`. En esta unidad didáctica, exploraremos qué son estas funciones y cómo se pueden utilizar para mejorar la personalización y la respuesta a diferentes tamaños de pantalla en tus proyectos.
-
----
-
-### 1. Función `theme()`
-
-#### 1.1. ¿Qué es la función `theme()`?
-
-La función `theme()` en Tailwind se utiliza para acceder a los valores definidos en la configuración del tema dentro del archivo `tailwind.config.js`. Esto incluye colores, fuentes, espacios, sombras, entre otros. Utilizando `theme()`, puedes reutilizar estos valores dentro de tus estilos personalizados, ya sea en clases de utilidades o en archivos CSS personalizados, como el que estás utilizando en tu proyecto, `input.css`.
-
-#### 1.2. Sintaxis de `theme()`
-
-```css
+#### Ejemplo
+```
 @import 'tailwindcss/utilities';
 
 .my-class {
@@ -1402,14 +1393,12 @@ La función `theme()` en Tailwind se utiliza para acceder a los valores definido
   color: theme('colors.red.500');
 }
 ```
-
-En este ejemplo:
 - `theme('spacing.4')` accede al valor de espaciado definido en la configuración del tema bajo `spacing.4`.
 - `theme('colors.red.500')` accede al color rojo con la intensidad 500 desde la paleta de colores.
 
-#### 1.3. Ventajas de usar `theme()`
+#### Ventajas de usar `theme()`
 - **Consistencia**: Asegura que los valores utilizados en las personalizaciones coincidan exactamente con los definidos en el tema global.
-- **Facilidad de mantenimiento**: Si cambias un valor en la configuración del tema, todos los lugares donde se use `theme()` se actualizarán automáticamente.
+- **Facilidad de mantenimiento**: Si se cambia un valor en la configuración del tema, todos los lugares donde se use `theme()` se actualizarán automáticamente.
 
 #### 1.4. Ejemplo práctico
 
