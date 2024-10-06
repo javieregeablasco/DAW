@@ -1183,22 +1183,15 @@ Ya hemos utilizado algunos de ellos (pseudo clases, media queries, ...) y en est
   ```
 -  Las **pseudo clases first, last, odd y even** permiten aplicar estilos a los hijos de un contenedor padre, dependiendo del orden.   
 #### Ejemplo:
-
-
-Tailwind tiene soporte para una variedad de pseudo clases, como `:focus-within`, `:disabled`, `:checked`, entre otras.
-
-#### Ejemplo:
 ```
-<button class="bg-blue-500 hover:bg-blue-700 active:bg-red-500 focus:outline-none">
-  Interactúa conmigo
+<button class="bg-blue-500 hover:bg-blue-700 active:bg-red-500 focus:transition-shadow delay-1000 rounded-md p-2 border-red-300 border-4 ">
+Botón
 </button>
 ```
-
----
-
-### 2. Pseudo Elementos en Tailwind
-
-Los **pseudo elementos** permiten aplicar estilos a una parte específica de un elemento, como el primer carácter o una sección creada dinámicamente. Aunque Tailwind no incluye soporte directo para pseudo elementos como `::before` y `::after`, se pueden combinar con el uso de clases personalizadas.
+Más pseudo clases: `:focus-within`, `:disabled`, `:checked`, entre otras.  
+## 11.2 Pseudo Elementos en Tailwind
+Los **pseudo elementos** permiten aplicar estilos a una parte específica de un elemento, como el primer carácter o una sección creada dinámicamente.   
+Aunque Tailwind no incluye soporte directo para pseudo elementos como `::before` y `::after`, se pueden combinar con el uso de clases personalizadas.
 
 Ejemplo con pseudo elementos en CSS:
 ```css
@@ -1212,10 +1205,9 @@ Para usar pseudo elementos en Tailwind, necesitarás personalizar tu configuraci
 
 ---
 
-### 3. Media Queries en Tailwind
-
-Las **media queries** permiten aplicar estilos en función del tamaño de la pantalla o características del dispositivo. Tailwind proporciona un sistema basado en las siguientes *breakpoints* predeterminadas:
-
+## 11.3 Media Queries  
+Las **media queries** permiten aplicar estilos en función del tamaño de la pantalla o características del dispositivo. 
+Ya lo vimos en detalle en el capítulo `Responsive`
 - **sm**: Mínimo 640px
 - **md**: Mínimo 768px
 - **lg**: Mínimo 1024px
