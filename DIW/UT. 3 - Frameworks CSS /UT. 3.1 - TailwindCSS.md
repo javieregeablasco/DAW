@@ -1215,24 +1215,13 @@ Como recordatorio tenemos los siguientes breakpoints predefinidos a los cuales p
 - **xl**	- 1280px	@media (min-width: 1280px)
 - **2xl** -	1536px	@media (min-width: 1536px)
 
+## 11.4 Feature Queries  
+Las **feature queries** permiten aplicar estilos en función de si el navegador soporta una determinada característica CSS. 
+Tailwind no proporciona soporte para features queries pero si permite implementarlas con código CSS.
 
-#### Ejemplo de uso de media queries en Tailwind:
-```html
-<div class="bg-gray-200 p-4 sm:bg-red-200 md:bg-blue-200 lg:bg-green-200">
-  Este div cambia de color según el tamaño de la pantalla.
-</div>
+#### Ejemplo de feature queries en CSS:
+Modificación del archivo input.css
 ```
-
-En este ejemplo, el color de fondo cambia dependiendo del tamaño de la pantalla: rojo para dispositivos pequeños, azul para medianos, y verde para grandes.
-
----
-
-### 4. Feature Queries en Tailwind
-
-Las **feature queries** permiten aplicar estilos en función de si el navegador soporta una determinada característica CSS. Si bien Tailwind no proporciona un soporte directo para esto dentro de sus utilidades predeterminadas, puedes implementar feature queries con código CSS personalizado.
-
-Ejemplo de feature queries en CSS:
-```css
 @supports (display: grid) {
   .grid-enabled {
     display: grid;
@@ -1240,13 +1229,11 @@ Ejemplo de feature queries en CSS:
 }
 ```
 
----
+## 11.5 Selectores de Atributos en Tailwind
+Los **selectores de atributos** permiten aplicar estilos a los elementos que contienen un atributo específico. 
+Ya hemos visto un ejemplo en 
 
-### 5. Selectores de Atributos en Tailwind
-
-Los **selectores de atributos** permiten aplicar estilos a los elementos que contienen un atributo específico. Aunque Tailwind no tiene selectores de atributos predeterminados, puedes usarlos dentro de tus hojas de estilo personalizadas junto con las clases de Tailwind.
-
-Ejemplo de selectores de atributos en CSS:
+#### Ejemplo de selectores de atributos en CSS:
 ```css
 input[type="text"] {
   border: 2px solid blue;
