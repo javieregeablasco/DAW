@@ -1286,15 +1286,9 @@ Archivo `index.html`
   <p class="m-4 font-rubik-dirt text-3xl hover:font-roboto hover:w-52 hover:bg-verdecaqui bg-azulpetroleo text-yellow-300 w-72 h-20 flex items-center justify-center"></p>
 </div>
 ```
-
-
-
-
----
-
 ## 11.3 Media Queries  
 Las **media queries** permiten aplicar estilos en función del tamaño de la pantalla o características del dispositivo. 
-Ya lo hemos visto en detalle en `6 - Responsive design`.
+Ya lo hemos visto en detalle en `6 - Responsive design`.  
 Como recordatorio tenemos los siguientes breakpoints predefinidos a los cuales podemos añadir otros mediante personalización. 
 - **sm** - 640px	@media (min-width: 640px)
 - **md** -	768px	@media (min-width: 768px)
@@ -1319,16 +1313,57 @@ Modificación del archivo input.css
 2. `(display: grid)` es la propiedad a comprobar. Se está verificando si el navegador soporta la propiedad `display: grid`.
 3. `.grid-enabled`: Si el navegador **soporta** `display: grid`, se aplicará el estilo `display: grid;` para la clase `.grid-enabled`.
 
-
 ## 11.5 Selectores de Atributos
 Los **selectores de atributos** permiten aplicar estilos a los elementos que contienen un atributo específico. 
-Ya hemos visto un ejemplo en `5 - Clases personalizadas`.
+Ya hemos visto un ejemplo en `5 - Clases personalizadas` y otro en `11.2 Pseudo Elementos en Tailwind`.   
+No es una buena práctica de **Tailwind** y no se recomienda su uso. 
 
-#### Ejemplo de selectores de atributos en CSS:
-```css
+#### Ejemplo:
+Archivo `input.css`.  
+```
 input[type="text"] {
   border: 2px solid blue;
 }
 ```
 
 ## 11.6 Funciones y directivas
+### 11.6.1 Directivas
+1. `@tailwind`: Se usa para incluir las utilidades predefinidas de Tailwind en el ' input.css`.
+   Generalmente se colocan al inicio del archivo.
+   - Ejemplo:
+     ```
+     @tailwind base;
+     @tailwind components;
+     @tailwind utilities;
+     ```
+
+2. `@layer`: Permite definir estilos personalizados en diferentes capas (`base`, `components` o `utilities`). 
+   - Ejemplo:
+     ```
+     @layer components {
+       .btn {
+         @apply bg-blue-500 text-white;
+       }
+     }
+     ```
+
+3. `@apply`**: Se usa para aplicar clases utilitarias de Tailwind dentro de las reglas de CSS personalizadas.
+   - Ejemplo:
+     ```
+     .btn {
+       @apply bg-blue-500 text-white p-4 rounded;
+     }
+     ```
+4. `@config`: Se usa para configurar opciones específicas de Tailwind (personalizar colores, espaciados, fuentes, etc.), en el archivo `tailwind.config.js`.
+   - Ejemplo:
+     ```
+     module.exports = {
+       theme: {
+         extend: {
+           colors: {
+             azulpetroleo: '#123456',
+           },
+         },
+       },
+     };
+     ```
