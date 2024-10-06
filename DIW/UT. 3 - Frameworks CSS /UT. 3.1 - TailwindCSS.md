@@ -1233,17 +1233,62 @@ El código quedará de la siguiente manera:
 Más pseudo clases: `:focus-within`, `:disabled`, `:checked`, entre otras.  
 ## 11.2 Pseudo Elementos en Tailwind
 Los **pseudo elementos** permiten aplicar estilos a una parte específica de un elemento, como el primer carácter o una sección creada dinámicamente.   
-Aunque Tailwind no incluye soporte directo para pseudo elementos como `::before` y `::after`, se pueden combinar con el uso de clases personalizadas.
+Aunque Tailwind no incluye soporte directo para pseudo elementos como `::before` y `::after`, se pueden combinar con el uso de clases personalizadas.  
+**Ejemplo**
+El siguiente código cambia el texto y la fuente utilizada dentro de un elemento al pasar el ratón por encima.  
+Archivo `input.css`  
+```
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-Ejemplo con pseudo elementos en CSS:
-```css
-.button::before {
-  content: "🔥";
-  margin-right: 5px;
+h5::after {
+    content: 'Fuente Roboto';
+  }
+  h5:hover::after {
+    content: 'Fuente Rubik Dirt';
+  }
+  
+  p::after {
+    content: 'Fuente Rubik Dirt';
+  }
+  p:hover::after {
+    content: 'Fuente Roboto';
+  }
+```
+Archivo `tailwind.config.js`  
+```
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js,json}"],
+  theme: {
+    extend: {  
+      fontFamily: {
+        roboto: ['Roboto'],
+        'rubik-dirt': ['Rubik Dirt']
+      },
+
+      colors: {
+        verdecaqui: '#363112',
+        azulpetroleo: '#1b4a50',
+        azulelectrico: '#242c6b',
+      },
+    },
+  },
+  
+  plugins: [],
 }
 ```
+Archivo `index.html`
+```
+<div class="flex flex-col items-center"> 
+  <h5 class="m-4 font-roboto text-3xl hover:font-rubik-dirt hover:w-72 hover:bg-azulpetroleo bg-verdecaqui w-52 h-20 text-yellow-400 flex items-center justify-center"></h5>
+  <p class="m-4 font-rubik-dirt text-3xl hover:font-roboto hover:w-52 hover:bg-verdecaqui bg-azulpetroleo text-yellow-300 w-72 h-20 flex items-center justify-center"></p>
+</div>
+```
 
-Para usar pseudo elementos en Tailwind, necesitarás personalizar tu configuración o añadir reglas CSS externas.
+
+
 
 ---
 
