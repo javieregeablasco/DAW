@@ -1231,7 +1231,7 @@ Modificación del archivo input.css
 
 ## 11.5 Selectores de Atributos en Tailwind
 Los **selectores de atributos** permiten aplicar estilos a los elementos que contienen un atributo específico. 
-Ya hemos visto un ejemplo en 
+Ya hemos visto un ejemplo en `5 - Clases personalizadas`.
 
 #### Ejemplo de selectores de atributos en CSS:
 ```css
