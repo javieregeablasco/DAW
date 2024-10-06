@@ -1328,17 +1328,17 @@ input[type="text"] {
 
 ## 11.6 Funciones y directivas
 ### 11.6.1 Directivas
-1. `@tailwind`: Se usa para incluir las utilidades predefinidas de Tailwind en el ' input.css`.
+**1. `@tailwind`:** Se usa para incluir las utilidades predefinidas de Tailwind en el ' input.css`.
    Generalmente se colocan al inicio del archivo.
-   - Ejemplo:
+- Ejemplo:
      ```
      @tailwind base;
      @tailwind components;
      @tailwind utilities;
      ```
 
-2. `@layer`: Permite definir estilos personalizados en diferentes capas (`base`, `components` o `utilities`). 
-   - Ejemplo:
+**2. `@layer`:** Permite definir estilos personalizados en diferentes capas (`base`, `components` o `utilities`). 
+- Ejemplo:
      ```
      @layer components {
        .btn {
@@ -1347,15 +1347,15 @@ input[type="text"] {
      }
      ```
 
-3. `@apply`**: Se usa para aplicar clases utilitarias de Tailwind dentro de las reglas de CSS personalizadas.
-   - Ejemplo:
+**3. `@apply`**: Se usa para aplicar clases utilitarias de Tailwind dentro de las reglas de CSS personalizadas.
+- Ejemplo:
      ```
      .btn {
        @apply bg-blue-500 text-white p-4 rounded;
      }
      ```
-4. `@config`: Se usa para configurar opciones específicas de Tailwind (personalizar colores, espaciados, fuentes, etc.), en el archivo `tailwind.config.js`.
-   - Ejemplo:
+**4. `@config`:** Se usa para configurar opciones específicas de Tailwind (personalizar colores, espaciados, fuentes, etc.), en el archivo `tailwind.config.js`.
+- Ejemplo:
      ```
      module.exports = {
        theme: {
