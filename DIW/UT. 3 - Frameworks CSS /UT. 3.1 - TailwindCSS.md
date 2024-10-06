@@ -1315,6 +1315,10 @@ Modificación del archivo input.css
   }
 }
 ```
+1. `@supports` es una **feature query** de CSS. Este condicional permite verificar si el navegador soporta una propiedad o característica específica de CSS.   
+2. `(display: grid)` es la propiedad a comprobar. Se está verificando si el navegador soporta la propiedad `display: grid`.
+3. `.grid-enabled`: Si el navegador **soporta** `display: grid`, se aplicará el estilo `display: grid;` para la clase `.grid-enabled`.
+
 
 ## 11.5 Selectores de Atributos
 Los **selectores de atributos** permiten aplicar estilos a los elementos que contienen un atributo específico. 
