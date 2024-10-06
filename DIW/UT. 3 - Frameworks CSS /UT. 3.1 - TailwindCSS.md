@@ -1229,7 +1229,7 @@ Modificación del archivo input.css
 }
 ```
 
-## 11.5 Selectores de Atributos en Tailwind
+## 11.5 Selectores de Atributos
 Los **selectores de atributos** permiten aplicar estilos a los elementos que contienen un atributo específico. 
 Ya hemos visto un ejemplo en `5 - Clases personalizadas`.
 
@@ -1240,16 +1240,4 @@ input[type="text"] {
 }
 ```
 
-Este código aplicará un borde azul a cualquier campo `input` con el atributo `type="text"`. Para personalizar aún más, puedes combinar esto con utilidades de Tailwind.
-
----
-
-### Conclusión
-
-Comprender cómo funcionan las pseudo clases, pseudo elementos, media queries, feature queries y selectores de atributos en Tailwind te permitirá crear interfaces de usuario más dinámicas y adaptables. Aunque algunos de estos conceptos, como los pseudo elementos y las feature queries, requieren personalización adicional en Tailwind, su integración te proporciona un control total sobre los estilos de tus componentes.
-
-Con estos fundamentos, puedes empezar a explorar cómo optimizar tu flujo de trabajo y escribir CSS de manera más eficiente usando Tailwind CSS.
-
-
-
-
+## 11.6 Funciones y directivas
