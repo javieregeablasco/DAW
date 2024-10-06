@@ -1127,7 +1127,7 @@ Cargando...
 </button>
 ```  
 
-- **Cargando usando clases de posicionamiento:**
+- **Estilo "Cargando" usando clases de posicionamiento:**
 ```
 <div class="relative bg-slate-600 m-4 p-4">
   <button class="bg-blue-500 text-white p-3 rounded-md border-2 border-cyan-900 flex items-center m-4">
