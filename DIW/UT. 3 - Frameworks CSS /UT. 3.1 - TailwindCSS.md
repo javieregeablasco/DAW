@@ -1193,29 +1193,29 @@ Si pintamos el código siguiente, veremos que el `padding p-6` de la linea 3 `<u
       <li class="flex py-4 items-center">
         <img class="h-20 w-20 rounded-full" src="https://tenimage.es/wp-content/uploads/2014/10/Fotolia_hexagonal.jpg" alt="Kristen Ramos" />
         <div class="ml-3">
-          <p class="text-sm font-medium text-yellow-50">Kristen Ramos</p>
-          <p class="text-sm text-indigo-300 truncate">kristen.ramos@example.com</p>
+          <div class="text-sm font-medium text-yellow-50">Kristen Ramos</div>
+          <div class="text-sm text-indigo-300 truncate">kristen.ramos@example.com</div>
         </div>
       </li>
       <li class="flex py-4 items-center">
         <img class="h-20 w-20 rounded-full" src="https://tenimage.es/wp-content/uploads/2014/10/Fotolia_triangular.jpg" alt="Floyd Miles" />
         <div class="ml-3">
-          <p class="text-sm font-medium text-yellow-50">Floyd Miles</p>
-          <p class="text-sm text-indigo-300 truncate">floyd.miles@example.com</p>
+          <div class="text-sm font-medium text-yellow-50">Floyd Miles</div>
+          <div class="text-sm text-indigo-300 truncate">floyd.miles@example.com</div>
         </div>
       </li>
       <li class="flex py-4 items-center">
         <img class="h-20 w-20 rounded-full" src="https://tenimage.es/wp-content/uploads/2014/10/Fotolia_rectangular.jpg" alt="Courtney Henry" />
         <div class="ml-3">
-          <p class="text-sm font-medium text-yellow-50">Courtney Henry</p>
-          <p class="text-sm text-indigo-300 truncate">courtney.henry@example.com</p>
+          <div class="text-sm font-medium text-yellow-50">Courtney Henry</div>
+          <div class="text-sm text-indigo-300 truncate">courtney.henry@example.com</div>
         </div>
       </li>
       <li class="flex py-4 items-center">
         <img class="h-20 w-20 rounded-full" src="https://tenimage.es/wp-content/uploads/2014/10/Fotolia_alargado.jpg" alt="Ted Fox" />
         <div class="ml-3">
-          <p class="text-sm font-medium text-yellow-50">Ted Fox</p>
-          <p class="text-sm text-indigo-300 truncate">ted.fox@example.com</p>
+          <div class="text-sm font-medium text-yellow-50">Ted Fox</div>
+          <div class="text-sm text-indigo-300 truncate">ted.fox@example.com</div>
         </div>
       </li>
     </ul>
