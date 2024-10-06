@@ -1354,16 +1354,26 @@ input[type="text"] {
        @apply bg-blue-500 text-white p-4 rounded;
      }
      ```
-**4. `@config`:** Se usa para configurar opciones específicas de Tailwind (personalizar colores, espaciados, fuentes, etc.), en el archivo `tailwind.config.js`.
-- Ejemplo:
+**4. `@config`:** Se usa definir qué archivo de configuración usará Tailwind para compilar el archivo `output.css`. 
+- Ejemplo para el equipo de mantenimiento:
      ```
-     module.exports = {
-       theme: {
-         extend: {
-           colors: {
-             azulpetroleo: '#123456',
-           },
-         },
-       },
-     };
+     @config "./tailwind.maintenance.config.js";
      ```
+- Ejemplo para el administrador:
+     ```
+     @config "./tailwind.maintenance.admin.js";
+     ```
+**Nota:**   
+`@config` siempre ha de ir después de las declaraciones `@import`
+
+-  Ejemplo:
+   ```
+   @import "tailwindcss/base";
+   @import "./custom-base.css";
+   @import "tailwindcss/components";
+   @import "./custom-components.css";
+   @import "tailwindcss/utilities";
+   ...
+   @config "./tailwind.admin.config.js";
+   ```
+   
