@@ -1398,7 +1398,7 @@ Entre las herramientas más potentes para la personalización se encuentran las 
 La función `theme()` se utiliza para acceder a los valores definidos en la configuración del `theme` (tema) dentro del archivo `tailwind.config.js`.  
 Esto incluye colores, fuentes, espacios, sombras, entre otros. 
 
-  #### Ejemplo
+  **Ejemplo.**
   ```
   .my-class {
     padding: theme('spacing.4');
@@ -1412,7 +1412,7 @@ Esto incluye colores, fuentes, espacios, sombras, entre otros.
 - **Consistencia**: Asegura que los valores utilizados en las personalizaciones coincidan exactamente con los definidos en el tema global.
 - **Facilidad de mantenimiento**: Si se cambia un valor en la configuración del tema, todos los lugares donde se use `theme()` se actualizarán automáticamente.
 
-#### Ejemplo práctico
+**Ejemplo práctico.**
 ```
 /* Archivo input.css */
 .card {
@@ -1426,7 +1426,7 @@ En este caso, la clase `card` aplicará un padding, un color de fondo y un borde
 * **Función screen()**
 Como ya hemos visto la función `screen()` se utiliza para definir nuevos estilos basados en los puntos de corte o "breakpoints" predefinidos.
 
-  #### Ejemplo
+  **Ejemplo.**
 
   ```
   @media (min-width: theme('screens.md')) {
@@ -1437,7 +1437,7 @@ Como ya hemos visto la función `screen()` se utiliza para definir nuevos estilo
   ```
   `theme('screens.md')` accede al valor del punto de corte definido para pantallas medianas (tablets).
 
-#### Ejemplo práctico
+**Ejemplo práctico.**
 ```
 /* Archivo input.css */
 @media (min-width: theme('screens.lg')) {
