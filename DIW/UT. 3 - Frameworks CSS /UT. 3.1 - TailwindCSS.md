@@ -962,7 +962,7 @@ Para definir el ancho de las celdas por columnas usaremos `raw-span-`.
 </div>
 ```  
 
-### 8.7.3 - Actividades.
+### 8.8 - Ejercicios.
 >**Actividad 1**  
 >Crear una cuadrícula de 3 columnas con un espacio uniforme de 16px entre los elementos.  
 
