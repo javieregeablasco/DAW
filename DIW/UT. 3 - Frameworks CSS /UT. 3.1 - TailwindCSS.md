@@ -1167,10 +1167,10 @@ La mayoría de las animaciones son de pago pero al menos, podemos ver multitud d
 <a href="https://tw-elements.com/docs/standard/content-styles/animations/">Tailwind Animations</a>
 
 ## 10.5 Ejercicios
-Crear un proyecto donde se utiliza:
-1. Un botón con transición de color.
-2. Un ícono que rota al pasar el ratón.
-3. Un texto que aparece al hacer clic en un botón.
+>Crear un proyecto donde se utiliza:
+>1. Un botón con transición de color.
+>2. Un ícono que rota al pasar el ratón.
+>3. Un texto que aparece al pasar el ratón sobre un cuadro. 
 
 # 11 Conceptos centrales (core concepts) de Tailwind.  
 Tailwind CSS es un framework flexible, basado en un enfoque de **utility-first**. Para aprovecharlo al máximo, es necesario entender los "core concepts".  
