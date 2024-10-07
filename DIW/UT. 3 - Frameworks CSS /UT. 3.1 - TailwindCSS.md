@@ -1073,6 +1073,7 @@ Este ejemplo convierte la imagen a tonos de gris.
 ## 9.5 Ejercicios
 >**Actividad 1**  
 >Crea una galería de imágenes que, al pasar el ratón sobre ellas, cambien de escala de grises a color.
+>
 Links de las imágenes:
 >https://cdn.aarp.net/content/dam/aarpe/es/home/salud/enfermedades-y-tratamientos/info-2022/color-de-ojos-mas-raro/_jcr_content/root/container_main/container_body_main/container_body1/container_body_cf/container_image/articlecontentfragment/cfimage.coreimg.50.932.jpeg/content/dam/aarp/health/conditions_treatments/2022/08/1140-green-eyes-esp.jpg
 >
