@@ -962,7 +962,7 @@ Para definir el ancho de las celdas por columnas usaremos `raw-span-`.
 </div>
 ```  
 
-### 8.8 - Ejercicios.
+## 8.8 - Ejercicios.
 >**Actividad 1**  
 >Crear una cuadrícula de 3 columnas con un espacio uniforme de 16px entre los elementos.  
 
@@ -1069,7 +1069,21 @@ Este ejemplo convierte la imagen a tonos de gris.
 <div class="grayscale w-80 h-80 mb-10">
   <img src="https://aguacatec.es/wp-content/uploads/2023/10/e5a978b8-6772-4c85-a50e-15581af7d483.png" alt="Placeholder Image" class="object-cover"> 
 </div>
-```
+```  
+## 9.5 Ejercicios
+>**Actividad 1**  
+>Crea una galería de imágenes que, al pasar el ratón sobre ellas, cambien de escala de grises a color.
+Links de las imágenes:
+>https://cdn.aarp.net/content/dam/aarpe/es/home/salud/enfermedades-y-tratamientos/info-2022/color-de-ojos-mas-raro/_jcr_content/root/container_main/container_body_main/container_body1/container_body_cf/container_image/articlecontentfragment/cfimage.coreimg.50.932.jpeg/content/dam/aarp/health/conditions_treatments/2022/08/1140-green-eyes-esp.jpg
+>https://cdn.aarp.net/content/dam/aarpe/es/home/salud/enfermedades-y-tratamientos/info-2022/color-de-ojos-mas-raro/_jcr_content/root/container_main/container_body_main/container_body3/container_body_cf/body_three_cf_one/par0/articlecontentfragme/cfimage.coreimg.50.932.jpeg/content/dam/aarp/health/conditions_treatments/2022/08/1140-elizabeth-taylor-violet-eyes-esp.jpg
+>https://aarp.widen.net/content/pvdqkeu5am/png/103553_PumpkinHealthBenefits.png?crop=true&anchor=0,0&color=ffffffff&u=mh5igy&w=1140&h=655
+>https://www.florespedia.com/Imagenes/flores-bonitas.jpg
+
+>**Actividad 2**
+>Crea 3 botones / marcos que aplican un desenfoque a una imagen (cualquiera de las imagenes anteriores vale) cuando pasas el ratón por encima de ellos. Cada botón / marco tendrá un desenfoque distinto a los demás. 
+
+>**Actividad 3**
+>Crea un diseño con 2 imágenes que se mezclan en parte.
 ## 10 Transiciones y animaciones.
 Las transiciones son efectos visuales que permiten cambiar suavemente de un estado a otro.  
 En el contexto web, se utilizan para mejorar la experiencia del usuario (UX) y también acaparar su atención.
