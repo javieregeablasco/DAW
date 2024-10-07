@@ -1198,7 +1198,7 @@ Más información sobre pseudo clases <a href="https://tailwindcss.com/docs/hove
   </button>
   ```
 -  Las **pseudo clases first, last, odd y even** permiten aplicar estilos a los hijos de un contenedor padre, dependiendo del orden.   
-#### Ejemplo:
+**Ejemplo:**
 Si pintamos el código siguiente, veremos que el `padding p-6` de la linea 3 `<ul class="p-6 divide-y divide-slate-200">` tiene como consecuencia un descuadre vertical de la lista.
 ```
 <div class="rounded-lg border-2 m-1 border-yellow-400">
@@ -1314,8 +1314,8 @@ Como recordatorio tenemos los siguientes breakpoints predefinidos a los cuales p
 Las **feature queries** permiten aplicar estilos en función de si el navegador soporta una determinada característica CSS. 
 Tailwind no proporciona soporte para features queries pero si permite implementarlas con código CSS.
 
-#### Ejemplo de feature queries en CSS:
-Modificación del archivo input.css
+**Ejemplo de feature queries:**
+Archivo `input.css`.
 ```
 @supports (display: grid) {
   .grid-enabled {
@@ -1332,7 +1332,7 @@ Los **selectores de atributos** permiten aplicar estilos a los elementos que con
 Ya hemos visto un ejemplo en `5 - Clases personalizadas` y otro en `11.2 Pseudo Elementos en Tailwind`.   
 No es una buena práctica de **Tailwind** y no se recomienda su uso. 
 
-#### Ejemplo:
+**Ejemplo:**
 Archivo `input.css`.  
 ```
 input[type="text"] {
