@@ -989,7 +989,7 @@ Los elementos definidos con la propiedad `relative` pueden ser movidos con `top`
 </div>
 ```  
 
-#### 8.9.3 - absolute
+### 8.9.3 - absolute
 `absolute` posiciona un elemento **respecto a su contenedor más cercano que tenga una posición distinta de static**. Este elemento se **elimina del flujo normal del documento**.
 
 ```
@@ -1000,7 +1000,7 @@ Los elementos definidos con la propiedad `relative` pueden ser movidos con `top`
 </div>
 ```
 
-#### 8.9.4 - fixed
+### 8.9.4 - fixed
 La clase `fixed` posiciona un elemento en relación con la ventana gráfica (viewport). El elemento permanece fijo en su posición, incluso haciendo scroll. Este elemento se **elimina del flujo normal del documento**.
 
 
@@ -1010,7 +1010,7 @@ La clase `fixed` posiciona un elemento en relación con la ventana gráfica (vie
 </div>
 ```
 
-#### 8.9.5 - `sticky`
+### 8.9.5 - `sticky`
 La clase `sticky` combina características de las posiciones `relative` y `fixed`. Un elemento con posición `sticky` es relativo hasta que el usuario hace scroll a una posición definida, momento en el que se convierte en `fixed`.
 
 ```
