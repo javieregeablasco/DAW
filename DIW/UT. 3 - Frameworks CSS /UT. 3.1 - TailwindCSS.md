@@ -970,7 +970,54 @@ Para definir el ancho de las celdas por columnas usaremos `raw-span-`.
 >Crear una cuadrícula de 2 filas y 2 columnas, centrando los elementos tanto vertical como horizontalmente.
 
 >**Actividad 3**  
->Crear un layout responsivo que cambie de 1 columna a 2 y luego a 3 columnas en diferentes puntos de quiebre (`breakpoints`).  
+>Crear un layout responsivo que cambie de 1 columna a 2 y luego a 3 columnas en diferentes puntos de quiebre (`breakpoints`).
+
+## 8.9 - Posición de elementos.
+Las propiedades de TailwindCSS, `static`, `fixed`, `absolute`, `relative` y `sticky`, especifican cómo un elemento es posicionado en el documento. Resulta especialmente útil para crear efectos y diseños complejos.  
+Estas clases definen cómo un elemento se coloca en el flujo del documento y cómo interactúa con otros elementos.
+
+### 8.9.1 - static
+La clase `static` es la posición predeterminada de un elemento (y no se suele declarar). El elemento sigue el flujo normal del documento y no se puede mover con propiedades como `top`, `right`, `bottom` o `left`.
+
+### 8.9.2 - relative
+La clase `relative` posiciona un elemento de manera relativa a lo que sería su posición normal en el flujo del documento (es decir su posición viene dada por el contenedor padre).
+Los elementos definidos con la propiedad `relative` pueden ser movidos con `top`, `right`, `bottom` o `left` **sin afectar a otros elementos**.
+
+```
+<div class="relative top-4 left-2">
+  Este es un elemento con posición relativa.
+</div>
+```  
+
+#### 8.9.3 - absolute
+`absolute` posiciona un elemento **respecto a su contenedor más cercano que tenga una posición distinta de static**. Este elemento se **elimina del flujo normal del documento**.
+
+```
+<div class="relative">
+  <div class="absolute top-0 right-0">
+    Este es un elemento con posición absoluta.
+  </div>
+</div>
+```
+
+#### 8.9.4 - fixed
+La clase `fixed` posiciona un elemento en relación con la ventana gráfica (viewport). El elemento permanece fijo en su posición, incluso haciendo scroll. Este elemento se **elimina del flujo normal del documento**.
+
+
+```
+<div class="fixed top-96 right-0">
+  Este es un elemento con posición fija.
+</div>
+```
+
+#### 8.9.5 - `sticky`
+La clase `sticky` combina características de las posiciones `relative` y `fixed`. Un elemento con posición `sticky` es relativo hasta que el usuario hace scroll a una posición definida, momento en el que se convierte en `fixed`.
+
+```
+<div class="sticky top-96">
+  Este es un elemento con posición sticky.
+</div>
+```  
 
 # 9 - Efectos.  
 Tailwind CSS ofrece una variedad de efectos visuales que permiten modificar la apariencia de los elementos sin necesidad de utilizar código personalizado.  
