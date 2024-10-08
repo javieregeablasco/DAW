@@ -1226,7 +1226,7 @@ La mayoría de las animaciones son de pago pero al menos, podemos ver multitud d
 # 11 Conceptos centrales (core concepts) de Tailwind.  
 Tailwind CSS es un framework flexible, basado en un enfoque de **utility-first**. Para aprovecharlo al máximo, es necesario entender los "core concepts".  
 Ya hemos utilizado algunos de ellos (pseudo clases, media queries, ...) y en este cápitulo los iremos describiendo para entenderlos mejor y saber utilizarlos correctamente.   
-# 11.1 Pseudo Clases 
+## 11.1 Pseudo Clases 
 Más información sobre pseudo clases <a href="https://tailwindcss.com/docs/hover-focus-and-other-states#pseudo-classes">aquí</a>.  
 -  Las **pseudo clases hover, focus y active** permiten aplicar estilos cuando un elemento se encuentra en un estado específico.
 
