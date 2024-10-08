@@ -972,14 +972,14 @@ Para definir el ancho de las celdas por columnas usaremos `raw-span-`.
 >**Actividad 3**  
 >Crear un layout responsivo que cambie de 1 columna a 2 y luego a 3 columnas en diferentes puntos de quiebre (`breakpoints`).
 
-## 8.9 - Posición de elementos.
+# 9 - Posición de elementos.
 Las propiedades de TailwindCSS, `static`, `fixed`, `absolute`, `relative` y `sticky`, especifican cómo un elemento es posicionado en el documento. Resulta especialmente útil para crear efectos y diseños complejos.  
 Estas clases definen cómo un elemento se coloca en el flujo del documento y cómo interactúa con otros elementos.
 
-### 8.9.1 - static
+## 9.1 - static
 La clase `static` es la posición predeterminada de un elemento (y no se suele declarar). El elemento sigue el flujo normal del documento y no se puede mover con propiedades como `top`, `right`, `bottom` o `left`.
 
-### 8.9.2 - relative
+## 9.2 - relative
 La clase `relative` posiciona un elemento de manera relativa a lo que sería su posición normal en el flujo del documento (es decir su posición viene dada por el contenedor padre).
 Los elementos definidos con la propiedad `relative` pueden ser movidos con `top`, `right`, `bottom` o `left` **sin afectar a otros elementos**.
 
@@ -989,7 +989,7 @@ Los elementos definidos con la propiedad `relative` pueden ser movidos con `top`
 </div>
 ```  
 
-### 8.9.3 - absolute
+## 9.3 - absolute
 `absolute` posiciona un elemento **respecto a su contenedor más cercano que tenga una posición distinta de static**. Este elemento se **elimina del flujo normal del documento**.
 
 ```
@@ -1000,7 +1000,7 @@ Los elementos definidos con la propiedad `relative` pueden ser movidos con `top`
 </div>
 ```
 
-### 8.9.4 - fixed
+## 9.4 - fixed
 La clase `fixed` posiciona un elemento en relación con la ventana gráfica (viewport). El elemento permanece fijo en su posición, incluso haciendo scroll. Este elemento se **elimina del flujo normal del documento**.
 
 
@@ -1010,7 +1010,7 @@ La clase `fixed` posiciona un elemento en relación con la ventana gráfica (vie
 </div>
 ```
 
-### 8.9.5 - `sticky`
+## 9.5 - `sticky`
 La clase `sticky` combina características de las posiciones `relative` y `fixed`. Un elemento con posición `sticky` es relativo hasta que el usuario hace scroll a una posición definida, momento en el que se convierte en `fixed`.
 
 ```
@@ -1019,11 +1019,11 @@ La clase `sticky` combina características de las posiciones `relative` y `fixed
 </div>
 ```  
 
-# 9 - Efectos.  
+# 10 - Efectos.  
 Tailwind CSS ofrece una variedad de efectos visuales que permiten modificar la apariencia de los elementos sin necesidad de utilizar código personalizado.  
 Toda la información sobre efectos en Tailwind <a href="https://tailwindcss.com/docs/box-shadow">aquí</a>.
 
-## 9.1 Blend.
+## 10.1 Blend.
 Los modos de fusión o *blend modes* permiten controlar cómo se combinan los colores de un elemento con su fondo.  
 Estos efectos son útiles para aplicar interacciones visuales dinámicas, como solapar imágenes o capas de color.
 
@@ -1065,7 +1065,7 @@ Sobreponiendo 2 imágenes.
   </div>
 </body>
 ```
-## 9.2 Blur (Desenfoque).
+## 10.2 Blur (Desenfoque).
 El efecto *blur* permite desenfocar un elemento para crear una sensación de profundidad o para dirigir la atención a otras áreas de la interfaz.  
 Puede ser útil para fondos, encabezados o cuando se desea suavizar un área visual.
 
@@ -1085,7 +1085,7 @@ Puede ser útil para fondos, encabezados o cuando se desea suavizar un área vis
 </div>
 ```
 
-## 9.3 Brightness (Brillo):
+## 10.3 Brightness (Brillo):
 El ajuste de brillo permite controlar la cantidad de luz o luminosidad aplicada a un elemento. Este efecto es útil para resaltar o atenuar imágenes y otros contenidos visuales.
 
 **Clases de Tailwind:**
@@ -1102,7 +1102,7 @@ El ajuste de brillo permite controlar la cantidad de luz o luminosidad aplicada 
 </div>
 ```
 
-## 9.4 Grayscale (Escala de grises)
+## 10.4 Grayscale (Escala de grises)
 Convierte un elemento en una versión monocromática, eliminando los colores y presentando solo tonos de gris.  
 Es útil para reducir la saturación visual o para imágenes en segundo plano.  
 
@@ -1117,7 +1117,7 @@ Este ejemplo convierte la imagen a tonos de gris.
   <img src="https://aguacatec.es/wp-content/uploads/2023/10/e5a978b8-6772-4c85-a50e-15581af7d483.png" alt="Placeholder Image" class="object-cover"> 
 </div>
 ```  
-## 9.5 Ejercicios
+## 10.5 Ejercicios
 >**Actividad 1**  
 >Crea una galería de imágenes que, al pasar el ratón sobre ellas, cambien de escala de grises a color.
 >
