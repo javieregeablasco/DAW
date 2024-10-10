@@ -46,8 +46,9 @@ Los derechos exlusivos del autor se pueden describir de la siguiente manera:
    - **Creative Commons (CC):**
      Las licencias **Creative Commons** habitualmente llamadas **licencias CC** permiten a los autores otorgar permisos a los usuarios con mucha flexibilidad.  
      Es habitual verlas en numerosos documentos:
-     ![Texto alternativo]([https://www.ejemplo.com/imagen.png](https://cysae.com/wp-content/uploads/2019/02/Sin-t%C3%ADtulo-2.png))
-   
+
+     <img src="https://cysae.com/wp-content/uploads/2019/02/Sin-t%C3%ADtulo-2.png" width=60%>
+     
      
      - CC BY: Atribución necesaria.
      - CC BY-SA: Compartir con atribución y bajo la misma licencia.
