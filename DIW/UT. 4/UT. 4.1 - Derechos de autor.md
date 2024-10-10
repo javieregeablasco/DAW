@@ -6,62 +6,35 @@ Palabras clave: DAW, DIW
 ---
 
 
-# 1. Introducción.
+# 1. Introducción
 El objetivo general de esta unidad es reconocer las implicaciones legales, éticas y profesionales del uso de material multimedia sujeto a licencias y derechos de autor y aplicar las mejores prácticas para respetarlas.
 
 # 2. Derechos de Autor
-Los **derechos de autor** son un conjunto de normas legales que otorgan al creador de una obra original el control exclusivo sobre su uso y distribución. Estos derechos permiten que el autor o titular decida cómo se puede utilizar, reproducir, modificar o distribuir su obra, ya sea texto, música, arte, películas, software u otros tipos de obras creativas.
+Los **derechos de autor** son un conjunto de normas legales que otorgan al creador de una obra original (incluidos videos, imágenes, música y texto) el control exclusivo sobre su uso y distribución.  
+Estos derechos permiten que el autor o titular decida cómo se puede utilizar, reproducir, modificar o distribuir su obra, ya sea texto, música, arte, películas, software u otros tipos de obras creativas.
 
-## 2.1. Protección automática: 
+## 2.1. Protección automática 
    Los derechos de autor se otorgan automáticamente al creador desde el momento en que la obra es creada y fijada en un medio tangible (soporte digital, papel o almacenada de alguna manera).
 
-## 2.2 Derechos exclusivos del autor:
+## 2.2 Derechos exclusivos del autor
+Los derechos exclusivos son aquellos que permiten a su titular autorizar o prohibir los actos de explotación de su obra o prestación protegida por el usuario, y a exigir de este una retribución a cambio de la autorización que le conceda.   
+Los derechos exlusivos del autor se pueden describir de la siguiente manera:
    - **Reproducción:** Solo el titular puede reproducir la obra o autorizar su copia.
    - **Distribución:** Control sobre la distribución de copias de la obra.
    - **Comunicación pública:** El derecho de presentar la obra al público (ej. en conciertos, cines, exposiciones).
    - **Transformación:** Modificación de la obra, como adaptaciones o traducciones.
    
-## 2.3 Duración: 
+## 2.3 Duración 
    Los derechos de autor suelen durar toda la vida del autor más un período adicional, que varía según el país (en muchos casos, 70 años después de la muerte del creador). 
    Tras este período, la obra pasa a ser de dominio público.
 
-## 2.4 Cesión y licencias: 
+## 2.4 Cesión y licencias 
    El autor puede vender, ceder o conceder licencias para que otros utilicen su obra bajo ciertas condiciones, como en el caso de las licencias de software o las licencias Creative Commons.
 
-## 2.5 Infracción de derechos de autor: 
+## 2.5 Infracción de derechos de autor 
    El uso de una obra sin permiso puede constituir una violación de los derechos de autor, lo que puede conllevar sanciones legales.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   - **Definición:** 
-      los derechos de autor como la protección legal que se otorga a los creadores de obras originales, incluidos videos, imágenes, música y texto.
-     
-   - **Propósito:** 
-     Proteger los intereses de los creadores al otorgarles el control exclusivo sobre cómo sus trabajos se distribuyen, modifican o utilizan.
-     
-   - **Duración de los Derechos:** 
-     Normalmente los derechos de autor duran toda la vida del autor más un período adicional (ej. 70 años después de su muerte).
-
-**2. Tipos de Licencias**
+## 3. Tipos de Licencias
 
    - **Copyright tradicional:** 
      El creador tiene control total sobre su obra. El uso de este material requiere permisos explícitos.
@@ -76,6 +49,8 @@ Los **derechos de autor** son un conjunto de normas legales que otorgan al cread
      - CC BY-SA: Compartir con atribución y bajo la misma licencia.
      - CC BY-ND: No se permiten obras derivadas.
      - CC BY-NC: Solo para uso no comercial.
+     
+     Más información sobre licnecias Creative Comons <a ref="https://cedec.intef.es/las-licencias-creative-commons-que-son-por-que-utilizarlas-y-como-hacerlo/">aquí</a>.
 
 **3. Uso Justo y Dominio Público**
 
