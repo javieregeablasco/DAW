@@ -40,17 +40,21 @@ Los derechos exlusivos del autor se pueden describir de la siguiente manera:
      El creador tiene control total sobre su obra. El uso de este material requiere permisos explícitos.
      
    - **Licencias de uso:** 
-     Explicación de cómo las licencias específicas permiten ciertos usos. Ejemplos: licencias de software, licencias musicales.
+     Una licencia de uso es la autorización o permiso que da un titular de derechos de autor, para que otra persona utilice la obra de la forma señalada en el permiso.  
+     Esta autorización puede o no estar sujeta a un pago, lo que dependerá del titular de los respectivos derechos.
      
    - **Creative Commons (CC):**
-     Presentación de las licencias CC que permiten a los autores otorgar permisos más flexibles.
+     Las licencias **Creative Commons** habitualmente llamadas **licencias CC** permiten a los autores otorgar permisos a los usuarios con mucha flexibilidad.  
+     Es habitual verlas en numerosos documentos:
+     ![Texto alternativo]([https://www.ejemplo.com/imagen.png](https://cysae.com/wp-content/uploads/2019/02/Sin-t%C3%ADtulo-2.png))
+   
      
      - CC BY: Atribución necesaria.
      - CC BY-SA: Compartir con atribución y bajo la misma licencia.
      - CC BY-ND: No se permiten obras derivadas.
      - CC BY-NC: Solo para uso no comercial.
      
-     Más información sobre licnecias Creative Comons <a ref="https://cedec.intef.es/las-licencias-creative-commons-que-son-por-que-utilizarlas-y-como-hacerlo/">aquí</a>.
+     Más información sobre licencias Creative Comons <a href="https://cedec.intef.es/las-licencias-creative-commons-que-son-por-que-utilizarlas-y-como-hacerlo/">aquí</a>.
 
 **3. Uso Justo y Dominio Público**
 
