@@ -10,9 +10,50 @@ Palabras clave: DAW, DIW
 El objetivo general de esta unidad es reconocer las implicaciones legales, éticas y profesionales del uso de material multimedia sujeto a licencias y derechos de autor y aplicar las mejores prácticas para respetarlas.
 
 # 2. Derechos de Autor
+Los **derechos de autor** son un conjunto de normas legales que otorgan al creador de una obra original el control exclusivo sobre su uso y distribución. Estos derechos permiten que el autor o titular decida cómo se puede utilizar, reproducir, modificar o distribuir su obra, ya sea texto, música, arte, películas, software u otros tipos de obras creativas.
+
+## 2.1. Protección automática: 
+   Los derechos de autor se otorgan automáticamente al creador desde el momento en que la obra es creada y fijada en un medio tangible (soporte digital, papel o almacenada de alguna manera).
+
+## 2.2 Derechos exclusivos del autor:
+   - **Reproducción:** Solo el titular puede reproducir la obra o autorizar su copia.
+   - **Distribución:** Control sobre la distribución de copias de la obra.
+   - **Comunicación pública:** El derecho de presentar la obra al público (ej. en conciertos, cines, exposiciones).
+   - **Transformación:** Modificación de la obra, como adaptaciones o traducciones.
+   
+## 2.3 Duración: 
+   Los derechos de autor suelen durar toda la vida del autor más un período adicional, que varía según el país (en muchos casos, 70 años después de la muerte del creador). 
+   Tras este período, la obra pasa a ser de dominio público.
+
+## 2.4 Cesión y licencias: 
+   El autor puede vender, ceder o conceder licencias para que otros utilicen su obra bajo ciertas condiciones, como en el caso de las licencias de software o las licencias Creative Commons.
+
+## 2.5 Infracción de derechos de autor: 
+   El uso de una obra sin permiso puede constituir una violación de los derechos de autor, lo que puede conllevar sanciones legales.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
    - **Definición:** 
-     Explicación de los derechos de autor como la protección legal que se otorga a los creadores de obras originales, incluidos videos, imágenes, música y texto.
+      los derechos de autor como la protección legal que se otorga a los creadores de obras originales, incluidos videos, imágenes, música y texto.
      
    - **Propósito:** 
      Proteger los intereses de los creadores al otorgarles el control exclusivo sobre cómo sus trabajos se distribuyen, modifican o utilizan.
