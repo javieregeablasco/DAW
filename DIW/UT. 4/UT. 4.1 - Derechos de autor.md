@@ -1,11 +1,15 @@
-### Unidad Didáctica: Implicaciones de las Licencias y Derechos de Autor en el Uso de Material Multimedia
-
-**Objetivo general:**
-Reconocer las implicaciones legales, éticas y profesionales del uso de material multimedia sujeto a licencias y derechos de autor, y aprender a aplicar las mejores prácticas para respetarlas.
-
+---
+Título: UD. 4.1 - Licencias y derechos de autor en el uso de material multimedia
+Autor: Javier Egea Blasco
+Año: 24-25
+Palabras clave: DAW, DIW
 ---
 
-**1. Introducción a los Derechos de Autor**
+
+# 1. Introducción.
+El objetivo general de esta unidad es reconocer las implicaciones legales, éticas y profesionales del uso de material multimedia sujeto a licencias y derechos de autor y aplicar las mejores prácticas para respetarlas.
+
+# 2. Derechos de Autor
 
    - **Definición:** 
      Explicación de los derechos de autor como la protección legal que se otorga a los creadores de obras originales, incluidos videos, imágenes, música y texto.
