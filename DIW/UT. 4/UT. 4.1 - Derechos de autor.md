@@ -36,14 +36,14 @@ Los derechos exlusivos del autor se pueden describir de la siguiente manera:
 
 ## 3. Tipos de Licencias
 
-   - **Copyright tradicional:** 
+   - **Copyright tradicional:**   
      El creador tiene control total sobre su obra. El uso de este material requiere permisos explícitos.
      
-   - **Licencias de uso:** 
+   - **Licencias de uso:**   
      Una licencia de uso es la autorización o permiso que da un titular de derechos de autor, para que otra persona utilice la obra de la forma señalada en el permiso.  
      Esta autorización puede o no estar sujeta a un pago, lo que dependerá del titular de los respectivos derechos.
      
-   - **Creative Commons (CC):**
+   - **Creative Commons (CC):**  
      Las licencias **Creative Commons** habitualmente llamadas **licencias CC** permiten a los autores otorgar permisos a los usuarios con mucha flexibilidad.  
      Es habitual verlas en numerosos documentos:
      
@@ -51,28 +51,66 @@ Los derechos exlusivos del autor se pueden describir de la siguiente manera:
      <img src="https://cysae.com/wp-content/uploads/2019/02/Sin-t%C3%ADtulo-2.png" width=60%>
      
 
-       
-     - CC BY: Atribución necesaria.
-     - CC BY-SA: Compartir con atribución y bajo la misma licencia.
-     - CC BY-ND: No se permiten obras derivadas.
-     - CC BY-NC: Solo para uso no comercial.
+     - **Attribution – BY** - Debe reconocerse la autoría de la obra de manera adecuada.
+     - **No Comercial (NonCommercial) – NC** - No se permite la utilización de la obra para fines comerciales.
+     - **Sin obras derivadas (NoDerivative Works) – ND** - No se permite la distribución de obras derivadas basadas en ella.
+     - **Compartir Igual (ShareAlike) – SA** -	Si se crea una obra derivada, debe distribuirse bajo la misma licencia que la obra original.
      ---
      
      Más información sobre licencias Creative Comons <a href="https://cedec.intef.es/las-licencias-creative-commons-que-son-por-que-utilizarlas-y-como-hacerlo/">aquí</a>.
 
-**3. Uso Justo y Dominio Público**
+## 4. Uso Justo y Dominio Público
 
-   - **Uso Justo (Fair Use):** 
-     Explicación de las excepciones que permiten usar obras protegidas bajo ciertas condiciones (ej. para fines educativos, investigación, crítica o parodia).
-     
-   - **Dominio Público:**
-     Obras cuyo plazo de derechos de autor ha expirado o nunca estuvieron protegidas, y por tanto, son de uso libre para todos (ej. clásicos literarios).
+**Uso justo** y **dominio público** son conceptos relacionados con los derechos de autor que permiten el uso de **obras protegidas sin infringir la ley**.
 
-**4. Implicaciones Éticas y Legales**
+### 4.1. Uso Justo (Fair Use)
 
-   - **Infracción de derechos de autor:** 
-     Ejemplos de lo que constituye una infracción y sus consecuencias legales, como multas o litigios.
-     
+El **uso justo** permite utilizar partes limitadas de una obra protegida por derechos de autor sin necesidad de permiso del titular. 
+Se aplica principalmente en situaciones específicas y bajo ciertas condiciones.
+
+#### Condiciones que permiten el uso justo:
+- **Propósito y carácter del uso:** Si el uso es para fines educativos, de investigación, crítica, comentario, parodia, noticia o análisis, tiene más probabilidades de ser considerado uso justo.
+- **Naturaleza de la obra utilizada:** Obras como reportajes o investigaciones, tienden a tener más flexibilidad bajo el uso justo que obras puramente creativas, como novelas o películas.
+- **Cantidad y proporción usada:** Cuanto menor sea la porción de la obra utilizada, más probable será que se considere uso justo. El uso de pequeñas partes de la obra, en lugar de la obra completa, suele estar mejor protegido.
+- **Efecto en el mercado:** Si el uso de la obra afecta negativamente el valor económico o la venta de la obra original, es menos probable que se considere uso justo.
+
+### 4.2 Dominio Público
+
+El **dominio público** se refiere a obras creativas que no están protegidas por derechos de autor, ya sea porque el plazo de protección ha expirado, o porque nunca estuvieron bajo protección.  
+Las obras en dominio público pueden ser utilizadas por cualquier persona de manera libre, sin necesidad de permiso o pago.
+
+#### Obras que pueden estar en dominio público:
+- **Obras cuyo plazo de derechos ha expirado:** 
+- **Obras del gobierno:** En países como los Estados Unidos, los trabajos creados por agencias gubernamentales están en dominio público desde el momento de su creación.
+- **Obras no registradas:** Algunas obras que no cumplen los requisitos de protección o que el autor voluntariamente pone en el dominio público.
+
+## 5. Implicaciones Éticas y Legales
+   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Copy-roger.svg/1024px-Copy-roger.svg.png" width=15%>
+
+   - **Ejemplos de infracciones de derechos de autor:**  
+     `Piratería:` Es la forma más extendida de infracción en internet (descarga y distribución ilegal de películas, música, libros electrónicos, software y videojuegos).  
+     `Uso no autorizado de imágenes y fotografías:` Bastante común y relativamente fácil de infringir, ya que las imágenes y fotografías protegidas por derechos de autor se utilizan con frecuencia sin permiso en sitios web, blogs y redes sociales.  
+     `Infracción en plataformas de video y redes sociales:` YouTube, Facebook e Instagram son focos comunes de infracción. Usuarios suben y comparten contenido protegido sin las licencias necesarias (clips de películas, programas de televisión y videos musicales).  
+     `Plagio y contenidos generados por (otros) usuarios:` Implica presentar trabajos ajenos como propios, se considera una infracción tanto ética como legal. Los contenidos generados por usuarios, como fan art, remixes de música y adaptaciones de obras literarias, 
+     también pueden violar los derechos de autor si no cuentan con la autorización adecuada. La línea entre el uso legítimo y la infracción puede ser ambigua, especialmente cuando se trata de parodias o usos transformativos (fair use).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
    - **Ética del uso de material multimedia:** 
      La importancia de atribuir correctamente las fuentes y respetar los derechos de los creadores.
      
