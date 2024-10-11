@@ -1551,11 +1551,30 @@ Para activar el dark mode, simplemente tendremos que aplicar el estilo dark a to
 Se puede controlar manualmente el modo oscuro añadiendo o quitando la clase `dark` al `body` con JavaScript.
 
 Ejemplo:
+```
+<body class="bg-white dark:bg-gray-900 text-black dark:text-white">
+  <div class="max-w-md mx-auto p-6 rounded-lg shadow-lg">
+    <h1 class="text-2xl font-bold">Ejemplo de Dark Mode</h1>
+    <p class="mt-4">
+      Este texto y fondo cambiarán según el modo de color.
+    </p>
+    <button id="toggleDarkMode" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded">
+      Cambiar a Modo Oscuro
+    </button>
+  </div>
 
-### 12.4 Actividades
+  <script> // Función para alternar el modo oscuro
+    const toggleButton = document.getElementById('toggleDarkMode');
 
-1. Implementa una página sencilla con Tailwind que cambie entre el modo claro y el oscuro, utilizando tanto el sistema de `media` como el de `class`.
-2. Personaliza el esquema de colores del modo oscuro en tu archivo `tailwind.config.js`.
+    toggleButton.onclick = () => {
+      document.documentElement.classList.toggle('dark'); 
 
-
-
+      if (document.documentElement.classList.contains('dark')) {
+        toggleButton.textContent = 'Cambiar a Modo Claro';
+      } else {
+        toggleButton.textContent = 'Cambiar a Modo Oscuro';
+      }
+    };
+  </script>
+</body>
+```
