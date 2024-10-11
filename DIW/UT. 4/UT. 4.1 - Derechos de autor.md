@@ -109,35 +109,23 @@ Las obras en dominio público pueden ser utilizadas por cualquier persona de man
      El mal uso de material protegido puede afectar la reputación y credibilidad de un profesional o empresa. En cualquier ámbito laboral, las competencias técnicas y el conocimiento especializado son cruciales, pero también lo es cómo se aplica ese conocimiento.
      Un desempeño profesional sólido genera un vinculo de confianza entre los compañeros de trabajo y sobre todo clientes. Eso se traduce en mayores oportunidades y reconocimiento en el entorno laboral.
      
-**5. Herramientas para Uso Legal de Material Multimedia**
+## 6. Recursos para el Uso Legal de Material Multimedia
+Dentro de esos recursos encontramos las plataformas o servicios que facilitan el acceso y uso de contenido protegido por derechos de autor de manera legal. Estas recursos incluyen bancos de imágenes, música o videos con licencias adecuadas, generadores de licencias, filtros de búsqueda que identifican contenido libre de derechos o con licencias abiertas, como Creative Commons, así como servicios que gestionan la adquisición de licencias comerciales o la atribución correcta del material utilizado. 
+El objetivo fundamental de esos recursos es garantizar el cumplimiento de las normativas de propiedad intelectual en proyectos profesionales o educativos.
 
    - **Repositorios de uso libre:** 
-     Ejemplos de sitios donde se puede obtener material multimedia sin infringir los derechos de autor (Unsplash, Pixabay, Free Music Archive).
-     
-   - **Cómo leer una licencia:** 
-     Explicación de los términos clave que aparecen en las licencias de uso y cómo determinar qué se puede o no hacer con el material.
-     
-   - **Soluciones prácticas:** 
-     Creación de contenido original o contratación de licencias pagadas para asegurar el cumplimiento legal.
+      1. **Unsplash:** Ofrece una amplia colección de fotografías de alta calidad que se pueden usar de forma gratuita para fines personales y comerciales, sin necesidad de atribución, aunque se recomienda dar crédito a los autores.
 
-**6. Caso Práctico**
+      2. **Pixabay:** Proporciona imágenes, videos y música libres de derechos de autor bajo la licencia Pixabay, lo que permite su uso gratuito en proyectos personales y comerciales, sin requerir atribución.
 
-   - Se propone que los estudiantes seleccionen una imagen o música con diferentes tipos de licencias (ej. una bajo Copyright tradicional, otra Creative Commons), y analicen si y cómo pueden utilizar dicho material en un proyecto académico.
+      3. **Pexels:** Este repositorio incluye fotografías y videos de alta calidad que se pueden utilizar de manera gratuita, tanto para proyectos personales como comerciales, sin necesidad de atribuir a los creadores.
 
-**7. Conclusión**
+      4. **Freesound:** Una comunidad de intercambio de sonidos bajo licencias Creative Commons, donde se pueden encontrar efectos de sonido y grabaciones que se pueden utilizar en proyectos multimedia, **con distintas condiciones de atribución dependiendo de la licencia elegida**.
+      5. **Free Music Archive:** Es un repositorio de música libre que ofrece una amplia variedad de pistas bajo diferentes tipos de licencias, incluidas las licencias Creative Commons. Permite a los usuarios descargar música de manera gratuita y legal para su uso en **proyectos personales y comerciales, dependiendo de los términos de cada licencia**.
+        
+   
+## 7. Tarea 1 - Licencias y derechos de autor en el uso de material multimedia.
+   1 - Visualizar esta <a href="https://www.istockphoto.com/es/foto/amor-composici%C3%B3n-foto-de-estudio-gm508139730-85082625">imagen</a> o música con diferentes tipos de licencias (ej. una bajo Copyright tradicional, otra Creative Commons), y analizar si y cómo se puede utilizar en **un proyecto académico**.
+   Repetir la misma argumentación en un **un proyecto comercial**
+   - 
 
-   - Resumen de la importancia de respetar las licencias y derechos de autor.
-   - Consecuencias de no hacerlo (legales, profesionales y éticas).
-   - Fomento de buenas prácticas para el uso responsable de material multimedia.
-
----
-
-**Recursos adicionales:**
-
-   - Documentos sobre los derechos de autor y licencias.
-   - Tutoriales sobre Creative Commons.
-   - Herramientas de búsqueda de imágenes y música con licencias claras.
-
----
-
-Con esta unidad didáctica, los estudiantes podrán comprender mejor cómo las licencias y los derechos de autor influyen en el uso de materiales multimedia, garantizando un uso legal y ético en sus proyectos.
