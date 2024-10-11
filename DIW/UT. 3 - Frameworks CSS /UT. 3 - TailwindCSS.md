@@ -1499,3 +1499,131 @@ Como ya hemos visto la función `screen()` se utiliza para definir nuevos estilo
 }
 ```
 La clase `header` aplicará un mayor padding y un tamaño de fuente más grande solo en pantallas de tamaño "large" o superior. 
+
+## 12 Dark mode
+El modo oscuro (dark mode) es una característica popular que cambia la interfaz de una aplicación o página web a un esquema de colores más oscuros.
+Esto puede mejorar la legibilidad en condiciones de poca luz y en general, reducir la fatiga visual. 
+
+### 12.1 Activación del Dark Mode en Tailwind
+Para activar el dark mode en un proyecto con Tailwind, primero hay que configurarlo en el archivo de configuración.
+
+```javascript
+module.exports = {
+  darkMode: 'media', // 'media' o 'class'
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
+Tailwind ofrece dos formas de gestionar el dark mode:
+
+1. **Media Query**: Cambia automáticamente según las preferencias de color del sistema operativo.
+2. **Class**: El modo oscuro se activa manualmente agregando la clase `dark` a un contenedor como el `html` o `body`.
+
+#### 2.1 Modo oscuro basado en Media Query
+Si configuras `darkMode: 'media'`, Tailwind detectará si el usuario ha habilitado el dark mode en su sistema operativo y aplicará los estilos correspondientes automáticamente.
+
+#### 2.2 Modo oscuro basado en Clase
+Si configuras `darkMode: 'class'`, deberás agregar manualmente la clase `dark` a un elemento HTML cuando desees activar el dark mode.
+
+---
+
+### 3. Aplicando Estilos para el Dark Mode
+
+Una vez activado, puedes aplicar estilos para el dark mode utilizando el prefijo `dark:` en las clases de Tailwind. Ejemplo:
+
+```html
+<div class="bg-white text-black dark:bg-gray-800 dark:text-white p-4">
+  Este texto cambiará de color en el modo oscuro.
+</div>
+```
+
+En este ejemplo, cuando el modo oscuro esté activado, el fondo pasará de `bg-white` a `bg-gray-800` y el texto cambiará de `text-black` a `text-white`.
+
+---
+
+### 4. Ejemplos Prácticos
+
+#### 4.1 Cambio de Colores en el Dark Mode
+```html
+<div class="bg-white dark:bg-black text-black dark:text-white p-6 rounded-lg">
+  <h1 class="text-2xl">Modo Oscuro Activado</h1>
+  <p class="mt-4">
+    Este contenedor cambiará de color de fondo y de texto en modo oscuro.
+  </p>
+</div>
+```
+
+#### 4.2 Cambios en Bordes y Sombras
+```html
+<div class="border border-gray-300 dark:border-gray-600 shadow-lg dark:shadow-none p-4">
+  Este contenedor ajusta sus bordes y sombras en el modo oscuro.
+</div>
+```
+
+---
+
+### 5. Alternancia Manual del Dark Mode
+
+Si utilizas `darkMode: 'class'`, puedes controlar manualmente el modo oscuro añadiendo o quitando la clase `dark` al elemento `html` o `body` con JavaScript.
+
+Ejemplo:
+```javascript
+document.documentElement.classList.toggle('dark');
+```
+
+Este código alterna entre los modos claro y oscuro al hacer clic en un botón o como parte de otro evento de usuario.
+
+---
+
+### 6. Personalización del Dark Mode
+
+Puedes extender y personalizar los colores del modo oscuro en el archivo `tailwind.config.js` usando la opción `extend`. Por ejemplo:
+
+```javascript
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        'dark-background': '#1a202c',
+        'dark-text': '#f7fafc',
+      },
+    },
+  },
+}
+```
+
+Ahora puedes utilizar las clases personalizadas para el modo oscuro:
+
+```html
+<div class="bg-white dark:bg-dark-background text-black dark:text-dark-text p-4">
+  Contenido con colores personalizados en el modo oscuro.
+</div>
+```
+
+---
+
+### 7. Conclusión
+
+El dark mode es una característica esencial en el diseño moderno que mejora la accesibilidad y la experiencia del usuario. Tailwind CSS lo implementa de manera sencilla con la posibilidad de gestionarlo mediante media queries o clases, ofreciendo una gran flexibilidad para adaptarlo a cualquier proyecto.
+
+---
+
+### 8. Actividades
+
+1. Implementa una página sencilla con Tailwind que cambie entre el modo claro y el oscuro, utilizando tanto el sistema de `media` como el de `class`.
+2. Personaliza el esquema de colores del modo oscuro en tu archivo `tailwind.config.js`.
+
+---
+
+### 9. Recursos Adicionales
+
+- [Documentación oficial de Tailwind sobre Dark Mode](https://tailwindcss.com/docs/dark-mode)
+
+--- 
+
+Esta unidad te permitirá implementar y personalizar fácilmente el dark mode en tus proyectos.
+
+
