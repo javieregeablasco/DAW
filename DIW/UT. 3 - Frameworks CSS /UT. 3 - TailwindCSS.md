@@ -1578,3 +1578,6 @@ Ejemplo:
   </script>
 </body>
 ```
+
+En el ejemplo, se alterna la clase dark en el elemento html mediante document.documentElement.classList.toggle('dark'). 
+De esa manera nos aseguramos que todos los estilos de Tailwind que dependen de dark se apliquen correctamente.
