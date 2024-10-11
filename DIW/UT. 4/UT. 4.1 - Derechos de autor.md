@@ -41,8 +41,9 @@ Los derechos exlusivos del autor se pueden describir de la siguiente manera:
 ## 2.5 Infracción de derechos de autor 
    El uso de una obra sin permiso puede constituir una violación de los derechos de autor, lo que puede conllevar sanciones legales.
 
-## 2.6 Lesgilación y enlaces:
-https://administracion.gob.es/pag_Home/Tu-espacio-europeo/derechos-obligaciones/empresas/inicio-gestion-cierre/derechos/propiedad-intelectual.html
+## 2.6 Legislación y enlaces:
+  <a href="https://administracion.gob.es/pag_Home/Tu-espacio-europeo/derechos-obligaciones/empresas/inicio-gestion-cierre/derechos/propiedad-intelectual.html">Propiedad intelectual</a>.  
+  <a href="https://www.boe.es/buscar/pdf/2023/BOE-A-2023-16215-consolidado.pdf">Real Decreto 611/2023, de 11 de julio, por el que se aprueba el Reglamento del Registro de la Propiedad Intelectual.</a>
 
 
 ## 3. Tipos de Licencias
