@@ -9,7 +9,7 @@ Palabras clave: DAW, DIW
 # 1. Introducción
 El objetivo general de esta unidad es reconocer las implicaciones legales, éticas y profesionales del uso de material multimedia sujeto a licencias y derechos de autor y aplicar las mejores prácticas para respetarlas.
 
-# 2. Derechos de Autor y propiedad intelectual
+# 2. Derechos del autor y propiedad intelectual
   - Los **derechos de autor** son un conjunto de normas legales que otorgan al creador de una obra original (incluidos videos, imágenes, música y texto) el control exclusivo sobre su uso y distribución.  
   Estos derechos permiten que el autor o titular decida cómo se puede utilizar, reproducir, modificar o distribuir su obra, ya sea texto, música, arte, películas, software u otros tipos de obras creativas.
   - La **propiedad intelectual** es un conjunto de derechos que protege las creaciones, como inventos, obras literarias y artísticas, símbolos y diseños. Su objetivo es asegurar que los creadores puedan controlar el uso de sus obras y recibir reconocimiento o compensación por su trabajo.  
@@ -49,7 +49,7 @@ Los derechos exlusivos del autor se pueden describir de la siguiente manera:
   <a href="https://www.boe.es/buscar/pdf/2023/BOE-A-2023-16215-consolidado.pdf">Real Decreto 611/2023, de 11 de julio, por el que se aprueba el Reglamento del Registro de la Propiedad Intelectual</a>.
 
 
-## 3. Tipos de Licencias
+## 3. Tipos de licencias
 
    - **Copyright tradicional:**   
      El creador tiene control total sobre su obra. El uso de este material requiere permisos explícitos.
@@ -82,11 +82,11 @@ Los derechos exlusivos del autor se pueden describir de la siguiente manera:
 
      Más información sobre licencias Creative Comons <a href="https://cedec.intef.es/las-licencias-creative-commons-que-son-por-que-utilizarlas-y-como-hacerlo/">aquí</a>.
 
-## 4. Uso Justo y Dominio Público
+## 4. Uso justo y dominio público
 
 **Uso justo** y **dominio público** son conceptos relacionados con los derechos de autor que permiten el uso de **obras protegidas sin infringir la ley**.
 
-### 4.1. Uso Justo (Fair Use)
+### 4.1. Uso justo (fair use)
 
 El **uso justo** permite utilizar partes limitadas de una obra protegida por derechos de autor sin necesidad de permiso del titular. 
 Se aplica principalmente en situaciones específicas y bajo ciertas condiciones.
@@ -97,7 +97,7 @@ Se aplica principalmente en situaciones específicas y bajo ciertas condiciones.
 - **Cantidad y proporción usada:** Cuanto menor sea la porción de la obra utilizada, más probable será que se considere uso justo. El uso de pequeñas partes de la obra, en lugar de la obra completa, suele estar mejor protegido.
 - **Efecto en el mercado:** Si el uso de la obra afecta negativamente el valor económico o la venta de la obra original, es menos probable que se considere uso justo.
 
-### 4.2 Dominio Público
+### 4.2 Dominio público
 
 El **dominio público** se refiere a obras creativas que no están protegidas por derechos de autor, ya sea porque el plazo de protección ha expirado, o porque nunca estuvieron bajo protección.  
 Las obras en dominio público pueden ser utilizadas por cualquier persona de manera libre, sin necesidad de permiso o pago.
@@ -107,7 +107,7 @@ Las obras en dominio público pueden ser utilizadas por cualquier persona de man
 - **Obras del gobierno:** En países como los Estados Unidos, los trabajos creados por agencias gubernamentales están en dominio público desde el momento de su creación.
 - **Obras no registradas:** Algunas obras que no cumplen los requisitos de protección o que el autor voluntariamente pone en el dominio público.
 
-## 5. Implicaciones Éticas y Legales
+## 5. Aspectos éticos y legales
    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Copy-roger.svg/1024px-Copy-roger.svg.png" width=15%>
 
    - **Ejemplos de infracciones de derechos de autor:**  
@@ -132,7 +132,7 @@ Las obras en dominio público pueden ser utilizadas por cualquier persona de man
      El mal uso de material protegido puede afectar la reputación y credibilidad de un profesional o empresa. En cualquier ámbito laboral, las competencias técnicas y el conocimiento especializado son cruciales, pero también lo es cómo se aplica ese conocimiento.
      Un desempeño profesional sólido genera un vinculo de confianza entre los compañeros de trabajo y sobre todo clientes. Eso se traduce en mayores oportunidades y reconocimiento en el entorno laboral.
      
-## 6. Recursos para el Uso Legal de Material Multimedia
+## 6. Recursos para el uso legal de material multimedia
 Dentro de esos recursos encontramos las plataformas o servicios que facilitan el acceso y uso de contenido protegido por derechos de autor de manera legal. Estas recursos incluyen bancos de imágenes, música o videos con licencias adecuadas, generadores de licencias, filtros de búsqueda que identifican contenido libre de derechos o con licencias abiertas, como Creative Commons, así como servicios que gestionan la adquisición de licencias comerciales o la atribución correcta del material utilizado. 
 El objetivo fundamental de esos recursos es garantizar el cumplimiento de las normativas de propiedad intelectual en proyectos profesionales o educativos.
 
