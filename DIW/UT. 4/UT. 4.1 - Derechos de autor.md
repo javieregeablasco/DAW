@@ -48,15 +48,23 @@ Los derechos exlusivos del autor se pueden describir de la siguiente manera:
      Es habitual verlas en numerosos documentos:
      
      ---
-     <img src="https://cysae.com/wp-content/uploads/2019/02/Sin-t%C3%ADtulo-2.png" width=60%>
-     
+     ![image](https://github.com/user-attachments/assets/20d001cf-d800-4baa-82b9-31e84e50dd72)  
+     **Reconocimiento (by):** Se permite cualquier explotación de la obra, incluyendo una finalidad comercial, así como la creación de obras derivadas cuya distribución está permitida sin ninguna restricción.
 
-     - **Attribution – BY** - Debe reconocerse la autoría de la obra de manera adecuada.
-     - **No Comercial (NonCommercial) – NC** - No se permite la utilización de la obra para fines comerciales.
-     - **Sin obras derivadas (NoDerivative Works) – ND** - No se permite la distribución de obras derivadas basadas en ella.
-     - **Compartir Igual (ShareAlike) – SA** -	Si se crea una obra derivada, debe distribuirse bajo la misma licencia que la obra original.
-     ---
+     ![image](https://github.com/user-attachments/assets/f1ca43d0-76ff-4631-a39f-052ab45e7931)  
+     **Reconocimiento – NoComercial (by-nc):** permite la generación de obras derivadas siempre que no se haga un uso comercial. Tampoco permite utilizar la obra original con finalidades comerciales.
      
+     ![image](https://github.com/user-attachments/assets/48e0bddb-117a-4524-b6f8-b2f1f01e84c4)  
+     **Reconocimiento – NoComercial – CompartirIgual (by-nc-sa):** No permite un uso comercial de la obra original ni de las posibles obras derivadas. La distribución de la obra derivada se debe hacer con una licencia igual a la que regula la obra original.
+
+     ![image](https://github.com/user-attachments/assets/7f438d06-c497-493b-86f2-db26f09a62a8)  
+     **Reconocimiento – CompartirIgual (by-sa):** Se permite el uso comercial de la obra y de las posibles obras derivadas, cuya distribución se debe hacer con una licencia igual a la que regula la obra.
+
+     ![image](https://github.com/user-attachments/assets/726446ff-d5ab-4b4b-ab9d-6f94327ede2c)  
+     **Reconocimiento – SinObraDerivada (by-nd):** Se permite el uso comercial de la obra, pero no se permite generar obras derivadas.
+
+     ---
+
      Más información sobre licencias Creative Comons <a href="https://cedec.intef.es/las-licencias-creative-commons-que-son-por-que-utilizarlas-y-como-hacerlo/">aquí</a>.
 
 ## 4. Uso Justo y Dominio Público
