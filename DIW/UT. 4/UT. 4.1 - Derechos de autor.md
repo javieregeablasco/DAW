@@ -9,18 +9,21 @@ Palabras clave: DAW, DIW
 # 1. Introducción
 El objetivo general de esta unidad es reconocer las implicaciones legales, éticas y profesionales del uso de material multimedia sujeto a licencias y derechos de autor y aplicar las mejores prácticas para respetarlas.
 
-# 2. Derechos de Autor y protección intelectual
-  Los **derechos de autor** son un conjunto de normas legales que otorgan al creador de una obra original (incluidos videos, imágenes, música y texto) el control exclusivo sobre su uso y distribución.  
+# 2. Derechos de Autor y propiedad intelectual
+  - Los **derechos de autor** son un conjunto de normas legales que otorgan al creador de una obra original (incluidos videos, imágenes, música y texto) el control exclusivo sobre su uso y distribución.  
   Estos derechos permiten que el autor o titular decida cómo se puede utilizar, reproducir, modificar o distribuir su obra, ya sea texto, música, arte, películas, software u otros tipos de obras creativas.
-  La **propiedad intelectual** es un conjunto de derechos que protege las creaciones, como inventos, obras literarias y artísticas, símbolos y diseños. Su objetivo es asegurar que los creadores puedan controlar el uso de sus obras y recibir reconocimiento o compensación por su trabajo.
-  Diferencias entre **derechos de autor** y **propiedad intelectual**: Todos los derechos de autor son parte de la propiedad intelectual, pero no toda la propiedad intelectual se limita a derechos de autor.
-  Ejemplo:
-  **Derechos de autor**: Un autor escribe una novela. Los derechos de autor protegen su obra, permitiéndole decidir quién puede publicarla, reproducirla o adaptarla a otros formatos (como hacer una película basada en el libro).
-  **Propiedad intelectual**: Ese mismo autor inventa un nuevo tipo de libro electrónico que permite leer en tres dimensiones. Para proteger esa invención, solicita una **patente**. En este caso, **la patente sería un tipo de propiedad intelectual**, distinta de los derechos de autor que protegen la novela en sí.
-  **Conclusión:** Los derechos de autor protegen las obras literarias, mientras que la propiedad intelectual incluye también patentes, marcas y otros tipos de protección.
+  - La **propiedad intelectual** es un conjunto de derechos que protege las creaciones, como inventos, obras literarias y artísticas, símbolos y diseños. Su objetivo es asegurar que los creadores puedan controlar el uso de sus obras y recibir reconocimiento o compensación por su trabajo.  
+  - La principal diferencia que existe entre **derechos de autor** y **propiedad intelectual** es que todos los derechos de autor son parte de la propiedad intelectual, pero no toda la propiedad intelectual se limita a derechos de autor.
+
+**Ejemplo de diferencias entre propiedad intelectual y derechos de autor.**  
+  - **Derechos de autor**: Un autor escribe una novela. Los derechos de autor protegen su obra, permitiéndole decidir quién puede publicarla, reproducirla o adaptarla a otros formatos (como hacer una película basada en el libro).  
+  - **Propiedad intelectual**: Ese mismo autor inventa un nuevo tipo de libro electrónico que permite leer en tres dimensiones. Para proteger esa invención, solicita una **patente**. En este caso, **la patente sería un tipo de propiedad intelectual**, distinta de los derechos de autor que protegen la novela en sí.  
+  - **Conclusión** Los derechos de autor protegen las obras literarias, mientras que la propiedad intelectual incluye también patentes, marcas y otros tipos de protección.  
+
+**En el caso que nos afecta las creaciones multimedia están protegidas por los de derechos de autor, así que nos centraremos en ellas.**    
   
 ## 2.1. Protección automática 
-   Los derechos de autor y/o propiedad intelectual se otorgan automáticamente al creador desde el momento en que la obra es creada y fijada en un medio tangible (soporte digital, papel o almacenada de alguna manera).
+   Los derechos de autor se otorgan automáticamente al creador desde el momento en que la obra es creada y fijada en un medio tangible (soporte digital, papel o almacenada de alguna manera).
 
 ## 2.2 Derechos exclusivos del autor
 Los derechos exclusivos son aquellos que permiten a su titular autorizar o prohibir los actos de explotación de su obra o prestación protegida por el usuario, y a exigir de este una retribución a cambio de la autorización que le conceda.   
@@ -43,7 +46,7 @@ Los derechos exlusivos del autor se pueden describir de la siguiente manera:
 
 ## 2.6 Legislación y enlaces:
   <a href="https://administracion.gob.es/pag_Home/Tu-espacio-europeo/derechos-obligaciones/empresas/inicio-gestion-cierre/derechos/propiedad-intelectual.html">Propiedad intelectual</a>.  
-  <a href="https://www.boe.es/buscar/pdf/2023/BOE-A-2023-16215-consolidado.pdf">Real Decreto 611/2023, de 11 de julio, por el que se aprueba el Reglamento del Registro de la Propiedad Intelectual.</a>
+  <a href="https://www.boe.es/buscar/pdf/2023/BOE-A-2023-16215-consolidado.pdf">Real Decreto 611/2023, de 11 de julio, por el que se aprueba el Reglamento del Registro de la Propiedad Intelectual</a>.
 
 
 ## 3. Tipos de Licencias
