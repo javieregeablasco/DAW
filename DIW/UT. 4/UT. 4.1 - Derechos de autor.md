@@ -125,9 +125,9 @@ El objetivo fundamental de esos recursos es garantizar el cumplimiento de las no
         
    
 ## 7. Tarea 1 - Licencias y derechos de autor en el uso de material multimedia.
-1 - Visualizar esta <a href="https://www.istockphoto.com/es/foto/amor-composici%C3%B3n-foto-de-estudio-gm508139730-85082625">imagen</a> y comentar qué tipo de licencia de uso tiene.
-2 - Buscar en google una imagen que se pueda usar bajo **licencias CC**. Explicar brevemente las limitaciones **CC** de la imagen.
-3 - Responder a las preguntas tipo test del documento adjuntado en aules.
+1 - Visualizar esta <a href="https://www.istockphoto.com/es/foto/amor-composici%C3%B3n-foto-de-estudio-gm508139730-85082625">imagen</a> y comentar qué tipo de licencia de uso tiene.  
+2 - Buscar en google una imagen que se pueda usar bajo **licencias CC**. Explicar brevemente las limitaciones **CC** de la imagen.  
+3 - Responder a las preguntas tipo test del documento adjuntado en aules.  
 
 
 
