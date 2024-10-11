@@ -1504,47 +1504,35 @@ La clase `header` aplicará un mayor padding y un tamaño de fuente más grande 
 El modo oscuro (dark mode) es una característica popular que cambia la interfaz de una aplicación o página web a un esquema de colores más oscuros.
 Esto puede mejorar la legibilidad en condiciones de poca luz y en general, reducir la fatiga visual. 
 
-### 12.1 Activación del Dark Mode en Tailwind
-Para activar el dark mode en un proyecto con Tailwind, primero hay que configurarlo en el archivo de configuración.
-
-```javascript
-module.exports = {
-  darkMode: 'media', // 'media' o 'class'
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+### 12.1 Activación a la demanda del sistema operativo
+Para activar el dark mode a peticion del sistema operativo nos limitaremos a poner `dark:` delante de los elementos a los que aplicar el dark mode.
+-  Ejemplo
+```
+<div class="max-w-md mx-auto p-6 rounded-lg shadow-lg">
+    <h1 class="text-2xl font-bold">Ejemplo de Dark Mode</h1>
+    <p class="mt-4">
+    Este texto y fondo cambiarán según el modo de color del sistema operativo.
+    </p>
+</div>
 ```
 
 Tailwind ofrece dos formas de gestionar el dark mode:
 
 1. **Media Query**: Cambia automáticamente según las preferencias de color del sistema operativo.
-2. **Class**: El modo oscuro se activa manualmente agregando la clase `dark` a un contenedor como el `html` o `body`.
+2. **Class**: El modo oscuro se activa manualmente agregando la clase `dark` a un contenedor.
 
-#### 2.1 Modo oscuro basado en Media Query
-Si configuras `darkMode: 'media'`, Tailwind detectará si el usuario ha habilitado el dark mode en su sistema operativo y aplicará los estilos correspondientes automáticamente.
+### 12.2 Aplicando el dark mode mediante media query
+El dark mode se aplica utilizando el prefijo `dark:`
+Ejemplo:
 
-#### 2.2 Modo oscuro basado en Clase
-Si configuras `darkMode: 'class'`, deberás agregar manualmente la clase `dark` a un elemento HTML cuando desees activar el dark mode.
-
----
-
-### 3. Aplicando Estilos para el Dark Mode
-
-Una vez activado, puedes aplicar estilos para el dark mode utilizando el prefijo `dark:` en las clases de Tailwind. Ejemplo:
-
-```html
-<div class="bg-white text-black dark:bg-gray-800 dark:text-white p-4">
-  Este texto cambiará de color en el modo oscuro.
+```l
+<div class="max-w-md mx-auto p-6 rounded-lg shadow-lg">
+    <h1 class="text-2xl font-bold">Ejemplo de Dark Mode</h1>
+    <p class="mt-4">
+      Este texto y fondo cambiarán según el modo de color del sistema operativo.
+    </p>
 </div>
 ```
-
-En este ejemplo, cuando el modo oscuro esté activado, el fondo pasará de `bg-white` a `bg-gray-800` y el texto cambiará de `text-black` a `text-white`.
-
----
-
-### 4. Ejemplos Prácticos
 
 #### 4.1 Cambio de Colores en el Dark Mode
 ```html
