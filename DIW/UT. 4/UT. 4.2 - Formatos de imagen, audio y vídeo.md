@@ -176,7 +176,12 @@ El video es otro recurso de las interfaces web, pero su uso intensivo de datos r
   - **Desventajas**: Menor calidad comparada con mp4 o WebM.
   - **Usos**: Alternativa a mp4 o WebM en navegadores compatibles.
 
-#### 6. **Criterios para la Selección de Formatos**
+# 5 Tarea:
+
+
+# 5. Herramientas para generar contenido multimedia. 
+
+### 6. **Criterios para la Selección de Formatos**
 - **Compatibilidad**: Verificar el soporte del formato en los navegadores y dispositivos de destino.
 - **Compresión vs. Calidad**: Evaluar el equilibrio entre calidad visual o auditiva y tamaño de archivo.
 - **Transparencia**: Necesaria en imágenes que se superpondrán a otros elementos (logos, gráficos).
@@ -190,11 +195,3 @@ El video es otro recurso de las interfaces web, pero su uso intensivo de datos r
 #### 8. **Actividades**
 1. Realiza una comparación práctica entre los formatos de imagen usando diferentes herramientas de compresión.
 2. Implementa una página web con audio y video integrados usando HTML5, explorando la compatibilidad de MP3 y OGG.
-
-#### 9. **Conclusión**
-La correcta identificación y uso de formatos de imagen, audio y video es fundamental para el rendimiento, la accesibilidad y la experiencia de usuario en el diseño web. Seleccionar el formato adecuado garantiza tiempos de carga rápidos y una presentación multimedia de alta calidad, optimizando el rendimiento de las aplicaciones web.
-
----
- 
-
-
