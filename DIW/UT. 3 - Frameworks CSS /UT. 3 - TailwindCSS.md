@@ -1547,7 +1547,7 @@ Para activar el dark mode, simplemente tendremos que aplicar el estilo dark a to
   </div>  
 </body>
 
-### 12.3 Activación del dark mode a petición del usuario:
+## 12.3 Activación del dark mode a petición del usuario:
 Se puede controlar manualmente el modo oscuro añadiendo o quitando la clase `dark` al `body` con JavaScript.
 
 Ejemplo:
@@ -1578,6 +1578,3 @@ Ejemplo:
   </script>
 </body>
 ```
-
-En el ejemplo, se alterna la clase dark en el elemento html mediante document.documentElement.classList.toggle('dark'). 
-De esa manera nos aseguramos que todos los estilos de Tailwind que dependen de dark se apliquen correctamente.
