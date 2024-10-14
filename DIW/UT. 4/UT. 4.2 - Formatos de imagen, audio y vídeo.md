@@ -16,17 +16,61 @@ Este aprtado se dividirá entre las imágenes rasterizadas y las imagens vectori
 -  Los **formatos de imagen vectoriales** (SVG) están formados por fórmulas matemáticas que definen formas, líneas y colores. Son escalables sin pérdida de calidad, lo que los hace perfectos para logotipos, iconos y gráficos simples.
 
 ## 2.1 Formatos de imagenes rasterizados
-### 2.1.1  Formato de imagen .jpg y .jpeg
-  <img src="https://discoveryformacion.com/wp-content/uploads/2022/07/formato-imagen-jpg-150x150.png">
-  El formato JPEG (Joint Photographic Experts Group) es uno de los formatos de imagen más comunes en la web debido a su eficiencia en la compresión de imágenes fotográficas. Utiliza compresión con pérdida, lo que significa que reduce el tamaño del archivo al eliminar cierta información de la imagen que el ojo humano no puede percibir fácilmente.
-  - **Ventajas**: Excelente compresión con pérdida controlada, adecuado para fotografías y fondos.
-  - **Desventajas**: No soporta transparencia, pérdida de calidad con cada edición.
-  - **Usos**: Fotografías y gráficos con degradados complejos.
+### 2.1.1 Formato de imagen JPG y JPEG  
+<img src="https://cdn.icon-icons.com/icons2/265/PNG/512/JPEG_29712.png" width=15%>  
 
-- **PNG (.png)**
-  - **Ventajas**: Soporte de transparencia, compresión sin pérdida.
-  - **Desventajas**: Tamaño de archivo mayor en comparación con JPEG.
-  - **Usos**: Gráficos con transparencias, logos, iconos.
+  El formato JPEG (Joint Photographic Experts Group) es un formato de imagen muy común debido a su eficiencia en la compresión de imágenes fotográficas. Utiliza compresión **con pérdida**, al reducir el tamaño del archivo eliminando información de la imagen que el ojo humano no puede percibir fácilmente. 
+  
+-  **Casos típicos de uso de imágenes en formato JPG JPEG:**
+  
+    **Imágenes de contenido:** Ya sea para el blog, páginas web o nuestras redes sociales.
+
+    **Imágenes de producto:** Siempre que los mismos no requieran de fondo transparente.
+
+    **Imágenes de fondo:** Al permitir una buena optimización su uso es típico en fondos y efectos decorativos.  
+
+### 2.1.2 Formato de imagen PNG  
+<img src="https://cdn.icon-icons.com/icons2/2063/PNG/512/format_extension_png_page_file_icon_124654.png" width=18%>  
+
+  El formato PNG (Portable Network Graphics) destaca por la posibilidad de comprimir imágenes **sin pérdidas** y de ofrecer una profundidad de color de hasta 24 bits por píxel. Con el formato PNG **no se pueden generar animaciones**.    
+  El formato .png soporta tanto la transparencia como la semitransparencia (gracias al canal alfa integrado).    
+  Los mecanismos de corrección del color y del brillo garantizan que los archivos de imagen en formato .png tengan más o menos la misma apariencia en los diferentes sistemas.    
+  A causa del proceso de compresión sin pérdidas, los archivos son relativamente grandes, de modo que el formato no resulta tan adecuado para la presentación de fotografías.    
+  
+-  **Casos típicos de uso de imágenes en formato PNG:**  
+  
+    **Almacenamiento y publicación** de imágenes y gráficos pequeños (logotipos, iconos, barras, etc.).
+   
+    **Gráficos con transparencia.**
+   
+    **Fotos sin pérdidas.**    
+
+### 2.1.3 Formato de imagen BMP  
+<img src="https://cdn.icon-icons.com/icons2/265/PNG/512/BMP_29699.png" width=15%>  
+  
+  El formato BMP (Windows bitmap), inicialmente desarrollado para **sistemas operativos Microsoft e IBM** es un formato de almacenamiento para mapas de bits con una profundidad de color de hasta 24 bits por píxel.  
+  El formato de imagen **sin comprimir** asigna a cada píxel un valor cromático, por lo que los archivos suelen ser muy grandes, motivo por el que el formato **no es adecuado** para su uso en páginas web.
+
+-  **Aplicación recomendada:** Almacenamiento de fotos/gráficos en el ámbito offline. 
+
+### 2.1.4 Formato de imagen GIF  
+<img src="https://cdn.icon-icons.com/icons2/265/PNG/512/GIF_29666.png" width=15%>  
+
+  El formato GIF (Graphics Interchange Format) es una trama que utiliza la compresión sin pérdidas de calidad para imágenes de hasta 256 colores.  
+  Por ese motivo, con imágenes con más de 256 colores, la imagen debe adaptarse (reducire la cantidad de colores), lo que produce una consecuente pérdida de calidad.  
+  Su limitación de 8 bits hace que el tamaño del archivo sea pequeño, lo que le ideal para crear contenidos **de animación** cortos y atractivos.  
+  A pesar de su limitada calidad de imagen, mucha gente utiliza el GIF porque permite ofrecer un contenido visual más elaborado que una imagen estática.
+
+-  **Casos típicos de uso de imágenes en formato GIF:**  
+  
+    **Almacenamiento y publicación** de imágenes y gráficos pequeños (logotipos, iconos, barras, etc.).
+   
+    **Gráficos con transparencia.**
+   
+    **Fotos sin pérdidas.**
+  
+   
+
 
 - **GIF (.gif)**
   - **Ventajas**: Soporte para animaciones simples y transparencias.
