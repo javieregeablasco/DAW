@@ -12,13 +12,14 @@ No obstante, el uso o abuso de contenidos multimedia en una página web puede pr
 # 2. Formatos de Imagen
 En las interfaces web, las imágenes son un componente visual clave. Disponemos de muchos formatos, cada uno tiene sus propias características en términos de calidad, vistosidad y tamaño.
 Este aprtado se dividirá entre las imágenes rasterizadas y las imagens vectoriales. 
--  Los **formatos de imagen rasterizados** (como JPEG, PNG y GIF) están compuestos por una matriz de píxeles, donde cada píxel tiene un color específico. Son ideales para fotografías y gráficos complejos con muchos detalles, pero pierden calidad cuando se amplían, ya que la resolución es fija.
-- Los **formatos vectoriales** (como SVG) están formados por fórmulas matemáticas que definen formas, líneas y colores. Son escalables sin pérdida de calidad, lo que los hace perfectos para logotipos, iconos y gráficos simples.
+-  Los **formatos de imagen rasterizados** (JPEG, PNG y GIF) están compuestos por una matriz de píxeles, donde cada píxel tiene un color específico. Son ideales para fotografías y gráficos complejos con muchos detalles, pero pierden calidad cuando se amplían, ya que la resolución es fija.  
+-  Los **formatos de imagen vectoriales** (SVG) están formados por fórmulas matemáticas que definen formas, líneas y colores. Son escalables sin pérdida de calidad, lo que los hace perfectos para logotipos, iconos y gráficos simples.
 
 ## 2.1 Formatos de imagenes rasterizados
 ### 2.1.1  Formato de imagen .jpg y .jpeg
-  <img href="https:discoveryformacion.com/wp-content/uploads/2022/07/formato-imagen-jpg-150x150.png")
-- **Ventajas**: Excelente compresión con pérdida controlada, adecuado para fotografías y fondos.
+  <img src="https://discoveryformacion.com/wp-content/uploads/2022/07/formato-imagen-jpg-150x150.png">
+  El formato JPEG (Joint Photographic Experts Group) es uno de los formatos de imagen más comunes en la web debido a su eficiencia en la compresión de imágenes fotográficas. Utiliza compresión con pérdida, lo que significa que reduce el tamaño del archivo al eliminar cierta información de la imagen que el ojo humano no puede percibir fácilmente.
+  - **Ventajas**: Excelente compresión con pérdida controlada, adecuado para fotografías y fondos.
   - **Desventajas**: No soporta transparencia, pérdida de calidad con cada edición.
   - **Usos**: Fotografías y gráficos con degradados complejos.
 
