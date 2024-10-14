@@ -108,26 +108,28 @@ Este aprtado se dividirá entre las imágenes rasterizadas y las imagens vectori
   Utilizado principalmente en gráficos profesionales es útil para crear imágenes de alta calidad. 
   Aunque se pueda encontrar, no es muy común en la web y generalmente se convierte a SVG o PNG para su visualización.
 
-### 2.2.2 Formato PDF
+### 2.2.3 Formato PDF
 <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_pdf_icon_130274.png" width=18%>  
 
-  El formato PDF (PDF) puede resultar más familiar como formato de documento, pero también puede utilizarse para guardar imágenes e ilustraciones.
+  El formato PDF (Portable Document Format) es muy familiar como formato de documento, pero también puede utilizarse para guardar imágenes e ilustraciones.  
+  Un archivo PDF se basa en el mismo lenguaje PostScript que el EPS. Es un vector con compresión sin pérdidas, lo que te permite ampliar una imagen PDF tanto como un desea.
+  También es la mejor opción para los informes visuales interactivos o las infografías, ya que es indexable y tiene texto que se puede buscar.  
+  También es posible incluir elementos interactivos en un PDF, por ejemplo, enlaces y botones CTA.
 
-Un archivo PDF se basa en el mismo lenguaje PostScript que el EPS. Por lo tanto, el PDF es una excelente opción para la impresión. Es un vector con compresión sin pérdidas, lo que te permite ampliar una imagen PDF tanto como quieras.
+## 2.3 Tabla resumen / comprativa de los 4 formatos de imágenes mas populares.
 
-También es la mejor opción para los informes visuales interactivos o las infografías, ya que es indexable y tiene texto que se puede buscar. También es posible incluir elementos interactivos en un PDF, por ejemplo, enlaces y botones CTA.l foramto EPS (Encapsulated PostScript) se utiliza para guardar ilustraciones o trabajos de diseño gráfico en programas de ilustración como Adobe Illustrator y CorelDraw.  
-  Utilizado principalmente en gráficos profesionales es útil para crear imágenes de alta calidad. 
-  Aunque se pueda encontrar, no es muy común en la web y generalmente se convierte a SVG o PNG para su visualización.
+| Característica         | JPG                                     | PNG                                                         | GIF                      | SVG                                          |
+|------------------------|-----------------------------------------|--------------------------------------------------------------|--------------------------|----------------------------------------------|
+| **Esquemas de color**   | RGB, escala de grises, CMYK             | RGB, escala de grises, colores indexados                     | Colores indexados         | RGB, nombres de color de SVG                 |
+| **Número de colores**   | Hasta 16,7 mill.                        | Hasta 18 trillones                                           | Hasta 256                 | Hasta 16,7 mill.                             |
+| **Canales de color**    | Tres                                    | Tres (más un canal alfa)                                     | Uno                      | Tres (más un canal alfa)                     |
+| **Profundidad de bits** | 8 bits por canal                        | 1-16 bits por canal                                          | 1-8 bits                 | 8 bits por canal                             |
+| **Compresión**          | Alta, con pérdidas                      | Alta, sin pérdidas                                           | Escasa                    | Ninguna                                      |
+| **Tamaño de archivos**  | Muy pequeño                             | Pequeño                                                      | Grande                    | Individual                                   |
+| **Animaciones**         | No                                      | No                                                           | Sí                        | Sí                                           |
+| **Adecuado para**       | Fotos                                   | Imágenes y gráficos de pequeña envergadura (ej: logotipos), fotos sin pérdidas | Animaciones               | Todo tipo de gráficos (logotipos, iconos, diagramas, etc.) |
 
-
-
-
-
-
-
-
-
-#### 4. **Formatos de Audio**
+# 3. Formatos de Audio
 El audio en las interfaces web se utiliza principalmente en contenido multimedia, como videos o podcasts. Los formatos deben ofrecer un equilibrio entre calidad y tamaño de archivo.
 
 - **MP3 (.mp3)**
