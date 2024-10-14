@@ -1500,12 +1500,12 @@ Como ya hemos visto la función `screen()` se utiliza para definir nuevos estilo
 ```
 La clase `header` aplicará un mayor padding y un tamaño de fuente más grande solo en pantallas de tamaño "large" o superior. 
 
-## 12 Dark mode
+# 12 Dark mode
 El modo oscuro (dark mode) es una característica popular que cambia la interfaz de una aplicación o página web a un esquema de colores más oscuros.
 Esto puede mejorar la legibilidad en condiciones de poca luz y en general, reducir la fatiga visual. 
 - [Documentación oficial de Tailwind sobre Dark Mode](https://tailwindcss.com/docs/dark-mode)
 
-### 12.1 Activación del dark mode a petición del sistema operativo
+## 12.1 Activación del dark mode a petición del sistema operativo
 Para activar el dark mode a peticion del sistema operativo nos limitaremos a poner `dark:` delante de los elementos a los que aplicar el dark mode.
 -  Ejemplo
 ```
@@ -1519,7 +1519,7 @@ Para activar el dark mode a peticion del sistema operativo nos limitaremos a pon
 </body>
 ```
 
-### 12.2 Activación del dark mode a petición de la página: class
+## 12.2 Activación del dark mode a petición de la página: class
 Para activar el dark-mode a peticion de la página primero debemos cambiar el archivo de configuración añadiendo class al módulo de darkMode. 
 
 ```
