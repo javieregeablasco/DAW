@@ -5,15 +5,18 @@ Año: 24-25
 Palabras clave: DAW, DIW
 ---
 
-# 1. Introducción
+# 1. - Introducción
 La gran popularidad de internet reside en el uso de contenidos multimedia, como imagenes, audios y videos. De hecho, se ha demostrado que estos contribuyen ampliamente a mejorar la experiencia del usuario (UX). 
 No obstante, el uso o abuso de contenidos multimedia en una página web puede presentar diversos problemas como, por ejemplo, ralentizar la carga de la misma, presentar problemas de compatibilidad, etc. Por ese motivo es importante identificar correctamente los formatos adecuados para optimizar la carga, calidad y compatibilidad entre diferentes navegadores y dispositivos.
 
 # 2. Formatos de Imagen
-En las interfaces web, las imágenes son un componente visual clave. Se utilizan varios formatos, cada uno con sus propias características en términos de calidad y tamaño.
+En las interfaces web, las imágenes son un componente visual clave. Disponemos de muchos formatos, cada uno tiene sus propias características en términos de calidad, vistosidad y tamaño.
+Este aprtado se dividirá entre las imágenes rasterizadas y las imagens vectoriales. 
+-  Los **formatos de imagen rasterizados** (como JPEG, PNG y GIF) están compuestos por una matriz de píxeles, donde cada píxel tiene un color específico. Son ideales para fotografías y gráficos complejos con muchos detalles, pero pierden calidad cuando se amplían, ya que la resolución es fija.
+- Los **formatos vectoriales** (como SVG) están formados por fórmulas matemáticas que definen formas, líneas y colores. Son escalables sin pérdida de calidad, lo que los hace perfectos para logotipos, iconos y gráficos simples.
 
-- **JPEG (.jpg, .jpeg)**
-  - **Ventajas**: Excelente compresión con pérdida controlada, adecuado para fotografías y fondos.
+## 2.1 Formatos de imagenes rasterizados
+### 2.1.1  Formato de imagen JPG / JPEG - **Ventajas**: Excelente compresión con pérdida controlada, adecuado para fotografías y fondos.
   - **Desventajas**: No soporta transparencia, pérdida de calidad con cada edición.
   - **Usos**: Fotografías y gráficos con degradados complejos.
 
