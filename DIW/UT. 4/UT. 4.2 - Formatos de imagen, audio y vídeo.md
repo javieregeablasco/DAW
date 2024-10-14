@@ -19,7 +19,7 @@ Este aprtado se dividirá entre las imágenes rasterizadas y las imagens vectori
 ### 2.1.1 Formato de imagen JPG y JPEG  
 <img src="https://cdn.icon-icons.com/icons2/265/PNG/512/JPEG_29712.png" width=15%>  
 
-  El formato JPEG (Joint Photographic Experts Group) es un formato de imagen muy común debido a su eficiencia en la compresión de imágenes fotográficas. Utiliza compresión **con pérdida**, al reducir el tamaño del archivo eliminando información de la imagen que el ojo humano no puede percibir fácilmente. 
+-  El formato JPEG (Joint Photographic Experts Group) es un formato de imagen muy común debido a su eficiencia en la compresión de imágenes fotográficas. Utiliza compresión **con pérdida**, al reducir el tamaño del archivo eliminando información de la imagen que el ojo humano no puede percibir fácilmente. 
   
 -  **Casos típicos de uso de imágenes en formato JPG JPEG:**
   
@@ -32,10 +32,10 @@ Este aprtado se dividirá entre las imágenes rasterizadas y las imagens vectori
 ### 2.1.2 Formato de imagen PNG  
 <img src="https://cdn.icon-icons.com/icons2/2063/PNG/512/format_extension_png_page_file_icon_124654.png" width=18%>  
 
-  El formato PNG (Portable Network Graphics) destaca por la posibilidad de comprimir imágenes **sin pérdidas** y de ofrecer una profundidad de color de hasta 24 bits por píxel. Con el formato PNG **no se pueden generar animaciones**.    
-  El formato .png soporta tanto la transparencia como la semitransparencia (gracias al canal alfa integrado).    
-  Los mecanismos de corrección del color y del brillo garantizan que los archivos de imagen en formato .png tengan más o menos la misma apariencia en los diferentes sistemas.    
-  A causa del proceso de compresión sin pérdidas, los archivos son relativamente grandes, de modo que el formato no resulta tan adecuado para la presentación de fotografías.    
+-  El formato PNG (Portable Network Graphics) destaca por la posibilidad de comprimir imágenes **sin pérdidas** y de ofrecer una profundidad de color de hasta 24 bits por píxel. Con el formato PNG **no se pueden generar animaciones**.    
+-  El formato .png soporta tanto la transparencia como la semitransparencia (gracias al canal alfa integrado).    
+-  Los mecanismos de corrección del color y del brillo garantizan que los archivos de imagen en formato .png tengan más o menos la misma apariencia en los diferentes sistemas.    
+-  A causa del proceso de compresión sin pérdidas, los archivos son relativamente grandes, de modo que el formato no resulta tan adecuado para la presentación de fotografías.    
   
 -  **Casos típicos de uso de imágenes en formato PNG:**  
   
@@ -48,18 +48,18 @@ Este aprtado se dividirá entre las imágenes rasterizadas y las imagens vectori
 ### 2.1.3 Formato de imagen BMP  
 <img src="https://cdn.icon-icons.com/icons2/265/PNG/512/BMP_29699.png" width=15%>  
   
-  El formato BMP (Windows bitmap), inicialmente desarrollado para **sistemas operativos Microsoft e IBM** es un formato de almacenamiento para mapas de bits con una profundidad de color de hasta 24 bits por píxel.  
-  El formato de imagen **sin comprimir** asigna a cada píxel un valor cromático, por lo que los archivos suelen ser muy grandes, motivo por el que el formato **no es adecuado** para su uso en páginas web.
+-  El formato BMP (Windows bitmap), inicialmente desarrollado para **sistemas operativos Microsoft e IBM** es un formato de almacenamiento para mapas de bits con una profundidad de color de hasta 24 bits por píxel.  
+-  El formato de imagen **sin comprimir** asigna a cada píxel un valor cromático, por lo que los archivos suelen ser muy grandes, motivo por el que el formato **no es adecuado** para su uso en páginas web.
 
 -  **Aplicación recomendada:** Almacenamiento de fotos/gráficos en el ámbito offline. 
 ---
 ### 2.1.4 Formato de imagen GIF  
 <img src="https://cdn.icon-icons.com/icons2/265/PNG/512/GIF_29666.png" width=15%>  
 
-  El formato GIF (Graphics Interchange Format) es una trama que utiliza la compresión sin pérdidas de calidad para imágenes de hasta 256 colores.  
-  Por ese motivo, con imágenes con más de 256 colores, la imagen debe adaptarse (reducire la cantidad de colores), lo que produce una consecuente pérdida de calidad.  
-  Su limitación de 8 bits hace que el tamaño del archivo sea pequeño, lo que le ideal para crear contenidos **de animación** cortos y atractivos.  
-  A pesar de su limitada calidad de imagen, mucha gente utiliza el GIF porque permite ofrecer un contenido visual más elaborado que una imagen estática.
+-  El formato GIF (Graphics Interchange Format) es una trama que utiliza la compresión sin pérdidas de calidad para imágenes de hasta 256 colores.  
+-  Por ese motivo, con imágenes con más de 256 colores, la imagen debe adaptarse (reducire la cantidad de colores), lo que produce una consecuente pérdida de calidad.  
+-  Su limitación de 8 bits hace que el tamaño del archivo sea pequeño, lo que le ideal para crear contenidos **de animación** cortos y atractivos.  
+-  A pesar de su limitada calidad de imagen, mucha gente utiliza el GIF porque permite ofrecer un contenido visual más elaborado que una imagen estática.
 
 -  **Casos típicos de uso de imágenes en formato GIF:**  
   
@@ -72,26 +72,24 @@ Este aprtado se dividirá entre las imágenes rasterizadas y las imagens vectori
 ### 2.1.5 Formato de imagen HEIF  
 <img src="https://www.keycdn.com/img/blog/heif-lg.webp" width=20%>  
 
-  El formato HEIF (High Efficiency Image Format) no es ampliamente utilizado en la web, aunque tiene potencial debido a su eficiencia en la compresión de imágenes (mayor calidad y menor tamaño que JPEG).  
-  HEIF es más común en dispositivos móviles, especialmente en productos de Apple, donde se usa por defecto para capturar fotos.
-  El formato HEIF aún no ha sido adoptado como un estándar en la web porque presenta un **Compatibilidad limitada** con algunos navegadores y sobre todo porque existen **alternativas más populares** como el formato **WebP**. 
----   
+-  El formato HEIF (High Efficiency Image Format) no es ampliamente utilizado en la web, aunque tiene potencial debido a su eficiencia en la compresión de imágenes (mayor calidad y menor tamaño que JPEG).  
+-  HEIF es más común en dispositivos móviles, especialmente en productos de Apple, donde se usa por defecto para capturar fotos.
+-  El formato HEIF aún no ha sido adoptado como un estándar en la web porque presenta un **Compatibilidad limitada** con algunos navegadores y sobre todo porque existen **alternativas más populares** como el formato **WebP**.  
+  
+  ---   
 ### 2.1.6 Formato de imagen WebP  
 <img src="https://media.licdn.com/dms/image/v2/D4E12AQGnkP8ZTlAgPw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1706057357099?e=1734566400&v=beta&t=ed5Iq-yM8dtCQU15_92WkfMyogz8DMbBRW7r5rn1SJo" width=13%>  
 
-  El formato HEIF (High Efficiency Image Format) no es ampliamente utilizado en la web, aunque tiene potencial debido a su eficiencia en la compresión de imágenes (mayor calidad y menor tamaño que JPEG).  
-  HEIF es más común en dispositivos móviles, especialmente en productos de Apple, donde se usa por defecto para capturar fotos.
-  El formato HEIF aún no ha sido adoptado como un estándar en la web porque presenta un **Compatibilidad limitada** con algunos navegadores y sobre todo porque existen **alternativas más populares** como el formato **WebP**.
-  El formato WEBP es una alternativa relativamente nueva para imágenes en la web y fue desarrollada por Google. Este formato utiliza **una combinación de compresión sin pérdida y con pérdida** para lograr tamaños de archivo más pequeños que los formatos de imagen anteriores.
-  El formato WEBP es compatible con transparencia y es compatible con imágenes animadas, lo que lo hace ideal para banners o publicidad en línea.  
-  Otra característica del formato WEBP es que puede mostrar una imagen progresivamente, lo que puede mejorar significativamente el tiempo de carga de la página web y mejorar la experiencia del usuario.
-  Como **principal inconveniente** el formato WEBP no es compatible con todos los navegadores web y plataformas de redes sociales.
+-  El formato WEBP es una alternativa relativamente nueva para imágenes en la web y fue desarrollada por Google. Este formato utiliza **una combinación de compresión sin pérdida y con pérdida** para lograr tamaños de archivo más pequeños que los formatos de imagen anteriores.
+-  El formato WEBP es compatible con transparencia y es compatible con imágenes animadas, lo que lo hace ideal para banners o publicidad en línea.  
+-  Otra característica del formato WEBP es que puede mostrar una imagen progresivamente, lo que puede mejorar significativamente el tiempo de carga de la página web y mejorar la experiencia del usuario.
+-  Como **principal inconveniente** el formato WEBP no es compatible con todos los navegadores web y plataformas de redes sociales.
 
 ## 2.2 Formatos de imagenes vectoriales
 ### 2.2.1 Formato SVG
 <img src="https://cdn.icon-icons.com/icons2/1098/PNG/512/1485481342-5_78632.png" width=15%>  
 
-  El formato SVG (Scalable Vector Graphics) es un formato de imagen vectorial basado en XML que soporta transparencia y animaciones. Esto permite que las imágenes sean escalables sin perder calidad haciendolas ideales para gráficos e iconos de alta calidad en diferentes tamaños y resoluciones.
+-  El formato SVG (Scalable Vector Graphics) es un formato de imagen vectorial basado en XML que soporta transparencia y animaciones. Esto permite que las imágenes sean escalables sin perder calidad haciendolas ideales para gráficos e iconos de alta calidad en diferentes tamaños y resoluciones.
 
 -  **Casos típicos de uso de imágenes en formato SVG:**  
   
@@ -104,17 +102,17 @@ Este aprtado se dividirá entre las imágenes rasterizadas y las imagens vectori
 ### 2.2.2 Formato EPS
 <img src="https://cdn.icon-icons.com/icons2/265/PNG/512/EPS_29667.png" width=13%>  
 
-  El foramto EPS (Encapsulated PostScript) se utiliza para guardar ilustraciones o trabajos de diseño gráfico en programas de ilustración como Adobe Illustrator y CorelDraw.  
-  Utilizado principalmente en gráficos profesionales es útil para crear imágenes de alta calidad. 
-  Aunque se pueda encontrar, no es muy común en la web y generalmente se convierte a SVG o PNG para su visualización.
+-  El foramto EPS (Encapsulated PostScript) se utiliza para guardar ilustraciones o trabajos de diseño gráfico en programas de ilustración como Adobe Illustrator y CorelDraw.  
+-  Utilizado principalmente en gráficos profesionales es útil para crear imágenes de alta calidad. 
+-  Aunque se pueda encontrar, no es muy común en la web y generalmente se convierte a SVG o PNG para su visualización.
 
 ### 2.2.3 Formato PDF
 <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_pdf_icon_130274.png" width=18%>  
 
-  El formato PDF (Portable Document Format) es muy familiar como formato de documento, pero también puede utilizarse para guardar imágenes e ilustraciones.  
-  Un archivo PDF se basa en el mismo lenguaje PostScript que el EPS. Es un vector con compresión sin pérdidas, lo que te permite ampliar una imagen PDF tanto como un desea.
-  También es la mejor opción para los informes visuales interactivos o las infografías, ya que es indexable y tiene texto que se puede buscar.  
-  También es posible incluir elementos interactivos en un PDF, por ejemplo, enlaces y botones CTA.
+-  El formato PDF (Portable Document Format) es muy familiar como formato de documento, pero también puede utilizarse para guardar imágenes e ilustraciones.  
+-  Un archivo PDF se basa en el mismo lenguaje PostScript que el EPS. Es un vector con compresión sin pérdidas, lo que te permite ampliar una imagen PDF tanto como un desea.
+-  También es la mejor opción para los informes visuales interactivos o las infografías, ya que es indexable y tiene texto que se puede buscar.  
+-  También es posible incluir elementos interactivos en un PDF, por ejemplo, enlaces y botones CTA.
 
 ## 2.3 Tabla resumen / comprativa de los 4 formatos de imágenes mas populares.
 
