@@ -63,19 +63,38 @@ Este aprtado se dividirá entre las imágenes rasterizadas y las imagens vectori
 
 -  **Casos típicos de uso de imágenes en formato GIF:**  
   
-    **Almacenamiento y publicación** de imágenes y gráficos pequeños (logotipos, iconos, barras, etc.).
+    **Animaciones simples.**
    
-    **Gráficos con transparencia.**
+    **Indicadores de carga.**
    
-    **Fotos sin pérdidas.**
+    **Memes y reacciones.**
+
+### 2.1.5 Formato de imagen HEIF  
+<img src="https://www.keycdn.com/img/blog/heif-lg.webp" width=20%>  
+
+  El formato HEIF (High Efficiency Image Format) no es ampliamente utilizado en la web, aunque tiene potencial debido a su eficiencia en la compresión de imágenes (mayor calidad y menor tamaño que JPEG).  
+  HEIF es más común en dispositivos móviles, especialmente en productos de Apple, donde se usa por defecto para capturar fotos.
+  El formato HEIF aún no ha sido adoptado como un estándar en la web porque presenta un **Compatibilidad limitada** con algunos navegadores y sobre todo porque existen **alternativas más populares** como el formato **WebP**. 
+   
+### 2.1.6 Formato de imagen WebP  
+<img src="https://media.licdn.com/dms/image/v2/D4E12AQGnkP8ZTlAgPw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1706057357099?e=1734566400&v=beta&t=ed5Iq-yM8dtCQU15_92WkfMyogz8DMbBRW7r5rn1SJo" width=13%>  
+
+  El formato HEIF (High Efficiency Image Format) no es ampliamente utilizado en la web, aunque tiene potencial debido a su eficiencia en la compresión de imágenes (mayor calidad y menor tamaño que JPEG).  
+  HEIF es más común en dispositivos móviles, especialmente en productos de Apple, donde se usa por defecto para capturar fotos.
+  El formato HEIF aún no ha sido adoptado como un estándar en la web porque presenta un **Compatibilidad limitada** con algunos navegadores y sobre todo porque existen **alternativas más populares** como el formato **WebP**.
+  El formato WEBP es una alternativa relativamente nueva para imágenes en la web y fue desarrollada por Google. Este formato utiliza **una combinación de compresión sin pérdida y con pérdida** para lograr tamaños de archivo más pequeños que los formatos de imagen anteriores.
+  El formato WEBP es compatible con transparencia y es compatible con imágenes animadas, lo que lo hace ideal para banners o publicidad en línea.  
+  Otra característica del formato WEBP es que puede mostrar una imagen progresivamente, lo que puede mejorar significativamente el tiempo de carga de la página web y mejorar la experiencia del usuario.
+  Como **principal inconveniente** el formato WEBP no es compatible con todos los navegadores web y plataformas de redes sociales.
+
   
-   
 
 
-- **GIF (.gif)**
-  - **Ventajas**: Soporte para animaciones simples y transparencias.
-  - **Desventajas**: Limitado a 256 colores, baja calidad.
-  - **Usos**: Animaciones pequeñas, gráficos con pocas variaciones de color.
+
+
+
+
+
 
 - **SVG (.svg)**
   - **Ventajas**: Vectorial, escalable sin pérdida de calidad, ideal para gráficos y logotipos.
