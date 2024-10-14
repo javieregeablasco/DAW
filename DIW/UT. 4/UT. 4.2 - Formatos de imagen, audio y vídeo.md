@@ -16,7 +16,9 @@ Este aprtado se dividirá entre las imágenes rasterizadas y las imagens vectori
 - Los **formatos vectoriales** (como SVG) están formados por fórmulas matemáticas que definen formas, líneas y colores. Son escalables sin pérdida de calidad, lo que los hace perfectos para logotipos, iconos y gráficos simples.
 
 ## 2.1 Formatos de imagenes rasterizados
-### 2.1.1  Formato de imagen JPG / JPEG - **Ventajas**: Excelente compresión con pérdida controlada, adecuado para fotografías y fondos.
+### 2.1.1  Formato de imagen .jpg y .jpeg
+  <img href="https:discoveryformacion.com/wp-content/uploads/2022/07/formato-imagen-jpg-150x150.png")
+- **Ventajas**: Excelente compresión con pérdida controlada, adecuado para fotografías y fondos.
   - **Desventajas**: No soporta transparencia, pérdida de calidad con cada edición.
   - **Usos**: Fotografías y gráficos con degradados complejos.
 
