@@ -284,29 +284,21 @@ Este editor está enfocado a la edición musical, por lo que cuenta con soporte 
 ![](https://www.videosoftdev.com/images/video_editor/box.png)  
 **VSDC Free Video Editor** es un editor de video gratuito que ofrece una amplia gama de herramientas de edición para proyectos complejos, ideal para quienes buscan una opción robusta pero gratuita.
    - **Características**: Edición no lineal, efectos visuales, corrección de color, soporte para múltiples formatos de video, exportación en alta definición.
-    
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/DaVinci_Resolve_17_logo.svg/250px-DaVinci_Resolve_17_logo.svg.png" width=25%>  
-### 1. **DaVinci Resolve**
-   - **Descripción**: DaVinci Resolve es un editor de video profesional que ofrece herramientas avanzadas para edición, corrección de color, efectos visuales, y postproducción de audio.
+---    
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/DaVinci_Resolve_17_logo.svg/250px-DaVinci_Resolve_17_logo.svg.png" width=12%>  
+
+**DaVinci Resolve** un editor de video profesional que ofrece herramientas avanzadas para edición, corrección de color, efectos visuales, y postproducción de audio.
    - **Características**: Edición no lineal, corrección de color avanzada, edición multipista, herramientas de postproducción de audio, efectos visuales.
-   - **Ventajas**: Potente, ideal para editores profesionales, versión gratuita muy completa.
-   - **Desventajas**: Requiere un equipo con recursos avanzados, curva de aprendizaje pronunciada para principiantes.
-   - 
-Shotcut
-### 2. **Shotcut**
-   - **Descripción**: Shotcut es un editor de video gratuito y de código abierto que ofrece una interfaz fácil de usar y soporte para una amplia gama de formatos de video.
+---    
+![](https://upload.wikimedia.org/wikipedia/commons/f/fe/Shotcut-logo-64.png)  
+**Shotcut** es un editor de video gratuito y de código abierto que ofrece una interfaz fácil de usar y soporte para una amplia gama de formatos de video.
    - **Características**: Soporte para edición de video HD, filtros y efectos de video, línea de tiempo avanzada, soporte para múltiples formatos.
-   - **Ventajas**: Fácil de usar, compatible con múltiples plataformas (Windows, macOS, Linux).
-   - **Desventajas**: No tiene tantas funciones avanzadas como otros editores de video profesionales.
-   - 
+---   
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Kdenlive_new_logo.png">
 
-
-### 9. **Kdenlive**
-   - **Descripción**: Kdenlive es un editor de video de código abierto para Linux, aunque también está disponible para Windows y macOS. Es una de las mejores opciones gratuitas para usuarios de Linux.
+**Kdenlive** es un editor de video de código abierto para Linux, aunque también está disponible para Windows y macOS. Es una de las mejores opciones gratuitas para usuarios de Linux.
    - **Características**: Edición multipista, efectos de video y transiciones, soporte para múltiples formatos de video y audio, integración con FFmpeg.
-   - **Ventajas**: Potente y flexible, de código abierto, adecuado para proyectos profesionales en Linux.
-   - **Desventajas**: Puede ser menos estable en Windows en comparación con Linux.
-
+ 
 
 
 
