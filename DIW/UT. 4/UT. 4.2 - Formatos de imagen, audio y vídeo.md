@@ -256,33 +256,31 @@ Está diseñado para trabajar con gráficos rasterizados y vectoriales, y permit
    - Exportación de archivos en varios formatos comunes de imagen.
 
 ## 6.2 - Herramientas de edición de audio gratuitas
- **Audacity**
-   - **Descripción**: Audacity es una de las herramientas de edición de audio más populares y completas. Es gratuito y de código abierto, ideal tanto para principiantes como para usuarios avanzados.
-   - **Características**: Grabación y edición multipista, efectos de audio, soporte para varios formatos (MP3, WAV, OGG, FLAC), eliminación de ruido.
-   - **Ventajas**: Amplias funciones de edición, comunidad activa, multiplataforma (Windows, macOS, Linux).
-   - **Desventajas**: Interfaz algo anticuada, curva de aprendizaje moderada.
+ ![](https://upload.wikimedia.org/wikipedia/commons/e/e2/Audacity_Logo_nofilter.svg))  
 
-### 2. **Ocenaudio**
-   - **Descripción**: Ocenaudio es una alternativa más ligera y fácil de usar que Audacity, ideal para ediciones rápidas y sencillas.
-   - **Características**: Edición en tiempo real, soporte para efectos VST, análisis espectral, y soporte para múltiples formatos.
-   - **Ventajas**: Interfaz intuitiva, rendimiento rápido, ligero.
-   - **Desventajas**: Menos funciones avanzadas comparado con Audacity.
+**Audacity** es una de las herramientas de edición de audio más populares y completas.   
+- **Características**: Grabación y edición multipista, efectos de audio, soporte para varios formatos (MP3, WAV, OGG, FLAC), eliminación de ruido.
+---
+![](https://www.ocenaudio.com/imgs/logo.png)
 
-### 3. **WavePad**
-   - **Descripción**: WavePad es un software gratuito para uso personal que ofrece una interfaz moderna y fácil de usar con una buena cantidad de herramientas de edición.
-   - **Características**: Grabación y edición de audio, efectos de audio como eco, amplificación, normalización, y herramientas de restauración de audio.
-   - **Ventajas**: Interfaz fácil de usar, soporte para muchos formatos de audio.
-   - **Desventajas**: Algunas funciones avanzadas están limitadas a la versión de pago.
+**Ocenaudio** es una alternativa más ligera y fácil de usar que Audacity, ideal para ediciones rápidas y sencillas.
+- **Características**: Edición en tiempo real, soporte para efectos VST, análisis espectral, y soporte para múltiples formatos.
+---   
+![](https://ardour.org/images/ardour_logo_navbar.png)  
+**Ardour** es ideal para la grabación, edición y mezcla de audio multipista, especialmente orientado a músicos y productores.  
+- **Características**: Grabación multipista, edición no destructiva, soporte para efectos VST, MIDI, y exportación a múltiples formatos.
+---
+![](https://users.notam02.no/~kjetism/radium/radium_logo_128x128_colorized.png)
 
+**Radium** es un software de edición y composición de audio principalmente para Mac.  
 
-### 6. **Ardour**
-   - **Descripción**: Ardour es otro DAW gratuito y de código abierto, ideal para la grabación, edición y mezcla de audio multipista, especialmente orientado a músicos y productores.
-   - **Características**: Grabación multipista, edición no destructiva, soporte para efectos VST, MIDI, y exportación a múltiples formatos.
-   - **Ventajas**: Muy potente para grabación y mezcla profesional.
-   - **Desventajas**: Curva de aprendizaje pronunciada, requiere tiempo para dominar.
+Tiene una propuesta diferente en cuanto a la organización de su interfaz, lo que puede ser un poco desconcertante al principio. .
 
-### 6. **Radium**
+Con Radium se puede editar audio manualmente, pero cuenta con pequeñas ayudas para automatizar la velocidad y el tempo y para aplicar efectos y correcciones por su cuenta.
 
+Este editor está enfocado a la edición musical, por lo que cuenta con soporte para plugins VST, AU y LADSPA, además de mezclador modular y secuenciador MIDI.
+
+## 6.3 - Herramientas de edición de video gratuitas
 
 
 
