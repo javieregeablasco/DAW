@@ -35,7 +35,7 @@ Existen muchos frameworks de CSS pero los desarrolladores suelen elegir el más 
 
 # 3. Instalación y configuración de **Tailwind CSS**.
 Toda la información para la instalación y configuración de TailwindCSS en la página oficial.
-<a href="https://tailwindcss.com/docs/installation">Haga click aquí</link>
+<a href="https://tailwindcss.com/docs/installation">Haga click aquí</a>
 ## 3.1 - Uso con link CDN. 
 Es ideal para prototipos, proyectos pequeños o experimentación. No se necesita una configuración compleja. Solo es necesario incluir una etiqueta `<link>` o una etiqueta `<script>` en la sección `<head>` del documento `HTML`. 
 ```
