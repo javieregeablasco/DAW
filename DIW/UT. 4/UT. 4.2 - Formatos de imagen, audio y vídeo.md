@@ -17,8 +17,8 @@ Este apartado se dividirá entre las imágenes rasterizadas y las imagens vector
 -  Los **formatos de imagen rasterizados** (JPEG, PNG y GIF) están compuestos por una matriz de píxeles, donde cada píxel tiene un color específico. Son ideales para fotografías y gráficos complejos con muchos detalles, pero pierden calidad cuando se amplían, ya que la resolución es fija.  
 -  Los **formatos de imagen vectoriales** (SVG) están formados por fórmulas matemáticas que definen formas, líneas y colores. Son escalables sin pérdida de calidad, lo que los hace perfectos para logotipos, iconos y gráficos simples.
 
-## 2.1 Formatos de imagenes rasterizados
-### 2.1.1 Formato de imagen JPG y JPEG  
+## 2.1 - Formatos de imagenes rasterizados
+### 2.1.1 - Formato de imagen JPG y JPEG  
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/JPEG_format_logo.svg/250px-JPEG_format_logo.svg.png" width=10%>  
 
 El formato JPEG (Joint Photographic Experts Group) es un formato de imagen muy común debido a su eficiencia en la compresión de imágenes fotográficas. Utiliza compresión **con pérdida**, al reducir el tamaño del archivo eliminando información de la imagen que el ojo humano no puede percibir fácilmente. 
@@ -31,7 +31,7 @@ El formato JPEG (Joint Photographic Experts Group) es un formato de imagen muy c
 
     **Imágenes de fondo:** Al permitir una buena optimización su uso es típico en fondos y efectos decorativos.  
 ---
-### 2.1.2 Formato de imagen PNG  
+### 2.1.2 - Formato de imagen PNG  
 <img src="https://cdn.icon-icons.com/icons2/2063/PNG/512/format_extension_png_page_file_icon_124654.png" width=18%>  
 
 El formato PNG (Portable Network Graphics) destaca por la posibilidad de comprimir imágenes **sin pérdidas** y de ofrecer una profundidad de color de hasta 24 bits por píxel. Con el formato PNG **no se pueden generar animaciones**.    
@@ -50,7 +50,7 @@ A causa del proceso de compresión sin pérdidas, los archivos son relativamente
    
     **Fotos sin pérdidas.**
 ---   
-### 2.1.3 Formato de imagen BMP  
+### 2.1.3 - Formato de imagen BMP  
 <img src="https://cdn.icon-icons.com/icons2/265/PNG/512/BMP_29699.png" width=15%>  
   
 El formato BMP (Windows bitmap), inicialmente desarrollado para **sistemas operativos Microsoft e IBM** es un formato de almacenamiento para mapas de bits con una profundidad de color de hasta 24 bits por píxel.  
@@ -59,7 +59,7 @@ El formato de imagen **sin comprimir** asigna a cada píxel un valor cromático,
 
 -  **Aplicación recomendada:** Almacenamiento de fotos/gráficos en el ámbito offline. 
 ---
-### 2.1.4 Formato de imagen GIF  
+### 2.1.4 - Formato de imagen GIF  
 <img src="https://cdn.icon-icons.com/icons2/265/PNG/512/GIF_29666.png" width=15%>  
 
 El formato GIF (Graphics Interchange Format) es una trama que utiliza la compresión sin pérdidas de calidad para imágenes de hasta 256 colores.  
@@ -78,7 +78,7 @@ A pesar de su limitada calidad de imagen, mucha gente utiliza el GIF porque perm
    
     **Memes y reacciones.**
 ---
-### 2.1.5 Formato de imagen HEIF  
+### 2.1.5 - Formato de imagen HEIF  
 <img src="https://www.keycdn.com/img/blog/heif-lg.webp" width=20%>  
 
 El formato HEIF (High Efficiency Image Format) no es ampliamente utilizado en la web, aunque tiene potencial debido a su eficiencia en la compresión de imágenes (mayor calidad y menor tamaño que JPEG).  
@@ -88,7 +88,7 @@ HEIF es más común en dispositivos móviles, especialmente en productos de Appl
 El formato HEIF aún no ha sido adoptado como un estándar en la web porque presenta un **Compatibilidad limitada** con algunos navegadores y sobre todo porque existen **alternativas más populares** como el formato **WebP**.  
   
 ---   
-### 2.1.6 Formato de imagen WebP  
+### 2.1.6 - Formato de imagen WebP  
 <img src="https://media.licdn.com/dms/image/v2/D4E12AQGnkP8ZTlAgPw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1706057357099?e=1734566400&v=beta&t=ed5Iq-yM8dtCQU15_92WkfMyogz8DMbBRW7r5rn1SJo" width=13%>  
 
 El formato WEBP es una alternativa relativamente nueva para imágenes en la web y fue desarrollada por Google. Este formato utiliza **una combinación de compresión sin pérdida y con pérdida** para lograr tamaños de archivo más pequeños que los formatos de imagen anteriores.  
@@ -100,8 +100,8 @@ Otra característica del formato WEBP es que puede mostrar una imagen progresiva
 Como **principal inconveniente** el formato WEBP no es compatible con todos los navegadores web y plataformas de redes sociales.
 
 ---
-## 2.2 Formatos de imagenes vectoriales
-### 2.2.1 Formato SVG
+## 2.2 - Formatos de imagenes vectoriales
+### 2.2.1 - Formato SVG
 <img src="https://cdn.icon-icons.com/icons2/1098/PNG/512/1485481342-5_78632.png" width=15%>  
 
 El formato SVG (Scalable Vector Graphics) es un formato de imagen vectorial basado en XML que soporta transparencia y animaciones. Esto permite que las imágenes sean escalables sin perder calidad haciendolas ideales para gráficos e iconos de alta calidad en diferentes tamaños y resoluciones.
@@ -114,7 +114,7 @@ El formato SVG (Scalable Vector Graphics) es un formato de imagen vectorial basa
    
     **Animaciones.** Los SVG permiten animaciones interactivas utilizando CSS o JavaScript.
 ---
-### 2.2.2 Formato EPS
+### 2.2.2 - Formato EPS
 <img src="https://cdn.icon-icons.com/icons2/265/PNG/512/EPS_29667.png" width=13%>  
 
 El formato EPS (Encapsulated PostScript) se utiliza para guardar ilustraciones o trabajos de diseño gráfico en programas de ilustración como Adobe Illustrator y CorelDraw.  
@@ -124,7 +124,7 @@ Utilizado principalmente en gráficos profesionales es útil para crear imágene
 Aunque se pueda encontrar, no es muy común en la web y generalmente se convierte a SVG o PNG para su visualización.
 
 ---
-### 2.2.3 Formato PDF
+### 2.2.3 - Formato PDF
 <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_pdf_icon_130274.png" width=18%>  
 
 El formato PDF (Portable Document Format) es muy familiar como formato de documento, pero también puede utilizarse para guardar imágenes e ilustraciones.  
@@ -136,7 +136,7 @@ También es la mejor opción para los informes visuales interactivos o las infog
 También es posible incluir elementos interactivos en un PDF, por ejemplo, enlaces y botones CTA.
 
 ---
-## 2.3 Tabla resumen / comprativa de los 4 formatos de imágenes mas populares.
+## 2.3 - Tabla resumen / comprativa de los 4 formatos de imágenes mas populares.
 
 | Característica         | JPG                                     | PNG                                                         | GIF                      | SVG                                          |
 |------------------------|-----------------------------------------|--------------------------------------------------------------|--------------------------|----------------------------------------------|
@@ -149,11 +149,11 @@ También es posible incluir elementos interactivos en un PDF, por ejemplo, enlac
 | **Animaciones**         | No                                      | No                                                           | Sí                        | Sí                                           |
 | **Adecuado para**       | Fotos                                   | Imágenes y gráficos de pequeña envergadura (ej: logotipos), fotos sin pérdidas | Animaciones               | Todo tipo de gráficos (logotipos, iconos, diagramas, etc.) |
 
-# 3. Formatos de Audio
+# 3. - Formatos de Audio
 El audio en las interfaces web se utiliza principalmente en contenido multimedia, como videos o podcasts. Los formatos deben ofrecer un equilibrio entre calidad y tamaño de archivo.  
 Existen muchos tipos de formatos de audio (mp3, wav, ogg, mp4…). Los que más se utilizan en la web son los formatos mp3 y ogg.
 
-## 3.1 Formato MP3
+## 3.1 - Formato MP3
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Mp3.svg/250px-Mp3.svg.png" width=20%>  
 
 El formato MP3 (MPEG 1 Layer 3) fue creado por el Instituto Fraunhofer. Su extraordinario grado de compresión y alta calidad lo ha convertido en el candidato ideal para publicar audios en la web.
@@ -162,7 +162,7 @@ El formato MP3 (MPEG 1 Layer 3) fue creado por el Instituto Fraunhofer. Su extra
   - **Usos**: Música, podcasts, efectos de sonido.  
 
 
-## 3.2 Formato OGG
+## 3.2 - Formato OGG
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Ogg_Logo.svg/250px-Ogg_Logo.svg.png" width=15%>
 
 Desarrollado por la fundación Xiph.org, es libre y de código abierto (a diferencia del formato MP3). 
@@ -170,7 +170,7 @@ Desarrollado por la fundación Xiph.org, es libre y de código abierto (a difere
   - **Desventajas**: Menor soporte en algunos navegadores comparado con MP3.
   - **Usos**: Alternativa a MP3 en navegadores que lo soporten.
 
-## 3.3 Formato WAV
+## 3.3 - Formato WAV
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/AudacityWAV.png/100px-AudacityWAV.png" width=10%>
 
 El formato WAV (WaveForm Audio File) es un archivo que desarrolló originalmente Microsoft para guardar audio.
@@ -179,10 +179,10 @@ El formato WAV (WaveForm Audio File) es un archivo que desarrolló originalmente
   - **Usos**: Audio de alta calidad, efectos de sonido breves.
 
 
-# 4. Formatos de Video
+# 4. - Formatos de Video
 El video es otro recurso de las interfaces web, pero su uso intensivo de datos requiere formatos que ofrezcan buena compresión sin sacrificar demasiada calidad.
 
-## 4.1 Formato MP4
+## 4.1 - Formato MP4
 <img src="https://icons.veryicon.com/png/o/file-type/file-type-icon/mp4-icon-1.png" width=10%>
 
 El formato MP4 es uno de los formatos más utilizados en la actualidad, especialmente cuando se trata de compartir contenido en línea. YouTube, por ejemplo, recomienda cargar archivos en formato .mp4 para obtener la mejor calidad de video.  
@@ -194,7 +194,7 @@ Los videos que usan el contenedor .MP4 pueden tener tamaños de archivo relativa
   - **Desventajas**: Codificación con pérdida.
   - **Usos**: Videos en streaming, contenido multimedia general.
 
-## 4.2 Formato WebM
+## 4.2 - Formato WebM
 <img src="https://icons.veryicon.com/png/o/file-type/full-file-extension/webm.png" width=10%>
 
 WebM es un formato multimedia abierto y libre desarrollado por Google y orientado para usarse con HTML5. 
@@ -202,7 +202,7 @@ WebM es un formato multimedia abierto y libre desarrollado por Google y orientad
   - **Desventajas**: Menor soporte que MP4 en algunos dispositivos.
   - **Usos**: Videos optimizados para web, streaming.
 
-## 4.3 Formato OGG
+## 4.3 - Formato OGG
 <img src="https://icons.veryicon.com/png/o/file-type/full-file-extension/ogg-11.png" width=10%>
 
 Ogg es un formato contenedor libre y abierto, desarrollado y mantenido por la Fundación Xiph.Org
@@ -212,12 +212,76 @@ Ogg está diseñado para proporcionar una difusión de flujo eficiente y manipul
   - **Desventajas**: Menor calidad comparada con mp4 o WebM.
   - **Usos**: Alternativa a mp4 o WebM en navegadores compatibles.
 
-# 5 Tarea:
+# 5 - Tarea:
 Preguntas tipo test. 
 
-# 6. Herramientas para generar contenido multimedia. 
+# 6. - Herramientas para generar contenido multimedia. 
 
-### 6. **Criterios para la Selección de Formatos**
+## 6.1 - Herramientas de edición de imagenes gratuitas
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/The_GIMP_icon_-_gnome.svg/120px-The_GIMP_icon_-_gnome.svg.png)  
+**GIMP** (GNU Image Manipulation Program) es una de las alternativas más poderosas y completas a Adobe Photoshop. Ofrece herramientas avanzadas de edición y diseño de imágenes.  
+- **Características**: Edición de capas, herramientas de selección avanzadas, filtros, soporte para plugins.
+---   
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Krita-logo.svg/160px-Krita-logo.svg.png)  
+**Krita** es un programa de código abierto diseñado principalmente para ilustración y arte digital, pero también tiene capacidades de edición de imágenes.
+- **Características**: Herramientas avanzadas de pintura digital, soporte para tabletas gráficas, capas, selección y ajuste de color.
+---   
+![](https://media.inkscape.org/static/images/inkscape-logo.svg)  
+**Inkscape** es principalmente **un editor de gráficos vectoriales**, pero también permite trabajar con imágenes rasterizadas.
+- **Características**: Creación y edición de gráficos vectoriales, soporte para SVG, herramientas de dibujo y edición.
+---
+![](https://pixlr.com/learn/wp-content/uploads/2021/04/PixlrX-Overview-400x250_tn.jpg)  
+**Pixlr X** es una herramienta de **edición de imágenes online** que ofrece una interfaz moderna con herramientas básicas y avanzadas para retoques rápidos.
+- **Características**: Filtros, herramientas de edición de capas, ajustes de color, herramientas de retoque, soporte IA. Funciones avanzadas limitadas en comparación con software de escritorio gratuito.
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Darktable_icon.svg/120px-Darktable_icon.svg.png)
+Darktable es un software gratuito de edición de imágenes para fotógrafos.
+- **Características**: Herramientas avanzadas de corrección de color y exposición.
+   
+### RawTherapee
+RawTherapee está diseñado para la **edición de imágenes RAW** con un enfoque en la corrección de color y el procesamiento de alta calidad.
+- **Características**: Procesamiento de imágenes RAW, ajustes de exposición, balance de blancos, corrección de color.
+
+### Photopea
+Photopea es una herramienta de edición de imágenes **online** que se asemeja a Adobe Photoshop.  
+
+Está diseñado para trabajar con gráficos rasterizados y vectoriales, y permite la edición de imágenes **online**.
+- **Características**:  
+   - Soporta múltiples formatos de archivo, incluidos PSD (Photoshop), XCF (GIMP), Sketch, AI, y formatos estándar como PNG, JPEG, SVG.
+   - Edición de capas, herramientas de selección avanzadas, ajuste de color, retoque de imágenes, y soporte para máscaras y objetos inteligentes.
+   - Herramientas de texto, filtros y efectos visuales.
+   - Compatibilidad con gráficos vectoriales y rasterizados, permitiendo trabajar con formas, líneas y trazados.
+   - Exportación de archivos en varios formatos comunes de imagen.
+
+
+---
+
+Photopea es una excelente opción si necesitas un editor avanzado similar a Photoshop pero no deseas adquirir una licencia o descargar software. Es versátil y cubre la mayoría de las necesidades tanto de diseño gráfico como de edición fotográfica en entornos web.
+
+- 
+- ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - **Compatibilidad**: Verificar el soporte del formato en los navegadores y dispositivos de destino.
 - **Compresión vs. Calidad**: Evaluar el equilibrio entre calidad visual o auditiva y tamaño de archivo.
 - **Transparencia**: Necesaria en imágenes que se superpondrán a otros elementos (logos, gráficos).
