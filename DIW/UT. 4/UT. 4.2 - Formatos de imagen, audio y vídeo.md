@@ -19,13 +19,13 @@ Este aprtado se dividirá entre las imágenes rasterizadas y las imagens vectori
 ### 2.1.1 Formato de imagen JPG y JPEG  
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/JPEG_format_logo.svg/250px-JPEG_format_logo.svg.png" width=10%>  
 
--  El formato JPEG (Joint Photographic Experts Group) es un formato de imagen muy común debido a su eficiencia en la compresión de imágenes fotográficas. Utiliza compresión **con pérdida**, al reducir el tamaño del archivo eliminando información de la imagen que el ojo humano no puede percibir fácilmente. 
+El formato JPEG (Joint Photographic Experts Group) es un formato de imagen muy común debido a su eficiencia en la compresión de imágenes fotográficas. Utiliza compresión **con pérdida**, al reducir el tamaño del archivo eliminando información de la imagen que el ojo humano no puede percibir fácilmente. 
   
 -  **Casos típicos de uso de imágenes en formato JPG JPEG:**
   
     **Imágenes de contenido:** Ya sea para el blog, páginas web o nuestras redes sociales.
 
-    **Imágenes de producto:** Siempre que los mismos no requieran de fondo transparente.
+    **Imágenes de producto:** Siempre que los mismos **no requieran de fondo transparente**.
 
     **Imágenes de fondo:** Al permitir una buena optimización su uso es típico en fondos y efectos decorativos.  
 ---
@@ -190,7 +190,7 @@ Ogg está diseñado para proporcionar una difusión de flujo eficiente y manipul
 # 5 Tarea:
 
 
-# 5. Herramientas para generar contenido multimedia. 
+# 6. Herramientas para generar contenido multimedia. 
 
 ### 6. **Criterios para la Selección de Formatos**
 - **Compatibilidad**: Verificar el soporte del formato en los navegadores y dispositivos de destino.
