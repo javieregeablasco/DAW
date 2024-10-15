@@ -304,5 +304,7 @@ Este editor está enfocado a la edición musical, por lo que cuenta con soporte 
 <a href="https://www.youtube.com/watch?v=63vqob-MljQ&list=PLuAMrIXhypV6rSk9RAS9hwF8VoMW3OVaE&index=2">Video lineal</a>  
 <a href="https://www.youtube.com/watch?v=0P4A1K4lXDo">Video no lineal</a>
 
+# 7 - Tarea:
+Realizar breves comentarios sobre las herramientas elegidas.. 
 
 
