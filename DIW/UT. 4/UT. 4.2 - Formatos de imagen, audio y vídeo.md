@@ -294,30 +294,11 @@ Este editor está enfocado a la edición musical, por lo que cuenta con soporte 
 **Shotcut** es un editor de video gratuito y de código abierto que ofrece una interfaz fácil de usar y soporte para una amplia gama de formatos de video.
    - **Características**: Soporte para edición de video HD, filtros y efectos de video, línea de tiempo avanzada, soporte para múltiples formatos.
 ---   
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Kdenlive_new_logo.png">
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Kdenlive_new_logo.png" width=25%>
 
 **Kdenlive** es un editor de video de código abierto para Linux, aunque también está disponible para Windows y macOS. Es una de las mejores opciones gratuitas para usuarios de Linux.
    - **Características**: Edición multipista, efectos de video y transiciones, soporte para múltiples formatos de video y audio, integración con FFmpeg.
- 
+ ---
 
 
 
-
-
-
-
-
-
-
-### 10. **VideoPad**
-   - **Descripción**: VideoPad es un editor de video gratuito para uso no comercial que ofrece una interfaz sencilla con una buena cantidad de funciones básicas y avanzadas.
-   - **Características**: Soporte para edición de video 3D, efectos visuales, exportación en alta resolución, grabación de audio.
-   - **Ventajas**: Fácil de usar, compatible con varios formatos, ideal para principiantes.
-   - **Desventajas**: Algunas características avanzadas están limitadas en la versión gratuita.
-
-
-
-
-#### 8. **Actividades**
-1. Realiza una comparación práctica entre los formatos de imagen usando diferentes herramientas de compresión.
-2. Implementa una página web con audio y video integrados usando HTML5, explorando la compatibilidad de MP3 y OGG.
