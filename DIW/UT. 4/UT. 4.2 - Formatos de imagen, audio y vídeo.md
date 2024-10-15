@@ -230,20 +230,22 @@ Preguntas tipo test.
 **Inkscape** es principalmente **un editor de gráficos vectoriales**, pero también permite trabajar con imágenes rasterizadas.
 - **Características**: Creación y edición de gráficos vectoriales, soporte para SVG, herramientas de dibujo y edición.
 ---
-![](https://pixlr.com/learn/wp-content/uploads/2021/04/PixlrX-Overview-400x250_tn.jpg)  
+<img src="https://pixlr.com/learn/wp-content/uploads/2021/04/PixlrX-Overview-400x250_tn.jpg" width=15%>  
+
 **Pixlr X** es una herramienta de **edición de imágenes online** que ofrece una interfaz moderna con herramientas básicas y avanzadas para retoques rápidos.
 - **Características**: Filtros, herramientas de edición de capas, ajustes de color, herramientas de retoque, soporte IA. Funciones avanzadas limitadas en comparación con software de escritorio gratuito.
+---
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Darktable_icon.svg/120px-Darktable_icon.svg.png)  
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Darktable_icon.svg/120px-Darktable_icon.svg.png)
 Darktable es un software gratuito de edición de imágenes para fotógrafos.
 - **Características**: Herramientas avanzadas de corrección de color y exposición.
-   
-### RawTherapee
-RawTherapee está diseñado para la **edición de imágenes RAW** con un enfoque en la corrección de color y el procesamiento de alta calidad.
+---   
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/RawTherapee_logo-text-black.svg/120px-RawTherapee_logo-text-black.svg.png)  
+**RawTherapee** está diseñado para la **edición de imágenes RAW** con un enfoque en la corrección de color y el procesamiento de alta calidad.
 - **Características**: Procesamiento de imágenes RAW, ajustes de exposición, balance de blancos, corrección de color.
-
-### Photopea
-Photopea es una herramienta de edición de imágenes **online** que se asemeja a Adobe Photoshop.  
+---
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Photopea_logo.svg/120px-Photopea_logo.svg.png)  
+**Photopea** es una herramienta de edición de imágenes **online** que se asemeja a Adobe Photoshop.  
 
 Está diseñado para trabajar con gráficos rasterizados y vectoriales, y permite la edición de imágenes **online**.
 - **Características**:  
@@ -253,28 +255,33 @@ Está diseñado para trabajar con gráficos rasterizados y vectoriales, y permit
    - Compatibilidad con gráficos vectoriales y rasterizados, permitiendo trabajar con formas, líneas y trazados.
    - Exportación de archivos en varios formatos comunes de imagen.
 
+## 6.2 - Herramientas de edición de audio gratuitas
+ **Audacity**
+   - **Descripción**: Audacity es una de las herramientas de edición de audio más populares y completas. Es gratuito y de código abierto, ideal tanto para principiantes como para usuarios avanzados.
+   - **Características**: Grabación y edición multipista, efectos de audio, soporte para varios formatos (MP3, WAV, OGG, FLAC), eliminación de ruido.
+   - **Ventajas**: Amplias funciones de edición, comunidad activa, multiplataforma (Windows, macOS, Linux).
+   - **Desventajas**: Interfaz algo anticuada, curva de aprendizaje moderada.
 
----
+### 2. **Ocenaudio**
+   - **Descripción**: Ocenaudio es una alternativa más ligera y fácil de usar que Audacity, ideal para ediciones rápidas y sencillas.
+   - **Características**: Edición en tiempo real, soporte para efectos VST, análisis espectral, y soporte para múltiples formatos.
+   - **Ventajas**: Interfaz intuitiva, rendimiento rápido, ligero.
+   - **Desventajas**: Menos funciones avanzadas comparado con Audacity.
 
-Photopea es una excelente opción si necesitas un editor avanzado similar a Photoshop pero no deseas adquirir una licencia o descargar software. Es versátil y cubre la mayoría de las necesidades tanto de diseño gráfico como de edición fotográfica en entornos web.
-
-- 
-- ---
-
-
-
-
-
-
-
-
-
-
-
-
-
+### 3. **WavePad**
+   - **Descripción**: WavePad es un software gratuito para uso personal que ofrece una interfaz moderna y fácil de usar con una buena cantidad de herramientas de edición.
+   - **Características**: Grabación y edición de audio, efectos de audio como eco, amplificación, normalización, y herramientas de restauración de audio.
+   - **Ventajas**: Interfaz fácil de usar, soporte para muchos formatos de audio.
+   - **Desventajas**: Algunas funciones avanzadas están limitadas a la versión de pago.
 
 
+### 6. **Ardour**
+   - **Descripción**: Ardour es otro DAW gratuito y de código abierto, ideal para la grabación, edición y mezcla de audio multipista, especialmente orientado a músicos y productores.
+   - **Características**: Grabación multipista, edición no destructiva, soporte para efectos VST, MIDI, y exportación a múltiples formatos.
+   - **Ventajas**: Muy potente para grabación y mezcla profesional.
+   - **Desventajas**: Curva de aprendizaje pronunciada, requiere tiempo para dominar.
+
+### 6. **Radium**
 
 
 
