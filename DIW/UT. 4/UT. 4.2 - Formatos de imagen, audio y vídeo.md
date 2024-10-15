@@ -281,16 +281,11 @@ Con Radium se puede editar audio manualmente, pero cuenta con pequeñas ayudas p
 Este editor está enfocado a la edición musical, por lo que cuenta con soporte para plugins VST, AU y LADSPA, además de mezclador modular y secuenciador MIDI.
 
 ## 6.3 - Herramientas de edición de video gratuitas
-Aquí tienes una lista de los mejores programas gratuitos de edición de video, con una breve descripción de cada uno:
-
-VSDC Free Video Editor
-### 6. **VSDC Free Video Editor**
-   - **Descripción**: VSDC es un editor de video gratuito que ofrece una amplia gama de herramientas de edición para proyectos complejos, ideal para quienes buscan una opción robusta pero gratuita.
+![](https://www.videosoftdev.com/images/video_editor/box.png)  
+**VSDC Free Video Editor** es un editor de video gratuito que ofrece una amplia gama de herramientas de edición para proyectos complejos, ideal para quienes buscan una opción robusta pero gratuita.
    - **Características**: Edición no lineal, efectos visuales, corrección de color, soporte para múltiples formatos de video, exportación en alta definición.
-   - **Ventajas**: Incluye herramientas avanzadas, interfaz completa, edición de video 4K.
-   - **Desventajas**: La interfaz puede ser confusa para principiantes.
-   - 
-DaVinci Resolve
+    
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/DaVinci_Resolve_17_logo.svg/250px-DaVinci_Resolve_17_logo.svg.png" width=25%>  
 ### 1. **DaVinci Resolve**
    - **Descripción**: DaVinci Resolve es un editor de video profesional que ofrece herramientas avanzadas para edición, corrección de color, efectos visuales, y postproducción de audio.
    - **Características**: Edición no lineal, corrección de color avanzada, edición multipista, herramientas de postproducción de audio, efectos visuales.
