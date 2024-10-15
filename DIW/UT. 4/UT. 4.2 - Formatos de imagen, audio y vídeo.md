@@ -299,7 +299,7 @@ Este editor está enfocado a la edición musical, por lo que cuenta con soporte 
 **Kdenlive** es un editor de video de código abierto para Linux, aunque también está disponible para Windows y macOS. Es una de las mejores opciones gratuitas para usuarios de Linux.
    - **Características**: Edición multipista, efectos de video y transiciones, soporte para múltiples formatos de video y audio, integración con FFmpeg.
 ---
-### 6.4 - Ejemplos de ediciones de video lineal y no lineales:
+## 6.4 - Ejemplos de ediciones de video lineal y no lineales:
 
 <a href="https://www.youtube.com/watch?v=63vqob-MljQ&list=PLuAMrIXhypV6rSk9RAS9hwF8VoMW3OVaE&index=2">Video lineal</a>  
 <a href="https://www.youtube.com/watch?v=0P4A1K4lXDo">Video no lineal</a>
