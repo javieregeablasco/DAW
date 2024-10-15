@@ -85,7 +85,7 @@ El formato HEIF (High Efficiency Image Format) no es ampliamente utilizado en la
 
 HEIF es más común en dispositivos móviles, especialmente en productos de Apple, donde se usa por defecto para capturar fotos.
 
-El formato HEIF aún no ha sido adoptado como un estándar en la web porque presenta un **Compatibilidad limitada** con algunos navegadores y sobre todo porque existen **alternativas más populares** como el formato **WebP**.  
+El formato HEIF aún no ha sido adoptado como un estándar en la web porque presenta una **compatibilidad limitada** con algunos navegadores y sobre todo porque existen **alternativas más populares** como el formato **WebP**.  
   
 ---   
 ### 2.1.6 - Formato de imagen WebP  
