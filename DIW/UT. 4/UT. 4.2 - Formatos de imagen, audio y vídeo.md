@@ -237,7 +237,7 @@ Preguntas tipo test.
 ---
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Darktable_icon.svg/120px-Darktable_icon.svg.png)  
 
-Darktable es un software gratuito de edición de imágenes para fotógrafos.
+**Darktable** es un software gratuito de edición de imágenes para fotógrafos.
 - **Características**: Herramientas avanzadas de corrección de color y exposición.
 ---   
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/RawTherapee_logo-text-black.svg/120px-RawTherapee_logo-text-black.svg.png)  
