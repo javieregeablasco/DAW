@@ -17,7 +17,7 @@ Este aprtado se dividirá entre las imágenes rasterizadas y las imagens vectori
 
 ## 2.1 Formatos de imagenes rasterizados
 ### 2.1.1 Formato de imagen JPG y JPEG  
-<img src="https://cdn.icon-icons.com/icons2/265/PNG/512/JPEG_29712.png" width=15%>  
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/JPEG_format_logo.svg/250px-JPEG_format_logo.svg.png" width=10%>  
 
 -  El formato JPEG (Joint Photographic Experts Group) es un formato de imagen muy común debido a su eficiencia en la compresión de imágenes fotográficas. Utiliza compresión **con pérdida**, al reducir el tamaño del archivo eliminando información de la imagen que el ojo humano no puede percibir fácilmente. 
   
@@ -98,14 +98,14 @@ Este aprtado se dividirá entre las imágenes rasterizadas y las imagens vectori
     **Iconos y elementos gráficos.** (botones, ...)
    
     **Animaciones.** Los SVG permiten animaciones interactivas utilizando CSS o JavaScript.
-
+---
 ### 2.2.2 Formato EPS
 <img src="https://cdn.icon-icons.com/icons2/265/PNG/512/EPS_29667.png" width=13%>  
 
--  El foramto EPS (Encapsulated PostScript) se utiliza para guardar ilustraciones o trabajos de diseño gráfico en programas de ilustración como Adobe Illustrator y CorelDraw.  
+-  El formato EPS (Encapsulated PostScript) se utiliza para guardar ilustraciones o trabajos de diseño gráfico en programas de ilustración como Adobe Illustrator y CorelDraw.  
 -  Utilizado principalmente en gráficos profesionales es útil para crear imágenes de alta calidad. 
 -  Aunque se pueda encontrar, no es muy común en la web y generalmente se convierte a SVG o PNG para su visualización.
-
+---
 ### 2.2.3 Formato PDF
 <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_pdf_icon_130274.png" width=18%>  
 
@@ -113,7 +113,7 @@ Este aprtado se dividirá entre las imágenes rasterizadas y las imagens vectori
 -  Un archivo PDF se basa en el mismo lenguaje PostScript que el EPS. Es un vector con compresión sin pérdidas, lo que te permite ampliar una imagen PDF tanto como un desea.
 -  También es la mejor opción para los informes visuales interactivos o las infografías, ya que es indexable y tiene texto que se puede buscar.  
 -  También es posible incluir elementos interactivos en un PDF, por ejemplo, enlaces y botones CTA.
-
+---
 ## 2.3 Tabla resumen / comprativa de los 4 formatos de imágenes mas populares.
 
 | Característica         | JPG                                     | PNG                                                         | GIF                      | SVG                                          |
@@ -132,21 +132,26 @@ El audio en las interfaces web se utiliza principalmente en contenido multimedia
 Existen muchos tipos de formatos de audio (mp3, wav, ogg, mp4…). Los que más se utilizan en la web son los formatos mp3 y ogg.
 
 ## 3.1 Formato MP3
-  - El formato MP3 (MPEG 1 Layer 3) fue creado por el Instituto Fraunhofer.
-  - Su extraordinario grado de compresión y alta calidad lo ha convertido en el candidato ideal para publicar audios en la web.
-  - **Ventajas**: Alta compatibilidad, buena compresión con pérdida aceptable.
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Mp3.svg/250px-Mp3.svg.png" width=20%>  
+
+El formato MP3 (MPEG 1 Layer 3) fue creado por el Instituto Fraunhofer. Su extraordinario grado de compresión y alta calidad lo ha convertido en el candidato ideal para publicar audios en la web.
+  - **Ventajas**: Alta compatibilidad, buena compresión con pérdida aceptable.  
   - **Desventajas**: Calidad limitada en tasas de bits bajas.
-  - **Usos**: Música, podcasts, efectos de sonido.
+  - **Usos**: Música, podcasts, efectos de sonido.  
 
 
 ## 3.2 Formato OGG
-  - Desarrollado por la fundación Xiph.org, es libre y de código abierto (a diferencia del formato MP3). 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Ogg_Logo.svg/250px-Ogg_Logo.svg.png" width=15%>
+
+Desarrollado por la fundación Xiph.org, es libre y de código abierto (a diferencia del formato MP3). 
   - **Ventajas**: Libre de patentes, buena calidad y compresión.
   - **Desventajas**: Menor soporte en algunos navegadores comparado con MP3.
   - **Usos**: Alternativa a MP3 en navegadores que lo soporten.
 
 ## 3.3 Formato WAV
-  - El formato WAV (WaveForm Audio File) es un archivo que desarrolló originalmente Microsoft para guardar audio.
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/AudacityWAV.png/100px-AudacityWAV.png" width=10%>
+
+El formato WAV (WaveForm Audio File) es un archivo que desarrolló originalmente Microsoft para guardar audio.
   - **Ventajas**: Sin pérdida de calidad, alta fidelidad.
   - **Desventajas**: Tamaño de archivo muy grande.
   - **Usos**: Audio de alta calidad, efectos de sonido breves.
@@ -156,22 +161,28 @@ Existen muchos tipos de formatos de audio (mp3, wav, ogg, mp4…). Los que más 
 El video es otro recurso de las interfaces web, pero su uso intensivo de datos requiere formatos que ofrezcan buena compresión sin sacrificar demasiada calidad.
 
 ## 4.1 Formato MP4
-  - El formato MP4 es uno de los formatos más utilizados en la actualidad, especialmente cuando se trata de compartir contenido en línea. YouTube, por ejemplo, recomienda cargar archivos en formato .mp4 para obtener la mejor calidad de video.  
-  - Además de los datos de video y audio, también se puede usar para almacenar cosas como subtítulos e imágenes fijas. Por lo general, se combina con H.264 o H.265.
-  - Los videos que usan el contenedor .MP4 pueden tener tamaños de archivo relativamente pequeños mientras conservan una alta calidad.
+<img src="https://icons.veryicon.com/png/o/file-type/file-type-icon/mp4-icon-1.png" width=10%>
+
+El formato MP4 es uno de los formatos más utilizados en la actualidad, especialmente cuando se trata de compartir contenido en línea. YouTube, por ejemplo, recomienda cargar archivos en formato .mp4 para obtener la mejor calidad de video.  
+Además de los datos de video y audio, también se puede usar para almacenar cosas como subtítulos e imágenes fijas. Por lo general, se combina con H.264 o H.265.  
+Los videos que usan el contenedor .MP4 pueden tener tamaños de archivo relativamente pequeños mientras conservan una alta calidad.
   - **Ventajas**: Alta compresión, buena calidad, muy compatible.
   - **Desventajas**: Codificación con pérdida.
   - **Usos**: Videos en streaming, contenido multimedia general.
 
 ## 4.2 Formato WebM
-  - WebM es un formato multimedia abierto y libre desarrollado por Google y orientado para usarse con HTML5. 
+<img src="https://icons.veryicon.com/png/o/file-type/full-file-extension/webm.png" width=10%>
+
+WebM es un formato multimedia abierto y libre desarrollado por Google y orientado para usarse con HTML5. 
   - **Ventajas**: Libre de patentes, buena compresión, compatible con HTML5.
   - **Desventajas**: Menor soporte que MP4 en algunos dispositivos.
   - **Usos**: Videos optimizados para web, streaming.
 
 ## 4.3 Formato OGG
-  - Ogg es un formato contenedor libre y abierto, desarrollado y mantenido por la Fundación Xiph.Org
-  - Ogg está diseñado para proporcionar una difusión de flujo eficiente y manipulación de multimedios digitales de alta calidad.
+<img src="https://icons.veryicon.com/png/o/file-type/full-file-extension/ogg-11.png" width=10%>
+
+Ogg es un formato contenedor libre y abierto, desarrollado y mantenido por la Fundación Xiph.Org
+Ogg está diseñado para proporcionar una difusión de flujo eficiente y manipulación de multimedios digitales de alta calidad.
   - **Ventajas**: Libre de patentes, buena compresión.
   - **Desventajas**: Menor calidad comparada con mp4 o WebM.
   - **Usos**: Alternativa a mp4 o WebM en navegadores compatibles.
