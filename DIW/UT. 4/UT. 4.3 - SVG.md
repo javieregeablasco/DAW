@@ -32,26 +32,21 @@ También es compatible con todos los navegadores modernos, lo que asegura su ver
 -  **Formato basado en XML**: Al estar escrito en XML, puede ser editado con cualquier editor de texto.
 
 # 3. - Repositorios de imágenes SVG.
-Existen numerosos sitios web que ofrecen gráficos SVG listos para usar en proyectos. 
+Existen numerosos sitios web que ofrecen gráficos SVG listos para usar en proyectos (la mayoría piden suscripción). 
 
-Flaticon
-**SVGRepo**
-Undraw
-Iconmonstr
-
-
-<a href="cocomaterial.com">**Coco Material**</a> 
-
-**Free Icons:** freeicons.io.
-**Game Icons:** game-icons.net.
-Icon Duck: Una web con más de 100.000 iconos e imágenes SVG gratuitas y libres que puedes usar en cualquiera de tus proyectos. Están repartidas en paquetes temáticos, aunque también tienes un buscador para encontrar algo que se ajuste a tus necesidades. Web: iconduck.com.
-Icon Finder: Este es un buscador de iconos e imágenes vectoriales con más de 5 millones de elementos a encontrar. La pega es que no solo verás iconos gratuitos, sino también otros que son de pago. Web: iconfinder.com.
-Icons and Photos For Everything: Un buscador doble de recursos gratuitos, en el que puedes encontrar tanto fotos PNG como iconos SVG. Para ello tienes una barra de búsqueda en la que puedes especificar si buscar imágenes e iconos, luego escribes el término que quieras (principalmente en inglés) y verás los resultados. Web: thenounproject.com.
-Patternpad: Esta es una página con la que vas a poder crear iconos e imágenes vectoriales por tu cuenta. Funciona a través de patrones que puedes personalizar a tu gusto, y cuando termines, te descargas el resultado. patternpad.com.
-Pixabay: La popular página de Pixabay sirve para encontrar todo tipo de recursos e imágenes, algunas de pago y otras gratuitas y abiertas. Entre sus opciones está la de buscar gráficos vectoriales, que son los SVG, y eligiendo su pestaña en el buscador podrás encontrarlos de varias temáticas: Web: Pixabay.com.
-SVG Repo: Un repositorio en el que encontrar una ingente cantidad de imágenes e iconos en formato SVG. Tienes un buscador y varios packs temáticos. Web: svgrepo.com.
-SVG Silh: Un buscador de imágenes SVG e iconos. Como especial tiene que además de recurrir a su barra de búsqueda, vas a poder elegir el color en el que vas a querer cada imagen. No es un buscador por colores, sino que pinta todas las imágenes en el color que elijas. Web: svgsilh.com.
-Uxwing: Una página con una colección exclusiva de iconos y gráficos vectoriales gratuitos, que puedes usar en negocios o propósitos comerciales sin necesidad de poner una atribución. Tienes una gran cantidad de sets, y una herramienta para personalizarlos. Web: uxwing.com.
+-  <a href="https://cocomaterial.com">**Coco Material**</a>   
+-  <a href="https://freeicons.io">**Free Icons:**</a>  
+-  <a href="https://game-icons.net">**Game Icons**</a>  
+-  <a href="https://iconduck.com">**Icon Duck**</a>  
+-  <a href="https://thenounproject.com">**Icons and Photos For Everything**</a>  
+-  <a href="https://patternpad.com">**Patternpad**</a>  
+-  <a href="https://Pixabay.com">**Pixabay**</a>  
+-  <a href="https://svgrepo.com">**SVG Repo**</a>  
+-  <a href="https://svgsilh.com">**SVG Silh**</a>  
+-  <a href="https://uxwing.com">**Uxwing**</a>  
+-  <a href="https://www.flaticon.es/">**Flaticon**</a>  
+-  <a href="https://undraw.co/illustrations">**unDraw**</a>  
+-  <a href="https://iconmonstr.com/">**iconmonstr**</a>  
 
 
 ##### 3.3. **Sintaxis de SVG**
