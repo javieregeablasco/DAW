@@ -36,19 +36,19 @@ También es compatible con todos los navegadores modernos, lo que asegura su ver
 # 3. - Repositorios de imágenes SVG.
 Existen numerosos sitios web que ofrecen gráficos SVG listos para usar en proyectos (la mayoría piden suscripción). 
 
--  <a href="https://cocomaterial.com">**Coco Material**</a>   
--  <a href="https://freeicons.io">**Free Icons:**</a>  
--  <a href="https://game-icons.net">**Game Icons**</a>  
--  <a href="https://iconduck.com">**Icon Duck**</a>  
--  <a href="https://thenounproject.com">**Icons and Photos For Everything**</a>  
--  <a href="https://patternpad.com">**Patternpad**</a>  
--  <a href="https://Pixabay.com">**Pixabay**</a>  
--  <a href="https://svgrepo.com">**SVG Repo**</a>  
--  <a href="https://svgsilh.com">**SVG Silh**</a>  
--  <a href="https://uxwing.com">**Uxwing**</a>  
--  <a href="https://www.flaticon.es/">**Flaticon**</a>  
--  <a href="https://undraw.co/illustrations">**unDraw**</a>  
--  <a href="https://iconmonstr.com/">**iconmonstr**</a>  
+-  <a href="https://cocomaterial.com">Coco Material</a>   
+-  <a href="https://freeicons.io">Free Icons:</a>  
+-  <a href="https://game-icons.net">Game Icons</a>  
+-  <a href="https://iconduck.com">Icon Duck</a>  
+-  <a href="https://thenounproject.com">Icons and Photos For Everything</a>  
+-  <a href="https://patternpad.com">Patternpad</a>  
+-  <a href="https://Pixabay.com">Pixabay</a>  
+-  <a href="https://svgrepo.com">SVG Repo</a>  
+-  <a href="https://svgsilh.com">SVG Silh</a>  
+-  <a href="https://uxwing.com">Uxwing</a>  
+-  <a href="https://www.flaticon.es/">Flaticon</a>  
+-  <a href="https://undraw.co/illustrations">unDraw</a>  
+-  <a href="https://iconmonstr.com/">iconmonstr</a>  
 
 ## 4. - Formas de insertar imágenes SVG.
 ## 4.1 - Etiqueta img para un SVG
@@ -134,8 +134,6 @@ Existen al menos 2 maneras diferentes de crear nuestras imagenes SVG:
 
 ## 5.1 - Programar una imagen
 Para ello podremos usar las formas básicas disponibles como rectángulos, círculos, líneas y rutas pero antes deberemos ver la sintaxis empleada.
-
-- [Editor SVG en línea](https://svg-edit.github.io/svgedit/releases/svg-edit-2.8.1/svg-editor.html)
 
 ### 5.1.1 - Sintaxis de SVG
 SVG es un lenguaje XML, por lo que su sintaxis sigue las reglas del XML.
