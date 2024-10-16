@@ -259,7 +259,20 @@ Las formas básicas SVG son la línea <line ... />,  la polilínea <polyline ...
    -  Los atributos principales propios de <polyline /> son:  
      -  (x1, y1) (x2, y2) (x3, y3) ... (xn, yn): Coordenadas de los puntos sucesivos de la polilínea.   
 
-points: abcisas y ordenadas de los sucesivos puntos de la polilínea (x1,y1 x2,y2 x3,y3 ...)
+
+seguir aqui: 
+https://www.mclibre.org/consultar/htmlcss/html/svg-formas-1.html
+https://www.aleksandrhovhannisyan.com/blog/svg-tutorial/#1-lines
+
+https://www.youtube.com/watch?v=hZYaSGUbMds
+https://www.youtube.com/watch?v=7zVanhJDtUI&list=PL0b6OzIxLPbxaPpusPu2mtfcRE6XiSRyk&index=1
+https://www.youtube.com/playlist?list=PL-hspD6ToGYdTcoiPSv9PzHpIZGzLEjgp
+https://www.youtube.com/playlist?list=PLL8woMHwr36F2tCFnWTbVBQAGQ6nTcXOO
+https://www.youtube.com/watch?v=hZYaSGUbMds
+https://www.aulaclic.es/html/t_16_6.htm
+
+
+tos de la polilínea (x1,y1 x2,y2 x3,y3 ...)
    - Similar al polígono, pero se dibuja como una serie de líneas conectadas.
    - Atributos comunes: `points` (lista de puntos que definen la serie de líneas).
 
