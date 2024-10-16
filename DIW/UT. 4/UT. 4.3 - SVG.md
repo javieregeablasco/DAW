@@ -119,19 +119,56 @@ Al igual que la etiqueta iframe, backgroung-image también tiene limitaciones a 
 ```
 <div class="w-96 h-96 bg-[url('/SVG1/src/img/icono.svg')] bg-cover bg-no-repeat flex justify-center items-center">
   <p class="m-4 text-xl text-cyan-600">5. SVG usando <strong>background</strong></p>
-</div>
+</div>  
+```
 
-# 5 - Diseñar un SVG 
-
-
-
-
-
-
-
-
+# 5 - Crear un SVG
+Existen al menos 2 maneras diferentes de crear nuestras imagenes SVG:  
+-  **Programarlas mediante formas geométricas simples**:   
+    Como hemos visto SVG es un formato basado en XML lo que permite crear imágenes directamente escribiendo código. 
+-  **Crear un diseño con un programa de edición de imágenes y guardarlo en formato SVG**:
+    Programas de edición de imágenes como **Adobe Illustrator**, **Inkscape** o **Sketch** permiten diseñar imágenes visualmente y luego exportarlas o guardarlas como archivos SVG.  
 
 
+## 5.1 - Crear SVG programado
+Para ello podremos usar las formas básicas disponibles como rectángulos, círculos, líneas y rutas pero antes deberemos ver la sintaxis empleada.
+### 5.1.1 - Sintaxis de SVG
+SVG es un lenguaje XML, por lo que su sintaxis sigue las reglas del XML.
+
+El documento SVG se describe de la siguiente manera:  
+-  **Elemento raíz** que contiene el resto de elementos.
+-  **Todas las etiquetas están cerradas** (las etiquetas vacías incluyen una barra / al final de la etiqueta).
+-  **Las etiquetas de cierre coinciden con las de apertura** (incluso en el uso de mayúsculas y minúsculas).
+-  **Todos los atributos tienen algún valor**.
+-  **Los valores de los atributos están entre comillas** (simples o dobles).
+- Algunos de los **atributos se escriben con algunas letras en mayúsculas** y no se pueden escribir en minúsculas (viewBox).
+```
+<p>
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+    width="170" height="165" viewBox="0 0 170 165">
+    <polygon fill="yellow" stroke="red" stroke-width="7"
+      points="129,150 85,119 41,150 57,104 15,66
+        68,66 85,15 102,65 156,66 113,98" />
+  </svg>
+</p>
+```
+Donde: 
+**1. Etiqueta `<svg>`**:
+   - **`version="1.1"`**: Especifica la versión del estándar SVG utilizado.
+   - **`xmlns="http://www.w3.org/2000/svg"`**: Define el espacio de nombres XML para SVG. resulta necesario para que el navegador sepa que se trata de un documento SVG.
+   - **`width="170"` y `height="165"`**: Dimensiones del contenedor SVG.
+   - **`viewBox="0 0 170 165"`**: Define el sistema de coordenadas del SVG. El `viewBox` permite que el contenido SVG se escale y se ajuste al tamaño del contenedor. Aquí se indica que el área visible comienza en (0, 0) y tiene un tamaño de 170 por 165 unidades.
+
+**2. Etiqueta `<polygon>`**:
+   - **`fill="yellow"`**: Define el color de relleno del polígono. 
+   - **`stroke="red"`**: Establece el color del contorno (borde) del polígono.
+   - **`stroke-width="7"`**: Especifica el grosor del contorno del polígono. 
+   - **`points="129,150 85,119 41,150 57,104 15,66 68,66 85,15 102,65 156,66 113,98"`**: Define los vértices del polígono mediante un conjunto de coordenadas (x, y). Cada par de números representa un vértice en el espacio del SVG. 
+
+### Visualización:
+El resultado de este código es un polígono con forma irregular que tiene un relleno amarillo y un borde rojo. El polígono se dibujará dentro de un área de 170x165 píxeles y se ajustará a la vista definida por el `viewBox`.
+
+En resumen, este SVG dibuja un polígono amarillo con borde rojo utilizando coordenadas específicas para definir su forma.
 
 
 
@@ -141,14 +178,7 @@ Al igual que la etiqueta iframe, backgroung-image también tiene limitaciones a 
 
 
 
-
-
-
-
-
- 
-##### 3.3. **Sintaxis de SVG**
-SVG utiliza una estructura XML para describir formas geométricas como rectángulos, círculos, líneas y rutas. Algunos elementos básicos son:
+ como rectángulos, círculos, líneas y rutas. Algunos elementos básicos son:
 - `<svg>`: El contenedor principal para gráficos SVG.
 - `<rect>`: Para dibujar rectángulos.
 - `<circle>`: Para dibujar círculos.
@@ -160,27 +190,6 @@ SVG utiliza una estructura XML para describir formas geométricas como rectángu
   <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
 </svg>
 ```
-
-##### 3.4. **Integración de SVG en HTML**
-Existen varias maneras de integrar SVG en un documento HTML:
-- **Incrustado directamente en el HTML**: El código SVG se coloca dentro del archivo HTML, lo que permite manipular el SVG mediante CSS y JavaScript.
-- **Mediante archivo externo**: Se puede incluir un archivo SVG como si fuera una imagen con la etiqueta `<img>`, o como un fondo mediante CSS.
-
-##### 3.5. **Ventajas del uso de SVG en aplicaciones web**
-- **Calidad de imagen superior**: Ideal para gráficos como logotipos, íconos o gráficos que requieren alta definición.
-- **Reducción del tamaño de archivo**: Aumenta el rendimiento de la web al reducir el peso total de la página.
-- **Compatibilidad con CSS y JavaScript**: Permite cambiar estilos y añadir animaciones sin necesidad de librerías externas.
-
-##### 3.6. **Manipulación de SVG con CSS y JavaScript**
-SVG permite aplicar estilos directamente desde CSS y modificar atributos dinámicamente usando JavaScript. Ejemplos de efectos comunes son:
-- Cambios de color al pasar el cursor (hover).
-- Animación de transformaciones (rotar, escalar).
-- Cambios dinámicos en la posición o dimensiones de los elementos gráficos.
-
-#### 4. **Actividades**
-1. **Crear un logo en SVG**: Los alumnos diseñarán un logotipo sencillo en SVG usando formas básicas y lo integrarán en una página web.
-2. **Manipulación de SVG con CSS**: Aplicar estilos y animaciones a un SVG embebido en HTML utilizando propiedades como `fill`, `stroke`, y `transform`.
-3. **Interactividad con JavaScript**: Crear un gráfico SVG interactivo donde al hacer clic sobre ciertas áreas se generen diferentes acciones (por ejemplo, mostrar alertas o modificar colores).
 
 #### 5. **Recursos didácticos**
 - Ordenador con entorno de desarrollo web (Visual Studio Code, Brackets).
@@ -200,6 +209,7 @@ SVG es una herramienta fundamental para el desarrollo moderno de aplicaciones we
 Esta unidad ofrece una base sólida sobre SVG, preparando a los estudiantes para utilizar este formato en proyectos reales de desarrollo web.
 
 
+https://www.eniun.com/como-insertar-imagen-svg-html-css/
 
 https://kinsta.com/es/base-de-conocimiento/como-abrir-un-archivo-svg/
 
