@@ -277,7 +277,7 @@ Las formas básicas SVG son:
      - `rx` (radio en dirección x)
      - `ry` (radio en dirección y)      
 
-**4. Rectángulo** `<rect ... />`
+**5. Rectángulo** `<rect ... />`
    -  La etiqueta <rect /> dibuja un rectángulo.
    -  Los atributos principales propios de <rec /> son:
      - (x, y): Coordenadas la **esquina superior izquierda** del rectángulo
@@ -286,9 +286,12 @@ Las formas básicas SVG son:
      - rx: radio horizontal de las esquinas redondeadas
      - ry: radio vertical de las esquinas redondeadas
 
-**5. Polígono** `<polygon .../>`
-   - La etiqueta <polygon />Se utiliza para dibujar formas con múltiples lados.
-   - Atributos comunes: `points` (lista de puntos que definen los vértices).
+**6. Polígono** `<polygon .../>`
+   - La etiqueta <polygon /> dibuja un poligono cerrado.
+   - Los atributos principales de <polygon /> son:
+      -  (x1, y1) (x2, y2) (x3, y3) ... (xn, yn): Coordenadas de los puntos sucesivos del polígono.
+      -  El último punto (xn, yn) se une automáticamente con el primero (x1, y1).
+        
 
       
 seguir aqui: 
