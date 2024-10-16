@@ -298,6 +298,8 @@ Las formas básicas SVG son:
 ### 5.1.6 Formas avanzadas de SVG: Etiqueta <path ... />
 La etiqueta `<path />` define una forma mediante una serie de comandos que describen movimientos y dibujos en el espacio. A diferencia de otras etiquetas de SVG más simples <path />` permite dibujar cualquier forma imaginable.
 
+[Editor de path](https://yqnn.github.io/svg-path-editor/)
+
 **1. Sintaxis de** `<path />`
 La etiqueta `<path />` utiliza un atributo principal llamado `d`, el cual contiene una lista de comandos y parámetros. Estos comandos indican cómo moverse y dibujar en el área gráfica.
 
@@ -335,9 +337,9 @@ Los comandos se dividen en dos grupos: mayúsculas (coordenadas absolutas) y min
     - `Z` (sin parámetros)
 
 **3. Ejemplos**  
-[Editor de path](https://yqnn.github.io/svg-path-editor/)  
+  
 
-l siguiente código dibuja una forma compleja utilizando una combinación de líneas, curvas y arcos:
+El siguiente código dibuja una forma compleja utilizando una combinación de líneas, curvas y arcos:
 
 ```xml
 <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
