@@ -192,10 +192,41 @@ El atributo viewBox establece la porción del plano SVG que muestra la imagen. E
 >Entender los resultados obtenidos.
 
 ### 5.1.3 - Atributos width y height no proporcionales a viewBox
+Este concepto es similar al manejo de imágenes con la etiqueta **img**, donde los atributos **width** y **height** deben mantener la misma proporción que la imagen si no queremos que se produzcan distorsiones.  
 
+A diferencia de la etiqueta **img**, la etiqueta **svg**, no produce deformación sino que se ajusta la porción visible.
 
+Los navegadores se encargan de representar una sección del plano SVG con las proporciones de los atributos **width** y **height**, asegurándose de que incluya el área definida por el atributo **viewBox**.
 
-### 5.1.4Formas básicas de SVG
+**Ejemplo 1**
+En este ejemplo solo vemos el círculo central.
+```
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="-25 -25 50 50">
+  <circle cx="-50" cy="0" r="25" fill="none" stroke="blue" stroke-width="2" />
+  <circle cx="50" cy="0" r="25" fill="none" stroke="blue" stroke-width="2" />
+  <circle cx="0" cy="-50" r="25" fill="none" stroke="green" stroke-width="2" />
+  <circle cx="0" cy="50" r="25" fill="none" stroke="green" stroke-width="2" />
+  <circle cx="0" cy="0" r="25" fill="none" stroke="red" stroke-width="2" />
+</svg>
+```
+
+**Ejemplo 2**
+En este ejemplo vemos los 4 círculos.
+```
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="-75 -75 150 150">
+  <circle cx="-50" cy="0" r="25" fill="none" stroke="blue" stroke-width="2" />
+  <circle cx="50" cy="0" r="25" fill="none" stroke="blue" stroke-width="2" />
+  <circle cx="0" cy="-50" r="25" fill="none" stroke="green" stroke-width="2" />
+  <circle cx="0" cy="50" r="25" fill="none" stroke="green" stroke-width="2" />
+  <circle cx="0" cy="0" r="25" fill="none" stroke="red" stroke-width="2" />
+</svg>
+```
+
+>Actividad:
+>Modificar el programa anterior para que solo se vean los circulos horizontales.
+>Repetir la edición del programa para que solo se vean los circulos verticales.
+
+### 5.1.4 Formas básicas de SVG
 
 
 
