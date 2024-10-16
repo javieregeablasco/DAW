@@ -121,7 +121,7 @@ Al igual que la etiqueta iframe, backgroung-image también tiene limitaciones a 
   <p class="m-4 text-xl text-cyan-600">5. SVG usando <strong>background</strong></p>
 </div>
 
-
+# 5 - Diseñar un SVG 
 
 
 
