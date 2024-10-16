@@ -322,10 +322,10 @@ Dibuja una cruz usando dos líneas que se cruzan en el centro del área de 100x1
 Crea una polilínea con curvas suaves.
 Nota: Para redondear las esquinas, usar `stroke-width`.
 
-### 9. Dibuja un Rectángulo
+#### 9. Dibuja un Rectángulo
 Dibuja un rectángulo.
 
-### 10. Dibuja una Estrella de 5 Puntas con `<polygon />`
+#### 10. Dibuja una Estrella de 5 Puntas con `<polygon />`
 Utiliza el elemento `<polygon />` para dibujar una estrella de 5 puntas.
         
 ### 5.1.7 Formas avanzadas de SVG: Etiqueta <path ... />
