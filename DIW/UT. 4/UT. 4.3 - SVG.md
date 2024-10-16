@@ -52,7 +52,7 @@ Existen numerosos sitios web que ofrecen gráficos SVG listos para usar en proye
 ## 4.1 - Etiqueta img para un SVG
 Es la forma más sencilla de incluir un archivo SVG. El archivo SVG permanecerá externo, pero será cargado en el documento HTML.  
 
-Para agregar una imagen SVG utilizando la etiqueta <img>, simplemente especificaremos la ruta del archivo SVG.
+Para agregar una imagen SVG utilizando la etiqueta <img>, simplemente especificaremos la ruta del archivo SVG dentro de la etiqueta img.
 ```
 <!doctype html>
 <html>
@@ -72,7 +72,8 @@ Para agregar una imagen SVG utilizando la etiqueta <img>, simplemente especifica
 ```
 
 ## 4.2 - SVG en línea (inline)
-Las imágenes SVG pueden escribirse directamente en el documento HTML mediante la etiqueta <svg> </svg>.
+Las imágenes SVG pueden escribirse directamente en el documento HTML mediante la etiqueta <svg> </svg>.  
+
 Para ello tendremos que acceder al código de la imagen.
 1. Abrir el archivo SVG en el IDE.
 2. Copiar todo el código SVG dentro de las etiquetas <svg> </svg>.
@@ -82,7 +83,7 @@ Para ello tendremos que acceder al código de la imagen.
   <svg width="50" height="50" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m2.699 20c-.411 0-.699-.312-.699-.662 0-.249.145-.516.497-.703 1.788-.947 3.858-4.226 3.858-6.248-3.016.092-4.326-2.582-4.326-4.258 0-2.006 1.738-4.129 4.308-4.129 3.241 0 4.83 2.547 4.83 5.307 0 5.981-6.834 10.693-8.468 10.693zm10.833 0c-.41 0-.699-.312-.699-.662 0-.249.145-.516.497-.703 1.788-.947 3.858-4.226 3.858-6.248-3.015.092-4.326-2.582-4.326-4.258 0-2.006 1.739-4.129 4.308-4.129 3.241 0 4.83 2.547 4.83 5.307 0 5.981-6.833 10.693-8.468 10.693z" fill-rule="nonzero"/>
   </svg>
 ```  
-## 4.3 - Etiqueta <object> para un SVG
+## 4.3 - Etiqueta object
 La etiqueta <object> </object> permite incrustar un archivo SVG como un objeto independiente en la página.  
 
 La etiqueta <object> ofrece flexibilidad al incrustar SVGs, permitiendo un control preciso sobre el tamaño y la presentación del gráfico vectorial.
@@ -98,6 +99,52 @@ Donde:
 -  El atributo data="/SVG1/src/img/icono.svg" indica la ruta del archivo SVG.
 -  Los atributos width="50" y height="50" definen las dimensiones del objeto SVG.
   
+## 4.4 - Etiqueta iframe
+También se puede usar la etiqueta **iframe** para insertar imágenes SVG. 
+
+Sin embargo, es importante tener en cuenta ciertas consideraciones al utilizar <iframe> para mostrar SVGs:
+-  **Dificultades de mantenimiento**: Los <iframe> pueden ser difíciles de mantener, especialmente cuando existen múltiples elementos <iframe> en la página.
+-  **SEO**: El uso **excesivo** de <iframe> puede **afectar negativamente** la optimización de l sitio web para motores de búsqueda.
+-  **Escalabilidad:** Las imágenes SVG añadidas mediante <iframe> **no son escalables**, lo que **anula el propósito** de utilizar gráficos vectoriales escalables.
+
+```
+<p class="m-4 text-xl text-cyan-600">SVG usando <strong>iframe</strong></p>
+<iframe src="./img/icono.svg" width="50" height="50" title="SVG"></iframe>
+```
+
+## 4.4 - Usando la propiedad backgroung-image
+Al igual que la etiqueta iframe, backgroung-image también tiene limitaciones a tener en cuenta.  
+-  **No Accesible:** Las imágenes de fondo SVG no son accesibles a través del texto alternativo (alt) como las imágenes <img>.
+-  **Escalabilidad:** La escalabilidad del SVG se ven limitadas por las propiedad CSS del contenedor.
+```
+<div class="w-96 h-96 bg-[url('/SVG1/src/img/icono.svg')] bg-cover bg-no-repeat flex justify-center items-center">
+  <p class="m-4 text-xl text-cyan-600">5. SVG usando <strong>background</strong></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  
 ##### 3.3. **Sintaxis de SVG**
