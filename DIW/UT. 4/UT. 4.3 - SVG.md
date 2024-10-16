@@ -280,6 +280,10 @@ Las formas básicas SVG son la línea <line ... />,  la polilínea <polyline ...
      - rx: radio horizontal de las esquinas redondeadas
      - ry: radio vertical de las esquinas redondeadas
 
+**5. Polígono** `<polygon .../>`
+   - La etiqueta <polygon />Se utiliza para dibujar formas con múltiples lados.
+   - Atributos comunes: `points` (lista de puntos que definen los vértices).
+
       
 seguir aqui: 
 https://www.mclibre.org/consultar/htmlcss/html/svg-formas-1.html
