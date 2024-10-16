@@ -246,7 +246,13 @@ En los siguientes ejemplos vemos como variando los argumentos pasados a viewBox 
 ```
 
 ### 5.1.5 Formas básicas de SVG
-Las formas básicas SVG son la línea <line ... />,  la polilínea <polyline ... />, el círculo <circle ... />, el rectángulo <rect ... />, la elipse <ellipse ... />, y el polígono <polygon ... />.  
+Las formas básicas SVG son:
+-  La línea <line ... />  
+-  La polilínea <polyline ... />  
+-  El círculo <circle ... />
+-  La elipse <ellipse ... />,
+-  El rectángulo <rect ... />
+-  El polígono <polygon ... />  
 
 **1. Línea** `<line ... />`
    -  LA etiqueta <line /> dibuja una línea recta.  
