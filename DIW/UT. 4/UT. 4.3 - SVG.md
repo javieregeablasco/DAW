@@ -130,7 +130,7 @@ Existen al menos 2 maneras diferentes de crear nuestras imagenes SVG:
     Programas de edición de imágenes como **Adobe Illustrator**, **Inkscape** o **Sketch** permiten diseñar imágenes visualmente y luego exportarlas o guardarlas como archivos SVG.  
 
 
-## 5.1 - Crear SVG programado
+## 5.1 - Programar una imagen
 Para ello podremos usar las formas básicas disponibles como rectángulos, círculos, líneas y rutas pero antes deberemos ver la sintaxis empleada.
 ### 5.1.1 - Sintaxis de SVG
 SVG es un lenguaje XML, por lo que su sintaxis sigue las reglas del XML.
@@ -227,7 +227,22 @@ En este ejemplo vemos los 4 círculos.
 >Repetir la edición del programa para que solo se vean los circulos verticales.
 >Analizar los resultados obtenidos.
 
+### 5.1.3 - Margenes del viewBox
+Para asegurarse de que todo el dibujo sea visible, es conveniente elegir un viewbox un poco más grande que la zona ocupada por los elementos del dibujo.  
+
+En los siguientes ejemplos vemos como variando los argumentos pasados a viewBox ya no tenemos recortes del espesor del círculo.
+´´´
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="-25 -25 50 50">
+  <circle cx="0" cy="0" r="25" fill="none" stroke="red" stroke-width="2" />
+</svg>
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="-26 -26 52 52">
+  <circle cx="0" cy="0" r="25" fill="none" stroke="red" stroke-width="2" />
+</svg>
+```
+
 ### 5.1.4 Formas básicas de SVG
+
 
 
 
