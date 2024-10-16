@@ -258,7 +258,7 @@ Las formas básicas SVG son:
 -  El polígono <polygon ... />  
 
 **1. Línea** `<line ... />`
-   -  LA etiqueta <line /> dibuja una línea recta.  
+   -  La etiqueta <line /> dibuja una línea recta.  
    -  Los atributos principales propios de <line /> son:  
      -  (x1, y1): coordenadas del punto de inicio.   
      -  (x2, y2): coordenadas del punto final.  
@@ -294,8 +294,41 @@ Las formas básicas SVG son:
    - Los atributos principales de <polygon /> son:
       -  (x1, y1) (x2, y2) (x3, y3) ... (xn, yn): Coordenadas de los puntos sucesivos del polígono.
       -  El último punto (xn, yn) se une automáticamente con el primero (x1, y1).
+    
+### 5.1.6 Ejercicios
+
+#### 1. Dibuja una Línea Horizontal
+Dibuja una línea horizontal que conecte dos puntos en una vista de 300x100.
+
+#### 2. Dibuja una Polilínea en Zigzag
+Dibuja una polilínea que forma un zigzag entre varios puntos.
+
+#### 3. Dibuja un Círculo Centrado
+Dibuja un círculo de radio 50 en el centro de un área de 200x200.
+
+#### 4. Dibuja una Elipse Horizontal
+Crea una elipse centrada con un radio horizontal de 70 y un radio vertical de 40.
+
+#### 5. Dibuja un Rectángulo con Bordes Redondeados
+Dibuja un rectángulo de 150x100 con esquinas redondeadas en un área de 300x200.
+
+#### 6. Dibuja un Triángulo con `<polygon />`
+Crea un triángulo equilátero utilizando la etiqueta `<polygon />`.
+
+#### 7. Dibuja una Cruz usando dos Líneas
+Dibuja una cruz usando dos líneas que se cruzan en el centro del área de 100x100.
+
+#### 8. Dibuja una Polilínea con Curvas Suaves
+Crea una polilínea con curvas suaves.
+Nota: Para redondear las esquinas, usar `stroke-width`.
+
+### 9. Dibuja un Rectángulo
+Dibuja un rectángulo.
+
+### 10. Dibuja una Estrella de 5 Puntas con `<polygon />`
+Utiliza el elemento `<polygon />` para dibujar una estrella de 5 puntas.
         
-### 5.1.6 Formas avanzadas de SVG: Etiqueta <path ... />
+### 5.1.7 Formas avanzadas de SVG: Etiqueta <path ... />
 La etiqueta `<path />` define una forma mediante una serie de comandos que describen movimientos y dibujos en el espacio. A diferencia de otras etiquetas de SVG más simples <path />` permite dibujar cualquier forma imaginable.
 
 [Editor de path](https://yqnn.github.io/svg-path-editor/)
@@ -351,3 +384,4 @@ En este ejemplo:
 - `M10 80`: Mueve el punto de inicio a (10,80).
 - `Q 52.5 10, 95 80`: Dibuja una curva cuadrática hacia (95,80) con un control en (52.5,10).
 - `T 180 80`: Dibuja otra curva cuadrática suave hacia (180,80).
+>
