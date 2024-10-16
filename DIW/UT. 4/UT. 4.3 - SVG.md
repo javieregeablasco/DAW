@@ -248,18 +248,32 @@ En los siguientes ejemplos vemos como variando los argumentos pasados a viewBox 
 ### 5.1.5 Formas básicas de SVG
 Las formas básicas SVG son la línea <line ... />,  la polilínea <polyline ... />, el círculo <circle ... />, el rectángulo <rect ... />, la elipse <ellipse ... />, y el polígono <polygon ... />.  
 
-**1. Línea** `<line>`
-   -  Se utiliza para dibujar una línea recta.  
+**1. Línea** `<line ... />`
+   -  LA etiqueta <line /> dibuja una línea recta.  
    -  Los atributos principales propios de <line /> son:  
      -  (x1, y1): coordenadas del punto de inicio.   
      -  (x2, y2): coordenadas del punto final.  
 
-**2. Polilínea** `<polyline>`
+**2. Polilínea** `<polyline ... />`
    -  La etiqueta <polyline /> dibuja un polígono abierto.  
    -  Los atributos principales propios de <polyline /> son:  
      -  (x1, y1) (x2, y2) (x3, y3) ... (xn, yn): Coordenadas de los puntos sucesivos de la polilínea.   
 
+**3. Círculo** `<circle ... />`
+   -  La etiqueta <circle /> dibuja un circulo.
+   -  Los atributos principales propios de <cicle /> son:
+     - (cx, cy): Coordenada y del centro y `r` (radio).
 
+**4. Rectángulo** `<rect ... />`
+   -  La etiqueta <rect /> dibuja un rectángulo.
+   -  Los atributos principales propios de <rec /> son:
+     - (x, y): Coordenadas la **esquina superior izquierda** del rectángulo
+     - width: anchura del rectángulo
+     - height: altura del rectángulo
+     - rx: radio horizontal de las esquinas redondeadas
+     - ry: radio vertical de las esquinas redondeadas
+
+      
 seguir aqui: 
 https://www.mclibre.org/consultar/htmlcss/html/svg-formas-1.html
 https://www.aleksandrhovhannisyan.com/blog/svg-tutorial/#1-lines
@@ -272,17 +286,11 @@ https://www.youtube.com/watch?v=hZYaSGUbMds
 https://www.aulaclic.es/html/t_16_6.htm
 
 
-tos de la polilínea (x1,y1 x2,y2 x3,y3 ...)
-   - Similar al polígono, pero se dibuja como una serie de líneas conectadas.
-   - Atributos comunes: `points` (lista de puntos que definen la serie de líneas).
-
 
 **1. Rectángulo (`<rect>`)**:
    - Atributos comunes: `x`, `y`, `width`, `height`, `rx` (radio de las esquinas).
 
-2. **Círculo (`<circle>`)**:
-   - Se utiliza para dibujar círculos.
-   - Atributos comunes: `cx` (coordenada x del centro), `cy` (coordenada y del centro), `r` (radio).
+
 
 3. **Elipse (`<ellipse>`)**:
    - Se utiliza para dibujar elipses.
