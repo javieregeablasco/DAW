@@ -152,7 +152,8 @@ El documento SVG se describe de la siguiente manera:
   </svg>
 </p>
 ```
-Donde: 
+Donde:   
+
 **1. Etiqueta `<svg>`**:
    - **`version="1.1"`**: Especifica la versión del estándar SVG utilizado.
    - **`xmlns="http://www.w3.org/2000/svg"`**: Define el espacio de nombres XML para SVG. resulta necesario para que el navegador sepa que se trata de un documento SVG.
@@ -167,14 +168,16 @@ Donde:
 
 ### 5.1.2 - El plano de SVG, atributo viewBox
 <img src="https://www.aulaclic.es/html/graficos/coordenadas_svg.png">  
+
+
 El origen de coordenadas es el punto (0,0) los valores de la coordenada x van hacia la derecha y los valores de la coordenada y van hacia abajo.  
 
 El atributo viewBox establece la porción del plano SVG que muestra la imagen. Este atributo se establece con cuatro valores:
 
-**1. Primer valor:** abcisa (X) de la esquina superior izquierda de la porción del plano que muestra la imagen.
-**2. Segundo valor:** ordenada (Y) de la esquina superior izquierda de la porción del plano que muestra la imagen.
-**3. Tercer valor:** ancho de la porción del plano que muestra la imagen.
-**4. Cuarto valor:** alto de la porción del plano que muestra la imagen.
+**1. Primer valor:** abcisa (X) de la esquina superior izquierda de la porción del plano que muestra la imagen.  
+**2. Segundo valor:** ordenada (Y) de la esquina superior izquierda de la porción del plano que muestra la imagen.  
+**3. Tercer valor:** ancho de la porción del plano que muestra la imagen.  
+**4. Cuarto valor:** alto de la porción del plano que muestra la imagen.  
 
 ```
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="-100 -100 200 200" style="background-color: lightgray">
@@ -227,11 +230,12 @@ En este ejemplo vemos los 4 círculos.
 >Repetir la edición del programa para que solo se vean los circulos verticales.
 >Analizar los resultados obtenidos.
 
-### 5.1.3 - Margenes del viewBox
+### 5.1.4 - Margenes del viewBox
 Para asegurarse de que todo el dibujo sea visible, es conveniente elegir un viewbox un poco más grande que la zona ocupada por los elementos del dibujo.  
 
-En los siguientes ejemplos vemos como variando los argumentos pasados a viewBox ya no tenemos recortes del espesor del círculo.
-´´´
+En los siguientes ejemplos vemos como variando los argumentos pasados a viewBox ya no tenemos recortes del espesor del círculo.  
+
+```
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="-25 -25 50 50">
   <circle cx="0" cy="0" r="25" fill="none" stroke="red" stroke-width="2" />
 </svg>
@@ -241,10 +245,67 @@ En los siguientes ejemplos vemos como variando los argumentos pasados a viewBox 
 </svg>
 ```
 
-### 5.1.4 Formas básicas de SVG
+### 5.1.5 Formas básicas de SVG
+Las formas básicas SVG son la línea <line ... />,  la polilínea <polyline ... />, el círculo <circle ... />, el rectángulo <rect ... />, la elipse <ellipse ... />, y el polígono <polygon ... />.  
+
+**1. Línea** `<line>`
+   -  Se utiliza para dibujar una línea recta.  
+   -  Los atributos principales propios de <line /> son:  
+     -  (x1, y1): coordenadas del punto de inicio.   
+     -  (x2, y2): coordenadas del punto final.  
+
+**2. Polilínea** `<polyline>`:
+    -  La etiqueta <polyline /> dibuja un polígono abierto.
+    -  Los atributos principales propios de <polyline /> son:
+     -  (x1, y1) (x2, y2) (x3, y3) ... (xn, yn): Coordenadas de los puntos sucesivos de la polilínea.  
+
+points: abcisas y ordenadas de los sucesivos puntos de la polilínea (x1,y1 x2,y2 x3,y3 ...)
+   - Similar al polígono, pero se dibuja como una serie de líneas conectadas.
+   - Atributos comunes: `points` (lista de puntos que definen la serie de líneas).
+
+
+**1. Rectángulo (`<rect>`)**:
+   - Atributos comunes: `x`, `y`, `width`, `height`, `rx` (radio de las esquinas).
+
+2. **Círculo (`<circle>`)**:
+   - Se utiliza para dibujar círculos.
+   - Atributos comunes: `cx` (coordenada x del centro), `cy` (coordenada y del centro), `r` (radio).
+
+3. **Elipse (`<ellipse>`)**:
+   - Se utiliza para dibujar elipses.
+   - Atributos comunes: `cx`, `cy`, `rx` (radio en dirección x), `ry` (radio en dirección y).
 
 
 
+5. **Polígono (`<polygon>`)**:
+   - Se utiliza para dibujar formas con múltiples lados.
+   - Atributos comunes: `points` (lista de puntos que definen los vértices).
+
+
+
+7. **Ruta (`<path>`)**:
+   - Se utiliza para crear formas complejas y trazados.
+   - Atributo común: `d` (cadena de comandos que define la forma).
+
+8. **Texto (`<text>`)**:
+   - Se utiliza para mostrar texto en el SVG.
+   - Atributos comunes: `x`, `y`, `font-family`, `font-size`, `fill`.
+
+### Ejemplo de uso básico:
+```xml
+<svg width="200" height="200">
+  <rect x="10" y="10" width="30" height="30 fill="blue" />
+  <circle cx="70" cy="25" r="20" fill="red" />
+  <ellipse cx="120" cy="25" rx="30" ry="15" fill="green" />
+  <line x1="10" y1="70" x2="80" y2="70" stroke="black" stroke-width="2" />
+  <polygon points="150,70 130,100 170,100" fill="purple" />
+  <polyline points="10,100 40,130 70,100" fill="none" stroke="orange" />
+  <path d="M 100 150 Q 150 100 200 150" stroke="black" fill="none" />
+  <text x="10" y="180" font-family="Arial" font-size="20" fill="black">Texto SVG</text>
+</svg>
+```
+
+Estas formas básicas son fundamentales para crear gráficos y diseños en SVG.
 
 
 
