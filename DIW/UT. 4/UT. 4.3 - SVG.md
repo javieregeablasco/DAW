@@ -48,7 +48,58 @@ Existen numerosos sitios web que ofrecen gráficos SVG listos para usar en proye
 -  <a href="https://undraw.co/illustrations">**unDraw**</a>  
 -  <a href="https://iconmonstr.com/">**iconmonstr**</a>  
 
+## 4. - Formas de insertar imágenes SVG.
+## 4.1 - Etiqueta img para un SVG
+Es la forma más sencilla de incluir un archivo SVG. El archivo SVG permanecerá externo, pero será cargado en el documento HTML.  
 
+Para agregar una imagen SVG utilizando la etiqueta <img>, simplemente especificaremos la ruta del archivo SVG.
+```
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+  <h1 class="text-green-600 font-bold underline">
+    ¡Mi primera imagen SVG!
+  </h1>
+  <img src="./img/icono.svg" alt="Imagen SVG" width=4%>
+  
+</body>
+</html>
+```
+
+## 4.2 - SVG en línea (inline)
+Las imágenes SVG pueden escribirse directamente en el documento HTML mediante la etiqueta <svg> </svg>.
+Para ello tendremos que acceder al código de la imagen.
+1. Abrir el archivo SVG en el IDE.
+2. Copiar todo el código SVG dentro de las etiquetas <svg> </svg>.
+3. Pegar el código SVG dentro del elemento <body> del documento HTML. 
+```
+<p class="m-4 text-xl text-blue-700">SVG usando SVG en linea <strong>SVG</strong></p>
+  <svg width="50" height="50" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m2.699 20c-.411 0-.699-.312-.699-.662 0-.249.145-.516.497-.703 1.788-.947 3.858-4.226 3.858-6.248-3.016.092-4.326-2.582-4.326-4.258 0-2.006 1.738-4.129 4.308-4.129 3.241 0 4.83 2.547 4.83 5.307 0 5.981-6.834 10.693-8.468 10.693zm10.833 0c-.41 0-.699-.312-.699-.662 0-.249.145-.516.497-.703 1.788-.947 3.858-4.226 3.858-6.248-3.015.092-4.326-2.582-4.326-4.258 0-2.006 1.739-4.129 4.308-4.129 3.241 0 4.83 2.547 4.83 5.307 0 5.981-6.833 10.693-8.468 10.693z" fill-rule="nonzero"/>
+  </svg>
+```  
+## 4.3 - Etiqueta <object> para un SVG
+La etiqueta <object> </object> permite incrustar un archivo SVG como un objeto independiente en la página.  
+
+La etiqueta <object> ofrece flexibilidad al incrustar SVGs, permitiendo un control preciso sobre el tamaño y la presentación del gráfico vectorial.
+```
+<p class="m-4 text-xl text-green-700">SVG usando <strong>object</strong></p>
+<object type="image/svg+xml" data="/SVG1/src/img/icono.svg" width="50" height="50">
+  Tu navegador no soporta SVGs.
+</object>
+```
+
+Donde:
+-  El atributo type="image/svg+xml" especifica el tipo de archivo como SVG.
+-  El atributo data="/SVG1/src/img/icono.svg" indica la ruta del archivo SVG.
+-  Los atributos width="50" y height="50" definen las dimensiones del objeto SVG.
+  
+
+ 
 ##### 3.3. **Sintaxis de SVG**
 SVG utiliza una estructura XML para describir formas geométricas como rectángulos, círculos, líneas y rutas. Algunos elementos básicos son:
 - `<svg>`: El contenedor principal para gráficos SVG.
