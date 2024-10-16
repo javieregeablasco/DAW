@@ -166,7 +166,9 @@ Donde:
    - **`points="129,150 85,119 41,150 57,104 15,66 68,66 85,15 102,65 156,66 113,98"`**: Define los vértices del polígono mediante un conjunto de coordenadas (x, y). Cada par de números representa un vértice en el espacio del SVG. 
 
 ### 5.1.2 - El plano de SVG, atributo viewBox
-<img src="https://www.aulaclic.es/html/graficos/coordenadas_svg.png">
+<img src="https://www.aulaclic.es/html/graficos/coordenadas_svg.png">  
+El origen de coordenadas es el punto (0,0) los valores de la coordenada x van hacia la derecha y los valores de la coordenada y van hacia abajo.  
+
 El atributo viewBox establece la porción del plano SVG que muestra la imagen. Este atributo se establece con cuatro valores:
 
 **1. Primer valor:** abcisa (X) de la esquina superior izquierda de la porción del plano que muestra la imagen.
@@ -177,12 +179,23 @@ El atributo viewBox establece la porción del plano SVG que muestra la imagen. E
 ```
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="-100 -100 200 200" style="background-color: lightgray">
   <circle cx="0" cy="0" r="100" fill="none" stroke="red" stroke-width="1" />
-  <line x1="-200" y1="0" x2="200" y2="0" stroke="black" stroke-width="1" />
-  <line x1="0" y1="-200" x2="0" y2="200" stroke="black" stroke-width="1" />
+  <line x1="-100" y1="0" x2="200" y2="0" stroke="black" stroke-width="1" />
+  <line x1="0" y1="-100" x2="0" y2="200" stroke="black" stroke-width="1" />
 </svg>
 ```
+>Actividad 1
+>Cambiar los valores de width="105", height="105" y viewBox="-5 -5 105 105
+>Entender los resultados obtenidos.
+
+>Actividad 2
+>Cambiar los valores de width="105" height="105" viewBox="-100 -100 105 105
+>Entender los resultados obtenidos.
+
+### 5.1.3 - Atributos width y height no proporcionales a viewBox
 
 
+
+### 5.1.4Formas básicas de SVG
 
 
 
