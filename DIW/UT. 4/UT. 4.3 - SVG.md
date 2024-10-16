@@ -225,6 +225,7 @@ En este ejemplo vemos los 4 círculos.
 >Actividad:
 >Modificar el programa anterior para que solo se vean los circulos horizontales.
 >Repetir la edición del programa para que solo se vean los circulos verticales.
+>Analizar los resultados obtenidos.
 
 ### 5.1.4 Formas básicas de SVG
 
