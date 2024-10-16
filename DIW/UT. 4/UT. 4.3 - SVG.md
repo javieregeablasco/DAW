@@ -14,6 +14,8 @@ Además, al estar basado en texto, puede ser manipulado mediante CSS y JavaScrip
 
 También es compatible con todos los navegadores modernos, lo que asegura su versatilidad en la creación de aplicaciones web.
 
+- [Documentación oficial de SVG](https://developer.mozilla.org/es/docs/Web/SVG)
+
 # 2. - Características de SVG
 -  **Escalabilidad**: Los gráficos SVG pueden ser escalados a cualquier tamaño sin pérdida de calidad.
 
@@ -132,6 +134,9 @@ Existen al menos 2 maneras diferentes de crear nuestras imagenes SVG:
 
 ## 5.1 - Programar una imagen
 Para ello podremos usar las formas básicas disponibles como rectángulos, círculos, líneas y rutas pero antes deberemos ver la sintaxis empleada.
+
+- [Editor SVG en línea](https://svg-edit.github.io/svgedit/releases/svg-edit-2.8.1/svg-editor.html)
+
 ### 5.1.1 - Sintaxis de SVG
 SVG es un lenguaje XML, por lo que su sintaxis sigue las reglas del XML.
 
@@ -292,33 +297,92 @@ Las formas básicas SVG son:
       -  (x1, y1) (x2, y2) (x3, y3) ... (xn, yn): Coordenadas de los puntos sucesivos del polígono.
       -  El último punto (xn, yn) se une automáticamente con el primero (x1, y1).
         
+### 5.1.6 Formas avanzadas de SVG: Etiqueta <path ... />
+La etiqueta `<path />` define una forma mediante una serie de comandos que describen movimientos y dibujos en el espacio. A diferencia de otras etiquetas de SVG más simples <path />` permite dibujar cualquier forma imaginable.
 
+**1. Sintaxis de** `<path />`
+La etiqueta `<path />` utiliza un atributo principal llamado `d`, el cual contiene una lista de comandos y parámetros. Estos comandos indican cómo moverse y dibujar en el área gráfica.
+
+**2. Comandos Básicos de** `<path />`
+Los comandos se dividen en dos grupos: mayúsculas (coordenadas absolutas) y minúsculas (coordenadas relativas).
+
+- **M** (`moveto`): Mueve el punto de inicio a una nueva posición sin dibujar.
+    - `M x,y` (absoluto), `m dx,dy` (relativo)
+  
+- **L** (`lineto`): Dibuja una línea recta hasta las coordenadas especificadas.
+    - `L x,y` (absoluto), `l dx,dy` (relativo)
+  
+- **H** (`horizontal lineto`): Dibuja una línea horizontal.
+    - `H x` (absoluto), `h dx` (relativo)
+  
+- **V** (`vertical lineto`): Dibuja una línea vertical.
+    - `V y` (absoluto), `v dy` (relativo)
+
+- **C** (`curveto`): Dibuja una curva cúbica de Bezier.
+    - `C x1,y1, x2,y2, x,y`
+  
+- **S** (`smooth curveto`): Dibuja una curva cúbica de Bezier suave, asumiendo que el primer control refleja el anterior.
+    - `S x2,y2, x,y`
+  
+- **Q** (`quadratic Bezier curve`): Dibuja una curva cuadrática de Bezier.
+    - `Q x1,y1, x,y`
+  
+- **T** (`smooth quadratic Bezier curve`): Dibuja una curva cuadrática suave de Bezier.
+    - `T x,y`
+  
+- **A** (`arc to`): Dibuja un arco de elipse.
+    - `A rx,ry x-axis-rotation large-arc-flag,sweep-flag x,y`
+  
+- **Z** (`closepath`): Cierra la forma volviendo al punto inicial.
+    - `Z` (sin parámetros)
+
+**3. Ejemplos**  
+[Editor de path](https://yqnn.github.io/svg-path-editor/)  
+
+l siguiente código dibuja una forma compleja utilizando una combinación de líneas, curvas y arcos:
+
+```xml
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <path d="M10 80 Q 52.5 10, 95 80 T 180 80" stroke="black" fill="transparent"/>
+</svg>
+```
+
+En este ejemplo:
+- `M10 80`: Mueve el punto de inicio a (10,80).
+- `Q 52.5 10, 95 80`: Dibuja una curva cuadrática hacia (95,80) con un control en (52.5,10).
+- `T 180 80`: Dibuja otra curva cuadrática suave hacia (180,80).
+
+#### 6. **Aplicaciones Avanzadas de `<path />`**
+El uso del `<path />` es esencial para crear gráficos complejos como logos, iconos, animaciones y gráficos interactivos. Dado que SVG es un formato basado en XML, se puede manipular con CSS y JavaScript para realizar animaciones o modificar atributos en tiempo real.
+
+Ejemplo de animación usando CSS:
+
+```xml
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <path d="M10 80 Q 52.5 10, 95 80 T 180 80" stroke="black" fill="transparent">
+    <animate attributeName="stroke-width" values="1;5;1" dur="2s" repeatCount="indefinite"/>
+  </path>
+</svg>
+```
+
+
+#### 8. **Práctica**
+1. Dibuja una estrella de cinco puntas utilizando solo el elemento `<path />`.
+2. Crea un logo simple que utilice curvas cúbicas y cuadráticas.
+3. Añade animaciones básicas a tus formas con CSS.
+
+#### 9. **Recursos**
+
+
+
+--- 
+
+Esta estructura de unidad didáctica sobre el uso avanzado de `<path />` en SVG cubre conceptos básicos y avanzados para que los estudiantes puedan crear gráficos personalizados en sus proyectos de desarrollo web.
+
+
+
+Ejercicios
       
-seguir aqui: 
-https://www.mclibre.org/consultar/htmlcss/html/svg-formas-1.html
-https://www.aleksandrhovhannisyan.com/blog/svg-tutorial/#1-lines
-
-https://www.youtube.com/watch?v=hZYaSGUbMds
-https://www.youtube.com/watch?v=7zVanhJDtUI&list=PL0b6OzIxLPbxaPpusPu2mtfcRE6XiSRyk&index=1
-https://www.youtube.com/playlist?list=PL-hspD6ToGYdTcoiPSv9PzHpIZGzLEjgp
-https://www.youtube.com/playlist?list=PLL8woMHwr36F2tCFnWTbVBQAGQ6nTcXOO
-https://www.youtube.com/watch?v=hZYaSGUbMds
-https://www.aulaclic.es/html/t_16_6.htm
-
-
-
-
-
-
-5. **Polígono (`<polygon>`)**:
-   - Se utiliza para dibujar formas con múltiples lados.
-   - Atributos comunes: `points` (lista de puntos que definen los vértices).
-
-
-
-7. **Ruta (`<path>`)**:
-   - Se utiliza para crear formas complejas y trazados.
-   - Atributo común: `d` (cadena de comandos que define la forma).
 
 8. **Texto (`<text>`)**:
    - Se utiliza para mostrar texto en el SVG.
@@ -337,58 +401,3 @@ https://www.aulaclic.es/html/t_16_6.htm
   <text x="10" y="180" font-family="Arial" font-size="20" fill="black">Texto SVG</text>
 </svg>
 ```
-
-Estas formas básicas son fundamentales para crear gráficos y diseños en SVG.
-
-
-
- como rectángulos, círculos, líneas y rutas. Algunos elementos básicos son:
-- `<svg>`: El contenedor principal para gráficos SVG.
-- `<rect>`: Para dibujar rectángulos.
-- `<circle>`: Para dibujar círculos.
-- `<path>`: Para crear formas más complejas usando rutas.
-
-**Ejemplo de SVG básico:**
-```xml
-<svg width="100" height="100">
-  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
-</svg>
-```
-
-#### 5. **Recursos didácticos**
-- Ordenador con entorno de desarrollo web (Visual Studio Code, Brackets).
-- Navegador web actualizado (Google Chrome, Firefox).
-- Tutoriales en línea sobre SVG, CSS y JavaScript.
-
-#### 6. **Evaluación**
-La evaluación se realizará mediante:
-- **Prácticas**: Se valorará la correcta creación y manipulación de SVGs en proyectos web.
-- **Proyectos**: Cada alumno integrará un gráfico SVG en una página web como parte de un proyecto final.
-- **Cuestionario**: Preguntas teóricas sobre las ventajas y limitaciones de SVG en comparación con otros formatos.
-
-#### 7. **Conclusión**
-SVG es una herramienta fundamental para el desarrollo moderno de aplicaciones web debido a su flexibilidad, interactividad y capacidad de escalado sin pérdida de calidad. Comprender su uso y potencial permite crear aplicaciones más eficientes, estéticas y accesibles. 
-
---- 
-Esta unidad ofrece una base sólida sobre SVG, preparando a los estudiantes para utilizar este formato en proyectos reales de desarrollo web.
-
-
-https://www.eniun.com/como-insertar-imagen-svg-html-css/
-
-https://kinsta.com/es/base-de-conocimiento/como-abrir-un-archivo-svg/
-
-https://developer.mozilla.org/es/docs/Web/SVG/Tutorial
-
-https://jenkov.com/tutorials/svg/index.html
-
-https://www.w3.org/2002/Talks/www2002-svgtut-ih/hwtut.pdf
-
-https://www.tutorialspoint.com/svg/index.htm
-
-https://flaviocopes.com/svg/
-
-https://kurtbruns.github.io/svg-tutorial/
-
-https://www.svgbasics.com/index.html
-
-https://www.aleksandrhovhannisyan.com/blog/svg-tutorial/
