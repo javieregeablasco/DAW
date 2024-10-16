@@ -145,7 +145,7 @@ El documento SVG se describe de la siguiente manera:
 ```
 <p>
   <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-    width="170" height="165" viewBox="0 0 170 165">
+    width="170" height="165" viewBox="-100 -50 170 165">
     <polygon fill="yellow" stroke="red" stroke-width="7"
       points="129,150 85,119 41,150 57,104 15,66
         68,66 85,15 102,65 156,66 113,98" />
@@ -165,12 +165,22 @@ Donde:
    - **`stroke-width="7"`**: Especifica el grosor del contorno del polígono. 
    - **`points="129,150 85,119 41,150 57,104 15,66 68,66 85,15 102,65 156,66 113,98"`**: Define los vértices del polígono mediante un conjunto de coordenadas (x, y). Cada par de números representa un vértice en el espacio del SVG. 
 
-### Visualización:
-El resultado de este código es un polígono con forma irregular que tiene un relleno amarillo y un borde rojo. El polígono se dibujará dentro de un área de 170x165 píxeles y se ajustará a la vista definida por el `viewBox`.
+### 5.1.2 - El plano de SVG, atributo viewBox
+<img src="https://www.aulaclic.es/html/graficos/coordenadas_svg.png">
+El atributo viewBox establece la porción del plano SVG que muestra la imagen. Este atributo se establece con cuatro valores:
 
-En resumen, este SVG dibuja un polígono amarillo con borde rojo utilizando coordenadas específicas para definir su forma.
+**1. Primer valor:** abcisa (X) de la esquina superior izquierda de la porción del plano que muestra la imagen.
+**2. Segundo valor:** ordenada (Y) de la esquina superior izquierda de la porción del plano que muestra la imagen.
+**3. Tercer valor:** ancho de la porción del plano que muestra la imagen.
+**4. Cuarto valor:** alto de la porción del plano que muestra la imagen.
 
-
+```
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="-100 -100 200 200" style="background-color: lightgray">
+  <circle cx="0" cy="0" r="100" fill="none" stroke="red" stroke-width="1" />
+  <line x1="-200" y1="0" x2="200" y2="0" stroke="black" stroke-width="1" />
+  <line x1="0" y1="-200" x2="0" y2="200" stroke="black" stroke-width="1" />
+</svg>
+```
 
 
 
