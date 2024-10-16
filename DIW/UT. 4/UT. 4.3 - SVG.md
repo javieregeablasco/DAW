@@ -114,7 +114,7 @@ Sin embargo, es importante tener en cuenta ciertas consideraciones al utilizar <
 <iframe src="./img/icono.svg" width="50" height="50" title="SVG"></iframe>
 ```
 
-## 4.4 - Usando la propiedad backgroung-image
+## 4.4 - Usando la propiedad background-image
 Al igual que la etiqueta iframe, backgroung-image también tiene limitaciones a tener en cuenta.  
 -  **No Accesible:** Las imágenes de fondo SVG no son accesibles a través del texto alternativo (alt) como las imágenes <img>.
 -  **Escalabilidad:** La escalabilidad del SVG se ven limitadas por las propiedad CSS del contenedor.
