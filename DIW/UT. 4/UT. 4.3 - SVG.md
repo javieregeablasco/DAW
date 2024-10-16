@@ -263,6 +263,13 @@ Las formas básicas SVG son la línea <line ... />,  la polilínea <polyline ...
    -  La etiqueta <circle /> dibuja un circulo.
    -  Los atributos principales propios de <cicle /> son:
      - (cx, cy): Coordenada y del centro y `r` (radio).
+      
+**4. Elipse** `<ellipse ... />`
+   -  La etiqueta <ellipse /> dibuja una elipse.
+   -  Los atributos principales propios de <cicle /> son:
+     - (cx, cy): Coordenada y del centro.
+     - `rx` (radio en dirección x)
+     - `ry` (radio en dirección y)      
 
 **4. Rectángulo** `<rect ... />`
    -  La etiqueta <rect /> dibuja un rectángulo.
@@ -287,14 +294,6 @@ https://www.aulaclic.es/html/t_16_6.htm
 
 
 
-**1. Rectángulo (`<rect>`)**:
-   - Atributos comunes: `x`, `y`, `width`, `height`, `rx` (radio de las esquinas).
-
-
-
-3. **Elipse (`<ellipse>`)**:
-   - Se utiliza para dibujar elipses.
-   - Atributos comunes: `cx`, `cy`, `rx` (radio en dirección x), `ry` (radio en dirección y).
 
 
 
