@@ -337,37 +337,32 @@ La etiqueta `<path />` define una forma mediante una serie de comandos que descr
 La etiqueta `<path />` utiliza un atributo principal llamado `d`, el cual contiene una lista de comandos y parámetros. Estos comandos indican cómo moverse y dibujar en el área gráfica.
 
 **2. Comandos Básicos de** `<path />`
-Los comandos se dividen en dos grupos: mayúsculas (coordenadas absolutas) y minúsculas (coordenadas relativas).
+Los comandos se dividen en dos grupos: 
+-  **Comandos en mayúsculas:** Utilizan coordenadas absolutas. Es decir, siempre se refieren al origen del gráfico. 
+-  **Comandos en minúsculas:** Utilizan coordenadas relativas. Es decir, siempre se refieren desde donde se encuentra el puntero. 
 
-- **M** (`moveto`): Mueve el punto de inicio a una nueva posición sin dibujar.
-    - `M x,y` (absoluto), `m dx,dy` (relativo)
-  
-- **L** (`lineto`): Dibuja una línea recta hasta las coordenadas especificadas.
-    - `L x,y` (absoluto), `l dx,dy` (relativo)
-  
-- **H** (`horizontal lineto`): Dibuja una línea horizontal.
-    - `H x` (absoluto), `h dx` (relativo)
-  
-- **V** (`vertical lineto`): Dibuja una línea vertical.
-    - `V y` (absoluto), `v dy` (relativo)
-
-- **C** (`curveto`): Dibuja una curva cúbica de Bezier.
-    - `C x1,y1, x2,y2, x,y`
-  
-- **S** (`smooth curveto`): Dibuja una curva cúbica de Bezier suave, asumiendo que el primer control refleja el anterior.
-    - `S x2,y2, x,y`
-  
-- **Q** (`quadratic Bezier curve`): Dibuja una curva cuadrática de Bezier.
-    - `Q x1,y1, x,y`
-  
-- **T** (`smooth quadratic Bezier curve`): Dibuja una curva cuadrática suave de Bezier.
-    - `T x,y`
-  
-- **A** (`arc to`): Dibuja un arco de elipse.
-    - `A rx,ry x-axis-rotation large-arc-flag,sweep-flag x,y`
-  
-- **Z** (`closepath`): Cierra la forma volviendo al punto inicial.
-    - `Z` (sin parámetros)
+| Comando | Parámetros                                   | Nombre                            | Descripción                                                                                                           |
+|------|----------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| M    | x,y                                          | moveto                            | Mueve el puntero al punto especificado x,y **sin dibujar**.                                                                 |
+| m    | x,y                                          | moveto                            | Mueve el puntero al punto especificado x,y relativo a la ubicación actual del puntero, **sin dibujar**.                        |
+| L    | x,y                                          | lineto                            | Dibuja una línea desde la ubicación actual del puntero hasta el punto especificado x,y.                                  |
+| l    | x,y                                          | lineto                            | Dibuja una línea desde la ubicación actual del puntero hasta el punto especificado x,y relativo a la ubicación actual.   |
+| H    | x                                            | horizontal lineto                 | Dibuja una línea horizontal hasta el punto definido por (x especificado, y actual del puntero).                         |
+| h    | x                                            | horizontal lineto                 | Dibuja una línea horizontal hasta el punto definido por (x actual del puntero + x especificado, y actual del puntero).    |
+| V    | y                                            | vertical lineto                   | Dibuja una línea vertical hasta el punto definido por (x actual del puntero, y especificado).                           |
+| v    | y                                            | vertical lineto                   | Dibuja una línea vertical hasta el punto definido por (x actual del puntero, y actual del puntero + y especificado).      |
+| C    | x1,y1 x2,y2 x,y                              | curveto                           | Dibuja una curva de Bézier cúbica desde el punto actual hasta x,y. x1,y1 y x2,y2 son los puntos de control de la curva.|
+| c    | x1,y1 x2,y2 x,y                              | curveto                           | Igual que C, pero interpreta las coordenadas relativas al punto actual del puntero.                                     |
+| S    | x2,y2 x,y                                    | shorthand / smooth curveto        | Dibuja una curva de Bézier cúbica hasta x,y. x2,y2 es el punto de control final, el inicial es el final de la curva anterior.|
+| s    | x2,y2 x,y                                    | shorthand / smooth curveto        | Igual que S, pero interpreta las coordenadas relativas al punto actual del puntero.                                     |
+| Q    | x1,y1 x,y                                    | quadratic Bezier curveto          | Dibuja una curva de Bézier cuadrática desde el punto actual hasta x,y. x1,y1 es el punto de control de la curva.      |
+| q    | x1,y1 x,y                                    | quadratic Bezier curveto          | Igual que Q, pero interpreta las coordenadas relativas al punto actual del puntero.                                     |
+| T    | x,y                                          | shorthand / smooth quadratic curveto | Dibuja una curva de Bézier cuadrática hasta x,y. El punto de control es el mismo que el último usado.                |
+| t    | x,y                                          | shorthand / smooth quadratic curveto | Igual que T, pero interpreta las coordenadas relativas al punto actual del puntero.                                     |
+| A    | rx,ry x-axis-rotation large-arc-flag, sweepflag x,y | elliptical arc                  | Dibuja un arco elíptico desde el punto actual hasta x,y. rx y ry son los radios de la elipse.                         |
+| a    | rx,ry x-axis-rotation large-arc-flag, sweepflag x,y | elliptical arc                  | Igual que A, pero interpreta las coordenadas relativas al punto actual del puntero.                                     |
+| Z    |                                              | closepath                         | Cierra el camino dibujando una línea desde el punto actual al primer punto.                                           |
+| z    |                                              | closepath                         | Cierra el camino dibujando una línea desde el punto actual al primer punto.                                           |
 
 **3. Ejemplos**  
   
@@ -376,7 +371,7 @@ El siguiente código dibuja una forma compleja utilizando una combinación de l�
 
 ```xml
 <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-  <path d="M10 80 Q 52.5 10, 95 80 T 180 80" stroke="black" fill="transparent"/>
+  <path d="M10 80 Q 52.5 10, 95 80 T 180 80"/>
 </svg>
 ```
 
