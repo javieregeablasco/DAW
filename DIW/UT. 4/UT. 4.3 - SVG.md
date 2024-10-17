@@ -297,43 +297,33 @@ Las formas básicas SVG son:
     
 ### 5.1.6 Ejercicios
 
-#### 1. Dibuja una Línea Horizontal
-Dibuja una línea horizontal que conecte dos puntos en una vista de 300x100.
+#### 1. Dibuja una línea horizontal que conecte dos puntos en una vista de 300x100.
 
-#### 2. Dibuja una Polilínea en Zigzag
-Dibuja una polilínea que forma un zigzag entre varios puntos.
+#### 2. Dibuja una polilínea que forma un zigzag entre varios puntos.
 
-#### 3. Dibuja un Círculo Centrado
-Dibuja un círculo de radio 50 en el centro de un área de 200x200.
+#### 3. Dibuja un círculo de radio 50 en el centro de un área de 200x200.
 
-#### 4. Dibuja una Elipse Horizontal
-Crea una elipse centrada con un radio horizontal de 70 y un radio vertical de 40.
+#### 4. Crea una elipse centrada con un radio horizontal de 70 y un radio vertical de 40.
 
-#### 5. Dibuja un Rectángulo con Bordes Redondeados
-Dibuja un rectángulo de 150x100 con esquinas redondeadas en un área de 300x200.
+#### 5. Dibuja un rectángulo de 150x100 con esquinas redondeadas en un área de 300x200.
 
-#### 6. Dibuja un Triángulo con `<polygon />`
-Crea un triángulo equilátero utilizando la etiqueta `<polygon />`.
+#### 6. Crea un triángulo equilátero utilizando la etiqueta `<polygon />`.
 
-#### 7. Dibuja una Cruz usando dos Líneas
-Dibuja una cruz usando dos líneas que se cruzan en el centro del área de 100x100.
+#### 7. Dibuja una cruz usando dos líneas que se cruzan en el centro del área de 100x100.
 
-#### 8. Dibuja una Polilínea con Curvas Suaves
-Crea una polilínea con curvas suaves.
+#### 8. Crea una polilínea con curvas suaves.
 Nota: Para redondear las esquinas, usar `stroke-width`.
 
-#### 9. Dibuja un Rectángulo
-Dibuja un rectángulo.
+#### 9. Dibuja un rectángulo.
 
-#### 10. Dibuja una Estrella de 5 Puntas con `<polygon />`
-Utiliza el elemento `<polygon />` para dibujar una estrella de 5 puntas.
+#### 10. Utiliza el elemento `<polygon />` para dibujar una estrella de 5 puntas.
         
 ### 5.1.7 Formas avanzadas de SVG: Etiqueta <path ... />
 La etiqueta `<path />` define una forma mediante una serie de comandos que describen movimientos y dibujos en el espacio. A diferencia de otras etiquetas de SVG más simples <path />` permite dibujar cualquier forma imaginable.
 
 [Editor de path](https://yqnn.github.io/svg-path-editor/)
 
-**1. Sintaxis de** `<path />`
+**1. Etiqueta** `<path />`
 La etiqueta `<path />` utiliza un atributo principal llamado `d`, el cual contiene una lista de comandos y parámetros. Estos comandos indican cómo moverse y dibujar en el área gráfica.
 
 **2. Comandos Básicos de** `<path />`
@@ -364,19 +354,40 @@ Los comandos se dividen en dos grupos:
 | Z    |                                              | closepath                         | Cierra el camino dibujando una línea desde el punto actual al primer punto.                                           |
 | z    |                                              | closepath                         | Cierra el camino dibujando una línea desde el punto actual al primer punto.                                           |
 
-**3. Ejemplos**  
-  
-
-El siguiente código dibuja una forma compleja utilizando una combinación de líneas, curvas y arcos:
-
-```xml
-<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-  <path d="M10 80 Q 52.5 10, 95 80 T 180 80"/>
-</svg>
+**3. Sintaxis de** `<path />`  
+El formato del elemento path es como sigue:  
 ```
+<path d="conjunto de comandos" />
+```
+Donde el conjunto de comandos está formado por los comandos moveto, lineto, curveto, arc y closepath.
 
-En este ejemplo:
-- `M10 80`: Mueve el punto de inicio a (10,80).
-- `Q 52.5 10, 95 80`: Dibuja una curva cuadrática hacia (95,80) con un control en (52.5,10).
-- `T 180 80`: Dibuja otra curva cuadrática suave hacia (180,80).
->
+-  **Ejemplo**
+```
+<path d="M10,40 L40,40 L40,80 L80,80 L80,120 L120,120 L120,160 L40,160" />
+```
+**Significado del código:**
+-  **moveto M (10,40):** Desplaza el cursor al punto (10,40). Sin **dibujar nada**.
+-  **Lineto L (40,40):** Dibuja una línea entre el punto actual (10,40) y el punto especificado (40,40).
+-  **Lineto L (40,80):** Dibuja una línea entre el punto actual (40,40) y el punto especificado (40,80).
+-  **Lineto L (80,80):** Dibuja una línea entre el punto actual (40,80) y el punto especificado (80,80).
+-  **Lineto L (80,120):** Dibuja una línea entre el punto actual (80,80) y el punto especificado (80,120).
+-  **Lineto L (120,120):** Dibuja una línea entre el punto actual (80,120) y el punto especificado (120,120).
+-  **Lineto L (120,160):** Dibuja una línea entre el punto actual (120,120) y el punto especificado (120,160).
+-  **Lineto L (40,160):** Dibuja una línea entre el punto actual (120,160) y el punto especificado (40,160).
+
+ lineto. L x y Dibuja una línea entre el punto actual y el punto especificado (x,y).
+
+Resultado:
+
+# SVG Path Example
+
+<svg width="200" height="200">
+    <path d="M10,40 L40,40 L40,80 L80,80 L80,120 L120,120 L120,160 L40,160" stroke="black" fill="none" />
+</svg>
+
+
+
+svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <path d="M10 80 Q 52.5 10, 95 80 T 180 80"/>
+/svg>
+
