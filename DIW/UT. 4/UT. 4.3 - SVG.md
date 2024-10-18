@@ -383,22 +383,23 @@ Donde el conjunto de comandos está formado por los comandos moveto, lineto, cur
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/path.png" width=50%>
 
 ### 5.1.7.1 Formas avanzadas <path ... />: Lineto L y l
-**Ejemplo**
+-  **Ejemplo usando lineto L**
 ```
 <!-- Usando L (línea absoluta) -->
 <path d="M10,50 L100,50 L100,150 L10,150 Z" fill="none" stroke="blue" stroke-width="2" />
 <text x="10" y="40" font-size="12" fill="blue">Absoluto (L)</text>
 ```
 **Explicación:**  
-- El cuadrado azul usa el comando `L` (absoluto), lo que significa que cada **coordenada especificada** es en relación al **sistema de coordenadas general** del SVG.  
+El cuadrado azul usa el comando `L` (absoluto), lo que significa que cada **coordenada especificada** es en relación al **sistema de coordenadas general** del SVG.  
 
+-  **Ejemplo usando lineto l**
 ```  
 <!-- Usando l (línea relativa) -->
 <path d="M150,50 l90,0 l0,100 l-90,0 Z" fill="none" stroke="red" stroke-width="2" />
 <text x="150" y="40" font-size="12" fill="red">Relativo (l)</text>
 ```
 **Explicación:** 
-- El cuadrado rojo usa el comando `l` (relativo), lo que significa que las coordenadas son relativas al último punto en el que se trazó una línea. En este caso, las líneas se dibujan comenzando desde el punto inicial `M150,50`, y luego se desplazan de forma relativa a ese punto.
+El cuadrado rojo usa el comando `l` (relativo), lo que significa que las coordenadas son relativas al último punto en el que se trazó una línea. En este caso, las líneas se dibujan comenzando desde el punto inicial `M150,50`, y luego se desplazan de forma relativa a ese punto.
 
-**Resultado**
-<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/html%20lineto.png">
+-  **Resultado**  
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/html%20lineto.png" width=50%>
