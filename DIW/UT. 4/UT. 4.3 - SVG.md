@@ -382,7 +382,7 @@ Donde el conjunto de comandos está formado por los comandos moveto, lineto, cur
 
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/path.png" width=50%>
 
-### 5.1.7.1 Formas avanzadas <path ... />: Lineto L y l
+### 5.1.8 Diferencias entre coordenadas absolutas y relativas, ejemplo con lineto L y l
 -  **Ejemplo usando lineto L**
 ```
 <!-- Usando L (línea absoluta) -->
