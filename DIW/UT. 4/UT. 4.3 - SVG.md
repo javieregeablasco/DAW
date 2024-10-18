@@ -384,7 +384,7 @@ Donde el conjunto de comandos está formado por los comandos moveto, lineto, cur
 
 #### 5.1.7.1 Buenas prácticas y simplificación del código
 
--  **Etiqueta `<g>` en SVG**
+-  **Etiqueta <g> en SVG**  
 La etiqueta `<g>` en SVG se utiliza para agrupar elementos gráficos. Como lo veremos más adelante (aunque ya lo estemos usando), esto permite aplicar transformaciones, estilos y atributos de manera conjunta a todos los elementos de un grupo.  
 
 Al usar `<g>`, se organiza mejor el contenido SVG, facilitando la manipulación y el mantenimiento del código. 
@@ -400,7 +400,7 @@ Al usar `<g>`, se organiza mejor el contenido SVG, facilitando la manipulación 
 </svg>
 ```
 
-- **Evitar repeticiones dentro del comando <path>**
+- **Evitar repeticiones dentro del comando <path>**  
 Al definir un `<path>` en SVG se dan muchas veces la circunstancia que se aplica el mismo comando varias veces **seguidas**.
 En este caso se puede optar por repetir el comando tantas veces como sea necesario. Eso puede dar **claridad en la Sintaxis** pero también sobrecargar el código.
 También se puede optar por omitir el comando. Entonces se considera, de manera implicita que los siguientes puntos introducidos tendrán el mismo comando.
