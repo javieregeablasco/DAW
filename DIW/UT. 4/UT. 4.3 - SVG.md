@@ -552,10 +552,9 @@ T (smooth quadratic curveto), toma automáticamente el punto de control de la cu
     <line x1="270" y1="270" x2="40" y2="10"/>
   </g>
 </svg>
-
+```
 
 - **Resultado**
-
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/curvaCsmoothT.png" width=50%>
 
 
