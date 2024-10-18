@@ -319,7 +319,7 @@ Nota: Para redondear las esquinas, usar `stroke-width`.
 #### 10. Utiliza el elemento `<polygon />` para dibujar una estrella de 5 puntas.
         
 ### 5.1.7 Formas avanzadas de SVG: Etiqueta <path ... />
-La etiqueta `<path />` define una forma mediante una serie de comandos que describen movimientos y dibujos en el espacio. A diferencia de otras etiquetas de SVG más simples <path />` permite dibujar cualquier forma imaginable.
+La etiqueta `<path />` define una forma mediante una serie de comandos que describen movimientos y dibujos en el espacio. A diferencia de otras etiquetas de SVG más simples <path /> **permite dibujar cualquier forma imaginable**.
 
 [Editor de path](https://yqnn.github.io/svg-path-editor/)
 
