@@ -492,6 +492,10 @@ En este caso solo se usa un punto de control.
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/curvaCsmooth.png" width=50%>
 
 #### 5.1.7.4 Comando quadratic Bezier curveto Q.
+Las curvas de bezier se dibujan  de la siguiente manera.  
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/B%C3%A9zier_2_big.gif">  
+
 Los argumentos a pasar a `Q` son los mismos que para el comando `S`
 ```
 <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
@@ -512,4 +516,46 @@ Los argumentos a pasar a `Q` son los mismos que para el comando `S`
 ```
 -  **Resultado**  
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/curvaCquadratic.png" width=50%>
+
+#### 5.1.7.5 Comando quadratic Bezier curveto T.
+T (smooth quadratic curveto), toma automáticamente el punto de control de la curva cuadrática anterior, permitiendo que la curva **continúe suavemente**.
+```
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <!-- Curva cuadrática normal -->
+    <path d="M 30 270
+      Q 40 10, 270 270 
+      " 
+    stroke="yellow" 
+    fill="transparent"
+    stroke-width="4"/>
+  </g>
+  
+  <g stroke-width="1" stroke="rgba(255, 0, 0, 0.25)">
+    <line x1="30" y1="270" x2="40" y2="10"/>
+    <line x1="270" y1="270" x2="40" y2="10"/>
+  </g>
+  
+  <g>
+    <!-- Curva cuadrática suave -->
+    <path d="M 30 270
+    Q 40 10, 270 270  
+    T 270 270 
+    " 
+    stroke="green" 
+    fill="transparent"
+    stroke-width="2"/>
+  </g>
+  
+  <g stroke-width="1" stroke="rgba(255, 0, 0, 0.25)">
+    <line x1="30" y1="270" x2="40" y2="10"/>
+    <line x1="270" y1="270" x2="40" y2="10"/>
+  </g>
+</svg>
+
+
+- **Resultado**
+
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/curvaCsmoothT.png" width=50%>
+
 
