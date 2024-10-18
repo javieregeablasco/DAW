@@ -414,12 +414,6 @@ También se puede optar por omitir el comando. Entonces se considera, de manera 
 ```
 <path d="M 10 10 C 20 20, 40 20, 50 10 60 0, 80 0, 90 10 40 60, 80 120, 30 90 Z" fill="none" stroke-width="1" stroke="black" />
 ```
-En este ejemplo, hay dos curvas cúbicas definidas con `C`. Sin repetir `C`, el intérprete no podría diferenciar entre los dos segmentos de curva, lo que podría llevar a errores en el trazado del gráfico.
-
-
-
-
-
 
 #### 5.1.7.1 Diferencias entre coordenadas absolutas y relativas, ejemplo con lineto L y l
 -  **Ejemplo usando lineto L**
@@ -443,22 +437,59 @@ El cuadrado rojo usa el comando `l` (relativo), lo que significa que las coorden
 -  **Resultado**  
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/html%20lineto.png" width=50%>
 
-#### 5.1.7.2 Comando curveto C y c.
+#### 5.1.7.2 Comando curveto.
 -  **Ejemplo**
 ```
 <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-    <path d="M 10 80 
-             C 40 10, 65 10, 95 80 
-          stroke="black" 
-          fill="transparent" 
-          stroke-width="2"/>
+    <g>
+      <path d="M 30 270
+               C 40 10, 65 10, 270 270 
+               " 
+      stroke="blue" 
+      fill="transparent"
+      stroke-width="2"/>
+    </g>
+
+    <g stroke-width="1" stroke="rgba(255, 0, 0, 0.25)">
+      <line x1="30" y1="270" x2="40" y2="10"/>
+      <line x1="270" y1="270" x2="40" y2="10"/>
+    </g>
+     
+    <g stroke-width="1" stroke="lightblue">
+      <line x1="30" y1="270" x2="65" y2="10"/>
+      <line x1="270" y1="270" x2="65" y2="10"/>
+    </g>
 </svg>
 ```
-El `curveto` es una función en SVG (Scalable Vector Graphics) que se utiliza para crear curvas en una forma. En SVG, puedes usar la etiqueta `<path>` junto con el comando `C` (curva cúbica) o `S` (curva cúbica suave) para crear curvas. Aquí tienes un ejemplo de cómo usar el comando `C` en un `<path>` para crear una curva:
-
 -  **Explicación del código**
-> `M 10 80`: Mueve el punto de inicio del camino a las coordenadas (10, 80).
-> `C 40 10, 65 10, 95 80`: Dibuja una curva cúbica desde el punto actual hasta el punto (95, 80), utilizando los puntos de control (40, 10) y (65, 10) para definir la forma de la curva.
-> `S 150 150, 180 80`: Dibuja otra curva cúbica suave desde el último punto hasta (180, 80), utilizando el punto de control anterior (65, 10) para calcular el nuevo punto de control (150, 150).
+> `M 30 270`: Mueve el punto de inicio del camino a las coordenadas (30, 270).
+> `C 40 10, 65 10, 95 80`: Dibuja una curva cúbica desde **el punto actual hasta el punto (270, 270),** utilizando los puntos de control (40, 10) y (65, 10) para definir la forma de la curva.
 
-Este SVG dibuja una línea que comienza en (10, 80) y se curva hacia (95, 80) y luego hacia (180, 80). Puedes ajustar los puntos para modificar la forma de la curva.
+-  **Resultado**
+
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/curvaC.png" width=50%>
+
+#### 5.1.7.3 Comando smooth curveto.  
+En este caso solo se usa un punto de control.
+```
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <g>
+      <path d="M 30 270
+               C 40 10, 270 270 
+               " 
+      stroke="blue" 
+      fill="transparent"
+      stroke-width="2"/>
+    </g>
+
+    <g stroke-width="1" stroke="rgba(255, 0, 0, 0.25)">
+      <line x1="30" y1="270" x2="40" y2="10"/>
+      <line x1="270" y1="270" x2="40" y2="10"/>
+    </g>
+</svg>
+```
+-  **Resultado**
+
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/curvaCsmooth.png" width=50%>
+
+   
