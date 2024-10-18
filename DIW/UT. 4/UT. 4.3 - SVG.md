@@ -355,7 +355,7 @@ Los comandos se dividen en dos grupos:
 | z    |                                              | closepath                         | Cierra el camino dibujando una línea desde el punto actual al primer punto.                                           |
 
 **3. Sintaxis de** `<path />`  
-El formato del elemento path es como sigue:  
+La sintaxis del elemento path es como sigue:  
 ```
 <path d="conjunto de comandos" />
 ```
@@ -378,6 +378,9 @@ Donde el conjunto de comandos está formado por los comandos moveto, lineto, cur
 
  lineto. L x y Dibuja una línea entre el punto actual y el punto especificado (x,y).
 
-Resultado:
-<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/path.png">
+**Resultado:**  
+
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/path.png" width=50%>
+
+### 5.1.7.1 Formas avanzadas <path ... />: Lineto L y l
 
