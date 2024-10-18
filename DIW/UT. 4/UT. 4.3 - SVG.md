@@ -385,11 +385,10 @@ Donde el conjunto de comandos está formado por los comandos moveto, lineto, cur
 #### 5.1.7.1 Buenas prácticas y simplificación del código
 
 -  **Etiqueta `<g>` en SVG**  
-La etiqueta `<g>` en SVG se utiliza para agrupar elementos gráficos. Como lo veremos más adelante (aunque ya lo estemos usando), esto permite aplicar transformaciones, estilos y atributos de manera conjunta a todos los elementos de un grupo.  
+    -  La etiqueta `<g>` en SVG se utiliza para agrupar elementos gráficos. Como lo veremos más adelante (aunque ya lo estemos usando), esto permite aplicar transformaciones, estilos y atributos de manera conjunta a todos los elementos de un grupo.  
+    -  Al usar `<g>`, se organiza mejor el contenido SVG, facilitando la manipulación y el mantenimiento del código. 
 
-Al usar `<g>`, se organiza mejor el contenido SVG, facilitando la manipulación y el mantenimiento del código. 
-
-**Ejemplo de uso de <g>:**
+    -  **Ejemplo de uso de <g>:**
 
 ```
 <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
@@ -401,11 +400,11 @@ Al usar `<g>`, se organiza mejor el contenido SVG, facilitando la manipulación 
 ```
 
 - **Evitar repeticiones dentro del comando <path>**  
-Al definir un `<path>` en SVG se dan muchas veces la circunstancia que se aplica el mismo comando varias veces **seguidas**.
-En este caso se puede optar por repetir el comando tantas veces como sea necesario. Eso puede dar **claridad en la Sintaxis** pero también sobrecargar el código.
-También se puede optar por omitir el comando. Entonces se considera, de manera implicita que los siguientes puntos introducidos tendrán el mismo comando.
+    -  Al definir un `<path>` en SVG se dan muchas veces la circunstancia que se aplica el mismo comando varias veces **seguidas**.
+    -  En este caso se puede optar por repetir el comando tantas veces como sea necesario. Eso puede dar **claridad en la Sintaxis** pero también sobrecargar el código.
+    -  También se puede optar por omitir el comando. Entonces se considera, de manera implicita que los siguientes puntos introducidos tendrán el mismo comando.
 
-**Ejemplo de omisión del comando:**
+    -  **Ejemplo de omisión del comando:**
 >Repitiendo comandos.
 ```
 <path d="M 10 10 C 20 20, 40 20, 50 10 C 60 0, 80 0, 90 10 C 40 60, 80 120, 30 90 Z" fill="none" stroke-width="1" stroke="black" />
@@ -415,7 +414,7 @@ También se puede optar por omitir el comando. Entonces se considera, de manera 
 <path d="M 10 10 C 20 20, 40 20, 50 10 60 0, 80 0, 90 10 40 60, 80 120, 30 90 Z" fill="none" stroke-width="1" stroke="black" />
 ```
 
-#### 5.1.7.1 Diferencias entre coordenadas absolutas y relativas, ejemplo con lineto L y l
+#### 5.1.7.2 Diferencias entre coordenadas absolutas y relativas, ejemplo con lineto L y l
 -  **Ejemplo usando lineto L**
 ```
 <!-- Usando L (línea absoluta) -->
@@ -437,7 +436,7 @@ El cuadrado rojo usa el comando `l` (relativo), lo que significa que las coorden
 -  **Resultado**  
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/html%20lineto.png" width=50%>
 
-#### 5.1.7.2 Comando curveto C.
+#### 5.1.7.3 Comando curveto C.
 -  **Ejemplo**
 ```
 <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
@@ -469,7 +468,7 @@ El cuadrado rojo usa el comando `l` (relativo), lo que significa que las coorden
 
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/curvaC.png" width=50%>
 
-#### 5.1.7.3 Comando smooth curveto S.  
+#### 5.1.7.4 Comando smooth curveto S.  
 En este caso solo se usa un punto de control.
 ```
 <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
@@ -491,7 +490,7 @@ En este caso solo se usa un punto de control.
 
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/curvaCsmooth.png" width=50%>
 
-#### 5.1.7.4 Comando quadratic Bezier curveto Q.
+#### 5.1.7.5 Comando quadratic Bezier curveto Q.
 Las curvas de bezier se dibujan  de la siguiente manera.  
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/B%C3%A9zier_2_big.gif">  
@@ -517,7 +516,7 @@ Los argumentos a pasar a `Q` son los mismos que para el comando `S`
 -  **Resultado**  
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/curvaCquadratic.png" width=50%>
 
-#### 5.1.7.5 Comando quadratic Bezier curveto T.
+#### 5.1.7.6 Comando quadratic Bezier curveto T.
 T (smooth quadratic curveto), toma automáticamente el punto de control de la curva cuadrática anterior, permitiendo que la curva **continúe suavemente**.
 ```
 <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
