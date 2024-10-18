@@ -565,7 +565,8 @@ El logo en cuestión es el siguiente:
 
 **Nota**  
 Aun no hemos visto como aplicar estilos a svg.  
-Para aplicar el color y el grosor de linea usar: stroke-width="4" stroke="#D9C472" 
+Para aplicar el color y el grosor de linea usar: stroke-width="4" stroke="#D9C472"  
+
 **Ejemplo**
 ```
 <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
