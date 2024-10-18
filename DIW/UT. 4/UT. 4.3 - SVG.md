@@ -492,4 +492,8 @@ En este caso solo se usa un punto de control.
 
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/curvaCsmooth.png" width=50%>
 
-   
+#### 5.1.7.4 Comando quadratic Bezier curveto.
+Los argumentos a pasar a `Q` son los mismos que para el comando `C`
+
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/curvaCquadratic.png" width=50%>
+
