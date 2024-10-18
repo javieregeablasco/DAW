@@ -362,6 +362,7 @@ El formato del elemento path es como sigue:
 Donde el conjunto de comandos está formado por los comandos moveto, lineto, curveto, arc y closepath.
 
 -  **Ejemplo**
+>Nota: Archivo disponible en /html/index_path.html 
 ```
 <path d="M10,40 L40,40 L40,80 L80,80 L80,120 L120,120 L120,160 L40,160" />
 ```
@@ -378,26 +379,5 @@ Donde el conjunto de comandos está formado por los comandos moveto, lineto, cur
  lineto. L x y Dibuja una línea entre el punto actual y el punto especificado (x,y).
 
 Resultado:
-
-# SVG Path Example
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SVG Example</title>
-</head>
-<body>
-    <svg width="200" height="200">
-        <path d="M10,40 L40,40 L40,80 L80,80 L80,120 L120,120 L120,160 L40,160" stroke="black" fill="none" />
-    </svg>
-</body>
-</html>
-
-no hace nada
-
-svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-  path d="M10 80 Q 52.5 10, 95 80 T 180 80"/>
-svg>
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/path.png">
 
