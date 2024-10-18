@@ -382,6 +382,45 @@ Donde el conjunto de comandos está formado por los comandos moveto, lineto, cur
 
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/path.png" width=50%>
 
+#### 5.1.7.1 Buenas prácticas y simplificación del código
+
+-  **Etiqueta `<g>` en SVG**
+La etiqueta `<g>` en SVG se utiliza para agrupar elementos gráficos. Como lo veremos más adelante (aunque ya lo estemos usando), esto permite aplicar transformaciones, estilos y atributos de manera conjunta a todos los elementos de un grupo.  
+
+Al usar `<g>`, se organiza mejor el contenido SVG, facilitando la manipulación y el mantenimiento del código. 
+
+**Ejemplo de uso de <g>:**
+
+```
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <g fill="blue" stroke="black" stroke-width="2">
+        <circle cx="50" cy="50" r="30"/>
+        <rect x="100" y="20" width="60" height="60"/>
+    </g>
+</svg>
+```
+
+- **Evitar repeticiones dentro del comando <path>**
+Al definir un `<path>` en SVG se dan muchas veces la circunstancia que se aplica el mismo comando varias veces **seguidas**.
+En este caso se puede optar por repetir el comando tantas veces como sea necesario. Eso puede dar **claridad en la Sintaxis** pero también sobrecargar el código.
+También se puede optar por omitir el comando. Entonces se considera, de manera implicita que los siguientes puntos introducidos tendrán el mismo comando.
+
+**Ejemplo de omisión del comando:**
+>Repitiendo comandos.
+```
+<path d="M 10 10 C 20 20, 40 20, 50 10 C 60 0, 80 0, 90 10 C 40 60, 80 120, 30 90 Z" fill="none" stroke-width="1" stroke="black" />
+```
+>Sin repetir comandos.
+```
+<path d="M 10 10 C 20 20, 40 20, 50 10 60 0, 80 0, 90 10 40 60, 80 120, 30 90 Z" fill="none" stroke-width="1" stroke="black" />
+```
+En este ejemplo, hay dos curvas cúbicas definidas con `C`. Sin repetir `C`, el intérprete no podría diferenciar entre los dos segmentos de curva, lo que podría llevar a errores en el trazado del gráfico.
+
+
+
+
+
+
 #### 5.1.7.1 Diferencias entre coordenadas absolutas y relativas, ejemplo con lineto L y l
 -  **Ejemplo usando lineto L**
 ```
