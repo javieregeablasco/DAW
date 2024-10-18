@@ -382,7 +382,7 @@ Donde el conjunto de comandos está formado por los comandos moveto, lineto, cur
 
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/path.png" width=50%>
 
-### 5.1.8 Diferencias entre coordenadas absolutas y relativas, ejemplo con lineto L y l
+#### 5.1.7.1 Diferencias entre coordenadas absolutas y relativas, ejemplo con lineto L y l
 -  **Ejemplo usando lineto L**
 ```
 <!-- Usando L (línea absoluta) -->
@@ -403,3 +403,24 @@ El cuadrado rojo usa el comando `l` (relativo), lo que significa que las coorden
 
 -  **Resultado**  
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/html%20lineto.png" width=50%>
+
+#### 5.1.7.2 Comando curveto C y c.
+-  **Ejemplo**
+```
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <path d="M 10 80 
+             C 40 10, 65 10, 95 80 
+             S 150 150, 180 80" 
+          stroke="black" 
+          fill="transparent" 
+          stroke-width="2"/>
+</svg>
+```
+El `curveto` es una función en SVG (Scalable Vector Graphics) que se utiliza para crear curvas en una forma. En SVG, puedes usar la etiqueta `<path>` junto con el comando `C` (curva cúbica) o `S` (curva cúbica suave) para crear curvas. Aquí tienes un ejemplo de cómo usar el comando `C` en un `<path>` para crear una curva:
+
+-  **Explicación del código**
+> `M 10 80`: Mueve el punto de inicio del camino a las coordenadas (10, 80).
+> `C 40 10, 65 10, 95 80`: Dibuja una curva cúbica desde el punto actual hasta el punto (95, 80), utilizando los puntos de control (40, 10) y (65, 10) para definir la forma de la curva.
+> `S 150 150, 180 80`: Dibuja otra curva cúbica suave desde el último punto hasta (180, 80), utilizando el punto de control anterior (65, 10) para calcular el nuevo punto de control (150, 150).
+
+Este SVG dibuja una línea que comienza en (10, 80) y se curva hacia (95, 80) y luego hacia (180, 80). Puedes ajustar los puntos para modificar la forma de la curva.
