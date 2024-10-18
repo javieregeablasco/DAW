@@ -437,7 +437,7 @@ El cuadrado rojo usa el comando `l` (relativo), lo que significa que las coorden
 -  **Resultado**  
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/html%20lineto.png" width=50%>
 
-#### 5.1.7.2 Comando curveto.
+#### 5.1.7.2 Comando curveto C.
 -  **Ejemplo**
 ```
 <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
@@ -469,13 +469,13 @@ El cuadrado rojo usa el comando `l` (relativo), lo que significa que las coorden
 
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/curvaC.png" width=50%>
 
-#### 5.1.7.3 Comando smooth curveto.  
+#### 5.1.7.3 Comando smooth curveto S.  
 En este caso solo se usa un punto de control.
 ```
 <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
     <g>
       <path d="M 30 270
-               C 40 10, 270 270 
+               S 40 10, 270 270 
                " 
       stroke="blue" 
       fill="transparent"
@@ -484,16 +484,32 @@ En este caso solo se usa un punto de control.
 
     <g stroke-width="1" stroke="rgba(255, 0, 0, 0.25)">
       <line x1="30" y1="270" x2="40" y2="10"/>
-      <line x1="270" y1="270" x2="40" y2="10"/>
     </g>
 </svg>
 ```
--  **Resultado**
+-  **Resultado**  
 
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/curvaCsmooth.png" width=50%>
 
-#### 5.1.7.4 Comando quadratic Bezier curveto.
-Los argumentos a pasar a `Q` son los mismos que para el comando `C`
+#### 5.1.7.4 Comando quadratic Bezier curveto Q.
+Los argumentos a pasar a `Q` son los mismos que para el comando `S`
+```
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path d="M 30 270
+      Q 40 10, 270 270 
+      " 
+      stroke="blue" 
+      fill="transparent"
+      stroke-width="2"/>
+    </g>
 
+  <g stroke-width="1" stroke="rgba(255, 0, 0, 0.25)">
+    <line x1="30" y1="270" x2="40" y2="10"/>
+    <line x1="270" y1="270" x2="40" y2="10"/>
+  </g>
+</svg>
+```
+-  **Resultado**  
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/curvaCquadratic.png" width=50%>
 
