@@ -557,4 +557,11 @@ T (smooth quadratic curveto), toma automáticamente el punto de control de la cu
 - **Resultado**
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/curvaCsmoothT.png" width=50%>
 
+## 5.1.8 Ejercicio
+Realiza un SVG **usando path** replicando el logo de la banda Dûrga de Valencia. El logo en cuestión es el siguiente: 
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/logoDurga.png" width=50%>
+
+**Nota**  
+Aun no hemos visto como aplicar estilos a svg.  
+Para aplicar el color y el grosor de linea usar: stroke-width="4" stroke="#D9C472" 
 
