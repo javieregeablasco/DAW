@@ -682,8 +682,8 @@ Para aplicar el color y el grosor de linea usar: stroke-width="4" stroke="#D9C47
 ```
 
 ## 5.2 Atributos / estilos para SVG
-### 5.2.1 Atributos SVG
--  **Atributo stroke** 
+### 5.2.1 Atributos SVG  
+-  **Atributo stroke**   
 El atributo **stroke** permite definir el color del trazo del elemento.
 
 ```
@@ -695,7 +695,7 @@ El atributo **stroke** permite definir el color del trazo del elemento.
 </svg>
 ```  
 
--  **Atributo stroke-width** 
+-  **Atributo stroke-width**   
 El atributo **stroke-width** permite modificar el grosor del trazo del elemento.
 
 ```
@@ -707,7 +707,7 @@ El atributo **stroke-width** permite modificar el grosor del trazo del elemento.
 </svg>
 ```  
 
--  **Atributo stroke-opacity**
+-  **Atributo stroke-opacity**  
 El atributo **stroke-opacity** permite establecer la opacidad del elemento (grado de transparencia). El valor a indicar es un número entre 0 y 1, con decimales (0 totalmente transparente y 1 es totalmente opaco).
 
 ```
@@ -719,12 +719,12 @@ El atributo **stroke-opacity** permite establecer la opacidad del elemento (grad
 </svg>
 ```
 
--  **Atributo stroke-linecap**
+-  **Atributo stroke-linecap**  
 Con **stroke-linecap** se indica la forma de los extremos de los trazos.  
 Posibles valores de stroke-linecap:
--  `butt`, prederminado.
--  `round`, el extremo de la línea es redondeado.
--  `square`, el extremo de la línea es cuadrado.
+    - `butt`, prederminado.
+    - `round`, el extremo de la línea es redondeado.
+    - `square`, el extremo de la línea es cuadrado.
 
 ```
 <svg viewBox="0 0 30 30" height="300" style="background:#aaa">
@@ -740,51 +740,57 @@ Posibles valores de stroke-linecap:
 </svg>
 ```
 
--  **Atributo stroke-linejoin**
+-  **Atributo stroke-linejoin**  
 Con **stroke-linejoin** se puede definir como serán las uniones de dos trayectos o dos lineas, y como se mostrarán.
 Posibles valores de stroke-linejoin:
 
 
 La propiedad `stroke-linejoin` en SVG define cómo se renderizan las uniones entre dos segmentos de una línea o trazo. Es útil cuando el contorno de una figura tiene esquinas o ángulos, y esta propiedad controla cómo se dibujan esos puntos de unión.
 
-Los posibles valores de `stroke-linejoin` son:
--  `miter`, predeterminado. Los segmentos de línea se unen en un punto afilado o en ángulo extendido, creando una esquina que puede sobresalir. Si el ángulo entre las líneas es muy agudo, la longitud de la unión puede limitarse utilizando la propiedad `stroke-miterlimit`.
--  `round`. Los segmentos de línea se unen con un borde redondeado en las esquinas.
--  `bevel`. Los segmentos de línea se unen mediante un corte recto, creando una esquina "plana" o biselada. El punto de unión no es afilado como en `miter`, sino truncado.
+Los posibles valores de `stroke-linejoin` son:  
+    - `miter`, predeterminado. Los segmentos de línea se unen en un punto afilado o en ángulo extendido, creando una esquina que puede sobresalir. Si el ángulo entre las líneas es muy agudo, la longitud de la unión puede limitarse utilizando la propiedad `stroke-miterlimit`.  
+    - `arcs`, 
+    - `bevel`. Los segmentos de línea se unen mediante un corte recto, creando una esquina "plana" o biselada. El punto de unión no es afilado como en `miter`, sino truncado.  
+    - `miter-clip`,
+    - `round`. Los segmentos de línea se unen con un borde redondeado en las esquinas.
    
-
-
-
-
-
-
-
-
-
-
-
-
 ```
-<svg viewBox="0 0 30 30" height="300" style="background:#aaa">
-  <path d="M5 5 L25 5" stroke="black" stroke-width="3" stroke-linecap="butt" />
-  <path d="M5 15 L25 15" stroke="darkred" stroke-width="3" stroke-linecap="round" />
-  <path d="M5 25 L25 25" stroke="purple" stroke-width="3" stroke-linecap="square" />
+<svg viewBox="0 0 300 100" width="1200" height="400">
+  <!-- fila 1 -->
+  <path d="M5 5 h20 v20" stroke="blue" stroke-width="2" stroke-linejoin="miter" />
+  <text x="5" y="40">miter</text>
+    
+  <path d="M55 5 h20 v20" stroke="blue" stroke-width="2" stroke-linejoin="arcs" />
+  <text x="55" y="40">arcs</text>
+    
+  <path d="M105 5 h20 v20" stroke="blue" stroke-width="2" stroke-linejoin="bevel" />
+  <text x="105" y="40">bevel</text>
+    
+  <path d="M155 5 h20 v20" stroke="blue" stroke-width="2" stroke-linejoin="miter-clip" />
+  <text x="155" y="40">miter-clip</text>
+    
+  <path d="M235 5 h20 v20" stroke="blue" stroke-width="2" stroke-linejoin="round" />
+  <text x="235" y="40">round</text>
+    
+  <!-- fila 2 -->
+  <path d="M5 60 l20 -5 l-3 20" stroke="blue" stroke-width="2" stroke-linejoin="miter" />
+  <text x="5" y="90">miter</text>
+    
+  <path d="M55 60 l20 -5 l-3 20" stroke="blue" stroke-width="2" stroke-linejoin="arcs" />
+  <text x="55" y="90">arcs</text>
+    
+  <path d="M105 60 l20 -5 l-3 20" stroke="blue" stroke-width="2" stroke-linejoin="bevel" />
+  <text x="105" y="90">bevel</text>
+   
+  <path d="M155 60 l20 -5 l-3 20" stroke="blue" stroke-width="2" stroke-linejoin="miter-clip" />
+  <text x="155" y="90">miter-clip</text>
+    
+  <path d="M235 60 l20 -5 l-3 20" stroke="blue" stroke-width="2" stroke-linejoin="round" />
+  <text x="235" y="90">round</text>
 </svg>
+```
 
-<svg viewBox="0 0 30 30" height="300" style="background:#aaa">
-  <path d="M15 5 L15 5" stroke="black" stroke-width="3" stroke-linecap="butt" />
-  <path d="M15 15 L15 15" stroke="darkred" stroke-width="3" stroke-linecap="round" />
-  <path d="M15 25 L15 25" stroke="purple" stroke-width="3" stroke-linecap="square" />
-</svg
-
-
-
-
-
-
-
-
-
+-  **Atributo stroke-misterlimit**
 
 
 
