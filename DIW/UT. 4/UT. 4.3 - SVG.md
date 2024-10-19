@@ -487,9 +487,11 @@ Cuatro puntos del plano: P0, P1, P2 y P3 definen una curva cúbica de Bézier. L
 <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Bezier_curve.svg" width=35%>
 </div>
 
-Las curvas de bezier se dibujan de la siguiente manera.  
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/B%C3%A9zier_2_big.gif">
-
+-  Las curvas de bezier cuadráticas se dibujan de la siguiente manera.  
+<div align="center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/db/B%C3%A9zier_3_big.gif">
+</div>
+ 
 -  **Ejemplo**
 ```
 <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
@@ -522,24 +524,57 @@ Las curvas de bezier se dibujan de la siguiente manera.
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/curvaC.png" width=50%>
 
 #### 5.1.7.4 Comando smooth curveto S.  
-En este caso solo se usa un punto de control.
-```
-<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-    <g>
-      <path d="M 30 270
-               S 40 10, 270 270 
-               " 
-      stroke="blue" 
-      fill="transparent"
-      stroke-width="2"/>
-    </g>
+- **Teoría**
+  -  Dibuja una curva cúbica de Bézier desde el punto actual (x,y) hasta un punto (x2,y2).
+  -  **El primer punto de anclaje es el reflejo del segundo punto de anclaje de la curva anterior.**
+  -  Si no hay segundo punto de la curva anterior se toma el mismo punto de anclaje para `P-1` y `P1`.   
+  -  x1,y1 son las coordenadas del segundo punto de anclaje (control point) P1.
+  
+-  Dibujado con solo un punto de control.  
+<div align="center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/B%C3%A9zier_2_big.gif">
+</div>
 
-    <g stroke-width="1" stroke="rgba(255, 0, 0, 0.25)">
-      <line x1="30" y1="270" x2="40" y2="10"/>
-    </g>
+- **Ejemplo con curva C anterior disponible.** 
+```
+<svg width="305" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ejes de referencia -->
+  <line x1="0" y1="100" x2="300" y2="100" stroke="gray" stroke-width="1" />
+  <line x1="150" y1="0" x2="150" y2="200" stroke="gray" stroke-width="1" />
+    
+  <!-- Curva cúbica suavizada -->
+  <path d="M 50 150 C 100 50, 150 50, 150 100 S 250 150, 300 100" fill="transparent" stroke="blue" stroke-width="2" />
+       
+  <!-- Puntos de control -->
+  <circle cx="50" cy="150" r="3" fill="red" />
+  <circle cx="100" cy="50" r="3" fill="green" />
+  <circle cx="150" cy="50" r="3" fill="green" />
+  <circle cx="250" cy="150" r="3" fill="green" />
+  <circle cx="300" cy="100" r="3" fill="red" />
+
+  <!-- Linea punto de control P1 -->
+  <line x1="250" y1="150"
+    x2="300" y2="100"
+    stroke="gray"
+    stroke-width="1"/>
 </svg>
 ```
 -  **Resultado**  
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/smoothCurvetoS.png" width=50%>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/curvaCsmooth.png" width=50%>
 
