@@ -580,9 +580,9 @@ Cuatro puntos del plano: P0, P1, P2 y P3 definen una curva cúbica de Bézier. L
 
   <!-- Lineas a puntos de control -->
   <line x1="40" y1="180"
-  x2="150" y2="50"
-  stroke="gray"
-  stroke-width="1"/>
+        x2="150" y2="50"
+        stroke="gray"
+        stroke-width="1"/>
   <line x1="150" y1="50"
         x2="330" y2="150"
         stroke="gray"
@@ -593,26 +593,34 @@ Cuatro puntos del plano: P0, P1, P2 y P3 definen una curva cúbica de Bézier. L
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/smoothCurvetoSgrid2.png" width=50%>
 
 #### 5.1.7.5 Comando quadratic Bezier curveto Q.
--  **Teoría**
+-  **Teoría**  
 Tres puntos del plano: a, pc y z definen una curva cuadrática de Bézier. La curva empieza en el punto a, se dirige hacia pc ( punto de control ) y llega a z viniendo de la dirección del punto de control. Usualmente, no pasará por pc. Este punto sólo proporciona información direccional.  
 La línea recta que une cada uno de los puntos finales de la curva ( a y z ) con su correspondiente punto de control ( pc ) es tangente a la curva.
--  
-Los argumentos a pasar a `Q` son los mismos que para el comando `S`
+
+- **Ejemplo** 
 ```
 <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-  <g>
-    <path d="M 30 270
-      Q 40 10, 270 270 
-      " 
-      stroke="blue" 
-      fill="transparent"
-      stroke-width="2"/>
-    </g>
-
-  <g stroke-width="1" stroke="rgba(255, 0, 0, 0.25)">
-    <line x1="30" y1="270" x2="40" y2="10"/>
-    <line x1="270" y1="270" x2="40" y2="10"/>
-  </g>
+  <!-- Ejes de referencia -->
+  <line x1="0" y1="100" x2="300" y2="100" stroke="gray" stroke-width="1" />
+  <line x1="150" y1="0" x2="150" y2="200" stroke="gray" stroke-width="1" />
+          
+  <!-- Curva cuadrática Bézier -->
+  <path d="M 40 180 Q 150 50, 330 150" fill="transparent" stroke="blue" stroke-width="2" />
+            
+  <!-- Puntos de control -->
+  <circle cx="40" cy="180" r="3" fill="red" />
+  <circle cx="150" cy="50" r="3" fill="green" />
+  <circle cx="330" cy="150" r="3" fill="red" />
+          
+ <!-- Lineas a puntos de control -->
+ <line x1="40" y1="180"
+       x2="150" y2="50"
+       stroke="gray"
+       stroke-width="1"/>
+ <line x1="150" y1="50"
+       x2="330" y2="150"
+       stroke="gray"
+       stroke-width="1"/>
 </svg>
 ```
 -  **Resultado**  
