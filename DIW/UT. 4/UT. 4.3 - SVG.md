@@ -680,3 +680,237 @@ Para aplicar el color y el grosor de linea usar: stroke-width="4" stroke="#D9C47
     stroke-width="4"/>
 </svg>
 ```
+
+## 5.2 Atributos / estilos para SVG
+### 5.2.1 Atributos SVG
+-  **Atributo stroke** 
+El atributo **stroke** permite definir el color del trazo del elemento.
+
+```
+<svg viewBox="0 0 45 45" height="300" style="background:#aaa">
+  <rect x="5" y="5" width="15" height="15" stroke="purple" />
+  <rect x="25" y="5" width="15" height="15" stroke="red" />
+  <rect x="5" y="25" width="15" height="15" stroke="deeppink" />
+  <rect x="25" y="25" width="15" height="15" stroke="gold" />
+</svg>
+```  
+
+-  **Atributo stroke-width** 
+El atributo **stroke-width** permite modificar el grosor del trazo del elemento.
+
+```
+<svg viewBox="0 0 45 45" height="300" style="background:#aaa">
+  <rect x="5" y="5" width="15" height="15" stroke="purple" stroke-width="0" />
+  <rect x="25" y="5" width="15" height="15" stroke="red" stroke-width="1" />
+  <rect x="5" y="25" width="15" height="15" stroke="deeppink" stroke-width="2" />
+  <rect x="25" y="25" width="15" height="15" stroke="gold" stroke-width="6" />
+</svg>
+```  
+
+-  **Atributo stroke-opacity**
+El atributo **stroke-opacity** permite establecer la opacidad del elemento (grado de transparencia). El valor a indicar es un número entre 0 y 1, con decimales (0 totalmente transparente y 1 es totalmente opaco).
+
+```
+<svg viewBox="0 0 45 45" height="300" style="background:#aaa">
+  <rect x="5" y="5" width="15" height="15" stroke="red" stroke-opacity="0" />
+  <rect x="25" y="5" width="15" height="15" stroke="red" stroke-opacity="0.25" />
+  <rect x="5" y="25" width="15" height="15" stroke="red" stroke-opacity="0.5" />
+  <rect x="25" y="25" width="15" height="15" stroke="red" stroke-opacity="1" />
+</svg>
+```
+
+-  **Atributo stroke-linecap**
+Con **stroke-linecap** se indica la forma de los extremos de los trazos.  
+Posibles valores de stroke-linecap:
+-  `butt`, prederminado.
+-  `round`, el extremo de la línea es redondeado.
+-  `square`, el extremo de la línea es cuadrado.
+
+```
+<svg viewBox="0 0 30 30" height="300" style="background:#aaa">
+  <path d="M5 5 L25 5" stroke="black" stroke-width="3" stroke-linecap="butt" />
+  <path d="M5 15 L25 15" stroke="darkred" stroke-width="3" stroke-linecap="round" />
+  <path d="M5 25 L25 25" stroke="purple" stroke-width="3" stroke-linecap="square" />
+</svg>
+
+<svg viewBox="0 0 30 30" height="300" style="background:#aaa">
+  <path d="M15 5 L15 5" stroke="black" stroke-width="3" stroke-linecap="butt" />
+  <path d="M15 15 L15 15" stroke="darkred" stroke-width="3" stroke-linecap="round" />
+  <path d="M15 25 L15 25" stroke="purple" stroke-width="3" stroke-linecap="square" />
+</svg>
+```
+
+-  **Atributo stroke-linejoin**
+Con **stroke-linejoin** se puede definir como serán las uniones de dos trayectos o dos lineas, y como se mostrarán.
+Posibles valores de stroke-linejoin:
+
+
+La propiedad `stroke-linejoin` en SVG define cómo se renderizan las uniones entre dos segmentos de una línea o trazo. Es útil cuando el contorno de una figura tiene esquinas o ángulos, y esta propiedad controla cómo se dibujan esos puntos de unión.
+
+Los posibles valores de `stroke-linejoin` son:
+-  `miter`, predeterminado. Los segmentos de línea se unen en un punto afilado o en ángulo extendido, creando una esquina que puede sobresalir. Si el ángulo entre las líneas es muy agudo, la longitud de la unión puede limitarse utilizando la propiedad `stroke-miterlimit`.
+-  `round`. Los segmentos de línea se unen con un borde redondeado en las esquinas.
+-  `bevel`. Los segmentos de línea se unen mediante un corte recto, creando una esquina "plana" o biselada. El punto de unión no es afilado como en `miter`, sino truncado.
+   
+
+
+
+
+
+
+
+
+
+
+
+
+```
+<svg viewBox="0 0 30 30" height="300" style="background:#aaa">
+  <path d="M5 5 L25 5" stroke="black" stroke-width="3" stroke-linecap="butt" />
+  <path d="M5 15 L25 15" stroke="darkred" stroke-width="3" stroke-linecap="round" />
+  <path d="M5 25 L25 25" stroke="purple" stroke-width="3" stroke-linecap="square" />
+</svg>
+
+<svg viewBox="0 0 30 30" height="300" style="background:#aaa">
+  <path d="M15 5 L15 5" stroke="black" stroke-width="3" stroke-linecap="butt" />
+  <path d="M15 15 L15 15" stroke="darkred" stroke-width="3" stroke-linecap="round" />
+  <path d="M15 25 L15 25" stroke="purple" stroke-width="3" stroke-linecap="square" />
+</svg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Aplicar estilos CSS a un SVG es similar a aplicar estilos a cualquier otro elemento HTML. 
+
+### 1. **Estilos inline (en línea)**
+Se aplican directamente a los elementos SVG usando el atributo `style`. Es la forma más directa, pero no la más reutilizable:
+
+```html
+<svg width="200" height="200">
+  <circle cx="100" cy="100" r="50" style="fill: blue; stroke: black; stroke-width: 2;" />
+</svg>
+```
+
+### 2. **Estilos usando atributos de presentación**
+Los atributos de presentación son atributos SVG que pueden aplicarse a los elementos para definir sus estilos directamente (funciona similar al estilo inline pero sin usar el atributo `style`):
+
+```html
+<svg width="200" height="200">
+  <circle cx="100" cy="100" r="50" fill="blue" stroke="black" stroke-width="2" />
+</svg>
+```
+
+### 3. **Estilos en el archivo CSS externo o interno**
+Puedes definir un archivo CSS externo o incluir reglas CSS en un bloque `<style>` dentro del documento para aplicar estilos a los elementos SVG utilizando selectores, clases, e identificadores (`id`), lo que permite reutilizar estilos.
+
+**Archivo CSS externo o interno:**
+```html
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <circle class="blue-circle" cx="100" cy="100" r="50" />
+</svg>
+
+<style>
+  .blue-circle {
+    fill: blue;
+    stroke: black;
+    stroke-width: 2;
+  }
+</style>
+```
+
+En este caso, se utiliza una clase `.blue-circle` en el CSS, que luego es asignada al elemento `<circle>` en el SVG.
+
+### 4. **Estilos CSS en un archivo SVG independiente**
+Cuando el SVG es un archivo independiente, puedes incluir el bloque `<style>` directamente en el archivo SVG, similar a un documento HTML:
+
+```xml
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .blue-circle {
+      fill: blue;
+      stroke: black;
+      stroke-width: 2;
+    }
+  </style>
+  <circle class="blue-circle" cx="100" cy="100" r="50" />
+</svg>
+```
+
+### 5. **Estilos con pseudo-clases**
+Puedes usar pseudo-clases como `:hover`, `:active`, o `:focus` para los elementos dentro de un SVG de la misma manera que lo harías con elementos HTML.
+
+```html
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <circle class="interactive-circle" cx="100" cy="100" r="50" />
+</svg>
+
+<style>
+  .interactive-circle {
+    fill: blue;
+    stroke: black;
+    stroke-width: 2;
+    transition: fill 0.3s;
+  }
+
+  .interactive-circle:hover {
+    fill: red;
+  }
+</style>
+```
+
+En este ejemplo, el color de relleno del círculo cambia a rojo cuando se pasa el ratón por encima del elemento.
+
+### 6. **Estilos aplicados a grupos (elemento `<g>`)**
+Puedes agrupar elementos SVG dentro de un contenedor `<g>` y aplicar estilos a todo el grupo, de manera similar a como se hace en HTML con divs o contenedores:
+
+```html
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <g class="group-style">
+    <circle cx="50" cy="50" r="40" />
+    <rect x="100" y="100" width="50" height="50" />
+  </g>
+</svg>
+
+<style>
+  .group-style {
+    fill: blue;
+    stroke: black;
+    stroke-width: 2;
+  }
+</style>
+```
+
+Todos los elementos dentro del grupo `<g>` reciben los mismos estilos, lo que permite organizar y aplicar estilos de manera eficiente.
+
+### Propiedades CSS comunes en SVG:
+- **`fill`**: Define el color de relleno del interior de una figura.
+- **`stroke`**: Define el color del borde de una figura.
+- **`stroke-width`**: Define el grosor del borde.
+- **`opacity`**: Define la opacidad de un elemento.
+- **`fill-opacity` y `stroke-opacity`**: Controlan la opacidad del relleno o del borde por separado.
+- **`transform`**: Permite aplicar transformaciones como rotaciones, escalados o traslaciones a los elementos SVG.
+
+### Consideraciones
+- No todos los estilos CSS de HTML son compatibles con SVG (por ejemplo, `box-shadow` no funcionará en la mayoría de los elementos SVG).
+- Es importante usar correctamente el espacio de nombres `xmlns="http://www.w3.org/2000/svg"` cuando uses SVG embebido en HTML para garantizar la compatibilidad.
+
+Así puedes aplicar estilos flexibles y reutilizables a tus gráficos SVG.
+
