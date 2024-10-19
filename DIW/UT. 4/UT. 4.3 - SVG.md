@@ -563,15 +563,34 @@ Cuatro puntos del plano: P0, P1, P2 y P3 definen una curva cúbica de Bézier. L
 -  **Resultado**  
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/smoothCurvetoSgrid.png" width=50%>
 
-https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/smoothCurvetoSgrid.png
+- **Ejemplo sin curva C anterior disponible.** 
+```
+<svg>
+  <!-- Ejes de referencia -->
+  <line x1="0" y1="100" x2="300" y2="100" stroke="gray" stroke-width="1" />
+  <line x1="150" y1="0" x2="150" y2="200" stroke="gray" stroke-width="1" />
+  
+  <!-- Curva cúbica suavizada -->
+  <path d="M 40 180 S 150 50, 330 150" fill="transparent" stroke="blue" stroke-width="2" />
+    
+  <!-- Puntos de referencia -->
+  <circle cx="40" cy="180" r="3" fill="red" />
+  <circle cx="150" cy="50" r="3" fill="green" />
+  <circle cx="330" cy="150" r="3" fill="red" />
 
-
-
-
-
-
-
-
+  <!-- Lineas a puntos de control -->
+  <line x1="40" y1="180"
+  x2="150" y2="50"
+  stroke="gray"
+  stroke-width="1"/>
+  <line x1="150" y1="50"
+        x2="330" y2="150"
+        stroke="gray"
+        stroke-width="1"/>
+</svg>
+```
+-  **Resultado**
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/smoothCurvetoSgrid2.png" width=50%>
 
 
 
