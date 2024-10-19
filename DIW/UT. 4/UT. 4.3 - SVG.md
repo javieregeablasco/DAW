@@ -5,6 +5,8 @@ Año: 24-25
 Palabras clave: DAW, DIW
 ---
 
+
+
 # 1. - Introducción
 **SVG (Scalable Vector Graphics)** es un formato de gráficos vectoriales basado en XML que se utiliza para renderizar imágenes bidimensionales.   
 
@@ -15,6 +17,8 @@ Además, al estar basado en texto, puede ser manipulado mediante CSS y JavaScrip
 También es compatible con todos los navegadores modernos, lo que asegura su versatilidad en la creación de aplicaciones web.
 
 - [Documentación oficial de SVG](https://developer.mozilla.org/es/docs/Web/SVG)
+
+- 
 
 # 2. - Características de SVG
 -  **Escalabilidad**: Los gráficos SVG pueden ser escalados a cualquier tamaño sin pérdida de calidad.
@@ -261,7 +265,10 @@ Las formas básicas SVG son:
    -  La etiqueta <line /> dibuja una línea recta.  
    -  Los atributos principales propios de <line /> son:  
      -  (x1, y1): coordenadas del punto de inicio.   
-     -  (x2, y2): coordenadas del punto final.  
+     -  (x2, y2): coordenadas del punto final.
+   - Sintaxis:
+```
+    
 
 **2. Polilínea** `<polyline ... />`
    -  La etiqueta <polyline /> dibuja un polígono abierto.  
