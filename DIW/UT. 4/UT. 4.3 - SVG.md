@@ -760,8 +760,8 @@ Los posibles valores de `stroke-linejoin` son:
   <path d="M5 5 h20 v20" stroke="blue" stroke-width="2" stroke-linejoin="miter" />
   <text x="5" y="40">miter</text>
     
-  <path d="M55 5 h20 v20" stroke="blue" stroke-width="2" stroke-linejoin="arcs" />
-  <text x="55" y="40">arcs</text>
+  <path d="M55 5 h20 v20" stroke="blue" stroke-width="2" stroke-linejoin="round" />
+  <text x="55" y="40">round</text>
     
   <path d="M105 5 h20 v20" stroke="blue" stroke-width="2" stroke-linejoin="bevel" />
   <text x="105" y="40">bevel</text>
@@ -769,24 +769,18 @@ Los posibles valores de `stroke-linejoin` son:
   <path d="M155 5 h20 v20" stroke="blue" stroke-width="2" stroke-linejoin="miter-clip" />
   <text x="155" y="40">miter-clip</text>
     
-  <path d="M235 5 h20 v20" stroke="blue" stroke-width="2" stroke-linejoin="round" />
-  <text x="235" y="40">round</text>
-    
   <!-- fila 2 -->
   <path d="M5 60 l20 -5 l-3 20" stroke="blue" stroke-width="2" stroke-linejoin="miter" />
   <text x="5" y="90">miter</text>
     
-  <path d="M55 60 l20 -5 l-3 20" stroke="blue" stroke-width="2" stroke-linejoin="arcs" />
-  <text x="55" y="90">arcs</text>
+  <path d="M55 60 l20 -5 l-3 20" stroke="blue" stroke-width="2" stroke-linejoin="round" />
+  <text x="55" y="90">round</text>
     
   <path d="M105 60 l20 -5 l-3 20" stroke="blue" stroke-width="2" stroke-linejoin="bevel" />
   <text x="105" y="90">bevel</text>
    
   <path d="M155 60 l20 -5 l-3 20" stroke="blue" stroke-width="2" stroke-linejoin="miter-clip" />
   <text x="155" y="90">miter-clip</text>
-    
-  <path d="M235 60 l20 -5 l-3 20" stroke="blue" stroke-width="2" stroke-linejoin="round" />
-  <text x="235" y="90">round</text>
 </svg>
 ```
 
