@@ -771,8 +771,8 @@ Los posibles valores de `stroke-linejoin` son:
 </svg>
 ```
 
--  **Atributo stroke-misterlimit**
-
+-  **Atributo stroke-miterlimit**
+El atributo stroke-miterlimit permite modificar como se ve el ángulo puntiagudo cuando se ha definido valores `miter`, `miter-clip` o `arcs` en el atributo `stroke-linejoin`.
 
 
 
