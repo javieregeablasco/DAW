@@ -683,6 +683,7 @@ Para aplicar el color y el grosor de linea usar: stroke-width="4" stroke="#D9C47
 
 ## 5.2 Atributos / estilos para SVG
 ### 5.2.1 Atributos SVG  
+#### 5.2.1.1 Trazos  
 -  **Atributo stroke**   
 El atributo **stroke** permite definir el color del trazo del elemento.
 
@@ -719,6 +720,7 @@ El atributo **stroke-opacity** permite establecer la opacidad del elemento (grad
 </svg>
 ```
 
+#### 5.2.1.2 Forma del trazo  
 -  **Atributo stroke-linecap**  
 Con **stroke-linecap** se indica la forma de los extremos de los trazos.  
 Posibles valores de stroke-linecap:
@@ -801,15 +803,17 @@ El atributo stroke-miterlimit permite modificar como se ve el ángulo puntiagudo
 </div>
 ```
 
+#### 5.2.1.3 Patrones en trazos
 -  **Atributo stroke-dasharray**
-
-
 
 -  **Atributo stroke-dashoffset**
 
+#### 5.2.1.4 Rellenos
+-  **Atributo fill**
 
+-  **Atributo fill-opacity**
 
-
+-  **Atributo fill-rule**
 
 
 Aplicar estilos CSS a un SVG es similar a aplicar estilos a cualquier otro elemento HTML. 
