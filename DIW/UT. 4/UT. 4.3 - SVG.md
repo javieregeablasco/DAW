@@ -19,7 +19,7 @@ También es compatible con todos los navegadores modernos, lo que asegura su ver
 
 - [Documentación oficial de SVG](https://developer.mozilla.org/es/docs/Web/SVG)
 
-- 
+- <a href="https://marketplace.visualstudio.com/items?itemName=sidthesloth.svg-snippets">Extensión de SVG para VSC</a>
 
 # 2. - Características de SVG
 -  **Escalabilidad**: Los gráficos SVG pueden ser escalados a cualquier tamaño sin pérdida de calidad.
