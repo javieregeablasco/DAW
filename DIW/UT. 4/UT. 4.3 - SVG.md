@@ -592,13 +592,11 @@ Cuatro puntos del plano: P0, P1, P2 y P3 definen una curva cúbica de Bézier. L
 -  **Resultado**
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/smoothCurvetoSgrid2.png" width=50%>
 
-
-
-
-
-<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/curvaCsmooth.png" width=50%>
-
 #### 5.1.7.5 Comando quadratic Bezier curveto Q.
+-  **Teoría**
+Tres puntos del plano: a, pc y z definen una curva cuadrática de Bézier. La curva empieza en el punto a, se dirige hacia pc ( punto de control ) y llega a z viniendo de la dirección del punto de control. Usualmente, no pasará por pc. Este punto sólo proporciona información direccional.  
+La línea recta que une cada uno de los puntos finales de la curva ( a y z ) con su correspondiente punto de control ( pc ) es tangente a la curva.
+-  
 Los argumentos a pasar a `Q` son los mismos que para el comando `S`
 ```
 <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
