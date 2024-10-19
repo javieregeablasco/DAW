@@ -679,5 +679,4 @@ Para aplicar el color y el grosor de linea usar: stroke-width="4" stroke="#D9C47
     fill="transparent" 
     stroke-width="4"/>
 </svg>
-
 ```
