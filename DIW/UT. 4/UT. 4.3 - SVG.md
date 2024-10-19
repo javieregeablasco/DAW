@@ -269,25 +269,49 @@ Las formas básicas SVG son:
      -  (x2, y2): coordenadas del punto final.
    - Sintaxis:
 ```
-    
+<svg>
+  <line x1="" y1=""
+      x2="" y2=""
+      stroke=""
+      stroke-width=""/>
+</svg>
+```    
 
 **2. Polilínea** `<polyline ... />`
    -  La etiqueta <polyline /> dibuja un polígono abierto.  
    -  Los atributos principales propios de <polyline /> son:  
-     -  (x1, y1) (x2, y2) (x3, y3) ... (xn, yn): Coordenadas de los puntos sucesivos de la polilínea.   
+     -  (x1, y1) (x2, y2) (x3, y3) ... (xn, yn): Coordenadas de los puntos sucesivos de la polilínea.
+  - Sintaxis:    
+```
+<svg>
+  <polyline points="" style=""/>
+</svg>
+```
 
 **3. Círculo** `<circle ... />`
    -  La etiqueta <circle /> dibuja un circulo.
    -  Los atributos principales propios de <cicle /> son:
      - (cx, cy): Coordenada y del centro y `r` (radio).
-      
+   - Sintaxis:
+```
+<svg>
+  <circle cx="" cy="" r="" style=""/>
+</svg>
+```  
+  
 **4. Elipse** `<ellipse ... />`
    -  La etiqueta <ellipse /> dibuja una elipse.
    -  Los atributos principales propios de <cicle /> son:
      - (cx, cy): Coordenada y del centro.
      - `rx` (radio en dirección x)
      - `ry` (radio en dirección y)      
-
+   - Sintaxis:
+```
+<svg>
+  <ellipse cx="" cy="" rx="" ry="" style=""/>
+</svg>
+```
+     
 **5. Rectángulo** `<rect ... />`
    -  La etiqueta <rect /> dibuja un rectángulo.
    -  Los atributos principales propios de <rec /> son:
@@ -296,35 +320,47 @@ Las formas básicas SVG son:
      - height: altura del rectángulo
      - rx: radio horizontal de las esquinas redondeadas
      - ry: radio vertical de las esquinas redondeadas
-
+  - Sintaxis:
+```
+<svg>
+  <rect x="" y="" width="" height="" style=""/>
+</svg>
+```
+    
 **6. Polígono** `<polygon .../>`
    - La etiqueta <polygon /> dibuja un poligono cerrado.
    - Los atributos principales de <polygon /> son:
       -  (x1, y1) (x2, y2) (x3, y3) ... (xn, yn): Coordenadas de los puntos sucesivos del polígono.
       -  El último punto (xn, yn) se une automáticamente con el primero (x1, y1).
-    
+   - Sintaxis:
+```
+<svg>
+  <polygon points="" style=""/>
+</svg>
+```  
+
 ### 5.1.6 Ejercicios
 
-#### 1. Dibuja una línea horizontal que conecte dos puntos en una vista de 300x100.
+-  #### 1. Dibuja una línea horizontal que conecte dos puntos en una vista de 300x100.
 
-#### 2. Dibuja una polilínea que forma un zigzag entre varios puntos.
+-  #### 2. Dibuja una polilínea que forma un zigzag entre varios puntos.
 
-#### 3. Dibuja un círculo de radio 50 en el centro de un área de 200x200.
+-  #### 3. Dibuja un círculo de radio 50 en el centro de un área de 200x200.
 
-#### 4. Crea una elipse centrada con un radio horizontal de 70 y un radio vertical de 40.
+-  #### 4. Crea una elipse centrada con un radio horizontal de 70 y un radio vertical de 40.
 
-#### 5. Dibuja un rectángulo de 150x100 con esquinas redondeadas en un área de 300x200.
+-  #### 5. Dibuja un rectángulo de 150x100 con esquinas redondeadas en un área de 300x200.
 
-#### 6. Crea un triángulo equilátero utilizando la etiqueta `<polygon />`.
+-  #### 6. Crea un triángulo equilátero utilizando la etiqueta `<polygon />`.
 
-#### 7. Dibuja una cruz usando dos líneas que se cruzan en el centro del área de 100x100.
+-  #### 7. Dibuja una cruz usando dos líneas que se cruzan en el centro del área de 100x100.
 
-#### 8. Crea una polilínea con curvas suaves.
-Nota: Para redondear las esquinas, usar `stroke-width`.
+-  #### 8. Crea una polilínea con curvas suaves.
+>Nota: Para redondear las esquinas, usar `stroke-width`.
 
-#### 9. Dibuja un rectángulo.
+-  #### 9. Dibuja un rectángulo.
 
-#### 10. Utiliza el elemento `<polygon />` para dibujar una estrella de 5 puntas.
+-  #### 10. Utiliza el elemento `<polygon />` para dibujar una estrella de 5 puntas.
         
 ### 5.1.7 Formas avanzadas de SVG: Etiqueta <path ... />
 La etiqueta `<path />` define una forma mediante una serie de comandos que describen movimientos y dibujos en el espacio. A diferencia de otras etiquetas de SVG más simples <path /> **permite dibujar cualquier forma imaginable**.
