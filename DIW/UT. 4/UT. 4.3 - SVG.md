@@ -772,7 +772,34 @@ Los posibles valores de `stroke-linejoin` son:
 ```
 
 -  **Atributo stroke-miterlimit**
-El atributo stroke-miterlimit permite modificar como se ve el ángulo puntiagudo cuando se ha definido valores `miter`, `miter-clip` o `arcs` en el atributo `stroke-linejoin`.
+El atributo stroke-miterlimit permite modificar como se ve el ángulo puntiagudo cuando se ha definido valores `miter`, `miter-clip` en el atributo `stroke-linejoin`.
+```
+<div>
+  <svg viewBox="0 0 300 90" width="1200">
+    <path d="M5 60 l20 -5 l-3 20" stroke="blue" stroke-width="2" stroke-linejoin="miter" />
+    <text x="5" y="90">miter</text>
+          
+    <path d="M55 60 l20 -5 l-3 20" stroke="blue" stroke-width="2" stroke-linejoin="round" />
+    <text x="55" y="90">round</text>
+          
+    <path d="M105 60 l20 -5 l-3 20" stroke="blue" stroke-width="2" stroke-linejoin="bevel" />
+    <text x="105" y="90">bevel</text>
+         
+    <path d="M155 60 l20 -5 l-3 20" stroke="blue" stroke-width="2" stroke-linejoin="miter-clip" />
+    <text x="155" y="90">miter-clip</text>
+  </svg>
+</div>
+
+<div>
+  <svg viewBox="0 0 300 90" width="1200" >
+    <path d="M5 60 l20 -5 l-3 20" stroke="blue" stroke-width="2" stroke-linejoin="miter" stroke-miterlimit="1" />
+    <text x="5" y="90">miter</text>
+          
+    <path d="M155 60 l20 -5 l-3 20" stroke="blue" stroke-width="2" stroke-linejoin="miter-clip" stroke-miterlimit="0.5"/>
+    <text x="155" y="90">miter-clip</text>
+  </svg>
+</div>
+```
 
 
 
