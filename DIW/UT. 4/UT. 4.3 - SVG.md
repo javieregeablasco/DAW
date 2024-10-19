@@ -632,42 +632,34 @@ T (smooth quadratic curveto), toma automáticamente el punto de control de la cu
 
 
 ```
-<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-  <g>
-    <!-- Curva cuadrática normal -->
-    <path d="M 30 270
-      Q 40 10, 270 270 
-      " 
-    stroke="yellow" 
-    fill="transparent"
-    stroke-width="4"/>
-  </g>
-  
-  <g stroke-width="1" stroke="rgba(255, 0, 0, 0.25)">
-    <line x1="30" y1="270" x2="40" y2="10"/>
-    <line x1="270" y1="270" x2="40" y2="10"/>
-  </g>
-  
-  <g>
-    <!-- Curva cuadrática suave -->
-    <path d="M 30 270
-    Q 40 10, 270 270  
-    T 270 270 
-    " 
-    stroke="green" 
-    fill="transparent"
-    stroke-width="2"/>
-  </g>
-  
-  <g stroke-width="1" stroke="rgba(255, 0, 0, 0.25)">
-    <line x1="30" y1="270" x2="40" y2="10"/>
-    <line x1="270" y1="270" x2="40" y2="10"/>
-  </g>
+<svg>
+  <!-- Ejes de referencia -->
+  <line x1="0" y1="100" x2="400" y2="100" stroke="gray" stroke-width="1" />
+  <line x1="150" y1="0" x2="150" y2="200" stroke="gray" stroke-width="1" />
+            
+  <!-- Curva cuadrática Bézier (Q) -->
+  <path d="M 40 180 Q 150 50, 330 150 T 400 50" fill="transparent" stroke="blue" stroke-width="2" />
+             
+  <!-- Puntos de control -->
+  <circle cx="40" cy="180" r="3" fill="red" />
+  <circle cx="150" cy="50" r="3" fill="green" />
+  <circle cx="330" cy="150" r="3" fill="red" />
+  <circle cx="400" cy="50" r="3" fill="green" />
+            
+   <!-- Líneas a puntos de control -->
+   <line x1="40" y1="180"
+         x2="150" y2="50"
+         stroke="gray"
+         stroke-width="1"/>
+   <line x1="150" y1="50"
+         x2="330" y2="150"
+         stroke="gray"
+         stroke-width="1"/>
 </svg>
 ```
 
 - **Resultado**
-<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/curvaCsmoothT.png" width=50%>
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/CurvetoTgridSmooth.png" width=50%>
 
 ## 5.1.8 Ejercicio
 Realiza un SVG **usando path** replicando el logo de la banda musical Dûrga de Valencia.  
