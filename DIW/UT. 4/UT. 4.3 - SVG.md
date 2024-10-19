@@ -367,8 +367,8 @@ La etiqueta `<path />` define una forma mediante una serie de comandos que descr
 
 [Editor de path](https://yqnn.github.io/svg-path-editor/)
 
-**1. Etiqueta** `<path />`
-La etiqueta `<path />` utiliza un atributo principal llamado `d`, el cual contiene una lista de comandos y parámetros. Estos comandos indican cómo moverse y dibujar en el área gráfica.
+**1. Etiqueta** `<path />`  
+-  La etiqueta `<path />` utiliza un atributo principal llamado `d`, el cual contiene una lista de comandos y parámetros. Estos comandos indican cómo moverse y dibujar en el área gráfica.
 
 **2. Comandos Básicos de** `<path />`
 Los comandos se dividen en dos grupos: 
@@ -480,7 +480,16 @@ El cuadrado rojo usa el comando `l` (relativo), lo que significa que las coorden
 -  **Resultado**  
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/html%20lineto.png" width=50%>
 
-#### 5.1.7.3 Comando curveto C.
+#### 5.1.7.3 Comando curveto C - curva cúbica de Bézier.
+-  **Teoría.**  
+Cuatro puntos del plano: P0, P1, P2 y P3 definen una curva cúbica de Bézier. La curva empieza en el punto P0, se dirige hacia P1 y llega a P3 viniendo de la dirección del punto P2. Usualmente, no pasará ni por P1 ni por P2. Estos puntos sólo están ahí para proporcionar información direccional.
+<div align="center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Bezier_curve.svg" width=35%>
+</div>
+
+Las curvas de bezier se dibujan de la siguiente manera.  
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/B%C3%A9zier_2_big.gif">
+
 -  **Ejemplo**
 ```
 <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
@@ -535,10 +544,6 @@ En este caso solo se usa un punto de control.
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/curvaCsmooth.png" width=50%>
 
 #### 5.1.7.5 Comando quadratic Bezier curveto Q.
-Las curvas de bezier se dibujan  de la siguiente manera.  
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/B%C3%A9zier_2_big.gif">  
-
 Los argumentos a pasar a `Q` son los mismos que para el comando `S`
 ```
 <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
@@ -561,7 +566,10 @@ Los argumentos a pasar a `Q` son los mismos que para el comando `S`
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/curvaCquadratic.png" width=50%>
 
 #### 5.1.7.6 Comando quadratic Bezier curveto T.
+-  Teoria
 T (smooth quadratic curveto), toma automáticamente el punto de control de la curva cuadrática anterior, permitiendo que la curva **continúe suavemente**.
+
+
 ```
 <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
   <g>
