@@ -523,6 +523,7 @@ Cuatro puntos del plano: P0, P1, P2 y P3 definen una curva cúbica de Bézier. L
 
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/curvaC.png" width=50%>
 
+
 #### 5.1.7.4 Comando smooth curveto S.  
 - **Teoría**
   -  Dibuja una curva cúbica de Bézier desde el punto actual (x,y) hasta un punto (x2,y2).
@@ -560,9 +561,9 @@ Cuatro puntos del plano: P0, P1, P2 y P3 definen una curva cúbica de Bézier. L
 </svg>
 ```
 -  **Resultado**  
-<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/smoothCurvetoS.png" width=50%>
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/smoothCurvetoSgrid.png" width=50%>
 
-
+https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/smoothCurvetoSgrid.png
 
 
 
