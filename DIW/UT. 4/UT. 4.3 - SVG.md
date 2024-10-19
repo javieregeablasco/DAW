@@ -624,7 +624,7 @@ La línea recta que une cada uno de los puntos finales de la curva ( a y z ) con
 </svg>
 ```
 -  **Resultado**  
-<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/curvaCquadratic.png" width=50%>
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/CurvetoQgrid.png" width=50%>
 
 #### 5.1.7.6 Comando quadratic Bezier curveto T.
 -  Teoria
