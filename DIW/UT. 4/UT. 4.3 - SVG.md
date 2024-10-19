@@ -801,11 +801,11 @@ El atributo stroke-miterlimit permite modificar como se ve el ángulo puntiagudo
 </div>
 ```
 
+-  **Atributo stroke-dasharray**
 
 
 
-
-
+-  **Atributo stroke-dashoffset**
 
 
 
