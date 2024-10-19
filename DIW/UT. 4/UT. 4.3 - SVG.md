@@ -816,6 +816,17 @@ El atributo stroke-miterlimit permite modificar como se ve el ángulo puntiagudo
 -  **Atributo fill-rule**
 
 
+
+
+
+
+
+
+
+
+
+
+
 Aplicar estilos CSS a un SVG es similar a aplicar estilos a cualquier otro elemento HTML. 
 
 ### 1. **Estilos inline (en línea)**
@@ -918,17 +929,6 @@ Puedes agrupar elementos SVG dentro de un contenedor `<g>` y aplicar estilos a t
 
 Todos los elementos dentro del grupo `<g>` reciben los mismos estilos, lo que permite organizar y aplicar estilos de manera eficiente.
 
-### Propiedades CSS comunes en SVG:
-- **`fill`**: Define el color de relleno del interior de una figura.
-- **`stroke`**: Define el color del borde de una figura.
-- **`stroke-width`**: Define el grosor del borde.
-- **`opacity`**: Define la opacidad de un elemento.
-- **`fill-opacity` y `stroke-opacity`**: Controlan la opacidad del relleno o del borde por separado.
-- **`transform`**: Permite aplicar transformaciones como rotaciones, escalados o traslaciones a los elementos SVG.
-
 ### Consideraciones
 - No todos los estilos CSS de HTML son compatibles con SVG (por ejemplo, `box-shadow` no funcionará en la mayoría de los elementos SVG).
 - Es importante usar correctamente el espacio de nombres `xmlns="http://www.w3.org/2000/svg"` cuando uses SVG embebido en HTML para garantizar la compatibilidad.
-
-Así puedes aplicar estilos flexibles y reutilizables a tus gráficos SVG.
-
