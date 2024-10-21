@@ -1111,23 +1111,21 @@ A continuación un breve listado de ellos.
 - **Características**:
   - Bulma no incluye estilos específicos para SVG, pero se puede aplicar sus clases de contenedores y alineación a elementos SVG.
   
-4. Foundation**
+**4. Foundation**
 - **Compatibilidad**: Buena.
 - **Características**:
   - Como Bulma y tailwind, Foundation no incluye estilos específicos para SVG.
 
-5. **Materialize CSS**
+**5. Materialize CSS**
 - **Compatibilidad**: Buena.
 - **Características**:
-  - Materialize CSS tiene un enfoque centrado en los componentes, lo que significa que puedes usar SVG en combinación con componentes.
-  - No hay estilos específicos para SVG, pero puedes aplicar estilos globales y personalizados.
-
-### 6. **Semantic UI**
+  - Al igual que otros frameworks, no tiene estilos SVG específicos.
+  
+**6. Semantic UI**
 - **Compatibilidad**: Buena.
 - **Características**:
-  - Puedes utilizar SVG dentro de los componentes de Semantic UI.
-  - Al igual que otros frameworks, no tiene estilos SVG específicos, pero puedes aplicar clases y estilos personalizados.
-
+  - Al igual que otros frameworks, no tiene estilos SVG específicos.
+  
 ### 7. **UIKit**
 - **Compatibilidad**: Buena.
 - **Características**:
