@@ -1129,12 +1129,4 @@ A continuación un breve listado de ellos.
 ### 7. **UIKit**
 - **Compatibilidad**: Buena.
 - **Características**:
-  - UIKit permite el uso de SVG y proporciona clases para la disposición.
-  - Necesitarás estilos personalizados para ajustar SVG, ya que no hay soporte específico.
-
-### Conclusiones
-- **Integración de SVG**: Todos los frameworks mencionados permiten la integración de SVG, pero la forma en que se estilizan y se implementan puede variar.
-- **Personalización**: En muchos casos, necesitarás aplicar estilos personalizados o utilizar utilidades para adaptar SVG a tu diseño.
-- **Pruebas y Compatibilidad**: Siempre es una buena práctica probar tu implementación de SVG en los diferentes navegadores y dispositivos para garantizar que se visualice correctamente.
-
-Si planeas utilizar SVG de manera intensiva, considera la opción de escribir estilos CSS personalizados o usar un framework como Tailwind CSS que ofrezca más flexibilidad en la personalización de estilos.
+  - Al igual que otros frameworks, no tiene estilos SVG específicos. 
