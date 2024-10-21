@@ -831,22 +831,22 @@ Este atributo se puede utilizar conjuntamente con el atributo anterior. Es muy �
 El atributo stroke-dashoffset establece un desplazamiento al principio del trazo, haciendo que el inicio del trazo discontinuo comience el número de píxeles más tarde que se indique.
 ```
 <style>
-svg {
-  background: #ece3e3;
-}
+  svg {
+    background: #ece3e3;
+  }
 
-path {
-  stroke: black;
-  stroke-width: 0.5px;
-  fill: none;
-}
+  path {
+    stroke: black;
+    stroke-width: 0.5px;
+    fill: none;
+  }
 
-body { 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
+  body { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 </style>
 
 <body> 
@@ -888,8 +888,60 @@ body {
 </body>
 ```
 
--  **Atributo fill-opacity**
+-  **Atributo fill-opacity**  
+  Con `fill-opacity` indicamos el nivel de transparencia del obkjeto path.
+```
+<style>
+  svg {
+    background: #ece3e3;
+  }
 
+  path {
+    stroke: blue;
+    stroke-width: 0.5px;
+    fill: red;
+  }
+  
+  div { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+</style>
+
+<body> 
+  
+  <div>
+    <svg viewBox="0 0 100 100" height="400" width="400">
+      <text x="48" y="45"  font-family="CourierBold" font-size="16" text-anchor="middle">fill-opacity</text>
+      <path d="M5 5 L5 95 L95 95 L95 5 Z" fill-opacity="1" />
+    </svg>
+    
+    <fieldset style="width: 120px;">
+      <legend>Fill opacity</legend>
+      <input type="range" min="0" max="1" step="0.01" value="1">
+      <output>1</output>
+    </fieldset>
+  </div>
+
+<script>
+
+  const paths = document.querySelectorAll("path");
+  const input = document.querySelector("input");
+  
+  input.addEventListener("input", () => {
+    input.nextElementSibling.value = input.value;
+    paths.forEach(path => path.setAttribute("fill-opacity", input.value));  
+  });
+</script>
+
+</body>
+```
+
+
+
+ 
 -  **Atributo fill-rule**
 
 
