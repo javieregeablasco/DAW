@@ -661,7 +661,7 @@ T (smooth quadratic curveto), toma automáticamente el punto de control de la cu
 - **Resultado**
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/CurvetoTgridSmooth.png" width=50%>
 
-## 5.1.8 Ejercicio
+### 5.1.8 Ejercicio
 Realiza un SVG **usando path** replicando el logo de la banda musical Dûrga de Valencia.  
 El logo en cuestión es el siguiente:  
 
