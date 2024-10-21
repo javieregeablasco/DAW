@@ -992,42 +992,30 @@ El atributo stroke-dashoffset establece un desplazamiento al principio del trazo
 </body>  
 ```
 
+### 5.2.2 Estilos SVG
+Aplicar estilos CSS a un SVG es similar a aplicar estilos a cualquier otro elemento HTML. De hecho, en los ejemplos anteiores, ya hemos estado aplicado todo tipo de estilos a los elementos SVG. 
 
+A continuación haremos una breve descripción de ellos.
 
-
-
-
-
-
-
-
-
-
-Aplicar estilos CSS a un SVG es similar a aplicar estilos a cualquier otro elemento HTML. 
-
-### 1. **Estilos inline (en línea)**
+#### 5.2.2.1 Estilos inline (en línea)
 Se aplican directamente a los elementos SVG usando el atributo `style`. Es la forma más directa, pero no la más reutilizable:
-
-```html
+```
 <svg width="200" height="200">
   <circle cx="100" cy="100" r="50" style="fill: blue; stroke: black; stroke-width: 2;" />
 </svg>
 ```
 
-### 2. **Estilos usando atributos de presentación**
-Los atributos de presentación son atributos SVG que pueden aplicarse a los elementos para definir sus estilos directamente (funciona similar al estilo inline pero sin usar el atributo `style`):
-
-```html
+#### 5.2.2.2 Estilos usando atributos de SVG
+Los atributos de SVG son aquellos SVG que pueden aplicarse a los elementos.
+```
 <svg width="200" height="200">
   <circle cx="100" cy="100" r="50" fill="blue" stroke="black" stroke-width="2" />
 </svg>
 ```
 
-### 3. **Estilos en el archivo CSS externo o interno**
-Puedes definir un archivo CSS externo o incluir reglas CSS en un bloque `<style>` dentro del documento para aplicar estilos a los elementos SVG utilizando selectores, clases, e identificadores (`id`), lo que permite reutilizar estilos.
-
-**Archivo CSS externo o interno:**
-```html
+#### 5.2.2.3 Estilos en un archivo CSS externo o interno
+Se puede definir un archivo CSS para incluir reglas de estilo utilizando **selectores**, **clases**, e **identificadores (`id`)**. 
+```
 <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
   <circle class="blue-circle" cx="100" cy="100" r="50" />
 </svg>
@@ -1041,12 +1029,10 @@ Puedes definir un archivo CSS externo o incluir reglas CSS en un bloque `<style>
 </style>
 ```
 
-En este caso, se utiliza una clase `.blue-circle` en el CSS, que luego es asignada al elemento `<circle>` en el SVG.
+#### 5.2.2.4 Estilos CSS en un archivo SVG independiente
+Cuando **el SVG es un archivo independiente**, se puede incluir el bloque de estilos `<style>` directamente en el archivo SVG.
 
-### 4. **Estilos CSS en un archivo SVG independiente**
-Cuando el SVG es un archivo independiente, puedes incluir el bloque `<style>` directamente en el archivo SVG, similar a un documento HTML:
-
-```xml
+```
 <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
   <style>
     .blue-circle {
@@ -1059,10 +1045,10 @@ Cuando el SVG es un archivo independiente, puedes incluir el bloque `<style>` di
 </svg>
 ```
 
-### 5. **Estilos con pseudo-clases**
-Puedes usar pseudo-clases como `:hover`, `:active`, o `:focus` para los elementos dentro de un SVG de la misma manera que lo harías con elementos HTML.
+#### 5.2.2.5 Pseudo-clases
+Las pseudo-clases `:hover`, `:active`, o `:focus` también se aplican a los elementos SVG. 
 
-```html
+```
 <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
   <circle class="interactive-circle" cx="100" cy="100" r="50" />
 </svg>
@@ -1081,12 +1067,12 @@ Puedes usar pseudo-clases como `:hover`, `:active`, o `:focus` para los elemento
 </style>
 ```
 
-En este ejemplo, el color de relleno del círculo cambia a rojo cuando se pasa el ratón por encima del elemento.
+#### 5.2.2.6 Estilos aplicados a grupos (elemento `<g>`)
+Como hemos visto, se recomienda usar contenedores `<g>` para estructurar nuestro diseño.  
 
-### 6. **Estilos aplicados a grupos (elemento `<g>`)**
-Puedes agrupar elementos SVG dentro de un contenedor `<g>` y aplicar estilos a todo el grupo, de manera similar a como se hace en HTML con divs o contenedores:
+Del mismo que cualquier otra etiqueta HTML, tambien se le puede aplicar estilos a `<g>`.
 
-```html
+```
 <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
   <g class="group-style">
     <circle cx="50" cy="50" r="40" />
@@ -1102,9 +1088,55 @@ Puedes agrupar elementos SVG dentro de un contenedor `<g>` y aplicar estilos a t
   }
 </style>
 ```
+#### 5.2.2.7 Frameworks y SVGs.
+La compatibilidad de los frameworks CSS con `<svg>` varía según la forma en que manejan los estilos, la estructura del DOM y las capacidades de personalización.  
 
-Todos los elementos dentro del grupo `<g>` reciben los mismos estilos, lo que permite organizar y aplicar estilos de manera eficiente.
+A continuación un breve listado de ellos.
 
-### Consideraciones
-- No todos los estilos CSS de HTML son compatibles con SVG (por ejemplo, `box-shadow` no funcionará en la mayoría de los elementos SVG).
-- Es importante usar correctamente el espacio de nombres `xmlns="http://www.w3.org/2000/svg"` cuando uses SVG embebido en HTML para garantizar la compatibilidad.
+**1. Bootstrap**
+- **Compatibilidad**: Excelente.
+- **Características**:
+  - Permite el uso de SVG en su sistema de cuadrícula.
+  - Incluye utilidades de clase para estilos comunes aplicables a los elementos SVG (Bootstrap Icons).
+   
+**2. Tailwind CSS**
+- **Compatibilidad**: Buena.
+- **Características**:
+  - Tailwind CSS permite la personalización completa de los estilos SVG a través de utilidades de clase.
+  - **No se puede aplicar clases de Tailwind dentro de los elementos SVG**.
+  - Para aplicar clases de estilos de Tailwind a elementos SVG, se deberán encapsular dentro de una etiqueta HTML. 
+    
+**3. Bulma**
+- **Compatibilidad**: Buena.
+- **Características**:
+  - Bulma no incluye estilos específicos para SVG, pero se puede aplicar sus clases de contenedores y alineación a elementos SVG.
+  
+4. Foundation**
+- **Compatibilidad**: Buena.
+- **Características**:
+  - Como Bulma y tailwind, Foundation no incluye estilos específicos para SVG.
+
+5. **Materialize CSS**
+- **Compatibilidad**: Buena.
+- **Características**:
+  - Materialize CSS tiene un enfoque centrado en los componentes, lo que significa que puedes usar SVG en combinación con componentes.
+  - No hay estilos específicos para SVG, pero puedes aplicar estilos globales y personalizados.
+
+### 6. **Semantic UI**
+- **Compatibilidad**: Buena.
+- **Características**:
+  - Puedes utilizar SVG dentro de los componentes de Semantic UI.
+  - Al igual que otros frameworks, no tiene estilos SVG específicos, pero puedes aplicar clases y estilos personalizados.
+
+### 7. **UIKit**
+- **Compatibilidad**: Buena.
+- **Características**:
+  - UIKit permite el uso de SVG y proporciona clases para la disposición.
+  - Necesitarás estilos personalizados para ajustar SVG, ya que no hay soporte específico.
+
+### Conclusiones
+- **Integración de SVG**: Todos los frameworks mencionados permiten la integración de SVG, pero la forma en que se estilizan y se implementan puede variar.
+- **Personalización**: En muchos casos, necesitarás aplicar estilos personalizados o utilizar utilidades para adaptar SVG a tu diseño.
+- **Pruebas y Compatibilidad**: Siempre es una buena práctica probar tu implementación de SVG en los diferentes navegadores y dispositivos para garantizar que se visualice correctamente.
+
+Si planeas utilizar SVG de manera intensiva, considera la opción de escribir estilos CSS personalizados o usar un framework como Tailwind CSS que ofrezca más flexibilidad en la personalización de estilos.
