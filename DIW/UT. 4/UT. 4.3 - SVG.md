@@ -1136,4 +1136,6 @@ A continuación un breve listado de ellos.
 - **Compatibilidad**:  
   - Buena.
 - **Características**:
-  - Al igual que otros frameworks, no tiene estilos SVG específicos. 
+  - Al igual que otros frameworks, no tiene estilos SVG específicos.
+ 
+## 5.3 Textos en SVG
