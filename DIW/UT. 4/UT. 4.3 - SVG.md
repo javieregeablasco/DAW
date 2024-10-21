@@ -743,13 +743,8 @@ Posibles valores de stroke-linecap:
 ```
 
 -  **Atributo stroke-linejoin**  
-Con **stroke-linejoin** se puede definir como serán las uniones de dos trayectos o dos lineas, y como se mostrarán.
+Con **stroke-linejoin** se puede definir como serán las uniones de dos trayectos o dos lineas, y como se mostrarán.  
 Posibles valores de stroke-linejoin:
-
-
-La propiedad `stroke-linejoin` en SVG define cómo se renderizan las uniones entre dos segmentos de una línea o trazo. Es útil cuando el contorno de una figura tiene esquinas o ángulos, y esta propiedad controla cómo se dibujan esos puntos de unión.
-
-Los posibles valores de `stroke-linejoin` son:  
     - `miter`, predeterminado. Los segmentos de línea se unen en un punto afilado o en ángulo extendido, creando una esquina que puede sobresalir. Si el ángulo entre las líneas es muy agudo, la longitud de la unión puede limitarse utilizando la propiedad `stroke-miterlimit`.    
     - `bevel`. Los segmentos de línea se unen mediante un corte recto, creando una esquina "plana" o biselada. El punto de unión no es afilado como en `miter`, sino truncado.    
     - `miter-clip`. La unión se recorta si el ángulo es demasiado pequeño, evitando una esquina demasiado larga y afilada.
@@ -773,7 +768,7 @@ Los posibles valores de `stroke-linejoin` son:
 </svg>
 ```
 
--  **Atributo stroke-miterlimit**
+-  **Atributo stroke-miterlimit**  
 El atributo stroke-miterlimit permite modificar como se ve el ángulo puntiagudo cuando se ha definido valores `miter`, `miter-clip` en el atributo `stroke-linejoin`.
 ```
 <div>
@@ -805,11 +800,93 @@ El atributo stroke-miterlimit permite modificar como se ve el ángulo puntiagudo
 
 #### 5.2.1.3 Patrones en trazos
 -  **Atributo stroke-dasharray**
+Este atributo permite personalizar el estilo de las líneas, añadiendo efectos visuales como líneas discontinuas o punteadas (guiones y espacios para los contornos (trazos) de las formas).  
+Para el siguiente ejemplo, se le ha pasado a dasharray los valores 3 y 1 que equivalen a 3 unidades de tamaño trazado y 1 unidad sin trazar.   
+```
+<body style="text-align: center;">
+    <div>
+      <svg viewBox="0 0 30 30" height="250" fill="none"  stroke-width="0.25" stroke="blue">
+        <path d="M5 3 L25 3 L25 22 L15 18 L5 22 Z" />
+        <text x="3" y="27"  font-family="Courier" font-size="3">sin stroke-dasharray</text>
+      </svg>
+    </div>
+
+    <div>
+      <svg viewBox="0 0 30 30" height="250" width="500" fill="none" stroke-width="0.25" stroke="green">
+        <path d="M5 3 L25 3 L25 22 L15 18 L5 22 Z" stroke-dasharray="3 1" />
+        <text x="15" y="27" font-family="Courier" font-size="3" text-anchor="middle">Con stroke-dash -> 3 1</text>
+      </svg>
+    </div>
+</body>
+```
+
+**Nota**
+La **unidad de tamaño** de los guiones y espacios se define en las mismas unidades que las utilizadas en `viewBox`. No se especifica en píxeles (px), sino que las longitudes se relacionan directamente con la escala del gráfico.
+>**Ejemplo:**  
+>Si tenemos `viewBox` = 0 0 30 30 y `stroke-dasharray`= 3 1  
+>Tendremos un guion de **3 unidades** de longitud y un espacio de **1 unidad** de longitud.  
 
 -  **Atributo stroke-dashoffset**
+Este atributo se puede utilizar conjuntamente con el atributo anterior. Es muy útil para animar los trazos de una figura o forma.
+El atributo stroke-dashoffset establece un desplazamiento al principio del trazo, haciendo que el inicio del trazo discontinuo comience el número de píxeles más tarde que se indique.
+```
+<style>
+svg {
+  background: #ece3e3;
+}
 
+path {
+  stroke: black;
+  stroke-width: 0.5px;
+  fill: none;
+}
+
+body { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+</style>
+
+<body> 
+    <div>
+      <svg viewBox="0 0 30 30" height="250">
+        <path d="M5 5 L25 5 L25 25 L15 20 L5 25 Z" stroke-dasharray="3 3" stroke-dashoffset="3">
+      </svg>
+      
+      <fieldset>
+        <legend>Propiedad stroke-dashoffset:</legend>
+        <input type="range" min="-20" max="20" step="1" value="3">
+        <output>1</output>
+      </fieldset>
+    </div>
+
+<script>
+  const paths = document.querySelectorAll("path");
+  const input = document.querySelector("input");
+  input.addEventListener("input", () => {
+    input.nextElementSibling.value = input.value;
+    paths.forEach(path => path.setAttribute("stroke-dashoffset", input.value));
+  });
+</script>
+
+</body>
+```
 #### 5.2.1.4 Rellenos
--  **Atributo fill**
+-  **Atributo fill**  
+  Con `fill` indicamos el color de relleno de la figura que estamos diseñando.
+```
+<body> 
+  
+  <div style="display:flex; flex-direction:column; align-items:center;">
+    <svg viewBox="0 0 100 100" height="400">
+      <path d="M5 5 L5 90 L90 90 Z" stroke="blue" stroke-width="1" fill="red" />
+    </svg>
+  </div>
+      
+</body>
+```
 
 -  **Atributo fill-opacity**
 
