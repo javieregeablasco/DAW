@@ -1126,7 +1126,7 @@ A continuación un breve listado de ellos.
 - **Características**:
   - Al igual que otros frameworks, no tiene estilos SVG específicos.
   
-### 7. **UIKit**
+**7. UIKit**
 - **Compatibilidad**: Buena.
 - **Características**:
   - Al igual que otros frameworks, no tiene estilos SVG específicos. 
