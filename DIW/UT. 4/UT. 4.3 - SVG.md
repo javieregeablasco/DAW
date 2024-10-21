@@ -1139,6 +1139,7 @@ A continuación un breve listado de ellos.
   - Al igual que otros frameworks, no tiene estilos SVG específicos.
  
 ## 5.3 Textos y tipografia en SVG
-<poner dentro use y symbol.>
+<poner dentro use y symbol y hacer referencia a g>
 
-## 5.4 
+## 5.4 Animaciones
+<meter dentro los gradientes>
