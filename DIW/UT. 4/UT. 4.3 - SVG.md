@@ -1094,39 +1094,46 @@ La compatibilidad de los frameworks CSS con `<svg>` varía según la forma en qu
 A continuación un breve listado de ellos.
 
 **1. Bootstrap**
-- **Compatibilidad**: Excelente.
+- **Compatibilidad**:  
+  - Excelente.
 - **Características**:
   - Permite el uso de SVG en su sistema de cuadrícula.
   - Incluye utilidades de clase para estilos comunes aplicables a los elementos SVG (Bootstrap Icons).
    
 **2. Tailwind CSS**
-- **Compatibilidad**: Buena.
+- **Compatibilidad**:  
+  - Buena.
 - **Características**:
   - Tailwind CSS permite la personalización completa de los estilos SVG a través de utilidades de clase.
   - **No se puede aplicar clases de Tailwind dentro de los elementos SVG**.
   - Para aplicar clases de estilos de Tailwind a elementos SVG, se deberán encapsular dentro de una etiqueta HTML. 
     
 **3. Bulma**
-- **Compatibilidad**: Buena.
+- **Compatibilidad**:  
+  - Buena.
 - **Características**:
   - Bulma no incluye estilos específicos para SVG, pero se puede aplicar sus clases de contenedores y alineación a elementos SVG.
   
 **4. Foundation**
-- **Compatibilidad**: Buena.
+- **Compatibilidad**:  
+  - Buena.
 - **Características**:
   - Como Bulma y tailwind, Foundation no incluye estilos específicos para SVG.
 
 **5. Materialize CSS**
-- **Compatibilidad**: Buena.
+- **Compatibilidad**:  
+  - Buena.
 - **Características**:
   - Al igual que otros frameworks, no tiene estilos SVG específicos.
   
 **6. Semantic UI**
-- **Compatibilidad**: Buena.
+- **Compatibilidad**:  
+  - Buena.
 - **Características**:
   - Al igual que otros frameworks, no tiene estilos SVG específicos.
   
 **7. UIKit**
-- **Compatibilidad**: Buena.
+- **Compatibilidad**:  
+  - Buena.
 - **Características**:
   - Al igual que otros frameworks, no tiene estilos SVG específicos. 
