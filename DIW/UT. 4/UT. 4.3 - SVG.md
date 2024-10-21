@@ -889,7 +889,7 @@ El atributo stroke-dashoffset establece un desplazamiento al principio del trazo
 ```
 
 -  **Atributo fill-opacity**  
-  Con `fill-opacity` indicamos el nivel de transparencia del obkjeto path.
+  Con `fill-opacity` indicamos el nivel de transparencia del objeto path.
 ```
 <style>
   svg {
@@ -937,13 +937,60 @@ El atributo stroke-dashoffset establece un desplazamiento al principio del trazo
 </script>
 
 </body>
+```  
+
+-  **Atributo fill-rule**  
+  `fill-rule` establece el algoritmo encargado de determinar qué es relleno y qué no lo es cuando varios paths se superponen.  
+  Por defecto, `fill-rule` esta a `nonzero`.  
+  >Valores de **fill-rule**:  
+  >**nonzero**: El interior de una forma es relleno.  
+  >**evenodd**: El interior de una forma es hueco. 
 ```
+<style>
+  svg {
+    background: #ece3e3;
+  }
 
+  path {
+    stroke: blue;
+    stroke-width: 0.5px;
+    fill: red;
+  }
+  
+  div { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+</style>
 
+<body> 
+  
+  <div>
+    <svg viewBox="0 0 100 100" height="400">
+      <path d="M5 5 L5 90 L90 90 M25 75 L75 75 L75 25 L25 25 Z"
+            fill="indigo" stroke="black" fill-rule="nonzero" />
+    </svg>
+    
+    <p>Valor de <strong>fill-rule</strong>:</p>
+    <select id="fill-rule">
+      <option value="0">nonzero</option>
+      <option value="1">evenodd</option>
+    </select>
+  </div>
 
- 
--  **Atributo fill-rule**
+<script>
+  const select = document.querySelector("select");
+  const path = document.querySelector("path");
+  select.addEventListener("change", () => {
+    const selectedOption = select[select.selectedIndex].textContent;
+    path.setAttribute("fill-rule", selectedOption);
+  });
+</script>
 
+</body>  
+```
 
 
 
