@@ -1138,4 +1138,7 @@ A continuación un breve listado de ellos.
 - **Características**:
   - Al igual que otros frameworks, no tiene estilos SVG específicos.
  
-## 5.3 Textos en SVG
+## 5.3 Textos y tipografia en SVG
+<poner dentro use y symbol.>
+
+## 5.4 
