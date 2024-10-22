@@ -1234,6 +1234,15 @@ textLength	none	Indica una distancia entre carácteres. Usado junto al atributo 
   </svg>
 ```
 
+- Ajuste de texto.  
+  El atributo `textLength` establece el largo de un texto y así pues, su grado de compactación y expansión de cada caracter.  
+  El atributo `lengthAdjust` permite indicar si se quiere que los carácteres se solapen o no con los valores `spaceing`y `spacingAndGlyphs`.
+
+  
+
+
+
+
 <poner dentro use y symbol y hacer referencia a g>
 ## 5.4 Animaciones
 <meter dentro los gradientes>
