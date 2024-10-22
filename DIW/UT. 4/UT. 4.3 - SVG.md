@@ -663,18 +663,19 @@ T (smooth quadratic curveto), toma automáticamente el punto de control de la cu
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/CurvetoTgridSmooth.png" width=50%>
 
 #### 5.1.7.7 Arco eliptico A.
-Permite dibujar total o parcialmente una elipse.  
->Sintaxis: A rx ry x-axis-rotation large-arc-flag sweepflag x y  
+- Permite dibujar total o parcialmente una elipse.  
+**Sintaxis:** A rx ry x-axis-rotation large-arc-flag sweepflag x y  
 Dónde: 
-- rx: radio de la elipse según el eje x.
-- ry: radio de la elipse según el eje y.
-- x-axis-rotation: rotación de la elipse según el eje x.
-- large-arc-flag: Indica si el arco debe ser el mayor o menor de los dos posibles. Si el valor es `1`, se dibuja el arco más grande (más de 180 grados). Si es `0`, se dibuja el arco más pequeño (menos de 180 grados).
-- sweepflag: Indica la dirección en la que se dibuja el arco. Si el valor es `1`, el arco se dibuja en sentido horario. Si es `0`, se dibuja en sentido antihorario.
-- x y: Coordenadas del punto final de la elipse.
+    - rx: radio de la elipse según el eje x.
+    - ry: radio de la elipse según el eje y.
+    - x-axis-rotation: rotación de la elipse según el eje x.
+    - large-arc-flag: Indica si el arco debe ser el mayor o menor de los dos posibles. Si el valor es `1`, se dibuja el arco más grande (más de 180 grados). Si es `0`, se dibuja el arco más pequeño (menos de 180 grados).
+    - sweepflag: Indica la dirección en la que se dibuja el arco. Si el valor es `1`, el arco se dibuja en sentido horario. Si es `0`, se dibuja en sentido antihorario.
+    - x y: Coordenadas del punto final de la elipse.
 
-Más información <a href="https://www.nan.fyi/svg-paths/arcs">aquí</a>
-Ejemplo cambiando el `large-arc-flag`  
+> Más información <a href="https://www.nan.fyi/svg-paths/arcs">aquí</a>   
+
+- Ejemplo cambiando el `large-arc-flag`  
 ```
 <svg width="300" height="300" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
   <path d="M 50 150
@@ -690,9 +691,9 @@ Ejemplo cambiando el `large-arc-flag`
     stroke="gray"
     stroke-width="0.5"/>
 </svg>
-´´´
+```
 
-Ejemplo cambiando el `sweepflag`  
+- Ejemplo cambiando el `sweepflag`    
 ```
 <svg width="300" height="300" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
   <path d="M 50 150
@@ -709,9 +710,6 @@ Ejemplo cambiando el `sweepflag`
     stroke-width="0.5"/>
 </svg>
 ```
-
-
-
 
 ### 5.1.8 Ejercicio
 Realiza un SVG **usando path** replicando el logo de la banda musical Dûrga de Valencia.  
