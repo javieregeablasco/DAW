@@ -662,6 +662,11 @@ T (smooth quadratic curveto), toma automáticamente el punto de control de la cu
 - **Resultado**
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/CurvetoTgridSmooth.png" width=50%>
 
+#### 5.1.7.7 Arco eliptico A.
+Permite dibujar total o parcialmente una elipse.  
+Sintaxis: A rx ry x-axis-rotation large-arc-flag sweepflag x y
+Explicación detallada <a href="https://www.nan.fyi/svg-paths/arcs">aquí</a>
+
 ### 5.1.8 Ejercicio
 Realiza un SVG **usando path** replicando el logo de la banda musical Dûrga de Valencia.  
 El logo en cuestión es el siguiente:  
