@@ -670,6 +670,7 @@ El logo en cuestión es el siguiente:
 **Nota**  
 Aun no hemos visto como aplicar estilos a svg.  
 Para aplicar el color y el grosor de linea usar: stroke-width="4" stroke="#D9C472"  
+Para aplicar el relleno del circulo usar: fill="#D9C472"
 
 **Ejemplo**
 ```
