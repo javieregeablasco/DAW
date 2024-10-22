@@ -1285,7 +1285,7 @@ textLength	none	Indica una distancia entre carácteres. Usado junto al atributo 
 </script>
 ```
 
-- Etiqueta `<tspan>`  
+- **Etiqueta** `<tspan>`  
   La etiqueta `<tspan>`es similar a la etiqueta <span>. Tiene los mismos atributos que `<text>` y modificar estilos localmente.
   - **Ejemplo**
 ```
