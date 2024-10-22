@@ -1189,7 +1189,7 @@ A continuación un breve listado de ellos.
 - **Características**:
   - Al igual que otros frameworks, no tiene estilos SVG específicos.
  
-## 5.3 Textos y tipografia en SVG
+## 5.3 Textos y tipografía en SVG
 Es posible incluir textos en imágenes SVG. Para ello, se puede utilizar la etiqueta <text>.
 - Etiqueta `<text>`
 
@@ -1236,7 +1236,54 @@ textLength	none	Indica una distancia entre carácteres. Usado junto al atributo 
 
 - Ajuste de texto.  
   El atributo `textLength` establece el largo de un texto y así pues, su grado de compactación y expansión de cada caracter.  
-  El atributo `lengthAdjust` permite indicar si se quiere que los carácteres se solapen o no con los valores `spaceing`y `spacingAndGlyphs`.
+  El atributo `lengthAdjust` permite indicar si se quiere que los carácteres se solapen o no con los valores `spacing`y `spacingAndGlyphs`.
+
+- **Ejemplo**
+```
+<style>
+  .subtitle {
+    font-family: EnterCommand;
+    font-size: 15px;
+    font-weight: 600;
+    fill: indigo;
+  }
+
+  select {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+</style>
+
+<body>
+  <p>Valor de textLength:
+    <input class="tl" type="range" min="0" max="250" value="0">
+    <output>0</output>
+  </p>
+
+  <p>Valor de <code>lengthAdjust</code>:</p>
+  <select class="la">
+    <option>spacing</option>
+    <option>spacingAndGlyphs</option>
+  </select>
+      
+  <svg viewBox="0 0 300 100" height="300">
+    <text class="subtitle" x="35" y="55">Texto que se expande y comprime</text>
+  </svg>
+</body>
+
+<script>
+  const tl = document.querySelector(".tl");
+  const la = document.querySelector(".la");
+  const subtitle = document.querySelector(".subtitle");
+
+  tl.addEventListener("input", () => {
+    subtitle.setAttribute("textLength", tl.value);
+    tl.nextElementSibling.value = tl.value;
+  });
+
+  la.addEventListener("change", () => subtitle.setAttribute("lengthAdjust", la.value));
+</script>
+```
 
   
 
