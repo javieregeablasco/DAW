@@ -1190,7 +1190,19 @@ A continuación un breve listado de ellos.
   - Al igual que otros frameworks, no tiene estilos SVG específicos.
  
 ## 5.3 Textos y tipografia en SVG
-<poner dentro use y symbol y hacer referencia a g>
+Es posible incluir textos en imágenes SVG. Para ello, se puede utilizar la etiqueta <text>.
+- Etiqueta `<text>`
 
+textLength	none	Indica una distancia entre carácteres. Usado junto al atributo anterior.
+
+| Atributo | Valor por defecto                                   | Descripción            |
+|------|----------------------------------------------|-----------------------------------|
+| x y  | 0 | Posición en horizontal y vertical del texto respecto al viewBox del element.  |  
+| dx dy  | none | Desplazamiento en horizontal y vertical del texto respecto a su posición.  | 
+| rotate  | none | Indica una rotación para cada uno de los carácteres del texto (por separado).  | 
+| lengthAdjust  | spacing | Indica el tipo de ajuste de carácteres. spacingAndGlyphs evita solapamiento.  | 
+
+
+<poner dentro use y symbol y hacer referencia a g>
 ## 5.4 Animaciones
 <meter dentro los gradientes>
