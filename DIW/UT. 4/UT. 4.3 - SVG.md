@@ -53,7 +53,8 @@ Existen numerosos sitios web que ofrecen gráficos SVG listos para usar en proye
 -  <a href="https://uxwing.com">Uxwing</a>  
 -  <a href="https://www.flaticon.es/">Flaticon</a>  
 -  <a href="https://undraw.co/illustrations">unDraw</a>  
--  <a href="https://iconmonstr.com/">iconmonstr</a>  
+-  <a href="https://iconmonstr.com/">iconmonstr</a>
+-  <a href="https://worldvectorlogo.com/es">worldvectorlogo</a>
 
 ## 4. - Formas de insertar imágenes SVG.
 ## 4.1 - Etiqueta img para un SVG
@@ -800,7 +801,7 @@ El atributo stroke-miterlimit permite modificar como se ve el ángulo puntiagudo
 ```
 
 #### 5.2.1.3 Patrones en trazos
--  **Atributo stroke-dasharray**
+-  **Atributo stroke-dasharray**  
 Este atributo permite personalizar el estilo de las líneas, añadiendo efectos visuales como líneas discontinuas o punteadas (guiones y espacios para los contornos (trazos) de las formas).  
 Para el siguiente ejemplo, se le ha pasado a dasharray los valores 3 y 1 que equivalen a 3 unidades de tamaño trazado y 1 unidad sin trazar.   
 ```
