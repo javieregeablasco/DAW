@@ -1285,8 +1285,29 @@ textLength	none	Indica una distancia entre carácteres. Usado junto al atributo 
 </script>
 ```
 
-  
+- Etiqueta `<tspan>`  
+  La etiqueta `<tspan>`es similar a la etiqueta <span>. Tiene los mismos atributos que `<text>` y modificar estilos localmente.
+  - **Ejemplo**
+```
+<style>
+  .subtitle {
+    font-family: EnterCommand;
+    font-size: 15px;
+    font-weight: 600;
+    fill: green;
+  }
+</style>
 
+<body>
+  <svg viewBox="0 0 500 100" width="500">
+    <text class="subtitle" x="35" y="55">
+      Ejemplo de
+      <tspan fill="blue">añadir estilos localmente dentro</tspan>
+      de una etiqueta 
+      <tspan fill="black">text</tspan>
+    </text>
+  </svg>  
+</body> 
 
 
 
