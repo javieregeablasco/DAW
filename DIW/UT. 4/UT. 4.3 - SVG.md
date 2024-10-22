@@ -1236,9 +1236,9 @@ textLength	none	Indica una distancia entre carácteres. Usado junto al atributo 
 
 - Ajuste de texto.  
   El atributo `textLength` establece el largo de un texto y así pues, su grado de compactación y expansión de cada caracter.  
-  El atributo `lengthAdjust` permite indicar si se quiere que los carácteres se solapen o no con los valores `spacing`y `spacingAndGlyphs`.
+  El atributo `lengthAdjust` permite indicar si se quiere que los carácteres se solapen o no con los valores `spacing`y `spacingAndGlyphs`.  
 
-- **Ejemplo**
+**Ejemplo**
 ```
 <style>
   .subtitle {
@@ -1308,6 +1308,7 @@ textLength	none	Indica una distancia entre carácteres. Usado junto al atributo 
     </text>
   </svg>  
 </body> 
+```
 
 
 
