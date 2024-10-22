@@ -677,20 +677,30 @@ Dónde:
 
 - Ejemplo cambiando el `large-arc-flag`  
 ```
-<svg width="300" height="300" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-  <path d="M 50 150
-           A 100 150 0 1 0 150 80
-           M 50 150
-           A 100 150 0 0 0 150 80"
-           fill="none" 
-           stroke-width="0.75"
-           stroke="blue"
-         />
-  <line x1="40" y1="150"
-    x2="260" y2="150"
-    stroke="gray"
-    stroke-width="0.5"/>
-</svg>
+<g>
+    <!-- Ejes de referencia -->
+    <line x1="0" y1="100" x2="400" y2="100" stroke="gray" stroke-width="1" />
+    <line x1="150" y1="0" x2="150" y2="200" stroke="gray" stroke-width="1" />
+            
+    <!-- Curva cuadrática Bézier (Q) -->
+    <path d="M 40 180 Q 150 50, 330 150 T 400 50" fill="transparent" stroke="blue" stroke-width="2" />
+              
+    <!-- Puntos de control -->
+    <circle cx="40" cy="180" r="3" fill="red" />
+    <circle cx="150" cy="50" r="3" fill="green" />
+    <circle cx="330" cy="150" r="3" fill="red" />
+    <circle cx="400" cy="50" r="3" fill="green" />
+            
+   <!-- Líneas a puntos de control -->
+   <line x1="40" y1="180"
+         x2="150" y2="50"
+         stroke="gray"
+         stroke-width="1"/>
+   <line x1="150" y1="50"
+         x2="330" y2="150"
+         stroke="gray"
+         stroke-width="1"/>
+  </g>
 ```
 
 - Ejemplo cambiando el `sweepflag`    
