@@ -407,7 +407,7 @@ La sintaxis del elemento path es como sigue:
 Donde el conjunto de comandos está formado por los comandos moveto, lineto, curveto, arc y closepath.
 
 -  **Ejemplo**
->Nota: Archivo disponible en /html/index_path.html 
+>**Nota:** Archivo disponible <a href="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/html/index_path.html">aquí</a> 
 ```
 <path d="M10,40 L40,40 L40,80 L80,80 L80,120 L120,120 L120,160 L40,160" />
 ```
@@ -664,8 +664,54 @@ T (smooth quadratic curveto), toma automáticamente el punto de control de la cu
 
 #### 5.1.7.7 Arco eliptico A.
 Permite dibujar total o parcialmente una elipse.  
-Sintaxis: A rx ry x-axis-rotation large-arc-flag sweepflag x y
-Explicación detallada <a href="https://www.nan.fyi/svg-paths/arcs">aquí</a>
+>Sintaxis: A rx ry x-axis-rotation large-arc-flag sweepflag x y  
+Dónde: 
+- rx: radio de la elipse según el eje x.
+- ry: radio de la elipse según el eje y.
+- x-axis-rotation: rotación de la elipse según el eje x.
+- large-arc-flag: Indica si el arco debe ser el mayor o menor de los dos posibles. Si el valor es `1`, se dibuja el arco más grande (más de 180 grados). Si es `0`, se dibuja el arco más pequeño (menos de 180 grados).
+- sweepflag: Indica la dirección en la que se dibuja el arco. Si el valor es `1`, el arco se dibuja en sentido horario. Si es `0`, se dibuja en sentido antihorario.
+- x y: Coordenadas del punto final de la elipse.
+
+Más información <a href="https://www.nan.fyi/svg-paths/arcs">aquí</a>
+Ejemplo cambiando el `large-arc-flag`  
+```
+<svg width="300" height="300" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <path d="M 50 150
+           A 100 150 0 1 0 150 80
+           M 50 150
+           A 100 150 0 0 0 150 80"
+           fill="none" 
+           stroke-width="0.75"
+           stroke="blue"
+         />
+  <line x1="40" y1="150"
+    x2="260" y2="150"
+    stroke="gray"
+    stroke-width="0.5"/>
+</svg>
+´´´
+
+Ejemplo cambiando el `sweepflag`  
+```
+<svg width="300" height="300" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <path d="M 50 150
+           A 100 150 0 0 1 150 80
+           M 50 150
+           A 100 150 0 0 0 150 80"
+           fill="none" 
+           stroke-width="0.75"
+           stroke="blue"
+         />
+  <line x1="40" y1="150"
+    x2="260" y2="150"
+    stroke="gray"
+    stroke-width="0.5"/>
+</svg>
+```
+
+
+
 
 ### 5.1.8 Ejercicio
 Realiza un SVG **usando path** replicando el logo de la banda musical Dûrga de Valencia.  
