@@ -1202,6 +1202,37 @@ textLength	none	Indica una distancia entre carácteres. Usado junto al atributo 
 | rotate  | none | Indica una rotación para cada uno de los carácteres del texto (por separado).  | 
 | lengthAdjust  | spacing | Indica el tipo de ajuste de carácteres. spacingAndGlyphs evita solapamiento.  | 
 
+- **Ejemplo**
+```
+  <svg width="300" height="300" viewBox="0,0,300,300" xmlns="http://www.w3.org/2000/svg">
+    <text x="50" y="50">Texto en SVG</text>
+    <line x1="50" y1="50"
+          x2="150" y2="50"
+          stroke="black"
+          stroke-width="0.5"/>
+
+    <text x="50" y="70" 
+          dx="10" dy="-5">Desplazando texto con dx y dy</text>
+    <line x1="50" y1="70"
+          x2="150"y2="70"
+          stroke="black"
+          stroke-width="0.5"/>
+
+    <text x="50" y="90" 
+          rotate="30">Rotación en SVG</text>
+    <line x1="50" y1="90"
+          x2="150"y2="90"
+          stroke="black"
+          stroke-width="0.5"/>
+
+    <text x="50" y="130" 
+          transform="rotate(-5)">Rotación con CSS</text>
+    <line x1="50" y1="130"
+          x2="150"y2="130"
+          stroke="black"
+          stroke-width="0.5"/>         
+  </svg>
+```
 
 <poner dentro use y symbol y hacer referencia a g>
 ## 5.4 Animaciones
