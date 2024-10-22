@@ -1459,7 +1459,7 @@ Esto incluye colores, fuentes, espacios, sombras, entre otros.
   * `theme('spacing.4')` accede al valor de espaciado definido en la configuración del tema bajo `spacing.4`.
   * `theme('colors.red.500')` accede al color rojo con la intensidad 500 desde la paleta de colores.
 
-#### Ventajas de usar `theme()`
+**Ventajas de usar** `theme()`
 - **Consistencia**: Asegura que los valores utilizados en las personalizaciones coincidan exactamente con los definidos en el tema global.
 - **Facilidad de mantenimiento**: Si se cambia un valor en la configuración del tema, todos los lugares donde se use `theme()` se actualizarán automáticamente.
 
