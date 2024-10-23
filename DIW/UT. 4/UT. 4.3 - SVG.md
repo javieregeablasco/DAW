@@ -862,6 +862,10 @@ El atributo **stroke-opacity** permite establecer la opacidad del elemento (grad
 </svg>
 ```
 
+>**Ejercicio.**
+Realizar un programa SVG que renderize una imagen similar a la siguiente:
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/anillos1.png">
+
 #### 5.2.1.2 Forma del trazo  
 -  **Atributo stroke-linecap**  
 Con **stroke-linecap** se indica la forma de los extremos de los trazos.  
