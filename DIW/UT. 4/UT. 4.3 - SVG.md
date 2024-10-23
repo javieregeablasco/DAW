@@ -666,7 +666,7 @@ T (smooth quadratic curveto), toma automáticamente el punto de control de la cu
 
 #### 5.1.7.7 Arco eliptico A.
 - Permite dibujar total o parcialmente una elipse.  
-**Sintaxis:** A rx ry x-axis-rotation large-arc-flag sweepflag x y  
+**Sintaxis:** `A` `rx ry` `x-axis-rotation` `large-arc-flag` `sweepflag` `x y`  
 Dónde: 
     - rx: radio de la elipse según el eje x.
     - ry: radio de la elipse según el eje y.
@@ -677,50 +677,129 @@ Dónde:
 
 > Más información <a href="https://www.nan.fyi/svg-paths/arcs">aquí</a>   
 
-- Ejemplo cambiando el `large-arc-flag`  
+- **Ejemplo**  
 ```
-<g>
-    <!-- Ejes de referencia -->
-    <line x1="0" y1="100" x2="400" y2="100" stroke="gray" stroke-width="1" />
-    <line x1="150" y1="0" x2="150" y2="200" stroke="gray" stroke-width="1" />
-            
-    <!-- Curva cuadrática Bézier (Q) -->
-    <path d="M 40 180 Q 150 50, 330 150 T 400 50" fill="transparent" stroke="blue" stroke-width="2" />
-              
-    <!-- Puntos de control -->
-    <circle cx="40" cy="180" r="3" fill="red" />
-    <circle cx="150" cy="50" r="3" fill="green" />
-    <circle cx="330" cy="150" r="3" fill="red" />
-    <circle cx="400" cy="50" r="3" fill="green" />
-            
-   <!-- Líneas a puntos de control -->
-   <line x1="40" y1="180"
-         x2="150" y2="50"
-         stroke="gray"
-         stroke-width="1"/>
-   <line x1="150" y1="50"
-         x2="330" y2="150"
-         stroke="gray"
-         stroke-width="1"/>
-  </g>
-```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arc A</title>
+</head>
 
-- Ejemplo cambiando el `sweepflag`    
-```
-<svg width="300" height="300" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-  <path d="M 50 150
-           A 100 150 0 0 1 150 80
-           M 50 150
-           A 100 150 0 0 0 150 80"
-           fill="none" 
-           stroke-width="0.75"
-           stroke="blue"
-         />
-  <line x1="40" y1="150"
-    x2="260" y2="150"
-    stroke="gray"
-    stroke-width="0.5"/>
-</svg>
+<body>
+
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }  
+
+  svg {
+    background: #ece3e3;
+    margin-top: 15px;
+  }
+      
+  path {
+    stroke: blue;
+    stroke-width: 0.5px;
+    fill: red;
+  }
+        
+  div { 
+    background-color: antiquewhite;
+    width: 750px;
+    padding: 10px, 10px, 10px, 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+  }
+</style>
+
+<div>
+  <svg width="500" height="500" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+    <path id="arc" 
+      d="M 150 150
+         A 50 100 0 0 0 250 150"
+      fill="none" 
+      stroke-width="0.75"
+      stroke="blue"
+    />
+    
+    <line x1="50" y1="150"
+          x2="150" y2="80"
+          stroke="gray"
+          stroke-width="0"/>
+  </svg>
+
+  <p>Valor de <strong>x-axis-rotation</strong></p>
+  <fieldset style="width: 200px;">
+    <legend>Modificar ángulo de rotación</legend>
+      <input type="range" id="xAxisRotation" name="x-axis-rotation" min="0" max="90" step="1" value="0">
+      <output id="rotationValue">0</output>
+  </fieldset>
+      
+  <p>Valor de <strong>large-arc-flag</strong></p>
+  <select id="largeArcFlag">
+    <option value="0">Valor 0</option>
+    <option value="1">Valor 1</option>
+  </select>
+
+  <p>Valor de sweepflag</p>
+  <select id="sweepFlag">
+    <option value="0">Valor 0</option>
+    <option value="1">Valor 1</option>
+  </select>
+
+</div>  
+
+<script>
+  //Variar angulo de rotacion de la elipse
+  const path = document.getElementById('arc');
+  const xAxisRotation = document.getElementById('xAxisRotation');
+  const rotationValueDisplay = document.getElementById('rotationValue');
+
+  let rotationValue = xAxisRotation.value; //inicializar valor
+  
+  xAxisRotation.addEventListener('input', function() {
+    rotationValue = this.value;  
+    updatePath(); //pintar el path de nuevo
+    rotationValueDisplay.textContent = rotationValue; // pintar valor en fieldset.
+  });  
+    
+  //Variar large-arc-flag 
+  const selectLargeArcFlag = document.getElementById("largeArcFlag");
+
+  let largeArcFlag =selectLargeArcFlag.value; //inicializar valor 
+  
+  selectLargeArcFlag.addEventListener("change", () => {
+    largeArcFlag = selectLargeArcFlag.value;
+    updatePath();
+  });
+  
+  // Actualizar sweepflag
+  const selectSweepFlag = document.getElementById("sweepFlag");
+
+  let sweepFlag = selectSweepFlag.value; // inicializar valor 
+
+  selectSweepFlag.addEventListener("change", () => {
+    sweepFlag = selectSweepFlag.value; 
+    updatePath();
+  });
+
+  // Actualizar path
+  function updatePath() {
+    path.setAttribute('d', `M 150 150 A 50 150 ${rotationValue} ${largeArcFlag} ${sweepFlag} 250 150`);
+  }
+
+</script>
+
+</body>
+</html>
 ```
 
 ### 5.1.8 Ejercicio
