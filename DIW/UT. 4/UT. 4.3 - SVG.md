@@ -1413,9 +1413,55 @@ Al igual que cualquier etiqueta HTML, SVG también admite modificadores de estil
 | font-stretch	| normal	| Grado de compactación del texto. |
 | font-style	| normal |	normal, cursiva...	|
 | font-variant |	normal |	Variaciones de la tipografías.	| 
-| font-weight	| normal	| Peso o grosor del texto. |
+| font-weight	| normal	| Grosor del texto. |
 
 ```
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;    
+  }
+
+  #estilo1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    fill: blue;
+    font-style: italic;
+    font-stretch: expanded;
+  }
+
+  .estilo2 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    fill:blueviolet;
+    text-decoration: underline;
+  }
+</style>
+
+<body>
+  <div>
+    <svg viewBox="0 0 500 150" width="500">
+      <text id="estilo1" x="35" y="55">
+        Modificador de estilos 1 
+      </text>
+
+      <text class="estilo2" x="35" y="90">
+        Modificar de estilos 2 
+      </text>
+    
+      <text style="font-size:40px" fill="red" x="35" y="135">
+        Modificar de estilos 3 
+      </text>
+    </svg>  
+  </div>   
+</body>
+```
+
+### 5.3.3 Path sobre textos  
+La etiqueta `<textPath>`permite pintar un texto siguiendo un elemento `<path>`. 
+
 
 
 
