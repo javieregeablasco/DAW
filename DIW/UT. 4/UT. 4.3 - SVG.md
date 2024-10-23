@@ -862,7 +862,7 @@ El atributo **stroke-opacity** permite establecer la opacidad del elemento (grad
 </svg>
 ```
 
->**Ejercicio.**
+>**Ejercicio.**  
 Realizar un programa SVG que renderize una imagen similar a la siguiente:
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/anillos1.png">
 
@@ -913,9 +913,12 @@ Posibles valores de stroke-linejoin:
 
 </svg>
 ```
+>**Ejercicio**  
+Realizar un programa SVG que renderize un cuadrado.  
+Aplicar en cada esquina un valor de ´stroke-linecap` diferente.
 
 -  **Atributo stroke-miterlimit**  
-El atributo stroke-miterlimit permite modificar como se ve el ángulo puntiagudo cuando se ha definido valores `miter`, `miter-clip` en el atributo `stroke-linejoin`.
+El atributo stroke-miterlimit permite modificar como se ve el ángulo puntiagudo cuando se han definido los valores `miter`, `miter-clip` en el atributo `stroke-linejoin`.
 ```
 <div>
   <svg viewBox="0 0 300 90" width="1200">
@@ -943,6 +946,10 @@ El atributo stroke-miterlimit permite modificar como se ve el ángulo puntiagudo
   </svg>
 </div>
 ```
+
+>**Ejercicio**  
+Realizar un programa SVG que renderize un triángulo.  
+Aplicar en cada esquina un valor de ´stroke-miterlimit` diferente.  
 
 #### 5.2.1.3 Patrones en trazos
 -  **Atributo stroke-dasharray**  
