@@ -1403,6 +1403,8 @@ textLength	none	Indica una distancia entre carácteres. Usado junto al atributo 
 
 
 
+
+
 <poner dentro use y symbol y hacer referencia a g>
 ## 5.4 Animaciones
 <meter dentro los gradientes>
