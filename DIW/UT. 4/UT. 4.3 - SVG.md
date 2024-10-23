@@ -1460,7 +1460,7 @@ Al igual que cualquier etiqueta HTML, SVG también admite modificadores de estil
 ```
 
 ### 5.3.3 Path sobre textos  
-La etiqueta `<textPath>`permite pintar un texto siguiendo un elemento `<path>`. 
+La etiqueta `<textPath>`permite pintar un texto siguiendo un elemento `<path>`.   
 **Ejemplo:**
 ```
 <!DOCTYPE html>
