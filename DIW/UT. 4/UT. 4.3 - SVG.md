@@ -1517,7 +1517,7 @@ La etiqueta `<textPath>`permite pintar un texto siguiendo un elemento `<path>`.
 ```
 
 ## 5.4 Buenas prácticas y simplificación del código (2)
-Como acabamos de ver en el ejemplo anterior, se han utilizado 3 elementos nuevos: `<defs>` `<symbol>` y `<use>` así como el identificador id.  
+Como acabamos de ver en el ejemplo anterior, se han utilizado 3 elementos nuevos: `<defs>` `<symbol>` y `<use>` así como el identificador `id`.  
 
 - **Elemento** `<defs>`  
   El elemento `<defs>` se utiliza para **almacenar objetos gráficos** que se utilizarán más adelante. Para mostrarlos hay que hacer referencia a ellos con un elemento <use>.  
