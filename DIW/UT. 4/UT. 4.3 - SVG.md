@@ -1461,11 +1461,55 @@ Al igual que cualquier etiqueta HTML, SVG también admite modificadores de estil
 
 ### 5.3.3 Path sobre textos  
 La etiqueta `<textPath>`permite pintar un texto siguiendo un elemento `<path>`. 
+**Ejemplo:**
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos CSS en textos de SVG</title>
+</head>
 
+<style>
+  body {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    background-color: #f4f4f4;
+    margin: 100px;    
+  }
 
+  text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    fill: blue;
+    font-style: italic;         
+  }
 
+  svg {
+    background-color:bisque;
+    display: flex;
+    justify-content: center;
+  }
+</style>
 
+<body>
+  <div>
+    <svg viewBox="-20 -20 520 320" width="1000" height="600" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <path id="miPath" d="M 40 180 Q 150 50, 330 150 T 350 0" fill="transparent" stroke="green" stroke-width="0.5" />
+      </defs>
+      <use href="#miPath" fill="none" stroke="#59fa81" />
+      <text lengthAdjust="spacingAndGlyphs" textLength="600">
+        <textPath href="#miPath">Texto siguiendo un path en forma de curva de bezier</textPath>
+      </text>
+    </svg>
+  </div>   
+</body>
 
+</html>
+```
 
 ## 5.4 Buenas prácticas y simplificación del código (2)
 
