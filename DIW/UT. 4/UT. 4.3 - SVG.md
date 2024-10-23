@@ -1499,12 +1499,12 @@ La etiqueta `<textPath>`permite pintar un texto siguiendo un elemento `<path>`.
   <div>
     <svg viewBox="-10 -10 520 320" width="1000" height="600" xmlns="http://www.w3.org/2000/svg">
       <defs>
-        <symbol id="curvedPathSymbol">
+        <symbol id="curvedPath">
           <path id="miPath" d="M 40 180 Q 150 50, 330 150 T 350 0" fill="transparent" stroke="green" stroke-width="0.5" />
         </symbol>
       </defs>
 
-      <use href="#curvedPathSymbol" fill="none" stroke="#59fa81" />
+      <use href="#curvedPath" fill="none" stroke="#59fa81" />
 
       <text lengthAdjust="spacingAndGlyphs" textLength="600">
         <textPath href="#miPath">Texto siguiendo un path en forma de curva de bezier</textPath>
@@ -1517,14 +1517,20 @@ La etiqueta `<textPath>`permite pintar un texto siguiendo un elemento `<path>`.
 ```
 
 ## 5.4 Buenas prácticas y simplificación del código (2)
-Como acabamos de ver en el ejemplo anterior, se han utilizado 3 etiquetas nuevas: `<defs>` `<symbol>` y `<use>` así como el identificador de `<path>`.
-- **Etiqueta** `<defs>`
-- 
+Como acabamos de ver en el ejemplo anterior, se han utilizado 3 elementos nuevos: `<defs>` `<symbol>` y `<use>` así como el identificador id.  
 
+- **Elemento** `<defs>`  
+  El elemento `<defs>` se utiliza para **almacenar objetos gráficos** que se utilizarán más adelante. Para mostrarlos hay que hacer referencia a ellos con un elemento <use>.  
 
+- **Elemento** `<symbol>`  
+  El elemento `<symbol>` se utiliza para **definir objetos de plantilla gráfica reutilizables** que pueden ser instanciados por un elemento <use>.  
 
+- **Identificador** `id`  
+  Permite identificar un elemento para reutilizarlo posteriormente con `<use>`. Para instanciarlo se puede utilizar `href="..."`.
+     
+- **Elemento** `<use>`  
+  Permite reutilizar símbolos o grupos que hayan sido definidos previamente. Tiene varios atributos que se pueden utilizar para personalizar la plantilla y/o cambiar su representación.
 
-<poner dentro use y symbol y hacer referencia a g>
 
  ## 5.4 Animaciones
 <meter dentro los gradientes>
