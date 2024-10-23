@@ -1281,6 +1281,7 @@ A continuación un breve listado de ellos.
   - Al igual que otros frameworks, no tiene estilos SVG específicos.
  
 ## 5.3 Textos y tipografía en SVG
+### 5.3.1 Textos y SVG
 Es posible incluir textos en imágenes SVG. Para ello, se puede utilizar la etiqueta <text>.
 - Etiqueta `<text>`
 
@@ -1401,12 +1402,33 @@ textLength	none	Indica una distancia entre carácteres. Usado junto al atributo 
 </body> 
 ```
 
+### 5.3.2 Estilos de textos y SVG
+Al igual que cualquier etiqueta HTML, SVG también admite modificadores de estilos mediante CSS para pintar textos.
+
+| Atributo CSS | Valor por defecto                                   | Descripción            |
+|------|----------------------------------------------|-----------------------------------|
+| font-family  | - | Tipografía a usar.  |  
+| font-size| medium | Tamaño del texto. | 
+| font-size-adjust  | none | Ajuste del texto. | 
+| font-stretch	| normal	| Grado de compactación del texto. |
+| font-style	| normal |	normal, cursiva...	|
+| font-variant |	normal |	Variaciones de la tipografías.	| 
+| font-weight	| normal	| Peso o grosor del texto. |
+
+```
+
+
+
+
+
+## 5.4 Buenas prácticas y simplificación del código (2)
 
 
 
 
 <poner dentro use y symbol y hacer referencia a g>
-## 5.4 Animaciones
+
+ ## 5.4 Animaciones
 <meter dentro los gradientes>
 
 ## 5.5 Creación de imágenes SVG con editores.>
