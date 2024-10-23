@@ -1495,23 +1495,31 @@ La etiqueta `<textPath>`permite pintar un texto siguiendo un elemento `<path>`.
 </style>
 
 <body>
+  
   <div>
-    <svg viewBox="-20 -20 520 320" width="1000" height="600" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="-10 -10 520 320" width="1000" height="600" xmlns="http://www.w3.org/2000/svg">
       <defs>
-        <path id="miPath" d="M 40 180 Q 150 50, 330 150 T 350 0" fill="transparent" stroke="green" stroke-width="0.5" />
+        <symbol id="curvedPathSymbol">
+          <path id="miPath" d="M 40 180 Q 150 50, 330 150 T 350 0" fill="transparent" stroke="green" stroke-width="0.5" />
+        </symbol>
       </defs>
-      <use href="#miPath" fill="none" stroke="#59fa81" />
+
+      <use href="#curvedPathSymbol" fill="none" stroke="#59fa81" />
+
       <text lengthAdjust="spacingAndGlyphs" textLength="600">
         <textPath href="#miPath">Texto siguiendo un path en forma de curva de bezier</textPath>
       </text>
     </svg>
-  </div>   
-</body>
+  </div>
 
+</body>
 </html>
 ```
 
 ## 5.4 Buenas prácticas y simplificación del código (2)
+Como acabamos de ver en el ejemplo anterior, se han utilizado 3 etiquetas nuevas: `<defs>` `<symbol>` y `<use>` así como el identificador de `<path>`.
+- **Etiqueta** `<defs>`
+- 
 
 
 
