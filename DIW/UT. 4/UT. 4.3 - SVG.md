@@ -8,7 +8,7 @@ Palabras clave: DAW, DIW
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/SVG_logo.svg" width=25%>
 </div>
  
-# 1. - Introducción
+# 1. Introducción
 **SVG (Scalable Vector Graphics)** es un formato de gráficos vectoriales basado en XML que se utiliza para renderizar imágenes bidimensionales.   
 
 A diferencia de los gráficos rasterizados (como JPEG o PNG), que están formados por píxeles, SVG define imágenes mediante formas geométricas (líneas, círculos, polígonos, etc.), lo que le permite ser escalado a cualquier tamaño sin pérdida de calidad.
@@ -21,7 +21,7 @@ También es compatible con todos los navegadores modernos, lo que asegura su ver
 
 - <a href="https://marketplace.visualstudio.com/items?itemName=sidthesloth.svg-snippets">Extensión de SVG para VSC</a>
 
-# 2. - Características de SVG
+# 2. Características de SVG
 -  **Escalabilidad**: Los gráficos SVG pueden ser escalados a cualquier tamaño sin pérdida de calidad.
 
 -  **Interactividad**: Permite agregar interactividad mediante eventos.
@@ -38,7 +38,7 @@ También es compatible con todos los navegadores modernos, lo que asegura su ver
    
 -  **Formato basado en XML**: Al estar escrito en XML, puede ser editado con cualquier editor de texto.
 
-# 3. - Repositorios de imágenes SVG.
+# 3. Repositorios de imágenes SVG.
 Existen numerosos sitios web que ofrecen gráficos SVG listos para usar en proyectos (la mayoría piden suscripción). 
 
 -  <a href="https://worldvectorlogo.com/es">worldvectorlogo</a>
@@ -58,8 +58,8 @@ Existen numerosos sitios web que ofrecen gráficos SVG listos para usar en proye
 -  <a href="https://iconmonstr.com/">iconmonstr</a>
 
 
-## 4. - Formas de insertar imágenes SVG.
-## 4.1 - Etiqueta img para un SVG
+## 4. Formas de insertar imágenes SVG.
+## 4.1 Etiqueta img para un SVG
 Es la forma más sencilla de incluir un archivo SVG. El archivo SVG permanecerá externo, pero será cargado en el documento HTML.  
 
 Para agregar una imagen SVG utilizando la etiqueta <img>, simplemente especificaremos la ruta del archivo SVG dentro de la etiqueta img.
@@ -81,7 +81,7 @@ Para agregar una imagen SVG utilizando la etiqueta <img>, simplemente especifica
 </html>
 ```
 
-## 4.2 - SVG en línea (inline)
+## 4.2 SVG en línea (inline)
 Las imágenes SVG pueden escribirse directamente en el documento HTML mediante la etiqueta <svg> </svg>.  
 
 Para ello tendremos que acceder al código de la imagen.
@@ -93,7 +93,7 @@ Para ello tendremos que acceder al código de la imagen.
   <svg width="50" height="50" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m2.699 20c-.411 0-.699-.312-.699-.662 0-.249.145-.516.497-.703 1.788-.947 3.858-4.226 3.858-6.248-3.016.092-4.326-2.582-4.326-4.258 0-2.006 1.738-4.129 4.308-4.129 3.241 0 4.83 2.547 4.83 5.307 0 5.981-6.834 10.693-8.468 10.693zm10.833 0c-.41 0-.699-.312-.699-.662 0-.249.145-.516.497-.703 1.788-.947 3.858-4.226 3.858-6.248-3.015.092-4.326-2.582-4.326-4.258 0-2.006 1.739-4.129 4.308-4.129 3.241 0 4.83 2.547 4.83 5.307 0 5.981-6.833 10.693-8.468 10.693z" fill-rule="nonzero"/>
   </svg>
 ```  
-## 4.3 - Etiqueta object
+## 4.3 Etiqueta object
 La etiqueta <object> </object> permite incrustar un archivo SVG como un objeto independiente en la página.  
 
 La etiqueta <object> ofrece flexibilidad al incrustar SVGs, permitiendo un control preciso sobre el tamaño y la presentación del gráfico vectorial.
@@ -109,7 +109,7 @@ Donde:
 -  El atributo data="/SVG1/src/img/icono.svg" indica la ruta del archivo SVG.
 -  Los atributos width="50" y height="50" definen las dimensiones del objeto SVG.
   
-## 4.4 - Etiqueta iframe
+## 4.4 Etiqueta iframe
 También se puede usar la etiqueta **iframe** para insertar imágenes SVG. 
 
 Sin embargo, es importante tener en cuenta ciertas consideraciones al utilizar <iframe> para mostrar SVGs:
@@ -122,7 +122,7 @@ Sin embargo, es importante tener en cuenta ciertas consideraciones al utilizar <
 <iframe src="./img/icono.svg" width="50" height="50" title="SVG"></iframe>
 ```
 
-## 4.4 - Usando la propiedad background-image
+## 4.4 Usando la propiedad background-image
 Al igual que la etiqueta iframe, backgroung-image también tiene limitaciones a tener en cuenta.  
 -  **No Accesible:** Las imágenes de fondo SVG no son accesibles a través del texto alternativo (alt) como las imágenes <img>.
 -  **Escalabilidad:** La escalabilidad del SVG se ven limitadas por las propiedad CSS del contenedor.
@@ -132,7 +132,7 @@ Al igual que la etiqueta iframe, backgroung-image también tiene limitaciones a 
 </div>  
 ```
 
-# 5 - Crear un SVG
+# 5 Crear un SVG
 Existen al menos 2 maneras diferentes de crear nuestras imagenes SVG:  
 -  **Programarlas mediante formas geométricas simples**:   
     Como hemos visto SVG es un formato basado en XML lo que permite crear imágenes directamente escribiendo código. 
@@ -140,10 +140,10 @@ Existen al menos 2 maneras diferentes de crear nuestras imagenes SVG:
     Programas de edición de imágenes como **Adobe Illustrator**, **Inkscape** o **Sketch** permiten diseñar imágenes visualmente y luego exportarlas o guardarlas como archivos SVG.  
 
 
-## 5.1 - Programar una imagen
+## 5.1 Programar una imagen
 Para ello podremos usar las formas básicas disponibles como rectángulos, círculos, líneas y rutas pero antes deberemos ver la sintaxis empleada.
 
-### 5.1.1 - Sintaxis de SVG
+### 5.1.1 Sintaxis de SVG
 SVG es un lenguaje XML, por lo que su sintaxis sigue las reglas del XML.
 
 El documento SVG se describe de la siguiente manera:  
@@ -177,7 +177,7 @@ Donde:
    - **`stroke-width="7"`**: Especifica el grosor del contorno del polígono. 
    - **`points="129,150 85,119 41,150 57,104 15,66 68,66 85,15 102,65 156,66 113,98"`**: Define los vértices del polígono mediante un conjunto de coordenadas (x, y). Cada par de números representa un vértice en el espacio del SVG. 
 
-### 5.1.2 - El plano de SVG, atributo viewBox
+### 5.1.2 El plano de SVG, atributo viewBox
 <img src="https://www.aulaclic.es/html/graficos/coordenadas_svg.png">  
 
 
@@ -205,7 +205,7 @@ El atributo viewBox establece la porción del plano SVG que muestra la imagen. E
 >Cambiar los valores de width="105" height="105" viewBox="-100 -100 105 105
 >Entender los resultados obtenidos.
 
-### 5.1.3 - Atributos width y height no proporcionales a viewBox
+### 5.1.3 Atributos width y height no proporcionales a viewBox
 Este concepto es similar al manejo de imágenes con la etiqueta **img**, donde los atributos **width** y **height** deben mantener la misma proporción que la imagen si no queremos que se produzcan distorsiones.  
 
 A diferencia de la etiqueta **img**, la etiqueta **svg**, no produce deformación sino que se ajusta la porción visible.
@@ -241,7 +241,7 @@ En este ejemplo vemos los 4 círculos.
 >Repetir la edición del programa para que solo se vean los circulos verticales.
 >Analizar los resultados obtenidos.
 
-### 5.1.4 - Margenes del viewBox
+### 5.1.4 Margenes del viewBox
 Para asegurarse de que todo el dibujo sea visible, es conveniente elegir un viewbox un poco más grande que la zona ocupada por los elementos del dibujo.  
 
 En los siguientes ejemplos vemos como variando los argumentos pasados a viewBox ya no tenemos recortes del espesor del círculo.  
