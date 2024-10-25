@@ -1118,11 +1118,11 @@ const selectStrokeLineJoin = document.getElementById("strokeLineJoin");
   });
 
   // Actualizar stroke-miterlimit
-  strokeMiterLimit.addEventListener('input', function() {
-    const newValue = this.value;
-    path.setAttribute("stroke-miterlimit", newValue);  
-    displayStrokeMiterLimit.textContent = newValue; // Mostrar valor en fieldset.
-  });
+  strokeMiterLimit.addEventListener('input', () => {
+    const valueStrokeMiterLimit = strokeMiterLimit.value;
+    path.setAttribute("stroke-miterlimit", valueStrokeMiterLimit);  
+    displayStrokeMiterLimit.textContent = valueStrokeMiterLimit; // Mostrar valor en fieldset.
+});
 
 </script>
 
