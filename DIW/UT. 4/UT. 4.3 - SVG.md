@@ -949,7 +949,186 @@ El atributo stroke-miterlimit permite modificar como se ve el ángulo puntiagudo
 
 >**Ejercicio**  
 Realizar un programa SVG que renderize un triángulo.  
-Aplicar en cada esquina un valor de ´stroke-miterlimit` diferente.  
+Aplicar en cada esquina un valor de ´stroke-miterlimit` diferente.
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Join</title>
+</head>
+
+<body>
+
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }  
+
+  svg {
+    background: #ece3e3;
+    margin-top: 15px;
+  }
+      
+  path {
+    stroke: blue;
+    stroke-width: 6px;
+    fill:aquamarine;
+  }
+        
+  div { 
+    background-color: antiquewhite;
+    width: 750px;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  output {
+    margin-top: 5px;
+  }
+ 
+</style>
+
+<div>
+  <svg width="600" height="600" viewBox="-5 -5 310 310" xmlns="http://www.w3.org/2000/svg">
+    <g> <!--Rejilla-->
+          <g stroke="rgba(0, 0, 0, 0.5)" stroke-width="0.5"> <!--lineas horizontales-->
+            <line x1="0" y1="0" x2="300" y2="0" stroke-width="1" stroke="black" />
+            <line x1="0" y1="10" x2="300" y2="10" />
+            <line x1="0" y1="20" x2="300" y2="20" />
+            <line x1="0" y1="30" x2="300" y2="30" />
+            <line x1="0" y1="40" x2="300" y2="40"/>
+            <line x1="0" y1="50" x2="300" y2="50" stroke-width="1" stroke="black"/>
+            <line x1="0" y1="60" x2="300" y2="60" />
+            <line x1="0" y1="70" x2="300" y2="70" />
+            <line x1="0" y1="80" x2="300" y2="80" />
+            <line x1="0" y1="90" x2="300" y2="90" />
+            <line x1="0" y1="100" x2="300" y2="100" stroke-width="1" stroke="black"/>
+            <line x1="0" y1="110" x2="300" y2="110" />
+            <line x1="0" y1="120" x2="300" y2="120" />
+            <line x1="0" y1="130" x2="300" y2="130" />
+            <line x1="0" y1="140" x2="300" y2="140" />
+            <line x1="0" y1="150" x2="300" y2="150" stroke-width="1" stroke="black"/>
+            <line x1="0" y1="160" x2="300" y2="160" />
+            <line x1="0" y1="170" x2="300" y2="170" />
+            <line x1="0" y1="180" x2="300" y2="180" />
+            <line x1="0" y1="190" x2="300" y2="190" />
+            <line x1="0" y1="200" x2="300" y2="200" stroke-width="1" stroke="black"/>
+            <line x1="0" y1="210" x2="300" y2="210" />
+            <line x1="0" y1="220" x2="300" y2="220" />
+            <line x1="0" y1="230" x2="300" y2="230" />
+            <line x1="0" y1="240" x2="300" y2="240" />
+            <line x1="0" y1="250" x2="300" y2="250" stroke-width="1" stroke="black"/>
+            <line x1="0" y1="260" x2="300" y2="260" />
+            <line x1="0" y1="270" x2="300" y2="270" />
+            <line x1="0" y1="280" x2="300" y2="280" />
+            <line x1="0" y1="290" x2="300" y2="290" />
+            <line x1="0" y1="300" x2="300" y2="300" stroke-width="1" stroke="black"/>
+          </g>        
+          
+          <g stroke="rgba(0, 0, 0, 0.5)" stroke-width="0.25"> <!-- Líneas verticales -->
+            <line x1="0" y1="0" x2="0" y2="300" stroke-width="1" stroke="black"/>
+            <line x1="10" y1="0" x2="10" y2="300" />
+            <line x1="20" y1="0" x2="20" y2="300" />
+            <line x1="30" y1="0" x2="30" y2="300" />
+            <line x1="40" y1="0" x2="40" y2="300" />
+            <line x1="50" y1="0" x2="50" y2="300" stroke-width="1" stroke="black"/>
+            <line x1="60" y1="0" x2="60" y2="300" />
+            <line x1="70" y1="0" x2="70" y2="300" />
+            <line x1="80" y1="0" x2="80" y2="300" />
+            <line x1="90" y1="0" x2="90" y2="300" />
+            <line x1="100" y1="0" x2="100" y2="300" stroke-width="1" stroke="black"/>
+            <line x1="110" y1="0" x2="110" y2="300" />
+            <line x1="120" y1="0" x2="120" y2="300" />
+            <line x1="130" y1="0" x2="130" y2="300" />
+            <line x1="140" y1="0" x2="140" y2="300" />
+            <line x1="150" y1="0" x2="150" y2="300" stroke-width="1" stroke="black"/>
+            <line x1="160" y1="0" x2="160" y2="300" />
+            <line x1="170" y1="0" x2="170" y2="300" />
+            <line x1="180" y1="0" x2="180" y2="300" />
+            <line x1="190" y1="0" x2="190" y2="300" />
+            <line x1="200" y1="0" x2="200" y2="300" stroke-width="1" stroke="black"/>
+            <line x1="210" y1="0" x2="210" y2="300" />
+            <line x1="220" y1="0" x2="220" y2="300" />
+            <line x1="230" y1="0" x2="230" y2="300" />
+            <line x1="240" y1="0" x2="240" y2="300" />
+            <line x1="250" y1="0" x2="250" y2="300" stroke-width="1" stroke="black"/>
+            <line x1="260" y1="0" x2="260" y2="300" />
+            <line x1="270" y1="0" x2="270" y2="300" />
+            <line x1="280" y1="0" x2="280" y2="300" />
+            <line x1="290" y1="0" x2="290" y2="300" />
+            <line x1="300" y1="0" x2="300" y2="300" stroke-width="1" stroke="black"/>
+          </g>
+    </g>
+   
+    <path id="lineJoin"
+          d="M 40 170
+             L 180 120
+             L 120 260
+             Z"
+          stroke-linejoin="miter"
+          stroke-miterlimit="10"
+    />    
+  </svg>
+    
+  <p>Valor del atributo <strong>stroke-linejoin</strong></p>
+  <select id="strokeLineJoin">
+    <option value="miter" selected>miter</option>
+    <option value="round">round</option>
+    <option value="bevel">bevel</option>
+    <option value="miter-clip">miter-clip</option>
+  </select>
+
+  <p>Valor del atributo <strong>stroke-miterlimit</strong></p>
+  <fieldset>
+    <legend>Modificar valor</legend>
+      <span>
+        <input type="range" id="strokeMiterLimit" min="1.5" max="3.5" step="0.1" value="3.5">
+        <output id="displayStrokeMiterLimit">3.5</output>
+      </span>
+    </fieldset>
+
+</div>  
+
+<script>
+  // Definiciones
+const selectStrokeLineJoin = document.getElementById("strokeLineJoin");
+  const path = document.getElementById("lineJoin");
+  const strokeMiterLimit = document.getElementById("strokeMiterLimit");
+  const displayStrokeMiterLimit = document.getElementById("displayStrokeMiterLimit");
+
+  // Actualizar stroke-linejoin
+  selectStrokeLineJoin.addEventListener("change", () => {
+    const strokeLineJoin = selectStrokeLineJoin.value;
+    path.setAttribute("stroke-linejoin", strokeLineJoin);         
+  });
+
+  // Actualizar stroke-miterlimit
+  strokeMiterLimit.addEventListener('input', function() {
+    const newValue = this.value;
+    path.setAttribute("stroke-miterlimit", newValue);  
+    displayStrokeMiterLimit.textContent = newValue; // Mostrar valor en fieldset.
+  });
+
+</script>
+
+</body>
+</html>
+```
 
 #### 5.2.1.3 Patrones en trazos
 -  **Atributo stroke-dasharray**  
