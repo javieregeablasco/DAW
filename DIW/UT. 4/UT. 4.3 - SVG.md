@@ -1493,8 +1493,8 @@ Es posible incluir textos en imágenes SVG. Para ello, se puede utilizar la etiq
 
 textLength	none	Indica una distancia entre carácteres. Usado junto al atributo anterior.
 
-| Atributo | Valor por defecto   | Descripción   |
-|---|---|----|
+| Atributo | Valor por defecto | Descripción |
+|---|---|---|
 | x y  |  Posición en horizontal y vertical del texto respecto al viewBox del element.  |  0 |
 | dx dy  | Desplazamiento en horizontal y vertical del texto respecto a su posición.  |  none |
 | rotate  | none | Indica una rotación para cada uno de los carácteres del texto (por separado).  | 
