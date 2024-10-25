@@ -1207,7 +1207,8 @@ El atributo stroke-dashoffset establece un desplazamiento al principio del trazo
 ```
 > **Ejercicio**  
 >Sobre la base del ejemplo anterior.  
->Realizar un SVG que dibuje 2 circulos que usen el mismo stroke-dasharray.  
+>Realizar un SVG que dibuje 2 circulos que usen el mismo stroke-dasharray.
+>   
 >**Posible solución:**  
 >   
 ><img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/circulos%20animados.png">
@@ -1332,10 +1333,12 @@ El atributo stroke-dashoffset establece un desplazamiento al principio del trazo
 ```  
 > **Ejercicio**  
 >Sobre la base del ejemplo anterior.  
->Realizar un SVG que dibuje 2 elipses concentricas. 
+>Realizar un SVG que dibuje 2 elipses concentricas.  
 >Cada elipse tendrá una relleno diferente.  
 >Comprobar qué ocurre cuando se cambia el valor de `<fill-rule>`
->Posible solución   
+> 
+>**Posible solución:**
+> 
 ><img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/elipses%20solapadas.png">
 ### 5.2.2 Estilos SVG
 Aplicar estilos CSS a un SVG es similar a aplicar estilos a cualquier otro elemento HTML. De hecho, en los ejemplos anteiores, ya hemos estado aplicado todo tipo de estilos a los elementos SVG. 
