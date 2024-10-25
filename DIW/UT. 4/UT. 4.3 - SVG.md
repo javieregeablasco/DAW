@@ -1493,14 +1493,14 @@ Es posible incluir textos en imágenes SVG. Para ello, se puede utilizar la etiq
 
 textLength	none	Indica una distancia entre carácteres. Usado junto al atributo anterior.
 
-| Atributo | Valor por defecto | Descripción |
+| Atributo      | Descripción |Valor por defecto
 |---|---|---|
 | x y  |  Posición en horizontal y vertical del texto respecto al viewBox del element.  |  0 |
 | dx dy  | Desplazamiento en horizontal y vertical del texto respecto a su posición.  |  none |
-| rotate  | none | Indica una rotación para cada uno de los carácteres del texto (por separado).  | 
-| lengthAdjust  |  Indica el tipo de ajuste de carácteres. spacingAndGlyphs evita solapamiento.  | spacing |
-| text-anchor | Define cómo se alinea el texto con respecto a las coordenadas x e y.| **start** Alineado al inicio del texto. **middle** Centrado en el texto. **end** Alineado al final del texto.| 
-|dominant-baseline | Controla la alineación vertical del texto.| | middle: Centrado verticalmente. hanging: Alineado por el borde superior del texto. alphabetic: Alineado por el borde inferior del texto.
+| rotate  |Indica una rotación para cada uno de los carácteres del texto (por separado).  |  none | 
+| lengthAdjust  |  Indica el tipo de ajuste de carácteres.  | **spacing**: las letras del texto no se reduce llegando a solaparse. **spacingAndGlyphs**: Las letras del texto se reduce evitando el solapamiento. |
+| text-anchor | Define cómo se alinea el texto con respecto a las coordenadas x e y.| **start** Alineado al inicio del texto.     **middle** Centrado en el texto. **end** Alineado al final del texto.| 
+|dominant-baseline | Controla la alineación vertical del texto.|  **middle**: Centrado verticalmente. **hanging**: Alineado por el borde superior del texto. **alphabetic**: Alineado por el borde inferior del texto.|      
 
 - **Ejemplo**
 ```
@@ -1613,15 +1613,15 @@ textLength	none	Indica una distancia entre carácteres. Usado junto al atributo 
 ### 5.3.2 Estilos de textos y SVG
 Al igual que cualquier etiqueta HTML, SVG también admite modificadores de estilos mediante CSS para pintar textos.
 
-| Atributo CSS | Valor por defecto                                   | Descripción            |
+| Atributo CSS | Descripción            | Valor por defecto |
 |------|----------------------------------------------|-----------------------------------|
-| font-family  | - | Tipografía a usar.  |  
-| font-size| medium | Tamaño del texto. | 
-| font-size-adjust  | none | Ajuste del texto. | 
-| font-stretch	| normal	| Grado de compactación del texto. |
-| font-style	| normal |	normal, cursiva...	|
-| font-variant |	normal |	Variaciones de la tipografías.	| 
-| font-weight	| normal	| Grosor del texto. |
+| font-family  | Tipografía a usar.  |  - | 
+| font-size| Tamaño del texto. |  medium |
+| font-size-adjust  | Ajuste del texto. |  none |
+| font-stretch	| Grado de compactación del texto. | normal	|
+| font-style	| normal, cursiva...	|normal |	
+| font-variant |		Variaciones de la tipografías.	| normal |
+| font-weight	| Grosor del texto. | normal	|
 
 ```
 <style>
