@@ -1205,7 +1205,7 @@ El atributo stroke-dashoffset establece un desplazamiento al principio del trazo
 
 </body>
 ```
-> **Ejercicio**
+> **Ejercicio**  
 >Sobre la base del ejemplo anterior.  
 >Realizar un SVG que dibuje 2 circulos que usen el mismo stroke-dasharray.
 
