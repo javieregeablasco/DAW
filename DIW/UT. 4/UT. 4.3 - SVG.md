@@ -1493,33 +1493,14 @@ Es posible incluir textos en imágenes SVG. Para ello, se puede utilizar la etiq
 
 textLength	none	Indica una distancia entre carácteres. Usado junto al atributo anterior.
 
-| Atributo      | Descripción |Valor por defecto|
+|<img width=100/> Atributo <img width=100/> |<img width=300/> Descripción <img width=300/>| Valor por defecto |
 |---|---|---|
-| x y  |  Posición en horizontal y vertical del texto respecto al viewBox del element.  |  0 |
+| x y  |  Posición en horizontal y vertical del texto respecto al viewBox del elemento.  |  0 |
 | dx dy  | Desplazamiento en horizontal y vertical del texto respecto a su posición.  |  none |
 | rotate  |Indica una rotación para cada uno de los carácteres del texto (por separado).  |  none | 
 | lengthAdjust  |  Indica el tipo de ajuste de carácteres.  | **spacing**: las letras del texto no se reduce llegando a solaparse. **spacingAndGlyphs**: Las letras del texto se reduce evitando el solapamiento.|
-| text-anchor | Define cómo se alinea el texto con respecto a las coordenadas x e y.| **start** Alineado al inicio del texto.     **middle** Centrado en el texto. **end** Alineado al final del texto.| 
-|dominant-baseline | Controla la alineación vertical del texto.|  **middle**: Centrado verticalmente. **hanging**: Alineado por el borde superior del texto. **alphabetic**: Alineado por el borde inferior del texto.|      
-
-<table>
-    <tr>
-        <th style="width: 40%;">Atributo</th>
-        <th style="width: 70%;">Descripción</th>
-        <th style="width: 70%;">Valor por defecto</th>
-    </tr>
-    <tr>
-        <td>Contenido</td>
-        <td>Contenido más amplio</td>
-     <td>Contenido más amplio</td>
-     
-    </tr>
-   <tr>
-        <td>Contenido</td>
-        <td>Contenido más amplio</td>
-    <td>Contenido más amplio</td>
-    </tr>
-</table>
+| text-anchor | Define cómo se alinea el texto con respecto a las coordenadas x e y.| **start** Alineado al inicio del texto. <img width=220/>**middle** Centrado en el texto.<img width=280/> **end** Alineado al final del texto.| 
+|dominant-baseline | Controla la alineación vertical del texto.|  **middle**: Centrado verticalmente.<img width=250/> **hanging**: Alineado por el borde superior del texto. <img width=100/>**alphabetic**: Alineado por el borde inferior del texto.|      
 
 
 - **Ejemplo**
