@@ -1612,17 +1612,25 @@ textLength	none	Indica una distancia entre carácteres. Usado junto al atributo 
 ```
 
 ### 5.3.2 Estilos de textos y SVG
-Al igual que cualquier etiqueta HTML, SVG también admite modificadores de estilos mediante CSS para pintar textos.
+Al igual que cualquier etiqueta HTML, SVG también admite atributos de estilos mediante CSS para modificar textos.
 
 | Atributo CSS | Descripción            | Valor por defecto |
 |------|----------------------------------------------|-----------------------------------|
-| font-family  | Tipografía a usar.  |  - | 
-| font-size| Tamaño del texto. |  medium |
+| font-family  | Familia de fuentes que se utilizará.  |  - | 
+| font-size| Tamaño de la fuente. |  medium |
 | font-size-adjust  | Ajuste del texto. |  none |
 | font-stretch	| Grado de compactación del texto. | normal	|
 | font-style	| normal, cursiva...	|normal |	
-| font-variant |		Variaciones de la tipografías.	| normal |
-| font-weight	| Grosor del texto. | normal	|
+| font-variant | Controla la variante de la fuente (normal, small-caps). | normal |
+| font-weight	| Grosor de la fuente. | normal	|
+| text-decoration | Decoraciones del texto (none, underline, overline o line-through).| none |
+| fill | Color del texto. | black |
+| fill-opacity | Opacidad del color de relleno del texto. | 1 |
+| stroke | Color del contorno del texto. | black |
+| stroke-width | Ancho del contorno del texto. | 0 |
+| stroke-opacity | Opacidad del color del contorno del texto. | 0 |
+
+
 
 ```
 <style>
