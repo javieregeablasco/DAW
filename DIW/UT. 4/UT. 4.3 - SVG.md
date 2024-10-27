@@ -1803,7 +1803,7 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
      - **to** (opcional): Valor final del atributo al final de la animación.
      - **by** (opcional): Valor que se sumará al valor inicial para establecer el valor final de la animación.
      - **values** (opcional): Lista de valores (separados por punto y coma `;`) que el atributo adoptará durante la animación, creando una secuencia de valores.
-     - **begin** (opcional): Momento en que se inicia la animación (se definie en segundos o por un evento).
+     - **begin** (opcional): Momento en que se inicia la animación (se define en **una lista de tiempos** o por un evento).
      - **dur** (opcional): Duración de la animación (en `"s"` o `"indefinite"` para animaciones sin fin.
      - **end** (opcional): Especifica cuándo debe finalizar la animación. Útil cuando no se define `dur`.
      - **repeatCount** (opcional): Número de repeticiones de la animación (1, 2, 3, ... `"indefinite"`).     - 
@@ -1892,22 +1892,13 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
 </html>
 ```
 
-
-
-
 >**Ejercicio**
->Realizar un programa con la etiqueta `<path>`que haga lo siguiente.
->1. Circulo (disco) de color rojo, r=25, cx=50, cy=50.
->2. A los 2 segundos el disco se desplazará 150 unidades de viewport según el eje x, y cambiará a color verde. 
->3. A los 4 segundos el disco se desplazará 150 unidades de viewport según el eje y, y cambiará a color azul.
->4. A los 6 segundos el disco se desplazará **-150 unidades** de viewport **según el eje x**, y cambiará a color amarillo.
->5. A los 8 segundos el disco se desplazará **-150 unidades** de viewport **según el eje y**, y cambiará a color rojo.
+>Modificar el programa anterior para que el anillo vaya de izquierda a derecha y de derecha a izquierda.
+>Modificar el programa anterior para que el anillo vaya de izquierda a derecha y de derecha a izquierda **2 veces**.
+>Modificar el programa anterior para que el anillo vaya de izquierda a derecha y de derecha a izquierda **sin parar**.
+>Modificar el programa anterior para que el anillo vaya de izquierda a derecha y de derecha a izquierda **10 veces**.
 
 
-
-
-
-   
 
    - **Etiqueta `<animateTransform>`**
      - Uso general: se utiliza para aplicar transformaciones (escalado, rotación, traslación).
