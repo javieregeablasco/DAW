@@ -1809,28 +1809,10 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
        - `"linear"`: interpolación lineal entre valores.
        - `"paced"`: interpolación basada en la distancia, creando un ritmo constante.
        - `"spline"`: interpolación basada en los valores de `keySplines`.
-
-
-
+     - **additive** (opcional): Determina si la animación debe sumarse al valor inicial (`"sum"`) o reemplazarlo (`"replace"`).
+     - **accumulate** (opcional): Define si los valores de animación deben acumularse en cada repetición (`"sum"`) o no (`"none"`).
      - **id** (opcional): Identificador único para la animación, **permitiendo que otras animaciones o scripts la instancien**.
      - **xlink:href** (opcional): Apunta a un elemento específico dentro del SVG al que se aplicará la animación, útil cuando `<set>` se encuentra fuera del elemento que se quiere animar.
-
-
-
-15. **additive** (opcional):  
-    - Determina si la animación debe sumarse al valor inicial (`"sum"`) o reemplazarlo (`"replace"`).
-
-16. **accumulate** (opcional):  
-    - Define si los valores de animación deben acumularse en cada repetición (`"sum"`) o no (`"none"`).
-
-17. **id** (opcional):  
-    - Un identificador único para la animación, permitiendo que otras animaciones o scripts hagan referencia a ella.
-
-18. **xlink:href** (opcional):  
-    - En SVG, apunta a un elemento específico para aplicar la animación si `<animate>` se encuentra fuera del elemento a animar.
-
-Estos atributos hacen que `<animate>` sea extremadamente flexible y adecuado para diferentes tipos de animaciones en SVG.
-
 
 
 
