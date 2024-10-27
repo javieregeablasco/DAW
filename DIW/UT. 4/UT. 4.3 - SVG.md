@@ -1773,24 +1773,8 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
      - **fill** (opcional): Define cómo se comporta la animación antes de comenzar y después de finalizar. Sus valores pueden ser:
         - `"remove"`: elimina el efecto después de la animación.
         - `"freeze"`: mantiene el valor de `to` después de que la animación termina.
-
-9. **id** (opcional):  
-   - Asigna un identificador único para la animación, permitiendo que otras animaciones o scripts la refieran.
-
-10. **xlink:href** (opcional):  
-    - Apunta a un elemento específico dentro del SVG al que se aplicará la animación, útil cuando `<set>` se encuentra fuera del elemento que se quiere animar.
-
-Estos atributos permiten flexibilidad en la temporización y control de la animación de manera precisa en un SVG.
-
-
-
-
-
-
-
-
-
-
+     - **id** (opcional): Identificador único para la animación, **permitiendo que otras animaciones o scripts la instancien**.
+     - **xlink:href** (opcional): Apunta a un elemento específico dentro del SVG al que se aplicará la animación, útil cuando `<set>` se encuentra fuera del elemento que se quiere animar.
 
 
 
