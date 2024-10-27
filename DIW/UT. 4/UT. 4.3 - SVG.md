@@ -1797,6 +1797,7 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
    - **Etiqueta `<animate>`**  
    La principal diferencia con respeto a `<set>` es que `<animate >` permite **modificar atributos a lo largo del tiempo**.
    Principales atributos de la etiqueta `<animate>`. 
+     - **attributeType** ="XML"
      - **attributeName** (obligatorio): Nombre del atributo que se desea cambiar.
      - **from** (opcional): Valor inicial del atributo antes de que comience la animación.
      - **to** (opcional): Valor final del atributo al final de la animación.
