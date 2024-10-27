@@ -1762,6 +1762,7 @@ En el contexto de SVG, SMIL se usa a través de etiquetas, permitiendo animar at
 Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una opción poderosa para animaciones básicas en gráficos vectoriales.
 
    - **Etiqueta `<set>`**  
+   La etiqueta <set> permite cambiar el valor de un atributo de un elemento SVG en un momento determinado sin una transición progresiva. Básicamente, actúa como un interruptor que establece un nuevo valor para un atributo durante un tiempo específico.
    Principales atributos de la etiqueta `<set>`. 
      - **attributeName** (obligatorio): Nombre del atributo que se desea cambiar.
      - **to** (obligatorio): Valor al que se cambiará el atributo durante la animación.
@@ -1784,14 +1785,35 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
 >4. A los 6 segundos el disco se desplazará **-150 unidades** de viewport **según el eje x**, y cambiará a color amarillo.
 >5. A los 8 segundos el disco se desplazará **-150 unidades** de viewport **según el eje y**, y cambiará a color rojo.
   
-
-
-
-
-
-
    - **Etiqueta `<animate>`**  
-     - Uso general: permite modificar atributos de un elemento SVG a lo largo del tiempo (por ejemplo, cambiar el color, el tamaño, la opacidad).
+   La principal diferencia con respeto a `<set>` es que `<animate >` permite **modificar atributos a lo largo del tiempo**.
+   Principales atributos de la etiqueta `<animate>`. 
+     - **attributeName** (obligatorio): Nombre del atributo que se desea cambiar.
+     - **to** (obligatorio): Valor al que se cambiará el atributo durante la animación.
+     - **begin** (opcional): Momento en que se inicia la animación (se definie en segundos o por un evento).
+     - **dur** (opcional): Duración durante la cual el atributo se mantendrá en el valor especificado en `to`.
+     - **end** (opcional): Especifica cuándo debe finalizar la animación. Útil cuando no se define `dur`.
+     - **repeatCount** (opcional): Número de repeticiones de la animación (1, 2, 3, ... `"indefinite"`).
+     - **repeatDur** (opcional): Tiempo total de la duración de todas las repeticiones de la animación (s). Al alcanzar esta duración, la animación se detiene, independientemente de `repeatCount`.
+     - **fill** (opcional): Define cómo se comporta la animación antes de comenzar y después de finalizar. Sus valores pueden ser:
+        - `"remove"`: elimina el efecto después de la animación.
+        - `"freeze"`: mantiene el valor de `to` después de que la animación termina.
+     - **id** (opcional): Identificador único para la animación, **permitiendo que otras animaciones o scripts la instancien**.
+     - **xlink:href** (opcional): Apunta a un elemento específico dentro del SVG al que se aplicará la animación, útil cuando `<set>` se encuentra fuera del elemento que se quiere animar.
+
+>**Ejercicio**
+>Realizar un programa con la etiqueta `<path>`que haga lo siguiente.
+>1. Circulo (disco) de color rojo, r=25, cx=50, cy=50.
+>2. A los 2 segundos el disco se desplazará 150 unidades de viewport según el eje x, y cambiará a color verde. 
+>3. A los 4 segundos el disco se desplazará 150 unidades de viewport según el eje y, y cambiará a color azul.
+>4. A los 6 segundos el disco se desplazará **-150 unidades** de viewport **según el eje x**, y cambiará a color amarillo.
+>5. A los 8 segundos el disco se desplazará **-150 unidades** de viewport **según el eje y**, y cambiará a color rojo.
+
+
+
+
+
+   
      - Atributos principales: `attributeName` (atributo a animar), `from`, `to`, `dur` (duración), `repeatCount`.
      - Ejemplo práctico: cómo cambiar el color de un círculo de rojo a azul en 2 segundos.
 
