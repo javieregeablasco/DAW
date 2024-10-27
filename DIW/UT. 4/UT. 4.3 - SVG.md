@@ -1825,10 +1825,71 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
 
 **Ejemplo:**
 ```
-<svg width="250" height="100" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="50" cy="50" r="25" style="fill:red;">
-    <set attributeName="cx" to="200" begin="2s" />
-</svg>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate</title>
+</head>
+<body>
+  <div style="font-family: Arial, Helvetica, sans-serif; font-size: 20; color: black; margin-bottom: 20px; text-decoration: underline;">Etiqueta animate</div>
+  <svg width="300" height="250" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 250">
+    <title>Animación</title>
+
+    <line x1="0" y1="0" x2="0" y2="120" stroke="#aa5050" stroke-width="60" />
+
+    <circle cx="52" cy="30" r="20" stroke="black" stroke-width="4" fill="none"> 
+      <animate 
+        attributeType="XML"
+        id="bolaDerecha"
+        attributeName="cx"
+        from="52" 
+        to="213"
+        dur="9s"
+        begin="0s"
+        repeatCount="2"
+        values="52;80;190;213;"
+        fill="freeze"
+        calcMode="linear" 
+        end="18"
+
+      />
+      <!-- to y values -> values se sobrepone a los valores de from y -->
+      <!-- fill  -> de freeze a remove -->
+      <!-- calcMode  -> de discrete a paced -->
+      <!-- end  -> de 18 a 10 -->
+  
+    </circle>
+
+    <rect x="235" y="0" width="10" height="120" fill="#347350" />        
+
+    <circle cx="80" cy="30" r="2" stroke="blue" stroke-width="4" fill="none"/>
+    <circle cx="190" cy="30" r="2" stroke="blue" stroke-width="4" fill="none"/>
+    
+    <!-- Visualizar tiempo transcurrido -->
+    <text x="10" y="180" font-family="Arial" font-size="20" fill="black" >Tiempo trancurrido:</text>
+    <text x="10" y="200" font-family="Arial" font-size="20" fill="black" id="timeDisplay">0.0s</text>
+      
+  </svg>
+
+  <script>
+    let seconds = 0; 
+    const display = document.getElementById('timeDisplay');
+
+    function updateTime() {
+      seconds += 0.1; 
+      display.textContent = seconds.toFixed(1) + "s";
+        if (seconds < 18) {
+          setTimeout(updateTime, 100); // Llama a updateTime cada 100 ms
+        }
+    }
+
+    updateTime();
+  </script>
+
+</body>
+</html>
 ```
 
 
