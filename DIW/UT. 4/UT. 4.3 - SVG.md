@@ -1762,8 +1762,9 @@ En el contexto de SVG, SMIL se usa a través de etiquetas, permitiendo animar at
 Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una opción poderosa para animaciones básicas en gráficos vectoriales.
 
    - **Etiqueta `<set>`**  
-   La etiqueta <set> permite cambiar el valor de un atributo de un elemento SVG en un momento determinado sin una transición progresiva. Básicamente, actúa como un interruptor que establece un nuevo valor para un atributo durante un tiempo específico.
-   Principales atributos de la etiqueta `<set>`. 
+   La etiqueta <set> permite cambiar el valor de un atributo de un elemento SVG en un momento determinado sin una transición progresiva.    
+   Básicamente, actúa como un interruptor que establece un nuevo valor para un atributo durante un tiempo específico.  
+   **Principales atributos de la etiqueta** `<set>`. 
      - **attributeName** (obligatorio): Nombre del atributo que se desea cambiar.
      - **to** (obligatorio): Valor al que se cambiará el atributo durante la animación.
      - **begin** (opcional): Momento en que se inicia la animación (se definie en segundos o por un evento).
