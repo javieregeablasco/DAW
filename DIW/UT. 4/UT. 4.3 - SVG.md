@@ -1778,8 +1778,12 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
 
 >**Ejercicio**
 >Realizar un programa con la etiqueta `<path>`que haga lo siguiente.
->1. Circulo de color rojo, r=25, cx=50, cy=50.
->2. 
+>1. Circulo (disco) de color rojo, r=25, cx=50, cy=50.
+>2. A los 2 segundos el disco se desplazará 150 unidades de viewport según el eje x, y cambiará a color verde. 
+>3. A los 4 segundos el disco se desplazará 150 unidades de viewport según el eje y, y cambiará a color azul.
+>4. A los 6 segundos el disco se desplazará **-150 unidades** de viewport **según el eje x**, y cambiará a color amarillo.
+>5. A los 8 segundos el disco se desplazará **-150 unidades** de viewport **según el eje y**, y cambiará a color rojo.
+  
 
 
 
