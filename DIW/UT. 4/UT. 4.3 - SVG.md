@@ -1767,20 +1767,12 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
      - **to** (obligatorio): Valor al que se cambiará el atributo durante la animación.
      - **begin** (opcional): Momento en que se inicia la animación (se definie en segundos o por un evento).
      - **dur** (opcional): Duración durante la cual el atributo se mantendrá en el valor especificado en `to`.
-
-5. **end** (opcional):  
-   - Especifica cuándo debe finalizar la animación. Este atributo es útil cuando no se define `dur`.
-
-6. **repeatCount** (opcional):  
-   - Controla el número de repeticiones de la animación. Puede ser un número específico o `"indefinite"` para repetir indefinidamente.
-
-7. **repeatDur** (opcional):  
-   - Define el tiempo total de la duración de todas las repeticiones de la animación, en segundos (como `"10s"`). Al alcanzar esta duración, la animación se detiene, independientemente de `repeatCount`.
-
-8. **fill** (opcional):  
-   - Controla cómo se comporta la animación antes de comenzar y después de finalizar. Sus valores pueden ser:
-     - `"remove"`: elimina el efecto después de la animación.
-     - `"freeze"`: mantiene el valor de `to` después de que la animación termina.
+     - **end** (opcional): Especifica cuándo debe finalizar la animación. Útil cuando no se define `dur`.
+     - **repeatCount** (opcional): Número de repeticiones de la animación (1, 2, 3, ... `"indefinite"`).
+     - **repeatDur** (opcional): Tiempo total de la duración de todas las repeticiones de la animación (s). Al alcanzar esta duración, la animación se detiene, independientemente de `repeatCount`.
+     - **fill** (opcional): Define cómo se comporta la animación antes de comenzar y después de finalizar. Sus valores pueden ser:
+        - `"remove"`: elimina el efecto después de la animación.
+        - `"freeze"`: mantiene el valor de `to` después de que la animación termina.
 
 9. **id** (opcional):  
    - Asigna un identificador único para la animación, permitiendo que otras animaciones o scripts la refieran.
