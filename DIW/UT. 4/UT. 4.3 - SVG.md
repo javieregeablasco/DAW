@@ -1748,8 +1748,69 @@ Como acabamos de ver en el ejemplo anterior, se han utilizado 3 elementos nuevos
 - **Elemento** `<use>`  
   Permite reutilizar símbolos o grupos que hayan sido definidos previamente. Tiene varios atributos que se pueden utilizar para personalizar la plantilla y/o cambiar su representación.
 
+## 5.4 Animaciones
+Animar SVGs tiene varias ventajas: mejora la experiencia del usuario al hacer las interfaces visualmente más atractivas e interactivas, facilita la transmisión de información (como en gráficos o indicadores), y añade personalidad a elementos visuales de manera dinámica y fluida.  
+Estas animaciones se pueden definir mediante etiquetas SMIL (Synchronized Multimedia Integration Language) dentro del SVG, usando propiedades de CSS o con scripts de JavaScript.  
 
- ## 5.4 Animaciones
-<meter dentro los gradientes>
+<a href="https://www.tutorialspoint.com/svg/src/loaders/index.html">**Ejemplos de animaciones:**</a>
 
-## 5.5 Creación de imágenes SVG con editores.>
+
+
+
+
+### 5.4.1 Animaciones con etiquetas SMIL. 
+Toda la información disponible <a href="https://www.w3.org/TR/SVG11/animate.html">**aquí**</a>.
+
+SMIL (Synchronized Multimedia Integration Language) es un lenguaje basado en XML que permite definir animaciones y sincronización multimedia en archivos SVG.
+En el contexto de SVG, SMIL se usa a través de etiquetas, permitiendo animar atributos de los elementos SVG, sin necesidad de JavaScript.  
+Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una opción poderosa para animaciones básicas en gráficos vectoriales.
+
+
+
+   - **Etiqueta `<animate>`**  
+     - Uso general: permite modificar atributos de un elemento SVG a lo largo del tiempo (por ejemplo, cambiar el color, el tamaño, la opacidad).
+     - Atributos principales: `attributeName` (atributo a animar), `from`, `to`, `dur` (duración), `repeatCount`.
+     - Ejemplo práctico: cómo cambiar el color de un círculo de rojo a azul en 2 segundos.
+
+   - **Etiqueta `<animateTransform>`**
+     - Uso general: se utiliza para aplicar transformaciones (escalado, rotación, traslación).
+     - Atributos clave: `type` (tipo de transformación), `from`, `to`, `dur`, `repeatCount`.
+     - Ejemplo: hacer rotar un rectángulo de forma continua.
+
+   - **Etiqueta `<animateMotion>`**
+     - Uso: anima un elemento a lo largo de un camino definido.
+     - Atributos importantes: `path` (definir el camino), `keyPoints`, `keyTimes`.
+     - Ejemplo práctico: mover una estrella a lo largo de un círculo.
+
+#### 4. **Otras Etiquetas de Animación**
+   - **Etiqueta `<set>`**
+     - Útil para cambiar un atributo específico en un momento determinado sin una transición progresiva.
+     - Ejemplo: establecer el color de un rectángulo en rojo tras 3 segundos de visualización.
+
+   - **Etiqueta `<mpath>`**
+     - Uso: funciona junto con `<animateMotion>` para definir caminos complejos de movimiento.
+     - Ejemplo práctico: animar un elemento siguiendo una ruta SVG creada con `<path>`.
+
+
+
+
+#### 5. **Uso de Scripts para Animación en SVG**
+   - Introducción a los scripts en SVG usando JavaScript.
+   - Ejemplos básicos: iniciar, pausar y detener animaciones mediante JavaScript.
+   - Buenas prácticas para la implementación de scripts en SVG, especialmente en entornos interactivos.
+
+#### 6. **Ejemplos Prácticos Combinando Etiquetas de Animación**
+   - Ejercicio de creación: animar un logo con rotación, cambios de color y movimiento.
+   - Ejemplo completo de un SVG animado que incorpore `<animate>`, `<animateTransform>` y `<animateMotion>`.
+
+#### 7. **Conclusiones y Buenas Prácticas en Animación SVG**
+   - Consejos para optimizar el rendimiento de las animaciones SVG.
+   - Breve mención de otras herramientas de animación y cómo integrarlas con SVG.
+
+--- 
+
+¿Te gustaría agregar algo específico o ejemplos adicionales en alguna sección?
+
+
+
+## 5.5 Creación de imágenes SVG con editores.>>
