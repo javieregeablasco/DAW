@@ -1790,17 +1790,50 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
    La principal diferencia con respeto a `<set>` es que `<animate >` permite **modificar atributos a lo largo del tiempo**.
    Principales atributos de la etiqueta `<animate>`. 
      - **attributeName** (obligatorio): Nombre del atributo que se desea cambiar.
-     - **to** (obligatorio): Valor al que se cambiará el atributo durante la animación.
+     - **from** (opcional): Valor inicial del atributo antes de que comience la animación.
+     - **to** (opcional): Valor final del atributo al final de la animación.
+     - **by** (opcional): Valor que se sumará al valor inicial para establecer el valor final de la animación.
+     - **values** (opcional): Lista de valores (separados por punto y coma `;`) que el atributo adoptará durante la animación, creando una secuencia de valores.
      - **begin** (opcional): Momento en que se inicia la animación (se definie en segundos o por un evento).
-     - **dur** (opcional): Duración durante la cual el atributo se mantendrá en el valor especificado en `to`.
+     - **dur** (opcional): Duración de la animación (en `"s"` o `"indefinite"` para animaciones sin fin.
      - **end** (opcional): Especifica cuándo debe finalizar la animación. Útil cuando no se define `dur`.
-     - **repeatCount** (opcional): Número de repeticiones de la animación (1, 2, 3, ... `"indefinite"`).
-     - **repeatDur** (opcional): Tiempo total de la duración de todas las repeticiones de la animación (s). Al alcanzar esta duración, la animación se detiene, independientemente de `repeatCount`.
+     - **repeatCount** (opcional): Número de repeticiones de la animación (1, 2, 3, ... `"indefinite"`).     - 
+     - **repeatDur** (opcional): Tiempo total de la duración de todas las repeticiones de la animación (s).     - 
      - **fill** (opcional): Define cómo se comporta la animación antes de comenzar y después de finalizar. Sus valores pueden ser:
         - `"remove"`: elimina el efecto después de la animación.
         - `"freeze"`: mantiene el valor de `to` después de que la animación termina.
+     - **keySplines** (opcional): Define la curva de interpolación para animaciones de tipo `keyTimes`, usando valores en el formato de función de Bezier cúbica.
+     - **keyTimes** (opcional): Lista de tiempos normales entre `0` y `1`, separados por punto y coma (`;`), que determinan en qué momento debe alcanzarse cada valor de `values`.
+     - **calcMode** (opcional): Define el método de interpolación entre valores de la animación. Puede ser:
+       - `"discrete"`: cambio instantáneo entre valores.
+       - `"linear"`: interpolación lineal entre valores.
+       - `"paced"`: interpolación basada en la distancia, creando un ritmo constante.
+       - `"spline"`: interpolación basada en los valores de `keySplines`.
+
+
+
      - **id** (opcional): Identificador único para la animación, **permitiendo que otras animaciones o scripts la instancien**.
      - **xlink:href** (opcional): Apunta a un elemento específico dentro del SVG al que se aplicará la animación, útil cuando `<set>` se encuentra fuera del elemento que se quiere animar.
+
+
+
+15. **additive** (opcional):  
+    - Determina si la animación debe sumarse al valor inicial (`"sum"`) o reemplazarlo (`"replace"`).
+
+16. **accumulate** (opcional):  
+    - Define si los valores de animación deben acumularse en cada repetición (`"sum"`) o no (`"none"`).
+
+17. **id** (opcional):  
+    - Un identificador único para la animación, permitiendo que otras animaciones o scripts hagan referencia a ella.
+
+18. **xlink:href** (opcional):  
+    - En SVG, apunta a un elemento específico para aplicar la animación si `<animate>` se encuentra fuera del elemento a animar.
+
+Estos atributos hacen que `<animate>` sea extremadamente flexible y adecuado para diferentes tipos de animaciones en SVG.
+
+
+
+
 
 >**Ejercicio**
 >Realizar un programa con la etiqueta `<path>`que haga lo siguiente.
@@ -1815,8 +1848,6 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
 
 
    
-     - Atributos principales: `attributeName` (atributo a animar), `from`, `to`, `dur` (duración), `repeatCount`.
-     - Ejemplo práctico: cómo cambiar el color de un círculo de rojo a azul en 2 segundos.
 
    - **Etiqueta `<animateTransform>`**
      - Uso general: se utiliza para aplicar transformaciones (escalado, rotación, traslación).
