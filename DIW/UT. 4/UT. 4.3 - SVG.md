@@ -1778,6 +1778,14 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
      - **id** (opcional): Identificador único para la animación, **permitiendo que otras animaciones o scripts la instancien**.
      - **xlink:href** (opcional): Apunta a un elemento específico dentro del SVG al que se aplicará la animación, útil cuando `<set>` se encuentra fuera del elemento que se quiere animar.
 
+**Ejemplo:**
+```
+<svg width="250" height="100" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="25" style="fill:red;">
+    <set attributeName="cx" to="200" begin="2s" />
+</svg>
+```
+
 >**Ejercicio**
 >Realizar un programa con la etiqueta `<path>`que haga lo siguiente.
 >1. Circulo (disco) de color rojo, r=25, cx=50, cy=50.
