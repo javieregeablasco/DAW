@@ -1754,16 +1754,55 @@ Estas animaciones se pueden definir mediante etiquetas SMIL (Synchronized Multim
 
 <a href="https://www.tutorialspoint.com/svg/src/loaders/index.html">**Ejemplos de animaciones:**</a>
 
-
-
-
-
 ### 5.4.1 Animaciones con etiquetas SMIL. 
 Toda la información disponible <a href="https://www.w3.org/TR/SVG11/animate.html">**aquí**</a>.
 
 SMIL (Synchronized Multimedia Integration Language) es un lenguaje basado en XML que permite definir animaciones y sincronización multimedia en archivos SVG.
 En el contexto de SVG, SMIL se usa a través de etiquetas, permitiendo animar atributos de los elementos SVG, sin necesidad de JavaScript.  
 Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una opción poderosa para animaciones básicas en gráficos vectoriales.
+
+   - **Etiqueta `<set>`**  
+   Principales atributos de la etiqueta `<set>`. 
+     - **attributeName** (obligatorio): Nombre del atributo que se desea cambiar.
+     - **to** (obligatorio): Valor al que se cambiará el atributo durante la animación.
+     - **begin** (opcional): Momento en que se inicia la animación (se definie en segundos o por un evento).
+     - **dur** (opcional): Duración durante la cual el atributo se mantendrá en el valor especificado en `to`.
+
+5. **end** (opcional):  
+   - Especifica cuándo debe finalizar la animación. Este atributo es útil cuando no se define `dur`.
+
+6. **repeatCount** (opcional):  
+   - Controla el número de repeticiones de la animación. Puede ser un número específico o `"indefinite"` para repetir indefinidamente.
+
+7. **repeatDur** (opcional):  
+   - Define el tiempo total de la duración de todas las repeticiones de la animación, en segundos (como `"10s"`). Al alcanzar esta duración, la animación se detiene, independientemente de `repeatCount`.
+
+8. **fill** (opcional):  
+   - Controla cómo se comporta la animación antes de comenzar y después de finalizar. Sus valores pueden ser:
+     - `"remove"`: elimina el efecto después de la animación.
+     - `"freeze"`: mantiene el valor de `to` después de que la animación termina.
+
+9. **id** (opcional):  
+   - Asigna un identificador único para la animación, permitiendo que otras animaciones o scripts la refieran.
+
+10. **xlink:href** (opcional):  
+    - Apunta a un elemento específico dentro del SVG al que se aplicará la animación, útil cuando `<set>` se encuentra fuera del elemento que se quiere animar.
+
+Estos atributos permiten flexibilidad en la temporización y control de la animación de manera precisa en un SVG.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
