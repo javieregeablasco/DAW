@@ -1896,12 +1896,15 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
 >Modificar el programa anterior para que el anillo vaya de izquierda a derecha y de derecha a izquierda.
 >Modificar el programa anterior para que el anillo vaya de izquierda a derecha y de derecha a izquierda **2 veces**.
 >Modificar el programa anterior para que el anillo vaya de izquierda a derecha y de derecha a izquierda **sin parar**.
->Modificar el programa anterior para que el anillo vaya de izquierda a derecha y de derecha a izquierda **10 veces**.
-
-
+>Modificar el programa anterior para que el anillo vaya de izquierda a derecha y de derecha a izquierda **5 veces**.
+>Modificar el programa anterior para que el tiempo que el anillo vaya de izquierda a derecha sea **4 veces** el tiempo que el anillo vaya de de derecha a izquierda.
+>Modificar el programa anterior para que los topes izquierdo y derecho cambien de color al impactar el anillo contra ellos.
+> 
 
    - **Etiqueta `<animateTransform>`**
-     - Uso general: se utiliza para aplicar transformaciones (escalado, rotación, traslación).
+
+<!--   
+   Se utiliza para aplicar transformaciones como escalado, rotación, traslación...
      - Atributos clave: `type` (tipo de transformación), `from`, `to`, `dur`, `repeatCount`.
      - Ejemplo: hacer rotar un rectángulo de forma continua.
 
@@ -1911,9 +1914,7 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
      - Ejemplo práctico: mover una estrella a lo largo de un círculo.
 
 #### 4. **Otras Etiquetas de Animación**
-   - **Etiqueta `<set>`**
-     - Útil para cambiar un atributo específico en un momento determinado sin una transición progresiva.
-     - Ejemplo: establecer el color de un rectángulo en rojo tras 3 segundos de visualización.
+  
 
    - **Etiqueta `<mpath>`**
      - Uso: funciona junto con `<animateMotion>` para definir caminos complejos de movimiento.
@@ -1922,23 +1923,15 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
 
 
 
-#### 5. **Uso de Scripts para Animación en SVG**
+**Uso de Scripts para Animación en SVG**
    - Introducción a los scripts en SVG usando JavaScript.
    - Ejemplos básicos: iniciar, pausar y detener animaciones mediante JavaScript.
    - Buenas prácticas para la implementación de scripts en SVG, especialmente en entornos interactivos.
 
-#### 6. **Ejemplos Prácticos Combinando Etiquetas de Animación**
-   - Ejercicio de creación: animar un logo con rotación, cambios de color y movimiento.
-   - Ejemplo completo de un SVG animado que incorpore `<animate>`, `<animateTransform>` y `<animateMotion>`.
 
-#### 7. **Conclusiones y Buenas Prácticas en Animación SVG**
-   - Consejos para optimizar el rendimiento de las animaciones SVG.
-   - Breve mención de otras herramientas de animación y cómo integrarlas con SVG.
 
---- 
-
-¿Te gustaría agregar algo específico o ejemplos adicionales en alguna sección?
 
 
 
 ## 5.5 Creación de imágenes SVG con editores.>>
+-->
