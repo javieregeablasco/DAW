@@ -1750,7 +1750,7 @@ Como acabamos de ver en el ejemplo anterior, se han utilizado 3 elementos nuevos
 
 ## 5.4 Animaciones
 Animar SVGs tiene varias ventajas: mejora la experiencia del usuario al hacer las interfaces visualmente más atractivas e interactivas, facilita la transmisión de información (como en gráficos o indicadores), y añade personalidad a elementos visuales de manera dinámica y fluida.  
-Estas animaciones se pueden definir mediante etiquetas SMIL (Synchronized Multimedia Integration Language) dentro del SVG, usando propiedades de CSS o con scripts de JavaScript.  
+Estas animaciones se pueden definir mediante **etiquetas SMIL** (Synchronized Multimedia Integration Language) dentro del SVG, usando **propiedades de CSS** o con **scripts de JavaScript**.  
 
 <a href="https://www.tutorialspoint.com/svg/src/loaders/index.html">**Ejemplos de animaciones:**</a>
 
@@ -1787,12 +1787,12 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
 ```
 
 >**Ejercicio**
->Realizar un programa con la etiqueta `<path>`que haga lo siguiente.
->1. Circulo (disco) de color rojo, r=25, cx=50, cy=50.
->2. A los 2 segundos el disco se desplazará 150 unidades de viewport según el eje x, y cambiará a color verde. 
->3. A los 4 segundos el disco se desplazará 150 unidades de viewport según el eje y, y cambiará a color azul.
->4. A los 6 segundos el disco se desplazará **-150 unidades** de viewport **según el eje x**, y cambiará a color amarillo.
->5. A los 8 segundos el disco se desplazará **-150 unidades** de viewport **según el eje y**, y cambiará a color rojo.
+>Realizar un programa con la etiqueta `<set>`que haga lo siguiente.  
+>1. Circulo (disco) de color rojo, r=25, cx=50, cy=50.  
+>2. A los 2 segundos el disco se desplazará 150 unidades de viewport según el eje x, y cambiará a color verde.   
+>3. A los 4 segundos el disco se desplazará 150 unidades de viewport según el eje y, y cambiará a color azul.  
+>4. A los 6 segundos el disco se desplazará **-150 unidades** de viewport **según el eje x**, y cambiará a color amarillo.  
+>5. A los 8 segundos el disco se desplazará **-150 unidades** de viewport **según el eje y**, y cambiará a color rojo.  
   
    - **Etiqueta `<animate>`**  
    La principal diferencia con respeto a `<set>` es que `<animate >` permite **modificar atributos a lo largo del tiempo**.
