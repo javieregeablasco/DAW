@@ -1893,13 +1893,13 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
 ```
 
 >**Ejercicio**
->Modificar el programa anterior para que el anillo vaya de izquierda a derecha y de derecha a izquierda.
->Modificar el programa anterior para que el anillo vaya de izquierda a derecha y de derecha a izquierda **2 veces**.
->Modificar el programa anterior para que el anillo vaya de izquierda a derecha y de derecha a izquierda **sin parar**.
->Modificar el programa anterior para que el anillo vaya de izquierda a derecha y de derecha a izquierda **5 veces**.
->Modificar el programa anterior para que el tiempo que el anillo vaya de izquierda a derecha sea **4 veces** el tiempo que el anillo vaya de de derecha a izquierda.
->Modificar el programa anterior para que los topes izquierdo y derecho cambien de color al impactar el anillo contra ellos.
-> 
+>Modificar el programa anterior para que el anillo vaya de izquierda a derecha y de derecha a izquierda.  
+>Modificar el programa anterior para que el anillo vaya de izquierda a derecha y de derecha a izquierda **2 veces**.  
+>Modificar el programa anterior para que el anillo vaya de izquierda a derecha y de derecha a izquierda **sin parar**.  
+>Modificar el programa anterior para que el anillo vaya de izquierda a derecha y de derecha a izquierda **5 veces**.  
+>Modificar el programa anterior para que el tiempo que el anillo vaya de izquierda a derecha sea **4 veces** el tiempo que el anillo vaya de de derecha a izquierda.  
+>Modificar el programa anterior para que los topes izquierdo y derecho cambien de color al impactar el anillo contra ellos.  
+>   
 
    - **Etiqueta `<animateTransform>`**
 
