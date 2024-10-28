@@ -1904,13 +1904,43 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
    - **Etiqueta `<animateTransform>`**
 
 <!--   
+   - **Etiqueta `<animateTransform>`**  
+   La etiqueta `<animateTransform>` SVG permite **animar transformaciones** como traslaciones, rotaciones, escalas e inclinaciones.  
+   A diferencia de la etiqueta `<animate>`, que solo puede animar **atributos individuales**, `<animateTransform>` permite transformaciones complejas en el tiempo.  
+   
+   Principales atributos de la etiqueta `<animateTransform>`. 
+     - **attributeType** ="XML"
+     - **attributeName** (obligatorio): Nombre del atributo que se desea cambiar.
+     - **from** (opcional): Valor inicial del atributo antes de que comience la animación.
+     - **to** (opcional): Valor final del atributo al final de la animación.
+     - **by** (opcional): Valor que se sumará al valor inicial para establecer el valor final de la animación.
+     - **values** (opcional): Lista de valores (separados por punto y coma `;`) que el atributo adoptará durante la animación, creando una secuencia de valores.
+     - **begin** (opcional): Momento en que se inicia la animación (se define en **una lista de tiempos** o por un evento).
+     - **dur** (opcional): Duración de la animación (en `"s"` o `"indefinite"` para animaciones sin fin.
+     - **end** (opcional): Especifica cuándo debe finalizar la animación. Útil cuando no se define `dur`.
+     - **repeatCount** (opcional): Número de repeticiones de la animación (1, 2, 3, ... `"indefinite"`).     - 
+     - **repeatDur** (opcional): Tiempo total de la duración de todas las repeticiones de la animación (s).     - 
+     - **fill** (opcional): Define cómo se comporta la animación antes de comenzar y después de finalizar. Sus valores pueden ser:
+        - `"remove"`: elimina el efecto después de la animación.
+        - `"freeze"`: mantiene el valor de `to` después de que la animación termina.
+     - **keySplines** (opcional): Define la curva de interpolación para animaciones de tipo `keyTimes`, usando valores en el formato de función de Bezier cúbica.
+     - **keyTimes** (opcional): Lista de tiempos normales entre `0` y `1`, separados por punto y coma (`;`), que determinan en qué momento debe alcanzarse cada valor de `values`.
+     - **calcMode** (opcional): Define el método de interpolación entre valores de la animación. Puede ser:
+       - `"discrete"`: cambio instantáneo entre valores.
+       - `"linear"`: interpolación lineal entre valores.
+       - `"paced"`: interpolación basada en la distancia, creando un ritmo constante.
+       - `"spline"`: interpolación basada en los valores de `keySplines`.
+     - **additive** (opcional): Determina si la animación debe sumarse al valor inicial (`"sum"`) o reemplazarlo (`"replace"`).
+     - **accumulate** (opcional): Define si los valores de animación deben acumularse en cada repetición (`"sum"`) o no (`"none"`).
+     - **id** (opcional): Identificador único para la animación, **permitiendo que otras animaciones o scripts la instancien**.
+     - **xlink:href** (opcional): Apunta a un elemento específico dentro del SVG al que se aplicará la animación, útil cuando `<set>` se encuentra fuera del elemento que se quiere animar.
 
 
 ### Atributos de `<animateTransform>`
 
 1. **attributeType** (opcional): Especifica el tipo de atributo que se está animando. Los valores posibles son:
-
-
+"XML": Indica que el atributo es un atributo XML.
+"CSS": Indica que el atributo es un estilo CSS.
 2. **attributeName** (obligatorio): El nombre del atributo de transformación que se va a animar, como `"transform"`.
 
 3. **type** (obligatorio): Especifica el tipo de transformación a aplicar. Los valores pueden ser:
