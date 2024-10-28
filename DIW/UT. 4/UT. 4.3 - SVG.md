@@ -1909,8 +1909,7 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
 ### Atributos de `<animateTransform>`
 
 1. **attributeType** (opcional): Especifica el tipo de atributo que se está animando. Los valores posibles son:
-   - `"XML"`: Indica que el atributo es un atributo XML.
-   - `"CSS"`: Indica que el atributo es un estilo CSS.
+
 
 2. **attributeName** (obligatorio): El nombre del atributo de transformación que se va a animar, como `"transform"`.
 
