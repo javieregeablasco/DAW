@@ -1909,20 +1909,30 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
    A diferencia de la etiqueta `<animate>`, que solo puede animar **atributos individuales**, `<animateTransform>` permite transformaciones complejas en el tiempo.  
    
    Principales atributos de la etiqueta `<animateTransform>`. 
-     - **attributeType** ="XML"
+     - **attributeType** (opcional): Especifica el tipo de atributo que se está animando. Los valores posibles son:
+        - "XML": El atributo es un atributo XML.
+        - "CSS": El atributo es un estilo CSS.
+        
      - **attributeName** (obligatorio): Nombre del atributo que se desea cambiar.
+     - **type** (obligatorio): Tipo de transformación a aplicar. Los posibles valores son:
+        - `"translate"`: Mueve el elemento en el eje X e Y.
+        - `"rotate"`: Rota el elemento alrededor de un punto.
+        - `"scale"`: Escala el elemento en los ejes X e Y.
+        - `"skewX"`: Aplica una inclinación en el eje X.
+        - `"skewY"`: Aplica una inclinación en el eje Y.        
      - **from** (opcional): Valor inicial del atributo antes de que comience la animación.
      - **to** (opcional): Valor final del atributo al final de la animación.
+     
      - **by** (opcional): Valor que se sumará al valor inicial para establecer el valor final de la animación.
      - **values** (opcional): Lista de valores (separados por punto y coma `;`) que el atributo adoptará durante la animación, creando una secuencia de valores.
-     - **begin** (opcional): Momento en que se inicia la animación (se define en **una lista de tiempos** o por un evento).
-     - **dur** (opcional): Duración de la animación (en `"s"` o `"indefinite"` para animaciones sin fin.
-     - **end** (opcional): Especifica cuándo debe finalizar la animación. Útil cuando no se define `dur`.
-     - **repeatCount** (opcional): Número de repeticiones de la animación (1, 2, 3, ... `"indefinite"`).     - 
-     - **repeatDur** (opcional): Tiempo total de la duración de todas las repeticiones de la animación (s).     - 
+     - **begin** (opcional): Momento en que se inicia la animación (se define en **una lista de tiempos** o por un evento).     
+     - **dur** (opcional): Duración de la animación (en `"s"` o `"indefinite"` para animaciones sin fin.     
+     - **end** (opcional): Especifica cuándo debe finalizar la animación. Útil cuando no se define `dur`.     
+     - **repeatCount** (opcional): Número de repeticiones de la animación (1, 2, 3, ... `"indefinite"`).     
+     - **repeatDur** (opcional): Tiempo total de la duración de todas las repeticiones de la animación (s).     
      - **fill** (opcional): Define cómo se comporta la animación antes de comenzar y después de finalizar. Sus valores pueden ser:
         - `"remove"`: elimina el efecto después de la animación.
-        - `"freeze"`: mantiene el valor de `to` después de que la animación termina.
+        - `"freeze"`: mantiene el valor de `to` después de que la animación termina.                  
      - **keySplines** (opcional): Define la curva de interpolación para animaciones de tipo `keyTimes`, usando valores en el formato de función de Bezier cúbica.
      - **keyTimes** (opcional): Lista de tiempos normales entre `0` y `1`, separados por punto y coma (`;`), que determinan en qué momento debe alcanzarse cada valor de `values`.
      - **calcMode** (opcional): Define el método de interpolación entre valores de la animación. Puede ser:
@@ -1933,95 +1943,10 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
      - **additive** (opcional): Determina si la animación debe sumarse al valor inicial (`"sum"`) o reemplazarlo (`"replace"`).
      - **accumulate** (opcional): Define si los valores de animación deben acumularse en cada repetición (`"sum"`) o no (`"none"`).
      - **id** (opcional): Identificador único para la animación, **permitiendo que otras animaciones o scripts la instancien**.
-     - **xlink:href** (opcional): Apunta a un elemento específico dentro del SVG al que se aplicará la animación, útil cuando `<set>` se encuentra fuera del elemento que se quiere animar.
+     - **xlink:href** se usa para apuntar a un elemento específico y aplica solo cuando el <animateTransform> está fuera del elemento a animar.
+     -  **xmlns:xlink**="http://www.w3.org/1999/xlink" define el espacio de nombres en el SVG.
 
 
-### Atributos de `<animateTransform>`
-
-1. **attributeType** (opcional): Especifica el tipo de atributo que se está animando. Los valores posibles son:
-"XML": Indica que el atributo es un atributo XML.
-"CSS": Indica que el atributo es un estilo CSS.
-2. **attributeName** (obligatorio): El nombre del atributo de transformación que se va a animar, como `"transform"`.
-
-3. **type** (obligatorio): Especifica el tipo de transformación a aplicar. Los valores pueden ser:
-   - `"translate"`: Mueve el elemento en el eje X e Y.
-   - `"rotate"`: Rota el elemento alrededor de un punto.
-   - `"scale"`: Escala el elemento en los ejes X e Y.
-   - `"skewX"`: Aplica una inclinación en el eje X.
-   - `"skewY"`: Aplica una inclinación en el eje Y.
-
-4. **from** (opcional): El valor inicial de la transformación, que debe coincidir con el tipo de transformación.
-
-5. **to** (opcional): El valor final de la transformación.
-
-6. **dur** (obligatorio): La duración de la animación, especificada en segundos o milisegundos (por ejemplo, `"2s"` o `"2000ms"`).
-
-7. **begin** (opcional): Define cuándo debe comenzar la animación. Puede ser un tiempo (por ejemplo, `"0s"`), un evento (como `"click"`), o una referencia a otra animación (por ejemplo, `id.end`).
-
-8. **repeatCount** (opcional): Define cuántas veces se repetirá la animación. Puede ser un número entero o `"indefinite"` para que se repita indefinidamente.
-
-9. **repeatDur** (opcional): El tiempo total de duración de todas las repeticiones de la animación.
-
-10. **fill** (opcional): Define cómo se comporta la animación antes de que comience y después de que termine. Los valores pueden incluir:
-    - `"remove"`: El efecto se elimina después de la animación.
-    - `"freeze"`: Mantiene el valor final de la transformación después de la animación.
-    - `"hold"`: Mantiene el estado final hasta que se inicie otra animación.
-
-11. **keyTimes** (opcional): Especifica el tiempo en el que deben ocurrir los cambios en la animación. Se proporciona como una lista de valores entre `0` y `1`, donde `0` representa el inicio y `1` el final.
-
-12. **values** (opcional): Una lista de valores a los que el atributo debe cambiar en los tiempos especificados por `keyTimes`.
-
-13. **id** (opcional): Un identificador único para la animación, lo que permite que otras animaciones o scripts hagan referencia a ella.
-
-14. **xlink:href** (opcional): Hace referencia a un elemento específico dentro del SVG al que se aplicará la animación.
-
-### Ejemplo de uso de `<animateTransform>`
-
-Aquí tienes un ejemplo que muestra cómo usar `<animateTransform>` para traducir (mover) un círculo:
-
-
-
-La etiqueta `<animateTransform>` en SVG se utiliza para aplicar transformaciones animadas a un elemento, como traducción, rotación o escalado. Aquí tienes una lista de los atributos que puedes utilizar con `<animateTransform>`:
-
-### Atributos de `<animateTransform>`
-
-1. **attributeName** (obligatorio): Especifica el nombre del atributo que se va a animar. Debe ser `"transform"` para transformaciones.
-
-2. **type** (obligatorio): Define el tipo de transformación que se aplicará. Los valores posibles son:
-   - `"translate"`: Mueve el elemento en el espacio.
-   - `"rotate"`: Rota el elemento alrededor de un punto específico.
-   - `"scale"`: Cambia el tamaño del elemento.
-   - `"skewX"`: Aplica una distorsión en el eje X.
-   - `"skewY"`: Aplica una distorsión en el eje Y.
-
-3. **from** (opcional): El valor inicial de la transformación antes de que comience la animación.
-
-4. **to** (opcional): El valor final de la transformación al final de la animación.
-
-5. **dur** (opcional): La duración total de la animación. Puede ser en segundos (`s`) o milisegundos (`ms`).
-
-6. **begin** (opcional): Especifica cuándo debe comenzar la animación. Puede ser un valor de tiempo o un evento (como `click`, `mouseover`, etc.).
-
-7. **repeatCount** (opcional): Número de veces que se repetirá la animación. Puede ser un número entero o `"indefinite"` para repetir infinitamente.
-
-8. **repeatDur** (opcional): La duración total para todas las repeticiones de la animación.
-
-9. **fill** (opcional): Define el comportamiento del valor del atributo antes de que comience la animación y después de que termine. Puede tener los valores:
-   - `"remove"`: El efecto de la animación se elimina al final.
-   - `"freeze"`: Mantiene el valor final de la animación al finalizar.
-   - `"auto"`: Mantiene el valor de inicio hasta que comience la animación.
-
-10. **keyTimes** (opcional): Define los puntos de tiempo en que ocurren los cambios de valor. Los valores están normalizados entre 0 y 1.
-
-11. **values** (opcional): Una lista de valores a través de los cuales el atributo se animará. Los valores están separados por punto y coma.
-
-12. **calcMode** (opcional): Especifica cómo se calculan los valores a través del tiempo. Los posibles valores son:
-    - `"linear"`: La animación se mueve a una velocidad constante.
-    - `"spline"`: Usa una función de spline cúbica para la interpolación (requiere un atributo `keySplines`).
-    - `"discrete"`: Mantiene un valor constante hasta que llega al siguiente valor definido en `values`.
-    - `"paced"`: Se adapta a la longitud de la animación para crear un efecto suave.
-
-13. **keySplines** (opcional): Se usa con `calcMode="spline"` para definir curvas de Bézier que modifican la interpolación entre valores.
 
 ### Ejemplo de Uso
 
@@ -2058,44 +1983,13 @@ Aquí tienes un ejemplo sencillo de cómo se puede usar `<animateTransform>` par
 
 
 
-
-
-En este ejemplo, el círculo rojo gira 360 grados alrededor de su centro en un ciclo que se repite indefinidamente.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
    - **Etiqueta `<animateMotion>`**
      - Uso: anima un elemento a lo largo de un camino definido.
      - Atributos importantes: `path` (definir el camino), `keyPoints`, `keyTimes`.
      - Ejemplo práctico: mover una estrella a lo largo de un círculo.
 
-#### 4. **Otras Etiquetas de Animación**
-  
-
-   - **Etiqueta `<mpath>`**
-     - Uso: funciona junto con `<animateMotion>` para definir caminos complejos de movimiento.
-     - Ejemplo práctico: animar un elemento siguiendo una ruta SVG creada con `<path>`.
 
 
-
-
-**Uso de Scripts para Animación en SVG**
-   - Introducción a los scripts en SVG usando JavaScript.
-   - Ejemplos básicos: iniciar, pausar y detener animaciones mediante JavaScript.
-   - Buenas prácticas para la implementación de scripts en SVG, especialmente en entornos interactivos.
 
 
 
