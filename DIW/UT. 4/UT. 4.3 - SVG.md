@@ -1754,7 +1754,7 @@ Estas animaciones se pueden definir mediante **etiquetas SMIL** (Synchronized Mu
 
 <a href="https://www.tutorialspoint.com/svg/src/loaders/index.html">**Ejemplos de animaciones.**</a>  
 
-<a href="https://svg-tutorial.com/">**Ejemplos y tutoriales.**</a>
+<a href="https://svg-tutorial.com/">**Tutoriales y ejemplos.**</a>
 
 ### 5.5.1 Animaciones con etiquetas SMIL. 
 Toda la información <a href="https://www.w3.org/TR/SVG11/animate.html">**aquí**</a>.
