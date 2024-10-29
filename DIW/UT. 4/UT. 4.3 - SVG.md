@@ -1748,7 +1748,7 @@ Como acabamos de ver en el ejemplo anterior, se han utilizado 3 elementos nuevos
 - **Elemento** `<use>`  
   Permite reutilizar símbolos o grupos que hayan sido definidos previamente. Tiene varios atributos que se pueden utilizar para personalizar la plantilla y/o cambiar su representación.
 
-## 5.4 Animaciones
+## 5.5 Animaciones
 Animar SVGs tiene varias ventajas: mejora la experiencia del usuario al hacer las interfaces visualmente más atractivas e interactivas, facilita la transmisión de información (como en gráficos o indicadores), y añade personalidad a elementos visuales de manera dinámica y fluida.  
 Estas animaciones se pueden definir mediante **etiquetas SMIL** (Synchronized Multimedia Integration Language) dentro del SVG, usando **propiedades de CSS** o con **scripts de JavaScript**.  
 
@@ -1756,7 +1756,7 @@ Estas animaciones se pueden definir mediante **etiquetas SMIL** (Synchronized Mu
 
 <a href="https://svg-tutorial.com/">**Ejemplos y tutoriales.**</a>
 
-### 5.4.1 Animaciones con etiquetas SMIL. 
+### 5.5.1 Animaciones con etiquetas SMIL. 
 Toda la información <a href="https://www.w3.org/TR/SVG11/animate.html">**aquí**</a>.
 
 SMIL (Synchronized Multimedia Integration Language) es un lenguaje basado en XML que permite definir animaciones y sincronización multimedia en archivos SVG.
@@ -1797,10 +1797,11 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
 >5. A los 8 segundos el disco se desplazará **-150 unidades** de viewGrid **según el eje y**, y cambiará a color rojo.  
   
    - **Etiqueta `<animate>`**  
-   La principal diferencia con respeto a `<set>` es que `<animate >` permite **modificar atributos a lo largo del tiempo**.
+   La principal diferencia con respeto a `<set>` es que `<animate >` permite **modificar atributos a lo largo del tiempo**.  
    Principales atributos de la etiqueta `<animate>`. 
      - **attributeType** ="XML"
-     - **attributeName** (obligatorio): Nombre del atributo que se desea cambiar.
+     - **attributeName** (obligatorio): Nombre del atributo que se desea cambiar.  
+     [**Atributos de SVG**](https://developer.mozilla.org/es/docs/Web/SVG/Attribute)
      - **from** (opcional): Valor inicial del atributo antes de que comience la animación.
      - **to** (opcional): Valor final del atributo al final de la animación.
      - **by** (opcional): Valor que se sumará al valor inicial para establecer el valor final de la animación.
@@ -1903,21 +1904,21 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
 >Modificar el programa anterior para que los topes izquierdo y derecho cambien de color al impactar el anillo contra ellos.  
 >   
 
-   - **Etiqueta `<animateTransform>`**
+   - **Etiqueta `<animateTransform>`**  
    La etiqueta `<animateTransform>` SVG permite **animar transformaciones** como traslaciones, rotaciones, escalas e inclinaciones.  
    A diferencia de la etiqueta `<animate>`, que solo puede animar **atributos individuales**, `<animateTransform>` permite transformaciones complejas en el tiempo.  
-   
-   Principales atributos de la etiqueta `<animateTransform>`. 
-     - **attributeType** (opcional): Especifica el tipo de atributo que se está animando. Los valores posibles son:
-        - "XML": El atributo es un atributo XML.
-        - "CSS": El atributo es un estilo CSS.        
-     - **attributeName** (obligatorio): Nombre del atributo que se desea cambiar.
-     - **type** (obligatorio): Tipo de transformación a aplicar. Los posibles valores son:
-        - `"translate"`: Mueve el elemento en el eje X e Y.
-        - `"rotate"`: Rota el elemento alrededor de un punto.
-        - `"scale"`: Escala el elemento en los ejes X e Y.
-        - `"skewX"`: Aplica una inclinación en el eje X.
-        - `"skewY"`: Aplica una inclinación en el eje Y.        
+     Principales atributos de la etiqueta `<animateTransform>`. 
+     - **attributeType** (opcional): Especifica el tipo de atributo que se está animando. Los valores posibles son:  
+        - "XML": El atributo es un atributo XML.  
+        - "CSS": El atributo es un estilo CSS.          
+     - **attributeName** (obligatorio): Nombre del atributo que se desea cambiar.  
+     [**Atributos de SVG**](https://developer.mozilla.org/es/docs/Web/SVG/Attribute)  
+     - **type** (obligatorio): Tipo de transformación a aplicar. Los posibles valores son:  
+        - `"translate"`: Mueve el elemento en el eje X e Y.  
+        - `"rotate"`: Rota el elemento alrededor de un punto.  
+        - `"scale"`: Escala el elemento en los ejes X e Y.  
+        - `"skewX"`: Aplica una inclinación en el eje X.  
+        - `"skewY"`: Aplica una inclinación en el eje Y.          
      - **from** (opcional): Valor inicial del atributo antes de que comience la animación.
      - **to** (opcional): Valor final del atributo al final de la animación.     
      - **by** (opcional): Valor que se sumará al valor inicial para establecer el valor final de la animación.
