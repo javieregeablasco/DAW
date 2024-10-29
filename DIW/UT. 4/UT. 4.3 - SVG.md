@@ -1944,33 +1944,87 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
      - **xlink:href** se usa para apuntar a un elemento específico y aplica solo cuando el <animateTransform> está fuera del elemento a animar.
      -  **xmlns:xlink**="http://www.w3.org/1999/xlink" define el espacio de nombres en el SVG.
 
+**Ejemplo**
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate6</title>
+</head>
+<body>
+  <div style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; color: black; margin-bottom: 20px; text-decoration: underline;">Etiqueta animate</div>
+  <svg width="300" height="250" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 250">
+    <title>Animación</title>
+
+    <line x1="0" y1="0" x2="0" y2="120" stroke="#aa5050" stroke-width="60"> 
+      <animate 
+        attributeType="XML"
+        attributeName="stroke"
+        values="#aa5050;#347350;#aa5050" 
+        begin="0s; bolaDerecha.end"      
+        dur="8s"
+        keyTimes="0; 0.5; 1"
+        repeatCount="5" 
+        calcMode="linear"                
+      />
+    </line>
 
 
-### Ejemplo de Uso
-
-Aquí tienes un ejemplo sencillo de cómo se puede usar `<animateTransform>` para rotar un círculo:
-
-```html
-<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="100" cy="100" r="50" fill="red">
-        <animateTransform
-            attributeName="transform"
-            type="rotate"
-            from="0 100 100"
-            to="360 100 100"
-            dur="5s"
-            repeatCount="indefinite"
-        />
+    <circle cx="52" cy="30" r="20" stroke="black" stroke-width="4" fill="none"> 
+      <animate 
+        attributeType="XML"
+        id="bolaDerecha"
+        attributeName="cx"
+        from="52" 
+        to="213"
+        dur="4s"
+        begin="0.0s; bolaIzquierda.end"          
+      />   
+      <animate 
+        attributeType="XML"
+        id="bolaIzquierda"
+        attributeName="cx"
+        from="213" 
+        to="52"
+        dur="4s"
+        begin="bolaDerecha.end"      
+      />  
     </circle>
-</svg>
+
+    <rect x="235" y="0" width="10" height="120" fill="#347350">
+      <animate 
+        attributeType="XML"
+        attributeName="fill"
+        values="#347350;#aa5050;#347350" 
+        begin="0; bolaDerecha.end;"      
+        dur="8s"
+        keyTimes="0; 0.5; 1"
+        repeatCount="5" 
+        calcMode="linear"                
+      />        
+      
+      <animateTransform 
+        attributeType="XML"
+        attributeName="transform"
+        type="rotate"
+        from="0 240 60" 
+        to="180 240 60" 
+        begin="bolaDerecha.end"      
+        dur="2.5s"
+        repeatCount="2" 
+        fill="freeze"                
+      />
+    </rect>             
+  </svg>
+</body>
+</html>
 ```
 
-
-
-
-
-
-
+>**Ejercicio**
+>Modificar el programa anterior para que al impactar el anillo contra la línea izquierda esta última se escale ligeramente para dar una sensación de impacto. Realizar la animación de tal modo que la linea vuelva a su tamaño normal transcurrido un tiempo que consideréis adecuado.  
+>Además del efecto de impacto añadir un efecto de desplazamiento hacia la izquierda. En este caso la barra vertical también deberá volver a su posición original.
 
 
 
