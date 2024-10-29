@@ -1763,10 +1763,10 @@ SMIL (Synchronized Multimedia Integration Language) es un lenguaje basado en XML
 En el contexto de SVG, SMIL se usa a través de etiquetas, permitiendo animar atributos de los elementos SVG, sin necesidad de JavaScript.  
 Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una opción poderosa para animaciones básicas en gráficos vectoriales.
 
-   - **Etiqueta `<set>`**  
-   La etiqueta <set> permite cambiar el valor de un atributo de un elemento SVG en un momento determinado sin una transición progresiva.    
-   Básicamente, actúa como un interruptor que establece un nuevo valor para un atributo durante un tiempo específico.  
-   **Principales atributos de la etiqueta** `<set>`. 
+#### 5.5.1.1 Etiqueta `<set>`  
+La etiqueta <set> permite cambiar el valor de un atributo de un elemento SVG en un momento determinado sin una transición progresiva.    
+Básicamente, actúa como un interruptor que establece un nuevo valor para un atributo durante un tiempo específico.  
+- **Principales atributos de la etiqueta** `<set>`. 
      - **attributeName** (obligatorio): Nombre del atributo que se desea cambiar.
      - **to** (obligatorio): Valor al que se cambiará el atributo durante la animación.
      - **begin** (opcional): Momento en que se inicia la animación (se definie en segundos o por un evento).
@@ -1796,9 +1796,9 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
 >4. A los 6 segundos el disco se desplazará **-150 unidades** de viewGrid **según el eje x**, y cambiará a color amarillo.  
 >5. A los 8 segundos el disco se desplazará **-150 unidades** de viewGrid **según el eje y**, y cambiará a color rojo.  
   
-   - **Etiqueta `<animate>`**  
-   La principal diferencia con respeto a `<set>` es que `<animate >` permite **modificar atributos a lo largo del tiempo**.  
-   Principales atributos de la etiqueta `<animate>`. 
+#### 5.5.1.2 Etiqueta `<animate>`  
+La principal diferencia con respeto a `<set>` es que `<animate >` permite **modificar atributos a lo largo del tiempo**.  
+- **Principales atributos de la etiqueta** `<animate>`.  
      - **attributeType** ="XML"
      - **attributeName** (obligatorio): Nombre del atributo que se desea cambiar.  
      [**Atributos de SVG**](https://developer.mozilla.org/es/docs/Web/SVG/Attribute)
@@ -1904,10 +1904,10 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
 >Modificar el programa anterior para que los topes izquierdo y derecho cambien de color al impactar el anillo contra ellos.  
 >   
 
-   - **Etiqueta `<animateTransform>`**  
-   La etiqueta `<animateTransform>` SVG permite **animar transformaciones** como traslaciones, rotaciones, escalas e inclinaciones.  
-   A diferencia de la etiqueta `<animate>`, que solo puede animar **atributos individuales**, `<animateTransform>` permite transformaciones complejas en el tiempo.  
-     Principales atributos de la etiqueta `<animateTransform>`. 
+#### 5.5.1.3 Etiqueta `<animateTransform>`  
+La etiqueta `<animateTransform>` SVG permite **animar transformaciones** como traslaciones, rotaciones, escalas e inclinaciones.  
+A diferencia de la etiqueta `<animate>`, que solo puede animar **atributos individuales**, `<animateTransform>` permite transformaciones complejas en el tiempo.  
+- **Principales atributos de la etiqueta** `<animateTransform>`.  
      - **attributeType** (opcional): Especifica el tipo de atributo que se está animando. Los valores posibles son:  
         - "XML": El atributo es un atributo XML.  
         - "CSS": El atributo es un estilo CSS.          
@@ -2025,6 +2025,28 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
 >**Ejercicio**  
 >Modificar el programa anterior para que al impactar el anillo contra la línea izquierda esta última se escale ligeramente para dar una sensación de impacto. Realizar la animación de tal modo que la linea vuelva a su tamaño normal transcurrido un tiempo que consideréis adecuado.  
 >Además del efecto de impacto añadir un efecto de desplazamiento hacia la izquierda. En este caso la barra vertical también deberá volver a su posición original.
+
+
+#### 5.5.1.4 Buenas prácticas de programación
+El punto de partida será <a href="https://svg-tutorial.com/svg/css-animation">**este ejemplo**</a>.  
+```
+<svg
+  width="200"
+  height="200"
+  viewBox="-100 -100 200 200"
+>
+  <path 
+    id="arm" 
+    d="
+      M -7 -20 
+      C -7 -10 7 -10 7 -20 
+      L 2 -80 
+      L -2 -80" 
+  />
+</svg>
+
+
+
 
 
 
