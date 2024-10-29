@@ -1755,7 +1755,7 @@ Estas animaciones se pueden definir mediante **etiquetas SMIL** (Synchronized Mu
 <a href="https://www.tutorialspoint.com/svg/src/loaders/index.html">**Ejemplos de animaciones:**</a>
 
 ### 5.4.1 Animaciones con etiquetas SMIL. 
-Toda la información disponible <a href="https://www.w3.org/TR/SVG11/animate.html">**aquí**</a>.
+Toda la información <a href="https://www.w3.org/TR/SVG11/animate.html">**aquí**</a>.
 
 SMIL (Synchronized Multimedia Integration Language) es un lenguaje basado en XML que permite definir animaciones y sincronización multimedia en archivos SVG.
 En el contexto de SVG, SMIL se usa a través de etiquetas, permitiendo animar atributos de los elementos SVG, sin necesidad de JavaScript.  
