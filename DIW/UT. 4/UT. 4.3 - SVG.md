@@ -2022,7 +2022,7 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
 </html>
 ```
 
->**Ejercicio**
+>**Ejercicio**  
 >Modificar el programa anterior para que al impactar el anillo contra la línea izquierda esta última se escale ligeramente para dar una sensación de impacto. Realizar la animación de tal modo que la linea vuelva a su tamaño normal transcurrido un tiempo que consideréis adecuado.  
 >Además del efecto de impacto añadir un efecto de desplazamiento hacia la izquierda. En este caso la barra vertical también deberá volver a su posición original.
 
