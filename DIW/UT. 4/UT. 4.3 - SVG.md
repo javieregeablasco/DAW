@@ -1756,8 +1756,10 @@ Estas animaciones se pueden definir mediante **etiquetas SMIL** (Synchronized Mu
 
 <a href="https://svg-tutorial.com/">**Tutoriales y ejemplos.**</a>
 
+Toda la información sobre animaciones <a href="https://www.w3.org/TR/SVG11/animate.html">**aquí**</a>.
+
 ### 5.5.1 Animaciones con etiquetas SMIL. 
-Toda la información <a href="https://www.w3.org/TR/SVG11/animate.html">**aquí**</a>.
+[SMIL Animation](https://www.w3.org/TR/2001/REC-smil-animation-20010904/)"
 
 SMIL (Synchronized Multimedia Integration Language) es un lenguaje basado en XML que permite definir animaciones y sincronización multimedia en archivos SVG.
 En el contexto de SVG, SMIL se usa a través de etiquetas, permitiendo animar atributos de los elementos SVG, sin necesidad de JavaScript.  
@@ -1766,8 +1768,10 @@ Aunque SMIL tiene un soporte limitado en algunos navegadores, sigue siendo una o
 #### 5.5.1.1 Etiqueta `<set>`  
 La etiqueta <set> permite cambiar el valor de un atributo de un elemento SVG en un momento determinado sin una transición progresiva.    
 Básicamente, actúa como un interruptor que establece un nuevo valor para un atributo durante un tiempo específico.  
-- **Principales atributos de la etiqueta** `<set>`. 
-     - **attributeName** (obligatorio): Nombre del atributo que se desea cambiar.
+Más información <a href="https://www.w3.org/TR/SVG11/animate.html#SetElement">**aquí**</a>  
+- **Principales atributos de la etiqueta** `<set>`.
+     - **attributeType** (opcional): Especifica el tipo de atributo que se usará para realizar la animación (CSS, XML, auto).   
+     - **attributeName** (obligatorio): Nombre del atributo que se desea cambiar.  
      - **to** (obligatorio): Valor al que se cambiará el atributo durante la animación.
      - **begin** (opcional): Momento en que se inicia la animación (se definie en segundos o por un evento).
      - **dur** (opcional): Duración durante la cual el atributo se mantendrá en el valor especificado en `to`.
@@ -1779,6 +1783,9 @@ Básicamente, actúa como un interruptor que establece un nuevo valor para un at
         - `"freeze"`: mantiene el valor de `to` después de que la animación termina.
      - **id** (opcional): Identificador único para la animación, **permitiendo que otras animaciones o scripts la instancien**.
      - **xlink:href** (opcional): Apunta a un elemento específico dentro del SVG al que se aplicará la animación, útil cuando `<set>` se encuentra fuera del elemento que se quiere animar.
+
+- **Documentación oficial** sobre la etiqueta `<set>` <a href="https://www.w3.org/TR/SVG11/animate.html#SetElement">**aquí**</a>
+
 
 **Ejemplo:**
 ```
@@ -1798,8 +1805,9 @@ Básicamente, actúa como un interruptor que establece un nuevo valor para un at
   
 #### 5.5.1.2 Etiqueta `<animate>`  
 La principal diferencia con respeto a `<set>` es que `<animate >` permite **modificar atributos a lo largo del tiempo**.  
+Más información <a href="https://www.w3.org/TR/SVG11/animate.html#AnimateElement">**aquí**</a>  
 - **Principales atributos de la etiqueta** `<animate>`.  
-     - **attributeType** ="XML"
+     - **attributeType** (opcional): Especifica el tipo de atributo que se usará para realizar la animación (CSS, XML, auto). 
      - **attributeName** (obligatorio): Nombre del atributo que se desea cambiar.  
      [**Atributos de SVG**](https://developer.mozilla.org/es/docs/Web/SVG/Attribute)
      - **from** (opcional): Valor inicial del atributo antes de que comience la animación.
@@ -1905,12 +1913,11 @@ La principal diferencia con respeto a `<set>` es que `<animate >` permite **modi
 >   
 
 #### 5.5.1.3 Etiqueta `<animateTransform>`  
-La etiqueta `<animateTransform>` SVG permite **animar transformaciones** como traslaciones, rotaciones, escalas e inclinaciones.  
-A diferencia de la etiqueta `<animate>`, que solo puede animar **atributos individuales**, `<animateTransform>` permite transformaciones complejas en el tiempo.  
+La etiqueta `<animateTransform>` permite **animar transformaciones** como traslaciones, rotaciones, escalas e inclinaciones.  
+A diferencia de la etiqueta `<animate>`, que solo puede animar **atributos individuales**, `<animateTransform>` permite transformaciones complejas en el tiempo. 
+Más información <a href="https://www.w3.org/TR/SVG11/animate.html#AnimateTransformElement">**aquí**</a> 
 - **Principales atributos de la etiqueta** `<animateTransform>`.  
-     - **attributeType** (opcional): Especifica el tipo de atributo que se está animando. Los valores posibles son:  
-        - "XML": El atributo es un atributo XML.  
-        - "CSS": El atributo es un estilo CSS.          
+     - **attributeType** (opcional): Especifica el tipo de atributo que se usará para realizar la animación (CSS, XML, auto).   
      - **attributeName** (obligatorio): Nombre del atributo que se desea cambiar.  
      [**Atributos de SVG**](https://developer.mozilla.org/es/docs/Web/SVG/Attribute)  
      - **type** (obligatorio): Tipo de transformación a aplicar. Los posibles valores son:  
@@ -2027,7 +2034,9 @@ A diferencia de la etiqueta `<animate>`, que solo puede animar **atributos indiv
 >Además del efecto de impacto añadir un efecto de desplazamiento hacia la izquierda. En este caso la barra vertical también deberá volver a su posición original.
 
 #### 5.5.1.4 Etiqueta `<animateMotion>`
-     - Uso: anima un elemento a lo largo de un camino definido.
+La etiqueta `<animateMotion>` permite animar un elemento **a lo largo de un camino definido**.  
+
+Más información <a href="https://www.w3.org/TR/SVG11/animate.html#AnimateMotionElement">**aquí**</a> 
      - Atributos importantes: `path` (definir el camino), `keyPoints`, `keyTimes`.
      - Ejemplo práctico: mover una estrella a lo largo de un círculo.
 
