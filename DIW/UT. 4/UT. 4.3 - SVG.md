@@ -2036,10 +2036,66 @@ Más información <a href="https://www.w3.org/TR/SVG11/animate.html#AnimateTrans
 #### 5.5.1.4 Etiqueta `<animateMotion>`
 La etiqueta `<animateMotion>` permite animar un elemento **a lo largo de un camino definido**.  
 Más información <a href="https://www.w3.org/TR/SVG11/animate.html#AnimateMotionElement">**aquí**</a> 
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+**Principales atributos de la etiqueta** `<animateMotion>`  
+     - **attributeType** (opcional): Especifica el tipo de atributo que se usará para realizar la animación (CSS, XML, auto).   
+     - **attributeName** (obligatorio): Nombre del atributo que se desea cambiar.  
+     [**Atributos de SVG**](https://developer.mozilla.org/es/docs/Web/SVG/Attribute)  
+     - **type** (obligatorio): Tipo de transformación a aplicar. Los posibles valores son:  
+        - `"translate"`: Mueve el elemento en el eje X e Y.  
+        - `"rotate"`: Rota el elemento alrededor de un punto.  
+        - `"scale"`: Escala el elemento en los ejes X e Y.  
+        - `"skewX"`: Aplica una inclinación en el eje X.  
+        - `"skewY"`: Aplica una inclinación en el eje Y.          
+     - **path** (opcional): Define el recorrido o trayectoria que seguirá el elemento durante la animación. La trayectoria se define mediante una secuencia de coordenadas y comandos de dibujo en formato de la propiedad `d`.
+     - **keyPoints** (opcional): Lista de valores separados por punto y coma (`;`) entre `0` y `1` que representa los puntos específicos de la trayectoria a alcanzar a lo largo de la animación. 
+     - **rotate** (opcional): Define la rotación del elemento a lo largo del camino. Los valores posibles son:
+        - `"auto"`: rota el elemento según la dirección del camino.
+        - `"auto-reverse"`: rota el elemento en dirección inversa al camino.
+        - Un valor numérico en grados, como `"45"` o `"90"`, para una rotación fija.     
+     - **from** (opcional): Valor inicial del atributo antes de que comience la animación.
+     - **to** (opcional): Valor final del atributo al final de la animación.     
+     - **by** (opcional): Valor que se sumará al valor inicial para establecer el valor final de la animación.
+     - **values** (opcional): Lista de valores (separados por punto y coma `;`) que el atributo adoptará durante la animación, creando una secuencia de valores.
+     - **begin** (opcional): Momento en que se inicia la animación (se define en **una lista de tiempos** o por un evento).     
+     - **dur** (opcional): Duración de la animación (en `"s"` o `"indefinite"` para animaciones sin fin.     
+     - **end** (opcional): Especifica cuándo debe finalizar la animación. Útil cuando no se define `dur`.     
+     - **repeatCount** (opcional): Número de repeticiones de la animación (1, 2, 3, ... `"indefinite"`).     
+     - **repeatDur** (opcional): Tiempo total de la duración de todas las repeticiones de la animación (s).     
+     - **fill** (opcional): Define cómo se comporta la animación antes de comenzar y después de finalizar. Sus valores pueden ser:
+        - `"remove"`: elimina el efecto después de la animación.
+        - `"freeze"`: mantiene el valor de `to` después de que la animación termina.                  
+     - **keySplines** (opcional): Define la curva de interpolación para animaciones de tipo `keyTimes`, usando valores en el formato de función de Bezier cúbica.
+     - **keyTimes** (opcional): Lista de tiempos normales entre `0` y `1`, separados por punto y coma (`;`), que determinan en qué momento debe alcanzarse cada valor de `values`.
+     - **calcMode** (opcional): Define el método de interpolación entre valores de la animación. Puede ser:
+       - `"discrete"`: cambio instantáneo entre valores.
+       - `"linear"`: interpolación lineal entre valores.
+       - `"paced"`: interpolación basada en la distancia, creando un ritmo constante.
+       - `"spline"`: interpolación basada en los valores de `keySplines`.
+     - **additive** (opcional): Determina si la animación debe sumarse al valor inicial (`"sum"`) o reemplazarlo (`"replace"`).
+     - **accumulate** (opcional): Define si los valores de animación deben acumularse en cada repetición (`"sum"`) o no (`"none"`).
+     - **id** (opcional): Identificador único para la animación, **permitiendo que otras animaciones o scripts la instancien**.
+     - **xlink:href** se usa para apuntar a un elemento específico y aplica solo cuando el <animateTransform> está fuera del elemento a animar.
+     -  **xmlns:xlink**="http://www.w3.org/1999/xlink" define el espacio de nombres en el SVG.
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
 
-Más información <a href="https://www.w3.org/TR/SVG11/animate.html#AnimateMotionElement">**aquí**</a> 
-     - Atributos importantes: `path` (definir el camino), `keyPoints`, `keyTimes`.
-     - Ejemplo práctico: mover una estrella a lo largo de un círculo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!--
