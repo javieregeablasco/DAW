@@ -2130,7 +2130,10 @@ Incorporación de los atribustos `rotate`, `keyTimes`,`keyPoints`,`fill` y `end`
 ```
 
 #### 5.5.1.5 Etiqueta `<animateColor>`
+**Deprecated**
 
+
+<https://udn.realityripple.com/docs/Web/SVG/Element/animateMotion>
 
 
 
