@@ -2036,15 +2036,6 @@ La etiqueta `<animateMotion>` permite animar un elemento **a lo largo de un cami
 Más información <a href="https://www.w3.org/TR/SVG11/animate.html#AnimateMotionElement">**aquí**</a> 
 
 - **Principales atributos de la etiqueta** `<animateMotion>`  
-     - **attributeType** (opcional): Especifica el tipo de atributo que se usará para realizar la animación (CSS, XML, auto).   
-     - **attributeName** (obligatorio): Nombre del atributo que se desea cambiar.  
-     [**Atributos de SVG**](https://developer.mozilla.org/es/docs/Web/SVG/Attribute)  
-     - **type** (obligatorio): Tipo de transformación a aplicar. Los posibles valores son:  
-        - `"translate"`: Mueve el elemento en el eje X e Y.  
-        - `"rotate"`: Rota el elemento alrededor de un punto.  
-        - `"scale"`: Escala el elemento en los ejes X e Y.  
-        - `"skewX"`: Aplica una inclinación en el eje X.  
-        - `"skewY"`: Aplica una inclinación en el eje Y.      
      - **path** (opcional): Define el recorrido o trayectoria que seguirá el elemento durante la animación. La trayectoria se define mediante una secuencia de coordenadas y comandos de dibujo en formato de la propiedad `d`.  
      - **keyPoints** (opcional): Lista de valores separados por punto y coma (`;`) entre `0` y `1` que representa los puntos específicos de la trayectoria a alcanzar a lo largo de la animación. 
      - **rotate** (opcional): Define la rotación del elemento a lo largo del camino. Los valores posibles son:  
@@ -2074,7 +2065,7 @@ Más información <a href="https://www.w3.org/TR/SVG11/animate.html#AnimateMotio
      - **accumulate** (opcional): Define si los valores de animación deben acumularse en cada repetición (`"sum"`) o no (`"none"`).  
      - **id** (opcional): Identificador único para la animación, **permitiendo que otras animaciones o scripts la instancien**.  
      - **xlink:href** se usa para apuntar a un elemento específico y aplica solo cuando el <animateTransform> está fuera del elemento a animar.  
-     -  **xmlns:xlink**="http://www.w3.org/1999/xlink" define el espacio de nombres en el SVG.  
+     - **xmlns:xlink**="http://www.w3.org/1999/xlink" define el espacio de nombres en el SVG.  
 
 
 
