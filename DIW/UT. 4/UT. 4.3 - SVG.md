@@ -2035,13 +2035,14 @@ Más información <a href="https://www.w3.org/TR/SVG11/animate.html#AnimateTrans
 
 #### 5.5.1.4 Etiqueta `<animateMotion>`
 La etiqueta `<animateMotion>` permite animar un elemento **a lo largo de un camino definido**.  
+Más información <a href="https://www.w3.org/TR/SVG11/animate.html#AnimateMotionElement">**aquí**</a> 
 
 Más información <a href="https://www.w3.org/TR/SVG11/animate.html#AnimateMotionElement">**aquí**</a> 
      - Atributos importantes: `path` (definir el camino), `keyPoints`, `keyTimes`.
      - Ejemplo práctico: mover una estrella a lo largo de un círculo.
 
 
-
+<!--
 #### 5.5.1.4 Buenas prácticas de programación
 El punto de partida será <a href="https://svg-tutorial.com/svg/css-animation">**este ejemplo**</a>.  
 ```
@@ -2063,7 +2064,7 @@ El punto de partida será <a href="https://svg-tutorial.com/svg/css-animation">*
 
 
 
-
+-->
 
 
 
