@@ -2133,7 +2133,8 @@ Incorporación de los atribustos `rotate`, `keyTimes`,`keyPoints`,`fill` y `end`
 **Deprecated**
 
 
-<https://udn.realityripple.com/docs/Web/SVG/Element/animateMotion>
+<
+https://udn.realityripple.com/docs/Web/SVG/Element/animateMotion>
 
 
 
@@ -2192,3 +2193,4 @@ El punto de partida será <a href="https://svg-tutorial.com/svg/css-animation">*
 
 ## 5.5 Creación de imágenes SVG con editores.>>
 -->
+>
