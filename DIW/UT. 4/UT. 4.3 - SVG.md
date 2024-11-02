@@ -2134,7 +2134,7 @@ Incorporación de los atribustos `rotate`, `keyTimes`,`keyPoints`,`fill` y `end`
 
 
 <
-https://udn.realityripple.com/docs/Web/SVG/Element/animateMotion>
+
 
 
 
