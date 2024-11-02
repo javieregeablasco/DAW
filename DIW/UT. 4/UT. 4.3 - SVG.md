@@ -1784,9 +1784,6 @@ Más información <a href="https://www.w3.org/TR/SVG11/animate.html#SetElement">
      - **id** (opcional): Identificador único para la animación, **permitiendo que otras animaciones o scripts la instancien**.
      - **xlink:href** (opcional): Apunta a un elemento específico dentro del SVG al que se aplicará la animación, útil cuando `<set>` se encuentra fuera del elemento que se quiere animar.
 
-- **Documentación oficial** sobre la etiqueta `<set>` <a href="https://www.w3.org/TR/SVG11/animate.html#SetElement">**aquí**</a>
-
-
 **Ejemplo:**
 ```
 <svg width="250" height="100" xmlns="http://www.w3.org/2000/svg">
@@ -2132,26 +2129,7 @@ Incorporación de los atribustos `rotate`, `keyTimes`,`keyPoints`,`fill` y `end`
 #### 5.5.1.5 Etiqueta `<animateColor>`
 **Deprecated**
 
-
-<
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-#### 5.5.1.4 Buenas prácticas de programación
+#### 5.5.1.6 Buenas prácticas de programación (3)
 El punto de partida será <a href="https://svg-tutorial.com/svg/css-animation">**este ejemplo**</a>.  
 ```
 <svg
