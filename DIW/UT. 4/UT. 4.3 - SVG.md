@@ -2067,6 +2067,58 @@ Más información <a href="https://www.w3.org/TR/SVG11/animate.html#AnimateMotio
      - **xlink:href** se usa para apuntar a un elemento específico y aplica solo cuando el <animateTransform> está fuera del elemento a animar.  
      - **xmlns:xlink**="http://www.w3.org/1999/xlink" define el espacio de nombres en el SVG.  
 
+**Ejemplo**
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate6</title>
+</head>
+
+<style>
+  svg {
+    background-color: antiquewhite;
+    margin: 5px 5px 5px 15px;
+    padding: 40px 40px 40px 40px;
+  }
+
+  text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    fill: blueviolet;
+    text-anchor: middle; /*admite text-anchor pero no dominant-baseline*/ 
+    stroke: none;     
+  }
+
+</style>
+
+<body>
+  <div style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; color: rgb(28, 24, 211); margin-bottom: 20px; text-decoration: underline;">Etiqueta animateMotion</div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="160 110 520 400">
+      <title>AnimateMotion</title>
+      <path d="M 230 230 Q 410 50 590 230 Q 650 310 590 390 Q 410 570 230 390 Q 170 310 230 230" stroke="#FF0000" stroke-width="0.5" fill="none"/>
+      <text dominant-baseline="middle">animateMotion
+        <animateMotion
+          path="M 230 230 Q 410 50 590 230 Q 650 310 590 390 Q 410 570 230 390 Q 170 310 230 230"
+          begin="3s"
+          dur="10s"
+          end="25"
+          repeatCount="3"
+          fill="freeze" 
+          keyPoints="0; 0.5; 1"
+          keyTimes="0; 0.25; 1"
+          rotate="none" 
+        />
+      </text>                  
+    </svg>
+</body>
+</html>
+```
+
+
 
 
 
