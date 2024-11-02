@@ -2102,15 +2102,10 @@ Más información <a href="https://www.w3.org/TR/SVG11/animate.html#AnimateMotio
       <path d="M 230 230 Q 410 50 590 230 Q 650 310 590 390 Q 410 570 230 390 Q 170 310 230 230" stroke="#FF0000" stroke-width="0.5" fill="none"/>
       <text dominant-baseline="middle">animateMotion
         <animateMotion
-          path="M 230 230 Q 410 50 590 230 Q 650 310 590 390 Q 410 570 230 390 Q 170 310 230 230"
-          begin="3s"
+          path="M 230 230 Q 410 50 590 230 Q 650 310 590 390 Q 410 570 230 390 Q 150 310 230 230"
+          begin="0s"
           dur="10s"
-          end="25"
-          repeatCount="3"
-          fill="freeze" 
-          keyPoints="0; 0.5; 1"
-          keyTimes="0; 0.25; 1"
-          rotate="none" 
+          repeatCount="indefinite" 
         />
       </text>                  
     </svg>
@@ -2118,7 +2113,21 @@ Más información <a href="https://www.w3.org/TR/SVG11/animate.html#AnimateMotio
 </html>
 ```
 
-
+**Modificacion del ejemplo anterior**
+Incorporación de los atribustos `rotate`, `keyTimes`,`keyPoints`,`fill` y `end`.
+```
+<animateMotion
+  path="M 230 230 Q 410 50 590 230 Q 650 310 590 390 Q 410 570 230 390 Q 170 310 230 230"
+  begin="3s"
+  dur="10s"
+  end="25"
+  repeatCount="3"
+  fill="freeze" 
+  keyPoints="0; 0.5; 1"
+  keyTimes="0; 0.25; 1"
+  rotate="none" 
+/>
+```
 
 
 
