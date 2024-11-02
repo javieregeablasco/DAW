@@ -2037,15 +2037,15 @@ Más información <a href="https://www.w3.org/TR/SVG11/animate.html#AnimateMotio
 
 - **Principales atributos de la etiqueta** `<animateMotion>`  
      - **path** (opcional): Define el recorrido o trayectoria que seguirá el elemento durante la animación. La trayectoria se define mediante una secuencia de coordenadas y comandos de dibujo en formato de la propiedad `d`.  
-     - **keyPoints** (opcional): Lista de valores separados por punto y coma (`;`) entre `0` y `1` que representa los puntos específicos de la trayectoria a alcanzar a lo largo de la animación. 
+     - **keyTimes** (opcional): Lista de valores separados por punto y coma (`;`) entre `0` y `1` que representa los puntos específicos de la trayectoria a alcanzar a lo largo de la animación. 
+     - **values** (opcional): Lista de valores (separados por punto y coma `;`) que el atributo adoptará durante la animación, creando una secuencia de valores. 
      - **rotate** (opcional): Define la rotación del elemento a lo largo del camino. Los valores posibles son:  
         - `"auto"`: rota el elemento según la dirección del camino.  
         - `"auto-reverse"`: rota el elemento en dirección inversa al camino.  
         - Un valor numérico en grados, como `"45"` o `"90"`, para una rotación fija.     
      - **from** (opcional): Valor inicial del atributo antes de que comience la animación.  
      - **to** (opcional): Valor final del atributo al final de la animación.     
-     - **by** (opcional): Valor que se sumará al valor inicial para establecer el valor final de la animación.  
-     - **values** (opcional): Lista de valores (separados por punto y coma `;`) que el atributo adoptará durante la animación, creando una secuencia de valores.  
+     - **by** (opcional): Valor que se sumará al valor inicial para establecer el valor final de la animación.   
      - **begin** (opcional): Momento en que se inicia la animación (se define en **una lista de tiempos** o por un evento).     
      - **dur** (opcional): Duración de la animación (en `"s"` o `"indefinite"` para animaciones sin fin.     
      - **end** (opcional): Especifica cuándo debe finalizar la animación. Útil cuando no se define `dur`.     
