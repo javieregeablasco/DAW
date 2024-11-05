@@ -2126,26 +2126,105 @@ Incorporación de los atribustos `rotate`, `keyTimes`,`keyPoints`,`fill` y `end`
 />
 ```
 
-#### 5.5.1.5 Etiqueta `<animateColor>`
-**Deprecated**
-
-#### 5.5.1.6 Buenas prácticas de programación (3)
+#### 5.5.1.5 Buenas prácticas de programación (3)
 El punto de partida será <a href="https://svg-tutorial.com/svg/css-animation">**este ejemplo**</a>.  
+En el código de aquí abajo vemos como usando la etiqueta `<defs>` definimos los diferentes objetos gráficos que renderizaremos más adelante, según los vayamos necesitando.
+También se usa la etiqueta `<use>` y el identificador `id` para renderizar los objetos gráficos definidos anteriormente.
+
 ```
-<svg
-  width="200"
-  height="200"
-  viewBox="-100 -100 200 200"
->
-  <path 
-    id="arm" 
-    d="
-      M -7 -20 
-      C -7 -10 7 -10 7 -20 
-      L 2 -80 
-      L -2 -80" 
-  />
-</svg>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BPP</title>
+</head>
+
+<style>
+  svg {
+    background-color: antiquewhite;
+    margin: 10px 10px 10px 10px;
+  }
+
+  div {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: rgb(34, 32, 32);
+    margin-bottom: 10px;
+    text-decoration: underline;    
+  }
+  
+  #pala {
+    fill: #A18D8D;
+    opacity: 0.5;
+  }
+
+  #eje,  
+  #soporte {
+    fill: #dab1b1;
+    opacity: 0.5;
+  }
+  
+</style>
+
+<body>
+  <div>Buenas prácticas de programación</div>
+  <svg width="600" height="600" xmlns="http://www.w3.org/2000/svg" viewBox="-100 -100 200 200">
+    <defs>      
+      <path id="pala"  d="M -1 -80 
+                          C -1 -81 1 -81 1 -80 
+                          L  1 -80 Q  2 -62  3 -39 
+                          C  3 -36 -3 -36 -3 -39 
+                          Q -2 -62 -1 -80
+                          Z"/>     
+      
+      <circle id="eje" cx="0" cy="-32" r="3"/>        
+      
+      <path id="soporte"  d="M -2 -27
+                             L -5 50
+                             h 10 0
+                             L 2 -27
+                             Z"/>           
+    </defs>
+    
+    <use href="#pala">
+      <animateTransform attributeName="transform"
+                        attributeType="XML"
+                        type="rotate"
+                        from="0 0 -32"
+                        to="360 0 -32"
+                        dur="5s"
+                        repeatCount="indefinite"
+      />
+    </use>
+  
+    <use href="#pala">
+      <animateTransform attributeName="transform"
+                        attributeType="XML"
+                        type="rotate"
+                        from="120 0 -32"
+                        to="480 0 -32"
+                        dur="5s"
+                        repeatCount="indefinite"
+      />
+    </use>
+
+    <use href="#pala">
+      <animateTransform attributeName="transform"
+                        attributeType="XML"
+                        type="rotate"
+                        from="-120 0 -32"
+                        to="240 0 -32"
+                        dur="5s"
+                        repeatCount="indefinite"
+      />
+    </use>
+
+    <use href="#eje"/>
+    <use href="#soporte"/>
+  </svg>
+</body>
+</html>
 ```
 
 
