@@ -861,7 +861,7 @@ El atributo **stroke-opacity** permite establecer la opacidad del elemento (grad
   <rect x="25" y="25" width="15" height="15" stroke="red" stroke-opacity="1" />
 </svg>
 ```
-#### 5.2.1.2 ejercicio
+#### 5.2.1.2 Ejercicio
 >**Ejercicio.**  
 Realizar un programa SVG que renderize una imagen similar a la siguiente:
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/anillos1.png">
@@ -913,7 +913,7 @@ Posibles valores de stroke-linejoin:
 
 </svg>
 ```
-#### 5.2.1.4 ejercicio
+#### 5.2.1.4 Ejercicio
 >**Ejercicio**  
 >Realizar un programa SVG que renderize un cuadrado.  
 >Aplicar en cada esquina un valor de ´stroke-linecap` diferente.
@@ -947,7 +947,7 @@ El atributo stroke-miterlimit permite modificar como se ve el ángulo puntiagudo
   </svg>
 </div>
 ```
-#### 5.2.1.5 ejercicio
+#### 5.2.1.5 Ejercicio
 >**Ejercicio**  
 >Realizar un programa SVG que renderize un triángulo.  
 >Aplicar en cada esquina un valor de ´stroke-miterlimit` diferente.
@@ -1131,7 +1131,7 @@ const selectStrokeLineJoin = document.getElementById("strokeLineJoin");
 </html>
 ```
 
-#### 5.2.1.3 Patrones en trazos
+#### 5.2.1.6 Patrones en trazos
 -  **Atributo stroke-dasharray**  
 Este atributo permite personalizar el estilo de las líneas, añadiendo efectos visuales como líneas discontinuas o punteadas (guiones y espacios para los contornos (trazos) de las formas).  
 Para el siguiente ejemplo, se le ha pasado a dasharray los valores 3 y 1 que equivalen a 3 unidades de tamaño trazado y 1 unidad sin trazar.   
@@ -1207,7 +1207,7 @@ El atributo stroke-dashoffset establece un desplazamiento al principio del trazo
 </body>
 ```
 
-#### 5.2.1.4 ejercicio
+#### 5.2.1.7 Ejercicio
 > **Ejercicio**  
 >Sobre la base del ejemplo anterior.  
 >Realizar un SVG que dibuje 2 circulos que usen el mismo stroke-dasharray.
@@ -1216,7 +1216,7 @@ El atributo stroke-dashoffset establece un desplazamiento al principio del trazo
 >   
 ><img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/circulos%20animados.png">
 
-#### 5.2.1.5 Rellenos
+#### 5.2.1.8 Rellenos
 -  **Atributo fill**  
   Con `fill` indicamos el color de relleno de la figura que estamos diseñando.
 ```
@@ -1334,7 +1334,7 @@ El atributo stroke-dashoffset establece un desplazamiento al principio del trazo
 
 </body>  
 ```
-#### 5.2.1.6 ejercicio
+#### 5.2.1.9 Ejercicio
 > **Ejercicio**  
 >Sobre la base del ejemplo anterior.  
 >Realizar un SVG que dibuje 2 elipses concentricas.  
