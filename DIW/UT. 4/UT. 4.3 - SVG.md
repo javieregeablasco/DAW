@@ -2126,7 +2126,43 @@ Incorporación de los atribustos `rotate`, `keyTimes`,`keyPoints`,`fill` y `end`
 />
 ```
 
-#### 5.5.1.5 Buenas prácticas de programación (3)
+#### 5.5.1.5 Ejercicio
+>Ejercicio de anillo menguante
+>Modificar el siguiente programa para que el anillo mengue y se alargue a lo largo del tiempo.
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anillo loading</title>
+    <link rel="icon" type="image/svg+xml" href="https://upload.wikimedia.org/wikipedia/commons/0/02/SVG_logo.svg">
+</head>
+
+<style>
+  svg {
+    background-color: black;
+  }
+
+</style>
+<body>
+  <svg width="380" height="380" viewBox="-20 -20 40 40" xmlns="http://www.w3.org/2000/svg">
+    <path d="M 0 -14 A 1 1 0 0 0 0 -12 M 0 12 A 1 1 0 0 0 0 -12 M 0 12 A 1 1 0 0 0 0 14 A 1 1 0 0 0 0 -14" stroke-width=2 stroke="#fff">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="0 0 0"
+        to="360 0 0"
+        dur="1.3s"
+        repeatCount="indefinite" />
+    </path>
+  </svg>
+
+</body>
+</html>
+``` 
+
+#### 5.5.1.6 Buenas prácticas de programación (3)
 El punto de partida será <a href="https://svg-tutorial.com/svg/css-animation">**este ejemplo**</a>.  
 En el código de aquí abajo vemos como usando la etiqueta `<defs>` definimos los diferentes objetos gráficos que renderizaremos más adelante, según los vayamos necesitando.
 También se usa la etiqueta `<use>` y el identificador `id` para renderizar los objetos gráficos definidos anteriormente.
