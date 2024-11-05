@@ -2138,6 +2138,7 @@ También se usa la etiqueta `<use>` y el identificador `id` para renderizar los 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BPP</title>
+    <link rel="icon" type="image/svg+xml" href="https://upload.wikimedia.org/wikipedia/commons/0/02/SVG_logo.svg">
 </head>
 
 <style>
@@ -2182,12 +2183,12 @@ También se usa la etiqueta `<use>` y el identificador `id` para renderizar los 
       
       <path id="soporte"  d="M -2 -27
                              L -5 50
-                             h 10 0
+                             h 10
                              L 2 -27
                              Z"/>           
     </defs>
     
-    <use href="#pala">
+    <use xlink:href="#pala">
       <animateTransform attributeName="transform"
                         attributeType="XML"
                         type="rotate"
@@ -2198,7 +2199,7 @@ También se usa la etiqueta `<use>` y el identificador `id` para renderizar los 
       />
     </use>
   
-    <use href="#pala">
+    <use xlink:href="#pala">
       <animateTransform attributeName="transform"
                         attributeType="XML"
                         type="rotate"
@@ -2209,7 +2210,7 @@ También se usa la etiqueta `<use>` y el identificador `id` para renderizar los 
       />
     </use>
 
-    <use href="#pala">
+    <use xlink:href="#pala">
       <animateTransform attributeName="transform"
                         attributeType="XML"
                         type="rotate"
@@ -2220,8 +2221,8 @@ También se usa la etiqueta `<use>` y el identificador `id` para renderizar los 
       />
     </use>
 
-    <use href="#eje"/>
-    <use href="#soporte"/>
+    <use xlink:href="#eje"/>
+    <use xlink:href="#soporte"/>
   </svg>
 </body>
 </html>
