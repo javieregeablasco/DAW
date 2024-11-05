@@ -2270,27 +2270,4 @@ También se usa la etiqueta `<use>` y el identificador `id` para renderizar los 
 </html>
 ```
 
-
-
--->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## 5.5 Creación de imágenes SVG con editores.>>
--->
->
+## 5.5 Creación de imágenes SVG con editores.
