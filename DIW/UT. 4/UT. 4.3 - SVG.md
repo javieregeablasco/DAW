@@ -1904,7 +1904,7 @@ Más información <a href="https://www.w3.org/TR/SVG11/animate.html#AnimateEleme
 </html>
 ```
 #### 5.5.1.4 Ejercicio 
->**Ejercicio**
+>**Ejercicio**  
 >Modificar el programa anterior para que el anillo vaya de izquierda a derecha y de derecha a izquierda.  
 >Modificar el programa anterior para que el anillo vaya de izquierda a derecha y de derecha a izquierda **2 veces**.  
 >Modificar el programa anterior para que el anillo vaya de izquierda a derecha y de derecha a izquierda **sin parar**.  
