@@ -1794,8 +1794,9 @@ Más información <a href="https://www.w3.org/TR/SVG11/animate.html#SetElement">
     <circle cx="50" cy="50" r="25" style="fill:red;">
     <set attributeName="cx" to="200" begin="2s" />
 </svg>
-```
+```  
 
+#### 5.5.1.2 Ejercicio 
 >**Ejercicio**
 >Realizar un programa con la etiqueta `<set>`que haga lo siguiente.  
 >1. Circulo (disco) de color rojo, r=25, cx=50, cy=50.  
@@ -1804,7 +1805,7 @@ Más información <a href="https://www.w3.org/TR/SVG11/animate.html#SetElement">
 >4. A los 6 segundos el disco se desplazará **-150 unidades** de viewGrid **según el eje x**, y cambiará a color amarillo.  
 >5. A los 8 segundos el disco se desplazará **-150 unidades** de viewGrid **según el eje y**, y cambiará a color rojo.  
   
-#### 5.5.1.2 Etiqueta `<animate>`  
+#### 5.5.1.3 Etiqueta `<animate>`  
 La principal diferencia con respeto a `<set>` es que `<animate >` permite **modificar atributos a lo largo del tiempo**.  
 Más información <a href="https://www.w3.org/TR/SVG11/animate.html#AnimateElement">**aquí**</a>  
 - **Principales atributos de la etiqueta** `<animate>`.  
@@ -1902,7 +1903,7 @@ Más información <a href="https://www.w3.org/TR/SVG11/animate.html#AnimateEleme
 </body>
 </html>
 ```
-
+#### 5.5.1.4 Ejercicio 
 >**Ejercicio**
 >Modificar el programa anterior para que el anillo vaya de izquierda a derecha y de derecha a izquierda.  
 >Modificar el programa anterior para que el anillo vaya de izquierda a derecha y de derecha a izquierda **2 veces**.  
@@ -1912,7 +1913,7 @@ Más información <a href="https://www.w3.org/TR/SVG11/animate.html#AnimateEleme
 >Modificar el programa anterior para que los topes izquierdo y derecho cambien de color al impactar el anillo contra ellos.  
 >   
 
-#### 5.5.1.3 Etiqueta `<animateTransform>`  
+#### 5.5.1.5 Etiqueta `<animateTransform>`  
 La etiqueta `<animateTransform>` permite **animar transformaciones** como traslaciones, rotaciones, escalas e inclinaciones.  
 A diferencia de la etiqueta `<animate>`, que solo puede animar **atributos individuales**, `<animateTransform>` permite transformaciones complejas en el tiempo. 
 Más información <a href="https://www.w3.org/TR/SVG11/animate.html#AnimateTransformElement">**aquí**</a> 
@@ -2028,11 +2029,12 @@ Más información <a href="https://www.w3.org/TR/SVG11/animate.html#AnimateTrans
 </html>
 ```
 
+#### 5.5.1.6 Ejercicio 
 >**Ejercicio**  
 >Modificar el programa anterior para que al impactar el anillo contra la línea izquierda esta última se escale ligeramente para dar una sensación de impacto. Realizar la animación de tal modo que la linea vuelva a su tamaño normal transcurrido un tiempo que consideréis adecuado.  
 >Además del efecto de impacto añadir un efecto de desplazamiento hacia la izquierda. En este caso la barra vertical también deberá volver a su posición original.
 
-#### 5.5.1.4 Etiqueta `<animateMotion>`
+#### 5.5.1.7 Etiqueta `<animateMotion>`
 La etiqueta `<animateMotion>` permite animar un elemento **a lo largo de un camino definido**.  
 Más información <a href="https://www.w3.org/TR/SVG11/animate.html#AnimateMotionElement">**aquí**</a> 
 
@@ -2130,7 +2132,7 @@ Incorporación de los atribustos `rotate`, `keyTimes`,`keyPoints`,`fill` y `end`
 />
 ```
 
-#### 5.5.1.5 Ejercicio
+#### 5.5.1.8 Ejercicio
 >Ejercicio de anillo menguante
 >Modificar el siguiente programa para que el anillo mengue y se alargue a lo largo del tiempo.
 ```
@@ -2166,7 +2168,7 @@ Incorporación de los atribustos `rotate`, `keyTimes`,`keyPoints`,`fill` y `end`
 </html>
 ``` 
 
-#### 5.5.1.6 Buenas prácticas de programación (3)
+#### 5.5.1.9 Buenas prácticas de programación (3)
 El punto de partida será <a href="https://svg-tutorial.com/svg/css-animation">**este ejemplo**</a>.  
 En el código de aquí abajo vemos como usando la etiqueta `<defs>` definimos los diferentes objetos gráficos que renderizaremos más adelante, según los vayamos necesitando.
 También se usa la etiqueta `<use>` y el identificador `id` para renderizar los objetos gráficos definidos anteriormente.
