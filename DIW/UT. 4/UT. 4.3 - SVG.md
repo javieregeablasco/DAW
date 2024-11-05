@@ -802,7 +802,7 @@ Dónde:
 </html>
 ```
 
-### 5.1.8 Ejercicio
+### 5.1.7.8 Ejercicio
 Realiza un SVG **usando path** replicando el logo de la banda musical Dûrga de Valencia.  
 El logo en cuestión es el siguiente:  
 
