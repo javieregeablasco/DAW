@@ -2270,4 +2270,56 @@ También se usa la etiqueta `<use>` y el identificador `id` para renderizar los 
 </html>
 ```
 
+### 5.5.2 Ejemplos de animaciones  
+#### 5.5.2.1 Loaders  
+Ejemplo muy básico de una anumación de carga:
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anillo loading</title>
+    <link rel="icon" type="image/svg+xml" href="https://upload.wikimedia.org/wikipedia/commons/0/02/SVG_logo.svg">
+</head>
+
+<style>
+  svg {
+    background-color: black;
+  }
+
+</style>
+<body>
+  <svg width="380" height="380" viewBox="-20 -20 40 40" xmlns="http://www.w3.org/2000/svg">
+    <g >
+      <path d="M 0 -14 A 1 1 0 0 0 0 -12 M 0 12 A 1 1 0 0 0 0 -12 M 0 12 A 1 1 0 0 0 0 14 A 1 1 0 0 0 0 -14" stroke-width=2 stroke="#fff">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          from="0 0 0"
+          to="360 0 0"
+          dur="1.3s"
+          repeatCount="indefinite" />
+      </path>
+    </g>
+    <g>
+      <path d="M 0 -14 A 1 1 0 0 0 0 -12 M 0 12 A 1 1 0 0 0 0 -12 M 0 12 A 1 1 0 0 0 0 14 A 1 1 0 0 0 0 -14" stroke-width=2 stroke="#fff" >
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          from="0 0 0"
+          to="360 0 0"
+          dur="1.0s"
+          repeatCount="indefinite" />
+      </path>
+    </g>
+  </svg>
+
+</body>
+</html>
+```
+
+
+
+
 ## 5.5 Creación de imágenes SVG con editores de imágenes.
