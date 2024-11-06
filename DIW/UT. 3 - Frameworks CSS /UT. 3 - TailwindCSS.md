@@ -30,8 +30,14 @@ El enfoque modular de **Tailwind CSS** no solo mejora la productividad, sino que
 - Personalización y optimización de Tailwind CSS en proyectos reales.
 
 # 2. Tailwind frente a otros frameworks de CSS.
-Existen muchos frameworks de CSS pero los desarrolladores suelen elegir el más rápido y fácil para aprender. Tailwind viene con muchas características y estilos incorporados a elegir y también se utiliza por su tendencia a reducir escribir código CSS. Tailwind CSS también crea pequeñas utilidades con un conjunto definido de opciones que permiten una fácil integración de clases existentes directamente en el código HTML.
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20230710125344/Tailwind-css.webp" width=60%>
+Existen muchos frameworks de CSS pero los desarrolladores suelen elegir el más rápido y fácil para aprender. Tailwind viene con muchas características y estilos incorporados a elegir y también se utiliza por su tendencia a reducir escribir código CSS. Tailwind CSS también crea pequeñas utilidades con un conjunto definido de opciones que permiten una fácil integración de clases existentes directamente en el código HTML.  
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20230710125344/Tailwind-css.webp" width=60%>  
+
+Comparación del número de instalaciones de Bootstrap y Tailwind durante el periodo 2023-2024 usando el comando `npm`.
+<img src="https://d2b57pa8jvjkcd.cloudfront.net/shEYQpSsZGZcwRfsh/XHyYpkAKLY-bootstrap-tailwind-css-popularity-chart-npm-trends.png" width=90%> 
+
+
+
 
 # 3. Instalación y configuración de **Tailwind CSS**.
 Toda la información para la instalación y configuración de TailwindCSS en la página oficial.
