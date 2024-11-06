@@ -2271,8 +2271,7 @@ También se usa la etiqueta `<use>` y el identificador `id` para renderizar los 
 ```
 
 ### 5.5.2 Ejemplos de animaciones  
-#### 5.5.2.1 Loaders  
-Ejemplo muy básico de una anumación de carga:
+Ejemplo muy básico de una animación de carga:
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -2317,8 +2316,71 @@ Ejemplo muy básico de una anumación de carga:
 
 </body>
 </html>
-```
+```  
 
+Animación de carga de windows 11:
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anillo WIN 11</title>
+    <link rel="icon" type="image/svg+xml" href="https://upload.wikimedia.org/wikipedia/commons/0/02/SVG_logo.svg">
+</head>
+
+<style>
+  svg {
+    background-color: black;
+    width: 380px;
+    height: 380px;    
+  }
+
+  circle {
+    stroke-width: 3;
+    stroke-linecap: round;
+    fill: none;
+    stroke: antiquewhite;
+    padding: 3px;
+  }
+   
+</style>
+
+<body>
+  <svg viewBox="-20 -20 40 40" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="0" cy="0" r="16">    
+      <animateTransform 
+        attributeName="transform" 
+        type="rotate" 
+        values="0;810" 
+        keyTimes="0;1" 
+        dur="3s" 
+        repeatCount="indefinite">
+      </animateTransform>    
+  
+      <animate 
+        attributeName="stroke-dasharray" 
+        values="0 100;100 100;0 100" 
+        calcMode="linear" 
+        keyTimes="0;0.5;1" 
+        dur="3s" 
+        repeatCount="indefinite">
+      </animate>    
+    
+      <animate 
+        attributeName="stroke-dashoffset" 
+        values="0;0;-80" 
+        calcMode="linear"
+        keyTimes="0;0.50;1" 
+        dur="3s" 
+        repeatCount="indefinite">
+      </animate>    
+    </circle>
+  </svg>
+
+</body>
+</html>
+```
 
 
 
