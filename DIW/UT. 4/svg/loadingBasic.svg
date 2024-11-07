@@ -57,13 +57,13 @@
   }
 }
 </style>
-<body>
+
 <div class="circle-wrapper">
   <div class="outer-circle"></div>
   <div class="rotating-path"></div>
   <div class="small-circle top"></div>
   <div class="small-circle right"></div>
 </div>
-</body>
+
 
 
