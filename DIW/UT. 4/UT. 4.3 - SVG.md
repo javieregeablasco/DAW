@@ -2400,12 +2400,4 @@ En nuestro caso usaremos **Inkscape** al ser uno de los más populares y complet
 2 - Animar el dibujo para que el arco gire sobre el fondo gris claro.
 
 ### 5.5.2 Tarea 5 - RA3-CEf  
-1 - Realizar la siguiente animación:  
-<video controls width="300" height="300">
-  <source src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/mpeg/loadingVintage.mp4" type="video/mp4">
-  Tu navegador no soporta la reproducción de videos.
-</video>
-
-
-
-
+1 - Realizar la siguiente <a href="https://drive.google.com/file/d/1wqzCXGVw5Pep5mGLcUZVwhCiaVE5tbeu/view?usp=drive_link">animación</a>
