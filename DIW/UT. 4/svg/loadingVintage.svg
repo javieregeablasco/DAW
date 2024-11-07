@@ -5,7 +5,7 @@
  
     <circle cx="0" cy="0" r="16" stroke="#b5b5b5" stroke-width="3" opacity="0.15" />
 
-    <circle id="spinner" cx="0" cy="0" r="16"  stroke-linecap="round" fill="none" stroke="antiquewhite">    
+    <circle id="spinner" cx="0" cy="0" r="16"  stroke-linecap="round" fill="none" stroke="antiquewhite"  stroke-width="3">    
       <animate
         attributeName="stroke-dasharray" 
         values="0 33;33 0;0 33" 
