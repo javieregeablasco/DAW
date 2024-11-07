@@ -22,16 +22,14 @@ Las hojas de estilo de un sitio web cada vez son más complejas y difíciles de 
 - **Anidación más simple.**
 Usar anidamiento en SASS permite escribir el código CSS con la misma estructura visual que el HTML. De este modo, se simplifica el uso de los selectores y se ofrece a los programadores un formato más visual y jerarquizado para seleccionar elementos anidados.
 
-Utilizar mixins.
-Se trata de grupos de código que se definen con la norma @mixin seguida del nombre que quiera darse y que, posteriormente, se pueden emplear con la regla @include más el nombre que se haya establecido. El mixin es algo comparable a lo que sería una función en otro lenguaje de programación y permiten reutilizar secciones íntegras de código escribiendo funciones con los parámetros que se definan.
+- **Utilizar mixins.**
+Los mixins son grupos de código, algo comparable a una función en otro lenguaje de programación, y permiten reutilizar secciones íntegras de código.
 
-que-es-sass
+- **Herencias.**  
+Mediante las herencias, es posible unificar declaraciones de estilo y compartirlas entre diferentes selectores. Una de las particularidades de las herencias en SASS es que las declaraciones heredadas solo se procesan si se utilizan, lo que asegura que el CSS final no contenga estilos innecesarios.
 
-Herencias.
-A través de SASS será posible unificar declaraciones, otorgándoles un nombre que irá siempre precedido del signo del tanto por ciento (%). Después, a través de la regla @extend seguida del nombre de la declaración, será posible emplear esas órdenes. Su peculiaridad es que no se procesan si no se utilizan, por ello, el código procesado estará totalmente libre de declaraciones no empleadas.
+- **Importar.**
+Con la norma @import es posible dividir el código CSS en diferentes ficheros, lo que hace posible tener las hojas de estrilos distribuidas en varios ficheros y finalmente obtener solo CSS.
 
-Importar.
-A través de la norma @import es posible dividir el código CSS en diferentes ficheros y esto constituye una ventaja, puesto que hace posible tener el código distribuido en varios ficheros y luego generar un solo CSS.
-
-Rapidez.
-Empleando SASS los desarrolladores ahorran mucho tiempo porque es posible acortar el código que deben escribir, así como el número de ficheros a implementar. Aumenta, por lo tanto, la productividad.
+- **Rapidez.**
+**SASS** ahorra mucho tiempo porque acorta el código que debe escribir, así como el número de ficheros a implementar lo que aumenta la productividad.
