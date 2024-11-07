@@ -2386,12 +2386,15 @@ Animación de carga de windows 11:
 
 ## 5.5 Creación de imágenes SVG con editores de imágenes.
 Existen numerosos editores de imagenes que permiten guardar los archivos en formato *.svg .  
-En nuestro caso usaremos **Inkcape** al ser uno de los más populares y completos, además de gratuito.  
+En nuestro caso usaremos **Inkscape** al ser uno de los más populares y completos, además de gratuito.  
 
 
 <a href="https://inkscape.org/release/inkscape-1.4/windows/64-bit/msi/?redirected=1" target="_blank">
   <img src="https://media.inkscape.org/static/images/inkscape-logo.svg" alt="click para instalar">
 </a>
+
+Tarea 4 - RA3-CEd  
+Com la ayuda del programa de edición de imágenes Inkscape realizar el siguiente dibujo:
 
 
 
