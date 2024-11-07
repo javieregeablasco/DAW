@@ -1,69 +1,18 @@
+<svg version="1.1" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+    <g>
+      <path d="m150 7a143 143 0 0 0-143 143 143 143 0 0 0 143 143 143 143 0 0 0 143-143 143 143 0 0 0-143-143zm0 31a112 112 0 0 1 112 112 112 112 0 0 1-112 112 112 112 0 0 1-112-112 112 112 0 0 1 112-112z" fill="#c1c1c1" stroke-width=".95333"/>
+      <g fill="#333">
+        <path d="m150 10a140 140 0 0 0-140 140 140 140 0 0 0 140 140 140 140 0 0 0 140-140h-25a115 115 0 0 1-115 115 115 115 0 0 1-115-115 115 115 0 0 1 115-115v-25z" stroke-width="1.5776"/>
+        <circle cx="277.5" cy="150" r="12.5" stroke-width=".5"/>
+        <circle cx="150" cy="22.5" r="12.5" stroke-width=".5"/>
+      </g>
 
-
-<style>
-.circle-wrapper {
-  position: relative;
-  width: 300px;
-  height: 300px;
-}
-
-.outer-circle {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: #c1c1c1;
-  border: 1px solid transparent;
-  box-sizing: border-box;
-}
-
-.rotating-path {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 5px solid #333;
-  box-sizing: border-box;
-  animation: rotate 1.5s linear infinite;
-}
-
-.small-circle {
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  background: #333;
-  border-radius: 50%;
-}
-
-.top {
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.right {
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-</style>
-
-<div class="circle-wrapper">
-  <div class="outer-circle"></div>
-  <div class="rotating-path"></div>
-  <div class="small-circle top"></div>
-  <div class="small-circle right"></div>
-</div>
-
-
-
+      <animateTransform attributeName="transform"
+                        type="rotate"
+                        from="0 150 150"
+                        to="360 150 150"
+                        dur="1.5s"
+                        repeatCount="indefinite" 
+      </animateTransform>
+    </g>
+   </svg>
