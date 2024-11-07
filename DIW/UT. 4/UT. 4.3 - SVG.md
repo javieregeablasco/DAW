@@ -2397,7 +2397,7 @@ En nuestro caso usaremos **Inkscape** al ser uno de los más populares y complet
 1 - Con la ayuda del programa de edición de imágenes Inkscape realizar el siguiente dibujo:  
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/loaderBasic.png" width=15%/> 
 
-2 - Animar el dibujo para obtener el siguiente resultado.
+2 - Animar el dibujo para obtener el siguiente resultado:
 
 
 
