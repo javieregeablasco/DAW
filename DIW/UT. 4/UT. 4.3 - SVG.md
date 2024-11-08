@@ -2402,3 +2402,41 @@ En nuestro caso usaremos **Inkscape** al ser uno de los más populares y complet
 
 ### 5.5.2 Tarea 5 - RA3-CEf  
 1 - Realizar la siguiente <a href="https://drive.google.com/file/d/1wqzCXGVw5Pep5mGLcUZVwhCiaVE5tbeu/view?usp=drive_link">animación</a>
+
+## 5.6 Creación de animaciones SVG con editores.
+### 5.6.1 Introducción
+La creación de SVGs animados con editores permite a los desarrolladores y diseñadores web enriquecer sus proyectos con elementos visuales interactivos y dinámicos.  
+Al igual que para la edición de imágenes y posterior guardado en formato SVG, existen numerosas propuestas, tanto gratuitas como comerciales para la edición y animación de imágenes svg.
+
+**Adobe Illustrator**
+   - Aunque tradicionalmente conocido como un editor de gráficos vectoriales, ofrece integraciones y plugins que ayudan a animar SVGs directamente o exportar elementos para su animación en otras herramientas.
+
+**Inkscape**
+   - Una herramienta de código abierto y gratuita que permite la creación y edición de gráficos SVG. Inkscape tiene capacidades para crear animaciones sencillas.
+
+**SVGator**
+   - Una de las herramientas más populares para animar SVGs de manera sencilla y sin necesidad de código. SVGator permite a los usuarios crear animaciones complejas directamente en su interfaz de arrastrar y soltar, generando un archivo SVG animado listo para usar.
+
+**Lottie y Bodymovin'**
+   - Lottie es una librería de animación que utiliza el plugin Bodymovin' para exportar animaciones creadas en Adobe After Effects como archivos JSON.
+     
+**Snap.svg**
+   - Una biblioteca de JavaScript diseñada específicamente para trabajar con SVGs, es ideal para desarrolladores que quieran tener un control completo sobre las animaciones (mediante código).
+
+**GSAP (GreenSock Animation Platform)**
+   - GSAP permite crear animaciones fluidas y de alto rendimiento y ofrece gran flexibilidad con una sintaxis simple.Es una opción popular entre desarrolladores que buscan más control y capacidades avanzadas.
+
+**Animatron Studio**
+   - Una herramienta en línea que permite crear animaciones HTML5 y SVG de forma interactiva. 
+
+**Keyshape**
+   - Es una herramienta de pago, pero tiene una interfaz intuitiva y funciones avanzadas de animación, como interpolación de formas y movimiento fluido.
+
+**Figma**
+   - Aunque es más conocido como un editor de interfaces y prototipos, Figma soporta la exportación de gráficos SVG que pueden ser animados posteriormente.
+
+### 5.6.2 Figma
+<a href="www.fogma.com">enlace a la web</a>
+
+### 5.6.3 SVGator
+
