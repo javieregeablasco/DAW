@@ -2436,7 +2436,8 @@ Al igual que para la edición de imágenes y posterior guardado en formato SVG, 
    - Aunque es más conocido como un editor de interfaces y prototipos, Figma soporta la exportación de gráficos SVG que pueden ser animados posteriormente.
 
 ### 5.6.2 Figma
-<a href="www.fogma.com">enlace a la web</a>
+<a href="https://www.figma.com">**Enlace a la web de Figma**</a>
 
 ### 5.6.3 SVGator
+<a href="https://app.svgator.com/">**Enlace a la web de SVGator**</a>
 
