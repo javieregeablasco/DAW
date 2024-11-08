@@ -70,6 +70,40 @@ Comprobar igualmente que en el archivo *.css aparece el siguiente comentario:
 Esto indica al navegador dónde encontrar el archivo de mapa de fuentes para vincular el código CSS compilado al código SCSS original.
 
 # 3. Variables
+Las variables permiten almacenar información reutilizable, el nombre de la variable debe empezar con $ y deben ser declaradas antes de utilizarse.  
+Sass permite almacenar diferentes tipos de datos en variables, incluyendo:
+
+**Colores:**  
+```
+$background-color: #ff5733;
+```
+**Números:**  
+```
+$base-margin: 16px;
+```
+**Cadenas de texto:**
+```
+$font-family: 'Arial', sans-serif;
+```
+**Booleans:**
+```
+$is-responsive: true;
+```
+**Listas:**
+```
+$breakpoints: 320px, 480px, 768px, 1024px;
+```  
+**Maps (Mapas asociativos):**
+```
+$theme-colors: (
+  "primary": #007bff,
+  "secondary": #6c757d,
+  "success": #28a745
+);
+```
+https://www.chucksacademy.com/es/topic/css-preprocessors/variables-in-sass
+
+
 https://www.youtube.com/watch?v=MOstrhqpIsI&list=PLjwdMgw5TTLWVp8WUGheSrGnmEWIMk9H6&index=2
 
 <Variables
@@ -82,3 +116,6 @@ Operators>
 <https://www.youtube.com/watch?v=MOstrhqpIsI&list=PLjwdMgw5TTLWVp8WUGheSrGnmEWIMk9H6&index=2>
 <https://www.youtube.com/watch?v=_kqN4hl9bGc&list=PL4cUxeGkcC9jxJX7vojNVK-o8ubDZEcNb>
 <https://www.youtube.com/playlist?list=PLhSj3UTs2_yVyMlZyW-NAbgjtgAgLBzFP>
+
+
+https://www.w3schools.com/sass/sass_variables.php
