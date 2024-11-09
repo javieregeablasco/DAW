@@ -2394,14 +2394,14 @@ En nuestro caso usaremos **Inkscape** al ser uno de los más populares y complet
 </a>
 
 ### 5.5.1 Tarea 4 - RA3-CEd  
-1 - Con la ayuda del programa de edición de imágenes Inkscape realizar el siguiente dibujo:  
+1 - Con la ayuda del programa de edición de imágenes Inkscape realizar el siguiente icono:  
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/img/loaderBasic.png" width=15%/> 
 
-2 - Animar el dibujo para que el arco gire <a href="https://drive.google.com/file/d/1liFV2Qa-L1I7bSjwWZcMJtBZL7UjNIPD/view?usp=sharing">de la siguiente manera</a>
+2 - Animar el icono <a href="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/mpeg/loadingBasic.mp4">de la siguiente manera</a>
 
 
 ### 5.5.2 Tarea 5 - RA3-CEf  
-1 - Realizar la siguiente <a href="https://drive.google.com/file/d/1wqzCXGVw5Pep5mGLcUZVwhCiaVE5tbeu/view?usp=drive_link">animación</a>
+1 - Realizar la siguiente <a href="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/mpeg/loadingVintage.mp4">animación</a>
 
 ## 5.6 Creación de animaciones SVG con editores.
 ### 5.6.1 Introducción
