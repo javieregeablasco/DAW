@@ -11,7 +11,7 @@ Palabras clave: DAW, DIW
 </div>
  
 # 1. Introducción
-<a href="https://sass-lang.com/">SASS</a> es un preprocesador de CSS utilizado para traducir un código de **hojas de estilo no estándar** a un código CSS estándar e interpretable por la mayoría de navegadores.  
+<a href="https://sass-lang.com/">SASS</a> (Syntactically Awesome Stylesheet) es un preprocesador de CSS utilizado para traducir un código de **hojas de estilo no estándar** a un código CSS estándar e interpretable por la mayoría de navegadores. Fue creado por Hampton Catlin en 2006 y más tarde extendido por Natalie Weizenbaum.    
 La principal utilidad de SASS es la de hacer más simple la escritura del código CSS y brindar utilidades que CSS no ofrece.
 
 **Ventajas de utilizar Sass**
@@ -29,7 +29,10 @@ Los mixins son grupos de código, algo comparable a una función en otro lenguaj
 Mediante las herencias, es posible unificar declaraciones de estilo y compartirlas entre diferentes selectores. Una de las particularidades de las herencias en SASS es que las declaraciones heredadas solo se procesan si se utilizan, lo que asegura que el CSS final no contenga estilos innecesarios.
 
 # 2. Otros preprocesadores de CSS: SCSS  
-SCSS es la segunda sintaxis de Sass (Syntactically Awesome Stylesheet) que se distingue por su sintaxis: utiliza corchetes en lugar de sangrías. SCSS se diseñó de tal manera que un archivo CSS3 válido también es un archivo SCSS válido. Los archivos SCSS se almacenan con la extensión .scss.
+**SCSS** es una extensión de la sintaxis de Sass** que se distingue por su sintaxis: utiliza corchetes en lugar de sangrías. SCSS se diseñó de tal manera que un archivo CSS3 válido también es un archivo SCSS válido.  
+Los archivos SCSS se almacenan con la extensión .scss.  
+**Nota:** A lo largo de la unidad se darán tanto ejemplos de sintaxis Sass como de SCSS. 
+
 
 # 2. Instalación y uso de SASS.
 ## 2.1 Instalación
