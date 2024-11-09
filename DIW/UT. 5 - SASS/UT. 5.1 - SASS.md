@@ -129,7 +129,7 @@ $theme-colors: (
 )
 ```
 
-## 3.1 Ejercicio
+## 3.1 Ejercicio parte 1
 **Implementación de Temas Claro y Oscuro en Sass**
 Implementar un sistema de temas claro y oscuro utilizando variables en Sass para definir colores de fondo y de texto, y aplicarlos al `body` según la clase asignada.
 
@@ -182,9 +182,16 @@ Con la ayuda del siguiente código, comprobar que los estilos se aplican correct
 
 </body>
 </html>
-```
+```  
+  
+## 3.2 Ejercicio parte 2
+Continuaremos sobre la base del ejercicio anterior y explotaremos la reutilizabilidad de las variables de Sass.
+1. Definir un color primario `primary-color`, `#ff5733`.
+2. Aplicar ese color como color de fondo del `header` del archivo anterior.
+3. Aplicar ese color al **borde superior** del `footer` (2px)   
 
 
+## 4 Anidación de selectores.
 
 https://www.chucksacademy.com/es/topic/css-preprocessors/variables-in-sass
 
