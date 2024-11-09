@@ -29,9 +29,9 @@ Los mixins son grupos de código, algo comparable a una función en otro lenguaj
 Mediante las herencias, es posible unificar declaraciones de estilo y compartirlas entre diferentes selectores. Una de las particularidades de las herencias en SASS es que las declaraciones heredadas solo se procesan si se utilizan, lo que asegura que el CSS final no contenga estilos innecesarios.
 
 # 2. Otros preprocesadores de CSS: SCSS  
-**SCSS** es una extensión de la sintaxis de Sass** que se distingue por su sintaxis: utiliza corchetes en lugar de sangrías. SCSS se diseñó de tal manera que un archivo CSS3 válido también es un archivo SCSS válido.  
+**SCSS (Sassy CSS) es una extensión de la sintaxis de Sass** que se distingue por su sintaxis: **utiliza corchetes en lugar de identaciones**. SCSS se diseñó de tal manera que un archivo CSS3 válido también es un archivo SCSS válido.  
 Los archivos SCSS se almacenan con la extensión .scss.  
-**Nota:** A lo largo de la unidad se darán tanto ejemplos de sintaxis Sass como de SCSS. 
+**Nota:** Al ser actualmente la sintaxis de Sass preferida nos centraremos en esta. No obstante, a lo largo de la unidad se darán tanto ejemplos de sintaxis Sass como de SCSS. 
 
 
 # 2. Instalación y uso de SASS.
@@ -39,7 +39,7 @@ Los archivos SCSS se almacenan con la extensión .scss.
 Instrucciones de <a href="https://sass-lang.com/install/">**instalación**</a> de Sass.  
 ## 2.2 Uso de Sass
 De una manera que recuerda a **Tailwind** necesitaremos compilar el código Sass (estilos.scss) a (estilos.css).  
-Para ello podremos hacerlo desde la `CLI` con `sass input.scss output.css` o automaticamente con un **watchdog** ejecutando el comando `sass --watch input.scss output.css`. 
+Para ello podremos hacerlo desde la `CLI` con `sass input.scss output.css` o automaticamente con un **supervidor** ejecutando el comando `sass --watch input.scss output.css`. 
 ## 2.3 Ejercicio
 Crear una carpeta dentro de la cual crearéis un archivo *.scss con el siguiente contenido:
 ```
