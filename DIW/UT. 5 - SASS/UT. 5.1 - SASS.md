@@ -380,8 +380,169 @@ Convertir la hoja de estilos siguiente a SCSS.
 ```
 
 
-### 4.6 Uso de la propiedad `@import` (antes de Sass Modules)
+### 4.6 Uso de la propiedad `@import`
+La directiva **@import** se utiliza para importar **otras hojas de estilo dentro de la hoja de estilo principal**.  
+Esto es útil para modularizar los estilos, organizarlos en diferentes archivos y mantener el código más limpio y manejable.
+
 Desde `Sass 1.23.0`, el uso de `@import` está desaconsejado, se recomienda usar `@use` y `@forward`.
+---------------------------------------------------------------------------------------------------------------
+Modificar y aligerar principio
+---------------------------------------------------------------------------------------------------------------
+Las directivas **`@use`** y **`@forward`** son características de **Sass** (la versión más reciente de Sass, conocida como Sass 1.23.0 y superior). Estas directivas se introdujeron para mejorar la modularización y organización de los estilos, y para reemplazar la antigua directiva **`@import`**, que tenía varios problemas de rendimiento y mantenimiento. 
+
+### 1. **`@use`**: Importación de módulos en Sass
+
+La directiva **`@use`** permite importar y cargar un archivo Sass de manera más controlada y eficiente que la antigua directiva `@import`. La principal ventaja es que permite evitar la duplicación de reglas y mantiene el código más modular y organizado.
+
+#### Sintaxis:
+```scss
+@use "path/to/module";
+```
+
+#### Características clave de `@use`:
+
+- **Cargar un archivo solo una vez**: Con `@use`, un archivo Sass solo se carga una vez, incluso si se importa en múltiples archivos. Esto evita que las mismas reglas se apliquen varias veces en el mismo proyecto.
+  
+- **Variables, mixins y funciones**: Las variables, mixins y funciones de un archivo importado con `@use` son "namespaced" (es decir, agrupadas bajo el nombre del archivo), lo que ayuda a evitar conflictos de nombres. No se importan directamente al espacio global.
+
+- **Naming (espacios de nombres)**: Cuando usas `@use`, las variables, mixins y funciones del archivo importado se agrupan bajo un prefijo que se deriva del nombre del archivo. Por ejemplo, si importas un archivo llamado `_colors.scss`, las variables dentro de este archivo estarán accesibles como `colors.$primary`, `colors.$secondary`, etc.
+
+#### Ejemplo:
+
+```scss
+// _colors.scss
+$primary: #ff5733;
+$secondary: #333333;
+```
+
+```scss
+// styles.scss
+@use "colors";
+
+body {
+  background-color: colors.$primary;
+}
+```
+
+En este ejemplo:
+- **`colors.$primary`** hace referencia a la variable `$primary` en el archivo `_colors.scss`.
+- **`@use`** asegura que el archivo `_colors.scss` se cargue solo una vez, incluso si se importa en varios lugares.
+
+#### Alias:
+Puedes usar un alias para un archivo importado con `@use` para hacer más cortos los nombres de las variables o mixins que estás usando.
+
+```scss
+@use "colors" as c;
+
+body {
+  background-color: c.$primary;
+}
+```
+
+### 2. **`@forward`**: Reexportación de módulos
+
+La directiva **`@forward`** se utiliza para **reenviar** todo o parte de un módulo (archivo Sass) a otros archivos. Esto permite que un archivo Sass se convierta en un "paso intermedio" que reexporta el contenido de otros archivos, lo que facilita la creación de bibliotecas o colecciones de módulos reutilizables.
+
+#### Sintaxis:
+```scss
+@forward "path/to/module";
+```
+
+#### Características clave de `@forward`:
+
+- **Reexportar módulos**: Con `@forward`, puedes reexportar todas o algunas partes de un módulo a otros archivos que lo necesiten, sin necesidad de hacer un `@use` de cada archivo individualmente.
+  
+- **Control de lo que se reexporta**: Puedes usar `@forward` con opciones para excluir o incluir ciertas variables, mixins o funciones. Esto permite encapsular mejor lo que quieres hacer disponible para otros módulos sin exponer todo el contenido.
+
+#### Ejemplo:
+```scss
+// _colors.scss
+$primary: #ff5733;
+$secondary: #333333;
+```
+
+```scss
+// _index.scss
+@forward "colors";
+```
+
+```scss
+// styles.scss
+@use "index" as *;
+
+body {
+  background-color: $primary;  // Usando la variable reexportada
+}
+```
+
+En este ejemplo:
+- El archivo `_index.scss` reexporta el contenido de `_colors.scss`.
+- El archivo `styles.scss` usa `@use "index"`, lo que le da acceso a las variables de `_colors.scss` sin necesidad de importarlas directamente.
+
+#### Uso de `@forward` con selección:
+Puedes usar `@forward` para reexportar solo algunas partes del archivo original:
+
+```scss
+// _colors.scss
+$primary: #ff5733;
+$secondary: #333333;
+$tertiary: #ffffff;
+```
+
+```scss
+// _index.scss
+@forward "colors" with $primary, $secondary;
+```
+
+En este caso, el archivo `_index.scss` solo reexportará las variables `$primary` y `$secondary`, excluyendo `$tertiary`.
+
+### Comparación de `@use` y `@forward`
+
+- **`@use`** se utiliza cuando **importas un módulo** y deseas usar sus variables, mixins y funciones en tu archivo actual, pero manteniendo un espacio de nombres (namespace).
+  
+- **`@forward`** se utiliza para **reenviar un módulo a otros archivos**, permitiendo que esos archivos accedan a lo que tú decides reexportar de un módulo.
+
+### Ventajas sobre `@import`:
+
+1. **Evitar duplicación de código**: Tanto `@use` como `@forward` ayudan a evitar la duplicación de código, ya que Sass solo carga los archivos una vez, independientemente de cuántos archivos los importen.
+   
+2. **Modularidad y mantenimiento**: Estas directivas permiten un código más organizado y modular, mejorando la gestión de proyectos grandes.
+
+3. **Nombres más claros y sin conflictos**: Al usar `@use`, las variables, mixins y funciones son agrupadas bajo un espacio de nombres, lo que evita posibles conflictos de nombres que podrían ocurrir con `@import`.
+
+### Resumen:
+
+- **`@use`**: Para importar un archivo Sass de manera controlada, evitando la duplicación de código y proporcionando un espacio de nombres para las variables y mixins.
+- **`@forward`**: Para reexportar un archivo Sass a otros archivos, permitiendo que esos archivos accedan a su contenido de forma organizada.
+
+Ambas directivas son fundamentales para trabajar de manera eficiente con Sass en proyectos grandes y permiten una gestión más limpia de los estilos.
+
+
+---------------------------------------------------------------------------------------------------------------
+Modificar y aligerar fin
+---------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### 7. **Anidamiento de media queries**:
@@ -407,71 +568,16 @@ Puedes anidar las reglas de media queries dentro de las reglas para hacer que lo
 **Explicación:**
 - Dentro de `.container`, se anidan las media queries para cambiar el ancho del contenedor según el tamaño de la pantalla.
 
-### Resumen de las reglas de anidamiento en Sass:
 
-1. **Sintaxis básica**: Se escribe el selector dentro de otro selector para reflejar la jerarquía.
-2. **Uso de `&`**: Permite referirse al selector padre para aplicar pseudo-clases, pseudo-elementos o clases adicionales.
-3. **Combinadores**: Se pueden utilizar combinadores de selección dentro del anidamiento para definir relaciones entre los elementos.
-4. **Pseudo-clases y pseudo-elementos**: El anidamiento permite aplicar fácilmente estilos a pseudo-elementos y pseudo-clases.
-5. **No abusar del anidamiento**: Evita anidar profundamente para no generar reglas CSS difíciles de manejar.
-
-El anidamiento en Sass mejora la organización del código CSS y hace que sea más fácil de mantener, pero debe usarse con moderación para evitar una complejidad innecesaria.
-
-
-
-**Ejemplo de una hoja de estilos CSS**  
-```
-/* Estilos para el panel */
-.panel {
-  background-color: #f4f4f4;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-/* Estilos para el título del panel */
-.panel .panel-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #333;
-}
-
-/* Estilos para el contenido del panel */
-.panel .panel-content {
-  margin-top: 10px;
-  font-size: 1rem;
-  color: #666;
-}
-
-/* Estilos para el pie del panel */
-.panel .panel-footer {
-  display: flex;
-  justify-content: flex-end;
-}
-
-/* Estilos para los botones dentro del pie del panel */
-.panel .panel-footer button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-}
-
-.panel .panel-footer button:hover {
-  background-color: #0056b3;
-}
-```
-
- 
-
+---------------------------------------------------------------- 
+Recursos utilizados
+----------------------------------------------------------------
 
 https://www.chucksacademy.com/es/topic/css-preprocessors/variables-in-sass
 
 
 https://www.youtube.com/watch?v=MOstrhqpIsI&list=PLjwdMgw5TTLWVp8WUGheSrGnmEWIMk9H6&index=2
 
-<Variables
-Nesting
 Partials
 Modules
 Mixins
@@ -480,6 +586,4 @@ Operators>
 <https://www.youtube.com/watch?v=MOstrhqpIsI&list=PLjwdMgw5TTLWVp8WUGheSrGnmEWIMk9H6&index=2>
 <https://www.youtube.com/watch?v=_kqN4hl9bGc&list=PL4cUxeGkcC9jxJX7vojNVK-o8ubDZEcNb>
 <https://www.youtube.com/playlist?list=PLhSj3UTs2_yVyMlZyW-NAbgjtgAgLBzFP>
-
-
 https://www.w3schools.com/sass/sass_variables.php
