@@ -192,6 +192,52 @@ Continuaremos sobre la base del ejercicio anterior y explotaremos la reutilizabi
 
 
 ## 4 Anidación de selectores.
+En CSS, los selectores relacionados deben escribirse de manera explícita, lo que puede llevar a un código repetitivo y difícil de mantener. 
+**Ejemplo de una hoja de estilos CSS**
+```
+/* Estilos para el panel */
+.panel {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Estilos para el título del panel */
+.panel .panel-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Estilos para el contenido del panel */
+.panel .panel-content {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Estilos para el pie del panel */
+.panel .panel-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Estilos para los botones dentro del pie del panel */
+.panel .panel-footer button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.panel .panel-footer button:hover {
+  background-color: #0056b3;
+}
+```
+
+Una de las características de Sass es la capacidad de anidar selectores CSS de una manera que refleja la estructura jerárquica del HTML. Eso hace que el código CSS sea más legible y fácil de organizar. 
+
 
 https://www.chucksacademy.com/es/topic/css-preprocessors/variables-in-sass
 
