@@ -380,34 +380,23 @@ Convertir la hoja de estilos siguiente a SCSS.
 ```
 
 
-### 4.6 Uso de la propiedad `@import`
-La directiva **@import** se utiliza para importar **otras hojas de estilo dentro de la hoja de estilo principal**.  
-Esto es útil para modularizar los estilos, organizarlos en diferentes archivos y mantener el código más limpio y manejable.
+### 4.6 Propiedades `@import`, `@use` y `@forward` 
+La directiva **@import** se utiliza para importar **otras hojas de estilo dentro de la hoja de estilo principal**, lo que permite modularizar los estilos, organizarlos en diferentes archivos y mantener el código más limpio y manejable.  
+Desde `Sass 1.23.0`, el uso de `@import` está desaconsejado, se recomienda usar `@use` y `@forward`.  
+  
+Las directivas **`@use`** y **`@forward`** son características de **Sass** (desde Sass 1.23.0) y reemplazanan la directiva **`@import`**. 
 
-Desde `Sass 1.23.0`, el uso de `@import` está desaconsejado, se recomienda usar `@use` y `@forward`.
----------------------------------------------------------------------------------------------------------------
-Modificar y aligerar principio
----------------------------------------------------------------------------------------------------------------
-Las directivas **`@use`** y **`@forward`** son características de **Sass** (la versión más reciente de Sass, conocida como Sass 1.23.0 y superior). Estas directivas se introdujeron para mejorar la modularización y organización de los estilos, y para reemplazar la antigua directiva **`@import`**, que tenía varios problemas de rendimiento y mantenimiento. 
-
-### 1. **`@use`**: Importación de módulos en Sass
-
-La directiva **`@use`** permite importar y cargar un archivo Sass de manera más controlada y eficiente que la antigua directiva `@import`. La principal ventaja es que permite evitar la duplicación de reglas y mantiene el código más modular y organizado.
-
-#### Sintaxis:
-```scss
+#### 4.6.1 Importación de módulos con @use
+**@use** permite importar y cargar un archivo Sass de manera más controlada y eficiente que la antigua `@import` permitiendo, entre otras, evitar la duplicación de reglas.
+- **Sintaxis.**
+```
 @use "path/to/module";
 ```
 
-#### Características clave de `@use`:
-
-- **Cargar un archivo solo una vez**: Con `@use`, un archivo Sass solo se carga una vez, incluso si se importa en múltiples archivos. Esto evita que las mismas reglas se apliquen varias veces en el mismo proyecto.
-  
-- **Variables, mixins y funciones**: Las variables, mixins y funciones de un archivo importado con `@use` son "namespaced" (es decir, agrupadas bajo el nombre del archivo), lo que ayuda a evitar conflictos de nombres. No se importan directamente al espacio global.
-
-- **Naming (espacios de nombres)**: Cuando usas `@use`, las variables, mixins y funciones del archivo importado se agrupan bajo un prefijo que se deriva del nombre del archivo. Por ejemplo, si importas un archivo llamado `_colors.scss`, las variables dentro de este archivo estarán accesibles como `colors.$primary`, `colors.$secondary`, etc.
-
-#### Ejemplo:
+- **Características de `@use`:**
+    - **Carga el archivo solo una vez**, incluso si se importa en múltiples archivos.
+    - **Las variables, mixins y funciones** importadas son "namespaced", es decir, agrupadas bajo el nombre del archivo, lo que ayuda a evitar conflictos de nombres.
+    - **Naming (espacios de nombres)**: Cuando usamos `@use`, las variables, mixins y funciones del archivo importado se agrupan bajo un prefijo que se deriva del nombre del archivo. Por ejemplo, si importamos el archivo `_colors.scss`, las variables dentro de este archivo estarán accesibles como `colors.$primary`, `colors.$secondary`, etc.
 
 ```scss
 // _colors.scss
@@ -428,8 +417,8 @@ En este ejemplo:
 - **`colors.$primary`** hace referencia a la variable `$primary` en el archivo `_colors.scss`.
 - **`@use`** asegura que el archivo `_colors.scss` se cargue solo una vez, incluso si se importa en varios lugares.
 
-#### Alias:
-Puedes usar un alias para un archivo importado con `@use` para hacer más cortos los nombres de las variables o mixins que estás usando.
+#### 4.6.2 Alias
+Se puede usar un alias para un archivo importado con `@use` para hacer más cortos los nombres de las variables o mixins que estás usando.
 
 ```scss
 @use "colors" as c;
@@ -437,11 +426,15 @@ Puedes usar un alias para un archivo importado con `@use` para hacer más cortos
 body {
   background-color: c.$primary;
 }
-```
+```  
+  
+#### 4.6.3 Reexportación de módulos con @forward 
+La directiva `@forward` se utiliza para **reenviar** todo o parte de un módulo (archivo Sass) a otros archivos. Esto permite que un archivo Sass se convierta en un "paso intermedio" que reexporta el contenido de otros archivos, lo que facilita la creación de bibliotecas o colecciones de módulos reutilizables.
+---------------------------------------------------------------------------------------------------------------
+Modificar y aligerar principio
+---------------------------------------------------------------------------------------------------------------
 
-### 2. **`@forward`**: Reexportación de módulos
 
-La directiva **`@forward`** se utiliza para **reenviar** todo o parte de un módulo (archivo Sass) a otros archivos. Esto permite que un archivo Sass se convierta en un "paso intermedio" que reexporta el contenido de otros archivos, lo que facilita la creación de bibliotecas o colecciones de módulos reutilizables.
 
 #### Sintaxis:
 ```scss
