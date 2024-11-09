@@ -346,7 +346,7 @@ Es recomendable no anidar demasiado profundamente, ya que puede hacer que el CSS
 }
 ```
   
-### 4.5. Ejercicio
+### 4.5. Tarea RA3CEh
 Convertir la hoja de estilos siguiente a SCSS.
 ```
 .panel {
