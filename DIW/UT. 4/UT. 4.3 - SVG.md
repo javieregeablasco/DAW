@@ -2439,6 +2439,6 @@ Al igual que para la edición de imágenes y posterior guardado en formato SVG, 
 <a href="https://www.figma.com">**Enlace a la web de Figma**</a>  
 <a href="https://www.figma.com/proto/b1iAjgZ2VZe7Cwij22e0Je/spinnerBasic?node-id=15-83&t=W4maEf2eZjsFUV6R-1">**Ejemplo de spinner**</a>
 ### 5.6.3 SVGator
-<a href="https://app.svgator.com/">**Enlace a la web de SVGator**</a>
-
+<a href="https://app.svgator.com/">**Enlace a la web de SVGator**</a>  
+<a href="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/mpeg/spinner%20win11.mp4">**Ejemplo de spinner**</a>
 
