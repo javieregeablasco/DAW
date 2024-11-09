@@ -223,7 +223,7 @@ nav {
 ```
   
 ### 4.2 Uso del selector padre `&`
-El símbolo `&` se utiliza para hacer referencia al selector padre en una regla anidada. Esto es útil para aplicar pseudo-clases, pseudo-elementos o variantes del selector.  
+El símbolo `&` (Ampersand) se utiliza para hacer referencia al selector padre en una regla anidada. Esto es útil para aplicar pseudo-clases, pseudo-elementos o variantes del selector.  
   
 **Ejemplo con pseudo clases y pseudo-elementos**  
 - `&:hover` Se refiere a button:hover. El botón cambia de color cuando está en hover.
@@ -353,35 +353,28 @@ Convertir la hoja de estilos siguiente a SCSS.
   border: 1px solid #ddd;
   padding: 20px;
 }
-
-.panel-header {
+.panel .panel-header {
   background-color: #f5f5f5;
 }
-
-.panel-header h2 {
+.panel .panel-header h2 {
   margin: 0;
   color: #333;
 }
-
-.panel-body {
+.panel .panel-body {
   margin-top: 20px;
 }
-
-.panel-body p {
+.panel .panel-body p {
   color: #666;
 }
-
-.panel-footer {
+.panel .panel-footer {
   background-color: #f5f5f5;
   text-align: right;
 }
-
-.panel-footer button {
+.panel .panel-footer button {
   background-color: #007bff;
   color: white;
 }
-
-.panel-footer button:hover {
+.panel .panel-footer button:hover {
   background-color: #0056b3;
 }
 ```
