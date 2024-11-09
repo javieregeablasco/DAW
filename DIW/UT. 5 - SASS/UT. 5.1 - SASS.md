@@ -193,7 +193,240 @@ Continuaremos sobre la base del ejercicio anterior y explotaremos la reutilizabi
 
 ## 4 Anidación de selectores.
 En CSS, los selectores relacionados deben escribirse de manera explícita, lo que puede llevar a un código repetitivo y difícil de mantener. 
-**Ejemplo de una hoja de estilos CSS**
+Una de las características de Sass es la capacidad de anidar selectores CSS de una manera que refleja la estructura jerárquica del HTML. Eso hace que el código CSS sea más legible y fácil de organizar.
+
+### 4.1 Sintaxis de Sass para los anidamientos de estilos.
+En Sass, el anidamiento **se realiza simplemente escribiendo las reglas dentro de otras reglas**.  
+Esto refleja la jerarquía de los elementos HTML como lo podemos ver a continuación donde:
+  1. `nav` contiene un `ul`
+  2. `ul`contiene un `li`
+  3. `li` contiene un `a`.
+
+```scss
+nav {
+  background-color: #333;
+  
+  ul {
+    list-style-type: none;
+    
+    li {
+      display: inline-block;
+      padding: 10px;
+      
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+```
+  
+### 4.2 Uso del selector padre `&`
+El símbolo `&` se utiliza para hacer referencia al selector padre en una regla anidada. Esto es útil para aplicar pseudo-clases, pseudo-elementos o variantes del selector.  
+  
+**Ejemplo con pseudo clases y pseudo-elementos**  
+- `&:hover` Se refiere a button:hover. El botón cambia de color cuando está en hover.
+- `&.active` Se refiere a button.active. Permite aplicar los estilos de la clase `active` a un botón.
+- `&::after` Hace referencia a `a::after`. Crea un contenido después de clicar el enlace.
+```
+SCSS
+button {
+  background-color: #007bff;
+  color: white;
+  
+  &:hover {
+    background-color: #0056b3;
+  }
+  
+  &.active {
+    background-color: #28a745;
+  }
+}
+
+a {
+  color: blue;
+  
+  &:hover {
+    color: darkblue;
+  }
+  
+  &::after {
+    content: ' (link)';
+    font-style: italic;
+  }
+}
+```
+```
+CSS
+button {
+  background-color: #007bff;
+  color: white;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button.active {
+  background-color: #28a745;
+}
+
+a {
+  color: blue;
+}
+
+a:hover {
+  color: darkblue;
+}
+
+a::after {
+  content: ' (link)';
+  font-style: italic;
+}
+```
+  
+### 4.3 Anidamiento con combinadores
+El anidamiento puede incluir combinadores de selección como `>`, `+`, `~`, y un espacio (para descendientes). Esto permite especificar la relación entre los elementos de manera jerárquica.
+
+**Ejemplo con combinadores.**
+- `> p` selecciona los elementos `p` que son hijos directos de `div`.
+- `p + ul` selecciona un `ul` que está inmediatamente después de un `p`.
+- `p ~ div` selecciona todos los `div` que siguen a un `p` en el mismo nivel de jerarquía.
+```
+SCSS
+div {
+  background-color: lightblue;
+  
+  > p {
+    font-weight: bold;
+  }
+  
+  p + ul {
+    margin-top: 10px;
+  }
+  
+  p ~ div {
+    border: 1px solid gray;
+  }
+}
+```
+```
+CSS
+div {
+  background-color: lightblue;
+}
+
+div > p {
+  font-weight: bold;
+}
+
+p + ul {
+  margin-top: 10px;
+}
+
+p ~ div {
+  border: 1px solid gray;
+}
+```
+
+### 4.4. Buenas prácticas de Sass
+Es recomendable no anidar demasiado profundamente, ya que puede hacer que el CSS sea difícil de mantener y puede generar reglas de estilo muy específicas difíciles de sobrescribir.  
+  
+**Ejemplo de anidamiento excesivo.**
+```
+.container {
+  .section {
+    .article {
+      .title {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+```
+  
+### 4.5. Ejercicio
+Convertir la hoja de estilos siguiente a SCSS.
+```
+.panel {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.panel-header {
+  background-color: #f5f5f5;
+}
+
+.panel-header h2 {
+  margin: 0;
+  color: #333;
+}
+
+.panel-body {
+  margin-top: 20px;
+}
+
+.panel-body p {
+  color: #666;
+}
+
+.panel-footer {
+  background-color: #f5f5f5;
+  text-align: right;
+}
+
+.panel-footer button {
+  background-color: #007bff;
+  color: white;
+}
+
+.panel-footer button:hover {
+  background-color: #0056b3;
+}
+```
+
+
+### 6. **Uso de la propiedad `@import` (antes de Sass Modules)**:
+
+En versiones anteriores de Sass, se podía anidar las importaciones con la sintaxis `@import` dentro de las reglas. Sin embargo, con Sass Modules (desde Sass 1.23.0), el uso de `@import` está desaconsejado a favor de `@use` y `@forward`.
+
+### 7. **Anidamiento de media queries**:
+
+Puedes anidar las reglas de media queries dentro de las reglas para hacer que los estilos sean responsivos.
+
+#### Ejemplo con media queries anidados:
+
+```scss
+.container {
+  width: 100%;
+  
+  @media (min-width: 768px) {
+    width: 80%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 60%;
+  }
+}
+```
+
+**Explicación:**
+- Dentro de `.container`, se anidan las media queries para cambiar el ancho del contenedor según el tamaño de la pantalla.
+
+### Resumen de las reglas de anidamiento en Sass:
+
+1. **Sintaxis básica**: Se escribe el selector dentro de otro selector para reflejar la jerarquía.
+2. **Uso de `&`**: Permite referirse al selector padre para aplicar pseudo-clases, pseudo-elementos o clases adicionales.
+3. **Combinadores**: Se pueden utilizar combinadores de selección dentro del anidamiento para definir relaciones entre los elementos.
+4. **Pseudo-clases y pseudo-elementos**: El anidamiento permite aplicar fácilmente estilos a pseudo-elementos y pseudo-clases.
+5. **No abusar del anidamiento**: Evita anidar profundamente para no generar reglas CSS difíciles de manejar.
+
+El anidamiento en Sass mejora la organización del código CSS y hace que sea más fácil de mantener, pero debe usarse con moderación para evitar una complejidad innecesaria.
+
+
+
+**Ejemplo de una hoja de estilos CSS**  
 ```
 /* Estilos para el panel */
 .panel {
@@ -236,7 +469,7 @@ En CSS, los selectores relacionados deben escribirse de manera explícita, lo qu
 }
 ```
 
-Una de las características de Sass es la capacidad de anidar selectores CSS de una manera que refleja la estructura jerárquica del HTML. Eso hace que el código CSS sea más legible y fácil de organizar. 
+ 
 
 
 https://www.chucksacademy.com/es/topic/css-preprocessors/variables-in-sass
