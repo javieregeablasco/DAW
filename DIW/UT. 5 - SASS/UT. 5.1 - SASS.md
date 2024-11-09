@@ -140,7 +140,7 @@ Implementar un sistema de temas claro y oscuro utilizando variables en Sass para
       - Define los estilos de `body` usando la clase `.dark-theme` para aplicar los colores correspondientes al tema oscuro.
 
 Con la ayuda del siguiente código, comprobar que los estilos se aplican correctamente.
-´´´
+```
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -149,7 +149,7 @@ Con la ayuda del siguiente código, comprobar que los estilos se aplican correct
   <title>Variables</title>
   <link rel="stylesheet" href="Estilos.css">  
 </head>
-<body class="light-theme"> <!-- Establecemos el tema inicial a claro -->
+<body class="light-theme"> 
 
   <header>
     <h1>Ejercicio de variables en Sass</h1>
@@ -165,7 +165,7 @@ Con la ayuda del siguiente código, comprobar que los estilos se aplican correct
   </footer>
 
   <script>
-    // Función para alternar entre el tema claro y oscuro
+    // Función para alternar temas
     const toggleButton = document.getElementById('toggle-theme');
     toggleButton.addEventListener('click', () => {
       document.body.classList.toggle('light-theme');
