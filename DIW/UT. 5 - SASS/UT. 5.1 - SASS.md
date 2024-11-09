@@ -380,9 +380,9 @@ Convertir la hoja de estilos siguiente a SCSS.
 ```
 
 
-### 6. **Uso de la propiedad `@import` (antes de Sass Modules)**:
+### 4.6 Uso de la propiedad `@import` (antes de Sass Modules)
+Desde `Sass 1.23.0`, el uso de `@import` está desaconsejado, se recomienda usar `@use` y `@forward`.
 
-En versiones anteriores de Sass, se podía anidar las importaciones con la sintaxis `@import` dentro de las reglas. Sin embargo, con Sass Modules (desde Sass 1.23.0), el uso de `@import` está desaconsejado a favor de `@use` y `@forward`.
 
 ### 7. **Anidamiento de media queries**:
 
