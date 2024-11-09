@@ -76,27 +76,43 @@ Esto indica al navegador dónde encontrar el archivo de mapa de fuentes para vin
 Las variables permiten almacenar información reutilizable, el nombre de la variable debe empezar con $ y deben ser declaradas antes de utilizarse.  
 Sass permite almacenar diferentes tipos de datos en variables, incluyendo:
 
-**Colores:**  
+**Colores:**
+- **SCSS**  
 ```
 $background-color: #ff5733;
 ```
+- **Sass**
+```
+$background-color: #ff5733
+```
+<br></br>
 **Números:**  
 ```
 $base-margin: 16px;
 ```
-**Cadenas de texto:**
+<br></br>
+**Cadenas de texto:**  
+- **SCSS**
 ```
 $font-family: 'Arial', sans-serif;
 ```
+- **Sass**
+```
+$font-family: 'Arial', sans-serif
+```
+<br></br>
 **Booleans:**
 ```
 $is-responsive: true;
 ```
+<br></br>
 **Listas:**
 ```
 $breakpoints: 320px, 480px, 768px, 1024px;
-```  
-**Maps (Mapas asociativos):**
+```
+<br></br>
+**Maps (Mapas asociativos):**  
+- **SCSS**
 ```
 $theme-colors: (
   "primary": #007bff,
@@ -104,6 +120,72 @@ $theme-colors: (
   "success": #28a745
 );
 ```
+- **Sass**
+```
+$theme-colors: (
+  "primary": #007bff,
+  "secondary": #6c757d,
+  "success": #28a745
+)
+```
+
+## 3.1 Ejercicio
+**Implementación de Temas Claro y Oscuro en Sass**
+Implementar un sistema de temas claro y oscuro utilizando variables en Sass para definir colores de fondo y de texto, y aplicarlos al `body` según la clase asignada.
+
+- **Instrucciones:**
+    - Crear variables en Sass para los **colores** de **fondo** y de **texto** del tema claro y oscuro , p.e.: `bg-light` y `text-dark`, `#ffffff`. 
+    - Aplicar las variables de color:
+      - Definir los estilos de `body` usando la clase `.light-theme` para aplicar los colores correspondientes al tema claro.
+      - Define los estilos de `body` usando la clase `.dark-theme` para aplicar los colores correspondientes al tema oscuro.
+
+Con la ayuda del siguiente código, comprobar que los estilos se aplican correctamente.
+´´´
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variables</title>
+  <link rel="stylesheet" href="Estilos.css">  
+</head>
+<body class="light-theme"> <!-- Establecemos el tema inicial a claro -->
+
+  <header>
+    <h1>Ejercicio de variables en Sass</h1>
+    <button id="toggle-theme">Cambiar a Tema Oscuro</button>
+  </header>
+
+  <main>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quis a atque facilis iste asperiores iure repudiandae modi, placeat ullam eos soluta laboriosam recusandae velit est optio consequatur quasi officiis!</p>
+  </main>
+
+  <footer>
+    <p>Pie de página</p>
+  </footer>
+
+  <script>
+    // Función para alternar entre el tema claro y oscuro
+    const toggleButton = document.getElementById('toggle-theme');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('light-theme');
+      document.body.classList.toggle('dark-theme');
+      
+      // Cambiar el texto del botón según el tema activo
+      if (document.body.classList.contains('light-theme')) {
+        toggleButton.textContent = 'Cambiar a Tema Oscuro';
+      } else {
+        toggleButton.textContent = 'Cambiar a Tema Claro';
+      }
+    });
+  </script>
+
+</body>
+</html>
+```
+
+
+
 https://www.chucksacademy.com/es/topic/css-preprocessors/variables-in-sass
 
 
