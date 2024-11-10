@@ -597,15 +597,7 @@ En este caso, el archivo `_index.scss` solo reexportará las variables `$primary
 Modificar y aligerar principio
 ---------------------------------------------------------------------------------------------------------------
 
-
-
-
-### Comparación de `@use` y `@forward`
-
-- **`@use`** se utiliza cuando **importas un módulo** y deseas usar sus variables, mixins y funciones en tu archivo actual, pero manteniendo un espacio de nombres (namespace).
-  
-- **`@forward`** se utiliza para **reenviar un módulo a otros archivos**, permitiendo que esos archivos accedan a lo que tú decides reexportar de un módulo.
-
+`@use` y `@forward`
 ### Ventajas sobre `@import`:
 
 1. **Evitar duplicación de código**: Tanto `@use` como `@forward` ayudan a evitar la duplicación de código, ya que Sass solo carga los archivos una vez, independientemente de cuántos archivos los importen.
@@ -614,40 +606,15 @@ Modificar y aligerar principio
 
 3. **Nombres más claros y sin conflictos**: Al usar `@use`, las variables, mixins y funciones son agrupadas bajo un espacio de nombres, lo que evita posibles conflictos de nombres que podrían ocurrir con `@import`.
 
-### Resumen:
-
-- **`@use`**: Para importar un archivo Sass de manera controlada, evitando la duplicación de código y proporcionando un espacio de nombres para las variables y mixins.
-- **`@forward`**: Para reexportar un archivo Sass a otros archivos, permitiendo que esos archivos accedan a su contenido de forma organizada.
-
+#### 4.6.4 Resumen de @use y @forward:
+- **`@use`**: Importa un archivo Sass de manera controlada, evitando la duplicación de código y proporcionando un espacio de nombres para las variables y mixins.
+- **`@forward`**: Reexporta un archivo Sass a otros archivos, permitiendo que esos archivos accedan a su contenido de forma organizada.  
 Ambas directivas son fundamentales para trabajar de manera eficiente con Sass en proyectos grandes y permiten una gestión más limpia de los estilos.
 
 
 ---------------------------------------------------------------------------------------------------------------
 Modificar y aligerar fin
 ---------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ### 7. **Anidamiento de media queries**:
 
