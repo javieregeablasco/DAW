@@ -328,9 +328,27 @@ p + ul {
 p ~ div {
   border: 1px solid gray;
 }
+```  
+
+## 5.4 Anidamiento de media queries:
+También se pueden anidar las reglas de media queries para hacer que los estilos sean responsivos.
+
+**Ejemplo:**
+```
+.container {
+  width: 100%;
+  
+  @media (min-width: 768px) {
+    width: 80%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 60%;
+  }
+}
 ```
 
-## 5.4. Buenas prácticas de Sass
+## 5.5 Buenas prácticas de Sass
 Es recomendable no anidar demasiado profundamente, ya que puede hacer que el CSS sea difícil de mantener y puede generar reglas de estilo muy específicas difíciles de sobrescribir.  
   
 **Ejemplo de anidamiento excesivo.**
@@ -346,7 +364,7 @@ Es recomendable no anidar demasiado profundamente, ya que puede hacer que el CSS
 }
 ```
   
-## 5.5. Tarea RA3CEh
+## 5.6 Tarea RA3CEh
 Convertir la hoja de estilos siguiente a SCSS.
 ```
 .panel {
@@ -602,28 +620,8 @@ Ambas directivas son fundamentales para trabajar de manera eficiente con Sass en
 Modificar y aligerar principio
 ---------------------------------------------------------------------------------------------------------------
 
-### 7. **Anidamiento de media queries**:
 
-Puedes anidar las reglas de media queries dentro de las reglas para hacer que los estilos sean responsivos.
 
-#### Ejemplo con media queries anidados:
-
-```scss
-.container {
-  width: 100%;
-  
-  @media (min-width: 768px) {
-    width: 80%;
-  }
-
-  @media (min-width: 1024px) {
-    width: 60%;
-  }
-}
-```
-
-**Explicación:**
-- Dentro de `.container`, se anidan las media queries para cambiar el ancho del contenedor según el tamaño de la pantalla.
 
 ---------------------------------------------------------------------------------------------------------------
 Modificar y aligerar fin
