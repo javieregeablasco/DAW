@@ -398,24 +398,103 @@ Las directivas **`@use`** y **`@forward`** son características de **Sass** (des
     - **Las variables, mixins y funciones** importadas son "namespaced", es decir, agrupadas bajo el nombre del archivo, lo que ayuda a evitar conflictos de nombres.
     - **Naming (espacios de nombres)**: Cuando usamos `@use`, las variables, mixins y funciones del archivo importado se agrupan bajo un prefijo que se deriva del nombre del archivo. Por ejemplo, si importamos el archivo `_colors.scss`, las variables dentro de este archivo estarán accesibles como `colors.$primary`, `colors.$secondary`, etc.
 
-```scss
-// _colors.scss
-$primary: #ff5733;
-$secondary: #333333;
+**Ejemplo:**
+- Archivo Estilos.scss
 ```
+@use "./estilosAdicionales/_flex";
 
-```scss
-// styles.scss
-@use "colors";
+/* ejercicio parte1 */
+// tema claro
+$bg-light: #ffffff;
+$text-light: #000000;
 
-body {
-  background-color: colors.$primary;
+// tema oscuro
+$bg-dark: #333333;
+$text-dark: #ffffff;
+
+// aplicar a body
+body.light-theme {
+  background-color: $bg-light;
+  color: $text-light;
+}
+
+body.dark-theme {
+  background-color: $bg-dark;
+  color: $text-dark;
 }
 ```
 
-En este ejemplo:
-- **`colors.$primary`** hace referencia a la variable `$primary` en el archivo `_colors.scss`.
-- **`@use`** asegura que el archivo `_colors.scss` se cargue solo una vez, incluso si se importa en varios lugares.
+- **Archivo _flex.scss**
+```
+#formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    align-items: center;    
+}
+```
+- **Archivo index.html**
+```
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variables</title>
+  <link rel="stylesheet" href="Estilos.css">  
+</head>
+<body class="light-theme">
+
+  <header>
+    <h1>Ejercicio de variables en Sass</h1>
+    <button id="toggle-theme">Cambiar a Tema Oscuro</button>
+  </header>
+
+  <main>
+    <p>Utilización de la directiva @use para añadir estilos desde hoja de estilos adicional.</p>
+    <form id="formulario" action="form">
+      <label>Nombre</label>
+      <input type="text">
+      <label>Email</label>
+      <label>Mensaje</label>
+      <input type="text">
+      <textarea cols="10" rows="5"></textarea>
+      <input type="submit" value="Enviar">
+    </form>
+
+  </main>
+
+  <footer>
+    <p>Pie de página</p>
+  </footer>
+
+  <script>
+    // Función para alternar entre el tema claro y oscuro
+    const toggleButton = document.getElementById('toggle-theme');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('light-theme');
+      document.body.classList.toggle('dark-theme');
+      
+      // Cambiar el texto del botón según el tema activo
+      if (document.body.classList.contains('light-theme')) {
+        toggleButton.textContent = 'Cambiar a Tema Oscuro';
+      } else {
+        toggleButton.textContent = 'Cambiar a Tema Claro';
+      }
+    });
+  </script>
+
+</body>
+</html>
+```
+
+#### 4.6.2 Ejercicio 
+Montar el ejemplo anterior y comprobar como el estilo de <`form`> se actualiza al usar la directiva @use.
+
+**Nota:**
+En el ejemplo:
+- Por convención se pone un `guión bajo` delante de la hoja de estilos a la que se hace referencia.
+- El guión bajo indica que el archivo es **un archivo de estilos parcial**, es decir, un archivo que **no se compila directamente** en un archivo CSS independiente, sino que **se incluye en otros archivos**.
 
 #### 4.6.2 Alias
 Se puede usar un alias para un archivo importado con `@use` para hacer más cortos los nombres de las variables o mixins que estás usando.
