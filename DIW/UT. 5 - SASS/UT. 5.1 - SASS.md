@@ -34,13 +34,13 @@ Los archivos SCSS se almacenan con la extensión .scss.
 **Nota:** Al ser actualmente la sintaxis de Sass preferida nos centraremos en esta. No obstante, a lo largo de la unidad se darán tanto ejemplos de sintaxis Sass como de SCSS. 
 
 
-# 2. Instalación y uso de SASS.
-## 2.1 Instalación
+# 3. Instalación y uso de SASS.
+## 3.1 Instalación
 Instrucciones de <a href="https://sass-lang.com/install/">**instalación**</a> de Sass.  
-## 2.2 Uso de Sass
+## 3.2 Uso de Sass
 De una manera que recuerda a **Tailwind** necesitaremos compilar el código Sass (estilos.scss) a (estilos.css).  
 Para ello podremos hacerlo desde la `CLI` con `sass input.scss output.css` o automaticamente con un **supervidor** ejecutando el comando `sass --watch input.scss output.css`. 
-## 2.3 Ejercicio
+## 3.3 Ejercicio
 Crear una carpeta dentro de la cual crearéis un archivo *.scss con el siguiente contenido:
 ```
 $font-stack: Helvetica, sans-serif;
@@ -53,7 +53,7 @@ body {
 ```
 Ejecutar el comando `sass --watch archivo.scss archivo.css` y comprobar que se han generado 2 archivos con extensiones ***.css** y ***.css.map**
 
-## 2.4 Archivo *.css.map
+## 3.4 Archivo *.css.map
 El archivo `map.css` es un archivo de mapa de fuentes (source map). Los mapas de fuentes ayudan a depurar el código CSS compilado al permitir que las herramientas de desarrollo del navegador mapeen las reglas CSS generadas de vuelta a las líneas correspondientes en los archivos SASS/SCSS originales.
 
 **Propósito de un archivo** `.map.css`
@@ -63,7 +63,7 @@ El archivo `map.css` es un archivo de mapa de fuentes (source map). Los mapas de
 **Funcionamiento.**
 El archivo `.map.css` se enlaza al archivo CSS compilado. El navegador utiliza este archivo para mostrar las fuentes originales al depurar el CSS, lo que simplifica la localización y corrección de errores.  
 
-## 2.5 Ejercicio
+## 3.5 Ejercicio
 Crear un archivo `index.html` y asociarle la hoja de estilos *.css.
 Renderizar el archivo y con la herramienta de desarollo y comprobar que los estilos del documento están vinculados al archivo.sass . 
 Comprobar igualmente que en el archivo *.css aparece el siguiente comentario:
@@ -72,7 +72,7 @@ Comprobar igualmente que en el archivo *.css aparece el siguiente comentario:
 ```
 Esto indica al navegador dónde encontrar el archivo de mapa de fuentes para vincular el código CSS compilado al código SCSS original.
 
-# 3. Variables
+# 4. Variables
 Las variables permiten almacenar información reutilizable, el nombre de la variable debe empezar con $ y deben ser declaradas antes de utilizarse.  
 Sass permite almacenar diferentes tipos de datos en variables, incluyendo:
 
@@ -129,7 +129,7 @@ $theme-colors: (
 )
 ```
 
-## 3.1 Ejercicio parte 1
+## 4.1 Ejercicio parte 1
 **Implementación de Temas Claro y Oscuro en Sass**
 Implementar un sistema de temas claro y oscuro utilizando variables en Sass para definir colores de fondo y de texto, y aplicarlos al `body` según la clase asignada.
 
@@ -184,18 +184,18 @@ Con la ayuda del siguiente código, comprobar que los estilos se aplican correct
 </html>
 ```  
   
-## 3.2 Ejercicio parte 2
+## 4.2 Ejercicio parte 2
 Continuaremos sobre la base del ejercicio anterior y explotaremos la reutilizabilidad de las variables de Sass.
 1. Definir un color primario `primary-color`, `#ff5733`.
 2. Aplicar ese color como color de fondo del `header` del archivo anterior.
 3. Aplicar ese color al **borde superior** del `footer` (2px)   
 
 
-## 4 Anidación de selectores.
+## 5 Anidación de selectores.
 En CSS, los selectores relacionados deben escribirse de manera explícita, lo que puede llevar a un código repetitivo y difícil de mantener. 
 Una de las características de Sass es la capacidad de anidar selectores CSS de una manera que refleja la estructura jerárquica del HTML. Eso hace que el código CSS sea más legible y fácil de organizar.
 
-### 4.1 Sintaxis de Sass para los anidamientos de estilos.
+### 5.1 Sintaxis de Sass para los anidamientos de estilos.
 En Sass, el anidamiento **se realiza simplemente escribiendo las reglas dentro de otras reglas**.  
 Esto refleja la jerarquía de los elementos HTML como lo podemos ver a continuación donde:
   1. `nav` contiene un `ul`
@@ -222,7 +222,7 @@ nav {
 }
 ```
   
-### 4.2 Uso del selector padre `&`
+### 5.2 Uso del selector padre `&`
 El símbolo `&` (Ampersand) se utiliza para hacer referencia al selector padre en una regla anidada. Esto es útil para aplicar pseudo-clases, pseudo-elementos o variantes del selector.  
   
 **Ejemplo con pseudo clases y pseudo-elementos**  
@@ -286,7 +286,7 @@ a::after {
 }
 ```
   
-### 4.3 Anidamiento con combinadores
+### 5.3 Anidamiento con combinadores
 El anidamiento puede incluir combinadores de selección como `>`, `+`, `~`, y un espacio (para descendientes). Esto permite especificar la relación entre los elementos de manera jerárquica.
 
 **Ejemplo con combinadores.**
@@ -330,7 +330,7 @@ p ~ div {
 }
 ```
 
-### 4.4. Buenas prácticas de Sass
+### 5.4. Buenas prácticas de Sass
 Es recomendable no anidar demasiado profundamente, ya que puede hacer que el CSS sea difícil de mantener y puede generar reglas de estilo muy específicas difíciles de sobrescribir.  
   
 **Ejemplo de anidamiento excesivo.**
@@ -346,7 +346,7 @@ Es recomendable no anidar demasiado profundamente, ya que puede hacer que el CSS
 }
 ```
   
-### 4.5. Tarea RA3CEh
+### 5.5. Tarea RA3CEh
 Convertir la hoja de estilos siguiente a SCSS.
 ```
 .panel {
@@ -380,13 +380,13 @@ Convertir la hoja de estilos siguiente a SCSS.
 ```
 
 
-### 4.6 Directivas `@import`, `@use` y `@forward` 
+### 5.6 Directivas `@import`, `@use` y `@forward` 
 La directiva **@import** se utiliza para importar **otras hojas de estilo dentro de la hoja de estilo principal**, lo que permite modularizar los estilos, organizarlos en diferentes archivos y mantener el código más limpio y manejable.  
 Desde `Sass 1.23.0`, el uso de `@import` está desaconsejado, se recomienda usar `@use` y `@forward`.  
   
 Las directivas **`@use`** y **`@forward`** son características de **Sass** (desde Sass 1.23.0) y reemplazanan la directiva **`@import`**. 
 
-#### 4.6.1 Importación de módulos con @use
+#### 5.6.1 Importación de módulos con @use
 **@use** permite importar y cargar un archivo Sass de manera más controlada y eficiente que la antigua `@import` permitiendo, entre otras, evitar la duplicación de reglas.
 - **Sintaxis.**
 ```
