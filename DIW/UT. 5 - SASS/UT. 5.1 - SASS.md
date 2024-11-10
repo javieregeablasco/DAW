@@ -497,7 +497,7 @@ En el ejemplo:
 - Por convención se pone un `guión bajo` delante de la hoja de estilos a la que se hace referencia.
 - El guión bajo indica que el archivo es **un archivo de estilos parcial**, es decir, un archivo que **no se compila directamente** en un archivo CSS independiente, sino que **se incluye y compila en otros archivos**.
 
-### 6.2 Alias
+## 6.3 Alias
 Se puede usar un alias para un archivo importado con `@use` para hacer más cortos los nombres de las variables o mixins que estamos usando.
 
 **Modificación del ejemplo anterior.**
@@ -528,7 +528,7 @@ body.dark-theme {
 ...
 ```
   
-## 6.3 Reexportación de módulos con @forward 
+## 6.4 Reexportación de módulos con @forward 
 La directiva `@forward` se utiliza para **reenviar** todo o parte de un módulo (archivo Sass) a otros archivos. Esto permite que un archivo Sass se convierta en un "paso intermedio" que reexporta el contenido de otros archivos, lo que facilita la creación de bibliotecas o colecciones de módulos reutilizables.
 La directiva @forward, **solo sirve para reexportar variables, mixins, y funciones de un archivo a otro**, de forma que otros archivos puedan importar las funcionalidades desde un único punto central.
 
@@ -567,7 +567,7 @@ $text-dark: #ffffff;
 ...
 ```
 
-## 6.4 Ejercicio
+## 6.5 Ejercicio
 Montar el ejemplo anterior para entender mejor la directiva @forward.
 
 **Nota:**
@@ -593,23 +593,15 @@ $tertiary: #ffffff;
 ```
 En este caso, el archivo `_index.scss` solo reexportará las variables `$primary` y `$secondary`, excluyendo `$tertiary`.
 
+## 6.6 Resumen de @use y @forward:
+- **`@use`**: Importa un archivo Sass de manera controlada, evitando la duplicación de código y proporcionando un espacio de nombres para las variables y mixins.
+- **`@forward`**: Reexporta un archivo Sass a otros archivos, permitiendo que esos archivos accedan a su contenido de forma organizada.  
+Ambas directivas son fundamentales para trabajar de manera eficiente con Sass en proyectos grandes y permiten una gestión más limpia de los estilos.
+
 ---------------------------------------------------------------------------------------------------------------
 Modificar y aligerar principio
 ---------------------------------------------------------------------------------------------------------------
 
-`@use` y `@forward`
-### Ventajas sobre `@import`:
-
-1. **Evitar duplicación de código**: Tanto `@use` como `@forward` ayudan a evitar la duplicación de código, ya que Sass solo carga los archivos una vez, independientemente de cuántos archivos los importen.
-   
-2. **Modularidad y mantenimiento**: Estas directivas permiten un código más organizado y modular, mejorando la gestión de proyectos grandes.
-
-3. **Nombres más claros y sin conflictos**: Al usar `@use`, las variables, mixins y funciones son agrupadas bajo un espacio de nombres, lo que evita posibles conflictos de nombres que podrían ocurrir con `@import`.
-
-### 6.5 Resumen de @use y @forward:
-- **`@use`**: Importa un archivo Sass de manera controlada, evitando la duplicación de código y proporcionando un espacio de nombres para las variables y mixins.
-- **`@forward`**: Reexporta un archivo Sass a otros archivos, permitiendo que esos archivos accedan a su contenido de forma organizada.  
-Ambas directivas son fundamentales para trabajar de manera eficiente con Sass en proyectos grandes y permiten una gestión más limpia de los estilos.
 
 
 ---------------------------------------------------------------------------------------------------------------
