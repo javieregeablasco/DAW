@@ -191,11 +191,11 @@ Continuaremos sobre la base del ejercicio anterior y explotaremos la reutilizabi
 3. Aplicar ese color al **borde superior** del `footer` (2px)   
 
 
-## 5 Anidación de selectores.
+# 5 Anidación de selectores.
 En CSS, los selectores relacionados deben escribirse de manera explícita, lo que puede llevar a un código repetitivo y difícil de mantener. 
 Una de las características de Sass es la capacidad de anidar selectores CSS de una manera que refleja la estructura jerárquica del HTML. Eso hace que el código CSS sea más legible y fácil de organizar.
 
-### 5.1 Sintaxis de Sass para los anidamientos de estilos.
+## 5.1 Sintaxis de Sass para los anidamientos de estilos.
 En Sass, el anidamiento **se realiza simplemente escribiendo las reglas dentro de otras reglas**.  
 Esto refleja la jerarquía de los elementos HTML como lo podemos ver a continuación donde:
   1. `nav` contiene un `ul`
@@ -222,7 +222,7 @@ nav {
 }
 ```
   
-### 5.2 Uso del selector padre `&`
+## 5.2 Uso del selector padre `&`
 El símbolo `&` (Ampersand) se utiliza para hacer referencia al selector padre en una regla anidada. Esto es útil para aplicar pseudo-clases, pseudo-elementos o variantes del selector.  
   
 **Ejemplo con pseudo clases y pseudo-elementos**  
@@ -286,7 +286,7 @@ a::after {
 }
 ```
   
-### 5.3 Anidamiento con combinadores
+## 5.3 Anidamiento con combinadores
 El anidamiento puede incluir combinadores de selección como `>`, `+`, `~`, y un espacio (para descendientes). Esto permite especificar la relación entre los elementos de manera jerárquica.
 
 **Ejemplo con combinadores.**
@@ -330,7 +330,7 @@ p ~ div {
 }
 ```
 
-### 5.4. Buenas prácticas de Sass
+## 5.4. Buenas prácticas de Sass
 Es recomendable no anidar demasiado profundamente, ya que puede hacer que el CSS sea difícil de mantener y puede generar reglas de estilo muy específicas difíciles de sobrescribir.  
   
 **Ejemplo de anidamiento excesivo.**
@@ -346,7 +346,7 @@ Es recomendable no anidar demasiado profundamente, ya que puede hacer que el CSS
 }
 ```
   
-### 5.5. Tarea RA3CEh
+## 5.5. Tarea RA3CEh
 Convertir la hoja de estilos siguiente a SCSS.
 ```
 .panel {
@@ -380,13 +380,13 @@ Convertir la hoja de estilos siguiente a SCSS.
 ```
 
 
-### 5.6 Directivas `@import`, `@use` y `@forward` 
+## 5.6 Directivas `@import`, `@use` y `@forward` 
 La directiva **@import** se utiliza para importar **otras hojas de estilo dentro de la hoja de estilo principal**, lo que permite modularizar los estilos, organizarlos en diferentes archivos y mantener el código más limpio y manejable.  
 Desde `Sass 1.23.0`, el uso de `@import` está desaconsejado, se recomienda usar `@use` y `@forward`.  
   
 Las directivas **`@use`** y **`@forward`** son características de **Sass** (desde Sass 1.23.0) y reemplazanan la directiva **`@import`**. 
 
-#### 5.6.1 Importación de módulos con @use
+### 5.6.1 Importación de módulos con @use
 **@use** permite importar y cargar un archivo Sass de manera más controlada y eficiente que la antigua `@import` permitiendo, entre otras, evitar la duplicación de reglas.
 - **Sintaxis.**
 ```
@@ -489,7 +489,7 @@ body.dark-theme {
 </html>
 ```
 
-#### 4.6.2 Ejercicio 
+### 5.6.2 Ejercicio 
 Montar el ejemplo anterior y comprobar como el estilo de <`form`> se actualiza al usar la directiva @use.
 
 **Nota:**
@@ -528,7 +528,7 @@ body.dark-theme {
 ...
 ```
   
-#### 4.6.3 Reexportación de módulos con @forward 
+### 5.6.3 Reexportación de módulos con @forward 
 La directiva `@forward` se utiliza para **reenviar** todo o parte de un módulo (archivo Sass) a otros archivos. Esto permite que un archivo Sass se convierta en un "paso intermedio" que reexporta el contenido de otros archivos, lo que facilita la creación de bibliotecas o colecciones de módulos reutilizables.
 La directiva @forward, **solo sirve para reexportar variables, mixins, y funciones de un archivo a otro**, de forma que otros archivos puedan importar las funcionalidades desde un único punto central.
 
@@ -567,7 +567,7 @@ $text-dark: #ffffff;
 ...
 ```
 
-#### 4.6.4 Ejercicio
+### 5.6.4 Ejercicio
 Montar el ejemplo anterior para entender mejor la directiva @forward.
 
 **Nota:**
