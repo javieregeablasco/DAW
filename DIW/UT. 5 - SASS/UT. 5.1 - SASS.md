@@ -380,7 +380,7 @@ Convertir la hoja de estilos siguiente a SCSS.
 ```
 
 
-### 4.6 Propiedades `@import`, `@use` y `@forward` 
+### 4.6 Directivas `@import`, `@use` y `@forward` 
 La directiva **@import** se utiliza para importar **otras hojas de estilo dentro de la hoja de estilo principal**, lo que permite modularizar los estilos, organizarlos en diferentes archivos y mantener el código más limpio y manejable.  
 Desde `Sass 1.23.0`, el uso de `@import` está desaconsejado, se recomienda usar `@use` y `@forward`.  
   
@@ -456,6 +456,7 @@ body.dark-theme {
       <label>Nombre</label>
       <input type="text">
       <label>Email</label>
+      <input type="email">
       <label>Mensaje</label>
       <input type="text">
       <textarea cols="10" rows="5"></textarea>
@@ -529,64 +530,75 @@ body.dark-theme {
   
 #### 4.6.3 Reexportación de módulos con @forward 
 La directiva `@forward` se utiliza para **reenviar** todo o parte de un módulo (archivo Sass) a otros archivos. Esto permite que un archivo Sass se convierta en un "paso intermedio" que reexporta el contenido de otros archivos, lo que facilita la creación de bibliotecas o colecciones de módulos reutilizables.
+La directiva @forward, **solo sirve para reexportar variables, mixins, y funciones de un archivo a otro**, de forma que otros archivos puedan importar las funcionalidades desde un único punto central.
+
+**Ejemplo.**
+- **Archivo Estilos.scss**
+```
+@use "./estilosAdicionales/_flex" as flex;
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+...
+```
+- **Archivo _variables.scss**
+```
+// _variables.scss
+// Tema claro
+$bg-light: #ffffff;
+$text-light: #000000;
+
+// Tema oscuro
+$bg-dark: #333333;
+$text-dark: #ffffff;
+```
+- **Archivo flex.scss**
+```
+@forward "../forwarded/_variables"; 
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+...
+```
+
+#### 4.6.4 Ejercicio
+Montar el ejemplo anterior para entender mejor la directiva @forward.
+
+**Nota:**
+En el ejemplo:
+- **@use**: Se utiliza para **importar un archivo Sass en otro** y poder utilizar sus variables, mixins y funciones.
+- **@forward**: Se utiliza para **reexportar contenido de un archivo Sass a otro**. Sirve para crear puntos de acceso centralizados o módulos de estilo que otros archivos pueden importar.
+- **@forward no carga el archivo** en sí, sino que expone su contenido para que otros archivos puedan usarlo al importar el archivo que contiene @forward.
+
+**Características clave de `@forward`:**
+- **Reexportar módulos**: `@forward` reexporta todas o algunas partes de un módulo a otros archivos que lo necesiten, **sin necesidad de hacer un `@use` de cada archivo individualmente**.
+- **Control de lo que se reexporta**: Se puede usar `@forward` con selección para excluir o incluir ciertas variables, mixins o funciones.
+
+**Ejemplo de `@forward` con control de lo que se reexporta:**
+```
+// _colors.scss
+$primary: #ff5733;
+$secondary: #333333;
+$tertiary: #ffffff;
+```
+```
+// _index.scss
+@forward "colors" with $primary, $secondary;
+```
+En este caso, el archivo `_index.scss` solo reexportará las variables `$primary` y `$secondary`, excluyendo `$tertiary`.
+
 ---------------------------------------------------------------------------------------------------------------
 Modificar y aligerar principio
 ---------------------------------------------------------------------------------------------------------------
 
 
 
-#### Sintaxis:
-```scss
-@forward "path/to/module";
-```
-
-#### Características clave de `@forward`:
-
-- **Reexportar módulos**: Con `@forward`, puedes reexportar todas o algunas partes de un módulo a otros archivos que lo necesiten, sin necesidad de hacer un `@use` de cada archivo individualmente.
-  
-- **Control de lo que se reexporta**: Puedes usar `@forward` con opciones para excluir o incluir ciertas variables, mixins o funciones. Esto permite encapsular mejor lo que quieres hacer disponible para otros módulos sin exponer todo el contenido.
-
-#### Ejemplo:
-```scss
-// _colors.scss
-$primary: #ff5733;
-$secondary: #333333;
-```
-
-```scss
-// _index.scss
-@forward "colors";
-```
-
-```scss
-// styles.scss
-@use "index" as *;
-
-body {
-  background-color: $primary;  // Usando la variable reexportada
-}
-```
-
-En este ejemplo:
-- El archivo `_index.scss` reexporta el contenido de `_colors.scss`.
-- El archivo `styles.scss` usa `@use "index"`, lo que le da acceso a las variables de `_colors.scss` sin necesidad de importarlas directamente.
-
-#### Uso de `@forward` con selección:
-Puedes usar `@forward` para reexportar solo algunas partes del archivo original:
-
-```scss
-// _colors.scss
-$primary: #ff5733;
-$secondary: #333333;
-$tertiary: #ffffff;
-```
-
-```scss
-// _index.scss
-@forward "colors" with $primary, $secondary;
-```
-
-En este caso, el archivo `_index.scss` solo reexportará las variables `$primary` y `$secondary`, excluyendo `$tertiary`.
 
 ### Comparación de `@use` y `@forward`
 
