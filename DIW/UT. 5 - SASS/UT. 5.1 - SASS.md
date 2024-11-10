@@ -602,12 +602,6 @@ Ambas directivas son fundamentales para trabajar de manera eficiente con Sass en
 Modificar y aligerar principio
 ---------------------------------------------------------------------------------------------------------------
 
-
-
----------------------------------------------------------------------------------------------------------------
-Modificar y aligerar fin
----------------------------------------------------------------------------------------------------------------
-
 ### 7. **Anidamiento de media queries**:
 
 Puedes anidar las reglas de media queries dentro de las reglas para hacer que los estilos sean responsivos.
@@ -631,22 +625,6 @@ Puedes anidar las reglas de media queries dentro de las reglas para hacer que lo
 **Explicación:**
 - Dentro de `.container`, se anidan las media queries para cambiar el ancho del contenedor según el tamaño de la pantalla.
 
-
----------------------------------------------------------------- 
-Recursos utilizados
-----------------------------------------------------------------
-
-https://www.chucksacademy.com/es/topic/css-preprocessors/variables-in-sass
-
-
-https://www.youtube.com/watch?v=MOstrhqpIsI&list=PLjwdMgw5TTLWVp8WUGheSrGnmEWIMk9H6&index=2
-
-Partials
-Modules
-Mixins
-Inheritance
-Operators>
-<https://www.youtube.com/watch?v=MOstrhqpIsI&list=PLjwdMgw5TTLWVp8WUGheSrGnmEWIMk9H6&index=2>
-<https://www.youtube.com/watch?v=_kqN4hl9bGc&list=PL4cUxeGkcC9jxJX7vojNVK-o8ubDZEcNb>
-<https://www.youtube.com/playlist?list=PLhSj3UTs2_yVyMlZyW-NAbgjtgAgLBzFP>
-https://www.w3schools.com/sass/sass_variables.php
+---------------------------------------------------------------------------------------------------------------
+Modificar y aligerar fin
+---------------------------------------------------------------------------------------------------------------
