@@ -494,18 +494,38 @@ Montar el ejemplo anterior y comprobar como el estilo de <`form`> se actualiza a
 **Nota:**
 En el ejemplo:
 - Por convención se pone un `guión bajo` delante de la hoja de estilos a la que se hace referencia.
-- El guión bajo indica que el archivo es **un archivo de estilos parcial**, es decir, un archivo que **no se compila directamente** en un archivo CSS independiente, sino que **se incluye en otros archivos**.
+- El guión bajo indica que el archivo es **un archivo de estilos parcial**, es decir, un archivo que **no se compila directamente** en un archivo CSS independiente, sino que **se incluye y compila en otros archivos**.
 
 #### 4.6.2 Alias
-Se puede usar un alias para un archivo importado con `@use` para hacer más cortos los nombres de las variables o mixins que estás usando.
+Se puede usar un alias para un archivo importado con `@use` para hacer más cortos los nombres de las variables o mixins que estamos usando.
 
-```scss
-@use "colors" as c;
+**Modificación del ejemplo anterior.**
+- **Archivo _flex.scss**
+```
+...
+// tema claro
+$bg-light: #ffffff;
+$text-light: #000000;
 
-body {
-  background-color: c.$primary;
+// tema oscuro
+$bg-dark: #333333;
+$text-dark: #ffffff;
+```
+- **Archivo Estilos.scss**
+```
+@use "./estilosAdicionales/_flex" as flex;
+
+body.light-theme {
+  background-color: flex.$bg-light;
+  color: flex.$text-light;
 }
-```  
+
+body.dark-theme {
+  background-color: flex.$bg-dark;
+  color: flex.$text-dark;
+}
+...
+```
   
 #### 4.6.3 Reexportación de módulos con @forward 
 La directiva `@forward` se utiliza para **reenviar** todo o parte de un módulo (archivo Sass) a otros archivos. Esto permite que un archivo Sass se convierta en un "paso intermedio" que reexporta el contenido de otros archivos, lo que facilita la creación de bibliotecas o colecciones de módulos reutilizables.
