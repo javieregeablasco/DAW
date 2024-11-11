@@ -2133,7 +2133,7 @@ Incorporación de los atribustos `rotate`, `keyTimes`,`keyPoints`,`fill` y `end`
 ```
 
 #### 5.5.1.8 Ejercicio
->Ejercicio de anillo menguante
+>Ejercicio de anillo menguante  
 >Modificar el siguiente programa para que el anillo mengue y se alargue a lo largo del tiempo.
 ```
 <!DOCTYPE html>
