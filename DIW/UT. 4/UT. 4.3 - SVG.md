@@ -2236,8 +2236,8 @@ También se usa la etiqueta `<use>` y el identificador `id` para renderizar los 
 
 #### 5.5.1.9 Ejercicio
 >Ejercicio de anillo menguante  
->Modificar el siguiente programa para que el anillo mengue y se alargue a lo largo del tiempo.
-<a src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/mpeg/anilloMenguante.mp4">video</a>
+>Modificar el siguiente programa para que el anillo mengue y se alargue a lo largo del tiempo.  
+<a href="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%204/mpeg/anilloMenguante.mp4">animación</a>
 ```
 <!DOCTYPE html>
 <html lang="en">
