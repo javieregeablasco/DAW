@@ -2046,7 +2046,7 @@ Más información <a href="https://www.w3.org/TR/SVG11/animate.html#AnimateMotio
      - **rotate** (opcional): Define la rotación del elemento a lo largo del camino. Los valores posibles son:  
         - `"auto"`: rota el elemento según la dirección del camino.  
         - `"auto-reverse"`: rota el elemento en dirección inversa al camino.  
-        - `none`: ninguna rotación.     
+        - `"none"`: ninguna rotación.     
      - **from** (opcional): Valor inicial del atributo antes de que comience la animación en caso de no usar `path`.  
      - **to** (opcional): Valor final del atributo al final de la animación en caso de no usar `path`.     
      - **by** (opcional): Valor que se sumará al valor inicial para establecer el valor final de la animación.   
