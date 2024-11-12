@@ -2254,11 +2254,10 @@ También se usa la etiqueta `<use>` y el identificador `id` para renderizar los 
 
 </style>
 <body>
+
   <svg width="380" height="380" viewBox="-20 -20 40 40" xmlns="http://www.w3.org/2000/svg">
-    <circle id="spinner" cx="0" cy="0" r="16" stroke-width="3" stroke-linecap="round" stroke="antiquewhite">  
-        
-    </circle>
-    
+    <circle id="spinner" cx="0" cy="0" r="16" stroke-width="3" stroke-linecap="round" stroke="antiquewhite">          
+    </circle>    
   </svg>
 
 </body>
