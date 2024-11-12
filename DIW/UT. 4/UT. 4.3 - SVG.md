@@ -2117,7 +2117,7 @@ Más información <a href="https://www.w3.org/TR/SVG11/animate.html#AnimateMotio
 ```
 
 **Modificacion del ejemplo anterior**
-Incorporación de los atribustos `rotate`, `keyTimes`,`keyPoints`,`fill` y `end`.
+Incorporación de los atributos `rotate`, `keyTimes`,`keyPoints`,`fill` y `end`.
 ```
 <animateMotion
   path="M 230 230 Q 410 50 590 230 Q 650 310 590 390 Q 410 570 230 390 Q 170 310 230 230"
