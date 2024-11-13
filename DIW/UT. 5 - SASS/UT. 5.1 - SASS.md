@@ -14,7 +14,7 @@ Palabras clave: DAW, DIW
 <a href="https://sass-lang.com/">SASS</a> (Syntactically Awesome Stylesheet) es un preprocesador de CSS utilizado para traducir un código de **hojas de estilo no estándar** a un código CSS estándar e interpretable por la mayoría de navegadores. Fue creado por Hampton Catlin en 2006 y más tarde extendido por Natalie Weizenbaum.    
 La principal utilidad de SASS es la de hacer más simple la escritura del código CSS y brindar utilidades que CSS no ofrece.
 
-**Ventajas de utilizar Sass**
+**Ventajas de utilizar Sass**  
 En proyectos grandes, las hojas de estilo suelen ser complejas y difíciles de mantener. Un preprocesador emplea funcionalidades que no existen en CSS y que facilitan la escritura y organización del código. Estas funcionalidades incluyen entre otros, variables, anidación de selectores, herencia de estilos y mixins, lo que permite un desarrollo más estructurado y eficiente.  
 - **Variables.**
   De manera similar a cualquier lenguaje de programación, las variables permiten guardar información y emplearlas cuándo sea necesario.
@@ -611,9 +611,155 @@ $tertiary: #ffffff;
 ```
 En este caso, el archivo `_index.scss` solo reexportará las variables `$primary` y `$secondary`, excluyendo `$tertiary`.
 
-## 6.6 Resumen de @use y @forward:
+## 6.6 Resumen de @use y @forward
 - **`@use`**: Importa un archivo Sass de manera controlada, evitando la duplicación de código y proporcionando un espacio de nombres para las variables y mixins.
 - **`@forward`**: Reexporta un archivo Sass a otros archivos, permitiendo que esos archivos accedan a su contenido de forma organizada.  
 Ambas directivas son fundamentales para trabajar de manera eficiente con Sass en proyectos grandes y permiten una gestión más limpia de los estilos.
 
 # 7. Mixins
+## 7.1 Definición de un mixin.
+Los **mixins** son bloques que agrupan estilos CSS que pueden ser utilizados y reutilizados en otros lugares del proyecto de una página web, lo que evita tener que reescribirlos cada vez que sea necesario emplearlos. Además, un **mixin** también puede recibir parámetros (como si fuera una función de un lenguaje de programación), los que permite obtener varias salidas (estilos CSS), personalizadas a las necesidades del proyecto.
+
+## 7.2 Sintaxis de un mixin
+Un *mixin* se define con la directiva `@mixin` seguida del nombre del mixin. Es una buena práctica emplear nombres descriptivos y claros.
+
+```
+// Definición del mixin
+@mixin button-styles {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #2980b9;
+  }
+}
+```
+
+>**Ejercicio**
+>Crear un archivo `*.scss` y compilarlo. Observar el contenido del archivo `*.css` generado.
+
+## 7.3 Uso un mixin
+Para incluir un **mixin** en un selector, se utiliza la directiva `@include`.
+
+```
+.button {
+  @include button-styles;
+}
+```
+>**Ejercicio**
+>Completar el archivo `*.scss` creado anteriormente, compilarlo y observar el contenido del archivo `*.css`.
+
+## 7.4 Mixins con Parámetros
+Los **mixins** pueden aceptar uno o más parámetros para permitir la personalización de los estilos. 
+
+```
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+            border-radius: $radius;
+}
+  
+#box {
+    @include border-radius(12px);
+}
+
+.button {
+    margin-top: 10px;
+    @include border-radius(6px);    
+}
+```
+```
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instanciar @mixin</title>
+  <link rel="stylesheet" href="estilos.css">  
+</head>
+<body class="light-theme">
+
+  <header>
+    <h1>Ejercicio de declaración de mixins</h1>
+    <button id="box">Click 1</button>
+  </header>
+
+  <main>
+    <section>
+      <button class="button">Click 2</button>
+    </section>    
+  </main>
+
+  <footer>
+    <h1>Fin del ejercicio</h1>    
+  </footer>
+  
+</body>
+</html>
+```
+
+## 7.5 Mixins con Parámetros Predeterminados
+También se pueden definir parámetros predeterminados, dado el caso de instanciar un mixin sin pasarle ningun valor. 
+
+```scss
+@mixin sombra($color: #000, $desplazamientoX: 0px, $desplazamientoY: 0px, $desenfoque: 5px) {
+  box-shadow: $desplazamientoX $desplazamientoY $desenfoque $color;
+}
+
+.elemento {
+  @include sombra; // usa los valores predeterminados
+}
+```
+
+**6. Ejemplos Prácticos**
+- **Mixin de media queries**: Un *mixin* para manejar media queries de forma más simple.
+
+```scss
+@mixin responsive($ancho) {
+  @media (max-width: $ancho) {
+    @content;
+  }
+}
+
+.contenedor {
+  background-color: blue;
+
+  @include responsive(768px) {
+    background-color: green;
+  }
+}
+```
+
+- **Mixin de gradiente**: Un *mixin* para aplicar un gradiente de forma rápida.
+
+```scss
+@mixin gradiente($color1, $color2) {
+  background: linear-gradient($color1, $color2);
+}
+
+.caja {
+  @include gradiente(#ff7e5f, #feb47b);
+}
+```
+
+**7. Beneficios de los Mixins en Proyectos Reales**
+- **Códigos más legibles y modulares**.
+- **Ahorro de tiempo en el desarrollo**: Los cambios se hacen en un solo lugar y se reflejan en todas las inclusiones del *mixin*.
+- **Mejora en la consistencia de diseño**: Garantiza que se usen los mismos estilos en múltiples componentes.
+
+**8. Buenas Prácticas con Mixins**
+- Evitar la sobrecarga de los *mixins* con demasiados parámetros.
+- Usar nombres claros y descriptivos.
+- Combinar los *mixins* con variables para maximizar la reutilización y flexibilidad.
+
+**Conclusión**
+Los *mixins* de SASS son una herramienta poderosa para los desarrolladores, ya que promueven la reutilización y optimización del código, facilitando la creación de proyectos escalables y fáciles de mantener. Usar *mixins* de manera eficiente contribuye a un desarrollo más rápido y a la reducción de errores en los proyectos de desarrollo web.
+
+**Actividades Propuestas**
+1. Crea un *mixin* que defina un conjunto de propiedades de estilo para botones, incluyendo colores, márgenes y bordes.
+2. Desarrolla un *mixin* de media query que ajuste los estilos de un contenedor cuando la pantalla tenga un ancho menor a 600px.
+3. Implementa un proyecto en SASS utilizando *mixins* para centralizar y reutilizar los estilos más comunes.
