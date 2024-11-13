@@ -145,7 +145,7 @@ Con la ayuda del siguiente código, comprobar que los estilos se aplican correct
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" ="width=device-width, initial-scale=1.0">
   <title>Variables</title>
   <link rel="stylesheet" href="Estilos.css">  
 </head>
@@ -173,9 +173,9 @@ Con la ayuda del siguiente código, comprobar que los estilos se aplican correct
       
       // Cambiar el texto del botón según el tema activo
       if (document.body.classList.contains('light-theme')) {
-        toggleButton.textContent = 'Cambiar a Tema Oscuro';
+        toggleButton.text = 'Cambiar a Tema Oscuro';
       } else {
-        toggleButton.textContent = 'Cambiar a Tema Claro';
+        toggleButton.text = 'Cambiar a Tema Claro';
       }
     });
   </script>
@@ -716,17 +716,19 @@ Los **mixins** pueden aceptar uno o más parámetros para permitir la personaliz
 ```
 
 ## 7.5 Mixins con Parámetros Predeterminados
-También se pueden definir parámetros predeterminados, dado el caso de instanciar un mixin sin pasarle ningun valor. 
+También se pueden definir parámetros predeterminados, dado el caso de instanciar un mixin sin pasarle parte, o ningun valor. 
 
-```scss
-@mixin sombra($color: #000, $desplazamientoX: 0px, $desplazamientoY: 0px, $desenfoque: 5px) {
-  box-shadow: $desplazamientoX $desplazamientoY $desenfoque $color;
+```
+@mixin box-shadow($x: 0, $y: 0, $blur: 5px, $color: rgba(0, 0, 0, 0.3)) {
+  box-shadow: $x $y $blur $color;
 }
 
-.elemento {
-  @include sombra; // usa los valores predeterminados
+.card {
+  @include box-shadow(2px, 2px);
 }
 ```
+>**Ejercicio**
+>¿Cual será el *.css resultante del ejemplo anterior?
 
 **6. Ejemplos Prácticos**
 - **Mixin de media queries**: Un *mixin* para manejar media queries de forma más simple.
@@ -746,6 +748,15 @@ También se pueden definir parámetros predeterminados, dado el caso de instanci
   }
 }
 ```
+
+## 7.5 Mixins condicionales
+
+
+## 7.6 Mixins globales
+
+
+## 7.7 Mixins de gradienteondicionales
+
 
 - **Mixin de gradiente**: Un *mixin* para aplicar un gradiente de forma rápida.
 
