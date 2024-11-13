@@ -480,7 +480,6 @@ body.dark-theme {
       <textarea cols="10" rows="5"></textarea>
       <input type="submit" value="Enviar">
     </form>
-
   </main>
 
   <footer>
@@ -642,7 +641,7 @@ Un *mixin* se define con la directiva `@mixin` seguida del nombre del mixin. Es 
 >**Ejercicio**
 >Crear un archivo `*.scss` y compilarlo. Observar el contenido del archivo `*.css` generado.
 
-## 7.3 Uso un mixin
+## 7.3 Uso de un mixin
 Para incluir un **mixin** en un selector, se utiliza la directiva `@include`.
 
 ```
@@ -662,6 +661,12 @@ Los **mixins** pueden aceptar uno o más parámetros para permitir la personaliz
        -moz-border-radius: $radius;
             border-radius: $radius;
 }
+
+@mixin botonCompleto($radius, $fontSize, $color) {
+    font-size: $fontSize;
+    border-radius: $radius;
+    color: $color;
+}
   
 #box {
     @include border-radius(12px);
@@ -670,6 +675,11 @@ Los **mixins** pueden aceptar uno o más parámetros para permitir la personaliz
 .button {
     margin-top: 10px;
     @include border-radius(6px);    
+}
+
+.btn {
+    margin-top: 10px;
+    @include botonCompleto(6px,20px,blue);    
 }
 ```
 ```
@@ -690,7 +700,10 @@ Los **mixins** pueden aceptar uno o más parámetros para permitir la personaliz
 
   <main>
     <section>
-      <button class="button">Click 2</button>
+      <button class="button">Mixin de 1 parametro</button>
+    </section>
+    <section>
+      <button class="btn">Mixin de varios parametros</button>
     </section>    
   </main>
 
