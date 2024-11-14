@@ -421,7 +421,6 @@ Las directivas **`@use`** y **`@forward`** son características de **Sass** (des
 ```
 @use "./estilosAdicionales/_flex";
 
-/* ejercicio parte1 */
 // tema claro
 $bg-light: #ffffff;
 $text-light: #000000;
@@ -430,15 +429,24 @@ $text-light: #000000;
 $bg-dark: #333333;
 $text-dark: #ffffff;
 
-// aplicar a body
 body.light-theme {
   background-color: $bg-light;
-  color: $text-light;
+  color: $text-light;  
 }
 
 body.dark-theme {
   background-color: $bg-dark;
   color: $text-dark;
+}
+
+$primary-color: #ff5733;
+
+header {
+  background-color: $primary-color;
+}
+
+footer {
+  border-top: 1px solid $primary-color;
 }
 ```
 
@@ -447,8 +455,31 @@ body.dark-theme {
 #formulario {
     display: flex;
     flex-direction: column;
-    padding: 2px;
-    align-items: center;    
+    align-items: center;               
+}
+
+input {
+    width: 45vw;
+    margin: 5px;
+}
+
+textarea {
+    width: 45vw;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid blue;     
+    margin: 10px; 
+    width: 60vw;      
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 ```
 - **Archivo index.html**
@@ -474,12 +505,13 @@ body.dark-theme {
       <label>Nombre</label>
       <input type="text">
       <label>Email</label>
-      <input type="email">
+      <input type="">
       <label>Mensaje</label>
       <input type="text">
       <textarea cols="10" rows="5"></textarea>
       <input type="submit" value="Enviar">
     </form>
+
   </main>
 
   <footer>
@@ -509,7 +541,7 @@ body.dark-theme {
 ## 6.2 Ejercicio 
 Montar el ejemplo anterior y comprobar como el estilo de <`form`> se actualiza al usar la directiva @use.
 
-**Nota:**
+**Nota:**  
 En el ejemplo:
 - Por convención se pone un `guión bajo` delante de la hoja de estilos a la que se hace referencia.
 - El guión bajo indica que el archivo es **un archivo de estilos parcial**, es decir, un archivo que **no se compila directamente** en un archivo CSS independiente, sino que **se incluye y compila en otros archivos**.
@@ -520,7 +552,36 @@ Se puede usar un alias para un archivo importado con `@use` para hacer más cort
 **Modificación del ejemplo anterior.**
 - **Archivo _flex.scss**
 ```
-...
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;               
+}
+
+input {
+    width: 45vw;
+    margin: 5px;
+}
+
+textarea {
+    width: 45vw;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid blue;     
+    margin: 10px; 
+    width: 60vw;      
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 // tema claro
 $bg-light: #ffffff;
 $text-light: #000000;
@@ -542,7 +603,16 @@ body.dark-theme {
   background-color: flex.$bg-dark;
   color: flex.$text-dark;
 }
-...
+
+$primary-color: #ff5733;
+
+header {
+  background-color: $primary-color;
+}
+
+footer {
+  border-top: 1px solid $primary-color;
+}
 ```
   
 ## 6.4 Reexportación de módulos con @forward 
@@ -760,13 +830,30 @@ Con la directiva **@if** dentro del mixin definiremos diferentes condiciones de 
   @include button-style("tertiary");
 }
 ```
+## 7.6 Directiva @content dentro de un @mixin
+**@content** actúa como un marcador de posición dentro de un **@mixin**. Ese marcador será reemplazado por el código proporcionado al invocar el @mixin con @include. 
+```
+//definicion del mixin con la directica @content
+@mixin card-style {
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;    
+    @content; // Se insertará contenido aquí cuando se use el mixin
+}
+//invocar el mixin y pasarle codigo adicional
+.container {
+    @include card-style {
+        color: #333; //código adicional
+        font-size: 14px; //código adicional
+    }
+}
+```
 
 ## 7.6 Ejercicio
 - **Mixin de media queries**
-### Enunciado del Ejercicio:
-**Parte 1**
+**Parte 1**  
 Escribe un código en SCSS que defina un `mixin` llamado `media-query`
-Ese `mixin` permitirá aplicar diferentes estilos CSS basados en el dispositivo (phone o tablet). 
+Ese `mixin` permitirá aplicar diferentes estilos CSS basados en el dispositivo `$device` (phone o tablet). 
 El `mixin` debe aceptar un parámetro que determine si se trata de un teléfono o una tableta y aplicar el `@content` correspondiente dentro de una consulta de medios (`@media`) con un ancho máximo de 900px o 1200px, respectivamente. 
 En el caso de no pasar ningun parametro o pasarlo con errores el `@media` aplicado será de 1200px. 
 
@@ -774,30 +861,40 @@ En el caso de no pasar ningun parametro o pasarlo con errores el `@media` aplica
 Aplica este `mixin` en una clase llamada `.container` para que:  
 - Cambie el color de fondo a azul cuando se visualice en un dispositivo con un ancho máximo de 600px (teléfono).
 - Cambie el color de fondo a verde cuando se visualice en un dispositivo con un ancho máximo de 900px (tableta).
-- Cambie el color de fondo a roja en cualquier otra caso.
+- Cambie el color de fondo a rojo en cualquier otra caso.
 El código deberá utilizar `@include` para aplicar el `mixin` dentro de la clase `.container`.
 
-
-
-```scss
-@mixin responsive($ancho) {
-  @media (max-width: $ancho) {
+## 7.7 Mixins anidados
+El anidamiento de @mixins implica la inclusión de un @mixin dentro de otro. Esto permite construir estilos más modulares y mantener la estructura organizada.
+```
+@mixin flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
     @content;
   }
-}
-
-.contenedor {
-  background-color: blue;
-
-  @include responsive(768px) {
-    background-color: green;
+  
+  @mixin flex-item($grow: 1) {
+    flex-grow: $grow;
   }
-}
+  
+  .container {
+    @include flex-container {
+      height: 100vh;
+      
+      .item {
+        @include flex-item(2);
+      }
+    }
+  }
+```
 
-## 7.6 Mixins globales
 
 
-## 7.7 Mixins de gradienteondicionales
+## 7.8 Mixins globales
+
+
+## 7.7 Mixins de gradientes
 
 
 - **Mixin de gradiente**: Un *mixin* para aplicar un gradiente de forma rápida.
