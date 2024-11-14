@@ -31,7 +31,15 @@ Mediante las herencias, es posible unificar declaraciones de estilo y compartirl
 # 2. Otros preprocesadores de CSS: SCSS  
 **SCSS (Sassy CSS) es una extensión de la sintaxis de Sass** que se distingue por su sintaxis: **utiliza corchetes en lugar de identaciones**. SCSS se diseñó de tal manera que un archivo CSS3 válido también es un archivo SCSS válido.  
 Los archivos SCSS se almacenan con la extensión .scss.  
-**Nota:** Al ser actualmente la sintaxis de Sass preferida nos centraremos en esta. No obstante, a lo largo de la unidad se darán tanto ejemplos de sintaxis Sass como de SCSS. 
+**Nota:** Al ser actualmente la sintaxis de Sass preferida nos centraremos en esta. No obstante, a lo largo de la unidad se darán tanto ejemplos de sintaxis Sass como de SCSS.  
+
+# 3. Frameworks compatibles con Sass
+<a href="https://getbootstrap.com/">**Bootstrap**</a> es uno de los frameworks frontend más populares y utiliza SASS como preprocesador para sus estilos. Esto nos permite personalizar fácilmente los estilos de Bootstrap utilizando variables y funciones de SASS.
+
+<a href="https://bulma.io/">**Bulma**</a> es otro framework CSS que utiliza SASS como preprocesador. Al igual que Bootstrap, nos permite personalizar fácilmente los estilos de Bulma con características avanzadas de SASS.
+
+<a href="https://gulpjs.com/">**Gulp**</a> es una herramienta de automatización de tareas que puede integrarse fácilmente con SASS. Podemos usar Gulp para compilar automáticamente nuestros archivos SASS, minificar y combinar nuestros estilos, entre otras tareas útiles.
+
 
 
 # 3. Instalación y uso de SASS.
