@@ -730,8 +730,54 @@ También se pueden definir parámetros predeterminados, dado el caso de instanci
 >**Ejercicio**
 >¿Cual será el *.css resultante del ejemplo anterior?
 
-**6. Ejemplos Prácticos**
-- **Mixin de media queries**: Un *mixin* para manejar media queries de forma más simple.
+## 7.5 Mixins condicionales
+Podemos crear estilos más eficientes y flexibles utilizando condiciones de uso de un mixin. Por ejemplo, si dos elementos tienen el mismo estilo, pero existe una condición que solo uno de ellos cumple, podremos diferenciarlos usando mixins condicionales.
+
+Con la directiva **@if** dentro del mixin definiremos diferentes condiciones de uso. Además del `@if` también es habitual usar **@else if <condición> o @else**.
+```
+@mixin button-style($type) {
+  @if $type == "primary" {
+    background-color: blue;
+    color: white;
+  } @else if $type == "secondary" {
+    background-color: gray;
+    color: black;
+  } @else {
+    background-color: white;
+    color: black;
+  }
+}
+
+.btn-1 {
+  @include button-style("primary");
+}
+
+.btn-2 {
+  @include button-style("secondary");
+}
+
+.btn-3 {
+  @include button-style("tertiary");
+}
+```
+
+## 7.6 Ejercicio
+- **Mixin de media queries**
+### Enunciado del Ejercicio:
+**Parte 1**
+Escribe un código en SCSS que defina un `mixin` llamado `media-query`
+Ese `mixin` permitirá aplicar diferentes estilos CSS basados en el dispositivo (phone o tablet). 
+El `mixin` debe aceptar un parámetro que determine si se trata de un teléfono o una tableta y aplicar el `@content` correspondiente dentro de una consulta de medios (`@media`) con un ancho máximo de 900px o 1200px, respectivamente. 
+En el caso de no pasar ningun parametro o pasarlo con errores el `@media` aplicado será de 1200px. 
+
+**Parte 2**
+Aplica este `mixin` en una clase llamada `.container` para que:  
+- Cambie el color de fondo a azul cuando se visualice en un dispositivo con un ancho máximo de 600px (teléfono).
+- Cambie el color de fondo a verde cuando se visualice en un dispositivo con un ancho máximo de 900px (tableta).
+- Cambie el color de fondo a roja en cualquier otra caso.
+El código deberá utilizar `@include` para aplicar el `mixin` dentro de la clase `.container`.
+
+
 
 ```scss
 @mixin responsive($ancho) {
@@ -747,10 +793,6 @@ También se pueden definir parámetros predeterminados, dado el caso de instanci
     background-color: green;
   }
 }
-```
-
-## 7.5 Mixins condicionales
-
 
 ## 7.6 Mixins globales
 
