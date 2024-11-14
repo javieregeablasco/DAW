@@ -622,14 +622,27 @@ La directiva @forward, **solo sirve para reexportar variables, mixins, y funcion
 **Ejemplo.**
 - **Archivo Estilos.scss**
 ```
-@use "./estilosAdicionales/_flex" as flex;
+@use "./estilosAdicionales/flex" as flex;
 
-#formulario {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body.light-theme {
+  background-color: flex.$bg-light;
+  color: flex.$text-light;
 }
-...
+
+body.dark-theme {
+  background-color: flex.$bg-dark;
+  color: flex.$text-dark;
+}
+
+$primary-color: #ff5733;
+
+header {
+  background-color: $primary-color;
+}
+
+footer {
+  border-top: 1px solid $primary-color;
+}
 ```
 - **Archivo _variables.scss**
 ```
@@ -639,19 +652,42 @@ $bg-light: #ffffff;
 $text-light: #000000;
 
 // Tema oscuro
-$bg-dark: #333333;
+$bg-dark: #000000;
 $text-dark: #ffffff;
 ```
 - **Archivo flex.scss**
 ```
-@forward "../forwarded/_variables"; 
+@forward "../forwarded/variables"; 
 
 #formulario {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-...
+
+input {
+    width: 45vw;
+    margin: 5px;
+}
+
+textarea {
+    width: 45vw;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid blue;
+    margin: 10px;
+    width: 60vw;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 ```
 
 ## 6.5 Ejercicio
@@ -849,7 +885,7 @@ Con la directiva **@if** dentro del mixin definiremos diferentes condiciones de 
 }
 ```
 
-## 7.6 Ejercicio
+## 7.7 Ejercicio
 - **Mixin de media queries**
 **Parte 1**  
 Escribe un código en SCSS que defina un `mixin` llamado `media-query`
@@ -864,7 +900,7 @@ Aplica este `mixin` en una clase llamada `.container` para que:
 - Cambie el color de fondo a rojo en cualquier otra caso.
 El código deberá utilizar `@include` para aplicar el `mixin` dentro de la clase `.container`.
 
-## 7.7 Mixins anidados
+## 7.8 Mixins anidados
 El anidamiento de @mixins implica la inclusión de un @mixin dentro de otro. Esto permite construir estilos más modulares y mantener la estructura organizada.
 ```
 @mixin flex-container {
@@ -891,7 +927,7 @@ El anidamiento de @mixins implica la inclusión de un @mixin dentro de otro. Est
 
 
 
-## 7.8 Mixins globales
+## 7.9 Mixins globales
 
 
 ## 7.7 Mixins de gradientes
