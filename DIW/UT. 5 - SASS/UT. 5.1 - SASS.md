@@ -42,13 +42,13 @@ Los archivos SCSS se almacenan con la extensión .scss.
 
 
 
-# 3. Instalación y uso de SASS.
-## 3.1 Instalación
+# 4. Instalación y uso de SASS.
+## 4.1 Instalación
 Instrucciones de <a href="https://sass-lang.com/install/">**instalación**</a> de Sass.  
-## 3.2 Uso de Sass
+## 4.2 Uso de Sass
 De una manera que recuerda a **Tailwind** necesitaremos compilar el código Sass (estilos.scss) a (estilos.css).  
 Para ello podremos hacerlo desde la `CLI` con `sass input.scss output.css` o automaticamente con un **supervidor** ejecutando el comando `sass --watch input.scss output.css`. 
-## 3.3 Ejercicio
+## 4.3 Ejercicio
 Crear una carpeta dentro de la cual crearéis un archivo *.scss con el siguiente contenido:
 ```
 $font-stack: Helvetica, sans-serif;
@@ -61,7 +61,7 @@ body {
 ```
 Ejecutar el comando `sass --watch archivo.scss archivo.css` y comprobar que se han generado 2 archivos con extensiones ***.css** y ***.css.map**
 
-## 3.4 Archivo *.css.map
+## 4.4 Archivo *.css.map
 El archivo `map.css` es un archivo de mapa de fuentes (source map). Los mapas de fuentes ayudan a depurar el código CSS compilado al permitir que las herramientas de desarrollo del navegador mapeen las reglas CSS generadas de vuelta a las líneas correspondientes en los archivos SASS/SCSS originales.
 
 **Propósito de un archivo** `.map.css`
@@ -71,7 +71,7 @@ El archivo `map.css` es un archivo de mapa de fuentes (source map). Los mapas de
 **Funcionamiento.**
 El archivo `.map.css` se enlaza al archivo CSS compilado. El navegador utiliza este archivo para mostrar las fuentes originales al depurar el CSS, lo que simplifica la localización y corrección de errores.  
 
-## 3.5 Ejercicio
+## 4.5 Ejercicio
 Crear un archivo `index.html` y asociarle la hoja de estilos *.css.
 Renderizar el archivo y con la herramienta de desarollo y comprobar que los estilos del documento están vinculados al archivo.sass . 
 Comprobar igualmente que en el archivo *.css aparece el siguiente comentario:
@@ -80,7 +80,7 @@ Comprobar igualmente que en el archivo *.css aparece el siguiente comentario:
 ```
 Esto indica al navegador dónde encontrar el archivo de mapa de fuentes para vincular el código CSS compilado al código SCSS original.
 
-# 4. Variables
+# 5. Variables
 Las variables permiten almacenar información reutilizable, el nombre de la variable debe empezar con $ y deben ser declaradas antes de utilizarse.  
 Sass permite almacenar diferentes tipos de datos en variables, incluyendo:
 
@@ -137,7 +137,7 @@ $theme-colors: (
 )
 ```
 
-## 4.1 Ejercicio parte 1
+## 5.1 Ejercicio parte 1
 **Implementación de Temas Claro y Oscuro en Sass**
 Implementar un sistema de temas claro y oscuro utilizando variables en Sass para definir colores de fondo y de texto, y aplicarlos al `body` según la clase asignada.
 
@@ -192,18 +192,18 @@ Con la ayuda del siguiente código, comprobar que los estilos se aplican correct
 </html>
 ```  
   
-## 4.2 Ejercicio parte 2
+## 5.2 Ejercicio parte 2
 Continuaremos sobre la base del ejercicio anterior y explotaremos la reutilizabilidad de las variables de Sass.
 1. Definir un color primario `primary-color`, `#ff5733`.
 2. Aplicar ese color como color de fondo del `header` del archivo anterior.
 3. Aplicar ese color al **borde superior** del `footer` (2px)   
 
 
-# 5 Anidación de selectores.
+# 6 Anidación de selectores.
 En CSS, los selectores relacionados deben escribirse de manera explícita, lo que puede llevar a un código repetitivo y difícil de mantener. 
 Una de las características de Sass es la capacidad de anidar selectores CSS de una manera que refleja la estructura jerárquica del HTML. Eso hace que el código CSS sea más legible y fácil de organizar.
 
-## 5.1 Sintaxis de Sass para los anidamientos de estilos.
+## 6.1 Sintaxis de Sass para los anidamientos de estilos.
 En Sass, el anidamiento **se realiza simplemente escribiendo las reglas dentro de otras reglas**.  
 Esto refleja la jerarquía de los elementos HTML como lo podemos ver a continuación donde:
   1. `nav` contiene un `ul`
@@ -230,7 +230,7 @@ nav {
 }
 ```
   
-## 5.2 Uso del selector padre `&`
+## 6.2 Uso del selector padre `&`
 El símbolo `&` (Ampersand) se utiliza para hacer referencia al selector padre en una regla anidada. Esto es útil para aplicar pseudo-clases, pseudo-elementos o variantes del selector.  
   
 **Ejemplo con pseudo clases y pseudo-elementos**  
@@ -294,7 +294,7 @@ a::after {
 }
 ```
   
-## 5.3 Anidamiento con combinadores
+## 6.3 Anidamiento con combinadores
 El anidamiento puede incluir combinadores de selección como `>`, `+`, `~`, y un espacio (para descendientes). Esto permite especificar la relación entre los elementos de manera jerárquica.
 
 **Ejemplo con combinadores.**
@@ -338,7 +338,7 @@ p ~ div {
 }
 ```  
 
-## 5.4 Anidamiento de media queries:
+## 6.4 Anidamiento de media queries:
 También se pueden anidar las reglas de media queries para hacer que los estilos sean responsivos.
 
 **Ejemplo:**
@@ -356,7 +356,7 @@ También se pueden anidar las reglas de media queries para hacer que los estilos
 }
 ```
 
-## 5.5 Buenas prácticas de Sass
+## 6.5 Buenas prácticas de Sass
 Es recomendable no anidar demasiado profundamente, ya que puede hacer que el CSS sea difícil de mantener y puede generar reglas de estilo muy específicas difíciles de sobrescribir.  
   
 **Ejemplo de anidamiento excesivo.**
@@ -372,7 +372,7 @@ Es recomendable no anidar demasiado profundamente, ya que puede hacer que el CSS
 }
 ```
   
-## 5.6 Tarea RA3CEh
+## 6.6 Tarea RA3CEh
 Convertir la hoja de estilos siguiente a SCSS.
 ```
 .panel {
@@ -406,13 +406,13 @@ Convertir la hoja de estilos siguiente a SCSS.
 ```
 
 
-# 6 Directivas `@import`, `@use` y `@forward` 
+# 7 Directivas `@import`, `@use` y `@forward` 
 La directiva **@import** se utiliza para importar **otras hojas de estilo dentro de la hoja de estilo principal**, lo que permite modularizar los estilos, organizarlos en diferentes archivos y mantener el código más limpio y manejable.  
 Desde `Sass 1.23.0`, el uso de `@import` está desaconsejado, se recomienda usar `@use` y `@forward`.  
   
 Las directivas **`@use`** y **`@forward`** son características de **Sass** (desde Sass 1.23.0) y reemplazanan la directiva **`@import`**. 
 
-## 6.1 Importación de módulos con @use
+## 7.1 Importación de módulos con @use
 **@use** permite importar y cargar un archivo Sass de manera más controlada y eficiente que la antigua `@import` permitiendo, entre otras, evitar la duplicación de reglas.
 - **Sintaxis.**
 ```
@@ -546,7 +546,7 @@ body {
 </html>
 ```
 
-## 6.2 Ejercicio 
+## 7.2 Ejercicio 
 Montar el ejemplo anterior y comprobar como el estilo de <`form`> se actualiza al usar la directiva @use.
 
 **Nota:**  
@@ -554,7 +554,7 @@ En el ejemplo:
 - Por convención se pone un `guión bajo` delante de la hoja de estilos a la que se hace referencia.
 - El guión bajo indica que el archivo es **un archivo de estilos parcial**, es decir, un archivo que **no se compila directamente** en un archivo CSS independiente, sino que **se incluye y compila en otros archivos**.
 
-## 6.3 Alias
+## 7.3 Alias
 Se puede usar un alias para un archivo importado con `@use` para hacer más cortos los nombres de las variables o mixins que estamos usando.
 
 **Modificación del ejemplo anterior.**
@@ -623,7 +623,7 @@ footer {
 }
 ```
   
-## 6.4 Reexportación de módulos con @forward 
+## 7.4 Reexportación de módulos con @forward 
 La directiva `@forward` se utiliza para **reenviar** todo o parte de un módulo (archivo Sass) a otros archivos. Esto permite que un archivo Sass se convierta en un "paso intermedio" que reexporta el contenido de otros archivos, lo que facilita la creación de bibliotecas o colecciones de módulos reutilizables.
 La directiva @forward, **solo sirve para reexportar variables, mixins, y funciones de un archivo a otro**, de forma que otros archivos puedan importar las funcionalidades desde un único punto central.
 
@@ -698,7 +698,7 @@ body {
 }
 ```
 
-## 6.5 Ejercicio
+## 7.5 Ejercicio
 Montar el ejemplo anterior para entender mejor la directiva @forward.
 
 **Nota:**
@@ -724,16 +724,16 @@ $tertiary: #ffffff;
 ```
 En este caso, el archivo `_index.scss` solo reexportará las variables `$primary` y `$secondary`, excluyendo `$tertiary`.
 
-## 6.6 Resumen de @use y @forward
+## 7.6 Resumen de @use y @forward
 - **`@use`**: Importa un archivo Sass de manera controlada, evitando la duplicación de código y proporcionando un espacio de nombres para las variables y mixins.
 - **`@forward`**: Reexporta un archivo Sass a otros archivos, permitiendo que esos archivos accedan a su contenido de forma organizada.  
 Ambas directivas son fundamentales para trabajar de manera eficiente con Sass en proyectos grandes y permiten una gestión más limpia de los estilos.
 
-# 7. Mixins
-## 7.1 Definición de un mixin.
+# 8. Mixins
+## 8.1 Definición de un mixin.
 Los **mixins** son bloques que agrupan estilos CSS que pueden ser utilizados y reutilizados en otros lugares del proyecto de una página web, lo que evita tener que reescribirlos cada vez que sea necesario emplearlos. Además, un **mixin** también puede recibir parámetros (como si fuera una función de un lenguaje de programación), los que permite obtener varias salidas (estilos CSS), personalizadas a las necesidades del proyecto.
 
-## 7.2 Sintaxis de un mixin
+## 8.2 Sintaxis de un mixin
 Un *mixin* se define con la directiva `@mixin` seguida del nombre del mixin. Es una buena práctica emplear nombres descriptivos y claros.
 
 ```
@@ -755,7 +755,7 @@ Un *mixin* se define con la directiva `@mixin` seguida del nombre del mixin. Es 
 >**Ejercicio**
 >Crear un archivo `*.scss` y compilarlo. Observar el contenido del archivo `*.css` generado.
 
-## 7.3 Uso de un mixin
+## 8.3 Uso de un mixin
 Para incluir un **mixin** en un selector, se utiliza la directiva `@include`.
 
 ```
@@ -766,7 +766,7 @@ Para incluir un **mixin** en un selector, se utiliza la directiva `@include`.
 >**Ejercicio**
 >Completar el archivo `*.scss` creado anteriormente, compilarlo y observar el contenido del archivo `*.css`.
 
-## 7.4 Mixins con Parámetros
+## 8.4 Mixins con Parámetros
 Los **mixins** pueden aceptar uno o más parámetros para permitir la personalización de los estilos. 
 
 ```
@@ -829,7 +829,7 @@ Los **mixins** pueden aceptar uno o más parámetros para permitir la personaliz
 </html>
 ```
 
-## 7.5 Mixins con Parámetros Predeterminados
+## 8.5 Mixins con Parámetros Predeterminados
 También se pueden definir parámetros predeterminados, dado el caso de instanciar un mixin sin pasarle parte, o ningun valor. 
 
 ```
@@ -844,7 +844,7 @@ También se pueden definir parámetros predeterminados, dado el caso de instanci
 >**Ejercicio**
 >¿Cual será el *.css resultante del ejemplo anterior?
 
-## 7.5 Mixins condicionales
+## 8.6 Mixins condicionales
 Podemos crear estilos más eficientes y flexibles utilizando condiciones de uso de un mixin. Por ejemplo, si dos elementos tienen el mismo estilo, pero existe una condición que solo uno de ellos cumple, podremos diferenciarlos usando mixins condicionales.
 
 Con la directiva **@if** dentro del mixin definiremos diferentes condiciones de uso. Además del `@if` también es habitual usar **@else if <condición> o @else**.
@@ -874,7 +874,7 @@ Con la directiva **@if** dentro del mixin definiremos diferentes condiciones de 
   @include button-style("tertiary");
 }
 ```
-## 7.6 Directiva @content dentro de un @mixin
+## 8.7 Directiva @content dentro de un @mixin
 **@content** actúa como un marcador de posición dentro de un **@mixin**. Ese marcador será reemplazado por el código proporcionado al invocar el @mixin con @include. 
 ```
 //definicion del mixin con la directica @content
@@ -893,7 +893,7 @@ Con la directiva **@if** dentro del mixin definiremos diferentes condiciones de 
 }
 ```
 
-## 7.7 Ejercicio
+## 8.8 Ejercicio
 - **Mixin de media queries**
 **Parte 1**  
 Escribe un código en SCSS que defina un `mixin` llamado `media-query`
@@ -908,7 +908,7 @@ Aplica este `mixin` en una clase llamada `.container` para que:
 - Cambie el color de fondo a rojo en cualquier otra caso.
 El código deberá utilizar `@include` para aplicar el `mixin` dentro de la clase `.container`.
 
-## 7.8 Mixins anidados
+## 8.9 Mixins anidados
 El anidamiento de @mixins implica la inclusión de un @mixin dentro de otro. Esto permite construir estilos más modulares y mantener la estructura organizada.
 ```
 @mixin flex-container {
@@ -933,9 +933,7 @@ El anidamiento de @mixins implica la inclusión de un @mixin dentro de otro. Est
   }
 ```
 
-
-
-## 7.9 Mixins globales
+## 8.10 Mixins globales
 
 
 ## 7.7 Mixins de gradientes
