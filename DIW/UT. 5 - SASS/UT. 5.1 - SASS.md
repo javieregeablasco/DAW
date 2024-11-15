@@ -458,7 +458,7 @@ Convertir la hoja de estilos siguiente a SCSS.
 ```
 
 
-# 7 Directivas `@import`, `@use` y `@forward` 
+# 7 Directivas `@import`, `@use` y `@forward`  
 La directiva **@import** se utiliza para importar **otras hojas de estilo dentro de la hoja de estilo principal**, lo que permite modularizar los estilos, organizarlos en diferentes archivos y mantener el código más limpio y manejable.  
 Desde `Sass 1.23.0`, el uso de `@import` está desaconsejado, se recomienda usar `@use` y `@forward`.  
   
@@ -896,36 +896,6 @@ También se pueden definir parámetros predeterminados, dado el caso de instanci
 >**Ejercicio**
 >¿Cual será el *.css resultante del ejemplo anterior?
 
-## 8.6 Mixins condicionales
-Podemos crear estilos más eficientes y flexibles utilizando condiciones de uso de un mixin. Por ejemplo, si dos elementos tienen el mismo estilo, pero existe una condición que solo uno de ellos cumple, podremos diferenciarlos usando mixins condicionales.
-
-Con la directiva **@if** dentro del mixin definiremos diferentes condiciones de uso. Además del `@if` también es habitual usar **@else if <condición> o @else**.
-```
-@mixin button-style($type) {
-  @if $type == "primary" {
-    background-color: blue;
-    color: white;
-  } @else if $type == "secondary" {
-    background-color: gray;
-    color: black;
-  } @else {
-    background-color: white;
-    color: black;
-  }
-}
-
-.btn-1 {
-  @include button-style("primary");
-}
-
-.btn-2 {
-  @include button-style("secondary");
-}
-
-.btn-3 {
-  @include button-style("tertiary");
-}
-```
 ## 8.7 Directiva @content dentro de un @mixin
 **@content** actúa como un marcador de posición dentro de un **@mixin**. Ese marcador será reemplazado por el código proporcionado al invocar el @mixin con @include. 
 ```
@@ -999,6 +969,89 @@ El anidamiento de @mixins implica la inclusión de un @mixin dentro de otro. Est
 
 .caja {
   @include gradiente(#ff7e5f, #feb47b);
+}
+```
+
+## 8.6 Condiciones y bucles 
+### 8.6.1 Condiciones
+Podemos crear estilos más eficientes y flexibles utilizando condiciones. Por ejemplo, si dos elementos tienen el mismo estilo, pero existe una condición que solo uno de ellos cumple, podremos diferenciarlos usando mixins condicionales.
+
+Con la directiva **@if** definiremos diferentes condiciones de uso. Además del `@if` también es habitual usar **@else if <condición> o @else**.
+```
+@mixin button-style($type) {
+  @if $type == "primary" {
+    background-color: blue;
+    color: white;
+  } @else if $type == "secondary" {
+    background-color: gray;
+    color: black;
+  } @else {
+    background-color: white;
+    color: black;
+  }
+}
+
+.btn-1 {
+  @include button-style("primary");
+}
+
+.btn-2 {
+  @include button-style("secondary");
+}
+
+.btn-3 {
+  @include button-style("tertiary");
+}
+```
+## 8.6.2 Iteradores
+### 8.6.2.1 Directiva @each  
+La directiva @each se utiliza para iterar sobre listas y mapas en Sass. Es ideal para recorrer elementos y aplicar estilos de forma dinámica.
+>**Ejemplo con listas:**
+```
+$colores: red, blue, green;
+
+@each $color in $colores {
+  .text-#{$color} {
+    color: $color;
+  }
+}
+```  
+>**Ejemplo con mapas:**
+```
+$espaciados: (
+  small: 4px,
+  medium: 8px,
+  large: 16px
+);
+
+@each $nombre, $valor in $espaciados {
+  .margen-#{$nombre} {
+    margin: $valor;
+  }
+}
+```  
+### 8.6.2.2 Directiva @for  
+se utiliza para ejecutar un bloque de código **un número específico de veces**.
+```
+$inicio: 1;
+$final: 5;
+
+@for $i from $inicio through $final {
+    .columna-#{$i} {
+      width: 100% / $i;
+    }
+  }
+```  
+### 8.6.2.3 Directiva while**
+La directiva @while ejecuta un bloque de código mientras una condición sea verdadera.
+```
+$i: 1;
+
+@while $i < 4 {
+  .borde-#{$i} {
+    border-width: $i * 2px;
+  }
+  $i: $i + 1;
 }
 ```
 
