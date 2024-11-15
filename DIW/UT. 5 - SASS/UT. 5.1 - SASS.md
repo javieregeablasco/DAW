@@ -973,8 +973,8 @@ Como hemos visto en <a href="https://github.com/javieregeablasco/DAW/blob/main/D
   @include mixins.borde-redondeado(10px);
 }
 ```
-## 9 Condiciones y bucles 
-### 9.1 Condiciones
+## 9 Condicionales y bucles 
+### 9.1 Condicionales
 Podemos crear estilos más eficientes y flexibles utilizando condiciones. Por ejemplo, si dos elementos tienen el mismo estilo, pero existe una condición que solo uno de ellos cumple, podremos diferenciarlos usando mixins condicionales.
 
 Con la directiva **@if** definiremos diferentes condiciones de uso. Además del `@if` también es habitual usar **@else if <condición> o @else**.
@@ -1004,7 +1004,7 @@ Con la directiva **@if** definiremos diferentes condiciones de uso. Además del 
   @include button-style("tertiary");
 }
 ```
-### 9.2 Iteradores
+### 9.2 Bucles (iteradores)
 #### 9.2.1 Directiva @each  
 La directiva @each se utiliza para iterar sobre listas y mapas en Sass. Es ideal para recorrer elementos y aplicar estilos de forma dinámica.
 >**Ejemplo con listas:**
