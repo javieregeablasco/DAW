@@ -196,14 +196,37 @@ Con la ayuda del siguiente código, comprobar que los estilos se aplican correct
 Continuaremos sobre la base del ejercicio anterior y explotaremos la reutilizabilidad de las variables de Sass.
 1. Definir un color primario `primary-color`, `#ff5733`.
 2. Aplicar ese color como color de fondo del `header` del archivo anterior.
-3. Aplicar ese color al **borde superior** del `footer` (2px)   
+3. Aplicar ese color al **borde superior** del `footer` (2px)
+   
+## 5.3 Utilización, operaciones y funciones sobre variables
+**Utilización de variables**
+Para utilizar una variable dentro de un selector usaremos la notacion `#{$variable}`.
+```
+$medium: 768px;
+
+@media only screen and min-width: #{$medium} {
+    .btn {
+        background: $blue;
+    }
+}
+```
+**Operaciones sobre variables**
+También se pueden realizar operaciones matemáticas sobre variables. 
+```
+$padding: 20px;
+
+.btn {
+    padding: $padding / 2;
+}
+```
+**Operaciones sobre variables**
 
 
-# 6 Anidación de selectores.
+# 6 Anidación de selectores
 En CSS, los selectores relacionados deben escribirse de manera explícita, lo que puede llevar a un código repetitivo y difícil de mantener. 
 Una de las características de Sass es la capacidad de anidar selectores CSS de una manera que refleja la estructura jerárquica del HTML. Eso hace que el código CSS sea más legible y fácil de organizar.
 
-## 6.1 Sintaxis de Sass para los anidamientos de estilos.
+## 6.1 Sintaxis de Sass para los anidamientos de estilos
 En Sass, el anidamiento **se realiza simplemente escribiendo las reglas dentro de otras reglas**.  
 Esto refleja la jerarquía de los elementos HTML como lo podemos ver a continuación donde:
   1. `nav` contiene un `ul`
@@ -925,7 +948,6 @@ El anidamiento de @mixins implica la inclusión de un @mixin dentro de otro. Est
   .container {
     @include flex-container {
       height: 100vh;
-      
       .item {
         @include flex-item(2);
       }
@@ -951,20 +973,6 @@ El anidamiento de @mixins implica la inclusión de un @mixin dentro de otro. Est
 }
 ```
 
-**7. Beneficios de los Mixins en Proyectos Reales**
-- **Códigos más legibles y modulares**.
-- **Ahorro de tiempo en el desarrollo**: Los cambios se hacen en un solo lugar y se reflejan en todas las inclusiones del *mixin*.
-- **Mejora en la consistencia de diseño**: Garantiza que se usen los mismos estilos en múltiples componentes.
-
-**8. Buenas Prácticas con Mixins**
-- Evitar la sobrecarga de los *mixins* con demasiados parámetros.
-- Usar nombres claros y descriptivos.
-- Combinar los *mixins* con variables para maximizar la reutilización y flexibilidad.
-
-**Conclusión**
-Los *mixins* de SASS son una herramienta poderosa para los desarrolladores, ya que promueven la reutilización y optimización del código, facilitando la creación de proyectos escalables y fáciles de mantener. Usar *mixins* de manera eficiente contribuye a un desarrollo más rápido y a la reducción de errores en los proyectos de desarrollo web.
-
-**Actividades Propuestas**
-1. Crea un *mixin* que defina un conjunto de propiedades de estilo para botones, incluyendo colores, márgenes y bordes.
-2. Desarrolla un *mixin* de media query que ajuste los estilos de un contenedor cuando la pantalla tenga un ancho menor a 600px.
-3. Implementa un proyecto en SASS utilizando *mixins* para centralizar y reutilizar los estilos más comunes.
+# 9. Herencias y clase %
+## 9.1 Herencias
+## 9.2 Clase %
