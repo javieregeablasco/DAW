@@ -973,26 +973,8 @@ Como hemos visto en <a href="https://github.com/javieregeablasco/DAW/blob/main/D
   @include mixins.borde-redondeado(10px);
 }
 ```
-
-
-
-## 7.7 Mixins de gradientes
-
-
-- **Mixin de gradiente**: Un *mixin* para aplicar un gradiente de forma rápida.
-
-```scss
-@mixin gradiente($color1, $color2) {
-  background: linear-gradient($color1, $color2);
-}
-
-.caja {
-  @include gradiente(#ff7e5f, #feb47b);
-}
-```
-
-## 8.6 Condiciones y bucles 
-### 8.6.1 Condiciones
+## 9 Condiciones y bucles 
+### 9.1 Condiciones
 Podemos crear estilos más eficientes y flexibles utilizando condiciones. Por ejemplo, si dos elementos tienen el mismo estilo, pero existe una condición que solo uno de ellos cumple, podremos diferenciarlos usando mixins condicionales.
 
 Con la directiva **@if** definiremos diferentes condiciones de uso. Además del `@if` también es habitual usar **@else if <condición> o @else**.
@@ -1022,8 +1004,8 @@ Con la directiva **@if** definiremos diferentes condiciones de uso. Además del 
   @include button-style("tertiary");
 }
 ```
-## 8.6.2 Iteradores
-### 8.6.2.1 Directiva @each  
+### 9.2 Iteradores
+#### 9.2.1 Directiva @each  
 La directiva @each se utiliza para iterar sobre listas y mapas en Sass. Es ideal para recorrer elementos y aplicar estilos de forma dinámica.
 >**Ejemplo con listas:**
 ```
@@ -1049,7 +1031,7 @@ $espaciados: (
   }
 }
 ```  
-### 8.6.2.2 Directiva @for  
+#### 9.2.2 Directiva @for  
 se utiliza para ejecutar un bloque de código **un número específico de veces**.
 ```
 $inicio: 1;
@@ -1061,7 +1043,7 @@ $final: 5;
     }
   }
 ```  
-### 8.6.2.3 Directiva while**
+#### 9.2.3 Directiva while**
 La directiva @while ejecuta un bloque de código mientras una condición sea verdadera.
 ```
 $i: 1;
@@ -1074,6 +1056,6 @@ $i: 1;
 }
 ```
 
-# 9. Herencias y clase %
+# 10. Herencias y clase %
 ## 9.1 Herencias
 ## 9.2 Clase %
