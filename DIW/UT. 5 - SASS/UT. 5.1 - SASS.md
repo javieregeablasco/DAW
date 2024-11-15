@@ -957,7 +957,7 @@ El anidamiento de @mixins implica la inclusión de un @mixin dentro de otro. Est
 ## 8.10 Mixins globales
 El término "mixin global" se refiere a un mixin que está disponible para ser usado en cualquier parte de un proyecto debido a su ubicación en un archivo compartido o común que es importado globalmente.  
 Esta manera de proceder permite definir tantos archivos (módulos) como elementos tengamos (variables, funciones, mixins...).
-Como hemos visto en <a href=""># 7 Directivas @import, @use y @forward</a> , los mixins globales se importan o reexportan con la directiva @use y @forward respectivamente. 
+Como hemos visto en <a href="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/UT.%205.1%20-%20SASS.md#7-directivas-import-use-y-forward"># 7 Directivas @import, @use y @forward</a> , los mixins globales se importan o reexportan con la directiva @use y @forward respectivamente. 
 >**Ejemplo:**  
 >Archivo **_mixins.scss**  
 ```
