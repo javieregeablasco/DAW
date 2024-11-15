@@ -458,7 +458,7 @@ Convertir la hoja de estilos siguiente a SCSS.
 ```
 
 
-# 7 Directivas `@import`, `@use` y `@forward`  
+# 7 Directivas @import, @use y @forward  
 La directiva **@import** se utiliza para importar **otras hojas de estilo dentro de la hoja de estilo principal**, lo que permite modularizar los estilos, organizarlos en diferentes archivos y mantener el código más limpio y manejable.  
 Desde `Sass 1.23.0`, el uso de `@import` está desaconsejado, se recomienda usar `@use` y `@forward`.  
   
@@ -955,6 +955,25 @@ El anidamiento de @mixins implica la inclusión de un @mixin dentro de otro. Est
 ```
 
 ## 8.10 Mixins globales
+El término "mixin global" se refiere a un mixin que está disponible para ser usado en cualquier parte de un proyecto debido a su ubicación en un archivo compartido o común que es importado globalmente.  
+Esta manera de proceder permite definir tantos archivos (módulos) como elementos tengamos (variables, funciones, mixins...).
+Como hemos visto en <a href=""># 7 Directivas @import, @use y @forward</a> , los mixins globales se importan o reexportan con la directiva @use y @forward respectivamente. 
+>**Ejemplo:**  
+>Archivo **_mixins.scss**  
+```
+@mixin borde-redondeado($radio: 5px) {
+  border-radius: $radio;
+}
+```
+>Archivo **estilos.scss**
+```
+@use 'mixins'; // Importa el archivo que contiene el mixin global
+
+.caja {
+  @include mixins.borde-redondeado(10px);
+}
+```
+
 
 
 ## 7.7 Mixins de gradientes
