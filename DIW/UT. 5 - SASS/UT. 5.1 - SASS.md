@@ -1057,5 +1057,10 @@ $i: 1;
 ```
 
 # 10. Herencias y clase %
-## 9.1 Herencias
-## 9.2 Clase %
+## 10.1 Herencias
+## 10.2 Clase %
+
+# 11. Estructuración de proyectos con Sass y buenas prácticas
+## 11.1 Estructuración
+## 11.2 Buenas prácticas
+
