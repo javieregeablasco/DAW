@@ -199,7 +199,7 @@ Continuaremos sobre la base del ejercicio anterior y explotaremos la reutilizabi
 3. Aplicar ese color al **borde superior** del `footer` (2px)
    
 ## 5.3 Utilización, operaciones y funciones sobre variables
-**Utilización de variables**
+**Utilización de variables**  
 Para utilizar una variable dentro de un selector usaremos la notacion `#{$variable}`.
 ```
 $medium: 768px;
@@ -210,7 +210,7 @@ $medium: 768px;
     }
 }
 ```
-**Operaciones sobre variables**
+**Operaciones sobre variables**  
 También se pueden realizar operaciones matemáticas sobre variables. 
 ```
 $padding: 20px;
@@ -219,8 +219,37 @@ $padding: 20px;
     padding: $padding / 2;
 }
 ```
-**Operaciones sobre variables**
+**Funciones sobre variables**  
+Para terminar, también es posible utilizar funciones que podremas aplicar a nuestras variables.  
+<a href="https://sass-lang.com/documentation/modules/">**Listado módulos Sass**</a>  
+Para poder usar las funciones de los módulos, previamente deberemos importarlos con la directiva `@use`  
+```
+@use 'sass:color';
 
+$primary: gray;
+
+.btn {
+    background: $primary;
+
+    &:hover {
+        background: darken($primary, 10);
+    }
+}
+```
+Ejemplo de función que permite extraer valores de una variable **mapa** (diccionario).
+```
+@use "sass:map";
+
+$theme-colors: (
+  "primary": #007bff,
+  "secondary": #6c757d,
+  "success": #28a745
+);
+
+.realizado {
+    background-color: map-get($map: $theme-colors, $key: success);
+}
+```
 
 # 6 Anidación de selectores
 En CSS, los selectores relacionados deben escribirse de manera explícita, lo que puede llevar a un código repetitivo y difícil de mantener. 
