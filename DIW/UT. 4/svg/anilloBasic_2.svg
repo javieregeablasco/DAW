@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="400"
+   height="400"
+   viewBox="0 0 105.83333 105.83333"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="anillo_basic_2.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title5">SpinnerBasic</title>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="1.4514587"
+     inkscape:cx="350.6817"
+     inkscape:cy="196.00971"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer4">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="52.916665"
+       originy="52.916665"
+       spacingx="0.26458333"
+       spacingy="0.26458333"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient8"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#666666;stop-opacity:1;"
+         offset="0"
+         id="stop8" />
+      <stop
+         style="stop-color:#282828;stop-opacity:0;"
+         offset="1"
+         id="stop9" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect3"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="La regla d'emplenat parell-senar al diàleg &lt;b&gt;emplenat i traç&lt;/b&gt; si el resultat després de convertir el clip en camí no està allisat." />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3">
+      <ellipse
+         style="display:none;fill:#ffffff;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+         id="ellipse3"
+         cx="52.916664"
+         cy="52.916664"
+         rx="38.364582"
+         ry="38.364578"
+         d="M 91.281246,52.916664 A 38.364582,38.364578 0 0 1 52.916664,91.281242 38.364582,38.364578 0 0 1 14.552082,52.916664 38.364582,38.364578 0 0 1 52.916664,14.552086 38.364582,38.364578 0 0 1 91.281246,52.916664 Z" />
+      <path
+         id="lpe_path-effect3"
+         style="fill:#ffffff;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+         class="powerclip"
+         d="M -3.6770859,-3.6770859 H 109.51041 V 109.51041 H -3.6770859 Z M 91.281246,52.916664 A 38.364582,38.364578 0 0 0 52.916664,14.552086 38.364582,38.364578 0 0 0 14.552082,52.916664 38.364582,38.364578 0 0 0 52.916664,91.281242 38.364582,38.364578 0 0 0 91.281246,52.916664 Z" />
+    </clipPath>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8"
+       id="linearGradient9"
+       x1="2.6460063"
+       y1="52.916578"
+       x2="103.1875"
+       y2="52.916578"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="fondo"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="display:inline;fill:#e6e6e6;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+       id="path1"
+       clip-path="url(#clipPath3)"
+       d="M 104.51041,52.916664 A 51.59375,51.59375 0 0 1 52.916664,104.51041 51.59375,51.59375 0 0 1 1.3229141,52.916664 51.59375,51.59375 0 0 1 52.916664,1.3229141 51.59375,51.59375 0 0 1 104.51041,52.916664 Z"
+       sodipodi:type="arc"
+       sodipodi:ry="51.59375"
+       sodipodi:rx="51.59375"
+       sodipodi:cy="52.916664"
+       sodipodi:cx="52.916664"
+       inkscape:path-effect="#path-effect3"
+       sodipodi:insensitive="true" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="spinner">
+    <path
+       id="path3"
+       style="display:inline;fill:url(#linearGradient9);stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+       d="M 52.916665 2.6458332 A 5.291667 5.2916665 0 0 0 52.151337 2.7021606 A 50.270832 50.270832 0 0 0 6.4724729 33.67908 A 50.270832 50.270832 0 0 0 17.369999 88.463331 A 50.270832 50.270832 0 0 0 72.15425 99.360857 A 50.270832 50.270832 0 0 0 103.13117 53.681993 A 5.291667 5.2916665 0 0 0 103.1875 52.916665 A 5.291667 5.2916665 0 0 0 97.89583 47.624998 A 5.291667 5.2916665 0 0 0 92.604164 52.916665 A 39.687496 39.687496 0 0 1 52.916665 92.604164 A 39.687496 39.687496 0 0 1 13.229166 52.916665 A 39.687496 39.687496 0 0 1 52.916665 13.229166 A 5.291667 5.2916665 0 0 0 58.208331 7.9374997 A 5.291667 5.2916665 0 0 0 52.916665 2.6458332 z " />
+  </g>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+      <cc:Work
+         rdf:about="">
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:title>SpinnerBasic</dc:title>
+        <dc:date>16/11/2024</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Javier Egea</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:language>Spanish</dc:language>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
