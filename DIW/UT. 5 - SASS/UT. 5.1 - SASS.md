@@ -1056,18 +1056,18 @@ $i: 1;
 }
 ```
 
-# 10. Herencias y clase %
-## 10.1 Herencias, @extend
+# 10. Herencia de selectores y clase %
+## 10.1 Herencias , @extend
 La directiva **@extend**, permite compartir (heredar) reglas CSS entre múltiples selectores manteniendo el enfoque **DRY** (Don't Repeat Yourself).  
 ```
-// Clase a heredar
+// Selector a heredar
 .placeholder {
   color: #ccc;
   font-size: 14px;
   font-style: italic;
 }
 
-// Clases que herendan los estilos CSS
+// Selectores que heredan los estilos CSS
 .input-placeholder {
   @extend .placeholder;
 }
@@ -1077,9 +1077,64 @@ La directiva **@extend**, permite compartir (heredar) reglas CSS entre múltiple
 }
 ```
 ## 10.2 Ejercicio
-Sobre el ejemplo anterior definir una clase `output-placeholder` con los siguientes estilos `color: green` y `font-size: 10px`.
+Sobre el ejemplo anterior definir una clase `output-placeholder` con los siguientes estilos `color: green` y `font-size: 10px`.  
 Esa clase, aparte de tener sus estilos propios, también heredará de la clase `placeholder`.  
-Montar un archivo HTML con al menos un elemento, al que se le aplique `output-placeholder`. Comprobar qué estilos se aplicarán finalmente a los elementos   
+Montar un archivo HTML, con al menos un elemento al que se le aplique `output-placeholder`, y comprobar qué estilos se le aplica y la estructura del archivo *.css compilado.   
+
+## 10.3 Herencia de selectores anidados.
+`@extend` también puede usarse en selectores anidados.  
+>Archivo *.scss 
+```
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+
+  .card-header {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .card-body {
+    font-size: 14px;
+  }
+}
+
+.featured-card {
+  @extend .card;
+  
+  .card-header {
+    color: red;
+  }
+
+  .card-body {
+    font-size: 16px;
+  }
+}
+```
+>Archivo *.css compilado.  
+```
+.card, .featured-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.card .card-header, .featured-card .card-header {
+  font-size: 18px;
+  font-weight: bold;
+}
+.card .card-body, .featured-card .card-body {
+  font-size: 14px;
+}
+
+.featured-card .card-header {
+  color: red;
+}
+.featured-card .card-body {
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=estilos.css.map */
+```
+## 10.4 Limitaciones de las herencias @extend
 
 
 ## 10.2 Clase %
