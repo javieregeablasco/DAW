@@ -353,8 +353,8 @@ El anidamiento puede incluir combinadores de selección como `>`, `+`, `~`, y un
 - `> p` selecciona los elementos `p` que son hijos directos de `div`.
 - `p + ul` selecciona un `ul` que está inmediatamente después de un `p`.
 - `p ~ div` selecciona todos los `div` que siguen a un `p` en el mismo nivel de jerarquía.
+>Archivo.scss
 ```
-SCSS
 div {
   background-color: lightblue;
   
@@ -371,6 +371,7 @@ div {
   }
 }
 ```
+>Archivo.css
 ```
 div {
   background-color: lightblue;
