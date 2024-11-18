@@ -47,7 +47,7 @@ Los archivos SCSS se almacenan con la extensión .scss.
 Instrucciones de <a href="https://sass-lang.com/install/">**instalación**</a> de Sass.  
 ## 4.2 Uso de Sass
 De una manera que recuerda a **Tailwind** necesitaremos compilar el código Sass (estilos.scss) a (estilos.css).  
-Para ello podremos hacerlo desde la `CLI` con `sass input.scss output.css` o automaticamente con un **supervidor** ejecutando el comando `sass --watch input.scss output.css`. 
+Para ello podremos hacerlo desde la `CLI` con `sass input.scss output.css` o automáticamente con un **supervidor** ejecutando el comando `sass --watch input.scss output.css`. 
 ## 4.3 Ejercicio
 Crear una carpeta dentro de la cual crearéis un archivo *.scss con el siguiente contenido:
 ```
