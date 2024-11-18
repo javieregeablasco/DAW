@@ -372,22 +372,20 @@ div {
 }
 ```
 ```
-CSS
 div {
   background-color: lightblue;
 }
-
 div > p {
   font-weight: bold;
 }
-
-p + ul {
+div p + ul {
   margin-top: 10px;
 }
-
-p ~ div {
+div p ~ div {
   border: 1px solid gray;
 }
+
+/*# sourceMappingURL=estilos.css.map */
 ```  
 
 ## 6.4 Anidamiento de media queries:
