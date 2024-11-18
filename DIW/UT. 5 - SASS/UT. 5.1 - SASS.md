@@ -1134,10 +1134,110 @@ Montar un archivo HTML, con al menos un elemento al que se le aplique `output-pl
 
 /*# sourceMappingURL=estilos.css.map */
 ```
-## 10.4 Limitaciones de las herencias @extend
 
+## 10.4 Limitaciones de @extend
+Como ya hemos visto en los ejemplos anteriores, `@extend` tiene algunas limitaciones a tener en cuenta:  
+1 - Puede generar selectores inesperadamente específicos o generales, complicando la administración de estilos.
+2 - Los cambios en los selectores extendidos pueden afectar a varios elementos, lo que puede ser difícil de mantener en proyectos grandes.  
+3 - Puede generar un CSS final más grande debido a la combinación de selectores.  
 
-## 10.2 Clase %
+## 10.5 Clase %
+La clase `%` también conocida como **placeholder (selector)** (selector de marcador de posición), se utiliza para definir un conjunto de reglas de estilo **que no se aplican directamente a ningún elemento** pero que pueden ser **extendidas mediante `@extend`**.  
+La `clase %` es especialmente útil para compartir estilos entre selectores sin agregar clases extra al HTML ni generar CSS redundante.
+Al no aplicarse directamente a ningún elemento, **no se compila** y así pues, no aparecerá en el *.css. 
+
+>Archivo scss
+```
+// placeholder 
+%estilosComunes {
+  color: #333;
+  font-size: 16px;
+  padding: 10px;
+  border:2px solid black;
+  border-radius: 5px;
+
+}
+  
+// Selectores que extienden el placeholder
+.btn {
+  @extend %estilosComunes;
+  background-color: #007BFF;
+
+  &:hover {
+    background-color: green;
+  }
+}
+  
+.alert {
+  @extend %estilosComunes;
+  background-color: #FFC107;
+
+  &:hover {
+    background-color: red;
+
+  }
+}
+```
+
+>archivo css compilado
+```
+.alert, .btn {
+  color: #333;
+  font-size: 16px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: #007BFF;
+}
+.btn:hover {
+  background-color: green;
+}
+
+.alert {
+  background-color: #FFC107;
+}
+.alert:hover {
+  background-color: red;
+}
+
+/*# sourceMappingURL=estilos.css.map */
+```
+>Archivo HTML
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Placeholder</title>
+</head>
+<body>
+    <main>
+        <p>Ejemplo de placeholder</p>
+        <section>
+            <p>
+                <a href="#" class="btn">Confirmar</a>
+                <a href="#" class="alert">Eliminar</a>
+            </p>
+        </section>
+    </main>
+</body>
+```
+
+### Beneficios:
+- **Reutilización de código**: Ayuda a evitar la duplicación de código al permitir que varios selectores compartan los mismos estilos.
+- **Optimización**: Como los placeholders no generan CSS por sí solos, solo se generan estilos cuando se utilizan, manteniendo el archivo final más limpio.
+- **Mantenimiento fácil**: Cambiar los estilos en el placeholder automáticamente actualiza todos los selectores que lo extienden, facilitando la gestión de estilos consistentes.
+
+### Cuándo usarlo:
+Es ideal usar placeholders cuando tienes un conjunto de estilos que se va a compartir entre múltiples elementos, pero no necesitas que esos estilos se apliquen a un elemento específico en el HTML sin un contexto claro.
+
+### Limitaciones:
+- No se pueden aplicar directamente en el HTML, ya que no se traducen en una clase como `.nombre-clase`. Siempre necesitan ser extendidos por otro selector para que sus estilos aparezcan en el archivo CSS final.
 
 # 11. Estructuración de proyectos con Sass y buenas prácticas
 ## 11.1 Estructuración
