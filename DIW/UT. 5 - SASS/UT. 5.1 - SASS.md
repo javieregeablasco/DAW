@@ -73,7 +73,7 @@ El archivo `.map.css` se enlaza al archivo CSS compilado. El navegador utiliza e
 
 ## 4.5 Ejercicio
 Crear un archivo `index.html` y asociarle la hoja de estilos *.css.
-Renderizar el archivo y con la herramienta de desarollo y comprobar que los estilos del documento están vinculados al archivo.sass . 
+Renderizar el archivo y comprobar que los estilos del documento están vinculados al archivo.scss . 
 Comprobar igualmente que en el archivo *.css aparece el siguiente comentario:
 ```
 /*# sourceMappingURL=styles.css.map */
@@ -1057,7 +1057,31 @@ $i: 1;
 ```
 
 # 10. Herencias y clase %
-## 10.1 Herencias
+## 10.1 Herencias, @extend
+La directiva **@extend**, permite compartir (heredar) reglas CSS entre múltiples selectores manteniendo el enfoque **DRY** (Don't Repeat Yourself).  
+```
+// Clase a heredar
+.placeholder {
+  color: #ccc;
+  font-size: 14px;
+  font-style: italic;
+}
+
+// Clases que herendan los estilos CSS
+.input-placeholder {
+  @extend .placeholder;
+}
+
+.textarea-placeholder {
+  @extend .placeholder;
+}
+```
+## 10.2 Ejercicio
+Sobre el ejemplo anterior definir una clase `output-placeholder` con los siguientes estilos `color: green` y `font-size: 10px`.
+Esa clase, aparte de tener sus estilos propios, también heredará de la clase `placeholder`.  
+Montar un archivo HTML con al menos un elemento, al que se le aplique `output-placeholder`. Comprobar qué estilos se aplicarán finalmente a los elementos   
+
+
 ## 10.2 Clase %
 
 # 11. Estructuración de proyectos con Sass y buenas prácticas
