@@ -1228,18 +1228,13 @@ Al no aplicarse directamente a ningún elemento, **no se compila** y así pues, 
 </body>
 ```
 
-### Beneficios:
+## 10.6 Beneficios de usar placeholders.
 - **Reutilización de código**: Ayuda a evitar la duplicación de código al permitir que varios selectores compartan los mismos estilos.
-- **Optimización**: Como los placeholders no generan CSS por sí solos, solo se generan estilos cuando se utilizan, manteniendo el archivo final más limpio.
-- **Mantenimiento fácil**: Cambiar los estilos en el placeholder automáticamente actualiza todos los selectores que lo extienden, facilitando la gestión de estilos consistentes.
-
-### Cuándo usarlo:
-Es ideal usar placeholders cuando tienes un conjunto de estilos que se va a compartir entre múltiples elementos, pero no necesitas que esos estilos se apliquen a un elemento específico en el HTML sin un contexto claro.
-
-### Limitaciones:
-- No se pueden aplicar directamente en el HTML, ya que no se traducen en una clase como `.nombre-clase`. Siempre necesitan ser extendidos por otro selector para que sus estilos aparezcan en el archivo CSS final.
+- **Optimización**: No generan CSS por sí solos, solo generan estilos cuando se utilizan, lo que permite mantener la hoja de estilos más limpia.
+- **Fácil mantenimiento**: Actualizar los estilos del placeholder actualiza automáticamente todos los selectores que lo extienden. 
 
 # 11. Estructuración de proyectos con Sass y buenas prácticas
 ## 11.1 Estructuración
+
 ## 11.2 Buenas prácticas
 
