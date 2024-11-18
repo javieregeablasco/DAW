@@ -138,7 +138,7 @@ $theme-colors: (
 ```
 
 ## 5.1 Ejercicio parte 1
-**Implementación de Temas Claro y Oscuro en Sass**
+**Implementación de Temas Claro y Oscuro en Sass**  
 Implementar un sistema de temas claro y oscuro utilizando variables en Sass para definir colores de fondo y de texto, y aplicarlos al `body` según la clase asignada.
 
 - **Instrucciones:**
