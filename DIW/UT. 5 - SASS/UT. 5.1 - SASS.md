@@ -1236,13 +1236,50 @@ Al no aplicarse directamente a ningún elemento, **no se compila** y así pues, 
 ## 11.1 Estructuración
 La estructuración de proyectos en Sass es clave para mantener el código organizado, legible y fácil de mantener.  
 Sass proporciona convenciones de organización que ayudan a estructurar los proyectos de una manera coherente y ordenada.  
-**Principios Básicos de Estructuración**.  
+**Principios Básicos de Estructuración.**  
  - **Modularidad:**
    Dividir el código en módulos pequeños, especificos y reutilizables.
  - **Consistencia:**
    Definir y mantener una convención de nombres y estructura de archivos coherente a lo largo del proyecto.
  - **Separación lógica de elemetos:**  
    Definir y mantener la separación lógica entre diferentes tipos de estilos, variables, mixins, componentes...
+  
+**Estructura básica  de carpetas.**  
+```
+styles/  
+│  
+├── base/  
+│   ├── _reset.scss  
+│   ├── _typography.scss  
+│   └── _base.scss  
+│  
+├── components/  
+│   ├── _buttons.scss  
+│   ├── _cards.scss  
+│   └── _navbar.scss  
+│  
+├── layout/  
+│   ├── _header.scss  
+│   ├── _footer.scss  
+│   ├── _grid.scss  
+│   └── _sidebar.scss  
+│  
+├── pages/  
+│   ├── _home.scss  
+│   └── _about.scss  
+│  
+├── themes/  
+│   ├── _dark.scss  
+│   └── _light.scss  
+│  
+├── utils/  
+│   ├── _variables.scss  
+│   ├── _mixins.scss  
+│   ├── _functions.scss  
+│   └── _placeholders.scss  
+│  
+└── main.scss
+```
 
 ## 11.2 Buenas prácticas
 
