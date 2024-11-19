@@ -251,7 +251,14 @@ $theme-colors: (
 }
 ```
 ## 5.4 Ejercicio
-...
+Crear un archivo Sass que realice lo siguiente:  
+1 - Definir un estilo **CSS** que pase un texto de **mayúsculas** a **minúsculas**.  
+2 - Defnnir un estilo **CSS** que pase un texto de **minúsculas** a **mayúsculas**.  
+3 - Buscar en la documentación de Sass una función que convierte el contenido de una variable de texto de **minúsculas** a **mayúsculas** (tips: `Builts-in modules`, `string`, `upper`, `case´).  
+4 - Escribir un documento HTML que ilustre las conversiones. Estaís libres de añadir los estilos necesarios para mejorar la vistosidad del documento.
+
+**Ejemplo**
+
 # 6 Anidación de selectores
 En CSS, los selectores relacionados deben escribirse de manera explícita, lo que puede llevar a un código repetitivo y difícil de mantener. 
 Una de las características de Sass es la capacidad de anidar selectores CSS de una manera que refleja la estructura jerárquica del HTML. Eso hace que el código CSS sea más legible y fácil de organizar.
