@@ -1232,7 +1232,7 @@ Al no aplicarse directamente a ningún elemento, **no se compila** y así pues, 
 - **Optimización**: No generan CSS por sí solos, solo generan estilos cuando se utilizan, lo que permite mantener la hoja de estilos más limpia.
 - **Fácil mantenimiento**: Actualizar los estilos del placeholder actualiza automáticamente todos los selectores que lo extienden. 
 
-# 11. Estructuración de proyectos con Sass y buenas prácticas
+# 11. Estructuración de proyectos con Sass
 ## 11.1 Estructuración
 La estructuración de proyectos en Sass es clave para mantener el código organizado, legible y fácil de mantener.  
 Sass proporciona convenciones de organización que ayudan a estructurar los proyectos de una manera coherente y ordenada.  
@@ -1243,8 +1243,15 @@ Sass proporciona convenciones de organización que ayudan a estructurar los proy
    Definir y mantener una convención de nombres y estructura de archivos coherente a lo largo del proyecto.
  - **Separación lógica de elemetos:**  
    Definir y mantener la separación lógica entre diferentes tipos de estilos, variables, mixins, componentes...
-  
-**Estructura básica  de carpetas.**  
+   
+## 11.2 Metodologías de Arquitectura de proyectos
+Las siguientes metodologías ofrecen guías y convenciones para organizar (estructurar) el código Sass (aunque son fundamentos de CSS).
+  - **BEM (Block Element Modifier):** Aunque sea una convención de nomenclatura para CSS, también se aplica en Sass.
+
+  - **SMACSS (Scalable and Modular Architecture for CSS):** Propone dividir el código en cinco categorías: Base, Layout, Module, State y Theme.
+  - **ITCSS (Inverted Triangle CSS):** Organiza el código en niveles de especificidad creciente, comenzando con estilos genéricos y avanzando hacia estilos específicos y personalizados.
+
+## 11.3 Estructura básica de un proyecto (Sass o CSS).  
 ```
 styles/  
 │  
@@ -1281,5 +1288,237 @@ styles/
 └── main.scss
 ```
 
-## 11.2 Buenas prácticas
+**Función de cada carpeta.**
+- **base/**:  
+  La carpeta `base` contiene los estilos básicos o globales del proyecto (<a href="https://github.com/elad2412/the-new-css-reset/blob/main/css/reset.css">archivo de reinicio</a>, <a href="https://github.com/elad2412/the-new-css-reset">reset CSS</a>), tipografía,  configuración general de los elementos HTML...).
+- **components/**:  
+  Incluye estilos para componentes reutilizables (botones, tarjetas, menús de navegación...)
+- **layout/**:  
+  Se ocupa de las estructuras de la página (encabezados, pies de página, barras laterales, sistemas de cuadrícula...)
+- **pages/**:  
+Archivos de estilos específicos para páginas individuales (landing page, sección "acerca de", "sobre nosostros"...).
+- **themes/**:  
+  Contiene los archivos de temas del proyecto (diurno, nocturno, daltónicos...).
+- **utils/**:
+  Carpeta para utilidades de **Sass** (variables, mixins, funciones, placeholders...).
+- **main.scss**:
+  Es el archivo principal que importa todos los demás archivos parciales y genera la hoja de estilos final.
 
+**Ejemplo de configuración de archivos.**
+  - **utils/_variables.scss**
+```  
+// Definir variables de colores
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$danger-color: #e74c3c;
+
+// Definir variables de espaciado
+$spacing-unit: 8px;
+
+// Definir variables tipográficas
+$font-stack: 'Helvetica, Arial, sans-serif';
+```
+
+  - **utils/_mixins.scss**
+```
+// Definir mixin para bordes redondeados
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+          border-radius: $radius;
+}
+
+// Definir mixin para responsive text
+@mixin responsive-text($size) {
+  font-size: $size;
+
+  @media (min-width: 768px) {
+    font-size: $size * 1.2;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: $size * 1.4;
+  }
+}
+```
+ 
+  - **base/_reset.scss**
+```
+// Resetear estilos por defecto
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+```
+
+  - **components/_buttons.scss**
+```
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.button {
+  padding: $spacing-unit * 2 $spacing-unit * 3;
+  color: #fff;
+  background-color: $primary-color;
+  @include border-radius(4px);
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+
+  &--secondary {
+    background-color: $secondary-color;
+
+    &:hover {
+      background-color: darken($secondary-color, 10%);
+    }
+  }
+}
+```
+
+  - **main.scss**
+```
+// Importar archivos base
+@import 'utils/variables';
+@import 'utils/mixins';
+
+// Importar archivos base
+@import 'base/reset';
+@import 'base/typography';
+
+// Importar archivos de componentes
+@import 'components/buttons';
+@import 'components/cards';
+
+// Importar archivos de layout
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/grid';
+
+// Importar archivos de páginas
+@import 'pages/home';
+@import 'pages/about';
+
+// Importar archivos de temas
+@import 'themes/light';
+@import 'themes/dark';
+```
+
+
+## 11.4 Buenas prácticas de proyectos en Sass.
+Las buenas prácticas en **Sass** ayudan a mantener el código limpio, eficiente y fácil de mantener, especialmente en proyectos grandes.  
+
+**1. Organización del proyecto**
+- **Arquitectura modular**: Dividir los estilos en archivos separados y organízandolos en carpetas lógicas 
+- **Sistema 7-1**: Es un enfoque común para estructurar proyectos en Sass y consiste en dividir el proyecto en siete carpetas principales más un archivo `main.scss`:
+  - **base/**: Reset CSS, variables, y estilos globales.
+  - **components/**: Estilos para botones, formularios, etc.
+  - **layout/**: Estructura de la página, grid, y contenedores.
+  - **pages/**: Estilos específicos de páginas.
+  - **themes/**: Temas o variaciones de colores.
+  - **utils/**: Mixins, funciones y helpers.
+  - **vendors/**: Estilos de bibliotecas externas.
+  - **main.scss**: Archivo que importa todos los demás.
+
+**2. Uso adecuado de variables**
+- **Definir variables en un solo archivo.**
+- **Nombres claros.**
+```
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-stack: 'Helvetica, Arial, sans-serif';
+```
+**3. Mixins y funciones**
+- **Reutilizar código**: Usar `@mixin` para fragmentos de código que se repiten, como las configuraciones de `flex` o gradientes.
+```
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+```
+- **Funciones para cálculos**: Usa funciones de Sass (`@function`) para realizar cálculos como la conversión de `px` a `rem`.
+```
+@function px-to-rem($px, $base: 16) {
+  @return #{$px / $base}rem;
+}
+```
+
+**4. Anidar con moderación**
+- **Evitar anidacones profundas**: Limita la anidación a no más de 3 niveles para mantener el código legible y evitar la creación de selectores muy específicos.
+  ```scss
+  .card {
+    .header {
+      .title {
+        color: #333;
+      }
+    }
+  }
+  ```
+
+**5. Uso adecuado de `@extend`**
+- **Evitar `@extend` excesivo**: Aunque `@extend` puede ser útil para compartir estilos, si se usa en exceso puede hacer que el CSS resultante sea complejo y difícil de mantener.
+- **Preferir `@mixin` (clases utilitarias) a `@extend`**: Son más flexibles y reducen el riesgo de problemas de herencia no deseados.
+
+**6. Uso de `@use` y `@forward` y placeholders `%`**
+- **`@use` en lugar de `@import`**: `@use` es la forma moderna de importar archivos en Sass, y ayuda a evitar la duplicación de código y el espacio de nombres global.
+```
+@use 'variables';
+  .box {
+    color: variables.$primary-color;
+  }
+```
+
+- **`@forward` para módulos compartidos**: Usarlo para crear un archivo que importe y reenvíe otros módulos, manteniendo un punto central de importación.
+```
+// _all.scss
+@forward 'variables';
+@forward 'mixins';
+```
+- **`%` para codigo no compilable**:
+```
+%button-styles {
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+```
+
+**7. Controlar el Flujo de Código**: Implementar condicionales y bucles sobre estilos.
+```
+$theme: dark;
+body {
+  @if $theme == dark {
+    background-color: #000;
+    color: #fff;
+  } @else {
+    background-color: #fff;
+    color: #000;
+  }
+}
+```
+
+**8. Código limpio y consistente**
+- **Convenciones de nombres**: Seguir una convención de nombres clara, como BEM (Block Element Modifier), para mantener la coherencia.
+```
+.button {
+  &__icon {
+    margin-right: 10px;
+  }
+}
+```  
+- **Formato consistente**: Asegurar de que la indentación, el uso de llaves y los espacios sean consistentes en todo el proyecto.
+- **Comentarios claros**: Documenta secciones importantes del código con comentarios.
+  ```scss
+  // Base styles for buttons
+  ```
+
+**9. Optimización de código**
+- **Evitar los selectores innecesarios**: No usar selectores complejos cuando uno simple es suficiente.
+- **Combinar reglas similares**: Agrupar propiedades repetidas para reducir la redundancia.
+- **Cuidado con los mixins grandes**: Si un `@mixin` genera demasiado código repetido, considerar otro enfoque más eficiente.
+
+**10. Pruebas y mantenimiento**
+- **Preprocesadores automáticos**: Usar herramientas como **Gulp**, **Webpack** o **Parcel** para compilar automáticamente Sass a CSS.
+- **Linting de código**: Usa herramientas como **stylelint** para encontrar y corregir errores o inconsistencias en el código.
+
+**11. Documentación**
+- **Documentar el código Sass**: Usa comentarios detallados y si es posible, herramientas de documentación automática como **<a href="http://sassdoc.com/">SassDoc</a>**.
