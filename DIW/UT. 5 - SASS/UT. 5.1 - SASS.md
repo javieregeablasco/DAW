@@ -257,8 +257,9 @@ Crear un archivo Sass que realice lo siguiente:
 3 - Buscar en la documentación de Sass una función que convierte el contenido de una variable de texto de **minúsculas** a **mayúsculas** (tips: `Builts-in modules`, `string`, `upper`, `case`).  
 4 - Escribir un documento HTML que ilustre las conversiones. Estaís libres de añadir los estilos necesarios para mejorar la vistosidad del documento.
 
-**Ejemplo**
----
+**Ejemplo de resultado**
+
+---  
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/ejercicio54.png" width=75%/>  
 
 # 6 Anidación de selectores
