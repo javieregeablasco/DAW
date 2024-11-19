@@ -780,7 +780,7 @@ En este caso, el archivo `_index.scss` solo reexportará las variables `$primary
 - **`@forward`**: Reexporta un archivo Sass a otros archivos, permitiendo que esos archivos accedan a su contenido de forma organizada.  
 Ambas directivas son fundamentales para trabajar de manera eficiente con Sass en proyectos grandes y permiten una gestión más limpia de los estilos.
 
-# 8. Mixins
+# 8. Mixins y funciones
 ## 8.1 Definición de un mixin.
 Los **mixins** son bloques que agrupan estilos CSS que pueden ser utilizados y reutilizados en otros lugares del proyecto de una página web, lo que evita tener que reescribirlos cada vez que sea necesario emplearlos. Además, un **mixin** también puede recibir parámetros (como si fuera una función de un lenguaje de programación), los que permite obtener varias salidas (estilos CSS), personalizadas a las necesidades del proyecto.
 
@@ -895,7 +895,7 @@ También se pueden definir parámetros predeterminados, dado el caso de instanci
 >**Ejercicio**
 >¿Cual será el *.css resultante del ejemplo anterior?
 
-## 8.7 Directiva @content dentro de un @mixin
+## 8.6 Directiva @content dentro de un @mixin
 **@content** actúa como un marcador de posición dentro de un **@mixin**. Ese marcador será reemplazado por el código proporcionado al invocar el @mixin con @include. 
 ```
 //definicion del mixin con la directica @content
@@ -914,7 +914,7 @@ También se pueden definir parámetros predeterminados, dado el caso de instanci
 }
 ```
 
-## 8.8 Ejercicio
+## 8.7 Ejercicio
 - **Mixin de media queries**
 **Parte 1**  
 Escribe un código en SCSS que defina un `mixin` llamado `media-query`
@@ -929,7 +929,7 @@ Aplica este `mixin` en una clase llamada `.container` para que:
 - Cambie el color de fondo a rojo en cualquier otra caso.
 El código deberá utilizar `@include` para aplicar el `mixin` dentro de la clase `.container`.
 
-## 8.9 Mixins anidados
+## 8.8 Mixins anidados
 El anidamiento de @mixins implica la inclusión de un @mixin dentro de otro. Esto permite construir estilos más modulares y mantener la estructura organizada.
 ```
 @mixin flex-container {
@@ -953,7 +953,7 @@ El anidamiento de @mixins implica la inclusión de un @mixin dentro de otro. Est
   }
 ```
 
-## 8.10 Mixins globales
+## 8.9 Mixins globales
 El término "mixin global" se refiere a un mixin que está disponible para ser usado en cualquier parte de un proyecto debido a su ubicación en un archivo compartido o común que es importado globalmente.  
 Esta manera de proceder permite definir tantos archivos (módulos) como elementos tengamos (variables, funciones, mixins...).
 Como hemos visto en <a href="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/UT.%205.1%20-%20SASS.md#7-directivas-import-use-y-forward"># 7 Directivas @import, @use y @forward</a> , los mixins globales se importan o reexportan con la directiva @use y @forward respectivamente. 
@@ -972,7 +972,44 @@ Como hemos visto en <a href="https://github.com/javieregeablasco/DAW/blob/main/D
   @include mixins.borde-redondeado(10px);
 }
 ```
-## 9 Condicionales y bucles 
+
+## 8.10 Funciones
+La directiva `@function` es una característica de Sass que permite definir funciones similares a las de lenguajes de programación tradicionales. Estas funciones aceptan parámetros, realizan cálculos o manipulaciones, y devuelven un valor que puede ser utilizado en otros lugares del archivo Sass.  
+
+  - **Sintaxis de `@function`**
+```
+@function nombre-funcion($parametro1, $parametro2) {
+  // Cuerpo de la función
+  @return valor;
+}
+```
+
+  - **Ejemplo**
+la siguiente función convierte píxeles a `rem`:
+```
+@function px-to-rem($px, $base-font-size: 16px) {
+  @return #{$px / $base-font-size} * 1rem;
+}
+```  
+Llamada a la función (desde dentro de un mixin).
+```
+@mixin button($color) {
+  background-color: $color;
+  border: none;
+  padding: 10px 20px;
+  font-size: px-to-rem(16px);
+}
+```  
+
+  - **Limitaciones de `@function`:**
+- **Sólo devuelven valores**: Las funciones de Sass solo pueden devolver un valor, no pueden cambiar directamente el CSS generado (para eso se utilizan los mixins).
+- **Limitaciones lógicas**: Aunque Sass permite algunas operaciones lógicas y cálculos, no es un lenguaje de programación completo, por lo que hay límites en la lógica que se puede implementar.
+
+  - **Diferencia entre `@function` y `@mixin`:**
+- **`@function`** devuelve un valor que se puede usar en propiedades de CSS.
+- **`@mixin`** incluye bloques de estilos completos y no devuelve un valor.
+
+# 9 Condicionales y bucles 
 ### 9.1 Condicionales
 Podemos crear estilos más eficientes y flexibles utilizando condiciones. Por ejemplo, si dos elementos tienen el mismo estilo, pero existe una condición que solo uno de ellos cumple, podremos diferenciarlos usando mixins condicionales.
 
