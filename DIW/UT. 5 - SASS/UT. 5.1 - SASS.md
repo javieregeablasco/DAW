@@ -250,7 +250,8 @@ $theme-colors: (
     background-color: map-get($map: $theme-colors, $key: success);
 }
 ```
-
+## 5.4 Ejercicio
+...
 # 6 Anidación de selectores
 En CSS, los selectores relacionados deben escribirse de manera explícita, lo que puede llevar a un código repetitivo y difícil de mantener. 
 Una de las características de Sass es la capacidad de anidar selectores CSS de una manera que refleja la estructura jerárquica del HTML. Eso hace que el código CSS sea más legible y fácil de organizar.
