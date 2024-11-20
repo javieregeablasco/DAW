@@ -371,7 +371,7 @@ a:hover {
   color: darkblue;
 }
 a::after {
-  content: "Ejecutado";
+  content: ' (link)';
   font-style: italic;
 }
 
