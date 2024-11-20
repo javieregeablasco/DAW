@@ -314,7 +314,7 @@ nav {
 }
 ```
 ## 6.2 Ejercicio
-Convertir a SCSS el CSS en ejemplo del punto 6.
+Convertir a SCSS el CSS del ejemplo del punto 6.
   
 ## 6.3 Uso del selector padre `&`
 El símbolo `&` (Ampersand) se utiliza para hacer referencia al selector padre en una regla anidada. Esto es útil para aplicar pseudo-clases, pseudo-elementos o variantes del selector.  
@@ -377,8 +377,11 @@ a::after {
 
 /*# sourceMappingURL=estilos.css.map */
 ```
+
+## 6.4 Ejercicio
+Escribir un HTML que utilice los estilos definidos en el ejemplo del apartado 6.3.  
   
-## 6.4 Anidamiento con combinadores
+## 6.5 Anidamiento con combinadores
 El anidamiento puede incluir combinadores de selección como `>`, `+`, `~`, y un espacio (para descendientes). Esto permite especificar la relación entre los elementos de manera jerárquica.
 
 **Ejemplo con combinadores.**
@@ -421,7 +424,7 @@ div p ~ div {
 /*# sourceMappingURL=estilos.css.map */
 ```  
 
-## 6.5 Anidamiento de media queries:
+## 6.6 Anidamiento de media queries:
 También se pueden anidar las reglas de media queries para hacer que los estilos sean responsivos.
 
 **Ejemplo:**
@@ -439,7 +442,7 @@ También se pueden anidar las reglas de media queries para hacer que los estilos
 }
 ```
 
-## 6.6 Buenas prácticas de Sass
+## 6.7 Buenas prácticas de Sass
 Es recomendable no anidar demasiado profundamente, ya que puede hacer que el CSS sea difícil de mantener y puede generar reglas de estilo muy específicas difíciles de sobrescribir.  
   
 **Ejemplo de anidamiento excesivo.**
@@ -455,7 +458,7 @@ Es recomendable no anidar demasiado profundamente, ya que puede hacer que el CSS
 }
 ```
   
-## 6.7 Tarea RA3CEh
+## 6.8 Tarea RA3CEh
 Convertir la hoja de estilos siguiente a SCSS.
 ```
 .panel {
