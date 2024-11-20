@@ -263,7 +263,29 @@ $theme-colors: (
 
 # 6 Anidación de selectores
 En CSS, los selectores relacionados deben escribirse de manera explícita, lo que puede llevar a un código repetitivo y difícil de mantener. 
-Una de las características de Sass es la capacidad de anidar selectores CSS de una manera que refleja la estructura jerárquica del HTML. Eso hace que el código CSS sea más legible y fácil de organizar.
+Una de las características de Sass es la capacidad de anidar selectores CSS de una manera que refleja la estructura jerárquica del HTML. Eso hace que el código CSS sea más legible y fácil de organizar.  
+**Ejemplo de anidamientos de estilos en CSS**
+>**Html**
+```
+<div class="contenedor">
+  <p class="texto">Hola mundo</p>
+  <span class="destacado">¡Bienvenido!</span>
+</div>
+```
+>**CSS**
+```
+.contenedor {
+  padding: 20px;
+}
+
+.contenedor .texto {
+  color: blue;
+}
+
+.contenedor .destacado {
+  font-weight: bold;
+}
+```
 
 ## 6.1 Sintaxis de Sass para los anidamientos de estilos
 En Sass, el anidamiento **se realiza simplemente escribiendo las reglas dentro de otras reglas**.  
@@ -291,16 +313,18 @@ nav {
   }
 }
 ```
+## 6.2 Ejercicio
+Convertir a SCSS el CSS en ejemplo del punto 6.
   
-## 6.2 Uso del selector padre `&`
+## 6.3 Uso del selector padre `&`
 El símbolo `&` (Ampersand) se utiliza para hacer referencia al selector padre en una regla anidada. Esto es útil para aplicar pseudo-clases, pseudo-elementos o variantes del selector.  
   
 **Ejemplo con pseudo clases y pseudo-elementos**  
 - `&:hover` Se refiere a button:hover. El botón cambia de color cuando está en hover.
-- `&.active` Se refiere a button.active. Permite aplicar los estilos de la clase `active` a un botón.
+- `&:active` Se refiere a button:active. El botón cambia de color al hacer clic (`active`) sobre él.
 - `&::after` Hace referencia a `a::after`. Crea un contenido después de clicar el enlace.
+>SCSS
 ```
-SCSS
 button {
   background-color: #007bff;
   color: white;
@@ -309,7 +333,7 @@ button {
     background-color: #0056b3;
   }
   
-  &.active {
+  &:active {
     background-color: #28a745;
   }
 }
@@ -327,36 +351,34 @@ a {
   }
 }
 ```
+>CSS
 ```
-CSS
 button {
   background-color: #007bff;
   color: white;
 }
-
 button:hover {
   background-color: #0056b3;
 }
-
-button.active {
+button:active {
   background-color: #28a745;
 }
 
 a {
   color: blue;
 }
-
 a:hover {
   color: darkblue;
 }
-
 a::after {
-  content: ' (link)';
+  content: "Ejecutado";
   font-style: italic;
 }
+
+/*# sourceMappingURL=estilos.css.map */
 ```
   
-## 6.3 Anidamiento con combinadores
+## 6.4 Anidamiento con combinadores
 El anidamiento puede incluir combinadores de selección como `>`, `+`, `~`, y un espacio (para descendientes). Esto permite especificar la relación entre los elementos de manera jerárquica.
 
 **Ejemplo con combinadores.**
@@ -399,7 +421,7 @@ div p ~ div {
 /*# sourceMappingURL=estilos.css.map */
 ```  
 
-## 6.4 Anidamiento de media queries:
+## 6.5 Anidamiento de media queries:
 También se pueden anidar las reglas de media queries para hacer que los estilos sean responsivos.
 
 **Ejemplo:**
@@ -417,7 +439,7 @@ También se pueden anidar las reglas de media queries para hacer que los estilos
 }
 ```
 
-## 6.5 Buenas prácticas de Sass
+## 6.6 Buenas prácticas de Sass
 Es recomendable no anidar demasiado profundamente, ya que puede hacer que el CSS sea difícil de mantener y puede generar reglas de estilo muy específicas difíciles de sobrescribir.  
   
 **Ejemplo de anidamiento excesivo.**
@@ -433,7 +455,7 @@ Es recomendable no anidar demasiado profundamente, ya que puede hacer que el CSS
 }
 ```
   
-## 6.6 Tarea RA3CEh
+## 6.7 Tarea RA3CEh
 Convertir la hoja de estilos siguiente a SCSS.
 ```
 .panel {
