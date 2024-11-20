@@ -346,7 +346,7 @@ a {
   }
   
   &::after {
-    content: ' (link)';
+    content: ' (link) ';
     font-style: italic;
   }
 }
@@ -371,7 +371,7 @@ a:hover {
   color: darkblue;
 }
 a::after {
-  content: ' (link)';
+  content: ' (link) ';
   font-style: italic;
 }
 
