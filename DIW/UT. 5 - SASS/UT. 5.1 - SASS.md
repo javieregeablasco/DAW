@@ -45,6 +45,7 @@ Los archivos SCSS se almacenan con la extensión .scss.
 # 4. Instalación y uso de SASS.
 ## 4.1 Instalación
 Instrucciones de <a href="https://sass-lang.com/install/">**instalación**</a> de Sass.  
+
 ## 4.2 Uso de Sass
 De una manera que recuerda a **Tailwind** necesitaremos compilar el código Sass (estilos.scss) a (estilos.css).  
 Para ello podremos hacerlo desde la `CLI` con `sass input.scss output.css` o automáticamente con un **supervidor** ejecutando el comando `sass --watch input.scss output.css`. 
@@ -639,6 +640,10 @@ Montar el ejemplo anterior y comprobar como el estilo de <`form`> se actualiza a
 En el ejemplo:
 - Por convención se pone un `guión bajo` delante de la hoja de estilos a la que se hace referencia.
 - El guión bajo indica que el archivo es <a href="https://sass-lang.com/guide/#partials">**un archivo de estilos parcial**</a>, es decir, un archivo que **no se compila directamente** en un archivo CSS independiente, sino que **se incluye y compila en otros archivos**.
+- Cuando se usan las directivas `@use` y `@forward` dentro de un archivo ***.scss** omitir el guión bajo `_` para evitar errores de compilación.
+  >**Ejemplo:**  
+  >**Así sí:** `@use "./estilosAdicionales/flex";`    
+  >**Así no:** `@use "./estilosAdicionales/_flex";`
 
 ## 7.3 Alias
 Se puede usar un alias para un archivo importado con `@use` para hacer más cortos los nombres de las variables o mixins que estamos usando.
@@ -686,7 +691,7 @@ $text-dark: #ffffff;
 ```
 - **Archivo Estilos.scss**
 ```
-@use "./estilosAdicionales/_flex" as flex;
+@use "./estilosAdicionales/flex" as flex;
 
 body.light-theme {
   background-color: flex.$bg-light;
