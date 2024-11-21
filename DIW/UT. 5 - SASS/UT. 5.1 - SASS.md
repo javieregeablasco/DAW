@@ -848,7 +848,7 @@ Un *mixin* se define con la directiva `@mixin` seguida del nombre del mixin. Es 
 }
 ```
 
->**Ejercicio**
+### 8.2.1 Ejercicio
 >Crear un archivo `*.scss` y compilarlo. Observar el contenido del archivo `*.css` generado.
 
 ## 8.3 Uso de un mixin
