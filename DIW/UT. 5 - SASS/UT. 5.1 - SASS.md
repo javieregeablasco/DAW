@@ -864,7 +864,7 @@ Para incluir un **mixin** en un selector, se utiliza la directiva `@include`.
 
 ## 8.4 Mixins con Parámetros
 Los **mixins** pueden aceptar uno o más parámetros para permitir la personalización de los estilos. 
-
+**Archivo** `estilos.scss` 
 ```
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
@@ -892,6 +892,7 @@ Los **mixins** pueden aceptar uno o más parámetros para permitir la personaliz
     @include botonCompleto(6px,20px,blue);    
 }
 ```
+**Archivo** `index.html` 
 ```
 <!DOCTYPE html>
 <html lang="es">
@@ -926,7 +927,7 @@ Los **mixins** pueden aceptar uno o más parámetros para permitir la personaliz
 ```
 
 ## 8.5 Mixins con Parámetros Predeterminados
-También se pueden definir parámetros predeterminados, dado el caso de instanciar un mixin sin pasarle parte, o ningun valor. 
+También se pueden definir parámetros predeterminados, dado el caso de instanciar un mixin pasándole solo un parte, o directamente ningun valor. 
 
 ```
 @mixin box-shadow($x: 0, $y: 0, $blur: 5px, $color: rgba(0, 0, 0, 0.3)) {
@@ -937,7 +938,7 @@ También se pueden definir parámetros predeterminados, dado el caso de instanci
   @include box-shadow(2px, 2px);
 }
 ```
->**Ejercicio**
+### 8.5.1 Ejercicio
 >¿Cual será el *.css resultante del ejemplo anterior?
 
 ## 8.6 Directiva @content dentro de un @mixin
@@ -958,7 +959,9 @@ También se pueden definir parámetros predeterminados, dado el caso de instanci
     }
 }
 ```
-
+### 8.6.1 Ejercicio
+Montar el ejemplo anterior.
+Montar el ejemplo anterior pero esta vez con el `@include card-style` **vacio** es decir ```@include card-style {}` 
 ## 8.7 Ejercicio
 - **Mixin de media queries**
 **Parte 1**  
