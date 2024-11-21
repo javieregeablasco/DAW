@@ -638,7 +638,7 @@ Montar el ejemplo anterior y comprobar como el estilo de <`form`> se actualiza a
 **Nota:**  
 En el ejemplo:
 - Por convención se pone un `guión bajo` delante de la hoja de estilos a la que se hace referencia.
-- El guión bajo indica que el archivo es **un archivo de estilos parcial**, es decir, un archivo que **no se compila directamente** en un archivo CSS independiente, sino que **se incluye y compila en otros archivos**.
+- El guión bajo indica que el archivo es <a href="https://sass-lang.com/guide/#partials">**un archivo de estilos parcial**</a>, es decir, un archivo que **no se compila directamente** en un archivo CSS independiente, sino que **se incluye y compila en otros archivos**.
 
 ## 7.3 Alias
 Se puede usar un alias para un archivo importado con `@use` para hacer más cortos los nombres de las variables o mixins que estamos usando.
