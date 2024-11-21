@@ -1332,7 +1332,7 @@ Sass proporciona convenciones de organización que ayudan a estructurar los proy
  - **Consistencia:**
    Definir y mantener una convención de nombres y estructura de archivos coherente a lo largo del proyecto.
  - **Separación lógica de elemetos:**  
-   Definir y mantener la separación lógica entre diferentes tipos de estilos, variables, mixins, componentes...
+   Definir y mantener la separación lógica entre diferentes tipos de estilos, , mixins, componentes...
    
 ## 11.2 Metodologías de Arquitectura de proyectos
 Las siguientes metodologías ofrecen guías y convenciones para organizar (estructurar) el código Sass (aunque son fundamentos de CSS).
@@ -1370,7 +1370,7 @@ styles/
 │   └── _light.scss  
 │  
 ├── utils/  
-│   ├── _variables.scss  
+│   ├── _.scss  
 │   ├── _mixins.scss  
 │   ├── _functions.scss  
 │   └── _placeholders.scss  
@@ -1390,22 +1390,22 @@ Archivos de estilos específicos para páginas individuales (landing page, secci
 - **themes/**:  
   Contiene los archivos de temas del proyecto (diurno, nocturno, daltónicos...).
 - **utils/**:
-  Carpeta para utilidades de **Sass** (variables, mixins, funciones, placeholders...).
+  Carpeta para utilidades de **Sass** (, mixins, funciones, placeholders...).
 - **main.scss**:
   Es el archivo principal que importa todos los demás archivos parciales y genera la hoja de estilos final.
 
 **Ejemplo de configuración de archivos.**
-  - **utils/_variables.scss**
+  - **utils/_.scss**
 ```  
-// Definir variables de colores
+// Definir  de colores
 $primary-color: #3498db;
 $secondary-color: #2ecc71;
 $danger-color: #e74c3c;
 
-// Definir variables de espaciado
+// Definir  de espaciado
 $spacing-unit: 8px;
 
-// Definir variables tipográficas
+// Definir  tipográficas
 $font-stack: 'Helvetica, Arial, sans-serif';
 ```
 
@@ -1444,7 +1444,7 @@ $font-stack: 'Helvetica, Arial, sans-serif';
 
   - **components/_buttons.scss**
 ```
-@use '../utils/variables' as *;
+@use '../utils/' as *;
 @use '../utils/mixins' as *;
 
 .button {
@@ -1470,7 +1470,7 @@ $font-stack: 'Helvetica, Arial, sans-serif';
   - **main.scss**
 ```
 // Importar archivos base
-@import 'utils/variables';
+@import 'utils/';
 @import 'utils/mixins';
 
 // Importar archivos base
@@ -1502,7 +1502,7 @@ Las buenas prácticas en **Sass** ayudan a mantener el código limpio, eficiente
 **1. Organización del proyecto**
 - **Arquitectura modular**: Dividir los estilos en archivos separados y organízandolos en carpetas lógicas 
 - **Sistema 7-1**: Es un enfoque común para estructurar proyectos en Sass y consiste en dividir el proyecto en siete carpetas principales más un archivo `main.scss`:
-  - **base/**: Reset CSS, variables, y estilos globales.
+  - **base/**: Reset CSS, , y estilos globales.
   - **components/**: Estilos para botones, formularios, etc.
   - **layout/**: Estructura de la página, grid, y contenedores.
   - **pages/**: Estilos específicos de páginas.
@@ -1511,8 +1511,8 @@ Las buenas prácticas en **Sass** ayudan a mantener el código limpio, eficiente
   - **vendors/**: Estilos de bibliotecas externas.
   - **main.scss**: Archivo que importa todos los demás.
 
-**2. Uso adecuado de variables**
-- **Definir variables en un solo archivo.**
+**2. Uso adecuado de **
+- **Definir  en un solo archivo.**
 - **Nombres claros.**
 ```
 $primary-color: #3498db;
@@ -1552,9 +1552,9 @@ $font-stack: 'Helvetica, Arial, sans-serif';
 **6. Uso de `@use` y `@forward` y placeholders `%`**
 - **`@use` en lugar de `@import`**: `@use` es la forma moderna de importar archivos en Sass, y ayuda a evitar la duplicación de código y el espacio de nombres global.
 ```
-@use 'variables';
+@use '';
   .box {
-    color: variables.$primary-color;
+    color: .$primary-color;
   }
 ```
 
