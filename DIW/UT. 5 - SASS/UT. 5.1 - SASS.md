@@ -1143,7 +1143,15 @@ $i: 1;
   $i: $i + 1;
 }
 ```
-#### 9.2.4 Ejercicio
+## 9.2 Directiva @Debug
+La directiva `@debug` se utiliza para imprimir información en la consola durante la compilación. Es muy útil para depurar y verificar el contenido de variables, listas, mapas, y otros datos en tiempo de compilación (sin afectar el CSS resultante).
+
+>**Ejemplo:**
+```
+$colors: (red, green, blue);
+@debug $colors;
+```
+#### 9.3 Ejercicio
 
 # 10. Herencia de selectores y clase %
 ## 10.1 Herencias , @extend
