@@ -513,7 +513,7 @@ Las directivas **`@use`** y **`@forward`** son características de **Sass** (des
 **Ejemplo:**
 - Archivo Estilos.scss
 ```
-@use "./estilosAdicionales/_flex";
+@use "./estilosAdicionales/flex";
 
 // tema claro
 $bg-light: #ffffff;
