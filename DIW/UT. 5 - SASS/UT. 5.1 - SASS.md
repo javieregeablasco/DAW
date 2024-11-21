@@ -811,7 +811,7 @@ $tertiary: #ffffff;
 En este caso, el archivo `_index.scss` solo reexportará las variables `$primary` y `$secondary`, excluyendo `$tertiary`.
 
 ## 7.6 Ejercicio
-Pasar la declaración de la variable `$primary-color: #ff5733;` del archivo 'estilos.scss' a `_variables.scss`.
+Pasar la declaración de la variable `$primary-color: #ff5733;` del archivo `estilos.scss` a `_variables.scss`.  
 Realizar las adapataciones pertinentes para que el HTML se ejecute correctamente.
 
 ## 7.7 Resumen de @use y @forward
