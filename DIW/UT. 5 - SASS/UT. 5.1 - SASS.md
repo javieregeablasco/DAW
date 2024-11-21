@@ -960,24 +960,10 @@ También se pueden definir parámetros predeterminados, dado el caso de instanci
 }
 ```
 ### 8.6.1 Ejercicio
-Montar el ejemplo anterior.
+Montar el ejemplo anterior.  
 Montar el ejemplo anterior pero esta vez con el `@include card-style` **vacio** es decir ```@include card-style {}` 
-## 8.7 Ejercicio
-- **Mixin de media queries**
-**Parte 1**  
-Escribe un código en SCSS que defina un `mixin` llamado `media-query`
-Ese `mixin` permitirá aplicar diferentes estilos CSS basados en el dispositivo `$device` (phone o tablet). 
-El `mixin` debe aceptar un parámetro que determine si se trata de un teléfono o una tableta y aplicar el `@content` correspondiente dentro de una consulta de medios (`@media`) con un ancho máximo de 900px o 1200px, respectivamente. 
-En el caso de no pasar ningun parametro o pasarlo con errores el `@media` aplicado será de 1200px. 
 
-**Parte 2**
-Aplica este `mixin` en una clase llamada `.container` para que:  
-- Cambie el color de fondo a azul cuando se visualice en un dispositivo con un ancho máximo de 600px (teléfono).
-- Cambie el color de fondo a verde cuando se visualice en un dispositivo con un ancho máximo de 900px (tableta).
-- Cambie el color de fondo a rojo en cualquier otra caso.
-El código deberá utilizar `@include` para aplicar el `mixin` dentro de la clase `.container`.
-
-## 8.8 Mixins anidados
+## 8.7 Mixins anidados
 El anidamiento de @mixins implica la inclusión de un @mixin dentro de otro. Esto permite construir estilos más modulares y mantener la estructura organizada.
 ```
 @mixin flex-container {
@@ -1001,7 +987,7 @@ El anidamiento de @mixins implica la inclusión de un @mixin dentro de otro. Est
   }
 ```
 
-## 8.9 Mixins globales
+## 8.8 Mixins globales
 El término "mixin global" se refiere a un mixin que está disponible para ser usado en cualquier parte de un proyecto debido a su ubicación en un archivo compartido o común que es importado globalmente.  
 Esta manera de proceder permite definir tantos archivos (módulos) como elementos tengamos (variables, funciones, mixins...).
 Como hemos visto en <a href="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/UT.%205.1%20-%20SASS.md#7-directivas-import-use-y-forward"># 7 Directivas @import, @use y @forward</a> , los mixins globales se importan o reexportan con la directiva @use y @forward respectivamente. 
@@ -1021,7 +1007,7 @@ Como hemos visto en <a href="https://github.com/javieregeablasco/DAW/blob/main/D
 }
 ```
 
-## 8.10 Funciones
+## 8.9 Funciones
 La directiva `@function` es una característica de Sass que permite definir funciones similares a las de lenguajes de programación tradicionales. Estas funciones aceptan parámetros, realizan cálculos o manipulaciones, y devuelven un valor que puede ser utilizado en otros lugares del archivo Sass.  
 
   - **Sintaxis de `@function`**
@@ -1088,6 +1074,24 @@ Con la directiva **@if** definiremos diferentes condiciones de uso. Además del 
   @include button-style("tertiary");
 }
 ```
+
+## 9.1.1 Ejercicio
+**Mixin de media queries condicionales**  
+>**Parte 1**  
+ - Escribe un código en SCSS que defina un `mixin` llamado `media-query`
+ - Ese `mixin` permitirá aplicar diferentes estilos CSS basados en la varaible dispositivo `$device` (phone, tablet u otros) que le será pasado por parametro.   
+ - El `mixin` tratará con un bucle condicional el contenido de `device` y determinará si se trata de un teléfono, una tableta o de un valor pasado por error (o ningun valor).
+ - Para cada selección aplicar el `@content` correspondiente dentro de **una consulta de medios** (`@media`) con un ancho máximo de 900px (phone), 1200px (tablet) o más de 1200px (error / nulo), respectivamente. 
+ - En el caso de no pasar ningun parametro o pasarlo con errores el `@media` aplicado será de 1200px. 
+
+>**Parte 2**  
+Aplica este `mixin` en una clase llamada `.container` para que:  
+- Cambie el color de fondo a azul cuando se visualice en un dispositivo con un ancho máximo de 600px (teléfono).
+- Cambie el color de fondo a verde cuando se visualice en un dispositivo con un ancho máximo de 900px (tableta).
+- Cambie el color de fondo a rojo en cualquier otra caso.
+El código deberá utilizar `@include` para aplicar el `mixin` dentro de la clase `.container`.
+
+
 ### 9.2 Bucles (iteradores)
 #### 9.2.1 Directiva @each  
 La directiva @each se utiliza para iterar sobre listas y mapas en Sass. Es ideal para recorrer elementos y aplicar estilos de forma dinámica.
@@ -1139,6 +1143,7 @@ $i: 1;
   $i: $i + 1;
 }
 ```
+#### 9.2.4 Ejercicio
 
 # 10. Herencia de selectores y clase %
 ## 10.1 Herencias , @extend
