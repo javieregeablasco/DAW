@@ -810,7 +810,11 @@ $tertiary: #ffffff;
 ```
 En este caso, el archivo `_index.scss` solo reexportará las variables `$primary` y `$secondary`, excluyendo `$tertiary`.
 
-## 7.6 Resumen de @use y @forward
+## 7.6 Ejercicio
+Pasar la declaración de la variable `$primary-color: #ff5733;` del archivo 'estilos.scss' a `_variables.scss`.
+Realizar las adapataciones pertinentes para que el HTML se ejecute correctamente.
+
+## 7.7 Resumen de @use y @forward
 - **`@use`**: Importa un archivo Sass de manera controlada, evitando la duplicación de código y proporcionando un espacio de nombres para las variables y mixins.
 - **`@forward`**: Reexporta un archivo Sass a otros archivos, permitiendo que esos archivos accedan a su contenido de forma organizada.  
 Ambas directivas son fundamentales para trabajar de manera eficiente con Sass en proyectos grandes y permiten una gestión más limpia de los estilos.
