@@ -961,7 +961,7 @@ También se pueden definir parámetros predeterminados, dado el caso de instanci
 ```
 ### 8.6.1 Ejercicio
 Montar el ejemplo anterior.  
-Montar el ejemplo anterior pero esta vez con el `@include card-style` **vacio** es decir ```@include card-style {}` 
+Montar el ejemplo anterior pero esta vez con el `@include card-style` **vacio** es decir `@include card-style {}` 
 
 ## 8.7 Mixins anidados
 El anidamiento de @mixins implica la inclusión de un @mixin dentro de otro. Esto permite construir estilos más modulares y mantener la estructura organizada.
