@@ -1152,8 +1152,11 @@ $colors: (red, green, blue);
 @debug $colors;
 ```
 ## 9.4 Ejercicio
-Con la ayuda de iteradores, escribir una hoja de estilo en Sass que devuelva la siguiente renderización.   
+Con la ayuda de iteradores, escribir una hoja de estilo en Sass que devuelva la siguiente renderización.  
+Podeís utilizar el color que más os guste.
+
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/ejercicio924.png" width=500px/>
+
 # 10. Herencia de selectores y clase %
 ## 10.1 Herencias , @extend
 La directiva **@extend**, permite compartir (heredar) reglas CSS entre múltiples selectores manteniendo el enfoque **DRY** (Don't Repeat Yourself).  
