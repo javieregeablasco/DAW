@@ -10,11 +10,10 @@ Resultado de aprendizaje y criterio de evaluación: RA3 CEh
 # 1 Introducción
 En este práctica, nos seguiremos familiarizando con ecosistema Sass.
 
-# 2 Clase boton btn
-Escribe un código de Sass que defina la `.btn`, comúnmente utilizada para estilizar botones. A continuación, los requisitos de la clase.
+# 2 Estilos de los botones 
+## 2.1 Elemento botón general
+Escribe un código de Sass que defina la clase `.btn`, comúnmente utilizada para estilizar botones. A continuación, los requisitos de la clase.
 
-## 2.1 Definición de los estilos de los botones
-### 2.1.1 Elemento botón general
 **Crear una clase btn que aplique los siguientes estilos**
 - El boton debe comportarse como un bloque, pero debe permitir que se alinee con otros elementos en la misma línea.
 - El contenido de los botones debe estar centrado.
@@ -29,8 +28,9 @@ Escribe un código de Sass que defina la `.btn`, comúnmente utilizada para esti
 - **offset-y** = border-radius/2
 - **color** = color-shadow
 
-### 2.1.2 Personalización de cada botón
-**Crear las clases para asignar el color de fondo a los botones**
+## 2.2 Elemento botón al hacer click
+Crear las clases para asignar el color de fondo a los botones.
+**Personalización de cada botón**
 - Para crear las clases usar un bucle `@each` sobre la variable (lista) btn-colors.
 - Asignar el nombre de las clases segun la clave de la lista de la siguiente manera .btn-`primary`, .btn-`secondary`, ..., .btn-`link`.
 - Asignar el color de fondo según el valor del valor de la lista.  
@@ -39,5 +39,18 @@ Escribe un código de Sass que defina la `.btn`, comúnmente utilizada para esti
 - Oscurecer el fondo un 20%.
 - Cambiar el color del texto a blanco.
 
-## 2.2 
+# 3 Estilos de las columnas
+## 3.1 Analizar el siguiente fragmento de programa.
+```
+@for $num from $inicio through $fin {
+  tbody tr td:nth-child(#{$num}) {
+    background-color: colum-color($num);
+  }
+}
+```
+¿Qué realiza este fragmento de programa?
+## 3.2 Programar la función colum-color().
+Programar la función column-color para que devuelva $color-col-pares o  $color-col-impares dependiendo de si el indice de la columna es par o impar.
+
+# 4 
 
