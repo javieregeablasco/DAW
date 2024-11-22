@@ -859,7 +859,7 @@ Para incluir un **mixin** en un selector, se utiliza la directiva `@include`.
   @include button-styles;
 }
 ```
->**Ejercicio**
+## 8.3.1 Ejercicio
 >Completar el archivo `*.scss` creado anteriormente, compilarlo y observar el contenido del archivo `*.css`.
 
 ## 8.4 Mixins con Parámetros
