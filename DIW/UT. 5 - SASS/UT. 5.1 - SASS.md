@@ -1044,7 +1044,7 @@ Llamada a la función (desde dentro de un mixin).
 - **`@mixin`** incluye bloques de estilos completos y no devuelve un valor.
 
 # 9 Condicionales y bucles 
-### 9.1 Condicionales
+## 9.1 Condicionales
 Podemos crear estilos más eficientes y flexibles utilizando condiciones. Por ejemplo, si dos elementos tienen el mismo estilo, pero existe una condición que solo uno de ellos cumple, podremos diferenciarlos usando mixins condicionales.
 
 Con la directiva **@if** definiremos diferentes condiciones de uso. Además del `@if` también es habitual usar **@else if <condición> o @else**.
@@ -1075,7 +1075,7 @@ Con la directiva **@if** definiremos diferentes condiciones de uso. Además del 
 }
 ```
 
-## 9.1.1 Ejercicio
+### 9.1.1 Ejercicio
 **Mixin de media queries condicionales**  
 >**Parte 1**  
  - Escribe un código en SCSS que defina un `mixin` llamado `media-query`
@@ -1092,8 +1092,8 @@ Aplica este `mixin` en una clase llamada `.container` para que:
 El código deberá utilizar `@include` para aplicar el `mixin` dentro de la clase `.container`.
 
 
-### 9.2 Bucles (iteradores)
-#### 9.2.1 Directiva @each  
+## 9.2 Bucles (iteradores)
+### 9.2.1 Directiva @each  
 La directiva @each se utiliza para iterar sobre listas y mapas en Sass. Es ideal para recorrer elementos y aplicar estilos de forma dinámica.
 >**Ejemplo con listas:**
 ```
@@ -1119,7 +1119,7 @@ $espaciados: (
   }
 }
 ```  
-#### 9.2.2 Directiva @for  
+### 9.2.2 Directiva @for  
 se utiliza para ejecutar un bloque de código **un número específico de veces**.
 ```
 $inicio: 1;
@@ -1131,7 +1131,7 @@ $final: 5;
     }
   }
 ```  
-#### 9.2.3 Directiva while**
+### 9.2.3 Directiva while**
 La directiva @while ejecuta un bloque de código mientras una condición sea verdadera.
 ```
 $i: 1;
@@ -1151,7 +1151,7 @@ La directiva `@debug` se utiliza para imprimir información en la consola durant
 $colors: (red, green, blue);
 @debug $colors;
 ```
-## 9.3 Ejercicio
+## 9.4 Ejercicio
 Con la ayuda de iteradores, escribir una hoja de estilo en Sass que devuelva la siguiente renderización.   
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/ejercicio924.png" width=500px/>
 # 10. Herencia de selectores y clase %
