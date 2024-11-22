@@ -863,7 +863,7 @@ Para incluir un **mixin** en un selector, se utiliza la directiva `@include`.
 >Completar el archivo `*.scss` creado anteriormente, compilarlo y observar el contenido del archivo `*.css`.
 
 ## 8.4 Mixins con Parámetros
-Los **mixins** pueden aceptar uno o más parámetros para permitir la personalización de los estilos. 
+Los **mixins** pueden aceptar uno o más parámetros para permitir la personalización de los estilos.  
 **Archivo** `estilos.scss` 
 ```
 @mixin border-radius($radius) {
