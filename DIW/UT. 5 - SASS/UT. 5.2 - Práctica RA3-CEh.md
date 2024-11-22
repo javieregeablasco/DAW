@@ -1,5 +1,7 @@
 ---
-Título: UD. 5.2 - SASS Práctica evaluable
+Título: UD. 5.2 - SASS Práctica evaluable 
+Resultado de aprendizaje: RA3
+Criterios de evaluación: h 
 Autor: Javier Egea Blasco
 Año: 24-25
 Palabras clave: DAW, DIW
