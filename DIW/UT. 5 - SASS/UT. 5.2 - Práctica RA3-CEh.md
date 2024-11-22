@@ -30,6 +30,6 @@ Escribe un código de Sass que defina la `.btn`, comúnmente utilizada para esti
 - Cambiar el color del texto a blanco.
 
 ## 2.2 Crear las clases para asignar el color de fondo a los botones
-- Para crear las clases usar un bucle sobre la variable btn-colors.
-- Asignar el nombre de las clases de la siguiente manera .btn-1, .btn-2, ..., .btn-4.
-- Asignar el color de fondo según el valor del valor.
+- Para crear las clases usar un bucle `@each` sobre la variable (lista) btn-colors.
+- Asignar el nombre de las clases segun la clave de la lista de la siguiente manera .btn-`error`, .btn-`warning`, ..., .btn-`normal`.
+- Asignar el color de fondo según el valor del valor de la lista.
