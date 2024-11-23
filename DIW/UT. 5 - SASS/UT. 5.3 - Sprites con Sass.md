@@ -7,8 +7,10 @@ Palabras clave: DAW, DIW
 
 # 1 Introducción
 ## 1.1 ¿Qué es un sprite?
-Un sprite es una imagen que contiene **múltiples gráficos pequeños combinados en una sola imagen**. Mediante CSS y Sass (para simplificar su uso), se pueden mostrar solo las partes específicas de la imagen que se necesitan.
+Un sprite es una imagen que contiene **múltiples gráficos pequeños combinados en una sola imagen**. Mediante CSS y Sass (para simplificar su uso), se pueden mostrar solo las partes específicas de la imagen que se necesitan.  
+
 **Ejemplo de sprite**  
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/sprite.png" width=50%>
 
 ## 2.2 ¿Por qué usar sprites?
 Los origines de los sprites emergen de las conexiones a internet deficientes y de la necesidad de mejorar el rendimiento y la eficiencia de cargar de las páginas web. 
