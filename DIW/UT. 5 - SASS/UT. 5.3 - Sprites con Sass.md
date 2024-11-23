@@ -69,7 +69,7 @@ Existen todo tipo de herramientas para construir sprites, desde **preprocesadore
 
 ### 2.1.3 Planificación de la imagen
  - Definir la cantidad de columnas y filas.
- - Como lo veremos más adelante, es habitual trabajar con porcentajes. Así pues, aumentar en 1 la cantidad de columnas/filas para acomodar los porcentajes, ya que el conteo comienza en 0 y termina en 100.
+ - Como lo veremos más adelante, es habitual trabajar con porcentajes, así pues, aumentar en 1 la cantidad de columnas/filas para acomodar los porcentajes, ya que el conteo comienza en 0 y termina en 100.
  - Cantidades recomendadas de columnas/filas: **2, 3, 5, 6, 11**  
  **Ejemplo:**  
      - 2: 0%, 100%  
