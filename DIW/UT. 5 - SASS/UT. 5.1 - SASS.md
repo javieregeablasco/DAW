@@ -1043,6 +1043,35 @@ Llamada a la función (desde dentro de un mixin).
 - **`@function`** devuelve un valor que se puede usar en propiedades de CSS.
 - **`@mixin`** incluye bloques de estilos completos y no devuelve un valor.
 
+## 8.10 Cambios en las global built-in functions
+La próxima actualización, Sass eliminará el soporte para el uso de funciones integradas sin **referenciarlas explícitamente** al módulo al que pertenecen. Esto forma parte de los cambios ya vistos anteriormente con la transición desde `@import` hacia `@use` y `@forward`.
+
+>**Ejemplo de uso de funciones integradas, antes de la actualización.** 
+```
+$list: append(("a", "b"), "c"); // Funciona sin usar un módulo.
+```
+>**Ejemplo de uso de funciones integradas, después de la actualización.** 
+ - **Necesidad de `@use`.**
+ - **Prefijo Obligatorio.**
+```
+@use "sass:list";
+
+$list: list.append(("a", "b"), "c");
+```
+
+>**Principal ventaja**
+**Encapsulación de nombres de funciones:**
+   - Al requerir que las funciones estén vinculadas a su módulo, se reduce la posibilidad de conflictos de nombres entre **funciones personalizadas** y **funciones integradas**.
+   - Por ejemplo, si definimos una función propia `append`, esta ya no colisionará con la función integrada `list.append`.
+
+
+### Motivo del Cambio
+El objetivo principal de este cambio es:
+- **Mayor mantenibilidad**: El código es más fácil de leer, entender y mantener cuando los métodos provienen de módulos específicos.
+- **Consistencia con los estándares modernos**: Esta estructura modular es más consistente con cómo se organizan las bibliotecas modernas.
+
+Más información <a href="https://sass-lang.com/documentation/breaking-changes/import/">**aquí**</a> 
+
 # 9 Condicionales y bucles 
 ## 9.1 Condicionales
 Podemos crear estilos más eficientes y flexibles utilizando condiciones. Por ejemplo, si dos elementos tienen el mismo estilo, pero existe una condición que solo uno de ellos cumple, podremos diferenciarlos usando mixins condicionales.
