@@ -176,117 +176,105 @@ $listaNombrePais: "Andorra", "United Arab Emirates", "Afghanistan", "Antigua and
 Este estilo establece un contenedor que tiene un tamaño definido por las variables $ancho y $alto y establece **una imagen de fondo** que se ajusta al tamaño del contenedor.  
 
 ### 2.2.4 Definir las funciones del proyecto
-Como acabamos de ver en el archivo sprite, la primera imagen es una `dummy` para cuando se escriba mal <a ref="https://www.sanidad.gob.es/ciudadanos/saludAmbLaboral/docs/codigoIsoPai.pdf">**el codigo del país**</a>. 
+Como acabamos de ver en el archivo sprite, la primera imagen es una `dummy` para cuando se escriba mal <a href="https://www.sanidad.gob.es/ciudadanos/saludAmbLaboral/docs/codigoIsoPai.pdf">**el codigo del país**</a>.  
+Así pues, será conveniente invertir la lista de paises para empezar por el final.
 ```
-@function funcionInvertirLista($list) {
+@function funcionInvertirLista($listado) {
   $listaInvertida: ();
-  @for $i from list.length($list) through 1 {
-    $listaInvertida: list.append($listaInvertida, list.nth($list, $i));
+  @for $i from list.length($listado) through 1 {
+    $listaInvertida: list.append($listaInvertida, list.nth($listado, $i));
   }
   @return $listaInvertida;
 }
 ```
+La función `funcionInvertirLista` toma una lista como argumento y devuelve una nueva lista en la que los elementos están invertidos respecto al orden de la lista original.  
+Utiliza un bucle @for para recorrer la lista original desde el final hasta el principio, añadiendo los elementos uno por uno a la nueva lista invertida.
+`list.nth($listado, $i)` devuelve el elemento de la lista $list en la posición $i. 
+`list.append($listaInvertida, list.nth($listado, $i))` agrega un nuevo elemento al final de la lista $listaInvertida.
 
-
-
-Para el ejemplo usaremos la función `sprite-location`.
+### 2.2.5 Definir los estilos para cada país
 ```
-@function sprite-location($x_pos, $y_pos, $spriteCols: $spriteCols, $spriteRows: $spriteRows){
-  $x-shift: 0%;
-  $y-shift: 0%;
-
-  @if ($spriteCols > 1) {
-    $x-shift: 100% * ($x_pos / ($spriteCols - 1));
-  }
-
-  @if ($spriteRows > 1) {
-    $y-shift: 100% * ($y_pos / ($spriteRows - 1));
-  }
-
-  @return $x-shift $y-shift;
+@each $pais in $listaInvertida {
+  $i: list.index($listaInvertida, $pais);   
+  
+  .bandera-#{$pais} {
+    background-position: 0 (100% - ($spriteRango * ($i - 1)) * 1%);  
+   
+    &::after{ 
+      position: relative;
+      left: 50px;
+      top: 5px;                
+      white-space: nowrap;
+      content: list.nth($listaInvertidaPais, $i);
+    }      
+  }   
 }
 ```
 
 ---
+Este código es un ejemplo de cómo usar un **bucle `@each`** en **Sass** (SCSS) para iterar sobre una lista, en este caso, `$listaInvertida`, y aplicar estilos CSS dinámicamente a cada elemento de la lista. Además, se incluye un pseudo-elemento `::after` para añadir contenido adicional a cada elemento.
 
-### Mixins en SCSS
+Vamos a desglosar el código línea por línea para entender cómo funciona:
 
-Los **mixins** facilitan el uso de la función de ubicación y la configuración del sprite.
-
-#### Mixin para la imagen del sprite:
+### 1. **Iteración con `@each`**
 ```scss
-@mixin sprite-image($x, $y, $spriteCols: $spriteCols, $spriteRows: $spriteRows, $sprite-image-path: $sprite-image-path, $sprite-image-file: $sprite-image-file, $sprite-image-width: $sprite-image-width, $sprite-image-height: $sprite-image-height) {
-  background-image: url("#{$sprite-image-path}#{$sprite-image-file}");
-  background-position: sprite-location($x, $y, $spriteCols, $spriteRows);
-  background-size: $sprite-image-width $sprite-image-height;
-}
+@each $pais in $listaInvertida {
 ```
+- **`@each`**: Esta es una directiva de Sass que se utiliza para iterar sobre una lista o mapa. En este caso, estamos iterando sobre la lista `$listaInvertida`.
+- En cada iteración, el valor actual de la lista se asigna a la variable `$pais`.
 
-#### Mixin para posición del sprite:
+### 2. **Obtener el índice del elemento**
 ```scss
-@mixin sprite-position($x, $y, $spriteCols: $spriteCols, $spriteRows: $spriteRows) {
-  background-position: sprite-location($x, $y, $spriteCols, $spriteRows);
-}
+  $i: list.index($listaInvertida, $pais);
 ```
+- **`list.index($listaInvertida, $pais)`**: Esta función devuelve el índice (la posición) de un valor dentro de la lista `$listaInvertida`.
+  - Si `$pais` es el valor actual que se está iterando, esta línea obtiene el índice de ese valor en la lista.
+  - El valor de `$i` será el índice en la lista, comenzando desde 1 (el primer elemento tiene el índice 1).
+
+### 3. **Definir una clase con el nombre de cada país**
+```scss
+  .bandera-#{$pais} {
+```
+- Esto define una clase CSS cuyo nombre está basado en el valor actual de `$pais`. Por ejemplo, si el valor de `$pais` es "España", el selector será `.bandera-España`.
+- **`#{$pais}`**: La sintaxis `#{}` en Sass se usa para interpolar el valor de una variable dentro de un nombre de clase o un selector.
+
+### 4. **Establecer la posición de fondo**
+```scss
+    background-position: 0 (100% - ($spriteRango * ($i - 1)) * 1%);
+```
+- **`background-position`**: Esta propiedad controla la posición de la imagen de fondo.
+- `0`: Esto significa que la posición horizontal de la imagen de fondo será 0 (es decir, alineada al borde izquierdo).
+- **`(100% - ($spriteRango * ($i - 1)) * 1%)`**: Este cálculo se usa para determinar la posición vertical del fondo.
+  - `$spriteRango` es probablemente una variable que representa el tamaño de una "célula" dentro de un **sprite gráfico**.
+  - El valor de `($i - 1)` multiplica el rango por el índice del país menos 1, para que el fondo se desplace hacia abajo correctamente según el orden de los países.
+
+### 5. **Agregar contenido con `::after`**
+```scss
+    &::after{ 
+      position: relative;
+      left: 50px;
+      top: 5px;
+      white-space: nowrap;
+      content: list.nth($listaInvertidaPais, $i);
+    }
+```
+- **`&::after`**: Esto hace referencia al pseudo-elemento `::after` del selector actual (en este caso, `.bandera-#{$pais}`). El pseudo-elemento `::after` se utiliza para insertar contenido adicional después del elemento principal.
+- **`position: relative;`**: Esto establece que el pseudo-elemento se posicionará de manera relativa respecto a su posición original dentro del contenedor.
+- **`left: 50px;`**: Mueve el pseudo-elemento 50 píxeles hacia la derecha desde su posición inicial (relativa al contenedor).
+- **`top: 5px;`**: Mueve el pseudo-elemento 5 píxeles hacia abajo desde su posición inicial.
+- **`white-space: nowrap;`**: Esto asegura que el texto dentro del pseudo-elemento no se divida en varias líneas, evitando saltos de línea automáticos.
+- **`content: list.nth($listaInvertidaPais, $i);`**: Esto inserta el contenido en el pseudo-elemento. La función `list.nth($listaInvertidaPais, $i)` devuelve el valor del elemento en la posición `$i` de la lista `$listaInvertidaPais`. Así, el contenido que se insertará será el nombre del país en esa posición de la lista.
+
+### Resumen:
+El código crea una clase `.bandera-#{$pais}` para cada país en la lista `$listaInvertida`. En cada iteración:
+1. Se calcula la posición de fondo para ajustar el sprite gráfico.
+2. Se inserta contenido adicional mediante el pseudo-elemento `::after`, con el nombre del país correspondiente de la lista `$listaInvertidaPais`.
+3. El texto del pseudo-elemento se coloca de manera relativa y no se ajusta a varias líneas.
+
+### Ejemplo práctico:
+Si `$listaInvertida` tiene los valores `('España', 'Francia', 'Italia')` y `$listaInvertidaPais` tiene los valores `('España', 'Francia', 'Italia')`, el código generará lo siguiente:
+- Para `.bandera-España`, la imagen de fondo se desplazará correctamente y se mostrará "España" debajo del contenedor.
+- Para `.bandera-Francia`, la imagen de fondo se desplazará a la posición correspondiente y se mostrará "Francia".
+- Lo mismo ocurrirá para `.bandera-Italia`.
 
 ---
-
-### Ejemplo práctico en SCSS
-
-Configura una clase para el sprite y utiliza subclases para definir las posiciones de los iconos:
-
-```scss
-.sprite-icon {
-  @include sprite-image(-1, -1);
-  width: $sprite-icon-width;
-  height: $sprite-icon-height;
-
-  &.sprite-icon-one {
-    @include sprite-position(0, 0);
-  }
-
-  &.sprite-icon-two {
-    @include sprite-position(1, 0);
-  }
-}
-```
-
----
-
-### Escalado de sprites
-
-Puedes escalar los sprites ajustando sus dimensiones base:
-
-#### Mixin para escalado:
-```scss
-@mixin sprite-scaled($scaledWidth, $scaledHeight, $sprite-image-width: $sprite-image-width, $sprite-image-height: $sprite-image-height, $sprite-image-icon-width: $sprite-image-icon-width, $sprite-image-icon-height: $sprite-image-icon-height) {
-  background-size: (($sprite-image-width / $sprite-image-icon-width) * $scaledWidth) (($sprite-image-height / $sprite-image-icon-height) * $scaledHeight);
-}
-```
-
-#### Ejemplo práctico de escalado:
-```scss
-.sprite-icon {
-  @include sprite-image(-1, -1);
-  width: $sprite-icon-width;
-  height: $sprite-icon-height;
-
-  &.sprite-icon-lg {
-    @include sprite-scaled(32px, 32px);
-    width: 32px;
-    height: 32px;
-  }
-
-  &.sprite-icon-sm {
-    @include sprite-scaled(24px, 24px);
-    width: 24px;
-    height: 24px;
-  }
-}
-```
-
----
-
-### Conclusión
-
-Con este enfoque, puedes gestionar sprites de manera eficiente, escalarlos dinámicamente y mantener tu código SCSS limpio y reutilizable. ¡Buena suerte con tus sprites!
