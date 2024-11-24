@@ -90,6 +90,7 @@ Existen todo tipo de herramientas para construir sprites, desde **preprocesadore
 ## 2.2 Gestión del sprite con SCSS, ejemplo práctico
 Después de crear la imagen del sprite, utilizaremos SCSS para gestionar los iconos de las imágenes. 
 ### 2.2.1 Archivo sprite
+Importar el archivo y visualizar su contenido.
 <a href="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/flags.png">link al archivo</a>
 
 ## 2.2.2 Usar directivas
@@ -157,8 +158,37 @@ $listaNombrePais: "Andorra", "United Arab Emirates", "Afghanistan", "Antigua and
 "British Virgin Islands", "U.S. Virgin Islands", "Vietnam", "Vanuatu", "Wallis and Futuna", 
 "Samoa", "Yemen", "South Africa", "Zambia", "Zaire", "Zimbabwe";
 
+>**Pregunta:** ¿De donde viene el valor de $spriteRango: 0.413223?
 
-### 2.2.2 Crear las funciones del proyecto
+### 2.2.3 Definir los estilos básicos
+```
+.bandera {
+  display: flex;
+  flex-direction: row;
+  width: $ancho;
+  height: $alto;  
+  background: url($spriteArchivoFuente) no-repeat;
+  background-size: 100%;  
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+```
+Este estilo establece un contenedor que tiene un tamaño definido por las variables $ancho y $alto y establece **una imagen de fondo** que se ajusta al tamaño del contenedor.  
+
+### 2.2.4 Definir las funciones del proyecto
+Como acabamos de ver en el archivo sprite, la primera imagen es una `dummy` para cuando se escriba mal <a ref="https://www.sanidad.gob.es/ciudadanos/saludAmbLaboral/docs/codigoIsoPai.pdf">**el codigo del país**</a>. 
+```
+@function funcionInvertirLista($list) {
+  $listaInvertida: ();
+  @for $i from list.length($list) through 1 {
+    $listaInvertida: list.append($listaInvertida, list.nth($list, $i));
+  }
+  @return $listaInvertida;
+}
+```
+
+
+
 Para el ejemplo usaremos la función `sprite-location`.
 ```
 @function sprite-location($x_pos, $y_pos, $spriteCols: $spriteCols, $spriteRows: $spriteRows){
