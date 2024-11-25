@@ -271,16 +271,4 @@ Modularizar el siguiente código para que el bucle llame a un `@mixin estilos-ba
   }   
 }
 ```
-### 2.3.7 Tarea RA2CEh
-Siguiendo las buenas prácticas de Sass redistribuir las diferentes declaraciones, funciones y mixins en sus correspondientes carpetas siguiendo la estructura dada a continuación. 
-```
-styles/  
-├── main.scss
-├── base/  
-├── components/  
-├── layout/  
-├── pages/  
-├── themes/  
-└── utils/  
-```
-**Nota:** Optimizar el código de tal manera que en `main.scss`solo hayan **@directivas de tipo @use**.
+
