@@ -12,7 +12,8 @@ En este práctica, nos seguiremos familiarizando con ecosistema Sass.
 
 # 2 Estilos de los botones 
 ## 2.1 Elemento botón general
-Escribe un código de Sass que defina la clase `.btn`, comúnmente utilizada para estilizar botones. A continuación, los requisitos de la clase.
+Escribe un código de Sass que defina la clase `.btn`, comúnmente utilizada para estilizar botones.  
+A continuación, los requisitos de la clase.
 
 **Crear una clase btn que aplique los siguientes estilos**
 - El boton debe comportarse como un bloque, pero debe permitir que se alinee con otros elementos en la misma línea.
@@ -39,8 +40,22 @@ Crear las clases para asignar el color de fondo a los botones.
 - Oscurecer el fondo un 20%.
 - Cambiar el color del texto a blanco.
 
+## 2.3 Analizar el siguiente fragmento de programa
+```
+@each $k, $v in $btn-colors {
+  .btn-#{$k} {
+    background-color: $v;    
+  &:active {
+    background-color: color.adjust($v, $lightness: -20%);
+    color:white;
+    }
+  }
+}
+```
+>**Pregunta:** ¿Qué realiza ese bucle?
+
 # 3 Estilos de tabla
-## 3.1 Analizar el siguiente fragmento de programa.
+## 3.1 Analizar el siguiente fragmento de programa
 ```
 @for $num from $inicio through $fin {
   tbody tr td:nth-child(#{$num}) {
@@ -64,7 +79,7 @@ Programar la función column-color para que devuelva $color-col-pares o  $color-
 ## 4.2 Crear las clases para definir el ancho de las columnas
 Realizar un bucle `@for` **sobre la variable $sum_elementos** que haga lo siguiente:
  - A cada iteración se creará una clase **.col-#{$i}** que será hija directa de la clase `.row`.
- - El contenido de la clase creada será el siguiente: `padding: 1rem` y **width: resultado de anchura_col()**.
+ - El contenido de la clase creada será el siguiente: `padding: 1rem` y **width: resultado de anchura_col()+"%"**.
    
 >**Pregunta:** ¿Qué realiza este bucle?  
 
