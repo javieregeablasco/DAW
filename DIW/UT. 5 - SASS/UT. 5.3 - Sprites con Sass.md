@@ -252,7 +252,7 @@ Para ello se utilizará un **bucle @each**. Para fines cosméticos, se añade al
 >¿Cual es la bandera representada?
 >¿Por qué se ha pintado esa bandera?  
 
-### 2.3.6 Tarea RACEd
+### 2.3.6 Tarea RA3CEd
 Modularizar el siguiente código para que el bucle llame a un `@mixin estilos-bandera` el cual será el encargado de crear los estilos `.bandera-#{$pais}`
 ```
 @each $pais in $listaInvertida {
@@ -271,5 +271,6 @@ Modularizar el siguiente código para que el bucle llame a un `@mixin estilos-ba
   }   
 }
 ```
+### 2.3.7 Tarea RA2CEh
+Siguiendo las buenas prácticas de Sass redistribuir las diferentes declaraciones, funciones y mixins en sus correcpondientes carpetas.
 
-# 3 Sprites sobre imágenes vectoriales
