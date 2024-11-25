@@ -55,3 +55,16 @@ Programar la función column-color para que devuelva $color-col-pares o  $color-
 
 # 4 
 
+### 5 Tarea RA2CEh
+Siguiendo las buenas prácticas de Sass redistribuir las diferentes declaraciones, funciones y mixins en sus correspondientes carpetas siguiendo la estructura dada a continuación. 
+```
+styles/  
+├── main.scss
+├── base/  
+├── components/  
+├── layout/  
+├── pages/  
+├── themes/  
+└── utils/  
+```
+**Nota:** Optimizar el código de tal manera que en `main.scss`solo hayan **@directivas de tipo @use**.
