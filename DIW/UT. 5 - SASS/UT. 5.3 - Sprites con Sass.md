@@ -87,18 +87,18 @@ Existen todo tipo de herramientas para construir sprites, desde **preprocesadore
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/colocarImagenes.webp"> 
  - Recortar o escalar la imagen si es necesario.
 
-## 2.2 Gestión del sprite con SCSS, ejemplo práctico
+## 2.3 Gestión del sprite con SCSS, ejemplo práctico
 Después de crear la imagen del sprite, utilizaremos SCSS para gestionar los iconos de las imágenes. 
-### 2.2.1 Archivo sprite
+### 2.3.1 Archivo sprite
 Importar el archivo y visualizar su contenido.
 <a href="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/flags.png">link al archivo</a>
 
-## 2.2.2 Usar directivas
+### 2.3.2 Usar directivas
 ```
 @use "sass:list";
 ```
 
-### 2.2.2 Crear las variables del proyecto
+### 2.3.3 Crear las variables del proyecto
 $spriteArchivoFuente: './media/flags.png';
 $ancho: 44px;
 $alto: 30px;
@@ -160,7 +160,7 @@ $listaNombrePais: "Andorra", "United Arab Emirates", "Afghanistan", "Antigua and
 
 >**Pregunta:** ¿De donde viene el valor de $spriteRango: 0.413223?
 
-### 2.2.3 Definir los estilos básicos
+### 2.3.4 Definir los estilos básicos
 ```
 .bandera {
   display: flex;
@@ -172,10 +172,11 @@ $listaNombrePais: "Andorra", "United Arab Emirates", "Afghanistan", "Antigua and
   margin-top: 10px;
   margin-bottom: 10px;
 }
-```
+```  
+**Explicación del código:**  
 Este estilo establece un contenedor que tiene un tamaño definido por las variables $ancho y $alto y establece **una imagen de fondo** que se ajusta al tamaño del contenedor.  
 
-### 2.2.4 Definir las funciones del proyecto
+### 2.3.5 Definir e instanciar las funciones del proyecto
 Como acabamos de ver en el archivo sprite, la primera imagen es una `dummy` para cuando se escriba mal <a href="https://www.sanidad.gob.es/ciudadanos/saludAmbLaboral/docs/codigoIsoPai.pdf">**el codigo del país**</a>.  
 Así pues, será conveniente invertir la lista de paises para empezar por el final.
 ```
@@ -186,19 +187,26 @@ Así pues, será conveniente invertir la lista de paises para empezar por el fin
   }
   @return $listaInvertida;
 }
-```
-La función `funcionInvertirLista` toma una lista como argumento y devuelve una nueva lista en la que los elementos están invertidos respecto al orden de la lista original.  
-Utiliza un bucle @for para recorrer la lista original desde el final hasta el principio, añadiendo los elementos uno por uno a la nueva lista invertida.
-`list.nth($listado, $i)` devuelve el elemento de la lista $list en la posición $i. 
-`list.append($listaInvertida, list.nth($listado, $i))` agrega un nuevo elemento al final de la lista $listaInvertida.
 
-### 2.2.5 Definir los estilos para cada país
+$listaInvertida: funcionInvertirLista($listaPaises);
+$listaInvertidaPais: funcionInvertirLista($listaNombrePais);
+```
+**Explicación del código:**  
+La función `funcionInvertirLista` toma una lista como argumento y devuelve una nueva lista en la que los elementos están invertidos respecto al orden de la lista original.  
+Utiliza un bucle @for para recorrer la lista original desde el final hasta el principio, añadiendo los elementos uno por uno a la nueva lista invertida.  
+`list.nth($listado, $i)` devuelve el elemento de la lista $list en la posición $i.  
+`list.append($listaInvertida, list.nth($listado, $i))` agrega un nuevo elemento al final de la lista $listaInvertida.  
+`$listaInvertida` y `$listaInvertidaPais` instancian `funcionInvertirLista()`y `funcionInvertirLista()` respectivamente, para obtener el inverso de las listas que se les pasan por argumento.  
+
+### 2.3.6 Definir los estilos para cada país
+A continuación se definen los estilos de cada país siguiendo el siguiente esquema, `.bandera-XX`, donde XX es el código de país.  
+Para ello se utilizará un **bucle @each**. Para fines cosméticos, se añade al estilos un pseudo elemento **::after** que añade, como contenido adicional, el nombre completo del país.  
 ```
 @each $pais in $listaInvertida {
   $i: list.index($listaInvertida, $pais);   
   
   .bandera-#{$pais} {
-    background-position: 0 (100% - ($spriteRango * ($i - 1)) * 1%);  
+    background-position: 0% (100% - ($spriteRango * ($i - 1)) * 1%);  
    
     &::after{ 
       position: relative;
@@ -210,71 +218,56 @@ Utiliza un bucle @for para recorrer la lista original desde el final hasta el pr
   }   
 }
 ```
+**Explicación del código:**  
+`@each $pais in $listaInvertida {}` itera sobre la lista `$listaInvertida`. A cada iteración, el valor actual de la lista se asigna a la variable `$pais`.  
+`$i: list.index($listaInvertida, $pais)` devuelve el índice (la posición) de un valor dentro de la lista `$listaInvertida`.  
+`.bandera-#{$pais} {}` define una clase con el nombre de cada país. Por ejemplo, si el valor de `$pais` es "España", el selector será `.bandera-España`.  
+`background-position: 0% (100% - ($spriteRango * ($i - 1)) * 1%)` establece **la posición vertical** de fondo** (x estará siempre a 0%).    
 
----
-Este código es un ejemplo de cómo usar un **bucle `@each`** en **Sass** (SCSS) para iterar sobre una lista, en este caso, `$listaInvertida`, y aplicar estilos CSS dinámicamente a cada elemento de la lista. Además, se incluye un pseudo-elemento `::after` para añadir contenido adicional a cada elemento.
+### 2.3.5 Definir un HTML básico para ver el resultado
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Sprite</title>
+</head>
+<body>
+  <body>
+    <span class="bandera bandera-zz"></span>
+    <span class="bandera bandera-nl"></span>
+    <span class="bandera bandera-ro"></span>
+    <span class="bandera bandera-ch"></span>
+    <span class="bandera bandera-ca"></span>
+    <span class="bandera bandera-gb"></span>
+    <span class="bandera bandera-au"></span>
+  </body>
+</body>
+</html>
+```
+>**Ejercicio, reflexión:**  
+>¿La clase `bandera-zz`existe?
+>¿Cual es la bandera representada?
+>¿Por qué se ha pintado esa bandera?  
 
-Vamos a desglosar el código línea por línea para entender cómo funciona:
-
-### 1. **Iteración con `@each`**
-```scss
+### 2.3.6 Tarea RA CEd
+Modularizar el siguiente código para que el bucle llame a un `@mixin estilos-bandera` el cual será el encargado de crear los estilos `.bandera-#{$pais}`
+```
 @each $pais in $listaInvertida {
-```
-- **`@each`**: Esta es una directiva de Sass que se utiliza para iterar sobre una lista o mapa. En este caso, estamos iterando sobre la lista `$listaInvertida`.
-- En cada iteración, el valor actual de la lista se asigna a la variable `$pais`.
-
-### 2. **Obtener el índice del elemento**
-```scss
-  $i: list.index($listaInvertida, $pais);
-```
-- **`list.index($listaInvertida, $pais)`**: Esta función devuelve el índice (la posición) de un valor dentro de la lista `$listaInvertida`.
-  - Si `$pais` es el valor actual que se está iterando, esta línea obtiene el índice de ese valor en la lista.
-  - El valor de `$i` será el índice en la lista, comenzando desde 1 (el primer elemento tiene el índice 1).
-
-### 3. **Definir una clase con el nombre de cada país**
-```scss
+  $i: list.index($listaInvertida, $pais);   
+  
   .bandera-#{$pais} {
-```
-- Esto define una clase CSS cuyo nombre está basado en el valor actual de `$pais`. Por ejemplo, si el valor de `$pais` es "España", el selector será `.bandera-España`.
-- **`#{$pais}`**: La sintaxis `#{}` en Sass se usa para interpolar el valor de una variable dentro de un nombre de clase o un selector.
-
-### 4. **Establecer la posición de fondo**
-```scss
-    background-position: 0 (100% - ($spriteRango * ($i - 1)) * 1%);
-```
-- **`background-position`**: Esta propiedad controla la posición de la imagen de fondo.
-- `0`: Esto significa que la posición horizontal de la imagen de fondo será 0 (es decir, alineada al borde izquierdo).
-- **`(100% - ($spriteRango * ($i - 1)) * 1%)`**: Este cálculo se usa para determinar la posición vertical del fondo.
-  - `$spriteRango` es probablemente una variable que representa el tamaño de una "célula" dentro de un **sprite gráfico**.
-  - El valor de `($i - 1)` multiplica el rango por el índice del país menos 1, para que el fondo se desplace hacia abajo correctamente según el orden de los países.
-
-### 5. **Agregar contenido con `::after`**
-```scss
+    background-position: 0% (100% - ($spriteRango * ($i - 1)) * 1%);  
+   
     &::after{ 
       position: relative;
       left: 50px;
-      top: 5px;
+      top: 5px;                
       white-space: nowrap;
       content: list.nth($listaInvertidaPais, $i);
-    }
+    }      
+  }   
+}
 ```
-- **`&::after`**: Esto hace referencia al pseudo-elemento `::after` del selector actual (en este caso, `.bandera-#{$pais}`). El pseudo-elemento `::after` se utiliza para insertar contenido adicional después del elemento principal.
-- **`position: relative;`**: Esto establece que el pseudo-elemento se posicionará de manera relativa respecto a su posición original dentro del contenedor.
-- **`left: 50px;`**: Mueve el pseudo-elemento 50 píxeles hacia la derecha desde su posición inicial (relativa al contenedor).
-- **`top: 5px;`**: Mueve el pseudo-elemento 5 píxeles hacia abajo desde su posición inicial.
-- **`white-space: nowrap;`**: Esto asegura que el texto dentro del pseudo-elemento no se divida en varias líneas, evitando saltos de línea automáticos.
-- **`content: list.nth($listaInvertidaPais, $i);`**: Esto inserta el contenido en el pseudo-elemento. La función `list.nth($listaInvertidaPais, $i)` devuelve el valor del elemento en la posición `$i` de la lista `$listaInvertidaPais`. Así, el contenido que se insertará será el nombre del país en esa posición de la lista.
-
-### Resumen:
-El código crea una clase `.bandera-#{$pais}` para cada país en la lista `$listaInvertida`. En cada iteración:
-1. Se calcula la posición de fondo para ajustar el sprite gráfico.
-2. Se inserta contenido adicional mediante el pseudo-elemento `::after`, con el nombre del país correspondiente de la lista `$listaInvertidaPais`.
-3. El texto del pseudo-elemento se coloca de manera relativa y no se ajusta a varias líneas.
-
-### Ejemplo práctico:
-Si `$listaInvertida` tiene los valores `('España', 'Francia', 'Italia')` y `$listaInvertidaPais` tiene los valores `('España', 'Francia', 'Italia')`, el código generará lo siguiente:
-- Para `.bandera-España`, la imagen de fondo se desplazará correctamente y se mostrará "España" debajo del contenedor.
-- Para `.bandera-Francia`, la imagen de fondo se desplazará a la posición correspondiente y se mostrará "Francia".
-- Lo mismo ocurrirá para `.bandera-Italia`.
-
----
