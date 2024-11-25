@@ -50,7 +50,8 @@ Crear las clases para asignar el color de fondo a los botones.
 ```
 ¿Qué realiza este fragmento de programa?
 ## 3.2 Programar la función colum-color().
-Programar la función column-color para que devuelva $color-col-pares o  $color-col-impares dependiendo de si el indice de la columna es par o impar.
+Programar la función column-color para que devuelva $color-col-pares o  $color-col-impares dependiendo de si el indice de la columna es par o impar.  
+**Pista:** Para determinar si el indice de la columna es par o impar usar la función `%` que permite determinar si el módulo de la división es nulo o no.
 
 # 4 
 
