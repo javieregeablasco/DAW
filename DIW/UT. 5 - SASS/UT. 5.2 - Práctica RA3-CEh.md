@@ -75,8 +75,10 @@ Realizar un bucle `@for` **sobre la variable $sum_elementos** que haga lo siguie
    
 >**Pregunta:** ¿Qué realiza este bucle?  
 
+# 5 Tarea RA3-CEh
+Subir el resultado de vuestra práctica a aules en el apartado correspondiente.
 
-# 5 Tarea RA2CEj
+# 6 Tarea RA2-CEj
 Siguiendo las buenas prácticas de Sass redistribuir las diferentes declaraciones, funciones y mixins en sus correspondientes carpetas siguiendo la estructura dada a continuación. 
 ```
 styles/  
