@@ -9,7 +9,7 @@ Resultado de aprendizaje y criterio de evaluación: RA3 CEh
 
 # 1 Introducción
 En este práctica, nos seguiremos familiarizando con ecosistema Sass.  
-Se proporciona una hoja de estilos main.css y un documento HTML.  
+Se proporciona una hoja de estilos <a href="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/Pr%C3%A1ctica/main.scss">**main.css**</a> y un <a href="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/Pr%C3%A1ctica/index.html">**documento HTML**</a> para ilustrar las modificaciones aportadas por la hoja de estilos.  
 El código se estructura en **3 apartados independientes**.  
 Cada apartado tendrá unos vacíos que el alumno deberá ir completando **con su propuesta o con la solución dada en clase**.  
 Cada vacío se corresponde a un enunciado de este documento.  
