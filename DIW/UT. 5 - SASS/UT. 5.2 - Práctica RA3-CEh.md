@@ -12,6 +12,7 @@ En este práctica, nos seguiremos familiarizando con ecosistema Sass.
 
 # 2 Estilos de los botones 
 ## 2.1 Elemento botón general
+>**Problema:**  
 Escribe un código de Sass que defina la clase `.btn`, comúnmente utilizada para estilizar botones.  
 A continuación, los requisitos de la clase.
 
@@ -30,7 +31,9 @@ A continuación, los requisitos de la clase.
 - **color** = color-shadow
 
 ## 2.2 Elemento botón al hacer click
-Crear las clases para asignar el color de fondo a los botones.
+>**Problema:**  
+Crear las clases para asignar el color de fondo a los botones.  
+
 **Personalización de cada botón**
 - Para crear las clases usar un bucle `@each` sobre la variable (lista) btn-colors.
 - Asignar el nombre de las clases segun la clave de la lista de la siguiente manera .btn-`primary`, .btn-`secondary`, ..., .btn-`link`.
@@ -52,7 +55,7 @@ Crear las clases para asignar el color de fondo a los botones.
   }
 }
 ```
->**Pregunta:** ¿Qué realiza ese bucle?
+>**Pregunta:** ¿Qué realiza ese bucle?  
 
 # 3 Estilos de tabla
 ## 3.1 Analizar el siguiente fragmento de programa
@@ -65,7 +68,9 @@ Crear las clases para asignar el color de fondo a los botones.
 ```
 ¿Qué realiza ese fragmento de programa?
 ## 3.2 Programar la función colum-color().
+>**Problema:**  
 Programar la función column-color para que devuelva $color-col-pares o  $color-col-impares dependiendo de si el indice de la columna es par o impar.  
+
 **Pista:** Para determinar si el indice de la columna es par o impar usar la función `%` que permite determinar si el módulo de la división es nulo o no.
 
 # 4 Estilos de sistema de columnas 
@@ -77,6 +82,7 @@ Programar la función column-color para que devuelva $color-col-pares o  $color-
 ```
 
 ## 4.2 Crear las clases para definir el ancho de las columnas
+>**Problema:**  
 Realizar un bucle `@for` **sobre la variable $sum_elementos** que haga lo siguiente:
  - A cada iteración se creará una clase **.col-#{$i}** que será hija directa de la clase `.row`.
  - El contenido de la clase creada será el siguiente: `padding: 1rem` y **width: resultado de anchura_col()+"%"**.
