@@ -8,7 +8,11 @@ Resultado de aprendizaje y criterio de evaluación: RA3 CEh
 
 
 # 1 Introducción
-En este práctica, nos seguiremos familiarizando con ecosistema Sass.
+En este práctica, nos seguiremos familiarizando con ecosistema Sass.  
+Se proporciona una hoja de estilos main.css y un documento HTML.  
+El código se estructura en **3 apartados independientes**.  
+Cada apartado tendrá unos vacíos que el alumno deberá ir completando **con su propuesta o con la solución dada en clase**.  
+Cada vacío se corresponde a un enunciado de este documento.  
 
 # 2 Estilos de los botones 
 ## 2.1 Elemento botón general
