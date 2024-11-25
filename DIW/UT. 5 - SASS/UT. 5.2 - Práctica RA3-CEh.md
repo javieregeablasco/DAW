@@ -39,7 +39,7 @@ Crear las clases para asignar el color de fondo a los botones.
 - Oscurecer el fondo un 20%.
 - Cambiar el color del texto a blanco.
 
-# 3 Estilos de las columnas
+# 3 Estilos de tabla
 ## 3.1 Analizar el siguiente fragmento de programa.
 ```
 @for $num from $inicio through $fin {
@@ -48,14 +48,28 @@ Crear las clases para asignar el color de fondo a los botones.
   }
 }
 ```
-¿Qué realiza este fragmento de programa?
+¿Qué realiza ese fragmento de programa?
 ## 3.2 Programar la función colum-color().
 Programar la función column-color para que devuelva $color-col-pares o  $color-col-impares dependiendo de si el indice de la columna es par o impar.  
 **Pista:** Para determinar si el indice de la columna es par o impar usar la función `%` que permite determinar si el módulo de la división es nulo o no.
 
-# 4 
+# 4 Estilos de sistema de columnas 
+## 4.1 Analizar el siguiente fragmento de programa
+```
+@function anchura_col($i) {
+  @return calc((100/$num_elementos)*$i); 
+}
+```
 
-### 5 Tarea RA2CEh
+## 4.2 Crear las clases para definir el ancho de las columnas
+Realizar un bucle `@for` **sobre la variable $sum_elementos** que haga lo siguiente:
+ - A cada iteración se creará una clase **.col-#{$i}** que será hija directa de la clase `.row`.
+ - El contenido de la clase creada será el siguiente: `padding: 1rem` y **width: resultado de anchura_col()**.
+   
+>**Pregunta:** ¿Qué realiza este bucle?  
+
+
+# 5 Tarea RA2CEj
 Siguiendo las buenas prácticas de Sass redistribuir las diferentes declaraciones, funciones y mixins en sus correspondientes carpetas siguiendo la estructura dada a continuación. 
 ```
 styles/  
