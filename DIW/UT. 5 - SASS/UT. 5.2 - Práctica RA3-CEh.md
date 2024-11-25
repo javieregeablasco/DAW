@@ -43,20 +43,6 @@ Crear las clases para asignar el color de fondo a los botones.
 - Oscurecer el fondo un 20%.
 - Cambiar el color del texto a blanco.
 
-## 2.3 Analizar el siguiente fragmento de programa
-```
-@each $k, $v in $btn-colors {
-  .btn-#{$k} {
-    background-color: $v;    
-  &:active {
-    background-color: color.adjust($v, $lightness: -20%);
-    color:white;
-    }
-  }
-}
-```
->**Pregunta:** ¿Qué realiza ese bucle?  
-
 # 3 Estilos de tabla
 ## 3.1 Analizar el siguiente fragmento de programa
 ```
@@ -66,7 +52,7 @@ Crear las clases para asignar el color de fondo a los botones.
   }
 }
 ```
-¿Qué realiza ese fragmento de programa?
+¿Qué realiza este fragmento de programa?
 ## 3.2 Programar la función colum-color().
 >**Problema:**  
 Programar la función column-color para que devuelva $color-col-pares o  $color-col-impares dependiendo de si el indice de la columna es par o impar.  
