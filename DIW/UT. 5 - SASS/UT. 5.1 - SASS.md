@@ -1161,7 +1161,7 @@ $final: 5;
     }
   }
 ```  
-### 9.2.3 Directiva while**
+### 9.2.3 Directiva while
 La directiva @while ejecuta un bloque de código mientras una condición sea verdadera.
 ```
 $i: 1;
