@@ -1512,29 +1512,29 @@ $font-stack: 'Helvetica, Arial, sans-serif';
   - **main.scss**
 ```
 // Importar archivos base
-@import 'utils/';
-@import 'utils/mixins';
+@use 'utils/';
+@use 'utils/mixins';
 
 // Importar archivos base
-@import 'base/reset';
-@import 'base/typography';
+@use 'base/reset';
+@use 'base/typography';
 
 // Importar archivos de componentes
-@import 'components/buttons';
-@import 'components/cards';
+@use 'components/buttons';
+@use 'components/cards';
 
 // Importar archivos de layout
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/grid';
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/grid';
 
 // Importar archivos de páginas
-@import 'pages/home';
-@import 'pages/about';
+@use 'pages/home';
+@use 'pages/about';
 
 // Importar archivos de temas
-@import 'themes/light';
-@import 'themes/dark';
+@use 'themes/light';
+@use 'themes/dark';
 ```
 
 
