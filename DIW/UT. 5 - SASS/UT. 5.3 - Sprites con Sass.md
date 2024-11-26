@@ -276,6 +276,3 @@ Modularizar el siguiente código para que el bucle llame a un `@mixin estilos-ba
 Para el ejemplo utilizaremos un set de imágenes similar al del ejemplo anterior.  
 Para ello, descargaremos un set de banderas de la página web de <a href="https://nucleoapp.com/">**Nucleo**</a> previa instalación de la aplicación gratuita pero de uso limitado **Nucleo**.  
 Luego con la ayuda del editor de sprites online <a href="https://svgsprit.es/">**svgsprit**</a> convertimos el set de archivos de banderas a un único documento.svg. 
-
-
-https://svgsprit.es/
