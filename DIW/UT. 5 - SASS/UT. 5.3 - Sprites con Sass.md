@@ -357,4 +357,10 @@ El código utiliza la etiqueta `<svg>` junto con `<use>` para incluir **una imag
 2. **`xlink:href="spriteBanderasSVG.svg#canada"`:**  
    - **`xlink:href`:** Atributo utilizado para especificar la ubicación del elemento que se va a incluir. 
    - **`spriteBanderasSVG.svg`:** Archivo SVG externo donde está definido el elemento gráfico.
-   - **`#canada`:** Identificador único (`id`) del símbolo o elemento gráfico dentro de ese archivo. 
+   - **`#canada`:** Identificador único (`id`) del símbolo o elemento gráfico dentro de ese archivo.
+
+## 3.3 Tarea RA3CEe
+1. Realizar un **sprite SVG** que incluya una colección de al menos 10 imágenes.
+2. Crear un archivo de estilos Sass que cree unos estilos para cada imagen.
+3. Renderizar el resultado con un HTML.
+4. Subir vuestras soluciones a la tarea de aules correspondiente. La entrega deberá incluir el archivo.svg, el Sass y el HTML.
