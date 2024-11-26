@@ -1268,7 +1268,7 @@ Montar un archivo HTML, con al menos un elemento al que se le aplique `output-pl
 
 ## 10.4 Limitaciones de @extend
 Como ya hemos visto en los ejemplos anteriores, `@extend` tiene algunas limitaciones a tener en cuenta:  
-1 - Puede generar selectores inesperadamente específicos o generales, complicando la administración de estilos.
+1 - Puede generar selectores inesperadamente específicos o generales, complicando la administración de estilos.  
 2 - Los cambios en los selectores extendidos pueden afectar a varios elementos, lo que puede ser difícil de mantener en proyectos grandes.  
 3 - Puede generar un CSS final más grande debido a la combinación de selectores.  
 
