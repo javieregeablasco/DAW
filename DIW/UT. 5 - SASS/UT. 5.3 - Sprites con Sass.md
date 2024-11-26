@@ -275,4 +275,32 @@ Modularizar el siguiente código para que el bucle llame a un `@mixin estilos-ba
 ## 3.1 Creación de la fuente de datos, ejemplo práctico
 Para el ejemplo utilizaremos un set de imágenes similar al del ejemplo anterior.  
 Para ello, descargaremos un set de banderas de la página web de <a href="https://nucleoapp.com/">**Nucleo**</a> previa instalación de la aplicación gratuita pero de uso limitado **Nucleo**.  
-Luego con la ayuda del editor de sprites online <a href="https://svgsprit.es/">**svgsprit**</a> convertimos el set de archivos de banderas a un único documento.svg. 
+Luego con la ayuda del editor de sprites online <a href="https://svgsprit.es/">**svgsprit**</a> convertimos el set de archivos de banderas a un único <a href="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/spriteBanderasSVG.svg">**documento.svg**</a>.  
+
+Podemos definir una clase por país con el siguiente código.
+Las variables `$listaPaises` y `$codigoPaises` se pueden descargar <a href="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/variablesBanderasSpriteSVG.txt">**aquí**</a>.
+```
+@use "sass:list";
+
+$listaPaises: "...";
+$codigoPaises: "...";
+
+@each $pais in $codigoPaises {
+    $i: list.index($codigoPaises, $pais);    
+    .bandera-#{$pais} {
+      &::after{ 
+        position: relative;
+        left: -60px;
+        bottom: 70px;       
+        white-space: nowrap;
+        font-size: 32px;
+        font-weight: bold;
+        content: list.nth($listaPaises, $i);
+      }      
+    }   
+  }
+
+```
+
+
+
