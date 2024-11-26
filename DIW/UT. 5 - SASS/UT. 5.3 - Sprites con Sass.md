@@ -272,12 +272,34 @@ Modularizar el siguiente código para que el bucle llame a un `@mixin estilos-ba
 }
 ```
 # 3 Sprites sobre imágenes vectoriales
-## 3.1 Creación de la fuente de datos, ejemplo práctico
+## 3.1 Creación del archivo sprite SVG. Ejemplo práctico
 Para el ejemplo utilizaremos un set de imágenes similar al del ejemplo anterior.  
 Para ello, descargaremos un set de banderas de la página web de <a href="https://nucleoapp.com/">**Nucleo**</a> previa instalación de la aplicación gratuita pero de uso limitado **Nucleo**.  
-Luego con la ayuda del editor de sprites online <a href="https://svgsprit.es/">**svgsprit**</a> convertimos el set de archivos de banderas a un único <a href="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/spriteBanderasSVG.svg">**documento.svg**</a>.  
+Luego con la ayuda del editor de sprites online <a href="https://svgsprit.es/">**svgsprit**</a> convertimos el set de archivos de banderas a un único <a href="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/spriteBanderasSVG.svg">**spriteBanderasSVG.svg**</a>.  
 
-Podemos definir una clase por país con el siguiente código.
+Si visualizamos el archivo veremos la siguiente estructura.
+```
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="cameroon">
+    <title>cameroon</title>
+    <g>
+      <path ...></path>
+    </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="cape-verde">
+    <title>cape verde</title>
+    <g>
+      <path ...></path>
+    </g>
+  </symbol>
+  ...
+```
+En el código, vemos que se ha usado la etiqueta `<symbol>` que se utiliza para definir elementos gráficos reutilizables.  
+Las imágenes no se renderizan cuando se definen con `<symbol>`, sino que deben ser referenciados posteriormente con una etiqueta `<use>` como veremos a continuación.  
+
+## 3.2 Creación de los estilos con Sass.
+Podemos definir una clase por país con el siguiente código.  
+**Nota:**
 Las variables `$listaPaises` y `$codigoPaises` se pueden descargar <a href="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/variablesBanderasSpriteSVG.txt">**aquí**</a>.
 ```
 @use "sass:list";
@@ -301,6 +323,38 @@ $codigoPaises: "...";
   }
 
 ```
+Para visualizar el resultado podemos usar el siguiente código:
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Sprite</title>
+</head>
+<body>
+    <div class="bandera-cm">
+      <svg>
+        <use xlink:href="spriteBanderasSVG.svg#cameroon"></use>
+      </svg>  
+    </div>
+    <div class="bandera-ca">
+      <svg>
+        <use xlink:href="spriteBanderasSVG.svg#canada"></use>
+      </svg>  
+    </div>
+</svg>  
+  
+</body>
+</html>
+```
+**Comentarios del código:**  
+El código utiliza la etiqueta `<svg>` junto con `<use>` para incluir **una imagen** del archivo `spriteBanderasSVG.svg`.
 
-
-
+```<use xlink:href="spriteBanderasSVG.svg#canada"></use>```
+1. **`<use>`:** Etiqueta que se utiliza para incluir un elemento de un archivo SVG o un archivo SVG externo.  
+2. **`xlink:href="spriteBanderasSVG.svg#canada"`:**  
+   - **`xlink:href`:** Atributo utilizado para especificar la ubicación del elemento que se va a incluir. 
+   - **`spriteBanderasSVG.svg`:** Archivo SVG externo donde está definido el elemento gráfico.
+   - **`#canada`:** Identificador único (`id`) del símbolo o elemento gráfico dentro de ese archivo. 
