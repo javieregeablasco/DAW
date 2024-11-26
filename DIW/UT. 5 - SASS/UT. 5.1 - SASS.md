@@ -1109,10 +1109,10 @@ Con la directiva **@if** definiremos diferentes condiciones de uso. Además del 
 **Mixin de media queries condicionales**  
 >**Parte 1**  
  - Escribe un código en SCSS que defina un `mixin` llamado `media-query`
- - Ese `mixin` permitirá aplicar diferentes estilos CSS basados en la varaible dispositivo `$device` (phone, tablet u otros) que le será pasado por parametro.   
+ - Ese `mixin` permitirá aplicar diferentes estilos CSS basados en la variable dispositivo `$device` (phone, tablet u otros) que le será pasado por parámetro.   
  - El `mixin` tratará con un bucle condicional el contenido de `device` y determinará si se trata de un teléfono, una tableta o de un valor pasado por error (o ningun valor).
  - Para cada selección aplicar el `@content` correspondiente dentro de **una consulta de medios** (`@media`) con un ancho máximo de 900px (phone), 1200px (tablet) o más de 1200px (error / nulo), respectivamente. 
- - En el caso de no pasar ningun parametro o pasarlo con errores el `@media` aplicado será de 1200px. 
+ - En el caso de no pasar ningun parámetro o pasarlo con errores el `@media` aplicado será de 1200px. 
 
 >**Parte 2**  
 Aplica este `mixin` en una clase llamada `.container` para que:  
