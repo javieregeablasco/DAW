@@ -1304,7 +1304,7 @@ La directiva **@extend**, permite compartir (heredar) reglas CSS entre múltiple
   }
 }
 ```
->Archivo *.css compilado.  
+>Archivo *.css compilado  
 ```
 .card, .featured-card {
   border: 1px solid #ccc;
@@ -1350,7 +1350,7 @@ A continuación repasaremos los principales usos de `&`:
 }
 ```
 
->**CSS compilado:**
+>**CSS compilado**
 ```css
 .alert {
   color: red;
@@ -1381,7 +1381,7 @@ Se puede usar el `&` para escribir selectores más complejos, como combinadores 
 }
 ```
 
-**CSS compilado:**
+**CSS compilado**
 ```
 .card + .card {
   margin-top: 20px;
@@ -1409,7 +1409,7 @@ El `&` es particularmente útil para anidar pseudo-clases y pseudo-elementos den
 }
 ```
 
-**CSS compilado:**
+**CSS compilado**
 ```
 .link {
   color: blue;
@@ -1453,18 +1453,12 @@ El `&` también puede usarse dentro de directivas como `@media` para generar est
 }
 ```
 
-## 10.4 Limitaciones de @extend
-Como ya hemos visto en los ejemplos anteriores, `@extend` tiene algunas limitaciones a tener en cuenta:  
-1 - Puede generar selectores inesperadamente específicos o generales, complicando la administración de estilos.  
-2 - Los cambios en los selectores extendidos pueden afectar a varios elementos, lo que puede ser difícil de mantener en proyectos grandes.  
-3 - Puede generar un CSS final más grande debido a la combinación de selectores.  
-
 ## 10.5 Clase %
-La clase `%` también conocida como **placeholder (selector)** (selector de marcador de posición), se utiliza para definir un conjunto de reglas de estilo **que no se aplican directamente a ningún elemento** pero que pueden ser **extendidas mediante `@extend`**.  
+La clase `%` también conocida como **placeholder** (selector de marcador de posición), se utiliza para definir un conjunto de reglas de estilo **que no se aplican directamente a ningún elemento** pero que pueden ser **extendidas mediante `@extend`**.  
 La `clase %` es especialmente útil para compartir estilos entre selectores sin agregar clases extra al HTML ni generar CSS redundante.
 Al no aplicarse directamente a ningún elemento, **no se compila** y así pues, no aparecerá en el *.css. 
 
->Archivo scss
+>**Archivo scss**
 ```
 // placeholder 
 %estilosComunes {
@@ -1497,7 +1491,7 @@ Al no aplicarse directamente a ningún elemento, **no se compila** y así pues, 
 }
 ```
 
->archivo css compilado
+>**Archivo css compilado**
 ```
 .alert, .btn {
   color: #333;
@@ -1560,7 +1554,7 @@ Sass proporciona convenciones de organización que ayudan a estructurar los proy
    Dividir el código en módulos pequeños, especificos y reutilizables.
  - **Consistencia:**
    Definir y mantener una convención de nombres y estructura de archivos coherente a lo largo del proyecto.
- - **Separación lógica de elemetos:**  
+ - **Separación lógica de elementos:**  
    Definir y mantener la separación lógica entre diferentes tipos de estilos, , mixins, componentes...
    
 ## 11.2 Metodologías de Arquitectura de proyectos
@@ -1624,7 +1618,7 @@ Archivos de estilos específicos para páginas individuales (landing page, secci
   Es el archivo principal que importa todos los demás archivos parciales y genera la hoja de estilos final.
 
 **Ejemplo de configuración de archivos.**
-  - **utils/_.scss**
+  - **utils/_variables.scss**
 ```  
 // Definir  de colores
 $primary-color: #3498db;
@@ -1673,7 +1667,7 @@ $font-stack: 'Helvetica, Arial, sans-serif';
 
   - **components/_buttons.scss**
 ```
-@use '../utils/' as *;
+@use '../utils/variables' as *;
 @use '../utils/mixins' as *;
 
 .button {
@@ -1699,8 +1693,8 @@ $font-stack: 'Helvetica, Arial, sans-serif';
   - **main.scss**
 ```
 // Importar archivos base
-@use 'utils/';
-@use 'utils/mixins';
+@use 'utils/variables' as *;
+@use 'utils/mixins' as *;
 
 // Importar archivos base
 @use 'base/reset';
