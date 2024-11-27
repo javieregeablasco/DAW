@@ -1747,7 +1747,7 @@ $primary-color: #3498db;
 $secondary-color: #2ecc71;
 $font-stack: 'Helvetica, Arial, sans-serif';
 ```
-## 13.3 Mixins y funciones
+## 12.3 Mixins y funciones
 - **Reutilizar código**: Usar `@mixin` para fragmentos de código que se repiten, como las configuraciones de `flex` o gradientes.
 ```
 @mixin border-radius($radius) {
@@ -1761,7 +1761,7 @@ $font-stack: 'Helvetica, Arial, sans-serif';
 }
 ```
 
-## 13.4 Anidar con moderación
+## 12.4 Anidar con moderación
 - **Evitar anidacones profundas**: Limita la anidación a no más de 3 niveles para mantener el código legible y evitar la creación de selectores muy específicos.
   ```scss
   .card {
@@ -1773,11 +1773,11 @@ $font-stack: 'Helvetica, Arial, sans-serif';
   }
   ```
 
-## 13.5 Uso adecuado (y moderado) de `@extend`
+## 12.5 Uso adecuado (y moderado) de `@extend`
 - **Evitar `@extend` excesivo**: Aunque `@extend` puede ser útil para compartir estilos, si se usa en exceso puede hacer que el CSS resultante sea complejo y difícil de mantener.
 - **Preferir `@mixin` (clases utilitarias) a `@extend`**: Son más flexibles y reducen el riesgo de problemas de herencia no deseados.
 
-## 13.6 Uso de `@use` y `@forward` y placeholders `%`
+## 12.6 Uso de `@use` y `@forward` y placeholders `%`
 - **`@use` en lugar de `@import`**: `@use` es la forma moderna de importar archivos en Sass, y ayuda a evitar la duplicación de código y el espacio de nombres global.
 ```
 @use '';
@@ -1800,7 +1800,7 @@ $font-stack: 'Helvetica, Arial, sans-serif';
 }
 ```
 
-## 13.7 Controlar el flujo de código, implementar condicionales y bucles sobre estilos.
+## 12.7 Controlar el flujo de código, implementar condicionales y bucles sobre estilos.
 ```
 $theme: dark;
 body {
@@ -1814,7 +1814,7 @@ body {
 }
 ```
 
-## 13.8 Código limpio y consistente
+## 12.8 Código limpio y consistente
 - **Convenciones de nombres**: Seguir una convención de nombres clara, como BEM (Block Element Modifier), para mantener la coherencia.
 ```
 .button {
@@ -1829,14 +1829,14 @@ body {
   // Base styles for buttons
   ```
 
-## 13.9 Optimización de código
+## 12.9 Optimización de código
 - **Evitar los selectores innecesarios**: No usar selectores complejos cuando uno simple es suficiente.
 - **Combinar reglas similares**: Agrupar propiedades repetidas para reducir la redundancia.
 - **Cuidado con los mixins grandes**: Si un `@mixin` genera demasiado código repetido, considerar otro enfoque más eficiente.
 
-## 13.10 Pruebas y mantenimiento
+## 12.10 Pruebas y mantenimiento
 - **Preprocesadores automáticos**: Usar herramientas como **Gulp**, **Webpack** o **Parcel** para compilar automáticamente Sass a CSS.
 - **Linting de código**: Usa herramientas como **stylelint** para encontrar y corregir errores o inconsistencias en el código.
 
-## 13.11 Documentación
+## 12.11 Documentación
 - **Documentar el código Sass**: Usa comentarios detallados y si es posible, herramientas de documentación automática como **<a href="http://sassdoc.com/">SassDoc</a>**.
