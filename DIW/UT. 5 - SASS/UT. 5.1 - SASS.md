@@ -1718,6 +1718,11 @@ $font-stack: 'Helvetica, Arial, sans-serif';
 @use 'themes/dark';
 ```
 
+**NOTA IMPORTANTE:**
+En el código anterior hemos visto que en el archivo `main.scss` se usa el  la **palabra clave** `*` en vez de definir un **alias**.  
+Es un buena práctica usar la palabra clave `*` para importar todo el contenido de los archivos ya que no hace necesario el uso de prefijos. 
+Por ejemplo, si preferimos mantener los prefijos, accederemos a las variables mediante `variables.$primary-color`.  
+Si definimos un alias `@use 'utils/variables' as var;` accederemos a las variables mediante `var.$primary-color`. 
 
 ## 11.4 Buenas prácticas de proyectos en Sass.
 Las buenas prácticas en **Sass** ayudan a mantener el código limpio, eficiente y fácil de mantener, especialmente en proyectos grandes.  
