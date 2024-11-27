@@ -1734,9 +1734,9 @@ Las buenas prácticas en **Sass** ayudan a mantener el código limpio, eficiente
   - **vendors/**: Estilos de bibliotecas externas.
   - **main.scss**: Archivo que importa todos los demás.
 
-**2. Uso adecuado de **
-- **Definir  en un solo archivo.**
-- **Nombres claros.**
+**2. Uso adecuado de**
+- **Definir en un solo archivo todo los elementos de mismas características (p.e. variables).**
+- **Definir nombres claros.**
 ```
 $primary-color: #3498db;
 $secondary-color: #2ecc71;
