@@ -1190,7 +1190,36 @@ $final: 5;
 Para crear el bucle definimos una variable `$i` y para recorrer el bucle utilizaremos `from`, `through` o `to`.  
 La diferencia entre `through` o `to` radica en que, si utilizamos `to`, se recorre la variable desde el valor `from` hasta el valor anterior a `to`. Con `through` se recorren todos los valores incluido `to`.
 
+>**Ejemplo con @for, from y to.**
+```
+$inicio: 1;
+$final: 5;
 
+@for $i from $inicio to $final {
+    .columna-#{$i} {
+      width: 100% / $i;
+    }
+  }
+```
+
+>**Resultado CSS después de compilación.**
+```
+.columna-1 {
+  width: 100%;
+}
+
+.columna-2 {
+  width: 50%;
+}
+
+.columna-3 {
+  width: 33.3333%;
+}
+
+.columna-4 {
+  width: 25%;
+}
+```
 
 ### 9.2.3 Directiva while
 La directiva @while ejecuta un bloque de código mientras una condición sea verdadera.
@@ -1205,7 +1234,7 @@ $i: 1;
 }
 ```
 ## 9.3 Directiva @debug
-La directiva `@debug` se utiliza para imprimir información en la consola durante la compilación. Es muy útil para depurar y verificar el contenido de variables, listas, mapas, y otros datos en tiempo de compilación (sin afectar el CSS resultante).
+La directiva `@debug` se utiliza para imprimir información en la consola durante la compilación. Es muy útil para depurar y verificar el contenido de variables, listas, mapas, y otros datos en tiempo de compilación (sin afectar al CSS resultante).
 
 >**Ejemplo:**
 ```
@@ -1239,12 +1268,12 @@ La directiva **@extend**, permite compartir (heredar) reglas CSS entre múltiple
 }
 ```
 ## 10.2 Ejercicio
-Sobre el ejemplo anterior definir una clase `output-placeholder` con los siguientes estilos `color: green` y `font-size: 10px`.  
-Esa clase, aparte de tener sus estilos propios, también heredará de la clase `placeholder`.  
-Montar un archivo HTML, con al menos un elemento al que se le aplique `output-placeholder`, y comprobar qué estilos se le aplica y la estructura del archivo *.css compilado.   
+ - Sobre el ejemplo anterior definir una clase `output-placeholder` con los siguientes estilos `color: green` y `font-size: 10px`.  
+ - Esa clase, aparte de tener sus estilos propios, también heredará de la clase `placeholder`.  
+ - Montar un archivo HTML, con al menos un elemento al que se le aplique `output-placeholder`, y comprobar qué estilos se le aplica y la estructura del archivo *.css compilado.   
 
-## 10.3 Herencia de selectores anidados.
-`@extend` también puede usarse en selectores anidados.  
+## 10.3 Herencia en selectores derivados.
+`@extend` también puede usarse en selectores anidados aunque se recomienda moderar su uso por los problemas de consistencia del CSS resultante. Para esos casos usar `mixin` en vez de heredar.  
 >Archivo *.scss 
 ```
 .card {
@@ -1253,23 +1282,25 @@ Montar un archivo HTML, con al menos un elemento al que se le aplique `output-pl
 
   .card-header {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: bold; 
   }
-
+  
   .card-body {
     font-size: 14px;
   }
 }
-
-.featured-card {
-  @extend .card;
   
-  .card-header {
-    color: red;
+.featured-card {
+  @extend .card;          // Hereda las propiedades principales de .card
+  
+  &-header {              // Selector derivado
+    @extend .card-header; // Hereda las propiedades de .card-header
+    color: red; 
   }
-
-  .card-body {
-    font-size: 16px;
+  
+  &-body {                 // // Selector derivado
+    @extend .card-body;   // Hereda las propiedades de .card-body
+    font-size: 16px; 
   }
 }
 ```
@@ -1279,22 +1310,147 @@ Montar un archivo HTML, con al menos un elemento al que se le aplique `output-pl
   border: 1px solid #ccc;
   padding: 10px;
 }
-.card .card-header, .featured-card .card-header {
+.card .card-header, .card .featured-card-header, .featured-card .card-header, .featured-card .featured-card-header {
   font-size: 18px;
   font-weight: bold;
 }
-.card .card-body, .featured-card .card-body {
+.card .card-body, .card .featured-card-body, .featured-card .card-body, .featured-card .featured-card-body {
   font-size: 14px;
 }
 
-.featured-card .card-header {
+.featured-card-header {
   color: red;
 }
-.featured-card .card-body {
+.featured-card-body {
   font-size: 16px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
+```
+
+## 10.4 Usos principales del símbolo & en Sass
+Hemos dado 3 usos al símbolo `&`: creación de pseudo-clases, pseudo-elementos y también, en el ejemplo anterior, para la creación de selectores combinados.  
+A continuación repasaremos los principales usos de `&`:
+
+### 10.4.1 Concatenar nombres de clases o elementos relacionados
+`&` puede usarse para añadir sufijos o prefijos a una clase, creando modificadores o variaciones de una base.
+
+>**Ejemplo Sass**
+```scss
+.alert {
+  color: red;
+
+  &-warning {
+    color: orange;
+  }
+
+  &-success {
+    color: green;
+  }
+}
+```
+
+>**CSS compilado:**
+```css
+.alert {
+  color: red;
+}
+
+.alert-warning {
+  color: orange;
+}
+
+.alert-success {
+  color: green;
+}
+```
+
+### 10.4.2 Crear selectores combinados
+Se puede usar el `&` para escribir selectores más complejos, como combinadores (`+`, `>`, `~`).
+
+**Ejemplo Sass**
+```
+.card {
+  & + & {
+    margin-top: 20px;
+  }
+
+  & > .card-header {
+    font-weight: bold;
+  }
+}
+```
+
+**CSS compilado:**
+```
+.card + .card {
+  margin-top: 20px;
+}
+
+.card > .card-header {
+  font-weight: bold;
+}
+```
+### 10.4.3 Uso en pseudo-clases y pseudo-elementos
+El `&` es particularmente útil para anidar pseudo-clases y pseudo-elementos dentro de un selector.
+
+**Ejemplo Sass**
+```
+.link {
+  color: blue;
+
+  &:visited {
+    color: purple;
+  }
+
+  &::after {
+    content: ' →';
+  }
+}
+```
+
+**CSS compilado:**
+```
+.link {
+  color: blue;
+}
+
+.link:visited {
+  color: purple;
+}
+
+.link::after {
+  content: ' →';
+}
+```
+
+### 10.4.4 Uso con directivas como `@media`
+El `&` también puede usarse dentro de directivas como `@media` para generar estilos responsivos.
+
+**Ejemplo Sass**
+```scss
+.container {
+  width: 100%;
+
+  @media (min-width: 768px) {
+    & {
+      width: 80%;
+    }
+  }
+}
+```
+
+**CSS compilado:**
+```css
+.container {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
 ```
 
 ## 10.4 Limitaciones de @extend
@@ -1325,7 +1481,7 @@ Al no aplicarse directamente a ningún elemento, **no se compila** y así pues, 
   @extend %estilosComunes;
   background-color: #007BFF;
 
-  &:hover {
+  :hover {
     background-color: green;
   }
 }
@@ -1334,7 +1490,7 @@ Al no aplicarse directamente a ningún elemento, **no se compila** y así pues, 
   @extend %estilosComunes;
   background-color: #FFC107;
 
-  &:hover {
+  :hover {
     background-color: red;
 
   }
@@ -1526,7 +1682,7 @@ $font-stack: 'Helvetica, Arial, sans-serif';
   background-color: $primary-color;
   @include border-radius(4px);
 
-  &:hover {
+  :hover {
     background-color: darken($primary-color, 10%);
   }
 
