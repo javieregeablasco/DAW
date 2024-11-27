@@ -1046,12 +1046,12 @@ Llamada a la función (desde dentro de un mixin).
 ## 8.10 Cambios en las global built-in functions
 La próxima actualización, Sass eliminará el soporte para el uso de funciones integradas sin **referenciarlas explícitamente** al módulo al que pertenecen. Esto forma parte de los cambios ya vistos anteriormente con la transición desde `@import` hacia `@use` y `@forward`.
 
-### 8.11 Ejemplo de uso de funciones integradas, antes de la actualización 
+## 8.11 Ejemplo de uso de funciones integradas, antes de la actualización 
 Se usan las funciones simplemente instanciandolas.
 ```
 $list: append(("a", "b"), "c"); // Funciona sin usar un módulo.
 ```
-### 8.12 Ejemplo de uso de funciones integradas, después de la actualización 
+## 8.12 Ejemplo de uso de funciones integradas, después de la actualización 
 A partir de ahora, el ejemplo **8.11** dará una advertencia de `deprecated` durante la compilación del archivo `*.scss`.  
 Para evitar que nuestro código quede obsoleto haremos lo siguiente. 
  - **Necesidad de `@use`.**
@@ -1061,7 +1061,7 @@ Para evitar que nuestro código quede obsoleto haremos lo siguiente.
 
 $list: list.append(("a", "b"), "c");
 ```
-### 8.13 Ventajas y motivos del cambio
+## 8.13 Ventajas y motivos del cambio
 - **Principal ventaja: Encapsulación de nombres de funciones**
   - Al requerir que las funciones estén vinculadas a su módulo, se reduce la posibilidad de conflictos de nombres entre **funciones personalizadas** y **funciones integradas**.
   - Por ejemplo, si definimos una función propia `append`, esta ya no colisionará con la función integrada `list.append`.
