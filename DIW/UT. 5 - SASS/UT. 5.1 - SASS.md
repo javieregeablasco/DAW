@@ -838,12 +838,12 @@ Un *mixin* se define con la directiva `@mixin` seguida del nombre del mixin. Es 
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
-  background-color: #3498db;
+  background-color: #348db;
   color: #fff;
   cursor: pointer;
 
   &:hover {
-    background-color: #2980b9;
+    background-color: #280b;
   }
 }
 ```
@@ -948,7 +948,7 @@ También se pueden definir parámetros predeterminados, dado el caso de instanci
 @mixin card-style {
     padding: 20px;
     border: 1px solid #ccc;
-    background-color: #f9f9f9;    
+    background-color: #fff;    
     @content; // Se insertará contenido aquí cuando se use el mixin
 }
 //invocar el mixin y pasarle codigo adicional
@@ -1073,9 +1073,9 @@ $list: list.append(("a", "b"), "c");
 
 Más información <a href="https://sass-lang.com/documentation/breaking-changes/import/">**aquí**</a>. 
 
-# 9 Condicionales y bucles 
+# 9 Estructuras de control: Condicionales y bucles 
 ## 9.1 Condicionales
-Podemos crear estilos más eficientes y flexibles utilizando condiciones. Por ejemplo, si dos elementos tienen el mismo estilo, pero existe una condición que solo uno de ellos cumple, podremos diferenciarlos usando mixins condicionales.
+Podemos crear estilos más eficientes y flexibles utilizando condiciones. Por ejemplo, si dos elementos tienen el mismo estilo, pero existe una condición que solo uno de ellos cumple, podremos diferenciarlos usando `estilos / mixins` condicionales.
 
 Con la directiva **@if** definiremos diferentes condiciones de uso. Además del `@if` también es habitual usar **@else if <condición> o @else**.
 ```
@@ -1108,18 +1108,19 @@ Con la directiva **@if** definiremos diferentes condiciones de uso. Además del 
 ### 9.1.1 Ejercicio
 **Mixin de media queries condicionales**  
 >**Parte 1**  
- - Escribe un código en SCSS que defina un `mixin` llamado `media-query`
+ - Escribe un código en SCSS que defina un `mixin` llamado `media-query`  
  - Ese `mixin` permitirá aplicar diferentes estilos CSS basados en la variable dispositivo `$device` (phone, tablet u otros) que le será pasado por parámetro.   
- - El `mixin` tratará con un bucle condicional el contenido de `device` y determinará si se trata de un teléfono, una tableta o de un valor pasado por error (o ningun valor).
- - Para cada selección aplicar el `@content` correspondiente dentro de **una consulta de medios** (`@media`) con un ancho máximo de 900px (phone), 1200px (tablet) o más de 1200px (error / nulo), respectivamente. 
- - En el caso de no pasar ningun parámetro o pasarlo con errores el `@media` aplicado será de 1200px. 
+ - El `mixin` tratará con un bucle condicional el contenido de `device` y determinará si se trata de un teléfono, una tableta o de un valor pasado por error (o ningun valor).  
+ - Para cada selección aplicar el `@content` correspondiente dentro de **una consulta de medios** (`@media`) con un ancho máximo de 900px (phone), 1200px (tablet) o más de 1200px (error / nulo), respectivamente.  
+ - En el caso de no pasar ningun parámetro o pasarlo con errores el `@media` aplicado será de 1200px.  
 
 >**Parte 2**  
 Aplica este `mixin` en una clase llamada `.container` para que:  
-- Cambie el color de fondo a azul cuando se visualice en un dispositivo con un ancho máximo de 600px (teléfono).
-- Cambie el color de fondo a verde cuando se visualice en un dispositivo con un ancho máximo de 900px (tableta).
+- Cambie el color de fondo a azul cuando se visualice en un dispositivo con un ancho máximo de 600px (teléfono).  
+- Cambie el color de fondo a verde cuando se visualice en un dispositivo con un ancho máximo de 900px (tableta).  
 - Cambie el color de fondo a rojo en cualquier otra caso.
-El código deberá utilizar `@include` para aplicar el `mixin` dentro de la clase `.container`.
+
+El código deberá utilizar `@include` para aplicar el `mixin` dentro de la clase `.container`.  
 
 
 ## 9.2 Bucles (iteradores)
@@ -1151,6 +1152,7 @@ $espaciados: (
 ```  
 ### 9.2.2 Directiva @for  
 se utiliza para ejecutar un bloque de código **un número específico de veces**.
+>**Ejemplo con @for, from y through.**
 ```
 $inicio: 1;
 $final: 5;
@@ -1160,7 +1162,36 @@ $final: 5;
       width: 100% / $i;
     }
   }
-```  
+```
+>**Resultado CSS después de compilación.**
+
+```
+.columna-1 {
+  width: 100%;
+}
+
+.columna-2 {
+  width: 50%;
+}
+
+.columna-3 {
+  width: 33.3333%;
+}
+
+.columna-4 {
+  width: 25%;
+}
+
+.columna-5 {
+  width: 20%;
+}
+```
+**Diferencia entre to y through:**  
+Para crear el bucle definimos una variable `$i` y para recorrer el bucle utilizaremos `from`, `through` o `to`.  
+La diferencia entre `through` o `to` radica en que, si utilizamos `to`, se recorre la variable desde el valor `from` hasta el valor anterior a `to`. Con `through` se recorren todos los valores incluido `to`.
+
+
+
 ### 9.2.3 Directiva while
 La directiva @while ejecuta un bloque de código mientras una condición sea verdadera.
 ```
