@@ -7,28 +7,13 @@ Palabras clave: DAW, DIW
 ---
 
 
-# 1. Introducción: "Desarrollo Frontend con Tailwind CSS"
+# 1. Introducción: "Desarrollo Frontend con Bootstrap CSS"
+El desarrollo frontend es una área esencial en la creación de aplicaciones y sitios web modernos. En este contexto, **Bootstrap CSS** se ha consolidado como una de las herramientas más populares para diseñar interfaces.  
 
-En el desarrollo web moderno, la creación de interfaces de usuario atractivas y funcionales es una de las tareas más desafiantes. En este contexto, **Tailwind CSS** ha emergido como una herramienta fundamental para facilitar y acelerar el proceso de diseño de frontend, permitiendo a los desarrolladores crear de manera eficiente páginas web estéticas y altamente personalizables.
+**Bootstrap**, un framework CSS desarrollado originalmente por Twitter, ofrece un conjunto de herramientas predefinidas que incluyen sistemas de diseño responsivo basados en grid, componentes reutilizables como botones, menús y formularios, además de **utilidades para personalizar estilos**.  
+Su objetivo principal es simplificar y acelerar el proceso de desarrollo, permitiendo que los desarrolladores se enfoquen más en la funcionalidad y la experiencia del usuario, sin tener que diseñar estilos propios.
 
-**Tailwind CSS** es un framework de diseño basado en **clases utilitarias** que, a diferencia de otros frameworks como Bootstrap, no impone un diseño predefinido. En cambio, proporciona una serie de pequeñas clases reutilizables que permiten a los desarrolladores construir sus propias interfaces de manera modular y flexible. Estas clases abarcan una amplia gama de propiedades CSS lo que permite diseñar interfaces personalizadas **directamente desde el código HTML**.
-
-El enfoque modular de **Tailwind CSS** no solo mejora la productividad, sino que también fomenta buenas prácticas de desarrollo, como el uso de código limpio y mantenible.
-
-## Objetivos:
-- Instalar y configurar **Tailwind CSS** en un proyecto web.
-- Conocer las características y ventajas de **Tailwind CSS** en el desarrollo frontend.
-- Aplicar clases utilitarias de Tailwind para diseñar elementos y componentes de interfaz.
-- Crear diseños responsivos y accesibles usando **Tailwind CSS**.
-- Optimizar el CSS del proyecto eliminando clases no utilizadas.
-
-## Contenidos:
-- Tailwind frente a otros frameworks de CSS.
-- Instalación y configuración de **Tailwind CSS**.
-- Uso de clases utilitarias: estructura y nomenclatura.
-- Diseño responsivo con **Tailwind**.
-- Buenas prácticas en la organización del código CSS.
-- Personalización y optimización de Tailwind CSS en proyectos reales.
+El enfoque **mobile-first** y su compatibilidad con la navegadores modernos hacen de Bootstrap una elección ideal para desarrolladores y su estructura modular y personalizable facilita la adaptación de los estilos a las necesidades específicas de cada proyecto.
 
 # 2. Tailwind frente a otros frameworks de CSS.
 Existen muchos frameworks de CSS pero los desarrolladores suelen elegir el más rápido y fácil para aprender. Tailwind viene con muchas características y estilos incorporados a elegir y también se utiliza por su tendencia a reducir escribir código CSS. Tailwind CSS también crea pequeñas utilidades con un conjunto definido de opciones que permiten una fácil integración de clases existentes directamente en el código HTML.  
