@@ -80,6 +80,9 @@ para añadir clases de estilos propias de Bootstrap, simplemente añadiremos su 
 4. Entregar las capturas de pantalla en un documento de texto y subirlo a AULES en el apartado correspondiente.
 
 # 5 Componentes de Bootstrap.
+## 5.1 Contenidos
+Bootstrap proporciona una variedad de clases para mejorar y estructurar el contenido. Incluye clases de tipografía para encabezados, párrafos y alineación de texto, así como clases de ayuda para el espaciado y los colores de texto. 
+<a href="https://getbootstrap.com/docs/5.3/content/reboot/">Más información</a>
 ## 5.1 Layout (paginación)
 El diseño de Bootstrap está basado en un sistema de cuadrícula flexible que se ajusta al tamaño de la pantalla.  
 **Utiliza un sistema de cuadrícula de 12 columnas** para crear diseños responsivos. 
