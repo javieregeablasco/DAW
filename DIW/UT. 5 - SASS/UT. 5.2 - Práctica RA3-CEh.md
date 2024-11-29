@@ -73,8 +73,8 @@ Programar la función column-color para que devuelva $color-col-pares o  $color-
 
 ## 4.2 Crear las clases para definir el ancho de las columnas
 >**Problema:**  
-Realizar un bucle `@for` **sobre la variable $sum_elementos** que haga lo siguiente:
- - A cada iteración se creará una clase **.col-#{$i}** que será hija directa de la clase `.row`.
+Realizar un bucle `@for` **sobre la variable $sum_elementos** que haga lo siguiente:  
+ - A cada iteración se creará una clase **.col-#{$i}** que será hija directa de la clase `.row`.  
  - El contenido de la clase creada será el siguiente: `padding: 1rem` y **width: resultado de anchura_col()+"%"**.
    
 >**Pregunta:** ¿Qué realiza este bucle?  
