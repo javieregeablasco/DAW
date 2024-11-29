@@ -60,12 +60,21 @@ En este caso, podemos incluir una hoja de estilos CSS propia al proyecto, **siem
 # 4. Usar Boostrap en nuestro proyecto
 para añadir clases de estilos propias de Bootstrap, simplemente añadiremos su nombre a la declaracion de estilos de la etiquetas que queremos modificar.
 >Ejemplo de <a href="https://getbootstrap.com/docs/5.3/content/typography/">**tipografía**</a>
-
 ´´´
+<body>
+  <header>
+    <h1 class="display-1">Cabecera del documento</h1>
+  </header>
+  <main>             
+    <p class="display-6">Cuerpo del texto</p>     
+  </main>
+  <footer>
+    <p>Pie del documento</p>
+  </footer>
+</body>
+```
 
-
-
-# 4 - Componentes de Bootstrap.
+# 5. - Componentes de Bootstrap.
 ## 4.1 - Colores
   Tailwind incopora una paleta de colores que se puede consultar <a href="https://tailwindcss.com/docs/customizing-colors">aquí</a>.  
 - **Cambiar el color de texto:**
