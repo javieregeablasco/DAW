@@ -76,7 +76,8 @@ para añadir clases de estilos propias de Bootstrap, simplemente añadiremos su 
 ## 4.1 Tarea RA4 CEb
 1. Buscar en la documentación de **Bootstrap** el listado de navegadores compatibles.
 2. Mirar la versión del navegador web que usáis habitualemente y comprobar si es compatible con la última versión establa de Bootstrap.
-3. Entregar las capturas en un documento de texto y subirla a AULES en el apartado correspondiente.
+3. Encontrar la información que permite saber si Bootstrap se puede utilizar en dispositivos mobiles.
+4. Entregar las capturas de pantalla en un documento de texto y subirlo a AULES en el apartado correspondiente.
 
 # 5 Componentes de Bootstrap.
 ## 5.1 Layout (paginación)
