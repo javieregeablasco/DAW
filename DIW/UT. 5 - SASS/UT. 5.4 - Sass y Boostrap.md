@@ -7,7 +7,7 @@ Palabras clave: DAW, DIW
 ---
 
 
-# 1. Introducción: "Desarrollo Frontend con Bootstrap CSS"
+# 1. Introducción: "Desarrollo Frontend con Bootstrap"
 El desarrollo frontend es una área esencial en la creación de aplicaciones y sitios web modernos. En este contexto, **Bootstrap CSS** se ha consolidado como una de las herramientas más populares para diseñar interfaces.  
 
 **Bootstrap**, un framework CSS desarrollado originalmente por Twitter, ofrece un conjunto de herramientas predefinidas que incluyen sistemas de diseño responsivo basados en grid, componentes reutilizables como botones, menús y formularios, además de **utilidades para personalizar estilos**.  
@@ -15,106 +15,34 @@ Su objetivo principal es simplificar y acelerar el proceso de desarrollo, permit
 
 El enfoque **mobile-first** y su compatibilidad con la navegadores modernos hacen de Bootstrap una elección ideal para desarrolladores y su estructura modular y personalizable facilita la adaptación de los estilos a las necesidades específicas de cada proyecto.
 
-# 2. Tailwind frente a otros frameworks de CSS.
-Existen muchos frameworks de CSS pero los desarrolladores suelen elegir el más rápido y fácil para aprender. Tailwind viene con muchas características y estilos incorporados a elegir y también se utiliza por su tendencia a reducir escribir código CSS. Tailwind CSS también crea pequeñas utilidades con un conjunto definido de opciones que permiten una fácil integración de clases existentes directamente en el código HTML.  
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20230710125344/Tailwind-css.webp" width=60%>  
+# 2. Boosstrap frente a otros frameworks de CSS
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/CSS-Framework---Bootstrap.webp" width=60%>  
 
-Comparación del número de instalaciones de Bootstrap y Tailwind durante el periodo 2023-2024 usando el comando `npm`.
+Comparación del número de instalaciones de **Bootstrap** y **Tailwind**, durante el periodo 2023-2024, usando el comando `npm`.
 <img src="https://d2b57pa8jvjkcd.cloudfront.net/shEYQpSsZGZcwRfsh/XHyYpkAKLY-bootstrap-tailwind-css-popularity-chart-npm-trends.png" width=90%> 
 
-
-
-
-# 3. Instalación y configuración de **Tailwind CSS**.
-Toda la información para la instalación y configuración de TailwindCSS en la página oficial.
-<a href="https://tailwindcss.com/docs/installation">Haga click aquí</a>
-## 3.1 - Uso con link CDN. 
-Es ideal para prototipos, proyectos pequeños o experimentación. No se necesita una configuración compleja. Solo es necesario incluir una etiqueta `<link>` o una etiqueta `<script>` en la sección `<head>` del documento `HTML`. 
+# 3. Configuración básica de **Boostrap**
+## 3.1 Enlazar con Boostrap desde un CDN
+Toda la información de Boostrap <a href="https://getbootstrap.com/">**en la página oficial**</a>.  
+Si solo deseamos usar `Bootstrap` sin alterar su contenido, simplemente añadiremos los `CDN links` via `jsDelivr` en los metadatos del `<head>` de nuestro proyecto.  
 ```
-<script src=”https://cdn.tailwindcss.com”></script>
-```
-El uso de una CDN garantiza siempre estar usando la última versión disponible pero no se recomienda para producción.  
-
-Ejemplo de proyecto listo para usar TailwindCSS
-```
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- añadimos el script -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- ... -->
+  <title>Ejemplo con Bootstrap</title>
+  <!-- CSS de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-   QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
-</html>
 ```
-## 3.2 - Instalación con Tailwind CLI. 
-- **Instalar node.**
-  
-  Para comprobar si teneis instalado el node abrir un consola y teclear:
-```
-node -v
-```
-Si teneis node instalado os aparecerá la versión. De lo contrario, ir a la <a 
-href="https://nodejs.org/en/download/prebuilt-installer">página de descarga de node</a> descargar e instalarlo.
-- **Instalar tailwind.**
-  
-  Dentro de la carpeta donde tendremos nuestros proyectos, abrir una consola y escribir:
-```
-npm install -D tailwindcss
-npx tailwindcss init
-```
-- **Configurar tailwind: Definir la carpeta de proyectos.**
-  
-  Tenemos que especificar en qué lugar tendremos nuestros archivos editando la línea `content: [],` del archivo 
-  `tailwind.config.js` y reemplazandola por `content: ["./src/**/*.{html,js}"]`, donde `src`es el nombre de la carpeta elegida para nuestros proyectos.
-- **Configurar tailwind: Añadir las directivas.**
-  
-  Para añadir las directivas para cada una de la capas de estilos de tailwind haremos lo siguiente.
-  Dentro de la carpeta `src/` crear un archivo input.css' y añadirle:
-```
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
-- **Iniciar tailwind.**
-  
-  Para iniciar el escaneado de nuestros proyectos con tailwind usaremos de nuevo nuestras terminal y escribiendo:
-  ```
-  npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
-  ```
-  **Nota:** No cerrar nunca la terminal mientras estemos trabajando con nuestros proyectos.
-  
-- **Empezar a usar tailwind.**
-  
-  Para poder empezar a usar las clases de tailtwind, añadir la ruta al archivo CSS compilado `output.css` al `<head>`de nuestro proyecto.
-  El archivo quedará de la siguiente manera:
-```
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
-</html>
-```
+## 3.2 Usar extensiones de VSC para Bootstrap
+Para evitar de siempre estar consultando la documentación oficial, se recomienda instalar utilidades `snippets` que permitiran autocompletar el código CSS con los estilos propios de Bootstrap.
+>Ejemplo:
+>Bootstrap 5 Quick Snippets
 
-  **Nota 1:** Para poder usar todas las clases de tailwind, instalar el plugin `Tailwind CSS IntelliSense`. De lo contrario el código no se autocompletará al purgarse el archivo `output.css` continuamente.   
-  
-  **Nota 2:** Comprobar periodicamente que el `build process`esté ejecutándose.
-  
-# 4 - Clases utilitarias de Tailwind CSS.
+# 4 - Componentes de Bootstrap.
 ## 4.1 - Colores
   Tailwind incopora una paleta de colores que se puede consultar <a href="https://tailwindcss.com/docs/customizing-colors">aquí</a>.  
 - **Cambiar el color de texto:**
