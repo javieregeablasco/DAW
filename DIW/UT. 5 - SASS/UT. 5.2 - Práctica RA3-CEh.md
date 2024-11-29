@@ -3,7 +3,7 @@ Título: UD. 5.2 - SASS Práctica evaluable
 Autor: Javier Egea Blasco
 Año: 24-25
 Palabras clave: DAW, DIW
-Resultado de aprendizaje y criterio de evaluación: RA3 CEh 
+Resultado de aprendizaje y criterio de evaluación: RA2 CEj 
 ---
 
 
