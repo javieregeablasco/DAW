@@ -73,7 +73,7 @@ para añadir clases de estilos propias de Bootstrap, simplemente añadiremos su 
   </footer>
 </body>
 ```
-## 4.1 Tarea RA4 CEb
+## 4.1 Tarea RA4 CEab
 1. Buscar en la documentación de **Bootstrap** el listado de navegadores compatibles.
 2. Mirar la versión del navegador web que usáis habitualemente y comprobar si es compatible con la última versión establa de Bootstrap.
 3. Encontrar la información que permite saber si Bootstrap se puede utilizar en dispositivos mobiles.
