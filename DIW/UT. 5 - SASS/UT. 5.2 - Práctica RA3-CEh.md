@@ -79,7 +79,7 @@ Realizar un bucle `@for` **sobre la variable $num_elementos** que haga lo siguie
    
 >**Pregunta:** ¿Qué realiza este bucle?  
 
-# 5 Tarea RA3-CEh
+# 5 Práctica
 Subir el resultado de vuestra práctica a aules en el apartado correspondiente.
 
 # 6 Tarea RA2-CEj
