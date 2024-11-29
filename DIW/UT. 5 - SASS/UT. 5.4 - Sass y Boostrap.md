@@ -83,10 +83,22 @@ para añadir clases de estilos propias de Bootstrap, simplemente añadiremos su 
 ## 5.1 Contenidos
 Bootstrap proporciona una variedad de clases para mejorar y estructurar el contenido. Incluye clases de tipografía para encabezados, párrafos y alineación de texto, así como clases de ayuda para el espaciado y los colores de texto.  
 <a href="https://getbootstrap.com/docs/5.3/content/reboot/">Más información</a>  
-## 5.1 Formularios
 
+## 5.2 Formularios
+Bootstrap simplifica la creación de formularios con componentes y diseños predefinidos. Incluye clases para controles de formulario como campos de texto, menús desplegables y casillas de verificación. Los formularios se pueden personalizar fácilmente con diferentes tamaños de entrada, estados de validación y opciones de diseño.
 <a href="https://getbootstrap.com/docs/5.3/forms/overview/">**Más información**</a>
 
+## 5.3 Formularios
+Bootstrap simplifica la creación de formularios con componentes y diseños predefinidos. Incluye clases para controles de formulario como campos de texto, menús desplegables y casillas de verificación. Los formularios se pueden personalizar fácilmente con diferentes tamaños de entrada, estados de validación y opciones de diseño.
+<a href="https://getbootstrap.com/docs/5.3/forms/overview/">**Más información**</a>
+
+## 5.4 Componentes
+Bootstrap ofrece un amplio conjunto de componentes predefinidos para simplificar el desarrollo de interfaces de usuario. Estos incluyen botones, tarjetas, modales, barras de navegación y más. Cada componente es personalizable y responsivo, lo que garantiza que tu aplicación web mantenga una apariencia coherente en diferentes dispositivos y tamaños de pantalla.
+<a href="https://getbootstrap.com/docs/5.3/forms/overview/">**Más información**</a>
+
+## 5.5 Componentes de ayuda
+Los helpers de Bootstrap son clases utilitarias que simplifican tareas comunes y mejoran la legibilidad. Incluyen clases para la alineación de texto, visibilidad, propiedades de visualización y más. Los helpers facilitan el ajuste de elementos sin necesidad de escribir CSS personalizado, acelerando el desarrollo y garantizando la coherencia.
+<a href="https://getbootstrap.com/docs/5.3/helpers/clearfix/">**Más información**</a>
 
 Layout (paginación)
 El diseño de Bootstrap está basado en un sistema de cuadrícula flexible que se ajusta al tamaño de la pantalla.  
@@ -96,9 +108,8 @@ Más información <a href="https://getbootstrap.com/docs/5.3/layout/breakpoints/
 
 
 
-## 5.3 Formularios
 
-## 5.4 Componentes
+
 
 ## 5.5 Componentes de ayuda
 
