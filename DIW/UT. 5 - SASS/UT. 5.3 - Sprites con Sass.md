@@ -360,7 +360,10 @@ El código utiliza la etiqueta `<svg>` junto con `<use>` para incluir **una imag
    - **`#canada`:** Identificador único (`id`) del símbolo o elemento gráfico dentro de ese archivo.
 
 ## 3.3 Tarea RA3CEe
-1. Realizar un **sprite SVG** que incluya una colección de al menos 10 imágenes.
+1. Realizar un **sprite SVG** que incluya una colección de iconos de redes sociales (mínimo 3 iconos).
 2. Crear un archivo de estilos Sass que cree unos estilos para cada imagen.
-3. Renderizar el resultado con un HTML.
-4. Subir vuestras soluciones a la tarea de aules correspondiente. La entrega deberá incluir el archivo.svg, el Sass y el HTML.
+3. Al pasar por encima de los iconos, estos deberán ampliarse en un factor x1.05 (sois libres de usar propiedades de SVG o de CSS para realizar la animación).
+4. Al pinchar encima del icono, estos deberán enlazar a la red social correspondiente.
+5. Al soltar el ratón, se emitirá <a href="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/audio/notification.mp3">**este sonido**</a>. 
+6. Renderizar el resultado con un HTML. Optimizar el HTML para que las etiquetas sean coherentes con su contenido.
+7. Subir vuestras soluciones a la tarea de aules correspondiente. La entrega deberá incluir el archivo.svg, el Sass y el HTML.
