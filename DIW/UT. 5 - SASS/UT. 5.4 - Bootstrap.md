@@ -111,7 +111,7 @@ Las utilidades de Bootstrap son clases pequeñas y reutilizables que proporciona
 <a href="https://getbootstrap.com/docs/5.3/utilities/api/">**Más información**</a>
 
 # 6 Paginación (layout con Bootstrap)
-En **Bootstrap 5**, los **layouts** son las estructuras base que se pueden usar para organizar el contenido en una página web.  
+En **Bootstrap 5**, los **layouts** son las estructuras basicas que se pueden usar para organizar el contenido en una página web.  
 
 ## 6.1 Breakpoints
 Bootstrap 5 utiliza el **responsive design de forma nativa** lo que permite crear layouts adaptables al tamaño de la  pantalla.
@@ -129,8 +129,9 @@ Los breakpoints de Bootstrap vienen definidos en la siguiente tabla.
 
 ## 6.2 Containers / contenedores
 Son el elemento básico de Bootstrap y son necesarios si queremos usar el sistema de rejilla nativo (de Bootstrap).  
+El selector `container` permite definir una caja con unas dimensiones `responsive` como podemos ver en la siguiente tabla. 
 
-**Formas de definir el ancho de un contenedor:**
+**Formas de definir el ancho de una caja con container :**
  - .container
  - .container-{breakpoint}
  - .container-fluid
@@ -155,25 +156,96 @@ Son el elemento básico de Bootstrap y son necesarios si queremos usar el sistem
 ```
 
 ## 6.3 Grid / rejilla
-El sistema de rejilla es el núcleo del diseño en Bootstrap. Está basado en **flexbox** y divide la página en un sistema de 12 columnas. Estas columnas se pueden combinar para crear diferentes diseños.
+El sistema de rejilla es el núcleo del diseño de Bootstrap. Está basado en **flexbox** y divide la página en un **sistema de 12 columnas**. Estas columnas se pueden combinar para crear diferentes diseños.  
+El selector `row` sirve para estructurar el contenido de la página en filas. Cada fila estará compuesta de **una serie de columnas** y esas columnas, se ajustarán al tamaño de la pantalla. 
 
-- **Contenedores (`container`)**:
-  Sirven como envoltorios básicos para alinear y centrar el contenido:
-  - `container`: ancho fijo para cada breakpoint.
-  - `container-fluid`: ancho siempre al 100% (totalmente fluido).
-  - `container-{breakpoint}`: contenedor adaptado al ancho de un breakpoint específico (`container-sm`, `container-lg`, etc.).
-
-- **Filas (`row`)**:
-  Agrupan columnas y garantizan un correcto alineamiento y espaciado horizontal (usa `display: flex` internamente).
-
-- **Columnas (`col`)**:
-  Son los elementos que definen el ancho del contenido dentro de una fila. Las clases de columnas son responsivas y usan breakpoints:
-  ```html
-  <div class="row">
-    <div class="col-md-6">Columna 1</div>
-    <div class="col-md-6">Columna 2</div>
+### 6.3.1 Columnas de ancho idéntico
+Para renderizar columnas de ancho identico, usaremos el selector de clase `col`.
+>**Ejemplo**
+```
+<body>
+  <div class="container text-center">
+    <div class="row" style="background-color: antiquewhite;">
+      <div class="col">
+        Columna 1
+      </div>
+      <div class="col" style="background-color: aqua;">
+        Columna 2
+      </div>
+      <div class="col" style="background-color: aquamarine;">
+        Column 3
+      </div>
+    </div>
   </div>
-  ```
+</body>
+```
+
+### 6.3.2 Columnas de ancho desigual
+Para definir un tamaño de columnas personalizado, usaremos el sufijo `-XX`, donde XX puede adoptar los valores del 1 al 12 (recordar que el sistema de columnas en Bootstrap se basa sobre **una distribución máxima de 12 columnas**).
+>**Ejemplo de 3 columnas que ocupan 2, 8 y 2 columnas (del grid) respectivamente.**  
+```
+<body> 
+  <div class="container text-center">
+    <div class="row" style="background-color: antiquewhite;">
+      <div class="col-2">
+        Columna 1
+      </div>
+      <div class="col-8" style="background-color: aqua;">
+        Columna 2
+      </div>
+      <div class="col-2" style="background-color: aquamarine;">
+        Column 3
+      </div>
+    </div>
+  </div>
+</body>
+```
+**Nota importante:** Para evitar resultados inesperados siempre respetar que la suma del ancho de las columnas sea igual a 12.
+
+### 6.3.3 Columnas ajustables a su contenido
+Es bastante habitual tener que reajustar el ancho de las columnas en función del tamaño del `viewport` y del contenido de las columnas. Para ello usaremos las clases `col-{breakpoint}-auto`. 
+
+>**Ejemplo con y sin reajute del ancho de las columnas**  
+>Al llegar al breakpoint (lg: 992px) **col-lg-auto** "pasa a ser col-lg" y sigue la misma estrategia que container.
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/col-lg.png" width:200px>
+
+```
+<body> 
+  <div class="container text-center" >
+    <div class="row justify-content-md-center col-lg-auto" style="background-color: black; color: white;">
+      Las columnas 1 y 3 tienen un ancho de 2. La columna 3 tiene un ancho automático a su contenido
+    </div>
+    <div class="row justify-content-md-center">
+      <div class="col-2" style="background-color: antiquewhite;">
+        1 of 3
+      </div>
+      <div class="col-lg-auto" style="background-color: aqua;">
+        El ancho del contenedor se ajusta hasta llegar al breakpoint. 
+      </div>
+      <div class="col-2" style="background-color: aquamarine;">
+        3 of 3
+      </div>
+    </div>
+    <div class="row justify-content-md-center col-lg-auto" style="background-color: black; color: white;">
+      Las columnas 1, 2 y 3 tienen un ancho de 2, 8 y 2 respectivamente
+    </div>
+    <div class="row justify-content-md-center">
+      <div class="col-2" style="background-color: antiquewhite;">
+        1 of 3
+      </div>
+      <div class="col-8" style="background-color: aqua;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sit amet. 
+      </div>
+      <div class="col-2" style="background-color: aquamarine;">
+        3 of 3
+      </div>
+    </div>
+  </div>
+</body>
+```
+
+
+
 
 ---
 
@@ -198,26 +270,7 @@ El espaciado entre los elementos se controla mediante utilidades como:
 
 ---
 
-#### 5. **Layouts predefinidos**
-Bootstrap 5 incluye plantillas y componentes que ayudan a configurar layouts comunes:
-- **Navbar layouts**:
-  Menús de navegación adaptables.
-  ```html
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-  </nav>
-  ```
-- **Sidebar layouts**:
-  Configuraciones comunes de contenido con una barra lateral fija.
-- **Cards**:
-  Diseños flexibles que agrupan contenido.
-  ```html
-  <div class="card">
-    <div class="card-body">Contenido</div>
-  </div>
-  ```
 
----
 
 #### 6. **Utilities para diseño avanzado**
 Bootstrap 5 introduce utilidades adicionales para lograr diseños más personalizados sin necesidad de escribir CSS adicional:
@@ -226,8 +279,3 @@ Bootstrap 5 introduce utilidades adicionales para lograr diseños más personali
 - **Clases de orden**:
   Clases como `order-md-1` para cambiar el orden de las columnas responsivamente.
 
----
-
-En resumen, **Bootstrap 5** facilita la creación de layouts estructurados y responsivos mediante su sistema de rejilla, breakpoints y utilidades. Puedes crear desde estructuras simples hasta layouts avanzados para cualquier tipo de pantalla.
-
->**Ejemplo**
