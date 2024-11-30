@@ -1,5 +1,5 @@
 ---
-Título: UD. 5.4 - Bootstrap
+Título: UD. 5.4 - Bootstrap 5
 Autor: Javier Egea Blasco
 Año: 24-25
 Palabras clave: DAW, DIW
@@ -85,28 +85,148 @@ para añadir clases de estilos propias de Bootstrap, simplemente añadiremos su 
 4. Entregar las capturas de pantalla en un documento de texto y subirlo a AULES en el apartado correspondiente.
 
 # 5 Componentes de Bootstrap.
-## 5.1 Contenidos
-Bootstrap proporciona una variedad de clases para mejorar y estructurar el contenido. Incluye clases de tipografía para encabezados, párrafos y alineación de texto, así como clases de ayuda para el espaciado y los colores de texto.  
-<a href="https://getbootstrap.com/docs/5.3/content/reboot/">Más información</a>  
-
-## 5.2 Formularios
-Bootstrap simplifica la creación de formularios con componentes y diseños predefinidos. Incluye clases para controles de formulario como campos de texto, menús desplegables y casillas de verificación. Los formularios se pueden personalizar fácilmente con diferentes tamaños de entrada, estados de validación y opciones de diseño.
-<a href="https://getbootstrap.com/docs/5.3/forms/overview/">**Más información**</a>
-
-## 5.3 Componentes
-Bootstrap ofrece un amplio conjunto de componentes predefinidos para simplificar el desarrollo de interfaces de usuario. Estos incluyen botones, tarjetas, modales, barras de navegación y más. Cada componente es personalizable y responsivo, lo que garantiza que tu aplicación web mantenga una apariencia coherente en diferentes dispositivos y tamaños de pantalla.
-<a href="https://getbootstrap.com/docs/5.3/forms/overview/">**Más información**</a>
-
-## 5.4 Componentes de ayuda
-Los helpers de Bootstrap son clases utilitarias que simplifican tareas comunes y mejoran la legibilidad. Incluyen clases para la alineación de texto, visibilidad, propiedades de visualización y más. Los helpers facilitan el ajuste de elementos sin necesidad de escribir CSS personalizado, acelerando el desarrollo y garantizando la coherencia.
-<a href="https://getbootstrap.com/docs/5.3/helpers/clearfix/">**Más información**</a>
-
-## 5.5 Utilidades
-Las utilidades de Bootstrap son clases pequeñas y reutilizables que proporcionan funcionalidad y control adicionales. Incluyen clases para espaciado, alineación, bordes y colores de fondo. Las utilidades ayudan a ajustar rápidamente y de manera eficiente la apariencia de los elementos, permitiendo realizar ajustes de diseño flexibles y responsivos.
-<a href="https://getbootstrap.com/docs/5.3/utilities/api/">**Más información**</a>
-
-## 5.6 Layout (paginación)
+## 5.1 Layout (paginación)
 El diseño de Bootstrap está basado en un sistema de cuadrícula flexible que se ajusta al tamaño de la pantalla.  
 **Utiliza un sistema de cuadrícula de 12 columnas** para crear diseños responsivos. 
 Más información <a href="https://getbootstrap.com/docs/5.3/layout/breakpoints/">**aquí**</a>
+
+## 5.2 Contenidos
+Bootstrap proporciona una variedad de clases para mejorar y estructurar el contenido. Incluye clases de tipografía para encabezados, párrafos y alineación de texto, así como clases de ayuda para el espaciado y los colores de texto.  
+<a href="https://getbootstrap.com/docs/5.3/content/reboot/">Más información</a>  
+
+## 5.3 Formularios
+Bootstrap simplifica la creación de formularios con componentes y diseños predefinidos. Incluye clases para controles de formulario como campos de texto, menús desplegables y casillas de verificación. Los formularios se pueden personalizar fácilmente con diferentes tamaños de entrada, estados de validación y opciones de diseño.
+<a href="https://getbootstrap.com/docs/5.3/forms/overview/">**Más información**</a>
+
+## 5.4 Componentes
+Bootstrap ofrece un amplio conjunto de componentes predefinidos para simplificar el desarrollo de interfaces de usuario. Estos incluyen botones, tarjetas, modales, barras de navegación y más. Cada componente es personalizable y responsivo, lo que garantiza que tu aplicación web mantenga una apariencia coherente en diferentes dispositivos y tamaños de pantalla.
+<a href="https://getbootstrap.com/docs/5.3/forms/overview/">**Más información**</a>
+
+## 5.5 Componentes de ayuda
+Los helpers de Bootstrap son clases utilitarias que simplifican tareas comunes y mejoran la legibilidad. Incluyen clases para la alineación de texto, visibilidad, propiedades de visualización y más. Los helpers facilitan el ajuste de elementos sin necesidad de escribir CSS personalizado, acelerando el desarrollo y garantizando la coherencia.
+<a href="https://getbootstrap.com/docs/5.3/helpers/clearfix/">**Más información**</a>
+
+## 5.6 Utilidades
+Las utilidades de Bootstrap son clases pequeñas y reutilizables que proporcionan funcionalidad y control adicionales. Incluyen clases para espaciado, alineación, bordes y colores de fondo. Las utilidades ayudan a ajustar rápidamente y de manera eficiente la apariencia de los elementos, permitiendo realizar ajustes de diseño flexibles y responsivos.
+<a href="https://getbootstrap.com/docs/5.3/utilities/api/">**Más información**</a>
+
+# 6 Paginación (layout con Bootstrap)
+En **Bootstrap 5**, los **layouts** son las estructuras base que se pueden usar para organizar el contenido en una página web.  
+
+## 6.1 Breakpoints
+Bootstrap 5 utiliza el **responsive design de forma nativa** lo que permite crear layouts adaptables al tamaño de la  pantalla.
+Los breakpoints de Bootstrap vienen definidos en la siguiente tabla.
+
+| Breakpoint | Prefijo de clase | Tamaño mínimo de pantalla |
+|------------|------------------|---------------------------|
+| Extra small |	None |	<576px |
+| Small	 |sm	 | ≥576px |
+| Medium |	md | ≥768px |
+| Large |	lg	| ≥992px |
+| Extra | large	xl |	≥1200px |
+| Extra extra large |	xxl | ≥1400px |
+
+
+## 6.2 Containers / contenedores
+Son el elemento básico de Bootstrap y son necesarios si queremos usar el sistema de rejilla nativo (de Bootstrap).  
+
+**Formas de definir el ancho de un contenedor:**
+ - .container
+ - .container-{breakpoint}
+ - .container-fluid
+
+|| Extra small <576px | Small ≥576px | Medium ≥768px | Large ≥992px | X-Large ≥1200px | XX-Larg ≥1400px |
+|------------------|--------------------|--------------|---------------|--------------|-----------------|-----------------|
+| .container |	100% | 540px | 720px | 960px |	1140px |	1320px |	
+| .container-sm |	100% |	540px |	720px |	960px |	1140px |	1320px |
+| .container-md	| 100% |	100% |	720px |	960px |	1140px |	1320px |
+| .container-lg	| 100% |	100% |	100% |	960px |	1140px |	1320px |
+| .container-xl |	100% |	100% |	100% |	100% |	1140px |	1320px |
+| .container-xxl |	100% |	100% |	100% |	100% |	100% |	1320px |
+| .container-fluid |	100% |	100% |	100% |	100% |	100% |	100% |
+
+>**Ejemplo**
+<div class="container">
+  ¡Mi primer contenedor en Bootstrap5!
+</div>
+
+Podemos ver en la siguiente tabla 
+---
+
+#### 1. **El sistema de rejilla (Grid System)**
+El sistema de rejilla es el núcleo del diseño en Bootstrap. Está basado en **flexbox** y divide la página en un sistema de 12 columnas. Estas columnas se pueden combinar para crear diferentes diseños.
+
+- **Contenedores (`container`)**:
+  Sirven como envoltorios básicos para alinear y centrar el contenido:
+  - `container`: ancho fijo para cada breakpoint.
+  - `container-fluid`: ancho siempre al 100% (totalmente fluido).
+  - `container-{breakpoint}`: contenedor adaptado al ancho de un breakpoint específico (`container-sm`, `container-lg`, etc.).
+
+- **Filas (`row`)**:
+  Agrupan columnas y garantizan un correcto alineamiento y espaciado horizontal (usa `display: flex` internamente).
+
+- **Columnas (`col`)**:
+  Son los elementos que definen el ancho del contenido dentro de una fila. Las clases de columnas son responsivas y usan breakpoints:
+  ```html
+  <div class="row">
+    <div class="col-md-6">Columna 1</div>
+    <div class="col-md-6">Columna 2</div>
+  </div>
+  ```
+
+---
+
+
+#### 3. **Alineación y distribución**
+Bootstrap proporciona herramientas para alinear elementos dentro de filas y columnas:
+- **Alineación vertical**:
+  - `align-items-start`, `align-items-center`, `align-items-end`.
+- **Distribución horizontal**:
+  - `justify-content-start`, `justify-content-center`, `justify-content-between`, etc.
+
+---
+
+#### 4. **Espaciado (Spacing)**
+El espaciado entre los elementos se controla mediante utilidades como:
+- Márgenes: `m-`, `mt-`, `mb-`, etc.
+- Padding: `p-`, `pt-`, `pb-`, etc.
+- Ejemplo:
+  ```html
+  <div class="p-3 m-2">Contenido</div>
+  ```
+
+---
+
+#### 5. **Layouts predefinidos**
+Bootstrap 5 incluye plantillas y componentes que ayudan a configurar layouts comunes:
+- **Navbar layouts**:
+  Menús de navegación adaptables.
+  ```html
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+  </nav>
+  ```
+- **Sidebar layouts**:
+  Configuraciones comunes de contenido con una barra lateral fija.
+- **Cards**:
+  Diseños flexibles que agrupan contenido.
+  ```html
+  <div class="card">
+    <div class="card-body">Contenido</div>
+  </div>
+  ```
+
+---
+
+#### 6. **Utilities para diseño avanzado**
+Bootstrap 5 introduce utilidades adicionales para lograr diseños más personalizados sin necesidad de escribir CSS adicional:
+- **Grid modificable**:
+  Clases como `g-3` para definir el tamaño del espacio entre filas/columnas.
+- **Clases de orden**:
+  Clases como `order-md-1` para cambiar el orden de las columnas responsivamente.
+
+---
+
+En resumen, **Bootstrap 5** facilita la creación de layouts estructurados y responsivos mediante su sistema de rejilla, breakpoints y utilidades. Puedes crear desde estructuras simples hasta layouts avanzados para cualquier tipo de pantalla.
+
 >**Ejemplo**
