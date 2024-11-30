@@ -413,12 +413,7 @@ Bootstrap proporciona herramientas para alinear elementos dentro de filas y colu
 El espaciado entre los elementos se controla mediante utilidades como:
 - Márgenes: `m-`, `mt-`, `mb-`, etc.
 - Padding: `p-`, `pt-`, `pb-`, etc.
-- Ejemplo:
-  ```html
-  <div class="p-3 m-2">Contenido</div>
-  ```
 
----
 
 
 
