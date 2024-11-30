@@ -146,14 +146,15 @@ Son el elemento básico de Bootstrap y son necesarios si queremos usar el sistem
 | .container-fluid |	100% |	100% |	100% |	100% |	100% |	100% |
 
 >**Ejemplo**
-<div class="container">
-  ¡Mi primer contenedor en Bootstrap5!
-</div>
+```
+<body>
+  <div class="container" style="background-color: antiquewhite;">Contenedor con container</div>
+  <div class="container-lg" style="background-color: rgb(223, 250, 215);">Contenedor con container-lg</div>
+  <div class="container-fluid" style="background-color: rgb(215, 236, 250);">Contenedor con container-fluid</div>
+</body>
+```
 
-Podemos ver en la siguiente tabla 
----
-
-#### 1. **El sistema de rejilla (Grid System)**
+## 6.3 Grid / rejilla
 El sistema de rejilla es el núcleo del diseño en Bootstrap. Está basado en **flexbox** y divide la página en un sistema de 12 columnas. Estas columnas se pueden combinar para crear diferentes diseños.
 
 - **Contenedores (`container`)**:
