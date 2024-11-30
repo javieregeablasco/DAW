@@ -1,5 +1,5 @@
 ---
-Título: UD. 5.4 - Sass y Bootstrap
+Título: UD. 5.4 - Bootstrap
 Autor: Javier Egea Blasco
 Año: 24-25
 Palabras clave: DAW, DIW
