@@ -244,10 +244,159 @@ Es bastante habitual tener que reajustar el ancho de las columnas en función de
 </body>
 ```
 
+### 6.3.3 Columnas ajustables al breakpoint
+Del mismo modo que podemos ajustar el ancho del contenedor a su contenido, también podemos ajustarlo al ancho del contendor padre y en función del breakpoint.
+```
+<body> 
+  <div class="container text-center" >
+    <div class="row justify-content-md-center">
+      <div class="col-1" style="background-color: antiquewhite;">
+        1 de 12
+      </div>
+      <div class="col-1" style="background-color:aqua;">
+        2 de 12
+      </div>
+      <div class="col-1" style="background-color:bisque";>
+        3 de 12
+      </div>
+      <div class="col-1" style="background-color:azure">
+        4 de 12
+      </div>
+      <div class="col-1" style="background-color:beige">
+        5 de 12
+      </div>
+      <div class="col-1" style="background-color:bisque">
+        6 de 12
+      </div>
+      <div class="col-1" style="background-color:black; color:white">
+        7 de 12
+      </div>
+      <div class="col-1" style="background-color:blanchedalmond">
+        8 de 12
+      </div>
+      <div class="col-1" style="background-color:blue; color: aliceblue;">
+        9 de 12
+      </div>
+      <div class="col-1" style="background-color:blueviolet; color:aliceblue">
+        10 de 12
+      </div>
+      <div class="col-1" style="background-color:brown; color:aliceblue">
+        11 de 12
+      </div>
+      <div class="col-1" style="background-color:burlywood">
+        12 de 12
+      </div>   
+    </div>
+    <div class="row justify-content-md-center col-lg-auto" style="background-color: black; color: white;">
+      Las columnas 1, 2 y 3 tienen un ancho de 1, 10 y 1 respectivamente hasta el breakpoint "sm"
+    </div>
+    <div class="row justify-content-md-center">
+      <div class="col-lg-1 " style="background-color: antiquewhite;">
+        1
+      </div>
+      <div class="col-lg-10" style="background-color: aqua;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sit amet. 
+      </div>
+      <div class="col-lg-1" style="background-color: aquamarine;">
+        1
+      </div>
+    </div>
+  </div>
+</body>
+```
+
+También podemos definir más de un breakpoint para definir el ancho `responsive` de las columnas.
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>col 2 brekpoints</title>
+    <style>      
+      @media screen and (max-width: 960px) {
+        #comentario::after {
+          background-color:red;
+          color: black;
+          width: 100%;
+          content: "Luego pasa a 1, 10, 1";       
+        }
+      }
+
+      @media screen and (max-width: 540px) {
+        #comentario::after {
+          background-color:blueviolet;
+          color: wheat;
+          width: 100%;
+          content: "Luego pasa a 100%, 100%, 100%";       
+        }
+      }
+    </style>
+</head>
+<body> 
+  <div class="container text-center" >
+    <div class="row justify-content-md-center">
+      <div class="col-1" style="background-color: antiquewhite">
+        1
+      </div>
+      <div class="col-1" style="background-color:aqua">
+        2
+      </div>
+      <div class="col-1" style="background-color:bisque">
+        3
+      </div>
+      <div class="col-1" style="background-color:azure">
+        4
+      </div>
+      <div class="col-1" style="background-color:beige">
+        5
+      </div>
+      <div class="col-1" style="background-color:bisque">
+        6
+      </div>
+      <div class="col-1" style="background-color:black; color:white">
+        7
+      </div>
+      <div class="col-1" style="background-color:blanchedalmond">
+        8
+      </div>
+      <div class="col-1" style="background-color:blue; color: aliceblue">
+        9
+      </div>
+      <div class="col-1" style="background-color:blueviolet; color:aliceblue">
+        10
+      </div>
+      <div class="col-1" style="background-color:brown; color:aliceblue">
+        11
+      </div>
+      <div class="col-1" style="background-color:burlywood">
+        12
+      </div>   
+    </div>
+    <div id="comentario" class="row justify-content-md-center col-lg-auto" style="background-color: black; color: white;">
+      Las columnas 1, 2 y 3 tienen un ancho de 2, 8 y 2 respectivamente hasta el breakpoint "md"
+    </div>
+    <div class="row justify-content-md-center">
+      <div class="col-lg-2 col-sm-1" style="background-color: antiquewhite;">
+        1
+      </div>
+      <div class="col-lg-8 col-sm-10" style="background-color: aqua;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sit amet. 
+      </div>
+      <div class="col-lg-2 col-sm-1" style="background-color: aquamarine;">
+        1
+      </div>
+    </div>
+  </div>
+</body>
+```
 
 
-
----
 
 
 #### 3. **Alineación y distribución**
