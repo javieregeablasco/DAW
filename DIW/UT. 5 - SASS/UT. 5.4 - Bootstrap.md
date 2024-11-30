@@ -396,6 +396,7 @@ También podemos definir más de un breakpoint para definir el ancho `responsive
 </body>
 ```
 
+### 6.3.4 Predefinir la cantidad de columnas
 
 
 
