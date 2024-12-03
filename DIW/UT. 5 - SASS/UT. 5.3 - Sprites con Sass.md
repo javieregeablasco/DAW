@@ -87,18 +87,18 @@ Existen todo tipo de herramientas para construir sprites, desde **preprocesadore
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/colocarImagenes.webp"> 
  - Recortar o escalar la imagen si es necesario.
 
-## 2.3 Gestión del sprite con SCSS, ejemplo práctico
+## 2.2 Gestión del sprite con SCSS, ejemplo práctico
 Después de crear la imagen del sprite, utilizaremos SCSS para gestionar los iconos de las imágenes. 
-### 2.3.1 Archivo sprite
+### 2.2.1 Archivo sprite
 Importar el archivo y visualizar su contenido.
 <a href="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/flags.png">link al archivo</a>
 
-### 2.3.2 Usar directivas
+### 2.2.2 Usar directivas
 ```
 @use "sass:list";
 ```
 
-### 2.3.3 Crear las variables del proyecto
+### 2.2.3 Crear las variables del proyecto
 $spriteArchivoFuente: './media/flags.png';  
 $ancho: 44px;  
 $alto: 30px;  
@@ -160,7 +160,7 @@ $listaNombrePais: "Andorra", "United Arab Emirates", "Afghanistan", "Antigua and
 
 >**Pregunta:** ¿De donde viene el valor de $spriteRango: 0.413223?
 
-### 2.3.4 Definir los estilos básicos
+### 2.2.4 Definir los estilos básicos
 ```
 .bandera {
   display: flex;
@@ -176,7 +176,7 @@ $listaNombrePais: "Andorra", "United Arab Emirates", "Afghanistan", "Antigua and
 **Explicación del código:**  
 Este estilo establece un contenedor que tiene un tamaño definido por las variables $ancho y $alto y establece **una imagen de fondo** que se ajusta al tamaño del contenedor.  
 
-### 2.3.5 Definir e instanciar las funciones del proyecto
+### 2.2.5 Definir e instanciar las funciones del proyecto
 Como acabamos de ver en el archivo sprite, la primera imagen es una `dummy` para cuando se escriba mal <a href="https://www.sanidad.gob.es/ciudadanos/saludAmbLaboral/docs/codigoIsoPai.pdf">**el código del país**</a>.  
 Así pues, será conveniente invertir la lista de paises para empezar por el final.
 ```
@@ -198,7 +198,7 @@ Utiliza un bucle @for para recorrer la lista original desde el final hasta el pr
 `list.append($listaInvertida, list.nth($listado, $i))` agrega un nuevo elemento al final de la lista $listaInvertida.  
 `$listaInvertida` y `$listaInvertidaPais` instancian `funcionInvertirLista()`y `funcionInvertirLista()` respectivamente, para obtener el inverso de las listas que se les pasan por argumento.  
 
-### 2.3.6 Definir los estilos para cada país
+### 2.2.6 Definir los estilos para cada país
 A continuación se definen los estilos de cada país siguiendo el siguiente esquema, `.bandera-XX`, donde XX es el código de país.  
 Para ello se utilizará un **bucle @each**. Para fines cosméticos, se añade al estilos un pseudo elemento **::after** que añade, como contenido adicional, el nombre completo del país.  
 ```
@@ -224,7 +224,7 @@ Para ello se utilizará un **bucle @each**. Para fines cosméticos, se añade al
 `.bandera-#{$pais} {}` define una clase con el nombre de cada país. Por ejemplo, si el valor de `$pais` es "España", el selector será `.bandera-España`.  
 `background-position: 0% (100% - ($spriteRango * ($i - 1)) * 1%)` establece **la posición vertical** de fondo** (x estará siempre a 0%).    
 
-### 2.3.5 Definir un HTML básico para ver el resultado
+### 2.2.5 Definir un HTML básico para ver el resultado
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -252,7 +252,7 @@ Para ello se utilizará un **bucle @each**. Para fines cosméticos, se añade al
 >¿Cual es la bandera representada?
 >¿Por qué se ha pintado esa bandera?  
 
-### 2.3.6 Tarea RA3CEd
+### 2.2.6 Tarea RA3CEd
 Modularizar el siguiente código para que el bucle llame a un `@mixin estilos-bandera` el cual será el encargado de crear los estilos `.bandera-#{$pais}`
 ```
 @each $pais in $listaInvertida {
