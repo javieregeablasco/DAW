@@ -99,10 +99,10 @@ Importar el archivo y visualizar su contenido.
 ```
 
 ### 2.3.3 Crear las variables del proyecto
-$spriteArchivoFuente: './media/flags.png';
-$ancho: 44px;
-$alto: 30px;
-$spriteRango: 0.413223;
+$spriteArchivoFuente: './media/flags.png';  
+$ancho: 44px;  
+$alto: 30px;  
+$spriteRango: 0.413223;  
 
 $listaPaises: "ad", "ae", "af", "ag", "al", "am", "an", "ao", "aq", "ar", "as", "at", "au", 
 "aw", "az", "ba", "bb", "bd", "be", "bf", "bg", "bh", "bi", "bj", "bm", "bn", "bo", "br",
