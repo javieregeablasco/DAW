@@ -12,16 +12,16 @@ Un sprite es una imagen que contiene **múltiples gráficos pequeños combinados
 **Ejemplo de sprite**  
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/sprite.png" width=50%>
 
-## 2.2 ¿Por qué usar sprites?
+## 1.2 ¿Por qué usar sprites?
 Los origines de los sprites emergen de las conexiones a internet deficientes y de la necesidad de mejorar el rendimiento y la eficiencia de cargar de las páginas web. 
 
-## 2.3 Ventajas de usar sprites
+## 1.3 Ventajas de usar sprites
 - **Reducción de solicitudes al servidor:** Al solo usar una imágen (multiple), se disminuye el número de peticiones HTTP.
 - **Optimización del rendimiento:** Menos peticiones significa tiempos de carga más rápidos.
 - **Consistencia visual:** Los sprites aseguran que todas las imágenes se carguen al mismo tiempo, evitando que algunos íconos se queden en blanco mientras se descargan.
 - **Facilidad de mantenimiento:** Permiten centralizar la gestión de gráficos pequeños en un solo archivo, haciendo más fácil actualizarlos o reemplazarlos.
 
-## 2.4 Formatos de imágenes admisibles  
+## 1.4 Formatos de imágenes admisibles  
 Todos los formatos son admisibles pero los sprites se usan principalmentes con png y svg.
 - **PNG:**
   - Es el formato más utilizado para sprites tradicionales debido a su soporte para transparencia y alta calidad de imagen.
