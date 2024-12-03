@@ -575,6 +575,7 @@ Consiste en anidar una fila (row) dentro de una columna (col) existente, permiti
 
 ### 6.3.6 Tarea RA4 CEc
 
+## 7 Columnas
 
 #### 3. **Alineación y distribución**
 Bootstrap proporciona herramientas para alinear elementos dentro de filas y columnas:
