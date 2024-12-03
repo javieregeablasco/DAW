@@ -575,8 +575,12 @@ Consiste en anidar una fila (row) dentro de una columna (col) existente, permiti
 
 ### 6.3.6 Tarea RA4 CEc
 
-## 6.4 Estilos de columnas
+## 6.4 Estilos de columnas de Bootstrap
+Los estilos de columnas permiten aplicar estilos para el renderizado de las columnas dentro de su contenedor.  
+
 ### 6.4.1 Alineación vertical de columnas
+Para la alineación vertical de la columnas dentro de su contenedor, disponemos de las clases `align-items-start`, `align-items-center` y `align-items-end`
+
 ### 6.4.2 Alineación horizontal de columnas
 ### 6.4.3 Organización de las columnas
 La propiedad flex-wrap de CSS especifica si los elementos "hijos" son obligados a permanecer en una misma línea o pueden fluir en varias líneas. Si la cobertura (wrap) está permitida, esta propiedad también te permite controlar la dirección en la cual serán apilados los elementos.
@@ -585,6 +589,7 @@ La propiedad flex-wrap de CSS especifica si los elementos "hijos" son obligados 
 ### 6.4.5 Ordenar columnas
 ### 6.4.6 Clase offset para posicionar columnas
 ### 6.4.7 Márgenes
+### 6.4.8 Columnas únicas
 
 
 
