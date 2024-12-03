@@ -573,7 +573,7 @@ Consiste en anidar una fila (row) dentro de una columna (col) existente, permiti
 </body>
 ```  
 
-### 6.3.6 Ejercicio
+### 6.3.6 Tarea RA4 CEc
 
 
 #### 3. **Alineación y distribución**
