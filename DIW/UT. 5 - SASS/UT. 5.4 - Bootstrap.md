@@ -535,7 +535,43 @@ Como es de esperar, también podemos ajustar la cantidad de columnas a la resolu
 </body>
 ```
 ### 6.3.5 Anidación de columnas
+La anidación de columnas permite crear estructuras más complejas dentro del sistema grid.  
+Consiste en anidar una fila (row) dentro de una columna (col) existente, permitiendo dividir esa columna en subcolumnas adicionales. Es particularmente útil para organizar contenido de nuestro proyecto en niveles jerárquicos. 
 
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>col 2 brekpoints</title>
+</head>
+
+<body> 
+  <div class="container text-center" >
+    <div class="row justify-content-md-center col-lg-auto" style="background-color: black; color: white; border: 2px solid blue;">
+        Ejemplo de anidación de columnas
+    </div>
+      <div class="row row-cols-2 justify-content-md-center">
+        <div class="col-3" style="background-color:blueviolet; color:white;">
+          columna no anidada 
+        </div>    
+        <div class="col-9" style="border: 1px solid mediumseagreen;">
+          <div class="row" style="background-color: brown; padding: 5px 5px 5px 5px; margin: 5px;">
+          <div class="col-3" style="background-color: aqua;">columna anidada 1</div>
+          <div class="col-6" style="background-color: aquamarine;">columna anidada 2</div>
+          <div class="col-3" style="background-color: bisque;">columna anidada 3</div>
+        </div>                
+      </div>
+    </div>      
+  </div>
+</body>
+```  
 
 ### 6.3.6 Ejercicio
 
