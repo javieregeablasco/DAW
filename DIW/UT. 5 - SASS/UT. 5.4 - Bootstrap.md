@@ -245,7 +245,8 @@ Es bastante habitual tener que reajustar el ancho de las columnas en función de
 ```
 
 ### 6.3.3 Columnas ajustables al breakpoint
-Del mismo modo que podemos ajustar el ancho del contenedor a su contenido, también podemos ajustarlo al ancho del contendor padre y en función del breakpoint.
+Del mismo modo que podemos ajustar el ancho del contenedor a su contenido, también podemos ajustarlo al ancho del contendor padre y en función del breakpoint.  
+ 
 ```
 <body> 
   <div class="container text-center" >
@@ -305,7 +306,9 @@ Del mismo modo que podemos ajustar el ancho del contenedor a su contenido, tambi
 </body>
 ```
 
-También podemos definir más de un breakpoint para definir el ancho `responsive` de las columnas.
+También podemos definir más de un breakpoint para definir el ancho `responsive` de las columnas que ocupará más o menos columnas en función del ancho del `viewport`.  
+En este ejemplo vemos como la distribución del ancho de las columnas pasa de ser 2,8,2 a ser 1,10,1 cuando el ancho de la ventana es inferior al `breakpoint Large` o sea `992px`.  
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -379,7 +382,7 @@ También podemos definir más de un breakpoint para definir el ancho `responsive
       </div>   
     </div>
     <div id="comentario" class="row justify-content-md-center col-lg-auto" style="background-color: black; color: white;">
-      Las columnas 1, 2 y 3 tienen un ancho de 2, 8 y 2 respectivamente hasta el breakpoint "md"
+      Las columnas 1, 2 y 3 tienen un ancho de 2, 8 y 2 respectivamente hasta el breakpoint "md" de **540px**.
     </div>
     <div class="row justify-content-md-center">
       <div class="col-lg-2 col-sm-1" style="background-color: antiquewhite;">
@@ -396,8 +399,144 @@ También podemos definir más de un breakpoint para definir el ancho `responsive
 </body>
 ```
 
-### 6.3.4 Predefinir la cantidad de columnas
+### 6.3.4 Predefinir la cantidad de columnas, clases row-cols
+Las clases relacionadas con `row-cols` permiten configurar rápidamente el número de columnas en un diseño grid utilizando el sistema de filas y columnas (row y col).  
+Estas clases son especialmente útiles cuando se quiere lograr un diseño con un número uniforme de columnas, independientemente de cuántas filas haya en total.
+```
+<body>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-12" style="background-color: black;color: aliceblue;">
+        Con row-cols-2, se predefine el contenedor a solo 2 columnas por fila
+      </div>    
+    </div>
+    <div class="row row-cols-2">
+      <div class="col" style="background-color: aliceblue;">Columna 1</div>
+      <div class="col" style="background-color: antiquewhite;">Columna 2</div>
+      <div class="col" style="background-color: aqua;">Columna 3</div>
+      <div class="col" style="background-color: aquamarine;">Columna 4</div>
+    </div>
+    <div class="row">
+      <div class="col-12" style="background-color: black;color: aliceblue;">
+        También se puede definir la cantidad de columnas que ocupará cada columna
+      </div>    
+    </div>
+    <div class="row row-cols-2">
+      <div class="col-8" style="background-color: aliceblue;">Columna 1</div>
+      <div class="col-4" style="background-color: antiquewhite;">Columna 2</div>
+      <div class="col-3" style="background-color: aqua;">Columna 3</div>
+      <div class="col-9" style="background-color: aquamarine;">Columna 4</div>
+    </div>
+    <div class="row">
+      <div class="col-12" style="background-color: black;color: aliceblue;">
+        Ejemplo con solo 3 columnas (a priori no sabemos cuantas columnas necesitabamos al iniciar el proyecto)
+      </div>    
+    </div>
+    <div class="row row-cols-2">
+      <div class="col-8" style="background-color: aliceblue;">Columna 1</div>
+      <div class="col-4" style="background-color: antiquewhite;">Columna 2</div>
+      <div class="col" style="background-color: aqua;">Columna 3</div>     
+    </div>
+  </div>
+</body>
+```  
 
+Como es de esperar, también podemos ajustar la cantidad de columnas a la resolución de la pantalla.
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>col 2 brekpoints</title>
+    <style>      
+      @media screen and (max-width: 992px) {
+        #comentario::after {
+          background-color:red;
+          color: black;
+          width: 100%;
+          content: "Luego pasa a 2 columnas por fila hasta llegar sm";       
+        }
+      }
+
+      @media screen and (max-width: 576px) {
+        #comentario::after {
+          background-color:blueviolet;
+          color: wheat;
+          width: 100%;
+          content: "Luego pasa a 1 columna del 100%";       
+        }
+      }
+    </style>
+</head>
+<body> 
+  <div class="container text-center" >
+    <div class="row justify-content-md-center">
+      <div class="col-1" style="background-color: antiquewhite">
+        1
+      </div>
+      <div class="col-1" style="background-color:aqua">
+        2
+      </div>
+      <div class="col-1" style="background-color:bisque">
+        3
+      </div>
+      <div class="col-1" style="background-color:azure">
+        4
+      </div>
+      <div class="col-1" style="background-color:beige">
+        5
+      </div>
+      <div class="col-1" style="background-color:bisque">
+        6
+      </div>
+      <div class="col-1" style="background-color:black; color:white">
+        7
+      </div>
+      <div class="col-1" style="background-color:blanchedalmond">
+        8
+      </div>
+      <div class="col-1" style="background-color:blue; color: aliceblue">
+        9
+      </div>
+      <div class="col-1" style="background-color:blueviolet; color:aliceblue">
+        10
+      </div>
+      <div class="col-1" style="background-color:brown; color:aliceblue">
+        11
+      </div>
+      <div class="col-1" style="background-color:burlywood">
+        12
+      </div>   
+    </div>
+    <div id="comentario" class="row justify-content-md-center col-lg-auto" style="background-color: black; color: white;">
+      Las columnas 1, 2, 3 y 4 ocupan solamente una fila hasta llegar al breakpoint "lg"
+    </div>
+    <div class="row row-cols-lg-4 row-cols-sm-2 justify-content-md-center">
+      <div style="background-color: antiquewhite;">
+        columna 1 
+      </div>
+      <div style="background-color: aqua;">
+        columna 2 
+      </div>
+      <div style="background-color:bisque ">
+        columna 3
+      </div>
+      <div style="background-color: aquamarine;">
+        columna 4
+      </div>
+    </div>
+  </div>
+</body>
+```
+
+
+### 6.3.5 Ejercicio
 
 
 #### 3. **Alineación y distribución**
