@@ -62,7 +62,7 @@ Existen todo tipo de herramientas para construir sprites, desde **preprocesadore
 8. **Herramientas de Generación de Iconos**
    - IcoMoon, Fontello.
 
-### 2.1.2 Definir el tamaño del sprite
+### 2.1.2 Definir el tamaño del sprite 
  - Crear una imagen como un cuadrado (o rectángulo) donde cada lado sea un multiple exacto de un icono.  
  (Por ejemplo, para un icono de 48px x 48px, usar 528px x 528px).
 >**Pregunta:** ¿Cuantos iconos caben en una fila de esa imagen?
