@@ -534,9 +534,10 @@ Como es de esperar, también podemos ajustar la cantidad de columnas a la resolu
   </div>
 </body>
 ```
+### 6.3.5 Anidación de columnas
 
 
-### 6.3.5 Ejercicio
+### 6.3.6 Ejercicio
 
 
 #### 3. **Alineación y distribución**
