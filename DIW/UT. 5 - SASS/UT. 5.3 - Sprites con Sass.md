@@ -177,7 +177,7 @@ $listaNombrePais: "Andorra", "United Arab Emirates", "Afghanistan", "Antigua and
 Este estilo establece un contenedor que tiene un tamaño definido por las variables $ancho y $alto y establece **una imagen de fondo** que se ajusta al tamaño del contenedor.  
 
 ### 2.3.5 Definir e instanciar las funciones del proyecto
-Como acabamos de ver en el archivo sprite, la primera imagen es una `dummy` para cuando se escriba mal <a href="https://www.sanidad.gob.es/ciudadanos/saludAmbLaboral/docs/codigoIsoPai.pdf">**el codigo del país**</a>.  
+Como acabamos de ver en el archivo sprite, la primera imagen es una `dummy` para cuando se escriba mal <a href="https://www.sanidad.gob.es/ciudadanos/saludAmbLaboral/docs/codigoIsoPai.pdf">**el código del país**</a>.  
 Así pues, será conveniente invertir la lista de paises para empezar por el final.
 ```
 @function funcionInvertirLista($listado) {
