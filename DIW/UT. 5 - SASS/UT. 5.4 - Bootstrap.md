@@ -1002,39 +1002,5 @@ m{lado}-{breakpoint}-{tamaño}
   </div>  
 </body>
 ```
-Donde
- 
 
-### **Combinación con breakpoints:**
-Puedes usar diferentes márgenes para cada tamaño de pantalla. Por ejemplo:
-```html
-<div class="mt-1 mt-md-3 mt-lg-5">Margen dinámico según el tamaño de pantalla</div>
-```
-
-### **Notas importantes:**
-- Bootstrap aplica un sistema de espaciado consistente basado en un espaciado base que se multiplica según el tamaño (e.g., 0.25rem, 0.5rem, etc.).
-- Estas clases son especialmente útiles para ajustes rápidos sin necesidad de escribir estilos personalizados.
-
-¿Quieres un ejemplo más específico? 😊
 ### 6.4.8 Columnas únicas
-
-
-
-
-
-
-#### 4. **Espaciado (Spacing)**
-El espaciado entre los elementos se controla mediante utilidades como:
-- Márgenes: `m-`, `mt-`, `mb-`, etc.
-- Padding: `p-`, `pt-`, `pb-`, etc.
-
-
-
-
-#### 6. **Utilities para diseño avanzado**
-Bootstrap 5 introduce utilidades adicionales para lograr diseños más personalizados sin necesidad de escribir CSS adicional:
-- **Grid modificable**:
-  Clases como `g-3` para definir el tamaño del espacio entre filas/columnas.
-- **Clases de orden**:
-  Clases como `order-md-1` para cambiar el orden de las columnas responsivamente.
-
