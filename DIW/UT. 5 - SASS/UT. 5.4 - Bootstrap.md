@@ -453,7 +453,7 @@ Como es de esperar, también podemos ajustar la cantidad de columnas a la resolu
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <title>col 2 brekpoints</title>
+    <title>col 2 breakpoints</title>
     <style>      
       @media screen and (max-width: 992px) {
         #comentario::after {
@@ -722,10 +722,49 @@ Para la alineación horizontal de los contenedores `col`, disponemos, entre otra
 ```
   
 ### 6.4.3 Organización de las columnas
-La propiedad flex-wrap de CSS especifica si los elementos "hijos" son obligados a permanecer en una misma línea o pueden fluir en varias líneas. Si la cobertura (wrap) está permitida, esta propiedad también te permite controlar la dirección en la cual serán apilados los elementos.
+Si definimos un `row` de más de 12 columnas, las columnas que no quepan en una línea serán situadas en la línea siguiente.   
 
 ### 6.4.4 Saltos de columnas a una linea nueva
+Para forzar un salto de línea sin haber alcanzado 12 columnas, useramos la clase `w-100` (width:100%)
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>Column break</title>
+    
+</head>
+
+<body>  
+  <div class="container text-center"> 
+  
+    <div class="row align-items-center" style="background-color:grey;  padding: 5px;">         
+      <div class="col-4" style="background-color: aliceblue;">
+        Columnas 4
+      </div>
+      <div class="col-4" style="background-color: antiquewhite;">
+        Columnas 4
+      </div>
+      <div class="w-100"></div>
+      <div class="col-4" style="background-color: antiquewhite; margin-top: 2px;">
+        Columnas 4 en linea siguiente
+      </div>
+    </div>  
+  </div>    
+</body>
+```  
+
 ### 6.4.5 Ordenar columnas
+La clase `order-XX` permite definir el orden en el que se renderizaran los contenedores.  
+Si se omite la clase `order-XX` los contenedores se renderizaran en el orden con el cual han sido declarados.
+**Nota:** Para evitar renderizados no deseados se recomienda asignar la clase `order-first` y `orden-last` al primer y el último contendedor que deseamos renderizar. 
+
 ### 6.4.6 Clase offset para posicionar columnas
 ### 6.4.7 Márgenes
 ### 6.4.8 Columnas únicas
@@ -733,14 +772,7 @@ La propiedad flex-wrap de CSS especifica si los elementos "hijos" son obligados 
 
 
 
-#### 3. **Alineación y distribución**
-Bootstrap proporciona herramientas para alinear elementos dentro de filas y columnas:
-- **Alineación vertical**:
-  - `align-items-start`, `align-items-center`, `align-items-end`.
-- **Distribución horizontal**:
-  - `justify-content-start`, `justify-content-center`, `justify-content-between`, etc.
 
----
 
 #### 4. **Espaciado (Spacing)**
 El espaciado entre los elementos se controla mediante utilidades como:
