@@ -132,9 +132,9 @@ Son el elemento básico de Bootstrap y son necesarios si queremos usar el sistem
 El selector `container` permite definir una caja con unas dimensiones `responsive` como podemos ver en la siguiente tabla. 
 
 **Formas de definir el ancho de una caja con container :**
- - .container
- - .container-{breakpoint}
- - .container-fluid
+ - container: Establece un contenedor con un ancho máximo que se adapta al tamaño del viewport.
+ - container-{breakpoint}: Establecer un ancho máximo específico según un punto de interrupción definido.
+ - container-fluid: Define un contenedor que ocupa el 100% del ancho del viewport, sin restricciones en los puntos de interrupción.
 
 || Extra small <576px | Small ≥576px | Medium ≥768px | Large ≥992px | X-Large ≥1200px | XX-Larg ≥1400px |
 |------------------|--------------------|--------------|---------------|--------------|-----------------|-----------------|
