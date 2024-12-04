@@ -579,7 +579,7 @@ Consiste en anidar una fila (row) dentro de una columna (col) existente, permiti
 Los estilos de columnas permiten aplicar estilos para el renderizado de las columnas dentro de su contenedor.  
 
 ### 6.4.1 Alineación vertical de columnas
-Para la alineación vertical de la columnas dentro de su contenedor, disponemos, entre otras, de las clases `align-items-start`, `align-items-center` y `align-items-end` que nos permiten posicionar el contenido `col` dentro de su `row`.
+Para la alineación vertical de la columnas dentro de su contenedor, disponemos, entre otras, de las clases `align-items-start`, `align-items-center` y `align-items-end` que nos permiten posicionar los contenedores `col` dentro de su `row`.
 
 ´´´
 <!DOCTYPE html>
@@ -638,6 +638,89 @@ Para la alineación vertical de la columnas dentro de su contenedor, disponemos,
 ´´´
 
 ### 6.4.2 Alineación horizontal de columnas
+Para la alineación horizontal de los contenedores `col`, disponemos, entre otras, de las clases:
+- **`justify-content-start`**: Alinea los elementos al inicio del contenedor.
+- **`justify-content-center`**: Centra horizontalmente los elementos dentro del contenedor.
+- **`justify-content-end`**: Alinea los elementos al final del contenedor.
+- **`justify-content-around`**: Distribuye los elementos con espacio igual alrededor de ellos, dejando espacio extra al inicio y al final del contenedor.
+- **`justify-content-between`**: Distribuye los elementos con el máximo espacio posible entre ellos, sin dejar espacio al inicio ni al final del contenedor.
+- **`justify-content-evenly`**: Distribuye los elementos con espacio igual entre ellos y también entre los bordes del contenedor.
+
+  ```
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>Alinación vertical</title>
+    
+</head>
+
+<body>  
+  <div class="container text-center"> 
+  
+    <div class="row justify-content-start" style="background-color:green;  padding: 5px;">         
+      <div class="col-3" style="background-color: aliceblue;">
+        Contenido start
+      </div>
+      <div class="col-4" style="background-color: antiquewhite;">
+        Contenido start
+      </div>
+    </div>  
+
+    <div class="row justify-content-center" style="background-color: blueviolet; padding: 5px;">         
+      <div class="col-3" style="background-color: antiquewhite;">
+        Contenido center
+      </div>
+      <div class="col-4" style="background-color: aqua;">
+        Contenido center
+      </div>
+    </div>  
+      
+    <div class="row justify-content-end" style="background-color: brown; padding: 5px;">         
+      <div class="col-3" style="background-color: aqua;">
+        Contenido end
+      </div>
+      <div class="col-3" style="background-color: aliceblue;">
+        Contenido end
+      </div>
+    </div>  
+
+    <div class="row justify-content-around" style="background-color:green;  padding: 5px;">         
+      <div class="col-3" style="background-color: aliceblue;">
+        Contenido around
+      </div>
+      <div class="col-4" style="background-color: antiquewhite;">
+        Contenido around
+      </div>
+    </div>  
+  
+    <div class="row justify-content-between" style="background-color: blueviolet; padding: 5px;">         
+      <div class="col-3" style="background-color: antiquewhite;">
+        Contenido between
+      </div>
+      <div class="col-4" style="background-color: aqua;">
+        Contenido between
+      </div>
+    </div>  
+      
+    <div class="row justify-content-evenly" style="background-color: brown; padding: 5px;">         
+      <div class="col-3" style="background-color: aqua;">
+        Contenido evenly
+      </div>
+      <div class="col-3" style="background-color: aliceblue;">
+        Contenido evenly
+      </div>
+    </div>
+  </div>    
+</body>
+```
+  
 ### 6.4.3 Organización de las columnas
 La propiedad flex-wrap de CSS especifica si los elementos "hijos" son obligados a permanecer en una misma línea o pueden fluir en varias líneas. Si la cobertura (wrap) está permitida, esta propiedad también te permite controlar la dirección en la cual serán apilados los elementos.
 
