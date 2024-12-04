@@ -761,11 +761,83 @@ Para forzar un salto de línea sin haber alcanzado 12 columnas, useramos la clas
 ```  
 
 ### 6.4.5 Ordenar columnas
-La clase `order-XX` permite definir el orden en el que se renderizaran los contenedores.  
-Si se omite la clase `order-XX` los contenedores se renderizaran en el orden con el cual han sido declarados.
+La clase `order-*` permite definir el orden en el que se renderizaran los contenedores.  
+Si se omite la clase `order-*` los contenedores se renderizaran en el orden con el cual han sido declarados.
 **Nota:** Para evitar renderizados no deseados se recomienda asignar la clase `order-first` y `orden-last` al primer y el último contendedor que deseamos renderizar. 
 
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>Ordenar con order</title>
+   
+</head>
+<body> 
+  <div class="container text-center" >
+    <div class="row justify-content-md-center">    
+      <div id="comentario" class="row justify-content-md-center col-lg-auto" style="background-color: black; color: white;">
+        Orden de aparición de las columnas sin usar la clase `order-XX`
+      </div>
+
+      <div class="col-2" style="background-color: antiquewhite">
+        1
+      </div>
+      <div class="col-2" style="background-color:aqua">
+        2
+      </div>
+      <div class="col-2" style="background-color:bisque">
+        3
+      </div>
+      <div class="col-2" style="background-color:azure">
+        4
+      </div>
+      <div class="col-2" style="background-color:beige">
+        5
+      </div>
+      <div class="col-2" style="background-color:bisque">
+        6
+      </div>
+   
+    </div>
+    
+    <div id="comentario" class="row justify-content-md-center col-lg-auto" style="background-color: black; color: white;">
+      Orden de aparición de las columnas sin usar la clase `order-XX`
+    </div>
+    
+    <div class="row justify-content-md-center">
+      <div class="col-2 order-first" style="background-color: antiquewhite">
+        1
+      </div>
+      <div class="col-2 order-5" style="background-color:aqua">
+        2
+      </div>
+      <div class="col-2 order-2" style="background-color:bisque">
+        3
+      </div>
+      <div class="col-2 order-last" style="background-color:azure">
+        4
+      </div>
+      <div class="col-2 order-4" style="background-color:beige">
+        5
+      </div>
+      <div class="col-2 order-3" style="background-color:bisque">
+        6
+      </div>
+     
+    </div>
+  </div>
+</body>
+```
+
 ### 6.4.6 Clase offset para posicionar columnas
+La clase `offset-md-*` incrementa el **margen derecho** de los contenedores a razón de **`*`columnas**. 
 ### 6.4.7 Márgenes
 ### 6.4.8 Columnas únicas
 
