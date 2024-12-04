@@ -573,10 +573,6 @@ Consiste en anidar una fila (row) dentro de una columna (col) existente, permiti
 </body>
 ```  
 
-### 6.3.6 Tarea RA4 CEcd
-<a href="#">**Enunciado**</a>
-
-
 ## 6.4 Estilos de columnas de Bootstrap
 Los estilos de columnas permiten aplicar estilos para el renderizado de las columnas dentro de su contenedor.  
 
@@ -1005,4 +1001,7 @@ m{lado}-{breakpoint}-{tamaño}
 </body>
 ```
 
-### 6.4.8 Columnas únicas
+### 6.4.8 Columnas únicas  v
+
+### 6.4.9 Tarea RA4 CEcd
+<a href="#">**Enunciado**</a>
