@@ -579,7 +579,63 @@ Consiste en anidar una fila (row) dentro de una columna (col) existente, permiti
 Los estilos de columnas permiten aplicar estilos para el renderizado de las columnas dentro de su contenedor.  
 
 ### 6.4.1 Alineación vertical de columnas
-Para la alineación vertical de la columnas dentro de su contenedor, disponemos de las clases `align-items-start`, `align-items-center` y `align-items-end`
+Para la alineación vertical de la columnas dentro de su contenedor, disponemos, entre otras, de las clases `align-items-start`, `align-items-center` y `align-items-end` que nos permiten posicionar el contenido `col` dentro de su `row`.
+
+´´´
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>Alinación vertical</title>    
+</head>
+
+<body>  
+  <div class="container text-center"> 
+  
+    <div class="row align-items-start" style="height: 33vh; background-color: bisque; padding: 5px;">         
+      <div class="col" style="background-color: aliceblue;">
+        Columnas arriba
+      </div>
+      <div class="col" style="background-color: antiquewhite;">
+        Columnas arriba
+      </div>
+      <div class="col" style="background-color: aqua;">
+        Columnas arriba
+      </div>      
+    </div>  
+
+    <div class="row align-items-center" style="height: 33vh; background-color: blueviolet; padding: 5px;">         
+      <div class="col" style="background-color: antiquewhite;">
+        Columnas medio
+      </div>
+      <div class="col" style="background-color: aqua;">
+        Columnas medio
+      </div>
+      <div class="col" style="background-color: aliceblue;">
+        Columnas medio
+      </div>
+    </div>  
+      
+    <div class="row align-items-end" style="height: 33vh; background-color: brown; padding: 5px;">         
+      <div class="col" style="background-color: aqua;">
+        Columnas abajo
+      </div>
+      <div class="col" style="background-color: aliceblue;">
+        Columnas abajo
+      </div>
+      <div class="col" style="background-color: antiquewhite;">
+        Columnas abajo
+      </div>
+    </div>
+  </div>    
+</body>
+´´´
 
 ### 6.4.2 Alineación horizontal de columnas
 ### 6.4.3 Organización de las columnas
