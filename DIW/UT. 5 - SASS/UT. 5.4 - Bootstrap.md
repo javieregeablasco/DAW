@@ -583,7 +583,7 @@ Los estilos de columnas permiten aplicar estilos para el renderizado de las colu
 ### 6.4.1 Alineación vertical de columnas
 Para la alineación vertical de la columnas dentro de su contenedor, disponemos, entre otras, de las clases `align-items-start`, `align-items-center` y `align-items-end` que nos permiten posicionar los contenedores `col` dentro de su `row`.
 
-´´´
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -637,7 +637,7 @@ Para la alineación vertical de la columnas dentro de su contenedor, disponemos,
     </div>
   </div>    
 </body>
-´´´
+```
 
 ### 6.4.2 Alineación horizontal de columnas
 Para la alineación horizontal de los contenedores `col`, disponemos, entre otras, de las clases:
@@ -648,7 +648,7 @@ Para la alineación horizontal de los contenedores `col`, disponemos, entre otra
 - **`justify-content-between`**: Distribuye los elementos con el máximo espacio posible entre ellos, sin dejar espacio al inicio ni al final del contenedor.
 - **`justify-content-evenly`**: Distribuye los elementos con espacio igual entre ellos y también entre los bordes del contenedor.
 
-  ```
+```
   <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -976,30 +976,30 @@ m{lado}-{breakpoint}-{tamaño}
     </div>
     
     <div class="row">    
-        <div class="col" style="background-color: black; color: white;">
-          Aplicando márgenes
-        </div>
-      </div>    
-      <div class="row">
-        <div class="col-1" style="background-color: antiquewhite">
-          1
-        </div>
-        <div class="col-1 mx-5" style="background-color:aqua">
-          2
-        </div>
-        <div class="col-1 mt-lg-1" style="background-color:bisque">
-          3
-        </div>
-        <div class="col-1 mx-auto" style="background-color:grey">
-          4
-        </div>   
-        <div class="col-1 mt-sm-1 mt-md-2 mb-lg-3" style="background-color:greenyellow">
-          5
-        </div>      
+      <div class="col" style="background-color: black; color: white;">
+        Aplicando márgenes
       </div>
+    </div>    
+    <div class="row">
+      <div class="col-1" style="background-color: antiquewhite">
+        1
+      </div>
+      <div class="col-1 mx-5" style="background-color:aqua">
+        2
+      </div>
+      <div class="col-1 mt-lg-1" style="background-color:bisque">
+        3
+      </div>
+      <div class="col-1 mx-auto" style="background-color:grey">
+        4
+      </div>   
+      <div class="col-1 mt-sm-1 mt-md-2 mb-lg-3" style="background-color:greenyellow">
+        5
+      </div>      
+    </div>
 
     <div class="row">    
-     <div class="col" style="background-color: black; color: white;">&nbsp</div>      
+      <div class="col" style="background-color: black; color: white;">&nbsp</div>      
     </div>
   </div>  
 </body>
