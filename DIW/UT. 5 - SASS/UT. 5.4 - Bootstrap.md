@@ -1013,38 +1013,27 @@ Las **Standalone column classes** permiten crear diseños basados en columnas si
      - Se pueden combinar con los breakpoints estándar (`col-sm-*`, `col-md-*`, etc.).
 
 >**Ejemplo de uso**
-´´´
+```
 <body>
-  <div style="background-color: aqua;" class="col-3 p-3 mb-2">
-    Siempre al 25%
+  <div style="background-color: aqua;" class="col-6 p-3 mb-2">
+    Siempre al 50%
   </div>
       
-  <div style="background-color: brown;" class="col-sm-9 p-3">
-    A 75% hasta llegar al breakpoint sm
+  <div style="background-color: brown;" class="col-sm-9 p-3 mb-2">
+    Al 75% hasta llegar al breakpoint sm
   </div>
 
   <div class="d-flex">
-    <div style="background-color: blue;" class="col">Columna flex</div>
-    <div style="background-color: blueviolet;" class="col">Columna flex</div>
-    <div style="background-color: brown;" class="col">Columna flex</div>
+    <div style="background-color: blue;" class="col p-3">Columna flex</div>
+    <div style="background-color: blueviolet;" class="col p-3">Columna flex</div>
+    <div style="background-color: rgb(69, 42, 165);" class="col p-3">Columna flex</div>
   </div>
 </body>
-´´´
-
-En este ejemplo:
-- No es necesario envolver las columnas en un `row`.
-- La clase `d-flex` aplica un contenedor flexbox que permite la alineación horizontal.
-
-### Uso combinado con otros componentes:
-Las **Standalone column classes** son muy útiles cuando se combinan con otros componentes, como `d-flex`, `g-*` (para gestionar los gaps), o clases de utilidades para personalizar márgenes y alineaciones.
-
-Por ejemplo:
-```html
-<div class="g-3 d-flex">
-  <div class="col-md-4">Columna 1</div>
-  <div class="col-md-6">Columna 2</div>
-</div>
 ```
+**Nota:  
+La clase `d-flex` aplica un contenedor flexbox que permite la alineación horizontal de los elementos hijos.
+La clase `p-3` añade un padding de `1 rem` al elemento.
+La clase `mb-2` añade un margen  de `0.5 rem` en la parte inferior del elemento.
 
 ### 6.4.9 Tarea RA4 CEcd
 <a href="#">**Enunciado**</a>
