@@ -1001,7 +1001,7 @@ m{lado}-{breakpoint}-{tamaño}
 </body>
 ```
 
-### 6.4.8 Columnas únicas 
+### 6.4.8 Columnas únicas, standalone columns
 Las **Standalone column classes** permiten crear diseños basados en columnas sin la necesidad de envolverlas en un contenedor `row`.
 
 **Principales características:**
@@ -1030,10 +1030,10 @@ Las **Standalone column classes** permiten crear diseños basados en columnas si
   </div>
 </body>
 ```
-**Nota:  
-La clase `d-flex` aplica un contenedor flexbox que permite la alineación horizontal de los elementos hijos.
-La clase `p-3` añade un padding de `1 rem` al elemento.
-La clase `mb-2` añade un margen  de `0.5 rem` en la parte inferior del elemento.
+**Nota:**  
+La clase `d-flex` aplica un contenedor flexbox que permite la alineación horizontal de los elementos hijos.  
+La clase `p-3` añade un padding de `1 rem` al elemento.  
+La clase `mb-2` añade un margen  de `0.5 rem` en la parte inferior del elemento.  
 
 ### 6.4.9 Tarea RA4 CEcd
 <a href="#">**Enunciado**</a>
