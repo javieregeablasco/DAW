@@ -1001,7 +1001,41 @@ m{lado}-{breakpoint}-{tamaño}
 </body>
 ```
 
-### 6.4.8 Columnas únicas  v
+### 6.4.8 Columnas únicas 
+Las **Standalone column classes** permiten crear diseños basados en columnas sin la necesidad de envolverlas en un contenedor `row`.
+
+**Principales características:**
+ - **Autoalineación y espaciado**:
+     - El espaciado interno entre columnas (gaps) es automático.
+     - Son útiles para elementos que no necesitan un sistema completo de filas y columnas.
+
+ - **Compatibilidad con breakpoints**:
+     - Se pueden combinar con los breakpoints estándar (`col-sm-*`, `col-md-*`, etc.).
+
+### Ejemplo de uso:
+
+```html
+<div class="d-flex">
+  <div class="col">Columna 1</div>
+  <div class="col">Columna 2</div>
+  <div class="col">Columna 3</div>
+</div>
+```
+
+En este ejemplo:
+- No es necesario envolver las columnas en un `row`.
+- La clase `d-flex` aplica un contenedor flexbox que permite la alineación horizontal.
+
+### Uso combinado con otros componentes:
+Las **Standalone column classes** son muy útiles cuando se combinan con otros componentes, como `d-flex`, `g-*` (para gestionar los gaps), o clases de utilidades para personalizar márgenes y alineaciones.
+
+Por ejemplo:
+```html
+<div class="g-3 d-flex">
+  <div class="col-md-4">Columna 1</div>
+  <div class="col-md-6">Columna 2</div>
+</div>
+```
 
 ### 6.4.9 Tarea RA4 CEcd
 <a href="#">**Enunciado**</a>
