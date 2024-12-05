@@ -1048,7 +1048,7 @@ Los **gutters** son los márgenes entre las columnas. Por defecto, Bootstrap uti
 - `gy-*`: Controla únicamente los gutters verticales.
 
 **Nota:**
-Los gutters utilizan las mismas unidades que <a href="https://getbootstrap.com/docs/5.3/utilities/spacing/#margin-and-padding">**los márgenes y padding**</a> los que permite combirnarlos.  
+Los gutters utilizan las mismas unidades que <a href="https://getbootstrap.com/docs/5.3/utilities/spacing/#margin-and-padding">**los márgenes y padding**</a> lo que permite combirnarlos.  
 
 
 
