@@ -1012,15 +1012,24 @@ Las **Standalone column classes** permiten crear diseños basados en columnas si
  - **Compatibilidad con breakpoints**:
      - Se pueden combinar con los breakpoints estándar (`col-sm-*`, `col-md-*`, etc.).
 
-### Ejemplo de uso:
+>**Ejemplo de uso**
+´´´
+<body>
+  <div style="background-color: aqua;" class="col-3 p-3 mb-2">
+    Siempre al 25%
+  </div>
+      
+  <div style="background-color: brown;" class="col-sm-9 p-3">
+    A 75% hasta llegar al breakpoint sm
+  </div>
 
-```html
-<div class="d-flex">
-  <div class="col">Columna 1</div>
-  <div class="col">Columna 2</div>
-  <div class="col">Columna 3</div>
-</div>
-```
+  <div class="d-flex">
+    <div style="background-color: blue;" class="col">Columna flex</div>
+    <div style="background-color: blueviolet;" class="col">Columna flex</div>
+    <div style="background-color: brown;" class="col">Columna flex</div>
+  </div>
+</body>
+´´´
 
 En este ejemplo:
 - No es necesario envolver las columnas en un `row`.
