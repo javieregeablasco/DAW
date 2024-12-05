@@ -1035,5 +1035,50 @@ La clase `d-flex` aplica un contenedor flexbox que permite la alineación horizo
 La clase `p-3` añade un padding de `1 rem` al elemento.  
 La clase `mb-2` añade un margen  de `0.5 rem` en la parte inferior del elemento.  
 
+
+### 6.4.9 Gutters
+Los **gutters** son los márgenes entre las columnas. Por defecto, Bootstrap utiliza  el `rem` como unidad para definir los gutters.
+
+**La clase `g-*`** define el tamaño de los gutters tanto horizontal como verticalmente:
+- `g-0`: Sin espacio entre columnas.
+- `g-1` a `g-5`: Desde `0.25rem` hasta `3 rem`.
+
+**Control específico: Horizontal y Vertical**
+- `gx-*`: Controla únicamente los gutters horizontales.
+- `gy-*`: Controla únicamente los gutters verticales.
+
+**Nota:**
+Los gutters utilizan las mismas unidades que <a href="https://getbootstrap.com/docs/5.3/utilities/spacing/#margin-and-padding">**los márgenes y padding**</a> los que permite combirnarlos.  
+
+
+
+### Eliminación de Gutters
+Si no necesitas gutters, puedes eliminarlos por completo usando `g-0` o eliminando el relleno (`p-0`) manualmente.
+
+**Ejemplo sin gutters**:
+```html
+<div class="row g-0">
+  <div class="col">Columna 1</div>
+  <div class="col">Columna 2</div>
+</div>
+```
+
+---
+
+### Personalización avanzada
+Si necesitas más control sobre los gutters, puedes personalizarlos mediante las variables de Sass que Bootstrap utiliza:
+- **`$grid-gutter-width`**: Define el ancho predeterminado de los gutters.
+
+Por ejemplo:
+```scss
+$grid-gutter-width: 1.5rem; // Cambia los gutters predeterminados
+```
+
+### Resumen
+- Los **gutters** son el espacio entre las columnas en Bootstrap.
+- Puedes ajustar los gutters usando las clases `g-*`, `gx-*` y `gy-*`.
+- Son totalmente responsivos y personalizables.
+- Pueden eliminarse con `g-0` o configurarse manualmente en Sass.
+
 ### 6.4.9 Tarea RA4 CEcd
 <a href="#">**Enunciado**</a>
