@@ -1071,9 +1071,9 @@ Más información <a href="https://getbootstrap.com/docs/5.3/content/typography/
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
   crossorigin="anonymous"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
 </head>
-<body>
+
+<body>  
   <header>
     <div class="container">
       <div class="row">
@@ -1092,9 +1092,9 @@ Más información <a href="https://getbootstrap.com/docs/5.3/content/typography/
             </div>
           </div>
         </section>
-        <section id="secundario" class="col-12 text-bg-warning rounded">
+        <section id="secundario" class="col-12 text-bg-warning rounded g-1">
           <h1 class="display-5 text-center ">Estilos: Color, tipografía y fondo</h1>
-          <div class="row text-center g-1 py-1">
+          <div class="row text-center g-1 py-1 mx-1">
             <div class="col-3 text-primary bg-info">
               <h3>Header h3</h3>
             </div>
@@ -1111,27 +1111,28 @@ Más información <a href="https://getbootstrap.com/docs/5.3/content/typography/
         </section>
       </div>
     </div>
-    </header>
+  </header>
 
-    <main>
-      <section id="unidad1">
-        <div class="container">
-          <div class="row py-2">
-            <div class="bg-light p-1 rounded">
-              <p class="lead fs-4 display-6 text-center"><strong>Ejemplos de estilos de Bootstrap 5 sobre texto.</strong></p>
-              <p class="fs-6">Fuente fs-6 con texto <mark>subrayado</mark>.</p>
-              <p class="fs-5"><del>Fuente fs-5 con texto tachado.</del></p>
-              <p class="fs-4"><s>fuente fs-4 con texto no válido.</s></p>
-              <p class="fs-3"><ins> fs-3 Subrayado.</ins></p>
-              <p class="fs-6"><u>Subrayado.</u></p>
-              <p class="fs-3">Fuente fs-3 y<small> la misma con la etiqueta small.</small></p>
-              <p><strong>Texto en negrita.</strong></p>
-              <p><em>Texto en itálica.</em></p>
-              <p class="text-center"><a class="btn btn-primary btn-lg" href="https://getbootstrap.com/docs/5.3/content/typography/" role="button">Más info</a></p>
-            </div>
+  <main>
+    <section id="unidad1">
+      <div class="container">
+        <div class="row py-1">
+          <div class="bg-light p-1 rounded">
+            <p class="lead fs-4 display-6 text-center"><strong>Ejemplos de estilos de Bootstrap 5 sobre texto.</strong></p>
+            <p class="fs-6">Fuente fs-6 con texto <mark>subrayado</mark>.</p>
+            <p class="fs-5"><del>Fuente fs-5 con texto tachado.</del></p>
+            <p class="fs-4"><s>fuente fs-4 con texto no válido.</s></p>
+            <p class="fs-3"><ins> fs-3 Subrayado.</ins></p>
+            <p class="fs-6"><u>Subrayado.</u></p>
+            <p class="fs-3">Fuente fs-3 y<small> la misma con la etiqueta small.</small></p>
+            <p><strong>Texto en negrita.</strong></p>
+            <p><em>Texto en itálica.</em></p>
+            <p class="text-center"><a class="btn btn-primary btn-lg" href="https://getbootstrap.com/docs/5.3/content/typography/" role="button">Más info</a></p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+    <section id="unidad2">
       <div class="container my-2 bg-light rounded">
         <div class="row">
           <div class="col-12 col-sm-6 col-md-4">
@@ -1151,13 +1152,15 @@ Más información <a href="https://getbootstrap.com/docs/5.3/content/typography/
           </div>
         </div>
       </div>
-    </main>
+    </section>
+  </main>
         
     <footer id="standaloneColumn" class="text-center py-3 bg-light col-8 mx-auto">
       <p>Ejemplos de uso de estilos en Bootstrap 5</p>
       <p>Para el footer usamos una standalone column <i class="fa-regular fa-face-smile-beam"></i></p>
     </footer>   
-  </body>  
+
+</body>  
 </html>
 ```
 
