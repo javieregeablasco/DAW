@@ -1052,3 +1052,112 @@ Los gutters utilizan las mismas unidades que <a href="https://getbootstrap.com/d
 
 ### 6.4.9 Tarea RA4 CEcd
 <a href="#">**Enunciado**</a>
+
+# 7 Tipografías en Bootstrap
+Bootstrap ofrece una amplia gama de utilidades de tipografía que permiten estilizar y manejar texto. Las clases integradas de Bootstrap ayudan a definir tamaños, pesos, alineaciones, colores y otros aspectos visuales del texto.   
+Más información <a href="https://getbootstrap.com/docs/5.3/content/typography/#headings">aquí</a>
+>**Ejemplo de uso de estilos tipográficos en Bootstrap**
+```
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tipográfias con Bootstrap 5</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <section id="principal" class="py-2 g-5 col-12 text-bg-info rounded">
+          <h1 class="display-1 text-center text-bg-danger">Header centrado</h1>
+          <h1 class="display-6 text-center text-bg-secondary">Alineando texto</h1>
+          <div class="row px-3">
+            <div class="col-4 text-start text-bg-success">
+              <h1 class="display-4">Izquierda</h1>
+            </div>
+            <div class="col-4 text-center text-bg-danger">
+              <h1 class="display-4">Centrado</h1>
+            </div>
+            <div class="col-4 text-end text-bg-primary">
+              <h1 class="display-4">Derecha</h1>
+            </div>
+          </div>
+        </section>
+        <section id="secundario" class="col-12 text-bg-warning rounded">
+          <h1 class="display-5 text-center ">Estilos: Color, tipografía y fondo</h1>
+          <div class="row text-center g-1 py-1">
+            <div class="col-3 text-primary bg-info">
+              <h3>Header h3</h3>
+            </div>
+            <div class="col-3 text-sucess bg-body-secondary">
+              <h3>Header h3</h3>
+            </div>
+            <div class="col-3 text-danger bg-light-subtle">
+              <h3>Header h3</h3>
+            </div>
+            <div class="col-3 text-warning bg-primary">
+             <h3>Header h3</h3>
+            </div>
+          </div>          
+        </section>
+      </div>
+    </div>
+    </header>
+
+    <main>
+      <section id="unidad1">
+        <div class="container">
+          <div class="row py-2">
+            <div class="bg-light p-1 rounded">
+              <p class="lead fs-4 display-6 text-center"><strong>Ejemplos de estilos de Bootstrap 5 sobre texto.</strong></p>
+              <p class="fs-6">Fuente fs-6 con texto <mark>subrayado</mark>.</p>
+              <p class="fs-5"><del>Fuente fs-5 con texto tachado.</del></p>
+              <p class="fs-4"><s>fuente fs-4 con texto no válido.</s></p>
+              <p class="fs-3"><ins> fs-3 Subrayado.</ins></p>
+              <p class="fs-6"><u>Subrayado.</u></p>
+              <p class="fs-3">Fuente fs-3 y<small> la misma con la etiqueta small.</small></p>
+              <p><strong>Texto en negrita.</strong></p>
+              <p><em>Texto en itálica.</em></p>
+              <p class="text-center"><a class="btn btn-primary btn-lg" href="https://getbootstrap.com/docs/5.3/content/typography/" role="button">Más info</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container my-2 bg-light rounded">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4">
+            <h2>Título del artículo 1</h2>
+            <figure></figure>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat distinctio illo rerum atque ducimus, laboriosam debitis eum deserunt ab libero quis voluptas, illum, perferendis numquam aut aliquam itaque qui magnam!</p>            
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <h2>Título del artículo 2</h2>
+            <figure></figure>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat distinctio illo rerum atque ducimus, laboriosam debitis eum deserunt ab libero quis voluptas, illum, perferendis numquam aut aliquam itaque qui magnam!</p>            
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <h2>Título del artículo 3</h2>
+            <figure></figure>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat distinctio illo rerum atque ducimus, laboriosam debitis eum deserunt ab libero quis voluptas, illum, perferendis numquam aut aliquam itaque qui magnam!</p>           
+          </div>
+        </div>
+      </div>
+    </main>
+        
+    <footer id="standaloneColumn" class="text-center py-3 bg-light col-8 mx-auto">
+      <p>Ejemplos de uso de estilos en Bootstrap 5</p>
+      <p>Para el footer usamos una standalone column <i class="fa-regular fa-face-smile-beam"></i></p>
+    </footer>   
+  </body>  
+</html>
+```
+
