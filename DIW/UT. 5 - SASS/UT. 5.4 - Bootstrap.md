@@ -1163,4 +1163,4 @@ Más información <a href="https://getbootstrap.com/docs/5.3/content/typography/
 </body>  
 </html>
 ```
-
+# 7 Imágenes
