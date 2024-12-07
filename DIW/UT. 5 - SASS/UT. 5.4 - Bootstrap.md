@@ -1075,48 +1075,55 @@ Más información <a href="https://getbootstrap.com/docs/5.3/content/typography/
 
 <body>  
   <header>
-    <div class="container">
-      <div class="row">
-        <section id="principal" class="py-2 g-5 col-12 text-bg-info rounded">
-          <h1 class="display-1 text-center text-bg-danger">Header centrado</h1>
-          <h1 class="display-6 text-center text-bg-secondary">Alineando texto</h1>
-          <div class="row px-3">
-            <div class="col-4 text-start text-bg-success">
-              <h1 class="display-4">Izquierda</h1>
-            </div>
-            <div class="col-4 text-center text-bg-danger">
-              <h1 class="display-4">Centrado</h1>
-            </div>
-            <div class="col-4 text-end text-bg-primary">
-              <h1 class="display-4">Derecha</h1>
-            </div>
-          </div>
-        </section>
-        <section id="secundario" class="col-12 text-bg-warning rounded g-1">
-          <h1 class="display-5 text-center ">Estilos: Color, tipografía y fondo</h1>
-          <div class="row text-center g-1 py-1 mx-1">
-            <div class="col-3 text-primary bg-info">
-              <h3>Header h3</h3>
-            </div>
-            <div class="col-3 text-sucess bg-body-secondary">
-              <h3>Header h3</h3>
-            </div>
-            <div class="col-3 text-danger bg-light-subtle">
-              <h3>Header h3</h3>
-            </div>
-            <div class="col-3 text-warning bg-primary">
-             <h3>Header h3</h3>
-            </div>
+    <section id="principal">
+      <div class="container px-1">
+        <div class="row gx-5 py-2 text-bg-info rounded">    
+          <div class="col-12 text-center">
+            <h1 class="display-1 text-center text-bg-danger rounded">Header centrado</h1>
           </div>          
-        </section>
+          <div class="col-12 text-center">
+            <h1 class="display-6 text-center text-bg-secondary rounded">Alineando texto</h1>          
+          </div>
+          <div class="col text-start">
+            <h3 class="p-3 text-bg-success rounded">Izquierda</h3>
+          </div>          
+          <div class="col text-center">
+            <h3 class="p-3 text-bg-danger rounded">Centrado</h3>
+          </div>
+          <div class="col text-end rounded">
+            <h3 class="p-3 text-bg-primary rounded">Derecha</h3>
+          </div>          
+        </div>        
       </div>
-    </div>
+    </section>
+
+    <section id="secundario">
+      <div class="container px-1 py-2 text-center">        
+        <div class="row gx-5 py-2 text-bg-warning rounded">         
+          <div class="col-12">
+            <h1 class="display-5">Estilos: Color, tipografía y fondo</h1>
+          </div>          
+          <div class="col">
+            <h3 class="text-primary bg-info rounded">Header h3</h3>
+          </div>
+          <div class="col">
+            <h3 class="text-sucess bg-body-secondary rounded">Header h3</h3>
+          </div>
+          <div class="col">
+            <h3 class=" text-danger bg-light-subtle rounded">Header h3</h3>
+          </div>
+          <div class="col">
+            <h3 class="text-bg-primary rounded">Header h3</h3>
+          </div>        
+        </div>
+      </div>
+    </section>
   </header>
 
   <main>
     <section id="unidad1">
-      <div class="container">
-        <div class="row py-1">
+      <div class="container px-1">
+        <div class="row gx-5">
           <div class="bg-light p-1 rounded">
             <p class="lead fs-4 display-6 text-center"><strong>Ejemplos de estilos de Bootstrap 5 sobre texto.</strong></p>
             <p class="fs-6">Fuente fs-6 con texto <mark>subrayado</mark>.</p>
@@ -1132,34 +1139,38 @@ Más información <a href="https://getbootstrap.com/docs/5.3/content/typography/
         </div>
       </div>
     </section>
+
     <section id="unidad2">
-      <div class="container my-2 bg-light rounded">
-        <div class="row">
-          <div class="col-12 col-sm-6 col-md-4">
-            <h2>Título del artículo 1</h2>
-            <figure></figure>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat distinctio illo rerum atque ducimus, laboriosam debitis eum deserunt ab libero quis voluptas, illum, perferendis numquam aut aliquam itaque qui magnam!</p>            
+      <div class="container px-1 py-2">
+        <div class="row gx-5 py-2 bg-secondary rounded px-1 gy-lg-2 gy-sm-1">
+          <h1 class="display-6 text-center text-bg-info rounded">Columnas responsive</h1>
+          <div class="col col-sm-12 col-lg-6 col-xl-4">
+            <div class="text-bg-primary p-2 rounded">
+              <h2>Título de la columna 1</h2>            
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat distinctio illo rerum atque ducimus, laboriosam debitis eum deserunt ab libero quis voluptas, illum, perferendis numquam aut aliquam itaque qui magnam!</p>           
+            </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4">
-            <h2>Título del artículo 2</h2>
-            <figure></figure>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat distinctio illo rerum atque ducimus, laboriosam debitis eum deserunt ab libero quis voluptas, illum, perferendis numquam aut aliquam itaque qui magnam!</p>            
+          <div class="col col-sm-12 col-lg-6 col-xl-4">
+            <div class="text-bg-warning p-2  rounded">
+              <h2>Título de la columna 2</h2>            
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat distinctio illo rerum atque ducimus, laboriosam debitis eum deserunt ab libero quis voluptas, illum, perferendis numquam aut aliquam itaque qui magnam!</p>            
+            </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4">
-            <h2>Título del artículo 3</h2>
-            <figure></figure>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat distinctio illo rerum atque ducimus, laboriosam debitis eum deserunt ab libero quis voluptas, illum, perferendis numquam aut aliquam itaque qui magnam!</p>           
+          <div class="col col-sm-12 col-lg-6 col-xl-4">
+            <div class=" text-bg-success p-2 rounded">
+              <h2>Título de la columna 3</h2>            
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat distinctio illo rerum atque ducimus, laboriosam debitis eum deserunt ab libero quis voluptas, illum, perferendis numquam aut aliquam itaque qui magnam!</p>           
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
-        
-    <footer id="standaloneColumn" class="text-center py-3 bg-light col-8 mx-auto">
-      <p>Ejemplos de uso de estilos en Bootstrap 5</p>
-      <p>Para el footer usamos una standalone column <i class="fa-regular fa-face-smile-beam"></i></p>
-    </footer>   
 
+  <footer id="standaloneColumn" class="text-center py-3 bg-light col-3 mx-auto">
+    <p>Ejemplos de uso de estilos en Bootstrap 5</p>
+    <p>Para el footer usamos una standalone column <i class="fa-regular fa-face-smile-beam"></i></p>
+  </footer>   
 </body>  
 </html>
 ```
