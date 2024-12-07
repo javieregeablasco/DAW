@@ -1175,7 +1175,7 @@ Más información <a href="https://getbootstrap.com/docs/5.3/content/typography/
 
 En Bootstrap, <a href="https://getbootstrap.com/docs/5.3/content/images/">**las imágenes**</a> son elementos clave para el diseño visual y se manejan mediante una combinación de clases predefinidas que facilitan su estilización y comportamiento responsivo.
 
-## 8.1 Imágenes Responsivas
+## 8.1 Imágenes responsivas
 Para hacer que una imagen se adapte automáticamente al tamaño de su contenedor disponemos de la clase `img-fluid`. Esto aplica un `max-width: 100%` y un `height: auto` para asegurar que la imagen nunca exceda el ancho de su contenedor.
 
 >**Ejemplo**
@@ -1238,7 +1238,7 @@ Bootstrap incluye clases para estilizar los bordes de las imágenes:
 ```
 
 
-### 3. **Alineación de Imágenes**
+## 8.3 Alineación de Imágenes
 Puedes alinear imágenes horizontalmente usando las clases de utilidades de alineación de Bootstrap como `float-start`, `float-end` o las clases de flexbox en un contenedor.
 
 ```html
