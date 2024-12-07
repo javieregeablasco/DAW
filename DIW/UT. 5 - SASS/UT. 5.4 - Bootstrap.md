@@ -1236,10 +1236,11 @@ Bootstrap incluye clases para estilizar los bordes de las imágenes:
   </div>    
 </body>
 ```
-
-
+  
 ## 8.3 Alineación de Imágenes
-Puedes alinear imágenes horizontalmente usando las clases de utilidades de alineación de Bootstrap como `float-start`, `float-end` o las clases de flexbox en un contenedor.
+Para alinear imágenes **dentro de un mismo contenedor**, usaremos las clases <a href="https://getbootstrap.com/docs/5.3/utilities/float/">`float-***`</a> o las clases de flexbox en un contenedor.  
+También se pueden usar las clases de alineación de texto <a href="https://getbootstrap.com/docs/5.3/utilities/text/#text-alignment">`text-***`</a>.  
+Puedes alinear imágenes horizontalmente usando las clases de utilidades de alineación de Bootstrap como 
 
 ```html
 <img src="imagen.jpg" class="float-start" alt="Alineada a la izquierda">
