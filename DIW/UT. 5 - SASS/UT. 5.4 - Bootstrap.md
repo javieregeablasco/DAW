@@ -1173,32 +1173,70 @@ Más información <a href="https://getbootstrap.com/docs/5.3/content/typography/
 ```
 # 8 Imágenes
 
-En Bootstrap, las imágenes son elementos clave para el diseño visual y se manejan mediante una combinación de clases predefinidas que facilitan su estilización y comportamiento responsivo. Aquí tienes un resumen de cómo funcionan:
+En Bootstrap, <a href="https://getbootstrap.com/docs/5.3/content/images/">**las imágenes**</a> son elementos clave para el diseño visual y se manejan mediante una combinación de clases predefinidas que facilitan su estilización y comportamiento responsivo.
 
----
+## 8.1 Imágenes Responsivas
+Para hacer que una imagen se adapte automáticamente al tamaño de su contenedor disponemos de la clase `img-fluid`. Esto aplica un `max-width: 100%` y un `height: auto` para asegurar que la imagen nunca exceda el ancho de su contenedor.
 
-### 1. **Imágenes Responsivas**
-Para hacer que una imagen se adapte automáticamente al tamaño de su contenedor, puedes usar la clase `img-fluid`. Esto aplica un `max-width: 100%` y un `height: auto` para asegurar que la imagen nunca exceda el ancho de su contenedor.
-
-```html
-<img src="imagen.jpg" class="img-fluid" alt="Imagen responsiva">
+>**Ejemplo**
+```
+<body>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md" style="background-color: aliceblue;">Imagen responsive</div>          
+    </div>
+    <div class="row">
+      <div class="col" style="background-color: bisque;">col-sm</div>
+      <div class="col-md" style="background-color: blue;">
+        <div>
+          Ejemplo de columna responsive con imagen responsive
+        </div>
+        <img src="./image.avif" class="img-fluid" alt="...">
+      </div>
+      <div class="col-md" style="background-color: blueviolet;">col-sm</div>
+    </div>
+  </div>    
+</body>
 ```
 
----
-
-### 2. **Estilos de Bordes**
+## 8.2 Estilos de bootstrap para las imágenes en miniatura
 Bootstrap incluye clases para estilizar los bordes de las imágenes:
 - **`rounded`**: Aplica bordes redondeados a la imagen.
 - **`rounded-circle`**: Hace que la imagen tenga forma circular.
 - **`img-thumbnail`**: Añade un borde, un padding, y un fondo blanco, haciendo que la imagen se asemeje a una miniatura.
 
-```html
-<img src="imagen.jpg" class="rounded" alt="Imagen con bordes redondeados">
-<img src="imagen.jpg" class="rounded-circle" alt="Imagen circular">
-<img src="imagen.jpg" class="img-thumbnail" alt="Miniatura">
+>**Ejemplo**
+```
+<body>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md bg-warning">Imagen responsive</div>          
+    </div>
+    <div class="row">
+      <div class="col-lg-4 bg-primary">
+        <div>
+          Imagen responsive con bordes redondeados
+        </div>
+        <img src="image.avif" class="rounded img-fluid" alt="Imagen con bordes redondeados">
+      </div>            
+      <div class="col-lg-4 bg-info">
+        <div>
+          Imagen responsive con estilo circular
+        </div>
+        <img src="image.avif" class="rounded-circle img-fluid" alt="Imagen circular">        
+      </div>
+
+      <div class="col-lg-4 bg-danger">
+        <div>
+          Imagen responsive con estilo thumbnail
+        </div>
+        <img src="image.avif" class="img-thumbnail img-fluid" alt="Miniatura">    
+      </div>
+    </div>
+  </div>    
+</body>
 ```
 
----
 
 ### 3. **Alineación de Imágenes**
 Puedes alinear imágenes horizontalmente usando las clases de utilidades de alineación de Bootstrap como `float-start`, `float-end` o las clases de flexbox en un contenedor.
