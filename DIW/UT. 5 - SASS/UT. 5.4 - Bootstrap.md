@@ -1272,8 +1272,11 @@ Para centrar horizontalmente **contenido de nivel de bloque de ancho fijo** podr
 </body>
 ```
 
-## 8.4 Imágenes con Texto Superpuesto
-Puedes usar las clases de posicionamiento y z-index de Bootstrap para crear efectos como texto superpuesto en imágenes.
+## 8.4 Imágenes con texto superpuesto
+Podemos usar las clases de posicionamiento y <a href="https://getbootstrap.com/docs/5.3/layout/z-index/">`z-index`</a> de Bootstrap para crear efectos como texto superpuesto en imágenes.
+
+### 8.4.1 Usando `position-relative` y un contenedor con `position-absolute`
+Este es uno de los métodos más comunes y flexibles. Puedes usar una imagen como fondo o elemento visual, y posicionar el texto encima usando clases de posicionamiento.
 
 ```
 <body>
@@ -1284,40 +1287,64 @@ Puedes usar las clases de posicionamiento y z-index de Bootstrap para crear efec
     <div class="row">
       <div class="col-lg-2 bg-info">Columna 1</div>
       <div class="col-lg-8 bg-primary">
-        <div>Alineación izquierda y derecha</div>
-        <img src="image.avif" class="rounded float-start" width="25%" alt="Imagen con bordes redondeados">
-        <img src="image.avif" class="rounded float-end" width="25%" alt="Imagen con bordes redondeados">              
+        <div class="position-relative">
+          <img src="image.avif" class="rounded img-fluid" alt="Imagen con bordes redondeados">
+          <div class="position-absolute top-50 start-50 translate-middle text-bg-success">
+            <div>Posicionamiento de texto sobre la imagen</div>
+          </div>
+          <div class="position-absolute text-bg-warning sticky-md-top">
+            <div>Posicionamiento responsive de texto sobre la imagen</div>
+          </div>
+        </div>                           
       </div>
       <div class="col-lg-2 bg-info">Columna 3</div>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-2 bg-primary">Columna 1</div>
-      <div class="col-lg-8 bg-info">
-        <div>
-          Imagen centrada com mx-auto
-        </div>
-        <img src="image.avif" class="rounded mx-auto" width="25%" alt="Imagen con bordes redondeados">              
-      </div>
-      <div class="col-lg-2 bg-primary">Columna 3</div>
-    </div>
+    </div>   
   </div>          
 </body>
 ```
 
+>**Explicación del código**
+- `position-relative`: Define la posición relativa del contenedor principal, lo que permite que los elementos hijos con `position-absolute` se posicionen en relación a este.
+- `position-absolute`: Superpone el texto sobre la imagen.
+- `top-50 start-50 translate-middle`: Centra el texto horizontal y verticalmente.
+  
+Más información sobre `las clases de posicionamiento` <a href="https://getbootstrap.com/docs/5.3/utilities/position/">**aquí**</a>.
 
+### 8.4.2 Usando la clase `card`
 
-## 8.5 Imágenes como Fondo
-Aunque no es una característica exclusiva de Bootstrap, las imágenes también pueden ser usadas como fondo en elementos con las clases de utilidad de Bootstrap para estilos adicionales.
+Bootstrap ofrece el componente <a href="https://getbootstrap.com/docs/5.3/components/card/#image-overlays">`card`</a> que incluye una manera sencilla de superponer texto sobre imágenes.
 
-```html
-<div class="bg-light" style="background-image: url('imagen.jpg'); background-size: cover; height: 300px;">
-</div>
 ```
+<body>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-lg bg-warning">Sobreponiendo texto sobre imágenes</div>          
+    </div>
+    <div class="row">
+      <div class="col-lg-2 bg-info">Columna 1</div>
+      <div class="col-lg-8 bg-primary">
+        <div class="card text-bg-dark">
+          <img src="image.avif" class="card-img" alt="imagen">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Título de la tarjeta</h5>
+            <p class="card-text">Esta es una tarjeta ancha con texto de apoyo debajo como introducción al contenido adicional.</p>
+            <p class="card-text"><small>Última actualización: Hace 3 mins</small></p>
+          </div>
+        </div>                           
+      </div>
+      <div class="col-lg-2 bg-info">Columna 3</div>
+    </div>   
+  </div>          
+</body>
+```
+  
+>**Explicación del código**
+- **`card-img`**: Aplica la imagen como fondo de la tarjeta.
+- **`card-img-overlay`**: Superpone el contenido sobre la imagen.
+- **`d-flex flex-column justify-content-center text-center`**: Centra el texto vertical y horizontalmente dentro del overlay.
 
----
-
-### Resumen
-Bootstrap simplifica el manejo de imágenes al proporcionar herramientas para hacerlas responsivas, personalizar bordes, alinear, y combinarlas con otros elementos. Esto permite a los desarrolladores crear interfaces elegantes y funcionales sin tener que escribir mucho código CSS adicional.
 # 9 Tarea RA4 CEcd
+<a href="#">**Enunciado**</a>
+
+# 10 Tarea RA4 CEef
 <a href="#">**Enunciado**</a>
