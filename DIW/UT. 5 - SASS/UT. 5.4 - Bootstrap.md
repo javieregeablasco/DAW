@@ -1050,9 +1050,6 @@ Los **gutters** son los márgenes entre las columnas. Por defecto, Bootstrap uti
 **Nota:**
 Los gutters utilizan las mismas unidades que <a href="https://getbootstrap.com/docs/5.3/utilities/spacing/#margin-and-padding">**los márgenes y padding**</a> lo que permite combirnarlos.  
 
-### 6.4.9 Tarea RA4 CEcd
-<a href="#">**Enunciado**</a>
-
 # 7 Tipografías en Bootstrap
 Bootstrap ofrece una amplia gama de utilidades de tipografía que permiten estilizar y manejar texto. Las clases integradas de Bootstrap ayudan a definir tamaños, pesos, alineaciones, colores y otros aspectos visuales del texto.   
 Más información <a href="https://getbootstrap.com/docs/5.3/content/typography/#headings">aquí</a>
@@ -1175,3 +1172,7 @@ Más información <a href="https://getbootstrap.com/docs/5.3/content/typography/
 </html>
 ```
 # 8 Imágenes
+
+
+# 9 Tarea RA4 CEcd
+<a href="#">**Enunciado**</a>
