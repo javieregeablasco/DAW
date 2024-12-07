@@ -1173,6 +1173,84 @@ Más información <a href="https://getbootstrap.com/docs/5.3/content/typography/
 ```
 # 8 Imágenes
 
+En Bootstrap, las imágenes son elementos clave para el diseño visual y se manejan mediante una combinación de clases predefinidas que facilitan su estilización y comportamiento responsivo. Aquí tienes un resumen de cómo funcionan:
 
+---
+
+### 1. **Imágenes Responsivas**
+Para hacer que una imagen se adapte automáticamente al tamaño de su contenedor, puedes usar la clase `img-fluid`. Esto aplica un `max-width: 100%` y un `height: auto` para asegurar que la imagen nunca exceda el ancho de su contenedor.
+
+```html
+<img src="imagen.jpg" class="img-fluid" alt="Imagen responsiva">
+```
+
+---
+
+### 2. **Estilos de Bordes**
+Bootstrap incluye clases para estilizar los bordes de las imágenes:
+- **`rounded`**: Aplica bordes redondeados a la imagen.
+- **`rounded-circle`**: Hace que la imagen tenga forma circular.
+- **`img-thumbnail`**: Añade un borde, un padding, y un fondo blanco, haciendo que la imagen se asemeje a una miniatura.
+
+```html
+<img src="imagen.jpg" class="rounded" alt="Imagen con bordes redondeados">
+<img src="imagen.jpg" class="rounded-circle" alt="Imagen circular">
+<img src="imagen.jpg" class="img-thumbnail" alt="Miniatura">
+```
+
+---
+
+### 3. **Alineación de Imágenes**
+Puedes alinear imágenes horizontalmente usando las clases de utilidades de alineación de Bootstrap como `float-start`, `float-end` o las clases de flexbox en un contenedor.
+
+```html
+<img src="imagen.jpg" class="float-start" alt="Alineada a la izquierda">
+<img src="imagen.jpg" class="float-end" alt="Alineada a la derecha">
+```
+
+---
+
+### 4. **Integración con el Sistema de Grillas**
+Las imágenes pueden ser colocadas dentro del sistema de grillas de Bootstrap para un diseño más estructurado y responsivo.
+
+```html
+<div class="row">
+  <div class="col-md-4">
+    <img src="imagen.jpg" class="img-fluid" alt="Imagen en grilla">
+  </div>
+  <div class="col-md-8">
+    <p>Texto descriptivo junto a la imagen.</p>
+  </div>
+</div>
+```
+
+---
+
+### 5. **Imágenes con Texto Superpuesto**
+Puedes usar las clases de posicionamiento y z-index de Bootstrap para crear efectos como texto superpuesto en imágenes.
+
+```html
+<div class="position-relative">
+  <img src="imagen.jpg" class="img-fluid" alt="Imagen con texto superpuesto">
+  <div class="position-absolute top-50 start-50 translate-middle text-white">
+    Texto superpuesto
+  </div>
+</div>
+```
+
+---
+
+### 6. **Imágenes como Fondo**
+Aunque no es una característica exclusiva de Bootstrap, las imágenes también pueden ser usadas como fondo en elementos con las clases de utilidad de Bootstrap para estilos adicionales.
+
+```html
+<div class="bg-light" style="background-image: url('imagen.jpg'); background-size: cover; height: 300px;">
+</div>
+```
+
+---
+
+### Resumen
+Bootstrap simplifica el manejo de imágenes al proporcionar herramientas para hacerlas responsivas, personalizar bordes, alinear, y combinarlas con otros elementos. Esto permite a los desarrolladores crear interfaces elegantes y funcionales sin tener que escribir mucho código CSS adicional.
 # 9 Tarea RA4 CEcd
 <a href="#">**Enunciado**</a>
