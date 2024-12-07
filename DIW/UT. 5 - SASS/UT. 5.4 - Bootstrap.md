@@ -1238,48 +1238,76 @@ Bootstrap incluye clases para estilizar los bordes de las imágenes:
 ```
   
 ## 8.3 Alineación de Imágenes
-Para alinear imágenes **dentro de un mismo contenedor**, usaremos las clases <a href="https://getbootstrap.com/docs/5.3/utilities/float/">`float-***`</a> o las clases de flexbox en un contenedor.  
-También se pueden usar las clases de alineación de texto <a href="https://getbootstrap.com/docs/5.3/utilities/text/#text-alignment">`text-***`</a>.  
-Puedes alinear imágenes horizontalmente usando las clases de utilidades de alineación de Bootstrap como 
+Para alinear imágenes **dentro de un mismo contenedor**, usaremos las clases <a href="https://getbootstrap.com/docs/5.3/utilities/float/">`float-***`</a>.    
+**A nivel de bloque**, también se pueden usar las clases de alineación de texto <a href="https://getbootstrap.com/docs/5.3/utilities/text/#text-alignment">`text-***`</a>.  
+Para centrar horizontalmente **contenido de nivel de bloque de ancho fijo** podremos usar la clase `.mx-auto`. 
 
-```html
-<img src="imagen.jpg" class="float-start" alt="Alineada a la izquierda">
-<img src="imagen.jpg" class="float-end" alt="Alineada a la derecha">
+```
+<body>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-lg bg-warning">Alineando imágenes</div>          
+    </div>
+    <div class="row">
+      <div class="col-lg-2 bg-info">Columna 1</div>
+      <div class="col-lg-8 bg-primary">
+        <div>Alineación izquierda y derecha</div>
+        <img src="image.avif" class="rounded float-start" width="25%" alt="Imagen con bordes redondeados">
+        <img src="image.avif" class="rounded float-end" width="25%" alt="Imagen con bordes redondeados">              
+      </div>
+      <div class="col-lg-2 bg-info">Columna 3</div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-2 bg-primary">Columna 1</div>
+      <div class="col-lg-8 bg-info">
+        <div>
+          Imagen centrada com mx-auto
+        </div>
+        <img src="image.avif" class="rounded mx-auto" width="25%" alt="Imagen con bordes redondeados">              
+      </div>
+      <div class="col-lg-2 bg-primary">Columna 3</div>
+    </div>
+  </div>          
+</body>
 ```
 
----
-
-### 4. **Integración con el Sistema de Grillas**
-Las imágenes pueden ser colocadas dentro del sistema de grillas de Bootstrap para un diseño más estructurado y responsivo.
-
-```html
-<div class="row">
-  <div class="col-md-4">
-    <img src="imagen.jpg" class="img-fluid" alt="Imagen en grilla">
-  </div>
-  <div class="col-md-8">
-    <p>Texto descriptivo junto a la imagen.</p>
-  </div>
-</div>
-```
-
----
-
-### 5. **Imágenes con Texto Superpuesto**
+## 8.4 Imágenes con Texto Superpuesto
 Puedes usar las clases de posicionamiento y z-index de Bootstrap para crear efectos como texto superpuesto en imágenes.
 
-```html
-<div class="position-relative">
-  <img src="imagen.jpg" class="img-fluid" alt="Imagen con texto superpuesto">
-  <div class="position-absolute top-50 start-50 translate-middle text-white">
-    Texto superpuesto
-  </div>
-</div>
+```
+<body>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-lg bg-warning">Alineando imágenes</div>          
+    </div>
+    <div class="row">
+      <div class="col-lg-2 bg-info">Columna 1</div>
+      <div class="col-lg-8 bg-primary">
+        <div>Alineación izquierda y derecha</div>
+        <img src="image.avif" class="rounded float-start" width="25%" alt="Imagen con bordes redondeados">
+        <img src="image.avif" class="rounded float-end" width="25%" alt="Imagen con bordes redondeados">              
+      </div>
+      <div class="col-lg-2 bg-info">Columna 3</div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-2 bg-primary">Columna 1</div>
+      <div class="col-lg-8 bg-info">
+        <div>
+          Imagen centrada com mx-auto
+        </div>
+        <img src="image.avif" class="rounded mx-auto" width="25%" alt="Imagen con bordes redondeados">              
+      </div>
+      <div class="col-lg-2 bg-primary">Columna 3</div>
+    </div>
+  </div>          
+</body>
 ```
 
----
 
-### 6. **Imágenes como Fondo**
+
+## 8.5 Imágenes como Fondo
 Aunque no es una característica exclusiva de Bootstrap, las imágenes también pueden ser usadas como fondo en elementos con las clases de utilidad de Bootstrap para estilos adicionales.
 
 ```html
