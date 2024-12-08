@@ -1372,7 +1372,7 @@ Las utilidades de **`object-fit`** permiten controlar cómo se ajustan imágenes
 | `object-fit-contain` | El contenido se escala para ajustarse completamente dentro del contenedor sin recortar.  |
 | `object-fit-cover`   | El contenido llena todo el contenedor, pero puede recortarse para mantener la proporción.|
 | `object-fit-fill`    | El contenido se estira para llenar el contenedor, ignorando la proporción original.      |
-| `object-fit-scale-down` | El contenido se escala para ajustarse al contenedor, sin ser mayor que el original. |
+| `object-fit-scale` | El contenido se escala para ajustarse al contenedor, sin ser mayor que el original. |
 | `object-fit-none`    | El contenido no se ajusta automáticamente; mantiene su tamaño original.                 |
 
 >**Ejemplo**
@@ -1405,93 +1405,44 @@ Imágen <a href="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%2
   </div>
 </body>
 ```
+  
+**Nota:** Para la inserción de video, simplemente deberemos cambiar la etiqueta `<img>` por `<video>`.  
 
+## 10.3 Insersión responsive de videos e imágenes  
+Usando las clases `object-fit-{breakpoint}-{value}` tambien podremos cambiar el renderizado de la imagen en funcion de la resolución de la pantalla.
 
-#### **1. `object-fit-cover`: Contenido que llena el contenedor**
-Ideal para imágenes de fondo o videos que deben cubrir todo el espacio, aunque se recorten.
-
-```html
-<img src="imagen.jpg" class="object-fit-cover w-100" alt="Imagen ajustada">
 ```
-
-En este caso, la imagen llenará todo el ancho del contenedor, manteniendo la proporción, pero puede recortarse.
-
----
-
-#### **2. `object-fit-contain`: Ajustar contenido sin recortar**
-Perfecto para imágenes o videos que deben mostrarse completamente sin perder ninguna parte.
-
-```html
-<img src="imagen.jpg" class="object-fit-contain w-100" alt="Imagen ajustada">
+<body>
+  <div class="container my-5">
+    <div class="row row-cols-5 text-center overflow-hidden" style="height: 10rem;">
+      <div class="col text-bg-info ">
+        <p>fit-none</p>
+        <img src="panoramica.webp" class="object-fit-sm-none border rounded w-100 h-100">
+      </div>  
+      <div class="col text-bg-warning">
+        <p>fit-none</p>
+        <img src="panoramica.webp" class="object-fit-md-none border rounded w-100 h-100" >
+      </div>
+      <div class="col text-bg-primary">
+        <p>fit-none</p>
+        <img src="panoramica.webp" class="object-fit-lg-none border rounded w-100 h-100" >
+      </div>
+      <div class="col text-bg-secondary">
+        <p>fit-none</p>
+        <img src="panoramica.webp" class="object-fit-xl-none border rounded w-100 h-100">      
+      </div>
+      <div class="col text-bg-info">
+        <p>fit-none</p>
+        <img src="panoramica.webp" class="object-fit-xxl-none border rounded w-100 h-100" >
+      </div>   
+    </div>
+  </div>
+</body>
 ```
-
-La imagen se escala dentro del contenedor, mostrando todo el contenido sin recortar.
-
----
-
-#### **3. `object-fit-fill`: Estirar para llenar**
-Útil si necesitas que el contenido llene el espacio disponible, sin importar que se deforme.
-
-```html
-<img src="imagen.jpg" class="object-fit-fill w-100" alt="Imagen estirada">
-```
-
-La imagen se ajustará para ocupar todo el contenedor, incluso si esto significa alterar su proporción original.
-
----
-
-#### **4. `object-fit-scale-down`: Ajuste proporcional, sin agrandar**
-Escala el contenido solo si es más grande que el contenedor. Si es más pequeño, no lo agranda.
-
-```html
-<img src="imagen.jpg" class="object-fit-scale-down w-100" alt="Imagen ajustada">
-```
-
-El contenido se mostrará en su tamaño original o escalado para ajustarse al contenedor.
-
----
-
-#### **5. `object-fit-none`: Sin ajustes automáticos**
-Muestra el contenido con su tamaño original sin considerar el contenedor.
-
-```html
-<img src="imagen.jpg" class="object-fit-none w-100" alt="Imagen sin ajuste">
-```
-
-Este enfoque es útil cuando necesitas total control sobre el tamaño y posicionamiento.
-
----
-
-### **Ejemplo combinado con tamaños**
-Puedes combinar estas utilidades con clases de tamaño, como `w-100` o `h-100`, para controlar el comportamiento.
-
-```html
-<div style="width: 300px; height: 200px; overflow: hidden;">
-  <img src="imagen.jpg" class="object-fit-cover w-100 h-100" alt="Imagen cubierta">
-</div>
-```
-
-En este ejemplo:
-- El contenedor tiene dimensiones fijas (300x200 px).
-- La imagen llena completamente el contenedor manteniendo su proporción, pero puede recortarse.
-
----
-
-### **Soporte del navegador**
-Las utilidades `object-fit` están basadas en CSS estándar, compatible con la mayoría de los navegadores modernos, pero asegúrate de probar en entornos específicos si estás apuntando a navegadores más antiguos.
-
----
-
-### **Conclusión**
-Las utilidades de `object-fit` en Bootstrap 5 son herramientas poderosas para gestionar contenido multimedia de manera eficiente y responsiva. Puedes usarlas en imágenes, videos o cualquier elemento multimedia que necesite adaptarse a diferentes diseños.
-
-¿Te gustaría un ejemplo práctico en un proyecto? 😊
+  
+**Nota:** Para la inserción de video responsive, simplemente deberemos cambiar la etiqueta `<img>` por `<video>`. 
 
 
-
-
-
-Bootstrap tiene la clase `.embed-responsive` para hacer que los videos se adapten al ancho del contenedor.
 
 ```html
 <div class="ratio ratio-16x9">
@@ -1518,18 +1469,6 @@ https://getbootstrap.com/docs/5.3/utilities/object-fit/
 
 
 
-### 3. **Estilo adicional con utilidades**
-Puedes personalizar aún más el diseño del video usando clases de utilidades de Bootstrap como bordes, sombras, etc.
-
-```html
-<div class="ratio ratio-16x9 border border-primary shadow-lg">
-  <iframe src="https://www.youtube.com/embed/video_id" title="Video estilizado" allowfullscreen></iframe>
-</div>
-```
-
-Esto agrega un borde de color primario y una sombra.
-
----
 
 ### 4. **Galería de videos**
 Si necesitas presentar múltiples videos en forma de galería, puedes usar el sistema de cuadrícula de Bootstrap.
