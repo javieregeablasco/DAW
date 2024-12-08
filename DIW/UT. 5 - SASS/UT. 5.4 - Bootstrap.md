@@ -1443,44 +1443,53 @@ Usando las clases `object-fit-{breakpoint}-{value}` tambien podremos cambiar el 
 **Nota:** Para la inserción de video responsive, simplemente deberemos cambiar la etiqueta `<img>` por `<video>`. 
 
 ## 10.4 Aspect ratio de videos
-https://getbootstrap.com/docs/5.3/helpers/ratio/
+Los <a href="https://getbootstrap.com/docs/5.3/helpers/ratio/">**ratios**</a> son utilidades diseñadas para mantener proporciones específicas (aspect ratios) en los elementos. Esto es especialmente útil para elementos como imágenes, videos o cualquier contenido que deba mantener una relación de aspecto definida.
 
-```html
-<div class="ratio ratio-16x9">
-  <iframe src="https://www.youtube.com/embed/video_id" title="Video de ejemplo" allowfullscreen></iframe>
-</div>
+**Clases predefinidas**:
+ - `ratio-1x1`: Relación 1:1 (cuadrado).
+ - `ratio-4x3`: Relación 4:3 (televisión estándar).
+ - `ratio-16x9`: Relación 16:9 (pantalla widescreen).
+ - `ratio-21x9`: Relación 21:9 (ultrawide).
+
+**Compatibilidad con contenido**:
+ - Los ratios funcionan mejor con contenido como imágenes, videos o elementos incrustados (`iframe`). El contenido dentro del contenedor automáticamente se ajusta al aspecto definido.
+
+>**Ejemplo**
 ```
-
----
-La clase `.ratio` junto con la proporción como `ratio-16x9` (16:9) asegura que el video sea responsivo. Puedes ajustar la proporción según sea necesario, por ejemplo:
-
-- `ratio-4x3` para 4:3.
-- `ratio-1x1` para videos cuadrados.
-
-
-
-
-
-
-
-### 4. **Galería de videos**
-Si necesitas presentar múltiples videos en forma de galería, puedes usar el sistema de cuadrícula de Bootstrap.
-
-```html
-<div class="row g-4">
-  <div class="col-md-6">
-    <div class="ratio ratio-16x9">
-      <iframe src="https://www.youtube.com/embed/video_id1" title="Video 1" allowfullscreen></iframe>
+<body>
+  <div class="container-fluid">
+    <div class="row row-cols-4">      
+      <div class="col text-bg-info">
+        <img src="panoramica.webp" class="img-fluid border rounded object-fit-contain">
+      </div>      
+      <div class="col text-bg-warning">        
+        <img src="panoramica.webp" class="img-fluid border rounded object-fit-contain">
+      </div>      
+      <div class="col text-bg-primary">        
+        <img src="panoramica.webp" class="img-fluid border rounded object-fit-contain">
+      </div>
+      <div class="col text-bg-secondary">        
+        <img src="panoramica.webp" class="img-fluid border rounded object-fit-contain">      
+      </div> 
+    </div>   
+  
+    <div class="row row-cols-4">      
+      <div class="col text-bg-info ratio ratio-1x1" style="width: 25vw; height: 25vw;">
+        <img src="panoramica.webp" class="rounded object-fit-contain">
+      </div>      
+      <div class="col text-bg-warning ratio ratio-4x3" style="width: 25vw; height: 19vw;">        
+        <img src="panoramica.webp" class="rounded object-fit-contain">
+      </div>      
+      <div class="col text-bg-primary ratio ratio-16x9" style="width: 25vw; height: 14vw;">        
+        <img src="panoramica.webp" class="rounded object-fit-contain">
+      </div>
+       <div class="col text-bg-secondary ratio ratio-21x9" style="width: 25vw; height: 11vw;">        
+        <img src="panoramica.webp" class="rounded object-fit-contain">      
+      </div>
     </div>
   </div>
-  <div class="col-md-6">
-    <div class="ratio ratio-16x9">
-      <iframe src="https://www.youtube.com/embed/video_id2" title="Video 2" allowfullscreen></iframe>
-    </div>
-  </div>
-</div>
+</body>
 ```
-
 
 # 10 Tarea RA4 CEef
 <a href="#">**Enunciado**</a>
