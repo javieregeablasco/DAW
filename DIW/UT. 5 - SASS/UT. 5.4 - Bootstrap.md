@@ -1442,7 +1442,7 @@ Usando las clases `object-fit-{breakpoint}-{value}` tambien podremos cambiar el 
   
 **Nota:** Para la inserción de video responsive, simplemente deberemos cambiar la etiqueta `<img>` por `<video>`. 
 
-## 10.4 Aspect ratio de videos
+## 10.4 Aspect ratio de videos e imágenes
 Los <a href="https://getbootstrap.com/docs/5.3/helpers/ratio/">**ratios**</a> son utilidades diseñadas para mantener proporciones específicas (aspect ratios) en los elementos. Esto es especialmente útil para elementos como imágenes, videos o cualquier contenido que deba mantener una relación de aspecto definida.
 
 **Clases predefinidas**:
