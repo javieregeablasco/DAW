@@ -1346,5 +1346,10 @@ Bootstrap ofrece el componente <a href="https://getbootstrap.com/docs/5.3/compon
 # 9 Tarea RA4 CEcd
 <a href="#">**Enunciado**</a>
 
+# 10 Videos en Bootstrap
+https://getbootstrap.com/docs/4.0/utilities/embed/
+https://getbootstrap.com/docs/5.3/utilities/object-fit/#video
+
+
 # 10 Tarea RA4 CEef
 <a href="#">**Enunciado**</a>
