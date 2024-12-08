@@ -1442,7 +1442,8 @@ Usando las clases `object-fit-{breakpoint}-{value}` tambien podremos cambiar el 
   
 **Nota:** Para la inserción de video responsive, simplemente deberemos cambiar la etiqueta `<img>` por `<video>`. 
 
-
+## 10.4 Aspect ratio de videos
+https://getbootstrap.com/docs/5.3/helpers/ratio/
 
 ```html
 <div class="ratio ratio-16x9">
@@ -1450,22 +1451,14 @@ Usando las clases `object-fit-{breakpoint}-{value}` tambien podremos cambiar el 
 </div>
 ```
 
+---
 La clase `.ratio` junto con la proporción como `ratio-16x9` (16:9) asegura que el video sea responsivo. Puedes ajustar la proporción según sea necesario, por ejemplo:
 
 - `ratio-4x3` para 4:3.
 - `ratio-1x1` para videos cuadrados.
 
----
 
 
-
-
-
-https://getbootstrap.com/docs/5.3/helpers/ratio/
-https://getbootstrap.com/docs/5.3/utilities/object-fit/
-
-
----
 
 
 
@@ -1488,14 +1481,6 @@ Si necesitas presentar múltiples videos en forma de galería, puedes usar el si
 </div>
 ```
 
----
-
-### Consejos adicionales:
-1. **Asegúrate de cargar el video de manera eficiente**: Usa formatos modernos como MP4 o enlaces a plataformas de streaming para optimizar el rendimiento.
-2. **Accesibilidad**: Proporciona un título en los `iframe` (`title="Descripción"`) o subtítulos en los videos mediante `<track>`.
-3. **Evita la reproducción automática**: Aunque es posible con el atributo `autoplay`, no se recomienda por cuestiones de usabilidad.
-
-¿Tienes algún caso específico en mente? 😊
 
 # 10 Tarea RA4 CEef
 <a href="#">**Enunciado**</a>
