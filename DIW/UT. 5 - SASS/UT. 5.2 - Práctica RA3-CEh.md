@@ -82,7 +82,7 @@ Realizar un bucle `@for` **sobre la variable $num_elementos** que haga lo siguie
 # 5 Práctica
 Subir el resultado de vuestra práctica a aules en el apartado correspondiente.
 
-# 6 Tarea RA2-CEj
+# 6 Tarea RA2-CEj-2
 Siguiendo las buenas prácticas de Sass redistribuir las diferentes declaraciones, funciones y mixins en sus correspondientes carpetas siguiendo la estructura dada a continuación. 
 ```
 styles/  
