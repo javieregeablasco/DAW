@@ -459,7 +459,7 @@ Es recomendable no anidar demasiado profundamente, ya que puede hacer que el CSS
 }
 ```
   
-## 6.8 Tarea RA3CEh
+## 6.8 Tarea RA2CEj
 Convertir la hoja de estilos siguiente a SCSS.
 ```
 .panel {
