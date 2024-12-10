@@ -596,9 +596,9 @@ Consiste en anidar una fila (row) dentro de una columna (col) existente, permiti
 ### 6.3.6 Ejercicio
 Crear un documento HTML `index.html` que defina un container, un row y **3 columnas**.  
 Anidar dentro de la **segunda columna** un row responsive de **4 columnas** con las siguientes condiciones. 
- - Para resoluciones superiores a **X-large** el ancho de las columnas será 3, 3, 3, 3.
- - Para resoluciones superiores a **Large** el ancho de las columnas será de 2, 2, 2, 2.
- - Para resoluciones superiores a **Medium**, pasaremos de **4 a 3 columnas** con un ancho de 2, 8, 2. 
+ - Para resoluciones superiores a **X-large** el ancho de las **columnas anidadas** será 3, 3, 3, 3.
+ - Para resoluciones superiores a **Large** el ancho de las **columnas anidadas** será de 2, 2, 2, 2.
+ - Para resoluciones superiores a **Medium**, pasaremos de **4 a 3 columnas anidadas** con un ancho de 2, 8, 2. 
 
 ## 6.4 Estilos de columnas de Bootstrap
 Los estilos de columnas permiten aplicar estilos para el renderizado de las columnas dentro de su contenedor.  
