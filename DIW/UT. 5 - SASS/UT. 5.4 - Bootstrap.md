@@ -62,6 +62,11 @@ En este caso, podemos incluir una hoja de estilos CSS propia al proyecto, **siem
     <title>Usar Bootsrap</title>
 </head>
 ```
+## 3.4 Ejercicio
+Crear un archivo `index.html` que incluya en los metadatos los enlaces a Bootstrap desde su CDN.  
+Este archivo no servirá para evitar de siempre estar buscando los enlaces de Bootstrap.  
+
+
 # 4 Usar Boostrap en nuestro proyecto
 para añadir clases de estilos propias de Bootstrap, simplemente añadiremos su nombre a la declaracion de estilos de la etiquetas que queremos modificar.
 >Ejemplo de cambio de <a href="https://getbootstrap.com/docs/5.3/content/typography/">**tipografía**</a>
@@ -133,10 +138,10 @@ El selector `container` permite definir una caja con unas dimensiones `responsiv
 
 **Formas de definir el ancho de una caja con container :**
  - container: Establece un contenedor con un ancho máximo que se adapta al tamaño del viewport.
- - container-{breakpoint}: Establecer un ancho máximo específico según un punto de interrupción definido.
+ - container-{breakpoint}: Establece un ancho máximo específico según un punto de interrupción definido.
  - container-fluid: Define un contenedor que ocupa el 100% del ancho del viewport, sin restricciones en los puntos de interrupción.
 
-|| Extra small <576px | Small ≥576px | Medium ≥768px | Large ≥992px | X-Large ≥1200px | XX-Larg ≥1400px |
+|| Extra small <576px | Small ≥576px | Medium ≥768px | Large ≥992px | X-Large ≥1200px | XX-Large ≥1400px |
 |------------------|--------------------|--------------|---------------|--------------|-----------------|-----------------|
 | .container |	100% | 540px | 720px | 960px |	1140px |	1320px |	
 | .container-sm |	100% |	540px |	720px |	960px |	1140px |	1320px |
@@ -156,7 +161,7 @@ El selector `container` permite definir una caja con unas dimensiones `responsiv
 ```
 
 ## 6.3 Grid / rejilla
-El sistema de rejilla es el núcleo del diseño de Bootstrap. Está basado en **flexbox** y divide la página en un **sistema de 12 columnas**. Estas columnas se pueden combinar para crear diferentes diseños.  
+El sistema de rejilla es el núcleo del diseño de Bootstrap. Está basado en **flexbox** de CSS y divide la página en un **sistema de 12 columnas**. Estas columnas se pueden combinar para crear diferentes diseños.  
 El selector `row` sirve para estructurar el contenido de la página en filas. Cada fila estará compuesta de **una serie de columnas** y esas columnas, se ajustarán al tamaño de la pantalla. 
 
 ### 6.3.1 Columnas de ancho idéntico
@@ -179,9 +184,13 @@ Para renderizar columnas de ancho identico, usaremos el selector de clase `col`.
   </div>
 </body>
 ```
+#### 6.3.1.1 Ejercicio
+Crear un documento HTML `index.html` que defina un container, un row y **13 columnas**.  
+Renderizarlo y ver el resultado.
 
 ### 6.3.2 Columnas de ancho desigual
-Para definir un tamaño de columnas personalizado, usaremos el sufijo `-XX`, donde XX puede adoptar los valores del 1 al 12 (recordar que el sistema de columnas en Bootstrap se basa sobre **una distribución máxima de 12 columnas**).
+Para definir un tamaño de columnas personalizado, usaremos el sufijo `-XX`, donde XX puede adoptar los valores del 1 al 12 (recordar que el sistema de columnas en Bootstrap se basa sobre **una distribución máxima de 12 columnas**).  
+
 >**Ejemplo de 3 columnas que ocupan 2, 8 y 2 columnas (del grid) respectivamente.**  
 ```
 <body> 
@@ -194,7 +203,7 @@ Para definir un tamaño de columnas personalizado, usaremos el sufijo `-XX`, don
         Columna 2
       </div>
       <div class="col-2" style="background-color: aquamarine;">
-        Column 3
+        Columna 3
       </div>
     </div>
   </div>
@@ -202,11 +211,15 @@ Para definir un tamaño de columnas personalizado, usaremos el sufijo `-XX`, don
 ```
 **Nota importante:** Para evitar resultados inesperados siempre respetar que la suma del ancho de las columnas sea igual a 12.
 
+#### 6.3.2.1 Ejercicio
+Crear un documento HTML `index.html` que defina un container, un row y **3 columnas** de **ancho 4, 5, 4** respectivamente.  
+Renderizarlo y ver el resultado.
+
 ### 6.3.3 Columnas ajustables a su contenido
 Es bastante habitual tener que reajustar el ancho de las columnas en función del tamaño del `viewport` y del contenido de las columnas. Para ello usaremos las clases `col-{breakpoint}-auto`. 
 
 >**Ejemplo con y sin reajute del ancho de las columnas**  
->Al llegar al breakpoint (lg: 992px) **col-lg-auto** "pasa a ser col-lg" y sigue la misma estrategia que container.
+>Al llegar al breakpoint (lg: 992px) **col-lg-auto** "pasa a ser **col-lg** y sigue la misma estrategia que la clase container.  
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/col-lg.png" width:200px>
 
 ```
