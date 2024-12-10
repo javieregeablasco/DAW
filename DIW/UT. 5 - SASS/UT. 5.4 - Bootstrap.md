@@ -263,7 +263,7 @@ Del mismo modo que podemos ajustar el ancho del contenedor a su contenido, tambi
 ```
 <body> 
   <div class="container text-center" >
-    <div class="row justify-content-md-center">
+    <div class="row">
       <div class="col-1" style="background-color: antiquewhite;">
         1 de 12
       </div>
@@ -301,8 +301,8 @@ Del mismo modo que podemos ajustar el ancho del contenedor a su contenido, tambi
         12 de 12
       </div>   
     </div>
-    <div class="row justify-content-md-center col-lg-auto" style="background-color: black; color: white;">
-      Las columnas 1, 2 y 3 tienen un ancho de 1, 10 y 1 respectivamente hasta el breakpoint "sm"
+    <div class="row justify-content-center col-lg-auto" style="background-color: black; color: white;">
+      Las columnas 1, 2 y 3 tienen un ancho de 1, 10 y 1 respectivamente hasta llegar al breakpoint "lg"
     </div>
     <div class="row justify-content-md-center">
       <div class="col-lg-1 " style="background-color: antiquewhite;">
@@ -335,16 +335,16 @@ En este ejemplo vemos como la distribución del ancho de las columnas pasa de se
         crossorigin="anonymous"></script>
     <title>col 2 brekpoints</title>
     <style>      
-      @media screen and (max-width: 960px) {
+      @media screen and (max-width: 992px) {
         #comentario::after {
           background-color:red;
           color: black;
           width: 100%;
-          content: "Luego pasa a 1, 10, 1";       
+          content: "Luego pasa a 1, 10, 1 hasta small 576";       
         }
       }
 
-      @media screen and (max-width: 540px) {
+      @media screen and (max-width: 576px) {
         #comentario::after {
           background-color:blueviolet;
           color: wheat;
@@ -395,7 +395,7 @@ En este ejemplo vemos como la distribución del ancho de las columnas pasa de se
       </div>   
     </div>
     <div id="comentario" class="row justify-content-md-center col-lg-auto" style="background-color: black; color: white;">
-      Las columnas 1, 2 y 3 tienen un ancho de 2, 8 y 2 respectivamente hasta el breakpoint "md" de **540px**.
+      Las columnas 1, 2 y 3 tienen un ancho de 2, 8 y 2 respectivamente hasta el breakpoint "lg" de 992px.
     </div>
     <div class="row justify-content-md-center">
       <div class="col-lg-2 col-sm-1" style="background-color: antiquewhite;">
@@ -411,6 +411,13 @@ En este ejemplo vemos como la distribución del ancho de las columnas pasa de se
   </div>
 </body>
 ```
+
+# 6.3.3.1 Ejercicio
+Crear un documento HTML `index.html` que defina un container, un row y **3 columnas**.  
+Hacer el `grid` responsive con las siguientes condiciones. 
+ - Para resoluciones superiores a **X-large** el ancho de las columnas será 4, 4, 4.
+ - Para resoluciones superiores a **Large** el ancho de las columnas será de 3, 6, 3.
+ - Para resoluciones superiores a **Medium** el ancho de las columnas será de 2, 8, 2.
 
 ### 6.3.4 Predefinir la cantidad de columnas, clases row-cols
 Las clases relacionadas con `row-cols` permiten configurar rápidamente el número de columnas en un diseño grid utilizando el sistema de filas y columnas (row y col).  
