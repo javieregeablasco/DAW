@@ -48,5 +48,89 @@ npm i --save-dev sass
 # 3 Estructura de nuestro proyecto
 Para definir la estructura básica de nuestro proyecto, crearemos una carpeta `src` así como los archivos `index.html', `main.js`, `styles.scss` y el archivo de configuración `vite.config.js`
 ```
+mkdir src
+mkdir src\js
+mkdir src\scss
 New-Item -ItemType File src/index.html, src/js/main.js, src/scss/styles.scss, vite.config.js
 ```
+
+Nuestro proyecto quedará de la siguiente manera:
+Proyecto1/
+├── node_modules
+├── src/
+│   ├── js/
+│   │   └── main.js
+│   └── scss/
+│   |   └── styles.scss
+|   └── index.html
+├── package-lock.json
+├── package.json
+└── vite.config.js
+
+# 4 Configurar Vite 
+## 4.1 Editar el archivo de configuración vite.config.js
+Compiaremos el siguiente código dentro del archivo.
+```
+import { resolve } from 'path'
+
+export default {
+  root: resolve(__dirname, 'src'),
+  build: {
+    outDir: '../dist'
+  },
+  server: {
+    port: 8080
+  }
+}
+```
+De esa manera, indicamos a Vite dónde se encuentra el código JavaScript y la configuración básica del servidor.
+```
+import { resolve } from 'path'
+
+export default {
+  root: resolve(__dirname, 'src'),
+  build: {
+    outDir: '../dist'
+  },
+  server: {
+    port: 8080
+  }
+}
+```
+  
+## 4.2 Editar el archivo index.html
+```
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap con Sass y Vite</title>
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <div class="container py-4 px-3 mx-auto">
+      <h1>¡Hola, Bootstrap Sass y Vite!</h1>
+      <button class="btn btn-primary">Botón primario</button>
+      <p class="text-center display-1">¡Si no ves este texto subrayado, algo ha fallado!</p>
+    </div>
+  </body>
+</html>
+```
+  
+## 4.3 Editar el archivo package.json
+Añadimos la línea que falta, eso permitirá lanzar nuestro servidor Vite local.  
+```
+{
+  // ...
+  "scripts": {
+    "start": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  // ...
+}
+```
+
+## 4.4 Lazamos Vite
+```
+
