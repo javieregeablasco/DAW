@@ -141,5 +141,23 @@ Quedando el renderizado de la siguiente manera:
   
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/holaBSSASSVITE.png">
 
-# Impotar Bootstrap
+# 5 Impotar Bootstrap
+## 5.1 Importar Bootstrap CSS
+Como hemos visto en el punto anterior, no se han aplicado los estilos porque Boostrap no está importado en nuestro proyecto.  
+Para ello editaremos el archivo de Sass `styles.scss` e importaremos todas las fuentes Sass de Bootstrap.
+```
+@import "bootstrap/scss/bootstrap";
+```
+
+## 5.2 Importar CSS y el JavaScript de Bootstrap
+Para ello editamos el archivo main.js
+```
+// Import our custom CSS
+import '../scss/styles.scss'
+
+// Import all of Bootstrap's JS
+import * as bootstrap from 'bootstrap'
+```
+
+
 
