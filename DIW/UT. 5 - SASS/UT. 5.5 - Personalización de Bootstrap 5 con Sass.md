@@ -54,19 +54,20 @@ mkdir src\scss
 New-Item -ItemType File src/index.html, src/js/main.js, src/scss/styles.scss, vite.config.js
 ```
 
-Nuestro proyecto quedará de la siguiente manera:
+Nuestro proyecto quedará de la siguiente manera:  
+```
 Proyecto1/  
 ├── node_modules/  
 ├── src/  
-|   ├── js/  
-|   │   └── main.js  
-|   ├── scss/  
-|   │   └── styles.scss  
-|   └── index.html  
+│    ├── js/  
+│    │   └── main.js  
+│    ├── scss/  
+│    │   └── styles.scss  
+│    └── index.html  
 ├── package-lock.json  
 ├── package.json  
 └── vite.config.js  
- 
+```
 
 # 4 Configurar Vite 
 ## 4.1 Editar el archivo de configuración vite.config.js
@@ -134,4 +135,9 @@ Añadimos la línea que falta, eso permitirá lanzar nuestro servidor Vite local
 
 ## 4.4 Lazamos Vite
 ```
+npm start
+```  
+Quedando el renderizado de la siguiente manera:
+  
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/holaBSSASSVITE.png">
 
