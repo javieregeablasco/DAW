@@ -55,17 +55,18 @@ New-Item -ItemType File src/index.html, src/js/main.js, src/scss/styles.scss, vi
 ```
 
 Nuestro proyecto quedará de la siguiente manera:
-Proyecto1/
-├── node_modules
-├── src/
-│   ├── js/
-│   │   └── main.js
-│   └── scss/
-│   |   └── styles.scss
-|   └── index.html
-├── package-lock.json
-├── package.json
-└── vite.config.js
+Proyecto1/  
+├── node_modules/  
+├── src/  
+|   ├── js/  
+|   │   └── main.js  
+|   ├── scss/  
+|   │   └── styles.scss  
+|   └── index.html  
+├── package-lock.json  
+├── package.json  
+└── vite.config.js  
+ 
 
 # 4 Configurar Vite 
 ## 4.1 Editar el archivo de configuración vite.config.js
@@ -112,7 +113,7 @@ export default {
     <div class="container py-4 px-3 mx-auto">
       <h1>¡Hola, Bootstrap Sass y Vite!</h1>
       <button class="btn btn-primary">Botón primario</button>
-      <p class="text-center display-1">¡Si no ves este texto subrayado, algo ha fallado!</p>
+      <p class="text-center display-1 text-warning bg-dark">¡Si no ves este texto subrayado, algo ha fallado!</p>
     </div>
   </body>
 </html>
