@@ -87,18 +87,6 @@ export default {
 ```
 De esa manera, indicamos a Vite dónde se encuentra el código JavaScript y la configuración básica del servidor.
 ```
-import { resolve } from 'path'
-
-export default {
-  root: resolve(__dirname, 'src'),
-  build: {
-    outDir: '../dist'
-  },
-  server: {
-    port: 8080
-  }
-}
-```
   
 ## 4.2 Editar el archivo index.html
 ```
