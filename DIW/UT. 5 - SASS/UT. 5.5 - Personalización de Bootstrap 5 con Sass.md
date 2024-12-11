@@ -4,18 +4,16 @@ Autor: Javier Egea Blasco
 Año: 24-25
 Palabras clave: DAW, DIW
 ---
-
-
-# 1 Introducción
+  
 <div align="center">
 </br>
-<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/bootstrap-logo-shadow.png" width=250px>
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/love_sass.png">
 </div>
 
-El desarrollo frontend es una área esencial en la creación de aplicaciones y sitios web modernos. En este contexto, **Bootstrap CSS** se ha consolidado como una de las herramientas más populares para diseñar interfaces.  
+# 1 Introducción
+<a href="https://getbootstrap.com/">**Bootstrap**</a> es una de las librerías más utilizadas para el desarrollo de interfaces web, gracias a su facilidad de uso y diseño responsivo. Sin embargo, cada proyecto tiene requisitos únicos que a menudo exigen personalizar estilos para reflejar una identidad visual específica o mejorar la experiencia del usuario. 
 
-**Bootstrap**, un framework CSS desarrollado originalmente por Twitter, ofrece un conjunto de herramientas predefinidas que incluyen sistemas de diseño responsivo basados en grid, componentes reutilizables como botones, menús y formularios, además de **utilidades para personalizar estilos**.  
-Su objetivo principal es simplificar y acelerar el proceso de desarrollo, permitiendo que los desarrolladores se enfoquen más en la funcionalidad y la experiencia del usuario, sin tener que diseñar estilos propios.
+Sass (Syntactically Awesome Stylesheets) permite modificar y extender Bootstrap ajustando colores, tipografías, espacios... y otros aspectos del diseño sin necesidad de sobrescribir clases directamente. Este enfoque no solo acelera el desarrollo y personalización del proyecto, sino que también asegura una mayor flexibilidad y consistencia en el diseño final.
 
-El enfoque **mobile-first** y su compatibilidad con la navegadores modernos hacen de Bootstrap una elección ideal para desarrolladores y su estructura modular y personalizable facilita la adaptación de los estilos a las necesidades específicas de cada proyecto.
+# 2 Instalación de bootstrap
 
