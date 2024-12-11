@@ -22,7 +22,7 @@ Para poder configurar Bootstrap necesitaremos descargar el framework completo de
 Más información <a href="https://getbootstrap.com/docs/5.3/getting-started/vite/">aquí</a> 
 
 ## 2.1 Crear una carpeta proyecto e inicializar npm
-Creamos la carpeta contenedora de nuestro proyecto y abrimos una terminal en nuestro IDE (o directamente desde una terminal de nuestro SO) y escribimos los siguientes comandos.
+Creamos la carpeta contenedora de nuestro proyecto y abrimos una terminal en nuestro IDE (o directamente desde una powershell para SO windows) y escribimos el siguiente comando.
 ```
 npm init -y
 ```
@@ -46,3 +46,7 @@ npm i --save-dev sass
 ```
 
 # 3 Estructura de nuestro proyecto
+Para definir la estructura básica de nuestro proyecto, crearemos una carpeta `src` así como el archivo de configuración `vite.config.js`
+```
+New-Item -ItemType File src/index.html, src/js/main.js, src/scss/styles.scss, vite.config.js
+```
