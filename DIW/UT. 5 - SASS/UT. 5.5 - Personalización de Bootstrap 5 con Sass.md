@@ -133,7 +133,7 @@ Añadimos la línea que falta, eso permitirá lanzar nuestro servidor Vite local
 }
 ```
 
-## 4.4 Lazar Vite
+## 4.4 Lanzar Vite
 ```
 npm start
 ```  
