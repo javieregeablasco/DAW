@@ -15,7 +15,7 @@ Palabras clave: DAW, DIW
 
 Sass (Syntactically Awesome Stylesheets) permite modificar y extender Bootstrap ajustando colores, tipografías, espacios... y otros aspectos del diseño sin necesidad de sobrescribir clases directamente. Este enfoque no solo acelera el desarrollo y personalización del proyecto, sino que también asegura una mayor flexibilidad y consistencia en el diseño final.
 
-# 2 Instalación de bootstrap: Vite
+# 2 Configuración inicial del proyecto
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/bootstrap-vite.png" width=400px>
 Para poder configurar Bootstrap necesitaremos descargar el framework completo de bootstrap, para ello usaremos Vite.  
 
@@ -133,11 +133,13 @@ Añadimos la línea que falta, eso permitirá lanzar nuestro servidor Vite local
 }
 ```
 
-## 4.4 Lazamos Vite
+## 4.4 Lazar Vite
 ```
 npm start
 ```  
 Quedando el renderizado de la siguiente manera:
   
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/holaBSSASSVITE.png">
+
+# Impotar Bootstrap
 
