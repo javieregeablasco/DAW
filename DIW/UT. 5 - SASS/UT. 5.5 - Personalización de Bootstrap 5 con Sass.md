@@ -86,8 +86,7 @@ export default {
 }
 ```
 De esa manera, indicamos a Vite dónde se encuentra el código JavaScript y la configuración básica del servidor.
-```
-  
+    
 ## 4.2 Editar el archivo index.html
 ```
 <!doctype html>
