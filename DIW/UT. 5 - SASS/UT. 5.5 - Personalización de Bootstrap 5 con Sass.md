@@ -163,6 +163,7 @@ Si toda ha ido bien se visualizará el render siguiente.
   
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/holaBSSASSVITEGood.png" width=50%>
 
+# 6 Customizando Bootstrap
   
 
 
