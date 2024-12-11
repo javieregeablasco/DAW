@@ -46,7 +46,7 @@ npm i --save-dev sass
 ```
 
 # 3 Estructura de nuestro proyecto
-Para definir la estructura básica de nuestro proyecto, crearemos una carpeta `src` así como el archivo de configuración `vite.config.js`
+Para definir la estructura básica de nuestro proyecto, crearemos una carpeta `src` así como los archivos `index.html', `main.js`, `styles.scss` y el archivo de configuración `vite.config.js`
 ```
 New-Item -ItemType File src/index.html, src/js/main.js, src/scss/styles.scss, vite.config.js
 ```
