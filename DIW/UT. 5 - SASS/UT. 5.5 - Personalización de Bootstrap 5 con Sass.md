@@ -114,7 +114,7 @@ export default {
     <div class="container py-4 px-3 mx-auto">
       <h1>¡Hola, Bootstrap Sass y Vite!</h1>
       <button class="btn btn-primary">Botón primario</button>
-      <p class="text-center display-1 text-warning bg-dark">¡Si no ves este texto subrayado, algo ha fallado!</p>
+      <p class="text-center display-1 text-warning bg-dark m-3">¡Si no ves este texto subrayado, algo ha fallado!</p>
     </div>
   </body>
 </html>
@@ -158,6 +158,11 @@ import '../scss/styles.scss'
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
 ```
+  
+Si toda ha ido bien se visualizará el render siguiente.  
+  
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/holaBSSASSVITEGood.png" width=50%>
 
+  
 
 
