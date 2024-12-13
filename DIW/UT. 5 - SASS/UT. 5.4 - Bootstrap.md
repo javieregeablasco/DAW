@@ -954,11 +954,12 @@ m{lado}-{breakpoint}-{tamaño}
   - `1` a `5`: Márgenes incrementales (de menor a mayor).
   - `auto`: Utiliza márgenes automáticos para centrar elementos.
       
->**Ejemplo de código donde:**
->**mx-5**: Se aplica un margen grande a los 2 lados del contendor.
->**mt-lg-1**: Se aplica un margen superior pequeño en pantallas grandes `lg`.
->**mx-auto**: Centrar horizontalmente (con el espacio restante disponible).
->**mt-sm-1 mt-md-2 mb-lg-3**: Combinación de márgenes margen superior `1` en pantallas `small` + margen superior `2` en pantallas medianas y margen inferor `1`en pantallas grandes.   
+>**Ejemplo de código donde:**  
+>**mx-5**: Se aplica un margen grande a los 2 lados del contendor.  
+>**mt-lg-1**: Se aplica un margen superior pequeño en pantallas grandes `lg`.  
+>**mx-auto**: Centrar horizontalmente (con el espacio restante disponible).  
+>**mt-sm-1 mt-md-2 mb-lg-3**: Combinación de márgenes margen superior `1` en pantallas `small` + margen superior `2` en pantallas medianas y margen inferor `1`en pantallas grandes.
+  
 ```
 <!DOCTYPE html>
 <html lang="en">
