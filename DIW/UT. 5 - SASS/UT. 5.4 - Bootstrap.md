@@ -1372,7 +1372,7 @@ Bootstrap ofrece el componente <a href="https://getbootstrap.com/docs/5.3/compon
 - **`d-flex flex-column justify-content-center text-center`**: Centra el texto vertical y horizontalmente dentro del overlay.
 
 # 9 Tarea RA4 CEcd
-<a href="#">**Enunciado**</a>
+Enunciado en AULES.
 
 # 10 Videos en Bootstrap
 Bootstrap dispone de clases especificas para la inserción de videos de manera responsiva y estilizada utilizando sus clases utilitarias y componentes predefinidos.
@@ -1519,5 +1519,5 @@ Los <a href="https://getbootstrap.com/docs/5.3/helpers/ratio/">**ratios**</a> so
 </body>
 ```
 
-# 10 Tarea RA4 CEef
-<a href="#">**Enunciado**</a>
+# 10 Tarea RA4 CEefg
+Enunciado en AULES.
