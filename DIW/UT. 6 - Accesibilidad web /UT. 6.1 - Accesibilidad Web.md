@@ -7,9 +7,9 @@ Palabras clave: DAW, DIW
 
 # 1. Introducción
 ## 1.1 ¿Qué es la Accesibilidad Web?  
-La **accesibilidad web** se refiere al diseño y desarrollo de sitios, aplicaciones y contenidos digitales que **puedan ser utilizados por todas las personas**, incluyendo aquellas con **discapacidades**. Esto implica garantizar que el contenido sea **perceptible**, **operable**, **comprensible** y **robusto**, de manera que cualquier persona pueda **acceder, navegar e interactuar** con él sin barreras.
+La <a href="https://es.wikipedia.org/wiki/Accesibilidad_web">accesibilidad web</a> se refiere al diseño y desarrollo de sitios, aplicaciones y contenidos digitales que **puedan ser utilizados por todas las personas**, incluyendo aquellas con **discapacidades**. Esto implica garantizar que el contenido sea **perceptible**, **operable**, **comprensible** y **robusto**, de manera que cualquier persona pueda **acceder, navegar e interactuar** con él sin barreras.
 
-## 1.2. Objetivo de la Accesibilidad Web
+## 1.2 Objetivo de la Accesibilidad Web
 El objetivo de la **accesibilidad web** es **eliminar barreras digitales** para que cualquier usuario, independientemente de sus capacidades físicas, sensoriales, intelectuales o técnicas, pueda interactuar con la web de forma **autónoma** y **eficiente**.
 
 Las personas que se benefician de la **accesibilidad web** incluyen:
@@ -66,7 +66,7 @@ Las tecnologías de asistencia permiten a las personas con discapacidades intera
 - 📱 **Compatibilidad multiplataforma**: Contenido accesible suele ser más compatible con diferentes dispositivos y navegadores.
 - 🔐 **Cumplimiento legal**: Evita problemas legales relacionados con la discriminación digital.
 
----
+
 
 ### 🌱 **En Resumen:**
 
