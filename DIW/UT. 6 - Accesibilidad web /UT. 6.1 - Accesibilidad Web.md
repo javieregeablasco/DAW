@@ -32,7 +32,8 @@ La accesibilidad web se basa en **cuatro principios** fundamentales:
 | **Robusto**     | El contenido debe ser **compatible** con diversas tecnologías presentes y futuras, incluidas las herramientas de asistencia.                    |
 
 ## 1.4 Pautas y Estándares de Accesibilidad
-El estándar más utilizado a nivel internacional es el <a href="https://www.w3.org/WAI/">**WAI (Web Accessibility Initiative)**</a>, desarrollado por el **W3C (World Wide Web Consortium)**. Las **WCAG** están organizadas en tres niveles de conformidad:
+El estándar más utilizado a nivel internacional es el <a href="https://www.w3.org/WAI/">WAI (Web Accessibility Initiative)</a>, desarrollado por el <a href="https://www.w3.org/">W3C (World Wide Web consortium)</a>. 
+Las **WAI** están organizadas en tres niveles de conformidad:
 
 - **A (mínimo)**: Requisitos básicos de accesibilidad.
 - **AA (medio)**: Nivel recomendado para la mayoría de los sitios web.
