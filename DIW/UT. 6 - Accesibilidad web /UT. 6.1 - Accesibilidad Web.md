@@ -9,11 +9,10 @@ Palabras clave: DAW, DIW
 ## 1.1 ¿Qué es la Accesibilidad Web?  
 La **accesibilidad web** se refiere al diseño y desarrollo de sitios, aplicaciones y contenidos digitales que **puedan ser utilizados por todas las personas**, incluyendo aquellas con **discapacidades**. Esto implica garantizar que el contenido sea **perceptible**, **operable**, **comprensible** y **robusto**, de manera que cualquier persona pueda **acceder, navegar e interactuar** con él sin barreras.
 
-## 1.2. ✅ **Objetivo de la Accesibilidad Web**
+## 1.2. Objetivo de la Accesibilidad Web
+El objetivo de la **accesibilidad web** es **eliminar barreras digitales** para que cualquier usuario, independientemente de sus capacidades físicas, sensoriales, intelectuales o técnicas, pueda interactuar con la web de forma **autónoma** y **eficiente**.
 
-El objetivo es **eliminar barreras digitales** para que cualquier usuario, independientemente de sus capacidades físicas, sensoriales, intelectuales o técnicas, pueda interactuar con la web de forma **autónoma** y **eficiente**.
-
-Las personas que se benefician de la accesibilidad incluyen:
+Las personas que se benefician de la **accesibilidad web** incluyen:
 
 - 🧑‍🦯 **Personas con discapacidades visuales** (ceguera, baja visión, daltonismo).
 - 🧏 **Personas con discapacidades auditivas** (sordera, pérdida de audición).
@@ -22,10 +21,7 @@ Las personas que se benefician de la accesibilidad incluyen:
 - 👵 **Personas mayores**, que pueden experimentar pérdida de visión, audición o destrezas motoras.
 - 📱 **Usuarios en condiciones temporales** (como personas con una mano ocupada o en entornos con mala iluminación).
 
----
-
-## 🌐 **Principios de la Accesibilidad Web (POUR)**
-
+## 1.3 Principios de la Accesibilidad Web (POUR)
 La accesibilidad web se basa en **cuatro principios** fundamentales:
 
 | Principio   | Descripción                                                                                                                                     |
@@ -35,20 +31,14 @@ La accesibilidad web se basa en **cuatro principios** fundamentales:
 | **Comprensible** | La información y la navegación deben ser **entendibles** para todos los usuarios.                                                           |
 | **Robusto**     | El contenido debe ser **compatible** con diversas tecnologías presentes y futuras, incluidas las herramientas de asistencia.                    |
 
----
-
-## 📋 **Pautas y Estándares de Accesibilidad**
-
-El estándar más utilizado a nivel internacional es el **WCAG (Web Content Accessibility Guidelines)**, desarrollado por el **W3C (World Wide Web Consortium)**. Las **WCAG** están organizadas en tres niveles de conformidad:
+## 1.4 Pautas y Estándares de Accesibilidad
+El estándar más utilizado a nivel internacional es el <a href="https://www.w3.org/WAI/">**WAI (Web Accessibility Initiative)**</a>, desarrollado por el **W3C (World Wide Web Consortium)**. Las **WCAG** están organizadas en tres niveles de conformidad:
 
 - **A (mínimo)**: Requisitos básicos de accesibilidad.
 - **AA (medio)**: Nivel recomendado para la mayoría de los sitios web.
 - **AAA (alto)**: Máxima accesibilidad, generalmente aplicada a sitios específicos.
 
----
-
-## ⚙️ **Tecnologías de Asistencia**
-
+## 1.5 Tecnologías de Asistencia
 Las tecnologías de asistencia permiten a las personas con discapacidades interactuar con contenido web. Algunos ejemplos incluyen:
 
 - **Lectores de pantalla** (Jaws, NVDA, VoiceOver).
@@ -57,9 +47,7 @@ Las tecnologías de asistencia permiten a las personas con discapacidades intera
 - **Ampliadores de pantalla**.
 - **Subtítulos y transcripciones** para contenido multimedia.
 
----
-
-## 🛠 **Buenas Prácticas para la Accesibilidad Web**
+## 1.6 Buenas Prácticas para la Accesibilidad Web
 
 1. ✅ **Etiquetar correctamente los elementos HTML** (`<alt>` en imágenes, `<label>` en formularios).
 2. ✅ **Proporcionar texto alternativo** para imágenes.
@@ -69,9 +57,7 @@ Las tecnologías de asistencia permiten a las personas con discapacidades intera
 6. ✅ **Proporcionar controles de interfaz accesibles**, como botones grandes y etiquetas claras.
 7. ✅ **Evitar contenido que parpadee** o cause epilepsia fotosensible.
 
----
-
-## 🎯 **Beneficios de la Accesibilidad Web**
+## 1.7 Beneficios de la Accesibilidad Web
 
 - 🌍 **Mayor alcance**: Más personas pueden acceder al contenido, incluyendo personas con discapacidades.
 - 💻 **Mejora del SEO**: Los sitios accesibles también son más fáciles de indexar por los motores de búsqueda.
