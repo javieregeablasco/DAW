@@ -66,8 +66,7 @@ Las tecnologías de asistencia permiten a las personas con discapacidades intera
 - 📱 **Compatibilidad multiplataforma**: Contenido accesible suele ser más compatible con diferentes dispositivos y navegadores.
 - 🔐 **Cumplimiento legal**: Evita problemas legales relacionados con la discriminación digital.
 
-
-
-### 🌱 **En Resumen:**
-
-La accesibilidad web es un componente esencial del diseño inclusivo que busca hacer la web **un lugar accesible para todos**. Los desarrolladores deben aplicar las **buenas prácticas** y cumplir con los **estándares internacionales**, garantizando que **nadie quede excluido** del acceso a la información y servicios en línea.
+# 2 Legislación aplicable
+## 2.1 Legislación dentro del sector público
+Actualmente, (2015) la legislación aplicable en materia de accesibilidad web a la administración pública en España es el <a href="https://www.boe.es/boe/dias/2018/09/19/pdfs/BOE-A-2018-12699.pdf">Real Decreto 1112/2018</a>, de 7 de septiembre, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público.    
+Este Real Decreto es la trasposición a la legislación española de la <a href="https://www.boe.es/doue/2016/327/L00001-00015.pdf">Directiva UE 2016/2102</a>, del Parlamento Europeo y del Consejo, de 26 de octubre de 2016, sobre la accesibilidad de los sitios web y aplicaciones para dispositivos móviles de los organismos del sector público.
