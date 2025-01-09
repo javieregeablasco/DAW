@@ -77,7 +77,7 @@ La legislación aplicable en materia de accesibilidad web al sector privado en E
 # 3 Guía básica para crear sitios web accesibles
 A continuación, se presentan las mejores prácticas para crear una página web accesible.  
 
-## 3.1 Estructura Semántica Correcta
+## 3.1 Estructura semántica correcta
 Utilizar etiquetas HTML semánticas para organizar el contenido de la página. Esto ayuda a los usuarios que utilizan lectores de pantalla a comprender la estructura del sitio.
 
 >**Buenas prácticas de uso:**
@@ -96,8 +96,8 @@ Utilizar etiquetas HTML semánticas para organizar el contenido de la página. E
   </section>
 </main>
 ```
-## 3.2 Textos Alternativos para imágenes y animaciones
-Proporcionar descripciones alternativas (<a href="https://html.spec.whatwg.org/multipage/images.html#alt">atributo `alt`</a>) para todas las imágenes.
+## 3.2 Textos alternativos para imágenes y animaciones
+Proporcionar descripciones alternativas (atributo <a href="https://html.spec.whatwg.org/multipage/images.html#alt">alt</a>) para todas las imágenes.
 
 El atributo alt especifica un texto alternativo para navegadores que no puedan mostrar imágenes, formularios o aplicaciones. El idioma de este texto alternativo está especificado por el atributo lang.
 
@@ -112,7 +112,47 @@ Varios elementos no textuales (IMG, AREA, APPLET e INPUT) permiten a los autores
 <img src="imagen-producto.jpg" alt="Foto del producto en venta">
 ```
 
-## 3.3 Contenidos Multimedia Accesibles
+## 3.3 Contraste de colores adecuado
+Asegúrarse de que el texto tenga un contraste suficiente con el fondo para facilitar la lectura.
+
+>**Buenas prácticas de uso:**
+- Usar herramientas como [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) para verificar el contraste.
+- Seguir las pautas <a href="https://www.w3.org/WAI/standards-guidelines/wcag/es">WCAG</a> que recomiendan un ratio mínimo de 4.5:1 para texto normal y 3:1 para texto grande.
+
+### Ejemplo CSS:
+```css
+body {
+  color: #333;
+  background-color: #fff;
+}
+```
+
+## 3.4 Navegación accesible con el teclado
+Asegura que los usuarios puedan navegar por el sitio utilizando solo el teclado.
+
+>**Buenas prácticas de uso:**
+- Evitar trampas de teclado (elementos que no permiten salir de ellos).
+- Utilizar el atributo `tabindex` para controlar el orden de tabulación cuando sea necesario.
+
+**Ejemplo:**
+```html
+<a href="#contenido-principal" tabindex="1">Ir al contenido principal</a>
+```
+
+## 3.5 Formularios accesibles
+Etiquetar correctamente los campos de los formularios para que los usuarios con tecnologías de asistencia puedan interactuar con ellos.
+
+>**Buenas prácticas de uso:**
+- Usar la etiqueta `<label>` para cada campo de formulario.
+- Asociar cada etiqueta con su campo mediante el atributo `for`.
+
+**Ejemplo:**
+```html
+<label for="nombre">Nombre:</label>
+<input type="text" id="nombre" name="nombre">
+```
+
+## 3.6 Contenidos multimedia accesibles
 Los elementos multimedia que tanto se utilizan en las páginas web hoy en día pueden ocasionar graves problemas de accesibilidad, ya no sólo a las personas con algún tipo de discapacidad, sino a todo el mundo en general. Al ser elementos que no son HTML requieren, en la mayoría de los casos, la instalación de un visor específico (plug-in, add-on o extensión) que sea capaz de interpretar el elemento multimedia.  
 
 Por tanto, **como regla general**, no se debe abusar de los elementos multimedia y el diseñador de una página web se tiene que preguntar si es un elemento esencial que no se puede eliminar o sustituir por otro más accesible.
@@ -130,79 +170,67 @@ Por tanto, **como regla general**, no se debe abusar de los elementos multimedia
 <p>Transcripción: [Descripción del contenido del vídeo]</p>
 ```
 
-## 3.3 Enlaces de hipertexto
-Usar texto para el hipertexto que tenga sentido leído fuera de contexto. Por ejemplo, evitar abusar de "pincha aquí".
-Algunos navegadores y algunos los programas de ayuda que emplean las personas con discapacidad (por ejemplo, los lectores de pantalla) ofrecen al usuario la posibilidad de mostrar, normalmente una ventana aparte, la lista de enlaces que contiene una página web. Esta lista de enlaces normalmente permite activar un enlace y navegar a la página de destino. Si el texto de un enlace no tiene sentido fuera de su contexto, el enlace no tendrá sentido en esta lista de enlaces.
+## 3.7 Enlaces de hipertexto
+Usar texto para el hipertexto que tenga sentido leído fuera de contexto. Por ejemplo, evitar abusar del **"pinchar aquí"**.
+Algunos navegadores y algunos programas de ayuda que emplean las personas con discapacidad (por ejemplo, los lectores de pantalla) ofrecen al usuario la posibilidad de mostrar, normalmente en una ventana aparte, la lista de enlaces que contiene una página web. Si el texto de un enlace no tiene sentido fuera de su contexto, el enlace no tendrá sentido en esta lista de enlaces.
+Por otro lado, si los enlaces poseen un estilo especial para resaltarlos, los usuarios suelen fijar su atención en ellos, por lo que es importante que el texto de los enlaces sea lo más claro y significativo posible.
 
-Por otro lado, si los enlaces poseen un estilo especial para resaltarlos, los usuarios suelen fijar su atención en ellos, por lo que es importante que el texto de los enlaces sea lo más claro y significativo.
+## 3.8. Uso de ARIA (Accessible Rich Internet Applications)
+Implementar atributos **ARIA** cuando no sea posible lograr la accesibilidad solo con HTML.
 
-Por ejemplo, elPeriódico.com tiene una sección llamada Encuestas en la que se muestran todas las encuestas que existen. Cada encuesta tiene un enlace asociado con el texto Ver Resultados para visualizar los resultados de la encuesta seleccionada, como podemos ver en la siguiente imagen:
+>**Buenas prácticas de uso:**
+- Usar `aria-label` para proporcionar etiquetas adicionales.
+- Utilizar roles ARIA para definir el propósito de los elementos.
 
-
-
-
-
-## 3. Contraste de Colores Adecuado
-Asegúrate de que el texto tenga un contraste suficiente con el fondo para facilitar la lectura.
-
-### Buenas prácticas:
-- Usa herramientas como [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) para verificar el contraste.
-- Sigue las pautas WCAG que recomiendan un ratio mínimo de 4.5:1 para texto normal y 3:1 para texto grande.
-
-### Ejemplo CSS:
-```css
-body {
-  color: #333;
-  background-color: #fff;
-}
+**Ejemplo:**
+```
+<nav role="navigation" aria-label="Navegación principal">
+  <ul>
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Servicios</a></li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+</nav>
 ```
 
----
+# 4 Software específico para mejorar la accesibilidad web  
+## 4.1 Ayuda técnica
+La Norma <a href="https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0029860">UNE 139802:2003 Aplicaciones informáticas para personas con discapacidad. Requisitos de accesibilidad al ordenador. Software</a> define el concepto ayuda técnica:
 
-## 4. Navegación Accesible con el Teclado
-Asegura que los usuarios puedan navegar por el sitio utilizando solo el teclado.
-
-### Buenas prácticas:
-- Evita trampas de teclado (elementos que no permiten salir de ellos).
-- Utiliza el atributo `tabindex` para controlar el orden de tabulación cuando sea necesario.
-
-### Ejemplo:
-```html
-<a href="#contenido-principal" tabindex="1">Ir al contenido principal</a>
 ```
-
----
-
-## 5. Formularios Accesibles
-Etiqueta correctamente los campos de los formularios para que los usuarios con tecnologías de asistencia puedan interactuar con ellos.
-
-### Buenas prácticas:
-- Usa la etiqueta `<label>` para cada campo de formulario.
-- Asocia cada etiqueta con su campo mediante el atributo `for`.
-
-### Ejemplo:
-```html
-<label for="nombre">Nombre:</label>
-<input type="text" id="nombre" name="nombre">
+3.3 ayuda técnica: Cualquier producto, instrumento, equipo o sistema técnico utilizado por una persona minusválida,
+fabricado especialmente o disponible en el mercado para prevenir, compensar, mitigar o neutralizar la deficiencia, 
+incapacidad o discapacidad. (UNE-EN ISO 9999). Incluye tanto productos hardware como software.
 ```
+La clasificación de las ayudas técnicas está definida en la <a href="https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0039568">Norma UNE-EN ISO 9999:2007: Productos de apoyo para personas con discapacidad. Clasificación y terminología (ISO 9999:2007)</a>. Esta norma establece que ya no se tienen que llamar ayudas técnicas, sino tecnologías de apoyo.
 
----
+A continuación, algunas de las ayudas técnicas basadas en software que emplean las personas con discapacidad para utilizar un ordenador y navegar por la Web. También se incluye otro tipo de software, como simuladores de algunas de las alteraciones que presentan las personas con discapacidad:
+
+- **Lectores de pantalla**. Los lectores de pantalla permiten la utilización del sistema operativo y las distintas aplicaciones mediante el empleo de un sintetizador de voz que "lee y explica" lo que se visualiza en la pantalla, lo que supone una ayuda para las personas con graves problemas de visión o completamente ciegas. Se muestran a continuación los softwares más conocidos.
+  - JAWS (Windows). Jaws es el lector de pantalla más utilizado a nivel mundial. Es de pago y está disponible para todas las versiones de Windows.
+  - NVDA (Windows). NVDA - Non Visual Desktop Access, es un lector de pantalla gratuito, de código abierto. Nace como alternativa a Jaws y su elevado precio. Está disponible para las versiones de Windows XP, 7, 8 y 10 de Microsoft.
+  - Narrador (Windows). Narrador es un lector de pantalla gratuito que viene incluido por defecto en las versiones de Windows 7, 8 y 9. Nos permite utilizar el ordenador con la mayoría de sus funcionalidades. Si bien no es la opción más completa, ni la más extendida, puede utilizarse en ocasiones concretas donde no dispongamos de otras alternativas superiores, como las anteriormente comentadas Jaws o NVDA.
+  - VoiceOver (macOS). VoiceOver es un lector de pantalla que cuenta con unas síntesis voz avanzadas y voces de gran calidad, leen de una forma realista, incluso se toman respiros si leen mucho.
+  - Orca (Linux). El programa Orca permite a personas con deficiencias visuales o ceguera a manejarse en el entorno de su ordenador, así como personas con deficiencias motoras. Utiliza una combinación de voz, braille y magnificación.
+  - VoiceOver (iOS). Los iPhone e iPad cuentan con el lector de pantalla VoiceOver. Para iniciarlo debemos ir a Ajustes -> Accesibilidad -> VoiceOver y activar el botón de VoiceOver.
+  - TalkBack (Android). La mayoría de los dispositivos móviles con Sistema Operativo Android cuentan con el lector de pantalla TalkBack integrado en el sistema.
+  
+- **Magnificadores de pantalla**. Los magnificadores de pantalla o sistemas de ampliación de pantalla, son un software o dispositivos hardware que permiten visualizar la pantalla con un considerable aumento en su tamaño. Con estas ayudas técnicas, un usuario que posee algún residuo visual puede ver la pantalla del ordenador mediante el aumento del tamaño de la pantalla.
+  - Ampliador de Windows. Disponible en los sistemas operativos Microsoft Windows XP y Microsoft Vista.
+  - Dolphin Lunar. Magnificador de pantalla.
+  - Dolphin LunarPlus. Magnificador de pantalla que incluye también lector de pantalla.
+  - iZoom Standard Magnifier/Reader. Magnificador de pantalla completa, con varios modos de magnificación, puede magnificar hasta 16 veces, e incluye opción de voz sintetizada.
+  - iZoom USB Magnifier/Reader. Similar a iZoom, pero disponible en una memoria USB para utilizar en cualquier ordenador sin instalación y sin derechos de administrador.
+  - MAGic. De los creadores del lector de pantalla JAWS, incluye múltiples opciones.
+  - MaGUI. Magnificador de pantalla gratuito para Microsoft Windows desarrollado en España.
+  - The Magnifier. Magnificador de área o pantalla completa, desde 1.1 a 40 niveles de aumento.
+  - WinZoom Magnifier/Reader. Magnificador y lector de pantalla, con 8 tipos de zoom y 36 niveles de aumento.
+  - WinZoom USB. Similar a WinZoom, pero disponible en una memoria USB para utilizar en cualquier ordenador sin instalación.
+  - ZoomText. Desde 1 a 36 niveles de aumento, posee la tecnología xFont para aumentar sin pérdida de calidad el texto, incluye controles de color, contraste y brillo.
 
 
-
----
-
-## 7. Uso de ARIA (Accessible Rich Internet Applications)
-Implementa atributos ARIA cuando no sea posible lograr la accesibilidad solo con HTML.
-
-### Buenas prácticas:
-- Usa `aria-label` para proporcionar etiquetas adicionales.
-- Utiliza roles ARIA para definir el propósito de los elementos.
-
-### Ejemplo:
-```html
-<button aria-label="Cerrar menú">&times;</button>
-```
+Navegadores accesibles
+Navegadores alternativos
 
 ---
 
