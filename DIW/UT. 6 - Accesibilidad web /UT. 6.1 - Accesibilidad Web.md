@@ -223,6 +223,7 @@ Implementar atributos **ARIA** cuando no sea posible lograr la accesibilidad sol
   </ul>
 </nav>
 ```
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/enlace.png">
 
 # 4 Software específico para mejorar la accesibilidad web  
 ## 4.1 Ayudas técnicas
