@@ -5,6 +5,8 @@ Año: 24-25
 Palabras clave: DAW, DIW
 ---
 
+
+
 # 1. Introducción
 ## 1.1 ¿Qué es la Accesibilidad Web?  
 La <a href="https://es.wikipedia.org/wiki/Accesibilidad_web">accesibilidad web</a> se refiere al diseño y desarrollo de sitios, aplicaciones y contenidos digitales que **puedan ser utilizados por todas las personas**, incluyendo aquellas con **discapacidades**. Esto implica garantizar que el contenido sea **perceptible**, **operable**, **comprensible** y **robusto**, de manera que cualquier persona pueda **acceder, navegar e interactuar** con él sin barreras.
