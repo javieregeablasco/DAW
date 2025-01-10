@@ -97,21 +97,29 @@ Utilizar etiquetas HTML semánticas para organizar el contenido de la página. E
 </main>
 ```
 ## 3.2 Textos alternativos para imágenes y animaciones
-Proporcionar descripciones alternativas (atributo <a href="https://html.spec.whatwg.org/multipage/images.html#alt">alt</a>) para todas las imágenes.
+Proporcionar semántica adecuada y descripciones alternativas (atributo <a href="https://html.spec.whatwg.org/multipage/images.html#alt">alt</a>) para todas las imágenes.
 
 El atributo alt especifica un texto alternativo para navegadores que no puedan mostrar imágenes, formularios o aplicaciones. El idioma de este texto alternativo está especificado por el atributo lang.
 
 Varios elementos no textuales (IMG, AREA, APPLET e INPUT) permiten a los autores especificar texto alternativo que sirva como contenido cuando el elemento no pueda ser representado normalmente. El especificar texto alternativo ayuda a los usuarios que no tengan terminales gráficas, a los usuarios cuyos navegadores no soporten formularios, a los usuarios con discapacidades visuales, a aquellos que utilicen sintetizadores de voz, a aquellos que hayan configurado sus agentes de usuario para no mostrar imágenes, etc.
 
 >**Buenas prácticas de uso:**
+- Semántica adecuada.
 - Describir brevemente la imagen y su función.
 - Si la imagen es decorativa, dejar el atributo `alt` vacío (`alt=""`).
 
 **Ejemplo:**
+- **Así no:**
 ```html
-<img src="imagen-producto.jpg" alt="Foto del producto en venta">
+<img src="imagen-producto.jpg" alt="">
 ```
-
+- **Así sí:**
+```
+<figure aria-label="Ilustración de un pájaro estilizado">
+  <img src="img1.png" alt="Pájaro estilizado" class="imagen-pajaro">
+  <figcaption>Esta es una ilustración artística de un pájaro estilizado, utilizada como parte del diseño visual.</figcaption>
+</figure>
+```
 ## 3.3 Contraste de colores adecuado
 Asegúrarse de que el texto tenga un contraste suficiente con el fondo para facilitar la lectura.
 
@@ -126,7 +134,7 @@ body {
   background-color: #fff;
 }
 ```
-<img src=""
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/contraste.png">
 
 ## 3.4 Navegación accesible con el teclado
 Asegura que los usuarios puedan navegar por el sitio utilizando solo el teclado.
