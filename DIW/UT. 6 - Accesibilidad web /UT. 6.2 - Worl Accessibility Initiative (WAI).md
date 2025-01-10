@@ -16,9 +16,7 @@ La <a href="https://www.w3.org/WAI/">**Web Accessibility Initiative (WAI)**</a> 
 
 El objetivo principal de la WAI es garantizar que todas las personas puedan **percibir, navegar, interactuar y contribuir en la web** sin barreras, promoviendo una **web inclusiva y universal**.
 
----
-
-## **Objetivos de la WAI**
+# 2 Objetivos de la WAI
 La WAI trabaja en tres áreas clave:
 1. **Mejorar la accesibilidad del contenido web.**  
    Incluye garantizar que los textos, imágenes, videos, formularios y demás elementos del sitio web puedan ser utilizados por personas con diferentes tipos de discapacidades.
@@ -29,15 +27,15 @@ La WAI trabaja en tres áreas clave:
 3. **Mejorar la accesibilidad de las herramientas de usuario (navegadores y reproductores multimedia).**  
    Esto implica que los navegadores y otras tecnologías sean compatibles con estándares de accesibilidad.
 
----
+   
 
-## **Principales directrices de la WAI**
+# 3 Principales directrices de la WAI
 La WAI ha desarrollado varias **normas y directrices internacionales** que se utilizan para evaluar y mejorar la accesibilidad web:
 
-### 📘 **1. WCAG (Web Content Accessibility Guidelines)**  
+# 3.1 WCAG (Web Content Accessibility Guidelines)  
 Son **directrices para crear contenido web accesible**. Las últimas versiones son:
 - **WCAG 2.0** (2008)
-- **WCAG 2.1** (2018)
+- <a href="https://www.w3.org/TR/WCAG21/">**WCAG 2.1**</a> (2018-2024)
 - **WCAG 2.2** (en proceso de aprobación)
 
 Estas directrices están organizadas en torno a **cuatro principios**:
@@ -46,44 +44,29 @@ Estas directrices están organizadas en torno a **cuatro principios**:
 - **Comprensible**: La información debe ser fácil de entender.
 - **Robusto**: El contenido debe ser compatible con diferentes tecnologías de asistencia.
 
-### 📋 **2. ATAG (Authoring Tool Accessibility Guidelines)**  
+## 3.2 ATAG (Authoring Tool Accessibility Guidelines)  
 Son **directrices para herramientas de creación de contenido web**, como CMS (WordPress, Joomla, etc.).  
 Estas guías aseguran que las herramientas de creación de contenido:
 - Sean accesibles para los creadores con discapacidades.
 - Ayuden a producir contenido accesible.
 
-### 🖥️ **3. UAAG (User Agent Accessibility Guidelines)**  
+## 3.3 UAAG (User Agent Accessibility Guidelines) 
 Son directrices para **navegadores y reproductores multimedia**, con el objetivo de que:
 - Proporcionen compatibilidad con tecnologías de asistencia, como lectores de pantalla.
 - Faciliten la navegación a personas con discapacidad.
 
----
-
-## **¿Quiénes se benefician de la accesibilidad web?**
+## 3.4 ¿Quiénes se benefician de la accesibilidad web?
 La accesibilidad web no solo beneficia a las personas con discapacidades, sino también a:
 - **Personas mayores.**
 - **Usuarios con conexiones lentas.**
 - **Usuarios con dispositivos móviles.**
 - **Personas que usan interfaces alternativas** (como comandos de voz).
 
----
-
-## **Recursos de la WAI**
-La WAI ofrece muchos recursos gratuitos para aprender y aplicar la accesibilidad web:
-- **WAI-ARIA (Accessible Rich Internet Applications)**: Especificación para mejorar la accesibilidad de aplicaciones web dinámicas.
-- **Evaluation Tools List**: Herramientas para evaluar la accesibilidad de un sitio web.
-- **Web Accessibility Tutorials**: Tutoriales sobre cómo implementar prácticas de accesibilidad.
-
----
-
-## **¿Por qué es importante la WAI?**
+## 3.5 Importancia de la WAI?
 - **Promueve la igualdad digital.**
 - **Cumple con las leyes de accesibilidad en muchos países.**  
   Por ejemplo, en la Unión Europea es obligatorio que los sitios web de organismos públicos cumplan con las **WCAG 2.1**.
 - **Mejora la experiencia del usuario (UX).**  
   Sitios más accesibles son más fáciles de usar para todos, lo que puede reducir tasas de abandono y aumentar la satisfacción del usuario.
 
----
 
-## **Conclusión**
-La **Web Accessibility Initiative (WAI)** es una referencia clave para garantizar que la web sea **accesible, inclusiva y usable para todos**. Su trabajo es fundamental para **reducir las barreras digitales**, mejorar la experiencia web y garantizar que cualquier persona, independientemente de sus capacidades, pueda acceder a la información y servicios disponibles en internet.
