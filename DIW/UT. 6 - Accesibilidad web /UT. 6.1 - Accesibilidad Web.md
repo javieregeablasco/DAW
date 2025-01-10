@@ -119,13 +119,14 @@ Asegúrarse de que el texto tenga un contraste suficiente con el fondo para faci
 - Usar herramientas como [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) para verificar el contraste.
 - Seguir las pautas <a href="https://www.w3.org/WAI/standards-guidelines/wcag/es">WCAG</a> que recomiendan un ratio mínimo de 4.5:1 para texto normal y 3:1 para texto grande.
 
-### Ejemplo CSS:
+**Ejemplo:**
 ```css
 body {
   color: #333;
   background-color: #fff;
 }
 ```
+<img src=""
 
 ## 3.4 Navegación accesible con el teclado
 Asegura que los usuarios puedan navegar por el sitio utilizando solo el teclado.
@@ -194,7 +195,7 @@ Implementar atributos **ARIA** cuando no sea posible lograr la accesibilidad sol
 ```
 
 # 4 Software específico para mejorar la accesibilidad web  
-## 4.1 Ayuda técnica
+## 4.1 Ayudas técnicas
 La Norma <a href="https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0029860">UNE 139802:2003 Aplicaciones informáticas para personas con discapacidad. Requisitos de accesibilidad al ordenador. Software</a> define el concepto ayuda técnica:
 
 ```
@@ -228,6 +229,72 @@ A continuación, algunas de las ayudas técnicas basadas en software que emplean
   - WinZoom USB. Similar a WinZoom, pero disponible en una memoria USB para utilizar en cualquier ordenador sin instalación.
   - ZoomText. Desde 1 a 36 niveles de aumento, posee la tecnología xFont para aumentar sin pérdida de calidad el texto, incluye controles de color, contraste y brillo.
 
+## 4.2 Traductores de Braille
+Los **traductores de Braille** son herramientas que convierten texto digital en texto legible mediante dispositivos Braille. Estos dispositivos permiten a las personas ciegas o con discapacidad visual **interactuar con contenido web** de manera efectiva. El uso de tecnologías que soporten el Braille en la web mejora la **inclusión digital** y garantiza que las personas con discapacidades visuales tengan acceso a la información de forma autónoma.
+
+1. **Software de traducción de Braille:** Convierte texto en Braille digital y lo envía a un dispositivo de lectura.
+   
+2. **Dispositivos de línea Braille (Braille displays):** Hardware que traduce el texto digital en tiempo real y lo muestra en una línea de celdas Braille.
+
+---
+
+## 💻 **Funcionamiento en la web**
+Los traductores de Braille se integran con tecnologías de asistencia, como:
+
+- **Lectores de pantalla (Screen Readers)**: Como **NVDA**, **JAWS** o **VoiceOver**, que envían texto a dispositivos de línea Braille.
+- **Dispositivos de línea Braille**: Estos dispositivos tienen una serie de celdas dinámicas que suben y bajan puntos en relieve según el contenido que se muestra en pantalla.
+
+### 🌐 **Relevancia para la accesibilidad web (WCAG)**
+El uso de traductores de Braille contribuye al cumplimiento de las pautas de accesibilidad web **WCAG (Web Content Accessibility Guidelines)**, que exigen:
+
+1. **Texto alternativo** para imágenes.
+2. **Navegación por teclado**.
+3. **Contenido semántico adecuado** que los lectores de pantalla puedan interpretar correctamente.
+
+---
+
+## 🔧 **Herramientas y dispositivos populares**
+Algunos dispositivos y herramientas utilizados en el acceso a contenido web mediante Braille incluyen:
+
+| **Herramienta/Dispositivo** | **Descripción** |
+|-----------------------------|-----------------|
+| **BrailleNote Touch**        | Dispositivo portátil que combina teclado táctil y línea Braille. |
+| **HumanWare Brailliant**     | Línea Braille compatible con lectores de pantalla populares. |
+| **Focus Blue**               | Línea Braille de Freedom Scientific, compatible con JAWS. |
+| **Duxbury Braille Translator** | Software que convierte documentos y contenido web en Braille. |
+
+---
+
+## 📋 **Buenas prácticas para desarrolladores web**
+Para garantizar que los traductores de Braille funcionen correctamente en un sitio web, los desarrolladores deben:
+
+1. **Usar etiquetas semánticas correctas**: Como `<header>`, `<main>`, `<nav>`, etc.
+2. **Proporcionar texto alternativo (alt)** para imágenes.
+3. **Evitar el uso de contenido solo visual**.
+4. **Asegurar la navegabilidad por teclado**.
+5. **Respetar las recomendaciones de ARIA (Accessible Rich Internet Applications)** para enriquecer la semántica del contenido.
+
+---
+
+## 📈 **Beneficios de implementar traductores de Braille en la web**
+- **Inclusión digital:** Facilita el acceso de personas con discapacidades visuales.
+- **Cumplimiento legal:** Ayuda a cumplir con normativas de accesibilidad como la **Ley de Accesibilidad de Servicios Digitales** en la Unión Europea.
+- **Mejora la experiencia del usuario:** Los usuarios con discapacidad pueden acceder a información de manera autónoma y eficiente.
+
+---
+
+## 📢 **Conclusión**
+Incorporar traductores de Braille y soporte para dispositivos Braille en la web es una medida clave para mejorar la accesibilidad digital. Los desarrolladores deben asegurarse de que sus sitios web sean compatibles con tecnologías de asistencia, siguiendo las pautas de accesibilidad y adoptando buenas prácticas de desarrollo inclusivo. Esto no solo mejora la experiencia de los usuarios con discapacidades visuales, sino que también promueve un entorno digital más justo y accesible para todos.
+
+
+- **Navegadores accesibles**. Los traductores de braille (braile no es correcto) traducen un documento electrónico a formato braille para ser impreso por una impresora braille que imprime en relieve.
+
+Duxbury
+Soporta múltiples idiomas. Soporta braille técnico y matemático. Disponible para Windows, Macintosh y DOS.
+Megadots
+Traductor para grandes volúmenes de documentos.
+
+## 4.1 Ayudas técnicas
 
 Navegadores accesibles
 Navegadores alternativos
@@ -241,19 +308,4 @@ Realiza pruebas para asegurarte de que tu página es accesible.
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse)
 - [Wave](https://wave.webaim.org/)
 - [axe DevTools](https://www.deque.com/axe/devtools/)
-
----
-
-### Resumen de Pautas
-| Práctica             | Descripción                               |
-|----------------------|-------------------------------------------|
-| Estructura semántica | Usa etiquetas HTML semánticas             |
-| Alt para imágenes    | Proporciona descripciones alternativas    |
-| Contraste adecuado   | Asegura un contraste suficiente           |
-| Navegación teclado   | Garantiza la navegación sin mouse         |
-| Formularios          | Etiqueta los campos correctamente         |
-| Multimedia           | Ofrece subtítulos y transcripciones       |
-| ARIA                 | Usa atributos ARIA para mejorar la accesibilidad |
-
-Aplicar estas prácticas ayuda a crear un entorno web más inclusivo para todos los usuarios.
 
