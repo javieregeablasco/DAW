@@ -4,6 +4,7 @@ Autor: Javier Egea Blasco
 Año: 24-25
 Palabras clave: DAW, DIW
 ---
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/wai.jpg" width=60%>
 
 ### **¿Qué es la Web Accessibility Initiative (WAI)?**  
 
