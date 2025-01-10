@@ -1,10 +1,14 @@
 ---
-Título: UD. 6.2 - Worl Accessibility Initiative (WAI)
+Título: UD. 6.2 - World Accessibility Initiative (WAI)
 Autor: Javier Egea Blasco
 Año: 24-25
 Palabras clave: DAW, DIW
 ---
+<div align="center">
+</br>
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/wai.jpg" width=60%>
+</div>
+
 
 ### **¿Qué es la Web Accessibility Initiative (WAI)?**  
 
