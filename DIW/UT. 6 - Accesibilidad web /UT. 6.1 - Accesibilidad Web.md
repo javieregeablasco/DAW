@@ -166,7 +166,7 @@ Los dispositivos apuntadores van **más allá del mouse tradicional** y están d
 ## 4.2 Dispositivo de entrada/salida
 Un **dispositivo de entrada/salida (E/S)** es un **hardware especializado** que permite a las personas con **discapacidades físicas, sensoriales o cognitivas** interactuar con un sistema digital, enviando información al dispositivo (entrada) y recibiendo retroalimentación (salida). 
 
-### 4.2.1 Dispositivos de Entrada:
+### 4.2.1 Dispositivos de Entrada
 Permiten a los usuarios **introducir información o realizar acciones** en un sistema digital.
 
 | **Dispositivo**         | **Descripción**                                                            |
@@ -178,7 +178,7 @@ Permiten a los usuarios **introducir información o realizar acciones** en un si
 | **Reconocimiento de Voz**| Permite a los usuarios controlar dispositivos y escribir mediante comandos de voz. |
 | **Pantallas Táctiles**   | Útiles para personas con discapacidades motoras que no pueden usar un mouse o teclado tradicional. |
 
-### 4.2.2 Dispositivos de Salida:
+### 4.2.2 Dispositivos de Salida
 Proporcionan **información de retorno al usuario** para que puedan interactuar de manera efectiva con el contenido digital.
 
 | **Dispositivo**          | **Descripción**                                                            |
@@ -188,3 +188,20 @@ Proporcionan **información de retorno al usuario** para que puedan interactuar 
 | **Altavoces o Auriculares** | Utilizados por personas que necesitan retroalimentación auditiva, como aquellos que usan lectores de pantalla. |
 | **Dispositivos Hápticos** | Proporcionan retroalimentación táctil (vibraciones) para personas con discapacidades auditivas o visuales. |
 | **Pantallas Adaptativas** | Pantallas que pueden mostrar contenido con alto contraste, fuentes grandes o contenido simplificado. |
+
+### 4.3 Emulador de teclado
+Un **emulador de teclado** es un dispositivo o software que **simula las funciones de un teclado físico**, permitiendo a personas con **discapacidades físicas o motoras** interactuar con una computadora o sitio web de forma alternativa. 
+Un emulador de teclado se utiliza principalmente para **facilitar el acceso digital** a personas con:
+- Discapacidades motoras severas (como tetraplejia o parálisis).
+- Dificultades para controlar movimientos finos.
+- Falta de movilidad en manos o dedos.
+- Necesidad de controlar un dispositivo con **movimientos de cabeza, voz, ojos** o mediante **pulsadores**.
+
+Estos dispositivos convierten **diferentes tipos de entradas** (como comandos de voz, movimientos oculares o clics en pantalla) en **comandos de teclado**, permitiendo la interacción con sitios web, aplicaciones y software.
+
+## 4.4 Emulador de ratón
+Un **emulador de ratón** es un **dispositivo o software** que permite **simular las funciones de un ratón físico** a través de **entradas alternativas**, como comandos de voz, movimientos oculares, pulsadores o incluso gestos corporales. 
+Un emulador de ratón permite:
+- **Controlar el cursor del ratón** sin usar las manos.
+- **Navegar por páginas web** y aplicaciones sin necesidad de un ratón físico.
+- **Realizar clics, arrastres, desplazamientos y selecciones** mediante métodos alternativos.
