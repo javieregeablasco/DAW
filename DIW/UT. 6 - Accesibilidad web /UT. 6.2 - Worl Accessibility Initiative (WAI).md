@@ -10,9 +10,9 @@ Palabras clave: DAW, DIW
 </div>
 
 
-### **¿Qué es la Web Accessibility Initiative (WAI)?**  
+# 1 ¿Qué es la Web Accessibility Initiative (WAI)?   
 
-La **Web Accessibility Initiative (WAI)** es una iniciativa de la **World Wide Web Consortium (W3C)**, creada en **1997**, que se dedica a desarrollar **normas, directrices, recursos y documentación** para hacer que el contenido web sea accesible para **todas las personas**, especialmente aquellas con **discapacidades físicas, visuales, auditivas, cognitivas y neurológicas**.
+La <a href="https://www.w3.org/WAI/">**Web Accessibility Initiative (WAI)**</a> es una iniciativa de la <a href="https://www.w3.org/">**World Wide Web Consortium (W3C)**/</a>, creada en **1997**, que se dedica a desarrollar **normas, directrices, recursos y documentación** para hacer que el contenido web sea accesible para **todas las personas**, especialmente aquellas con **discapacidades físicas, visuales, auditivas, cognitivas y neurológicas**.
 
 El objetivo principal de la WAI es garantizar que todas las personas puedan **percibir, navegar, interactuar y contribuir en la web** sin barreras, promoviendo una **web inclusiva y universal**.
 
