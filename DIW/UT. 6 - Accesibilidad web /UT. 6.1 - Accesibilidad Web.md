@@ -4,7 +4,11 @@ Autor: Javier Egea Blasco
 Año: 24-25
 Palabras clave: DAW, DIW
 ---
-
+  
+<div align="center">
+</br>
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/love_sass.png">
+</div>
 
 
 # 1. Introducción
