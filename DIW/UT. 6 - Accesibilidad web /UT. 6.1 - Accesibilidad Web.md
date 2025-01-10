@@ -263,10 +263,6 @@ A continuación, algunas de las ayudas técnicas basadas en software que emplean
 ## 4.2 Traductores de Braille
 Los **traductores de Braille** son herramientas que convierten texto digital en texto legible mediante dispositivos Braille. Estos dispositivos permiten a las personas ciegas o con discapacidad visual **interactuar con contenido web** de manera efectiva. El uso de tecnologías que soporten el Braille en la web mejora la **inclusión digital** y garantiza que las personas con discapacidades visuales tengan acceso a la información de forma autónoma.
 
-1. **Software de traducción de Braille:** Convierte texto en Braille digital y lo envía a un dispositivo de lectura.
-   
-2. **Dispositivos de línea Braille (Braille displays):** Hardware que traduce el texto digital en tiempo real y lo muestra en una línea de celdas Braille.
-
 ---
 
 ## 💻 **Funcionamiento en la web**
