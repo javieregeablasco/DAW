@@ -157,9 +157,31 @@ Etiquetar correctamente los campos de los formularios para que los usuarios con 
 
 **Ejemplo:**
 ```html
-<label for="nombre">Nombre:</label>
-<input type="text" id="nombre" name="nombre">
+<form aria-labelledby="accessible-form" style="background-color: antiquewhite;">
+  <h2 id="accessible-form">Formulario Accesible</h2>
+
+  <label for="name">Nombre completo:</label>
+  <input type="text" id="name" name="name" required aria-required="true">
+  <br><br>
+
+  <label for="email">Correo electrónico:</label>
+  <input type="email" id="email" name="email" required aria-required="true">
+  <br><br>
+
+  <fieldset>
+    <legend>Género:</legend>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Masculino</label><br>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Femenino</label><br>
+
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Otro</label>
+  </fieldset>
+  <br>
 ```
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/formulario.png">
 
 ## 3.6 Contenidos multimedia accesibles
 Los elementos multimedia que tanto se utilizan en las páginas web hoy en día pueden ocasionar graves problemas de accesibilidad, ya no sólo a las personas con algún tipo de discapacidad, sino a todo el mundo en general. Al ser elementos que no son HTML requieren, en la mayoría de los casos, la instalación de un visor específico (plug-in, add-on o extensión) que sea capaz de interpretar el elemento multimedia.  
