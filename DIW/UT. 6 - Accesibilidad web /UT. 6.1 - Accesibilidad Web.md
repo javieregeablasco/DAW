@@ -7,7 +7,7 @@ Palabras clave: DAW, DIW
   
 <div align="center">
 </br>
-<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/love_sass.png">
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/web-accessibility-barriers.jpg">
 </div>
 
 
