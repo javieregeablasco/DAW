@@ -189,7 +189,7 @@ Proporcionan **información de retorno al usuario** para que puedan interactuar 
 | **Dispositivos Hápticos** | Proporcionan retroalimentación táctil (vibraciones) para personas con discapacidades auditivas o visuales. |
 | **Pantallas Adaptativas** | Pantallas que pueden mostrar contenido con alto contraste, fuentes grandes o contenido simplificado. |
 
-### 4.3 Emulador de teclado
+## 4.3 Emulador de teclado
 Un **emulador de teclado** es un dispositivo o software que **simula las funciones de un teclado físico**, permitiendo a personas con **discapacidades físicas o motoras** interactuar con una computadora o sitio web de forma alternativa. 
 Un emulador de teclado se utiliza principalmente para **facilitar el acceso digital** a personas con:
 - Discapacidades motoras severas (como tetraplejia o parálisis).
