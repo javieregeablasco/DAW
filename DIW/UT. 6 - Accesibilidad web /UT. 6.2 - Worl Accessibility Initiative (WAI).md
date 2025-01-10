@@ -44,7 +44,7 @@ La accesibilidad web no solo beneficia a las personas con discapacidades, sino t
 # 5 Principales directrices de la WAI (WCAG y otras)
 La WAI emite desde 1999 directrices estandarizadas y reconocidas a nivel internacional para crear contenidos y páginas más accesibles. Estas recomendaciones técnicas, especialmente dirigidas a webmasters, diseñadores y desarrolladores, se actualizan de forma periódica y se agrupan en tres bloques.
 
-## 6.1 Accesibilidad del contenido web WCAG (Web Content Accessibility Guidelines)  
+## 5.1 Accesibilidad del contenido web WCAG (Web Content Accessibility Guidelines)  
 Se trata de las pautas para crear contenidos accesibles y compatibles con todo tipo de tecnologías de apoyo, dispositivos, navegadores y lenguajes de programación. Contemplan el uso de letras de gran tamaño, diseños adaptativos, textos predictivos, asistentes a la navegación, etc. Las versiones son:    
 - **WCAG 2.0** (2008)
 - **WCAG 2.1** (2018)
@@ -57,15 +57,15 @@ Estas directrices están organizadas en torno a **cuatro principios**:
 - **Comprensible**: La información debe ser fácil de entender.
 - **Robusto**: El contenido debe ser compatible con diferentes tecnologías de asistencia.
 
-## 6.2 Accesibilidad de las herramientas de autor ATAG (Authoring Tool Accessibility Guidelines)  
+## 5.2 Accesibilidad de las herramientas de autor ATAG (Authoring Tool Accessibility Guidelines)  
 Engloba las normas que atañen al desarrollo de los programas y aplicaciones que se utilizan para crear, gestionar y publicar los contenidos digitales. Estas herramientas abarcan los procesadores de textos, los gestores de bases de datos, los programas de edición de vídeo, etc.
 
-## 6.3 Accesibilidad de las herramientas de autor UAAG (User Agent Accessibility Guidelines) 
+## 5.3 Accesibilidad de las herramientas de autor UAAG (User Agent Accessibility Guidelines) 
 Definen las directrices destinadas al desarrollo de los programas necesarios para interactuar con el contenido web, como los navegadores, los reproductores multimedia, los lectores de pantalla, etc , cuya finalidad es:
 - Proporcionar compatibilidad con tecnologías de asistencia, como lectores de pantalla.
 - Faciliten la navegación a personas con discapacidad.
 
-# 7 WCAG Pautas de accesibilidad al contenido en la web
+# 6 WCAG Pautas de accesibilidad al contenido en la web
 Las Pautas de Accesibilidad al Contenido en la Web (Web Content Accessibility Guidelines, WCAG) son un conjunto de normas internacionales que definen cómo hacer que el contenido web sea accesible para todas las personas, especialmente aquellas con discapacidades. Estas pautas son desarrolladas por la Web Accessibility Initiative (WAI) del W3C.
 
 Las WCAG 2.2 están organizadas en torno a **cuatro principios básicos POUR**:
@@ -77,7 +77,7 @@ Las WCAG 2.2 están organizadas en torno a **cuatro principios básicos POUR**:
 | **Comprensible**  | El contenido debe ser **claro y fácil de entender** para evitar confusión o malentendidos. | Usar un lenguaje claro y evitar términos complejos. |
 | **Robusto**       | El contenido debe ser **compatible con diferentes tecnologías** y seguir funcionando con futuras actualizaciones. | Asegurar que el sitio funcione con lectores de pantalla. |
 
-# 8 WCAG Niveles de Conformidad (A, AA, AAA)  
+# 7 WCAG Niveles de Conformidad (A, AA, AAA)  
 Las WCAG definen **tres niveles de conformidad** para medir qué tan accesible es un sitio web:
 
 | **Nivel** | **Descripción**                                                          | **Ejemplo de Requisito**                                    |
@@ -86,7 +86,7 @@ Las WCAG definen **tres niveles de conformidad** para medir qué tan accesible e
 | **AA**   | Considerado el **nivel recomendado** para la mayoría de los sitios web. Cumple con las **leyes de accesibilidad** en muchos países. | Hacer que los formularios sean accesibles.                  |
 | **AAA**  | **Máximo nivel** de accesibilidad. Muy difícil de alcanzar en todos los contextos. | Proporcionar subtítulos para todo contenido multimedia.     |
 
-# 9 WCAG, criterios de éxito  
+# 8 WCAG, criterios de éxito  
 Los **criterios de éxito de las WCAG (Web Content Accessibility Guidelines)** son **requisitos técnicos específicos** que los sitios web y aplicaciones deben cumplir para garantizar que sean **accesibles para personas con discapacidades**. Estos criterios definen las **condiciones mínimas** que deben cumplirse para que los contenidos web sean percibidos, operados, comprendidos y robustos para **todos los usuarios**, independientemente de sus capacidades o limitaciones.
 
 ## 8.1 Características de los Criterios de Éxito
@@ -111,14 +111,3 @@ Los **criterios de éxito de las WCAG (Web Content Accessibility Guidelines)** s
 | **1.4.3 Contraste mínimo**     | Asegurar que el texto tenga suficiente contraste con el fondo. | AA        |
 | **2.5.7 Movimientos de arrastre** | Proporcionar alternativas a acciones de arrastrar y soltar. | AA        |
 | **3.3.7 Entrada redundante**   | Evitar pedir al usuario que introduzca datos repetidos.        | A         |
-
----
-
-## 🎯 **Objetivo de los Criterios de Éxito:**
-✔️ Facilitar el acceso a los contenidos digitales para personas con **discapacidad visual, auditiva, cognitiva, motora o del habla**.  
-✔️ Mejorar la **usabilidad** y **experiencia de usuario** para todos.  
-✔️ Cumplir con las **normativas legales** relacionadas con la accesibilidad web (como la Ley de Accesibilidad en España y la Directiva Europea 2016/2102).  
-
----
-
-¿Quieres profundizar en algún criterio específico o necesitas ejemplos prácticos? 😊
