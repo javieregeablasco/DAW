@@ -205,6 +205,7 @@ Por tanto, **como regla general**, no se debe abusar de los elementos multimedia
 Usar texto para el hipertexto que tenga sentido leído fuera de contexto. Por ejemplo, evitar abusar del **"pinchar aquí"**.
 Algunos navegadores y algunos programas de ayuda que emplean las personas con discapacidad (por ejemplo, los lectores de pantalla) ofrecen al usuario la posibilidad de mostrar, normalmente en una ventana aparte, la lista de enlaces que contiene una página web. Si el texto de un enlace no tiene sentido fuera de su contexto, el enlace no tendrá sentido en esta lista de enlaces.
 Por otro lado, si los enlaces poseen un estilo especial para resaltarlos, los usuarios suelen fijar su atención en ellos, por lo que es importante que el texto de los enlaces sea lo más claro y significativo posible.
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/enlace.png">
 
 ## 3.8. Uso de ARIA (Accessible Rich Internet Applications)
 Implementar atributos **ARIA** cuando no sea posible lograr la accesibilidad solo con HTML.
@@ -223,7 +224,6 @@ Implementar atributos **ARIA** cuando no sea posible lograr la accesibilidad sol
   </ul>
 </nav>
 ```
-<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/enlace.png">
 
 # 4 Software específico para mejorar la accesibilidad web  
 ## 4.1 Ayudas técnicas
@@ -263,36 +263,13 @@ A continuación, algunas de las ayudas técnicas basadas en software que emplean
 ## 4.2 Traductores de Braille
 Los **traductores de Braille** son herramientas que convierten texto digital en texto legible mediante dispositivos Braille. Estos dispositivos permiten a las personas ciegas o con discapacidad visual **interactuar con contenido web** de manera efectiva. El uso de tecnologías que soporten el Braille en la web mejora la **inclusión digital** y garantiza que las personas con discapacidades visuales tengan acceso a la información de forma autónoma.
 
----
-
-## 💻 **Funcionamiento en la web**
 Los traductores de Braille se integran con tecnologías de asistencia, como:
-
 - **Lectores de pantalla (Screen Readers)**: Como **NVDA**, **JAWS** o **VoiceOver**, que envían texto a dispositivos de línea Braille.
 - **Dispositivos de línea Braille**: Estos dispositivos tienen una serie de celdas dinámicas que suben y bajan puntos en relieve según el contenido que se muestra en pantalla.
 
-### 🌐 **Relevancia para la accesibilidad web (WCAG)**
-El uso de traductores de Braille contribuye al cumplimiento de las pautas de accesibilidad web **WCAG (Web Content Accessibility Guidelines)**, que exigen:
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/Braille.jpg">
 
-1. **Texto alternativo** para imágenes.
-2. **Navegación por teclado**.
-3. **Contenido semántico adecuado** que los lectores de pantalla puedan interpretar correctamente.
-
----
-
-## 🔧 **Herramientas y dispositivos populares**
-Algunos dispositivos y herramientas utilizados en el acceso a contenido web mediante Braille incluyen:
-
-| **Herramienta/Dispositivo** | **Descripción** |
-|-----------------------------|-----------------|
-| **BrailleNote Touch**        | Dispositivo portátil que combina teclado táctil y línea Braille. |
-| **HumanWare Brailliant**     | Línea Braille compatible con lectores de pantalla populares. |
-| **Focus Blue**               | Línea Braille de Freedom Scientific, compatible con JAWS. |
-| **Duxbury Braille Translator** | Software que convierte documentos y contenido web en Braille. |
-
----
-
-## 📋 **Buenas prácticas para desarrolladores web**
+📋 **Buenas prácticas para desarrolladores web**  
 Para garantizar que los traductores de Braille funcionen correctamente en un sitio web, los desarrolladores deben:
 
 1. **Usar etiquetas semánticas correctas**: Como `<header>`, `<main>`, `<nav>`, etc.
@@ -301,32 +278,73 @@ Para garantizar que los traductores de Braille funcionen correctamente en un sit
 4. **Asegurar la navegabilidad por teclado**.
 5. **Respetar las recomendaciones de ARIA (Accessible Rich Internet Applications)** para enriquecer la semántica del contenido.
 
----
+# 5 Hardware específico para mejorar la accesibilidad web
+La Norma <a href="https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0029860">UNE 139802:2003 Aplicaciones informáticas para personas con discapacidad. Requisitos de accesibilidad al ordenador. Software</a> define los conceptos de dispositivo apuntador, dispositivo de entrada salida, emulador de teclado y emulador de ratón:
+```
+3.5 dispositivo apuntador: Dispositivo de entrada conectado a un ordenador o a un terminal,
+cuya función es mover el cursor por la pantalla para dar órdenes.
+Ejemplos: ratón, trackball, joystick, touchpad, headmaster, etc.
 
-## 📈 **Beneficios de implementar traductores de Braille en la web**
-- **Inclusión digital:** Facilita el acceso de personas con discapacidades visuales.
-- **Cumplimiento legal:** Ayuda a cumplir con normativas de accesibilidad como la **Ley de Accesibilidad de Servicios Digitales** en la Unión Europea.
-- **Mejora la experiencia del usuario:** Los usuarios con discapacidad pueden acceder a información de manera autónoma y eficiente.
+3.6 dispositivo entrada/salida: Una combinación de elementos físicos o lógicos para emular el funcionamiento completo
+de un único dispositivo de entrada/salida. Es considerado como un único dispositivo en esta norma.
 
----
+3.7 emulador de teclado: Dispositivo o programa cuyo fin es sustituir al teclado convencional.
 
-## 📢 **Conclusión**
-Incorporar traductores de Braille y soporte para dispositivos Braille en la web es una medida clave para mejorar la accesibilidad digital. Los desarrolladores deben asegurarse de que sus sitios web sean compatibles con tecnologías de asistencia, siguiendo las pautas de accesibilidad y adoptando buenas prácticas de desarrollo inclusivo. Esto no solo mejora la experiencia de los usuarios con discapacidades visuales, sino que también promueve un entorno digital más justo y accesible para todos.
+3.8 emulador de ratón: Dispositivo o programa cuyo fin es sustituir al ratón convencional.
+```
+## 5.1 Dispositivo apuntador
+Un **dispositivo apuntador** es cualquier hardware o tecnología que permite a una persona **interactuar con una interfaz digital moviendo un puntero** y **seleccionando elementos** en la pantalla. 
+Los dispositivos apuntadores van **más allá del mouse tradicional** y están diseñados para ser usados por personas con **movilidad reducida**, **dificultades motoras** o **discapacidades físicas**.
+
+🖱️ **Ejemplos de Dispositivos Apuntadores Accesibles:**
+1. **Trackballs:**  
+2. **Joysticks:**  
+3. **Pantallas Táctiles:**  
+4. **Dispositivos de Cabeza (Head Mouse):**  
+5. **Eye-Tracking (Seguimiento Ocular):**  
+6. **Switches (Pulsadores):**  
+
+📋 **Buenas Prácticas en Diseño Web para Dispositivos Apuntadores:**
+
+| **Práctica**                  | **Descripción**                                              |
+|--------------------------------|--------------------------------------------------------------|
+| Proporcionar un área de clic grande | Asegura que los botones y enlaces tengan un área suficiente para facilitar el clic. |
+| Habilitar navegación por teclado | Muchos dispositivos apuntadores emulan el uso del teclado. Asegúrate de que todo sea accesible con `Tab`. |
+| Evitar acciones complejas       | No obligar al usuario a realizar arrastrar y soltar, gestos, o movimientos complicados. |
+| Proporcionar retroalimentación visual | Cambiar el estado de los elementos interactivos al enfocarse o seleccionarse. |
 
 
-- **Navegadores accesibles**. Los traductores de braille (braile no es correcto) traducen un documento electrónico a formato braille para ser impreso por una impresora braille que imprime en relieve.
+## 5.2 Dispositivo de entrada/salida
+Un **dispositivo de entrada/salida (E/S)** es un **hardware especializado** que permite a las personas con **discapacidades físicas, sensoriales o cognitivas** interactuar con un sistema digital, enviando información al dispositivo (entrada) y recibiendo retroalimentación (salida). 
 
-Duxbury
-Soporta múltiples idiomas. Soporta braille técnico y matemático. Disponible para Windows, Macintosh y DOS.
-Megadots
-Traductor para grandes volúmenes de documentos.
+#### 5.2.1 Dispositivos de Entrada:
+Permiten a los usuarios **introducir información o realizar acciones** en un sistema digital.
 
-## 4.1 Ayudas técnicas
+| **Dispositivo**         | **Descripción**                                                            |
+|-------------------------|----------------------------------------------------------------------------|
+| **Teclado Adaptado**     | Teclados con teclas más grandes, teclas táctiles o teclas de funciones específicas para personas con movilidad reducida. |
+| **Mouse Adaptado**       | Trackballs, joysticks y dispositivos que se controlan con la cabeza o los ojos. |
+| **Switches (Pulsadores)**| Botones grandes que permiten a los usuarios realizar acciones con un solo clic. |
+| **Sistemas de Seguimiento Ocular** | Permiten controlar un sistema digital mediante los movimientos oculares. |
+| **Reconocimiento de Voz**| Permite a los usuarios controlar dispositivos y escribir mediante comandos de voz. |
+| **Pantallas Táctiles**   | Útiles para personas con discapacidades motoras que no pueden usar un mouse o teclado tradicional. |
 
-Navegadores accesibles
-Navegadores alternativos
+#### 5.2.2 Dispositivos de Salida:
+Proporcionan **información de retorno al usuario** para que puedan interactuar de manera efectiva con el contenido digital.
 
----
+| **Dispositivo**          | **Descripción**                                                            |
+|--------------------------|----------------------------------------------------------------------------|
+| **Lectores de Pantalla**  | Software que convierte el texto de la pantalla en voz o en braille. Ejemplo: JAWS, NVDA, VoiceOver. |
+| **Líneas Braille**        | Dispositivos que convierten el texto de la pantalla en braille táctil para personas con discapacidad visual. |
+| **Altavoces o Auriculares** | Utilizados por personas que necesitan retroalimentación auditiva, como aquellos que usan lectores de pantalla. |
+| **Dispositivos Hápticos** | Proporcionan retroalimentación táctil (vibraciones) para personas con discapacidades auditivas o visuales. |
+| **Pantallas Adaptativas** | Pantallas que pueden mostrar contenido con alto contraste, fuentes grandes o contenido simplificado. |
+
+
+
+
+
+
 
 ## 8. Pruebas de Accesibilidad
 Realiza pruebas para asegurarte de que tu página es accesible.
