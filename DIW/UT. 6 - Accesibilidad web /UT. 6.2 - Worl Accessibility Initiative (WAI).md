@@ -115,9 +115,137 @@ En la sigiente tabla se pueden ver unos ejemplos que muestran la relación entre
 
 Para más información consultar <a href="https://www.w3.org/WAI/WCAG22/Understanding/">la documentación oficial</a>.  
 
+## 8.3 Mapa de las pautas WCAG 
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/wcag-map.png">
+
 ## 8.3 Enlaces de interés.
 Para una consulta rápida de cualquier criterio, se puede consultar esta <a href="https://www.w3.org/WAI/WCAG22/quickref/#top">referencia rápida</a>.  
 Guía, no oficial de los <a href="https://guia-wcag.com/es/">criterios de éxito</a>.
 Otra <a href="https://addaw.org/es/wcag">guía</a> ofrecida por **ADDAW**, Asociación para la Defensa del Derecho a la Accesibilidad Web.
 
 # 9 Nivel de adecuación de una página web.
+Para medir el **nivel de adecuación de una página web según las WCAG**, se utilizan diferentes **técnicas y herramientas de evaluación**.     
+Estas técnicas incluyen revisiones manuales, herramientas automáticas y pruebas con usuarios. A continuación, te explico las principales técnicas utilizadas:
+
+## 9.1 Revisión Manual
+La revisión manual consiste en evaluar los contenidos de la web siguiendo los criterios de éxito de las WCAG, comprobando uno por uno si los elementos son accesibles para todos los usuarios.
+
+**🛠 Técnicas utilizadas**  
+- Inspeccionar el código HTML, CSS y ARIA para verificar el uso correcto de etiquetas y atributos.
+- Comprobar manualmente si los textos alternativos de las imágenes son adecuados.
+- Probar la navegación con teclado (sin ratón).
+- Revisar los contrastes de color usando guías y herramientas de contraste.
+
+**Ventajas y limitaciones**  
+- Permite detectar errores que las herramientas automáticas no encuentran, como la comprensión del contenido y la claridad de las etiquetas.
+- Es un proceso lento que puede requerir un tiempo considerable y requiere conocimientos técnicos avanzados.
+
+## 9.2 Evaluación Automática
+Existen numerosas herramientas que analizan automáticamente el código de la web para identificar errores de accesibilidad.
+
+**🛠 Herramientas más comunes**  
+- **WAVE**: Una herramienta gratuita que destaca errores de accesibilidad directamente en la página web.
+- **Lighthouse**: Disponible en Chrome DevTools, evalúa accesibilidad, rendimiento y SEO.
+- **axe Accessibility**: Un complemento para navegadores que realiza análisis detallados.
+- **Accessibility Insights for Web**: Una herramienta de Microsoft para evaluar la accesibilidad de sitios web.
+
+## 9.3 Pruebas con usuarios reales (beta testers)
+
+### ✅ **¿Qué es?**  
+Consiste en realizar pruebas con personas con diferentes discapacidades para identificar barreras de accesibilidad en situaciones reales de uso.
+
+### 🛠 **Técnicas utilizadas**  
+- Pruebas de navegación con lectores de pantalla.
+- Pruebas de uso de la web solo con teclado.
+- Evaluaciones por personas con discapacidades visuales, auditivas o motoras.
+
+### 📋 **Ventajas**  
+- Proporciona una visión real de la experiencia de usuario.
+- Permite detectar problemas que no son evidentes para evaluadores expertos.
+
+### ❗ **Limitaciones**  
+- Requiere tiempo y recursos.
+- Los resultados pueden variar según los usuarios participantes.
+
+---
+
+## 🧩 **4. Validación con Checklists (Listas de Verificación)**
+
+### ✅ **¿Qué es?**  
+El uso de **listas de verificación** basadas en los criterios de éxito de las WCAG permite realizar un seguimiento estructurado del cumplimiento de cada requisito.
+
+### 🛠 **Ejemplos de Checklists**  
+- WCAG Quick Reference (W3C): Lista oficial de los criterios de éxito con técnicas y fallos comunes.
+- WebAIM WCAG Checklist: Una lista simplificada para ayudar a desarrolladores a cumplir con los niveles A, AA y AAA.
+
+### 📋 **Ventajas**  
+- Asegura que no se olviden criterios importantes.
+- Es útil para estructurar el proceso de evaluación.
+
+### ❗ **Limitaciones**  
+- No detecta automáticamente los errores.
+- Requiere conocimientos técnicos para interpretar los resultados.
+
+---
+
+## 🧪 **5. Pruebas con Tecnologías de Asistencia**
+
+### ✅ **¿Qué es?**  
+Se utilizan **tecnologías de asistencia**, como lectores de pantalla, ampliadores de texto o dispositivos de entrada alternativos, para comprobar si la web es accesible.
+
+### 🛠 **Herramientas utilizadas**  
+- **NVDA**: Un lector de pantalla gratuito para Windows.
+- **JAWS**: Uno de los lectores de pantalla más usados.
+- **VoiceOver**: Lector de pantalla integrado en dispositivos Apple.
+- **ZoomText**: Ampliador de pantalla para usuarios con baja visión.
+
+### 📋 **Ventajas**  
+- Permite comprobar la experiencia real de usuarios que dependen de estas tecnologías.
+- Ayuda a detectar problemas relacionados con la interacción y navegación.
+
+### ❗ **Limitaciones**  
+- Requiere conocimientos sobre cómo usar las tecnologías de asistencia.
+- Puede ser complejo de implementar para desarrolladores sin experiencia previa.
+
+---
+
+## 🛠 **6. Validación con Herramientas de Validación del Código**
+
+### ✅ **¿Qué es?**  
+Las herramientas de validación comprueban si el **código HTML, CSS y ARIA** cumple con los estándares de accesibilidad.
+
+### 🛠 **Herramientas utilizadas**  
+- **HTML Validator**: Verifica si el código HTML es válido y semántico.
+- **CSS Validator**: Comprueba que el código CSS sea correcto y no contenga errores.
+- **ARIA Validator**: Valida el uso de atributos ARIA en el código.
+
+### 📋 **Ventajas**  
+- Asegura que el código es semántico y sigue los estándares del W3C.
+- Ayuda a prevenir errores técnicos que afectan la accesibilidad.
+
+### ❗ **Limitaciones**  
+- No verifica aspectos relacionados con la experiencia del usuario.
+
+---
+
+## 📊 **Comparativa de Técnicas**
+
+| Técnica                      | ¿Qué mide?                     | Ventajas                                   | Limitaciones                                |
+|------------------------------|--------------------------------|-------------------------------------------|---------------------------------------------|
+| Revisión Manual               | Criterios de éxito WCAG        | Detecta errores no técnicos               | Requiere tiempo y conocimientos técnicos     |
+| Herramientas Automáticas      | Errores técnicos               | Rápido y fácil de usar                    | No detecta problemas relacionados con el contenido |
+| Pruebas con Usuarios          | Experiencia real de usuario    | Detecta problemas reales                  | Requiere tiempo y recursos                  |
+| Checklists                   | Cumplimiento estructurado      | Asegura que no se olviden requisitos      | No detecta errores automáticamente          |
+| Pruebas con Tecnologías de Asistencia | Usabilidad con lectores de pantalla | Evalúa la experiencia de usuarios con discapacidades | Requiere conocimientos técnicos            |
+| Validación de Código          | Conformidad con estándares     | Evita errores técnicos                   | No mide la comprensión del contenido        |
+
+---
+
+## 🎯 **Conclusión**
+
+Para medir el nivel de adecuación de una página web según las **WCAG**, lo ideal es combinar varias técnicas:  
+1. **Herramientas automáticas** para una evaluación rápida.  
+2. **Revisiones manuales** para detectar errores que las herramientas no identifican.  
+3. **Pruebas con usuarios reales** y **tecnologías de asistencia** para evaluar la experiencia real.
+
+Esto asegurará que el sitio web cumpla con los requisitos de los niveles **A**, **AA** o **AAA** según los criterios de éxito de las WCAG.
