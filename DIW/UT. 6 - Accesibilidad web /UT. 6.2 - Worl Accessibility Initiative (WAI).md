@@ -113,4 +113,11 @@ En la sigiente tabla se pueden ver unos ejemplos que muestran la relación entre
 | **Robusto**      | Comprender todos los elementos de una página web.             | 4.1.2           | A         | Dar a los elementos nombres, roles, estados y valores correctos.                                 |
 |                  | Implementación de mensajes de estado.                         | 4.1.3           | AA         | Los mensajes de estado deben ser detectables sin necesidad de cambiar el foco                   |
 
-Para más información consultar <a href="https://www.w3.org/WAI/WCAG22/Understanding/">la documentación oficial</a>.
+Para más información consultar <a href="https://www.w3.org/WAI/WCAG22/Understanding/">la documentación oficial</a>.  
+
+## 8.3 Enlaces de interés.
+Para una consulta rápida de cualquier criterio, se puede consultar esta <a href="https://www.w3.org/WAI/WCAG22/quickref/#top">referencia rápida</a>.  
+Guía, no oficial de los <a href="https://guia-wcag.com/es/">criterios de éxito</a>.
+Otra <a href="https://addaw.org/es/wcag">guía</a> ofrecida por **ADDAW**, Asociación para la Defensa del Derecho a la Accesibilidad Web.
+
+# 9 Nivel de adecuación de una página web.
