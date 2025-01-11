@@ -44,18 +44,13 @@ La accesibilidad web no solo beneficia a las personas con discapacidades, sino t
 # 5 Principales directrices de la WAI (WCAG y otras)
 La WAI emite desde 1999 directrices estandarizadas y reconocidas a nivel internacional para crear contenidos y páginas más accesibles. Estas recomendaciones técnicas, especialmente dirigidas a webmasters, diseñadores y desarrolladores, se actualizan de forma periódica y se agrupan en tres bloques.
 
-## 5.1 Accesibilidad del contenido web WCAG (Web Content Accessibility Guidelines)  
-Se trata de las pautas para crear contenidos accesibles y compatibles con todo tipo de tecnologías de apoyo, dispositivos, navegadores y lenguajes de programación. Contemplan el uso de letras de gran tamaño, diseños adaptativos, textos predictivos, asistentes a la navegación, etc. Las versiones son:    
+## 5.1 WCAG (Web Content Accessibility Guidelines) Accesibilidad del contenido web  
+Las WCAG son una serie de directrices de diseño y desarrollo que definen las pautas para crear contenidos accesibles y compatibles con todo tipo de tecnologías de apoyo, dispositivos, navegadores y lenguajes de programación. Contemplan el uso de letras de gran tamaño, diseños adaptativos, textos predictivos, asistentes a la navegación, etc.  
+Las ediciones de las WCAG son:    
 - **WCAG 2.0** (2008)
 - **WCAG 2.1** (2018)
 - <a href="https://www.w3.org/TR/WCAG22/">**WCAG 2.2**</a> (2023). Es la que se aplica en la actualidad.
 - **WCAG 3** (en proceso de aprobación)
-
-Estas directrices están organizadas en torno a **cuatro principios**:
-- **Perceptible**: El contenido debe ser presentado de forma que pueda ser percibido por todos los usuarios.
-- **Operable**: La navegación y la interacción con la web deben ser posibles para todos.
-- **Comprensible**: La información debe ser fácil de entender.
-- **Robusto**: El contenido debe ser compatible con diferentes tecnologías de asistencia.
 
 ## 5.2 Accesibilidad de las herramientas de autor ATAG (Authoring Tool Accessibility Guidelines)  
 Engloba las normas que atañen al desarrollo de los programas y aplicaciones que se utilizan para crear, gestionar y publicar los contenidos digitales. Estas herramientas abarcan los procesadores de textos, los gestores de bases de datos, los programas de edición de vídeo, etc.
@@ -65,10 +60,8 @@ Definen las directrices destinadas al desarrollo de los programas necesarios par
 - Proporcionar compatibilidad con tecnologías de asistencia, como lectores de pantalla.
 - Faciliten la navegación a personas con discapacidad.
 
-# 6 WCAG Pautas de accesibilidad al contenido en la web
-Las Pautas de Accesibilidad al Contenido en la Web (Web Content Accessibility Guidelines, WCAG) son un conjunto de normas internacionales que definen cómo hacer que el contenido web sea accesible para todas las personas, especialmente aquellas con discapacidades. Estas pautas son desarrolladas por la Web Accessibility Initiative (WAI) del W3C.
-
-Las WCAG 2.2 están organizadas en torno a **cuatro principios básicos POUR**:
+# 6 WCAG: Pautas de accesibilidad al contenido en la web
+Las directrices de diseño definidas por la WCAG 2.2 están organizadas en torno a cuatro principios básicos llamados **POUR** (perceivable, operable, understandable and robust):
 
 | **Principio**     | **Descripción**                                                | **Ejemplo**                                          |
 |-------------------|----------------------------------------------------------------|-----------------------------------------------------|
@@ -78,7 +71,7 @@ Las WCAG 2.2 están organizadas en torno a **cuatro principios básicos POUR**:
 | **Robusto**       | El contenido debe ser **compatible con diferentes tecnologías** y seguir funcionando con futuras actualizaciones. | Asegurar que el sitio funcione con lectores de pantalla. |
 
 # 7 WCAG Niveles de Conformidad (A, AA, AAA)  
-Las WCAG definen **tres niveles de conformidad** para medir qué tan accesible es un sitio web:
+Las directrices de diseño definidas por la WCAG 2.2 también tienen **tres niveles de conformidad** que sirven para medir qué tan accesible es un sitio web:
 
 | **Nivel** | **Descripción**                                                          | **Ejemplo de Requisito**                                    |
 |----------|--------------------------------------------------------------------------|------------------------------------------------------------|
@@ -89,7 +82,7 @@ Las WCAG definen **tres niveles de conformidad** para medir qué tan accesible e
 # 8 WCAG, criterios de éxito  
 Los **criterios de éxito de las WCAG (Web Content Accessibility Guidelines)** son **requisitos técnicos específicos** que los sitios web y aplicaciones deben cumplir para garantizar que sean **accesibles para personas con discapacidades**. Estos criterios definen las **condiciones mínimas** que deben cumplirse para que los contenidos web sean percibidos, operados, comprendidos y robustos para **todos los usuarios**, independientemente de sus capacidades o limitaciones.
 
-## 8.1 Características de los Criterios de Éxito
+## 8.1 Características de los criterios de éxito
 1. **Son verificables:**  
    Se pueden **probar y evaluar** mediante inspecciones manuales o herramientas automáticas de accesibilidad.
    
@@ -102,12 +95,22 @@ Los **criterios de éxito de las WCAG (Web Content Accessibility Guidelines)** s
 3. **Se aplican a diferentes tipos de contenido web:**  
    Los criterios abarcan **texto, imágenes, audio, video, formularios, interacciones, navegación, etc.**
 
+## 8.2 Ejemplos de criterios de éxito para WCAG 2.2
+En la sigiente tabla se pueden ver unos ejemplos que muestran la relación entre principios POUR, criterios de éxito, las pautas WCAG así como el nivel de conformidad alcanzado.
 
-## 📋 **Ejemplo de Criterios de Éxito (WCAG 2.1 y 2.2)**
-| **Criterio**           | **Descripción**                                                  | **Nivel** |
-|------------------------|------------------------------------------------------------------|-----------|
-| **1.1.1 Contenido no textual** | Proporcionar alternativas textuales para imágenes y gráficos. | A         |
-| **2.4.4 Enlaces descriptivos** | Los enlaces deben tener un texto que describa su función.      | AA        |
-| **1.4.3 Contraste mínimo**     | Asegurar que el texto tenga suficiente contraste con el fondo. | AA        |
-| **2.5.7 Movimientos de arrastre** | Proporcionar alternativas a acciones de arrastrar y soltar. | AA        |
-| **3.3.7 Entrada redundante**   | Evitar pedir al usuario que introduzca datos repetidos.        | A         |
+| **Principio**   | **Criterio de Éxito**                                          | **Número WCAG** | **Nivel** | **Ejemplo**                                                                                      |
+|------------------|---------------------------------------------------------------|-----------------|-----------|--------------------------------------------------------------------------------------------------|
+| **Perceptible**  | Alternativas textuales para contenidos no textuales.          | 1.1.1           | A         | Proveer texto alternativo (alt) en imágenes para describir su contenido o propósito.             |
+|                  | Subtítulos para contenido multimedia pregrabado.              | 1.2.2           | A         | Incluir subtítulos en videos explicativos pregrabados.                                           |
+|                  | Transcripción para contenido multimedia pregrabado.           | 1.2.3           | AA        | Proveer una transcripción textual de un podcast o video pregrabado.                              |
+|                  | Contraste suficiente entre texto y fondo.                     | 1.4.3           | AA        | Asegurarse de que el color del texto tiene un contraste de al menos 4.5:1 con el fondo.          |
+| **Operable**     | Navegación accesible mediante teclado.                        | 2.1.1           | A         | Todos los elementos interactivos, como botones y enlaces, deben ser accesibles con el teclado.   |
+|                  | Tiempo suficiente para realizar tareas en la web.             | 2.2.1           | A         | Permitir extender el tiempo para completar formularios si es necesario.                         |
+|                  | Evitar contenido que cause convulsiones.                      | 2.3.1           | A         | No usar contenido parpadeante con una frecuencia superior a 3 destellos por segundo.             |
+| **Comprensible** | Lenguaje claro y sencillo.                                    | 3.1.5           | AAA       | Redactar las instrucciones y los textos de forma que puedan ser comprendidos por todos.          |
+|                  | Etiquetas descriptivas para formularios.                      | 3.3.2           | A         | Incluir etiquetas claras en los campos de entrada, como “Correo electrónico” en vez de “Input”.  |
+|                  | Navegación consistente en toda la web.                        | 3.2.3           | AA        | Mantener la misma estructura de menús y botones en todas las páginas del sitio.                  |
+| **Robusto**      | Comprender todos los elementos de una página web.             | 4.1.2           | A         | Dar a los elementos nombres, roles, estados y valores correctos.                                 |
+|                  | Implementación de mensajes de estado.                         | 4.1.3           | AA         | Los mensajes de estado deben ser detectables sin necesidad de cambiar el foco                   |
+
+Para más información consultar <a href="https://www.w3.org/WAI/WCAG22/Understanding/">la documentación oficial</a>.
