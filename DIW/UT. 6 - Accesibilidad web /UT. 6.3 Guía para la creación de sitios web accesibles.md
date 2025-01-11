@@ -1,5 +1,5 @@
 
-# 3 Guía básica para crear sitios web accesibles
+# 3 Guía para crear sitios web accesibles
 A continuación, se presentan las mejores prácticas para crear una página web accesible.  
 
 ## 3.1 Estructura semántica correcta
