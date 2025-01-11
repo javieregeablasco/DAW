@@ -118,16 +118,15 @@ Para más información consultar <a href="https://www.w3.org/WAI/WCAG22/Understa
 ## 8.3 Mapa de las pautas WCAG 
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/wcag-map.png">
 
-## 8.3 Enlaces de interés.
+## 8.4 Enlaces de interés.
 Para una consulta rápida de cualquier criterio, se puede consultar esta <a href="https://www.w3.org/WAI/WCAG22/quickref/#top">referencia rápida</a>.  
-Guía, no oficial de los <a href="https://guia-wcag.com/es/">criterios de éxito</a>.
+Guía, no oficial de los <a href="https://guia-wcag.com/es/">criterios de éxito</a>.  
 Otra <a href="https://addaw.org/es/wcag">guía</a> ofrecida por **ADDAW**, Asociación para la Defensa del Derecho a la Accesibilidad Web.
 
 # 9 Nivel de adecuación de una página web.
 Para medir el **nivel de adecuación de una página web según las WCAG**, se utilizan diferentes **técnicas y herramientas de evaluación**.     
-Estas técnicas incluyen revisiones manuales, herramientas automáticas y pruebas con usuarios. A continuación, te explico las principales técnicas utilizadas:
 
-## 9.1 Revisión Manual
+## 9.1 Revisión manual
 La revisión manual consiste en evaluar los contenidos de la web siguiendo los criterios de éxito de las WCAG, comprobando uno por uno si los elementos son accesibles para todos los usuarios.
 
 **🛠 Técnicas utilizadas**  
@@ -157,7 +156,10 @@ Consiste en realizar pruebas con personas con diferentes discapacidades para ide
 Las herramientas de validación comprueban si el **código HTML, CSS y ARIA** cumple con los estándares de accesibilidad.
 
 **🛠 Herramientas utilizadas**  
-- **HTML Validator**: Verifica si el código HTML es válido y semántico.
-- **CSS Validator**: Comprueba que el código CSS sea correcto y no contenga errores.
-- **ARIA Validator**: Valida el uso de atributos ARIA en el código.
+- <a href="https://validator.w3.org/#validate_by_uri+with_options">**HTML Validator**</a>: Verifica si el código HTML es válido y semántico.
+- <a href="https://jigsaw.w3.org/css-validator/">**CSS Validator**</a>: Comprueba que el código CSS sea correcto y no contenga errores.
+- **ARIA Validator**: Valida el uso de atributos ARIA en el código (deprecated).
 
+## 9.5 Enlaces de interés 
+La **WAI** pone a disposicion de los usuarios una serie de <a href="https://www.w3.org/WAI/test-evaluate/tools/list/">herramientas de validación</a>.
+Esas herramientas no son responsabilidad de la **WAI**, lo que significa que no tiene ningún control sobre ellas (derechos de uso, soporte técnico...).
