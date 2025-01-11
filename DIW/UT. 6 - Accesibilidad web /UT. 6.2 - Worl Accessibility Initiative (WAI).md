@@ -152,7 +152,7 @@ Existen numerosas herramientas que analizan automáticamente el código de la we
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/Beta-testing.jpg">
 Consiste en realizar pruebas con personas con diferentes discapacidades para identificar barreras de accesibilidad en situaciones reales de uso.
 
-## 9.4 Validación con herramientas de validación de código**
+## 9.4 Validación con herramientas de validación de código
 Las herramientas de validación comprueban si el **código HTML, CSS y ARIA** cumple con los estándares de accesibilidad.
 
 **🛠 Herramientas utilizadas**  
