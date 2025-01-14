@@ -249,4 +249,4 @@ Dentro del archivo **styles.scss**, dispondremos las instancias de **la siguient
 @import "custom/importAll";
 @import "bootstrap/scss/bootstrap";
 ```
-Como podemos ver, usaremos la directiva `@import` para realizar las instancias. Aunque @import será **deprecated** en la próxima versión de Sass, en este caso en concreto la directiva `@use` no devuelve el resultado esperado.  
+Como podemos ver, usaremos la directiva `@import` para realizar las instancias. Aunque @import será **deprecated** en la próxima versión de Sass, en este caso en concreto, la directiva `@use` no devuelve el resultado esperado.  
