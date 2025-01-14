@@ -192,36 +192,36 @@ Dentro del archivo **importAll.scss** podremos todas las llamadas a los módulos
 // Option B: Include parts of Bootstrap
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
-@import "../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
 
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/variables-dark";
 
 // 4. Include any default map overrides here
 
 // 5. Include remainder of required parts
-@import "../node_modules/bootstrap/scss/maps";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/root";
+@import "../../../node_modules/bootstrap/scss/maps";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/root";
 
 // 6. Optionally include any other parts as needed
-@import "../node_modules/bootstrap/scss/utilities";
-@import "../node_modules/bootstrap/scss/reboot";
-@import "../node_modules/bootstrap/scss/type";
-@import "../node_modules/bootstrap/scss/images";
-@import "../node_modules/bootstrap/scss/containers";
-@import "../node_modules/bootstrap/scss/grid";
-@import "../node_modules/bootstrap/scss/helpers";
+@import "../../../node_modules/bootstrap/scss/utilities";
+@import "../../../node_modules/bootstrap/scss/reboot";
+@import "../../../node_modules/bootstrap/scss/type";
+@import "../../../node_modules/bootstrap/scss/images";
+@import "../../../node_modules/bootstrap/scss/containers";
+@import "../../../node_modules/bootstrap/scss/grid";
+@import "../../../node_modules/bootstrap/scss/helpers";
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
-@import "../node_modules/bootstrap/scss/utilities/api";
+@import "../../../node_modules/bootstrap/scss/utilities/api";
 
 // 8. Add additional custom code here
 ```
-Aunque se sugiere, en el **punto 8**, insertar el código de customización dentro del mismo archivo, se recomienda no hacerlo y crear archivos propios a cada customización de un componente de **Bootstrap** (p.e. **archivosCustom.scss**).
+En el **punto 8**, se sugiere insertar el código de customización dentro del mismo archivo. Para evitar de ensuciar un archivo que luego, no se volvera a editar, se recomienda no hacerlo y crear archivos propios a cada customización de un componente (p.e. **archivosCustom.scss**). De requerer muchas personalizaciones, se recomienda distribuir los archivos en una estructura de directorios para facilitar la depuración y el mantenimiento posterior del proyecto.  
 
 2️⃣ **Contenido de archivosCustom.scss**
 Para el ejemplo, usaremos el siguiente ejemplo, que nos permite ampliar las ultilidades de **margin**
@@ -243,3 +243,10 @@ $spacers: (
 );
 ```
 3️⃣ **Contenido del archivo styles.scss**
+Dentro del archivo **styles.scss**, dispondremos las instancias de **la siguiente manera**.
+```
+@import "custom/customMargenes";
+@import "custom/importAll";
+@import "bootstrap/scss/bootstrap";
+```
+Como podemos ver, usaremos la directiva `@import` para realizar las instancias. Aunque @import será **deprecated** en la próxima versión de Sass, en este caso en concreto la directiva `@use` no devuelve el resultado esperado.  
