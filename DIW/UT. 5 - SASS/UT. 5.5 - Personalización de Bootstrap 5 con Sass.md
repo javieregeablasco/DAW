@@ -151,6 +151,95 @@ Si toda ha ido bien se visualizará el render siguiente.
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/holaBSSASSVITEGood.png" width=50%>
 
 # 6 Customizando Bootstrap
-  
+## 6.1 **🔧 Motivos para customizar Bootstrap con Sass**  
+Bootstrap es un framework CSS muy popular debido a su facilidad de uso con su sistema predefinido de componentes y utilidades. Sin embargo, **las necesidades específicas de un proyecto a menudo requieren personalizaciones** que van más allá de lo que Bootstrap pueda ofrecer. A continuación, nombramos algunas de ellas.  
 
+1️⃣ **Adaptación a la identidad visual del proyecto (branding)**  
+Los proyectos web suelen requerir que los colores, tipografías, tamaños y estilos reflejen la identidad visual de una marca.  
+2️⃣ **Reducción del peso del CSS**  
+Cuando importamos Bootstrap desde un CDN o directamente en el proyecto, **cargamos todo el framework, incluyendo estilos y componentes no utilizados**. Esto puede afectar negativamente al rendimiento y por ende al SEO.  
+3️⃣ **Uso de variables y mixins personalizados**  
+4️⃣ **Creación de componentes especificos reutilizables**  
+5️⃣ **Creación de un framework individualizado basado en bootstrap**
 
+## 6.2 Preparación del entorno para la customización de bootstrap 
+Toda la información sobre el procedimiento <a href="https://getbootstrap.com/docs/5.3/customize/sass/">**aquí**</a>.
+
+### 6.2.1 Estructura de archivos
+Para evitar de afectar a la integridad del framework, no deberemos **nunca** editar los **core files** de bootstrap.  
+Para poder customizar los diferentes componentes de **Bootstrap** crearemos, dentro de la carpeta **scss** una estructura de directorios como la que se muestra a continuación.
+```
+proyecto/
+├── node_modules/  
+├── src/  
+│    ├── js/  
+│    │   └── main.js  
+│    ├── scss/  
+│    │   └── styles.scss
+│    └── custom/
+│        ├── _importAll.scss
+│        └── _archivosCustom.scss
+│    └── index.html  
+├── package-lock.json  
+├── package.json  
+└── vite.config.js  
+```
+
+1️⃣ **Contenido de importAll.scss**
+Dentro del archivo **importAll.scss** podremos todas las llamadas a los módulos de **Bootstrap**.
+```
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+// 6. Optionally include any other parts as needed
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/helpers";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "../node_modules/bootstrap/scss/utilities/api";
+
+// 8. Add additional custom code here
+```
+Aunque se sugiere, en el **punto 8**, insertar el código de customización dentro del mismo archivo, se recomienda no hacerlo y crear archivos propios a cada customización de un componente de **Bootstrap** (p.e. **archivosCustom.scss**).
+
+2️⃣ **Contenido de archivosCustom.scss**
+Para el ejemplo, usaremos el siguiente ejemplo, que nos permite ampliar las ultilidades de **margin**
+```
+$spacer: 1rem;
+
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 5,
+  8: $spacer * 6,
+  9: $spacer * 7,
+  10: $spacer * 8,
+);
+```
+3️⃣ **Contenido del archivo styles.scss**
