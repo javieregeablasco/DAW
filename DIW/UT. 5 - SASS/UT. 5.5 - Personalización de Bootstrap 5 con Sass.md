@@ -185,7 +185,7 @@ proyecto/
 └── vite.config.js  
 ```
 
-1️⃣ **Contenido de importAll.scss**
+1️⃣ **Contenido de importAll.scss**  
 Dentro del archivo **importAll.scss** podremos todas las llamadas a los módulos de **Bootstrap**.
 ```
 // Custom.scss
@@ -223,7 +223,7 @@ Dentro del archivo **importAll.scss** podremos todas las llamadas a los módulos
 ```
 En el **punto 8**, se sugiere insertar el código de customización dentro del mismo archivo. Para evitar de ensuciar un archivo que luego, no se volvera a editar, se recomienda no hacerlo y crear archivos propios a cada customización de un componente (p.e. **archivosCustom.scss**). De requerer muchas personalizaciones, se recomienda distribuir los archivos en una estructura de directorios para facilitar la depuración y el mantenimiento posterior del proyecto.  
 
-2️⃣ **Contenido de archivosCustom.scss**
+2️⃣ **Contenido de archivosCustom.scss**  
 Para el ejemplo, usaremos el siguiente ejemplo, que nos permite ampliar las ultilidades de **margin**
 ```
 $spacer: 1rem;
@@ -242,11 +242,11 @@ $spacers: (
   10: $spacer * 8,
 );
 ```
-3️⃣ **Contenido del archivo styles.scss**
+3️⃣ **Contenido del archivo styles.scss**  
 Dentro del archivo **styles.scss**, dispondremos las instancias de **la siguiente manera**.
 ```
 @import "custom/customMargenes";
 @import "custom/importAll";
 @import "bootstrap/scss/bootstrap";
 ```
-Como podemos ver, usaremos la directiva `@import` para realizar las instancias. Aunque @import será **deprecated** en la próxima versión de Sass, en este caso en concreto, la directiva `@use` no devuelve el resultado esperado.  
+Como podemos ver, usaremos la directiva `@import` para realizar las instancias. Aunque @import será **deprecated** en la próxima versión de Sass, en este caso en particular, la directiva `@use` no devuelve el resultado esperado.  
