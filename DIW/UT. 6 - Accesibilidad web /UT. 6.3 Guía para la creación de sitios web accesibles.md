@@ -1,3 +1,9 @@
+---
+Título: UD. 6.3 - Guía para la creación de sitios web accesibles
+Autor: Javier Egea Blasco
+Año: 24-25
+Palabras clave: DAW, DIW
+---
 
 # 3 Guía para crear sitios web accesibles
 A continuación, se presentan las mejores prácticas para crear una página web accesible.  
