@@ -224,28 +224,15 @@ Dentro del archivo **importAll.scss** podremos todas las llamadas a los módulos
 En el **punto 8**, se sugiere insertar el código de customización dentro del mismo archivo. Para evitar de ensuciar un archivo que luego, no se volvera a editar, se recomienda no hacerlo y crear archivos propios a cada customización de un componente (p.e. **archivosCustom.scss**). De requerer muchas personalizaciones, se recomienda distribuir los archivos en una estructura de directorios para facilitar la depuración y el mantenimiento posterior del proyecto.  
 
 2️⃣ **Contenido de archivosCustom.scss**  
-Para el ejemplo, usaremos el siguiente ejemplo, que nos permite ampliar las ultilidades de **margin**
+Para el ejemplo, usaremos el siguiente ejemplo, que nos permite cambiar los colores de Bootstrap.
 ```
-$spacer: 1rem;
-
-$spacers: (
-  0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
-  6: $spacer * 4,
-  7: $spacer * 5,
-  8: $spacer * 6,
-  9: $spacer * 7,
-  10: $spacer * 8,
-);
+$primary: red;
+$secondary: magenta;
 ```
 3️⃣ **Contenido del archivo styles.scss**  
 Dentro del archivo **styles.scss**, dispondremos las instancias de **la siguiente manera**.
 ```
-@import "custom/customMargenes";
+@import "custom/customColores";
 @import "custom/importAll";
 @import "bootstrap/scss/bootstrap";
 ```
