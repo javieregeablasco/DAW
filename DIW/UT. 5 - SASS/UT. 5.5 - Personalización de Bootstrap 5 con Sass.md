@@ -177,8 +177,9 @@ proyecto/
 │    ├── scss/  
 │    │   └── styles.scss
 │    └── custom/
-│        ├── _importAll.scss
-│        └── _archivosCustom.scss
+│    │   ├── _importAll.scss
+│    │   ├── _customVariables.scss
+│    │   └── _customMapas.scss
 │    └── index.html  
 ├── package-lock.json  
 ├── package.json  
@@ -186,7 +187,7 @@ proyecto/
 ```
 
 1️⃣ **Contenido de importAll.scss**  
-Dentro del archivo **importAll.scss** podremos todas las llamadas a los módulos de **Bootstrap**.
+Dentro del archivo **importAll.scss** pondremos todas las llamadas a los módulos de **Bootstrap**.
 ```
 // Custom.scss
 // Option B: Include parts of Bootstrap
@@ -221,10 +222,15 @@ Dentro del archivo **importAll.scss** podremos todas las llamadas a los módulos
 
 // 8. Add additional custom code here
 ```
-En el **punto 8**, se sugiere insertar el código de customización dentro del mismo archivo. Para evitar de ensuciar un archivo que luego, no se volvera a editar, se recomienda no hacerlo y crear archivos propios a cada customización de un componente (p.e. **archivosCustom.scss**). De requerer muchas personalizaciones, se recomienda distribuir los archivos en una estructura de directorios para facilitar la depuración y el mantenimiento posterior del proyecto.  
+**Nota importante**
+- En el **punto 2**, se incluirá cualquier sobrescritura de las variables de Bootstrap.   
+- En el **punto 4**, se incluirá cualquier ampliación de las variables de Bootstrap.   
+- En el **punto 8**, se insertará el código de customización dentro del mismo archivo.
+
+Para no ensuciar un archivo que luego no se volverá a editar, se recomienda crear archivos propios a cada customización. De generarse muchas personalizaciones, se recomienda distribuir los archivos en una estructura de directorios para facilitar la depuración y el mantenimiento posterior del proyecto.  
 
 2️⃣ **Contenido de archivosCustom.scss**  
-Para el ejemplo, crearemos un archivo `_customColores.scss` que nos permitirá cambiar los colores de Bootstrap.
+Para el ejemplo, crearemos un archivo `_customVariables.scss` que nos permitirá sobrescribir los colores de Bootstrap.
 ```
 $primary: red;
 $secondary: magenta;
@@ -232,7 +238,6 @@ $secondary: magenta;
 3️⃣ **Contenido del archivo styles.scss**  
 Dentro del archivo **styles.scss**, dispondremos las instancias de **la siguiente manera**.
 ```
-@import "custom/customColores";
 @import "custom/importAll";
 @import "bootstrap/scss/bootstrap";
 ```
