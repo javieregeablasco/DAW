@@ -224,7 +224,7 @@ Dentro del archivo **importAll.scss** podremos todas las llamadas a los módulos
 En el **punto 8**, se sugiere insertar el código de customización dentro del mismo archivo. Para evitar de ensuciar un archivo que luego, no se volvera a editar, se recomienda no hacerlo y crear archivos propios a cada customización de un componente (p.e. **archivosCustom.scss**). De requerer muchas personalizaciones, se recomienda distribuir los archivos en una estructura de directorios para facilitar la depuración y el mantenimiento posterior del proyecto.  
 
 2️⃣ **Contenido de archivosCustom.scss**  
-Para el ejemplo, usaremos el siguiente ejemplo, que nos permite cambiar los colores de Bootstrap.
+Para el ejemplo, crearemos un archivo `_customColores.scss` que nos permitirá cambiar los colores de Bootstrap.
 ```
 $primary: red;
 $secondary: magenta;
