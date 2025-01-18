@@ -151,7 +151,7 @@ Si toda ha ido bien se visualizará el render siguiente.
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/holaBSSASSVITEGood.png" width=50%>
 
 # 6 Customizando Bootstrap
-## 6.1 **🔧 Motivos para customizar Bootstrap con Sass**  
+## 6.1 **Motivos para customizar Bootstrap con Sass**  
 Bootstrap es un framework CSS muy popular debido a su facilidad de uso con su sistema predefinido de componentes y utilidades. Sin embargo, **las necesidades específicas de un proyecto a menudo requieren personalizaciones** que van más allá de lo que Bootstrap pueda ofrecer. A continuación, nombramos algunas de ellas.  
 
 1️⃣ **Adaptación a la identidad visual del proyecto (branding)**  
