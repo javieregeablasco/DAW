@@ -42,15 +42,6 @@ Las personas que se benefician de la **accesibilidad web** incluyen:
 - 📱 **Compatibilidad multiplataforma**: Contenido accesible suele ser más compatible con diferentes dispositivos y navegadores.
 - 🔐 **Cumplimiento legal**: Evita problemas legales relacionados con la discriminación digital.
 
-## 1.4 Tecnologías de Asistencia
-Las tecnologías de asistencia permiten a las personas con discapacidades interactuar con contenido web. Algunos ejemplos incluyen:
-
-- **Lectores de pantalla** (Jaws, NVDA, VoiceOver).
-- **Teclados alternativos** o dispositivos de entrada especiales.
-- **Software de reconocimiento de voz**.
-- **Ampliadores de pantalla**.
-- **Subtítulos y transcripciones** para contenido multimedia.
-
 # 2 Legislación aplicable
 ## 2.1 Legislación dentro del sector público
 Actualmente, (2025) la legislación aplicable en materia de accesibilidad web a la administración pública en España es el <a href="https://www.boe.es/boe/dias/2018/09/19/pdfs/BOE-A-2018-12699.pdf">Real Decreto 1112/2018</a>, de 7 de septiembre, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público.    
