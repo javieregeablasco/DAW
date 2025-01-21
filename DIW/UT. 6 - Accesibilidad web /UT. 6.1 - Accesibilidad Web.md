@@ -10,7 +10,6 @@ Palabras clave: DAW, DIW
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/web-accessibility-barriers.jpg">
 </div>
 
-
 # 1. Introducción
 ## 1.1 ¿Qué es la accesibilidad web?  
 La <a href="https://es.wikipedia.org/wiki/Accesibilidad_web">accesibilidad web</a> se refiere al diseño y desarrollo de sitios, aplicaciones y contenidos digitales que **puedan ser utilizados por todas las personas**, incluyendo aquellas con **discapacidades**. En otras palabras, cualquier persona deberá poder **acceder, navegar e interactuar** a través del contenido web sin encontrar dificultades.
