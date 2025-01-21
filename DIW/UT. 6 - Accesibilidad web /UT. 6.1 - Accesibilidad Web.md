@@ -61,8 +61,8 @@ Este Real Decreto es la trasposición a la legislación española de la <a href=
 ## 2.2 Legislación dentro del sector privado
 La legislación aplicable en materia de accesibilidad web al sector privado en España es el <a href="https://www.boe.es/buscar/pdf/2023/BOE-A-2023-7417-consolidado.pdf">Real Decreto 193/2023</a>, de 21 de marzo, por el que se regulan las condiciones básicas de accesibilidad y no discriminación de las personas con discapacidad para el acceso y utilización de los bienes y servicios a disposición del público.
 
-# 3 Software específico para mejorar la accesibilidad web  
-## 3.1 Ayudas técnicas / Tecnologías de apoyo
+ 
+# 3 Ayudas técnicas / Tecnologías de apoyo
 La Norma <a href="https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0029860">UNE 139802:2003 Aplicaciones informáticas para personas con discapacidad. Requisitos de accesibilidad al ordenador. Software</a> define el concepto ayuda técnica:
 
 ```
@@ -72,6 +72,7 @@ incapacidad o discapacidad. (UNE-EN ISO 9999). Incluye tanto productos hardware 
 ```
 La clasificación de las ayudas técnicas está definida en la <a href="https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0039568">Norma UNE-EN ISO 9999:2007: Productos de apoyo para personas con discapacidad. Clasificación y terminología (ISO 9999:2007)</a>. Esta norma establece que ya no se tienen que llamar ayudas técnicas, sino tecnologías de apoyo.
 
+# 4 Software específico para mejorar la accesibilidad web 
 A continuación, algunas de las ayudas técnicas basadas en software que emplean las personas con discapacidad para utilizar un ordenador y navegar por la Web. También se incluye otro tipo de software, como simuladores de algunas de las alteraciones que presentan las personas con discapacidad:
 
 - **Lectores de pantalla**. Los lectores de pantalla permiten la utilización del sistema operativo y las distintas aplicaciones mediante el empleo de un sintetizador de voz que "lee y explica" lo que se visualiza en la pantalla, lo que supone una ayuda para las personas con graves problemas de visión o completamente ciegas. Se muestran a continuación los softwares más conocidos.
@@ -95,7 +96,7 @@ A continuación, algunas de las ayudas técnicas basadas en software que emplean
 
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/Braille.jpg">
 
-# 4 Hardware específico para mejorar la accesibilidad web
+# 5 Hardware específico para mejorar la accesibilidad web
 La Norma <a href="https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0029860">UNE 139802:2003 Aplicaciones informáticas para personas con discapacidad. Requisitos de accesibilidad al ordenador. Software</a> define los conceptos de dispositivo apuntador, dispositivo de entrada salida, emulador de teclado y emulador de ratón:
 ```
 3.5 dispositivo apuntador: Dispositivo de entrada conectado a un ordenador o a un terminal,
