@@ -96,7 +96,7 @@ A continuación, algunas de las ayudas técnicas basadas en software que emplean
 
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/Braille.jpg">
 
-# 5 Hardware específico para mejorar la accesibilidad web
+# 5 Hardware específico para la accesibilidad web
 La Norma <a href="https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0029860">UNE 139802:2003 Aplicaciones informáticas para personas con discapacidad. Requisitos de accesibilidad al ordenador. Software</a> define los conceptos de dispositivo apuntador, dispositivo de entrada salida, emulador de teclado y emulador de ratón:
 ```
 3.5 dispositivo apuntador: Dispositivo de entrada conectado a un ordenador o a un terminal,
