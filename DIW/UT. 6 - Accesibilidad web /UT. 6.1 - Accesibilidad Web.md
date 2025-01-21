@@ -27,26 +27,7 @@ Las personas que se benefician de la **accesibilidad web** incluyen:
 - 👵 **Personas mayores**, que pueden experimentar pérdida de visión, audición o destrezas motoras.
 - 📱 **Usuarios en condiciones temporales** (como personas con una mano ocupada o en entornos con mala iluminación).
 
-## 1.3 Principios de la accesibilidad web (POUR)
-La accesibilidad web se basa en **cuatro principios** fundamentales:
-
-| Principio   | Descripción                                                                                                                                     |
-|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Perceptible** | El contenido debe ser presentado de forma que los usuarios puedan **percibirlo** a través de los sentidos (vista, oído, etc.).                 |
-| **Operable**   | La interfaz y los componentes deben ser **fáciles de manejar** para todos los usuarios, incluidos aquellos que utilizan tecnologías de asistencia. |
-| **Comprensible** | La información y la navegación deben ser **entendibles** para todos los usuarios.                                                           |
-| **Robusto**     | El contenido debe ser **compatible** con diversas tecnologías presentes y futuras, incluidas las herramientas de asistencia.                    |
-
-## 1.4 Estándares de accesibilidad
-El estándar más utilizado a nivel internacional es el <a href="https://www.w3.org/WAI/">WAI (Web Accessibility Initiative)</a>, desarrollado por el <a href="https://www.w3.org/">W3C (World Wide Web consortium)</a>  
-
-Las **WAI** están organizadas en tres niveles de conformidad:
-
-- **A (mínimo)**: Requisitos básicos de accesibilidad.
-- **AA (medio)**: Nivel recomendado para la mayoría de los sitios web.
-- **AAA (alto)**: Máxima accesibilidad, generalmente aplicada a sitios específicos.
-
-## 1.5 Ejemplos de buenas prácticas para la accesibilidad web
+## 1.3 Ejemplos de buenas prácticas para la accesibilidad web
 
 1. ✅ **Etiquetar correctamente los elementos HTML** (`<alt>` en imágenes, `<label>` en formularios).
 2. ✅ **Proporcionar texto alternativo** para imágenes.
@@ -56,14 +37,14 @@ Las **WAI** están organizadas en tres niveles de conformidad:
 6. ✅ **Proporcionar controles de interfaz accesibles**, como botones grandes y etiquetas claras.
 7. ✅ **Evitar contenido que parpadee** o cause epilepsia fotosensible.
 
-## 1.6 Beneficios de la accesibilidad web
+## 1.4 Beneficios de la accesibilidad web
 
 - 🌍 **Mayor alcance**: Más personas pueden acceder al contenido, incluyendo personas con discapacidades.
 - 💻 **Mejora del SEO**: Los sitios accesibles también son más fáciles de indexar por los motores de búsqueda.
 - 📱 **Compatibilidad multiplataforma**: Contenido accesible suele ser más compatible con diferentes dispositivos y navegadores.
 - 🔐 **Cumplimiento legal**: Evita problemas legales relacionados con la discriminación digital.
 
-## 1.7 Tecnologías de Asistencia
+## 1.5 Tecnologías de Asistencia
 Las tecnologías de asistencia permiten a las personas con discapacidades interactuar con contenido web. Algunos ejemplos incluyen:
 
 - **Lectores de pantalla** (Jaws, NVDA, VoiceOver).
@@ -81,7 +62,7 @@ Este Real Decreto es la trasposición a la legislación española de la <a href=
 La legislación aplicable en materia de accesibilidad web al sector privado en España es el <a href="https://www.boe.es/buscar/pdf/2023/BOE-A-2023-7417-consolidado.pdf">Real Decreto 193/2023</a>, de 21 de marzo, por el que se regulan las condiciones básicas de accesibilidad y no discriminación de las personas con discapacidad para el acceso y utilización de los bienes y servicios a disposición del público.
 
 # 3 Software específico para mejorar la accesibilidad web  
-## 3.1 Ayudas técnicas
+## 3.1 Ayudas técnicas / Tecnologías de apoyo
 La Norma <a href="https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0029860">UNE 139802:2003 Aplicaciones informáticas para personas con discapacidad. Requisitos de accesibilidad al ordenador. Software</a> define el concepto ayuda técnica:
 
 ```
@@ -94,13 +75,11 @@ La clasificación de las ayudas técnicas está definida en la <a href="https://
 A continuación, algunas de las ayudas técnicas basadas en software que emplean las personas con discapacidad para utilizar un ordenador y navegar por la Web. También se incluye otro tipo de software, como simuladores de algunas de las alteraciones que presentan las personas con discapacidad:
 
 - **Lectores de pantalla**. Los lectores de pantalla permiten la utilización del sistema operativo y las distintas aplicaciones mediante el empleo de un sintetizador de voz que "lee y explica" lo que se visualiza en la pantalla, lo que supone una ayuda para las personas con graves problemas de visión o completamente ciegas. Se muestran a continuación los softwares más conocidos.
-  - JAWS (Windows). Jaws es el lector de pantalla más utilizado a nivel mundial. Es de pago y está disponible para todas las versiones de Windows.
-  - NVDA (Windows). NVDA - Non Visual Desktop Access, es un lector de pantalla gratuito, de código abierto. Nace como alternativa a Jaws y su elevado precio. Está disponible para las versiones de Windows XP, 7, 8 y 10 de Microsoft.
-  - Narrador (Windows). Narrador es un lector de pantalla gratuito que viene incluido por defecto en las versiones de Windows 7, 8 y 9. Nos permite utilizar el ordenador con la mayoría de sus funcionalidades. Si bien no es la opción más completa, ni la más extendida, puede utilizarse en ocasiones concretas donde no dispongamos de otras alternativas superiores, como las anteriormente comentadas Jaws o NVDA.
-  - VoiceOver (macOS). VoiceOver es un lector de pantalla que cuenta con unas síntesis voz avanzadas y voces de gran calidad, leen de una forma realista, incluso se toman respiros si leen mucho.
-  - Orca (Linux). El programa Orca permite a personas con deficiencias visuales o ceguera a manejarse en el entorno de su ordenador, así como personas con deficiencias motoras. Utiliza una combinación de voz, braille y magnificación.
-  - VoiceOver (iOS). Los iPhone e iPad cuentan con el lector de pantalla VoiceOver. Para iniciarlo debemos ir a Ajustes -> Accesibilidad -> VoiceOver y activar el botón de VoiceOver.
-  - TalkBack (Android). La mayoría de los dispositivos móviles con Sistema Operativo Android cuentan con el lector de pantalla TalkBack integrado en el sistema.
+  - JAWS (Windows). Jaws es el lector de pantalla más utilizado a nivel mundial. Es de pago. 
+  - NVDA (Windows). NVDA - Non Visual Desktop Access, es gratuito y nace como alternativa a Jaws.
+  - VoiceOver (macOS / iOS).
+  - Orca (Linux). 
+  - TalkBack (Android). 
   
 - **Magnificadores de pantalla**. Los magnificadores de pantalla o sistemas de ampliación de pantalla, son un software o dispositivos hardware que permiten visualizar la pantalla con un considerable aumento en su tamaño. Con estas ayudas técnicas, un usuario que posee algún residuo visual puede ver la pantalla del ordenador mediante el aumento del tamaño de la pantalla.
   - Ampliador de Windows. Disponible en los sistemas operativos Microsoft Windows XP y Microsoft Vista.
@@ -115,23 +94,12 @@ A continuación, algunas de las ayudas técnicas basadas en software que emplean
   - WinZoom USB. Similar a WinZoom, pero disponible en una memoria USB para utilizar en cualquier ordenador sin instalación.
   - ZoomText. Desde 1 a 36 niveles de aumento, posee la tecnología xFont para aumentar sin pérdida de calidad el texto, incluye controles de color, contraste y brillo.
 
-## 3.2 Traductores de Braille
-Los **traductores de Braille** son herramientas que convierten texto digital en texto legible mediante dispositivos Braille. Estos dispositivos permiten a las personas ciegas o con discapacidad visual **interactuar con contenido web** de manera efectiva. El uso de tecnologías que soporten el Braille en la web mejora la **inclusión digital** y garantiza que las personas con discapacidades visuales tengan acceso a la información de forma autónoma.
-
-Los traductores de Braille se integran con tecnologías de asistencia, como:
-- **Lectores de pantalla (Screen Readers)**: Como **NVDA**, **JAWS** o **VoiceOver**, que envían texto a dispositivos de línea Braille.
-- **Dispositivos de línea Braille**: Estos dispositivos tienen una serie de celdas dinámicas que suben y bajan puntos en relieve según el contenido que se muestra en pantalla.
+- **Traductores de Braille**. Son herramientas que convierten texto digital en texto legible mediante dispositivos Braille. Estos dispositivos permiten a las personas ciegas o con discapacidad visual **interactuar con contenido web** de manera efectiva. El uso de tecnologías que soporten el Braille en la web mejora la **inclusión digital** y garantiza que las personas con discapacidades visuales tengan acceso a la información de forma autónoma.  
+  Los traductores de Braille se integran con tecnologías de asistencia, como:
+  - **Lectores de pantalla (Screen Readers)**: Como **NVDA**, **JAWS** o **VoiceOver**, que envían texto a dispositivos de línea Braille.
+  - **Dispositivos de línea Braille**: Estos dispositivos tienen una serie de celdas dinámicas que suben y bajan puntos en relieve según el contenido que se muestra en pantalla.
 
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/Braille.jpg">
-
-📋 **Buenas prácticas para desarrolladores web**  
-Para garantizar que los traductores de Braille funcionen correctamente en un sitio web, los desarrolladores deben:
-
-1. **Usar etiquetas semánticas correctas**: Como `<header>`, `<main>`, `<nav>`, etc.
-2. **Proporcionar texto alternativo (alt)** para imágenes.
-3. **Evitar el uso de contenido solo visual**.
-4. **Asegurar la navegabilidad por teclado**.
-5. **Respetar las recomendaciones de ARIA (Accessible Rich Internet Applications)** para enriquecer la semántica del contenido.
 
 # 4 Hardware específico para mejorar la accesibilidad web
 La Norma <a href="https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0029860">UNE 139802:2003 Aplicaciones informáticas para personas con discapacidad. Requisitos de accesibilidad al ordenador. Software</a> define los conceptos de dispositivo apuntador, dispositivo de entrada salida, emulador de teclado y emulador de ratón:
