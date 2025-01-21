@@ -14,7 +14,6 @@ Palabras clave: DAW, DIW
 ## 1.1 ¿Qué es la accesibilidad web?  
 La <a href="https://es.wikipedia.org/wiki/Accesibilidad_web">accesibilidad web</a> se refiere al diseño y desarrollo de sitios, aplicaciones y contenidos digitales que **puedan ser utilizados por todas las personas**, incluyendo aquellas con **discapacidades**. En otras palabras, cualquier persona deberá poder **acceder, navegar e interactuar** a través del contenido web sin encontrar dificultades.
 
-## 1.2 Objetivo de la accesibilidad web
 Así pues, el objetivo de la **accesibilidad web** es **eliminar barreras digitales** para que cualquier usuario, independientemente de sus capacidades físicas, sensoriales, intelectuales o técnicas, pueda interactuar con la web de forma **autónoma** y **eficiente**.
 
 Las personas que se benefician de la **accesibilidad web** incluyen:
@@ -26,8 +25,8 @@ Las personas que se benefician de la **accesibilidad web** incluyen:
 - 👵 **Personas mayores**, que pueden experimentar pérdida de visión, audición o destrezas motoras.
 - 📱 **Usuarios en condiciones temporales** (como personas con una mano ocupada o en entornos con mala iluminación).
 
-## 1.3 Ejemplos de buenas prácticas para la accesibilidad web
 
+## 1.2 Ejemplos de buenas prácticas de diseño para la accesibilidad web
 1. ✅ **Etiquetar correctamente los elementos HTML** (`<alt>` en imágenes, `<label>` en formularios).
 2. ✅ **Proporcionar texto alternativo** para imágenes.
 3. ✅ **Crear contenido multimedia accesible** con subtítulos y transcripciones.
@@ -36,14 +35,14 @@ Las personas que se benefician de la **accesibilidad web** incluyen:
 6. ✅ **Proporcionar controles de interfaz accesibles**, como botones grandes y etiquetas claras.
 7. ✅ **Evitar contenido que parpadee** o cause epilepsia fotosensible.
 
-## 1.4 Beneficios de la accesibilidad web
+## 1.3 Beneficios de la accesibilidad web
 
 - 🌍 **Mayor alcance**: Más personas pueden acceder al contenido, incluyendo personas con discapacidades.
 - 💻 **Mejora del SEO**: Los sitios accesibles también son más fáciles de indexar por los motores de búsqueda.
 - 📱 **Compatibilidad multiplataforma**: Contenido accesible suele ser más compatible con diferentes dispositivos y navegadores.
 - 🔐 **Cumplimiento legal**: Evita problemas legales relacionados con la discriminación digital.
 
-## 1.5 Tecnologías de Asistencia
+## 1.4 Tecnologías de Asistencia
 Las tecnologías de asistencia permiten a las personas con discapacidades interactuar con contenido web. Algunos ejemplos incluyen:
 
 - **Lectores de pantalla** (Jaws, NVDA, VoiceOver).
@@ -61,7 +60,7 @@ Este Real Decreto es la trasposición a la legislación española de la <a href=
 La legislación aplicable en materia de accesibilidad web al sector privado en España es el <a href="https://www.boe.es/buscar/pdf/2023/BOE-A-2023-7417-consolidado.pdf">Real Decreto 193/2023</a>, de 21 de marzo, por el que se regulan las condiciones básicas de accesibilidad y no discriminación de las personas con discapacidad para el acceso y utilización de los bienes y servicios a disposición del público.
 
  
-# 3 Ayudas técnicas / Tecnologías de apoyo
+## 2.3 Ayudas técnicas / Tecnologías de apoyo
 La Norma <a href="https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0029860">UNE 139802:2003 Aplicaciones informáticas para personas con discapacidad. Requisitos de accesibilidad al ordenador. Software</a> define el concepto ayuda técnica:
 
 ```
