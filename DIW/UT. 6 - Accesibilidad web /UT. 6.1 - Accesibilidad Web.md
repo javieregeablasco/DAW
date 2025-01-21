@@ -82,17 +82,11 @@ A continuación, algunas de las ayudas técnicas basadas en software que emplean
   - TalkBack (Android). 
   
 - **Magnificadores de pantalla**. Los magnificadores de pantalla o sistemas de ampliación de pantalla, son un software o dispositivos hardware que permiten visualizar la pantalla con un considerable aumento en su tamaño. Con estas ayudas técnicas, un usuario que posee algún residuo visual puede ver la pantalla del ordenador mediante el aumento del tamaño de la pantalla.
-  - Ampliador de Windows. Disponible en los sistemas operativos Microsoft Windows XP y Microsoft Vista.
-  - Dolphin Lunar. Magnificador de pantalla.
-  - Dolphin LunarPlus. Magnificador de pantalla que incluye también lector de pantalla.
-  - iZoom Standard Magnifier/Reader. Magnificador de pantalla completa, con varios modos de magnificación, puede magnificar hasta 16 veces, e incluye opción de voz sintetizada.
-  - iZoom USB Magnifier/Reader. Similar a iZoom, pero disponible en una memoria USB para utilizar en cualquier ordenador sin instalación y sin derechos de administrador.
+  - Ampliador de Windows.
+  - Dolphin Lunar/LunarPlus. Magnificador y lector de pantalla.
+  - iZoom Standard Magnifier/Reader. 
   - MAGic. De los creadores del lector de pantalla JAWS, incluye múltiples opciones.
-  - MaGUI. Magnificador de pantalla gratuito para Microsoft Windows desarrollado en España.
   - The Magnifier. Magnificador de área o pantalla completa, desde 1.1 a 40 niveles de aumento.
-  - WinZoom Magnifier/Reader. Magnificador y lector de pantalla, con 8 tipos de zoom y 36 niveles de aumento.
-  - WinZoom USB. Similar a WinZoom, pero disponible en una memoria USB para utilizar en cualquier ordenador sin instalación.
-  - ZoomText. Desde 1 a 36 niveles de aumento, posee la tecnología xFont para aumentar sin pérdida de calidad el texto, incluye controles de color, contraste y brillo.
 
 - **Traductores de Braille**. Son herramientas que convierten texto digital en texto legible mediante dispositivos Braille. Estos dispositivos permiten a las personas ciegas o con discapacidad visual **interactuar con contenido web** de manera efectiva. El uso de tecnologías que soporten el Braille en la web mejora la **inclusión digital** y garantiza que las personas con discapacidades visuales tengan acceso a la información de forma autónoma.  
   Los traductores de Braille se integran con tecnologías de asistencia, como:
