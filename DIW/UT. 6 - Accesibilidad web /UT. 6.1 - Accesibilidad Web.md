@@ -73,7 +73,7 @@ A continuación, algunas de las ayudas técnicas basadas en software que emplean
 
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/Braille.jpg" width=25%>
 
-# 5 Hardware específico para la accesibilidad web
+# 4 Hardware específico para la accesibilidad web
 La Norma <a href="https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0029860">UNE 139802:2003 Aplicaciones informáticas para personas con discapacidad. Requisitos de accesibilidad al ordenador. Software</a> define los conceptos de dispositivo apuntador, dispositivo de entrada salida, emulador de teclado y emulador de ratón:
 ```
 3.5 dispositivo apuntador: Dispositivo de entrada conectado a un ordenador o a un terminal,
@@ -87,17 +87,17 @@ de un único dispositivo de entrada/salida. Es considerado como un único dispos
 
 3.8 emulador de ratón: Dispositivo o programa cuyo fin es sustituir al ratón convencional.
 ```
-## 5.1 Dispositivo apuntador
+## 4.1 Dispositivo apuntador
 Un **dispositivo apuntador** es cualquier hardware o tecnología que permite a una persona **interactuar con una interfaz digital moviendo un puntero** y **seleccionando elementos** en la pantalla. 
 Los dispositivos apuntadores van **más allá del mouse tradicional** y están diseñados para ser usados por personas con **movilidad reducida**, **dificultades motoras** o **discapacidades físicas**.
 
 <a href="https://www3.gobiernodecanarias.org/medusa/ecoescuela/centrorecursos/?product=neae-37"><img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/trackball-de-bola-gigante1.jpg" width=200px></a>
 
 
-## 5.2 Dispositivo de entrada/salida
+## 4.2 Dispositivo de entrada/salida
 Un **dispositivo de entrada/salida (E/S)** es un **hardware especializado** que permite a las personas con **discapacidades físicas, sensoriales o cognitivas** interactuar con un sistema digital, enviando información al dispositivo (entrada) y recibiendo retroalimentación (salida). 
 
-### 5.2.1 Dispositivos de Entrada
+### 4.2.1 Dispositivos de Entrada
 Permiten a los usuarios **introducir información o realizar acciones** en un sistema digital.
 
 | **Dispositivo**         | **Descripción**                                                            |
@@ -110,7 +110,7 @@ Permiten a los usuarios **introducir información o realizar acciones** en un si
 | **Pantallas Táctiles**   | Útiles para personas con discapacidades motoras que no pueden usar un mouse o teclado tradicional. |
 <img src="https://www.youngmarketing.co/wp-content/uploads/2013/12/Keyboard.jpg" width=25%>
 
-### 5.2.2 Dispositivos de Salida
+### 4.2.2 Dispositivos de Salida
 Proporcionan **información de retorno al usuario** para que puedan interactuar de manera efectiva con el contenido digital.
 
 | **Dispositivo**          | **Descripción**                                                            |
@@ -123,7 +123,7 @@ Proporcionan **información de retorno al usuario** para que puedan interactuar 
 
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/5-braille-displays-1024x764.webp" width=25%>
 
-## 5.3 Emulador de teclado
+## 4.3 Emulador de teclado
 Un **emulador de teclado** es un dispositivo o software que **simula las funciones de un teclado físico**, permitiendo a personas con **discapacidades físicas o motoras** interactuar con una computadora o sitio web de forma alternativa. 
 Un emulador de teclado se utiliza principalmente para **facilitar el acceso digital** a personas con:
 - **Discapacidades motoras severas** (como tetraplejia o parálisis).
@@ -134,7 +134,7 @@ Un emulador de teclado se utiliza principalmente para **facilitar el acceso digi
 Estos dispositivos convierten **diferentes tipos de entradas** (como comandos de voz, movimientos oculares o clics en pantalla) en **comandos de teclado**, permitiendo la interacción con sitios web, aplicaciones y software.  
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/teclado-de-alto-contraste-inalambrico-bigblu-visionboard.jpg" width=30%>
 
-## 5.4 Emulador de ratón
+## 4.4 Emulador de ratón
 Un **emulador de ratón** es un **dispositivo o software** que permite **simular las funciones de un ratón físico** a través de **entradas alternativas**, como comandos de voz, movimientos oculares, pulsadores o incluso gestos corporales. 
 Un emulador de ratón permite:
 - **Controlar el cursor del ratón** sin usar las manos.
@@ -143,6 +143,6 @@ Un emulador de ratón permite:
 
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/smartnav-4.jpg" width=35%> 
 
-## 5.5 Links de interés
+## 4.5 Links de interés
 <a href="https://www3.gobiernodecanarias.org/medusa/ecoescuela/centrorecursos/?product_cat=eoep-motor">**Gobierno de Canarias**</a>
 <a href="https://accesibilidadweb.dlsi.ua.es/?menu=disp-adaptados">**Universidad de Alicante**</a> 
