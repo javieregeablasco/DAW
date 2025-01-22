@@ -34,28 +34,22 @@ Las personas que se benefician de la **accesibilidad web** incluyen:
 - 🔐 **Cumplimiento legal**: Evita problemas legales relacionados con la discriminación digital.
 
 # 2 Legislación aplicable
+La accesibilidad web en el sector público está regulada principalmente por el <a href="https://www.boe.es/boe/dias/2018/09/19/pdfs/BOE-A-2018-12699.pdf">**Real Decreto 1112/2018**</a>, de 7 de septiembre, que transpone la <a href="https://www.boe.es/doue/2016/327/L00001-00015.pdf">**Directiva UE 2016/2102**</a> del Parlamento Europeo y del Consejo, relativa a la accesibilidad de los sitios web y aplicaciones móviles de los organismos del sector público.
 
-## 2.1 Legislación dentro del sector público
-La accesibilidad web en el sector público está regulada principalmente por la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-12352">**Ley 11/2007**</a>, de 22 de junio, de acceso electrónico de los ciudadanos a los servicios públicos, y por el <a href="https://www.boe.es/boe/dias/2018/09/19/pdfs/BOE-A-2018-12699.pdf">**Real Decreto 1112/2018**</a>, de 7 de septiembre, que transpone <a href="https://www.boe.es/doue/2016/327/L00001-00015.pdf">**Directiva UE 2016/2102**</a>, del Parlamento Europeo y del Consejo, relativa a la accesibilidad de los sitios web y aplicaciones móviles de los organismos del sector público. Aquí te detallo la legislación relevante:
+## 2.1 Real Decreto 1112/2018, de 7 de septiembre
+El **RD 1112/2018** de 7 de septiembre establece los requisitos de accesibilidad que deben cumplir los sitios web y aplicaciones móviles del sector público en España. Se basa en la **Directiva (EU) 2016/2102**, que obliga a los países miembros de la Unión Europea a adoptar normas sobre la accesibilidad de los sitios web y las aplicaciones móviles de **las administraciones públicas**.  
 
-Actualmente (2025), la legislación aplicable en materia de accesibilidad web a la administración pública en España es el <a href="https://www.boe.es/boe/dias/2018/09/19/pdfs/BOE-A-2018-12699.pdf">Real Decreto 1112/2018</a>, de 7 de septiembre, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público.    
-Este Real Decreto es la trasposición a la legislación española de la <a href="https://www.boe.es/doue/2016/327/L00001-00015.pdf">Directiva UE 2016/2102</a>, del Parlamento Europeo y del Consejo, de 26 de octubre de 2016, sobre la accesibilidad de los sitios web y aplicaciones para dispositivos móviles de los organismos del sector público.
+<a href="https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Accesibilidad/implantacion-rd-1112-2018/principales_novedades_rd.html">**Principales novedades**</a> del Real Decreto.
 
-## 2.2 Legislación dentro del sector privado
-La legislación aplicable en materia de accesibilidad web al sector privado en España es el <a href="https://www.boe.es/buscar/pdf/2023/BOE-A-2023-7417-consolidado.pdf">Real Decreto 193/2023</a>, de 21 de marzo, por el que se regulan las condiciones básicas de accesibilidad y no discriminación de las personas con discapacidad para el acceso y utilización de los bienes y servicios a disposición del público.
+## 2.2 Normas técnicas de accesibilidad
+- **Estado actual de la normativa aplicable**  
+<a href="https://administracionelectronica.gob.es/pae_Home/dam/jcr:395f892a-1289-4d56-a826-d404b06dbc46/INFOG_LegislacionNormasTecnicas_NEW-01.pdf">**En el siguiente enlace**</a> encontraréis el estado actual de la normativa aplicable. 
 
- 
-## 2.3 Ayudas técnicas / Tecnologías de apoyo
-La Norma <a href="https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0029860">UNE 139802:2003 Aplicaciones informáticas para personas con discapacidad. Requisitos de accesibilidad al ordenador. Software</a> define el concepto ayuda técnica:
+- **Norma UNE-EN 301549:2022**  
+La Norma <a href="https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0029860">UNE-EN 301549:2022 Requisitos de accesibilidad para productos y servicios TIC</a> es una norma europea que establece los requisitos de accesibilidad para los productos y servicios TIC, con el objetivo de garantizar que sean utilizables por todas las personas, incluyendo aquellas con discapacidades. Define el marco técnico para garantizar la accesibilidad de los productos y servicios de TIC, tanto en el sector público como en el privado. Con su enfoque en las **WCAG 2.1 del consorcio W3C y la WAI** y su inclusión de requisitos específicos para aplicaciones móviles y dispositivos no web, establece un marco amplio y detallado para la creación de entornos digitales accesibles y funcionales para todos los usuarios, sin importar sus capacidades o discapacidades.  
+Más información sobre los contenidos de la normativa <a href="https://administracionelectronica.gob.es/dam/jcr:a0f1a17f-84a9-485b-80be-255e8aa9f24c/METODOLOGIA-PARA-EL-SEGUIMIENTO-SIMPLIFICADO-UNE-EN-3015492019-acc.pdf">**aquí**</a> y <a href="https://addaw.org/es/une-en">**aquí**</a>.
 
-```
-3.3 ayuda técnica: Cualquier producto, instrumento, equipo o sistema técnico utilizado por una persona minusválida,
-fabricado especialmente o disponible en el mercado para prevenir, compensar, mitigar o neutralizar la deficiencia, 
-incapacidad o discapacidad. (UNE-EN ISO 9999). Incluye tanto productos hardware como software.
-```
-La clasificación de las ayudas técnicas está definida en la <a href="https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0039568">Norma UNE-EN ISO 9999:2007: Productos de apoyo para personas con discapacidad. Clasificación y terminología (ISO 9999:2007)</a>. Esta norma establece que ya no se tienen que llamar ayudas técnicas, sino tecnologías de apoyo.
-
-# 4 Software específico para la accesibilidad web 
+# 3 Software específico para la accesibilidad web 
 A continuación, algunas de las ayudas técnicas basadas en software que emplean las personas con discapacidad para utilizar un ordenador y navegar por la Web. También se incluye otro tipo de software, como simuladores de algunas de las alteraciones que presentan las personas con discapacidad:
 
 - **Lectores de pantalla**. Los lectores de pantalla permiten la utilización del sistema operativo y las distintas aplicaciones mediante el empleo de un sintetizador de voz que "lee y explica" lo que se visualiza en la pantalla, lo que supone una ayuda para las personas con graves problemas de visión o completamente ciegas. Se muestran a continuación los softwares más conocidos.
