@@ -99,14 +99,7 @@ Los dispositivos apuntadores van **más allá del mouse tradicional** y están d
 5. **Eye-Tracking (Seguimiento Ocular):**  
 6. **Switches (Pulsadores):**  
 
-📋 **Buenas Prácticas en Diseño Web para Dispositivos Apuntadores:**
 
-| **Práctica**                  | **Descripción**                                              |
-|--------------------------------|--------------------------------------------------------------|
-| Proporcionar un área de clic grande | Asegura que los botones y enlaces tengan un área suficiente para facilitar el clic. |
-| Habilitar navegación por teclado | Muchos dispositivos apuntadores emulan el uso del teclado. Asegúrate de que todo sea accesible con `Tab`. |
-| Evitar acciones complejas       | No obligar al usuario a realizar arrastrar y soltar, gestos, o movimientos complicados. |
-| Proporcionar retroalimentación visual | Cambiar el estado de los elementos interactivos al enfocarse o seleccionarse. |
 
 
 ## 5.2 Dispositivo de entrada/salida
