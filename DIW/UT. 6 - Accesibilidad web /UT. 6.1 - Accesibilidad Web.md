@@ -14,7 +14,7 @@ Palabras clave: DAW, DIW
 ## 1.1 ¿Qué es la accesibilidad web?  
 La <a href="https://es.wikipedia.org/wiki/Accesibilidad_web">accesibilidad web</a> se refiere al diseño y desarrollo de sitios, aplicaciones y contenidos digitales que **puedan ser utilizados por todas las personas**, incluyendo aquellas con **discapacidades**. En otras palabras, cualquier persona deberá poder **acceder, navegar e interactuar** a través del contenido web sin encontrar dificultades.
 
-Así pues, el objetivo de la **accesibilidad web** es **eliminar barreras digitales** para que cualquier usuario, independientemente de sus capacidades físicas, sensoriales, intelectuales o técnicas, pueda interactuar con la web de forma **autónoma** y **eficiente**.
+Así pues, el objetivo de la **accesibilidad web** es **eliminar barreras digitales** para que cualquier usuario, independientemente de sus capacidades físicas, sensoriales, intelectuales o técnicas, pueda interactuar con la web de forma **eficiente** y **autónoma**.
 
 Las personas que se benefician de la **accesibilidad web** incluyen:
 
@@ -23,23 +23,14 @@ Las personas que se benefician de la **accesibilidad web** incluyen:
 - 🧑‍🦽 **Personas con discapacidades físicas** (movilidad reducida, temblores).
 - 🧠 **Personas con discapacidades cognitivas o neurológicas** (dificultades de aprendizaje, trastornos del espectro autista).
 - 👵 **Personas mayores**, que pueden experimentar pérdida de visión, audición o destrezas motoras.
-- 📱 **Usuarios en condiciones temporales** (como personas con una mano ocupada o en entornos con mala iluminación).
 
-
-## 1.2 Ejemplos de buenas prácticas de diseño para la accesibilidad web
-1. ✅ **Etiquetar correctamente los elementos HTML** (`<alt>` en imágenes, `<label>` en formularios).
-2. ✅ **Proporcionar texto alternativo** para imágenes.
-3. ✅ **Crear contenido multimedia accesible** con subtítulos y transcripciones.
-4. ✅ **Diseñar con colores contrastados** y evitar depender solo del color para transmitir información.
-5. ✅ **Navegación accesible** mediante teclado.
-6. ✅ **Proporcionar controles de interfaz accesibles**, como botones grandes y etiquetas claras.
-7. ✅ **Evitar contenido que parpadee** o cause epilepsia fotosensible.
-
-## 1.3 Beneficios de la accesibilidad web
-
+## 1.2 Objetivos y beneficios de la accesibilidad web
+>**Objetivos**
+- 🔭 **Los objetivos fundamentales de la accesibilidad Web** son sensibilizar, sugerir y recordar a los diseñadores y creadores de páginas Web todas las técnicas posibles para que éstas sean legibles y de fácil acceso a **cualquier persona** que la visite, incluso para aquellas con algún tipo de discapacidad.
+>**Beneficios** 
 - 🌍 **Mayor alcance**: Más personas pueden acceder al contenido, incluyendo personas con discapacidades.
-- 💻 **Mejora del SEO**: Los sitios accesibles también son más fáciles de indexar por los motores de búsqueda.
-- 📱 **Compatibilidad multiplataforma**: Contenido accesible suele ser más compatible con diferentes dispositivos y navegadores.
+- 💻 **Mejora del SEO**: Un sitio web accesible mejora la experiencia de los usuarios (UI/UX) y facilita la indexación del contenido por parte de los motores de búsqueda. 
+- 📱 **Compatibilidad**: Un contenido accesible debe ser usable en diferentes **dispositivos, navegadores y tecnologías de asistencia**, asegurando que todos los usuarios, independientemente de sus condiciones, puedan interactuar con él de manera eficiente."
 - 🔐 **Cumplimiento legal**: Evita problemas legales relacionados con la discriminación digital.
 
 # 2 Legislación aplicable
