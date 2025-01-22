@@ -34,8 +34,11 @@ Las personas que se benefician de la **accesibilidad web** incluyen:
 - 🔐 **Cumplimiento legal**: Evita problemas legales relacionados con la discriminación digital.
 
 # 2 Legislación aplicable
+
 ## 2.1 Legislación dentro del sector público
-Actualmente, (2025) la legislación aplicable en materia de accesibilidad web a la administración pública en España es el <a href="https://www.boe.es/boe/dias/2018/09/19/pdfs/BOE-A-2018-12699.pdf">Real Decreto 1112/2018</a>, de 7 de septiembre, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público.    
+La accesibilidad web en el sector público está regulada principalmente por la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-12352">**Ley 11/2007**</a>, de 22 de junio, de acceso electrónico de los ciudadanos a los servicios públicos, y por el <a href="https://www.boe.es/boe/dias/2018/09/19/pdfs/BOE-A-2018-12699.pdf">**Real Decreto 1112/2018**</a>, de 7 de septiembre, que transpone <a href="https://www.boe.es/doue/2016/327/L00001-00015.pdf">**Directiva UE 2016/2102**</a>, del Parlamento Europeo y del Consejo, relativa a la accesibilidad de los sitios web y aplicaciones móviles de los organismos del sector público. Aquí te detallo la legislación relevante:
+
+Actualmente (2025), la legislación aplicable en materia de accesibilidad web a la administración pública en España es el <a href="https://www.boe.es/boe/dias/2018/09/19/pdfs/BOE-A-2018-12699.pdf">Real Decreto 1112/2018</a>, de 7 de septiembre, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público.    
 Este Real Decreto es la trasposición a la legislación española de la <a href="https://www.boe.es/doue/2016/327/L00001-00015.pdf">Directiva UE 2016/2102</a>, del Parlamento Europeo y del Consejo, de 26 de octubre de 2016, sobre la accesibilidad de los sitios web y aplicaciones para dispositivos móviles de los organismos del sector público.
 
 ## 2.2 Legislación dentro del sector privado
