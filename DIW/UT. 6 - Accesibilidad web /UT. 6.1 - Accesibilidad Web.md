@@ -50,7 +50,7 @@ La Norma <a href="https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=
 Más información sobre los contenidos de la normativa <a href="https://administracionelectronica.gob.es/dam/jcr:a0f1a17f-84a9-485b-80be-255e8aa9f24c/METODOLOGIA-PARA-EL-SEGUIMIENTO-SIMPLIFICADO-UNE-EN-3015492019-acc.pdf">**aquí**</a> y <a href="https://addaw.org/es/une-en">**aquí**</a>.
 
 # 3 Software específico para la accesibilidad web 
-A continuación, algunas de las ayudas técnicas basadas en software que emplean las personas con discapacidad para utilizar un ordenador y navegar por la Web. También se incluye otro tipo de software, como simuladores de algunas de las alteraciones que presentan las personas con discapacidad:
+A continuación, algunas de las ayudas técnicas basadas en software que emplean las personas con discapacidad para utilizar un ordenador y navegar por la Web. 
 
 - **Lectores de pantalla**. Los lectores de pantalla permiten la utilización del sistema operativo y las distintas aplicaciones mediante el empleo de un sintetizador de voz que "lee y explica" lo que se visualiza en la pantalla, lo que supone una ayuda para las personas con graves problemas de visión o completamente ciegas. Se muestran a continuación los softwares más conocidos.
   - JAWS (Windows). Jaws es el lector de pantalla más utilizado a nivel mundial. Es de pago. 
@@ -71,7 +71,7 @@ A continuación, algunas de las ayudas técnicas basadas en software que emplean
   - **Lectores de pantalla (Screen Readers)**: Como **NVDA**, **JAWS** o **VoiceOver**, que envían texto a dispositivos de línea Braille.
   - **Dispositivos de línea Braille**: Estos dispositivos tienen una serie de celdas dinámicas que suben y bajan puntos en relieve según el contenido que se muestra en pantalla.
 
-<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/Braille.jpg">
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/Braille.jpg" width=25%>
 
 # 5 Hardware específico para la accesibilidad web
 La Norma <a href="https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0029860">UNE 139802:2003 Aplicaciones informáticas para personas con discapacidad. Requisitos de accesibilidad al ordenador. Software</a> define los conceptos de dispositivo apuntador, dispositivo de entrada salida, emulador de teclado y emulador de ratón:
