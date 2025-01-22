@@ -12,7 +12,7 @@ Palabras clave: DAW, DIW
 
 # 1 ¿Qué es la Web Accessibility Initiative (WAI)?   
 
-La <a href="https://www.w3.org/WAI/">**Web Accessibility Initiative (WAI)**</a> es una iniciativa de la <a href="https://www.w3.org/">**World Wide Web Consortium (W3C)**/</a>, creada en **1997**, que se dedica a desarrollar **normas, directrices, recursos y documentación** para hacer que el contenido web sea accesible para **todas las personas**, especialmente aquellas con **discapacidades físicas, visuales, auditivas, cognitivas y neurológicas**.
+La <a href="https://www.w3.org/WAI/">**Web Accessibility Initiative (WAI)**</a> es una iniciativa de la <a href="https://www.w3.org/">**World Wide Web Consortium (W3C)**</a>, creada en **1997**, que se dedica a desarrollar **normas, directrices, recursos y documentación** para hacer que el contenido web sea accesible para **todas las personas**, especialmente aquellas con **discapacidades físicas, visuales, auditivas, cognitivas y neurológicas**.
 
 El objetivo principal de la WAI es garantizar que todas las personas puedan **percibir, navegar, interactuar y contribuir en la web** sin barreras, promoviendo una **web inclusiva y universal**.
 
@@ -41,10 +41,10 @@ La accesibilidad web no solo beneficia a las personas con discapacidades, sino t
 - **Mejora la experiencia del usuario (UX).**  
   Sitios más accesibles son más fáciles de usar para todos, lo que puede reducir tasas de abandono y aumentar la satisfacción del usuario.
 
-# 5 Principales directrices de la WAI (WCAG y otras)
+# 5 Principales directrices 
 La WAI emite desde 1999 directrices estandarizadas y reconocidas a nivel internacional para crear contenidos y páginas más accesibles. Estas recomendaciones técnicas, especialmente dirigidas a webmasters, diseñadores y desarrolladores, se actualizan de forma periódica y se agrupan en tres bloques.
 
-## 5.1 WCAG (Web Content Accessibility Guidelines) Accesibilidad del contenido web  
+## 5.1 Directrices WCAG (Web Content Accessibility Guidelines)   
 Las WCAG son una serie de directrices de diseño y desarrollo que definen las pautas para crear contenidos accesibles y compatibles con todo tipo de tecnologías de apoyo, dispositivos, navegadores y lenguajes de programación. Contemplan el uso de letras de gran tamaño, diseños adaptativos, textos predictivos, asistentes a la navegación, etc.  
 Las ediciones de las WCAG son:    
 - **WCAG 2.0** (2008)
