@@ -250,5 +250,5 @@ Recuperar el proyecto de la práctica RA5 CEab (o crear un proyecto nuevo) y rea
 "magenta": $magenta,
 ```
 Modificar la sección de los botones y añadirle 2 botones cada uno con el nuevo elemento de `$theme-colors`.  
-El resultado deberá ser similar al siguiente:
+El resultado deberá ser similar a la siguiente imagen:
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/personalizacionBotones.png">
