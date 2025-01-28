@@ -250,7 +250,32 @@ $rojo: rgb(219, 38, 38);
 $magenta: rgb(214, 39, 214);
 ```
 Modificar la sección de los botones y añadirle 2 botones con las clases `.btn .btn-rojo` y `.btn .btn-magenta`.  
-El resultado deberá ser similar a la siguiente imagen:
-<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/personalizacionBotones.png">
+El resultado deberá ser similar al de la siguiente imagen:
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/personalizacionbotones.png">
 
-:two: Ampliar el tema 
+:two: Ampliar el tema `margin` de tal manera que al compilarse el proyecto tengamos 5 nuevas clases para (entre otros) las clases mt-*.
+Las nuevas clases mt-6, mt-7, mt-8, mt-9 y mt-10 tendran los siguientes valores:
+```
+.mt-6 {
+  margin-top: 3.5rem;
+}
+
+.mt-7 {
+  margin-top: 4rem;
+}
+
+.mt-8 {
+  margin-top: 4.5rem;
+}
+
+.mt-9 {
+  margin-top: 5rem;
+}
+
+.mt-10 {
+  margin-top: 5.5rem;
+}
+```
+3️⃣Ampliar el proyecto y añadir el componente `acodeon`.
+
+
