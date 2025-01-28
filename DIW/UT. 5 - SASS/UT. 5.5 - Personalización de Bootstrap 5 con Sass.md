@@ -244,7 +244,8 @@ Dentro del archivo **styles.scss**, dispondremos las instancias de **la siguient
 Como podemos ver, usaremos la directiva `@import` para realizar las instancias. Aunque @import será **deprecated** en la próxima versión de Sass, en este caso en particular, la directiva `@use` no devuelve el resultado esperado.  
 ### 6.2.2 Tarea RA5 CEe
 Recuperar el proyecto de la práctica RA5 CEab (o crear un proyecto nuevo) y realizar las siguientes personalización de Boostrap.   
-:one: Ampliar la clase `.btn-#{$color}` de tal manera que Sass cree 2 nuevos estilos `.btn-rojo` y `.btn-magenta`. Esos 2 nuevos estilos devolverán los 2 valores de tema siguientes.
+:one: Ampliar la clase `.btn-#{$color}` de tal manera que Sass cree 2 nuevos estilos `.btn-rojo` y `.btn-magenta`.  
+Esos 2 nuevos estilos devolverán los 2 valores de tema siguientes.
 ```
 $rojo: rgb(219, 38, 38);
 $magenta: rgb(214, 39, 214);
