@@ -253,8 +253,8 @@ Modificar la sección de los botones y añadirle 2 botones con las clases `.btn 
 El resultado deberá ser similar al de la siguiente imagen:
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/personalizacionbotones.png">
 
-:two: Ampliar el tema `margin` de tal manera que al compilarse el proyecto tengamos 5 nuevas clases para (entre otros) las clases mt-*.
-Las nuevas clases mt-6, mt-7, mt-8, mt-9 y mt-10 tendran los siguientes valores:
+:two: Ampliar el tema `margin` de tal manera que al compilarse el proyecto tengamos 5 nuevas clases para (entre otros) las clases mt-*.  
+Las nuevas clases mt-6, mt-7, mt-8, mt-9 y mt-10 tendrán los siguientes valores:
 ```
 .mt-6 {
   margin-top: 3.5rem;
@@ -276,6 +276,9 @@ Las nuevas clases mt-6, mt-7, mt-8, mt-9 y mt-10 tendran los siguientes valores:
   margin-top: 5.5rem;
 }
 ```
+Se valorará positivamente el uso de un bucle para definir los nuevos valores del tema.
+
+
 3️⃣Ampliar el proyecto y añadir el componente `acordeon`.  
 Personalizar el componente para pasar de:  
 
