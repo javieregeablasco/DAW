@@ -242,3 +242,11 @@ Dentro del archivo **styles.scss**, dispondremos las instancias de **la siguient
 @import "bootstrap/scss/bootstrap";
 ```
 Como podemos ver, usaremos la directiva `@import` para realizar las instancias. Aunque @import será **deprecated** en la próxima versión de Sass, en este caso en particular, la directiva `@use` no devuelve el resultado esperado.  
+### 6.2.2 Tarea RA5 CEe
+Recuperar el proyecto de la práctica RA5 CEab (o crear un proyecto nuevo) y realizar las siguientes personalización de Boostrap. 
+-1 Ampliar la clase $theme-colors con 2 colores nuevos.
+```
+"rojo": $rojo,
+"magenta": $magenta,
+```
+Modificar la sección de los botones  donde aparecian Recuperar la 
