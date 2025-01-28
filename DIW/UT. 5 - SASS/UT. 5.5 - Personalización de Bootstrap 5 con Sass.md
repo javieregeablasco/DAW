@@ -276,7 +276,7 @@ Las nuevas clases mt-6, mt-7, mt-8, mt-9 y mt-10 tendran los siguientes valores:
   margin-top: 5.5rem;
 }
 ```
-3️⃣Ampliar el proyecto y añadir el componente `acodeon`.  
+3️⃣Ampliar el proyecto y añadir el componente `acordeon`.  
 Personalizar el componente para pasar de:  
 
 
@@ -305,7 +305,7 @@ Los datos son los siguientes:
 | Color texto desplegado                      | green                                         |
 | Color fondo elemento sin desplegar          | yellow                                        |
 | Tamaño icono acordeón                       | 1.75rem                                       |
-| Sombreado alrededor del elemento con focus  | 0 0 0 0.15rem rgba(78, 78, 209, 0.445)       |
+| Sombreado alrededor del elemento con focus  | 0 0 0 0.15rem rgba(78, 78, 209, 0.445)        |
 
 
 
