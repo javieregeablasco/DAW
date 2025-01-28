@@ -276,6 +276,33 @@ Las nuevas clases mt-6, mt-7, mt-8, mt-9 y mt-10 tendran los siguientes valores:
   margin-top: 5.5rem;
 }
 ```
-3️⃣Ampliar el proyecto y añadir el componente `acodeon`.
+3️⃣Ampliar el proyecto y añadir el componente `acodeon`.  
+Personalizar el componente para pasar de:  
+
+
+**Esta imagen**  
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/acordeon.png">  
+
+
+**A esta otra**  
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%205%20-%20SASS/img/acordeonPersonalizado.png">
+
+Los colores de la personalización serán los siguientes:
+``` 
+Los colores serán los siguientes:
+Color icono accordeon desplegado:          rgb(216, 28, 28)
+Color icono sin desplegar:                 rgb(19, 212, 19)
+Color fondo texto desplegado:              rgb(230, 215, 230)
+Color fondo cabecera elemento desplegado:  rgb(219, 223, 35)              
+Padding entre cuerpo y elementos internos: 0.15rem
+Color del borde del acordeon:              rgb(93, 116, 11)
+Radio del elemento principal:              0.5rem
+Color texto elemento principal desplegado:   rgb(20, 20, 221)
+Color texto elemento sin desplegar SIN focus: rgb(51, 160, 18)
+Color texto desplegado:                      green
+Color fondo elemento sin desplegar:          yellow
+Tamaño icono acordeon:                       1.75rem
+Sombreado alrededor del elemento con focus:  0 0 0 0.15rem rgba(78, 78, 209, 0.445);
+
 
 
