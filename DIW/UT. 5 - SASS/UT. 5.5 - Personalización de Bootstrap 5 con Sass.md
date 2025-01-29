@@ -176,10 +176,10 @@ proyecto/
 │    │   └── main.js  
 │    ├── scss/  
 │    │   └── styles.scss
-│    └── custom/
-│    │   ├── _importAll.scss
-│    │   ├── _customVariables.scss
-│    │   └── _customMapas.scss
+|    |   └── custom/    
+│    │        ├── _importAll.scss
+│    │        ├── _customVariables.scss
+│    │        └── _customMapas.scss
 │    └── index.html  
 ├── package-lock.json  
 ├── package.json  
