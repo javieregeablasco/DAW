@@ -175,7 +175,7 @@ proyecto/
 │    ├── js/  
 │    │   └── main.js  
 │    ├── scss/  
-│    │   └── styles.scss
+│    │   ├── styles.scss
 |    |   └── custom/    
 │    │        ├── _importAll.scss
 │    │        ├── _customVariables.scss
