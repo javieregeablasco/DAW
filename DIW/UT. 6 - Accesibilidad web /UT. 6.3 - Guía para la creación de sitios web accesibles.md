@@ -5,28 +5,85 @@ Año: 24-25
 Palabras clave: DAW, DIW
 ---
 
-# 3 Guía para crear sitios web accesibles
+# 1 Guía para crear sitios web accesibles
 A continuación, se presentan las mejores prácticas para crear una página web accesible.  
 
-## 3.1 Estructura semántica correcta
-Utilizar etiquetas HTML semánticas para organizar el contenido de la página. Esto ayuda a los usuarios que utilizan lectores de pantalla a comprender la estructura del sitio.
+## 1.1 Estructura semántica correcta
+Una **estructura semántica correcta** en el desarrollo web se refiere al uso adecuado de elementos HTML que describen el significado y la función del contenido, en lugar de solo su apariencia. Esto no solo mejora la accesibilidad, sino que también facilita el mantenimiento del código, mejora el SEO (optimización para motores de búsqueda) y permite una mejor interpretación del contenido por parte de navegadores y tecnologías de asistencia.
 
->**Buenas prácticas de uso:**
-- Usar etiquetas como `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, y `<footer>`.
-- Utilizar encabezados (`<h1>` a `<h6>`) de manera jerárquica y lógica.
+**¿Por qué es importante la semántica en HTML?**
+1. **Accesibilidad**: Los lectores de pantalla y otras tecnologías de asistencia dependen de la semántica para interpretar y navegar el contenido.
+2. **SEO**: Los motores de búsqueda utilizan la estructura semántica para entender el contenido y clasificar mejor las páginas.
+3. **Mantenimiento**: Un código semántico es más fácil de leer y mantener, tanto para desarrolladores como para equipos colaborativos.
+4. **Compatibilidad**: Los navegadores interpretan mejor el contenido semántico, lo que garantiza una experiencia consistente en diferentes dispositivos.
 
-**Ejemplo:**
-```html
-<header>
-  <h1>Bienvenido a mi sitio web</h1>
-</header>
-<main>
-  <section>
-    <h2>Sobre nosotros</h2>
-    <p>Contenido descriptivo...</p>
-  </section>
-</main>
-```
+## 1.2 Elementos semánticos clave en HTML
+La especificación HTML5 introdujo una serie de elementos semánticos que permiten estructurar el contenido de manera más clara y significativa.
+
+:one: **Encabezados (`<h1>` a `<h6>`)**
+   - Definen la jerarquía del contenido. `<h1>` es el título principal, y `<h6>` es el menos importante.
+   - Ejemplo:
+     ```html
+     <h1>Título principal</h1>
+     <h2>Subtítulo</h2>
+     <h3>Sección</h3>
+     ```
+
+:two: **Etiquetas de sección**
+   - `<header>`: Contiene el encabezado de la página o sección (por ejemplo, el logotipo y el menú de navegación).
+   - `<nav>`: Define la sección de navegación (enlaces principales del sitio).
+   - `<main>`: Contiene el contenido principal de la página.
+   - `<section>`: Agrupa contenido temáticamente relacionado.
+   - `<article>`: Representa contenido independiente y autónomo (por ejemplo, una entrada de blog).
+   - `<aside>`: Contiene contenido relacionado pero no esencial (por ejemplo, una barra lateral).
+   - `<footer>`: Define el pie de página o de una sección.
+
+   Ejemplo de estructura básica:
+   ```html
+   <header>
+     <h1>Mi Sitio Web</h1>
+     <nav>
+       <ul>
+         <li><a href="#">Inicio</a></li>
+         <li><a href="#">Acerca de</a></li>
+       </ul>
+     </nav>
+   </header>
+   <main>
+     <section>
+       <h2>Bienvenidos</h2>
+       <p>Contenido de la sección...</p>
+     </section>
+     <article>
+       <h3>Artículo destacado</h3>
+       <p>Contenido del artículo...</p>
+     </article>
+   </main>
+   <footer>
+     <p>Derechos reservados © 2023</p>
+   </footer>
+   ```
+
+:three: **Elementos de texto semántico**
+   - `<p>`: Define un párrafo.
+   - `<strong>`: Indica que el texto es importante (semánticamente, no solo visualmente).
+   - `<em>`: Indica énfasis (cursiva semántica).
+   - `<blockquote>`: Representa una cita extensa.
+   - `<cite>`: Define el título de una obra (por ejemplo, un libro o película).
+   - `<time>`: Representa una fecha u hora.
+
+ :four: **Elementos multimedia**
+   - `<figure>` y `<figcaption>`: Se usan para agrupar imágenes, gráficos o videos con una leyenda.
+   - `<img>`: Para imágenes, siempre con el atributo `alt` que describe la imagen.
+   - `<audio>` y `<video>`: Para contenido multimedia.
+
+:five: **Listas**
+   - `<ul>`: Lista no ordenada.
+   - `<ol>`: Lista ordenada.
+   - `<li>`: Elemento de lista.
+   - `<dl>`, `<dt>`, `<dd>`: Listas de definiciones.
+
+
 ## 3.2 Textos alternativos para imágenes y animaciones
 Proporcionar semántica adecuada y descripciones alternativas (atributo <a href="https://html.spec.whatwg.org/multipage/images.html#alt">alt</a>) para todas las imágenes.
 
