@@ -199,6 +199,9 @@ Implementar atributos **ARIA** cuando no sea posible lograr la accesibilidad sol
 
 **HASTA AQUI**
 
+https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
+
+
 >**Buenas prácticas de uso:**
 - Usar `aria-label` para proporcionar etiquetas adicionales.
 - Utilizar roles ARIA para definir el propósito de los elementos.
