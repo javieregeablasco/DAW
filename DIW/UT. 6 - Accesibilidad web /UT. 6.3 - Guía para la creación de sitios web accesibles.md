@@ -107,7 +107,7 @@ Varios elementos no textuales (IMG, AREA, APPLET e INPUT) permiten a los autores
   <figcaption>Esta es una ilustración artística de un pájaro estilizado, utilizada como parte del diseño visual.</figcaption>
 </figure>
 ```
-## 3.3 Contraste de colores adecuado
+## 1.4 Contraste de colores adecuado
 Asegúrarse de que el texto tenga un contraste suficiente con el fondo para facilitar la lectura.
 
 >**Buenas prácticas de uso:**
@@ -123,7 +123,7 @@ body {
 ```
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/contraste.png">
 
-## 3.4 Navegación accesible con el teclado
+## 1.5 Navegación accesible con el teclado
 Asegura que los usuarios puedan navegar por el sitio utilizando solo el teclado.
 
 >**Buenas prácticas de uso:**
@@ -135,7 +135,7 @@ Asegura que los usuarios puedan navegar por el sitio utilizando solo el teclado.
 <a href="#contenido-principal" tabindex="1">Ir al contenido principal</a>
 ```
 
-## 3.5 Formularios accesibles
+## 1.6 Formularios accesibles
 Etiquetar correctamente los campos de los formularios para que los usuarios con tecnologías de asistencia puedan interactuar con ellos.
 
 >**Buenas prácticas de uso:**
@@ -170,7 +170,7 @@ Etiquetar correctamente los campos de los formularios para que los usuarios con 
 ```
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/formulario.png">
 
-## 3.6 Contenidos multimedia accesibles
+## 1.7 Contenidos multimedia accesibles
 Los elementos multimedia que tanto se utilizan en las páginas web hoy en día pueden ocasionar graves problemas de accesibilidad, ya no sólo a las personas con algún tipo de discapacidad, sino a todo el mundo en general. Al ser elementos que no son HTML requieren, en la mayoría de los casos, la instalación de un visor específico (plug-in, add-on o extensión) que sea capaz de interpretar el elemento multimedia.  
 
 Por tanto, **como regla general**, no se debe abusar de los elementos multimedia y el diseñador de una página web se tiene que preguntar si es un elemento esencial que no se puede eliminar o sustituir por otro más accesible.
@@ -188,7 +188,7 @@ Por tanto, **como regla general**, no se debe abusar de los elementos multimedia
 <p>Transcripción: [Descripción del contenido del vídeo]</p>
 ```
 
-## 3.7 Enlaces de hipertexto
+## 1.8 Enlaces de hipertexto
 Usar texto para el hipertexto que tenga sentido leído fuera de contexto. Por ejemplo, evitar abusar del **"pinchar aquí"**.
 Algunos navegadores y algunos programas de ayuda que emplean las personas con discapacidad (por ejemplo, los lectores de pantalla) ofrecen al usuario la posibilidad de mostrar, normalmente en una ventana aparte, la lista de enlaces que contiene una página web. Si el texto de un enlace no tiene sentido fuera de su contexto, el enlace no tendrá sentido en esta lista de enlaces.
 Por otro lado, si los enlaces poseen un estilo especial para resaltarlos, los usuarios suelen fijar su atención en ellos, por lo que es importante que el texto de los enlaces sea lo más claro y significativo posible.
