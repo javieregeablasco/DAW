@@ -333,8 +333,7 @@ Los **mixins** en Sass son fragmentos reutilizables de código que pueden inclui
 **Ejemplo de nuevo mixin**  
 ```scss
 @mixin highlight-button($color) {
-  font-size: 1.1rem;
-  transition: transform 10s;
+  font-size: 1.1rem;  
 
   &:hover {
     background-color: lighten($color, 10%);
