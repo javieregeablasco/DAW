@@ -186,7 +186,7 @@ proyecto/
 └── vite.config.js  
 ```
 
-1️⃣ **Contenido de importAll.scss**  
+### 6.2.2 **Contenido de importAll.scss**  
 Dentro del archivo **importAll.scss** pondremos todas las llamadas a los módulos de **Bootstrap**.
 ```
 // Custom.scss
@@ -229,21 +229,130 @@ Dentro del archivo **importAll.scss** pondremos todas las llamadas a los módulo
 
 Para no ensuciar un archivo que luego no se volverá a editar, se recomienda crear archivos propios a cada customización. De generarse muchas personalizaciones, se recomienda distribuir los archivos en una estructura de directorios para facilitar la depuración y el mantenimiento posterior del proyecto.  
 
-2️⃣ **Contenido de archivosCustom.scss**  
+### 6.2.3 **Contenido de archivosCustom.scss**  
 Para el ejemplo, crearemos un archivo `_customVariables.scss` que nos permitirá sobrescribir los colores de Bootstrap.
 ```
 $primary: red;
 $secondary: magenta;
 ```
-3️⃣ **Contenido del archivo styles.scss**  
+### 6.2.4 **Contenido del archivo styles.scss**  
 Dentro del archivo **styles.scss**, dispondremos las instancias de **la siguiente manera**.
 ```
 @import "custom/importAll";
 @import "bootstrap/scss/bootstrap";
 ```
 Como podemos ver, usaremos la directiva `@import` para realizar las instancias. Aunque @import será **deprecated** en la próxima versión de Sass, en este caso en particular, la directiva `@use` no devuelve el resultado esperado.  
+
+## 6.3 Formas de personalizar Bootstrap
+### 6.3.1 Modificando los valores de las variables de bootstrap
+Bootstrap utiliza variables Sass para definir colores, fuentes, tamaños, puntos de interrupción y otros aspectos del sistema de diseño. Esas variables se pueden reescribir definiendo nuevos valores.  
+Las variables en Bootstrap están definidas en `\node_modules\bootstrap\scss\_variables.scss y _variables-dark.scss`.  
+
+**Variables Sass**  
+**1. Variables de Color**  
+```scss
+$primary: #0d6efd;
+$secondary: #6c757d;
+...
+```
+**2. Variables de Tipografía**  
+```scss
+$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-size-base: 1rem;
+$font-weight-bold: 700;
+$line-height-base: 1.5;
+```
+**3. Variables de Espaciado (Margen y Padding)**
+```scss
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3
+);
+```
+
+**4. Variables de Breakpoints**
+```scss
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+```
+**5. Variables de Bordes y Sombras**
+```scss
+$border-radius: 0.375rem;
+$box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+$box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+```
+**¿Cómo personalizar las variables?**
+Para sobrescribir las variables de **Bootstrap**, usaremos el archivo `customVariables.scss` para variables simples o `customMapas.scss` si queremos modificar variables de tipo mapa. En estos archivos redefiniremos las variables **antes** de importar Bootstrap.  
+
+🔹 **Sobrescritura de variables simples en `customVariables.scss`**  
+```scss
+$primary: #ff6600; // Cambiamos el color principal
+$font-size-base: 1.1rem; // Ajustamos el tamaño de fuente
+```
+
+🔹 **Sobrescritura de mapas en `customMapas.scss`**  
+```scss
+$theme-colors: map-merge($theme-colors, (
+  "custom": #ff33cc // Agregamos un nuevo color al mapa
+));
+```
+
+**Variables CSS**
+Dentro de Bootstrap, algunas variables CSS están definidas en `:root`, lo que permite su uso en todo el documento como variables personalizadas. Aunque estas variables pueden sobrescribirse en CSS, **no se pueden modificar directamente desde Sass** como las variables de `$Sass` a menos que se redefinan explícitamente.  
+
+1. **Variables Sass** (`$primary`, `$spacer`, etc.) → Se pueden sobrescribir.  
+2. **Variables CSS en `:root`** (`--bs-primary`, `--bs-body-bg`, etc.) → Se generan dinámicamente a partir de las variables de Sass y pueden ser sobrescritas en CSS.  
+
+**Ejemplo de variables en `:root` en Bootstrap**  
+```
+:root,
+[data-bs-theme=light] {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  ...
+}
+```
+
+### 6.3.2 Usando mixins
+Los **mixins** en Sass son fragmentos reutilizables de código que pueden incluirse en otras reglas sin necesidad de duplicar código. Bootstrap proporciona numerosos mixins para tareas comunes, como la creación de cuadrículas, botones, formularios y transiciones. Estos mixins permiten **crear componentes personalizados** o **modificar los existentes**.  
+
+**Ejemplo de nuevo mixin**  
+```scss
+@mixin highlight-button($color) {
+  font-size: 1.1rem;
+  transition: transform 10s;
+
+  &:hover {
+    background-color: lighten($color, 10%);
+    box-shadow: 0 6px 15px rgba($color, 0.5);
+    transform: scale(1.05);
+  }
+}
+
+.btn-highlight {
+  @include highlight-button($primary);
+}
+```
+
 ### 6.2.2 Tarea RA5 CEe
 Recuperar el proyecto de la práctica RA5 CEab (o crear un proyecto nuevo) y realizar las siguientes personalización de Boostrap.   
+
 :one: Ampliar la clase `.btn-#{$color}` de tal manera que Sass cree 2 nuevos estilos `.btn-rojo` y `.btn-magenta`.  
 Esos 2 nuevos estilos devolverán los 2 valores de tema siguientes.
 ```
@@ -279,8 +388,12 @@ Las nuevas clases mt-6, mt-7, mt-8, mt-9 y mt-10 tendrán los siguientes valores
 ```
 Se valorará positivamente el uso de un bucle para definir los nuevos valores del tema.
 
+3️⃣Recuperar el código del **apartado 6.3.2** e integralo dentro del proyecto. Visualizar varios botones con y sin esa nueva clase.
+**Pregunta:** ¿Qué occure si se aplica esa clase a botones con la clase `btn-secondary`, `btn-success`, etc?
 
-3️⃣Ampliar el proyecto y añadir el componente `acordeon`.  
+4️⃣Crear código Sass para crear clase que permitan generalizar `la clase btn-highlight` a todas las clases de colores es decir crear un código que defina nuevas clases tipo `btn-highlight-primary`, `btn-highlight-secondary`, ..., `btn-highlight-magenta`.
+
+5️⃣Ampliar el proyecto y añadir el componente `acordeon`.  
 Personalizar el componente para pasar de:  
 
 
