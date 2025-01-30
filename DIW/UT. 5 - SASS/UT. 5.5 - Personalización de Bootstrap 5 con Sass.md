@@ -349,6 +349,7 @@ Los **mixins** en Sass son fragmentos reutilizables de código que pueden inclui
 
 ### 6.3.3 Usando funciones
 Bootstrap proporciona algunas funciones para calcular colores, tamaños y proporciones. Se puede utilizar estas funciones para crear valores dinámicos basados en las variables de Bootstrap o en **variables personalizadas**.   
+
 **Ejemplo de función**
 ```
 @function funcionCustom($color) {
