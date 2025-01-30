@@ -83,8 +83,7 @@ La especificación HTML5 introdujo una serie de elementos semánticos que permit
    - `<li>`: Elemento de lista.
    - `<dl>`, `<dt>`, `<dd>`: Listas de definiciones.
 
-
-## 3.2 Textos alternativos para imágenes y animaciones
+## 1.3 Textos alternativos para imágenes y animaciones
 Proporcionar semántica adecuada y descripciones alternativas (atributo <a href="https://html.spec.whatwg.org/multipage/images.html#alt">alt</a>) para todas las imágenes.
 
 El atributo alt especifica un texto alternativo para navegadores que no puedan mostrar imágenes, formularios o aplicaciones. El idioma de este texto alternativo está especificado por el atributo lang.
