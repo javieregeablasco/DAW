@@ -248,21 +248,21 @@ Como podemos ver, usaremos la directiva `@import` para realizar las instancias. 
 Bootstrap utiliza variables Sass para definir colores, fuentes, tamaños, puntos de interrupción y otros aspectos del sistema de diseño. Esas variables se pueden reescribir definiendo nuevos valores.  
 Las variables en Bootstrap están definidas en `\node_modules\bootstrap\scss\_variables.scss y _variables-dark.scss`.  
 
-**Variables Sass**  
-**1. Variables de Color**  
+#### 6.3.1.1 **Variables Sass**  
+**:one: Variables de Color**  
 ```scss
 $primary: #0d6efd;
 $secondary: #6c757d;
 ...
 ```
-**2. Variables de Tipografía**  
+**:two: Variables de Tipografía**  
 ```scss
 $font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 $font-size-base: 1rem;
 $font-weight-bold: 700;
 $line-height-base: 1.5;
 ```
-**3. Variables de Espaciado (Margen y Padding)**
+**3️⃣ Variables de Espaciado (Margen y Padding)**
 ```scss
 $spacer: 1rem;
 $spacers: (
@@ -275,7 +275,7 @@ $spacers: (
 );
 ```
 
-**4. Variables de Breakpoints**
+**4️⃣ Variables de Breakpoints**
 ```scss
 $grid-breakpoints: (
   xs: 0,
@@ -286,13 +286,14 @@ $grid-breakpoints: (
   xxl: 1400px
 );
 ```
-**5. Variables de Bordes y Sombras**
+**5️⃣ Variables de Bordes y Sombras**
 ```scss
 $border-radius: 0.375rem;
 $box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 $box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 ```
-**¿Cómo personalizar las variables?**
+
+#### 6.3.1.2 **¿Cómo personalizar las variables?**  
 Para sobrescribir las variables de **Bootstrap**, usaremos el archivo `customVariables.scss` para variables simples o `customMapas.scss` si queremos modificar variables de tipo mapa. En estos archivos redefiniremos las variables **antes** de importar Bootstrap.  
 
 🔹 **Sobrescritura de variables simples en `customVariables.scss`**  
@@ -308,13 +309,10 @@ $theme-colors: map-merge($theme-colors, (
 ));
 ```
 
-**Variables CSS**
-Dentro de Bootstrap, algunas variables CSS están definidas en `:root`, lo que permite su uso en todo el documento como variables personalizadas. Aunque estas variables pueden sobrescribirse en CSS, **no se pueden modificar directamente desde Sass** como las variables de `$Sass` a menos que se redefinan explícitamente.  
+#### 6.3.1.3 **Variables CSS**
+Dentro de Bootstrap, algunas variables CSS están definidas en `:root`, lo que permite su uso en todo el documento como variables personalizadas. Aunque estas variables pueden sobrescribirse en CSS, **no se pueden modificar directamente desde Sass** como las variables de `$Sass` a menos que se redefinan explícitamente (**práctica no recomentdable**).  
 
-1. **Variables Sass** (`$primary`, `$spacer`, etc.) → Se pueden sobrescribir.  
-2. **Variables CSS en `:root`** (`--bs-primary`, `--bs-body-bg`, etc.) → Se generan dinámicamente a partir de las variables de Sass y pueden ser sobrescritas en CSS.  
-
-**Ejemplo de variables en `:root` en Bootstrap**  
+**Ejemplo de variables en `:root` de Bootstrap**  
 ```
 :root,
 [data-bs-theme=light] {
