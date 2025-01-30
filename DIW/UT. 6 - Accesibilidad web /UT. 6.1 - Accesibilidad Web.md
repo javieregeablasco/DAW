@@ -144,5 +144,5 @@ Un emulador de ratón permite:
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/smartnav-4.jpg" width=35%> 
 
 ## 4.5 Links de interés
-<a href="https://www3.gobiernodecanarias.org/medusa/ecoescuela/centrorecursos/?product_cat=eoep-motor">**Gobierno de Canarias**</a>
+<a href="https://www3.gobiernodecanarias.org/medusa/ecoescuela/centrorecursos/?product_cat=eoep-motor">**Gobierno de Canarias**</a>  
 <a href="https://accesibilidadweb.dlsi.ua.es/?menu=disp-adaptados">**Universidad de Alicante**</a> 
