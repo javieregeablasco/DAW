@@ -349,7 +349,26 @@ Los **mixins** en Sass son fragmentos reutilizables de código que pueden inclui
 
 ### 6.3.3 Usando funciones
 Bootstrap proporciona algunas funciones para calcular colores, tamaños y proporciones. Se puede utilizar estas funciones para crear valores dinámicos basados en las variables de Bootstrap o en **variables personalizadas**.   
-Por ejemplo, si desea crear un fondo degradado que utilice los colores primario y secundario, puede escribir:
+**Ejemplo de función**
+```
+@function funcionCustom($color) {
+  $lightness: lightness($color);
+  
+  @if $lightness > 70 {
+    @return "text-decoration-underline"; // Si es muy claro
+  } @else if $lightness > 50 {
+    @return "fw-bold"; // Si es medianamente claro
+  } @else {
+    @return "text-decoration-line-through"; // Si es oscuro
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .decoration-#{$color} {
+  @extend .#{funcionCustom($value)};
+  }
+}
+```
 
 
 ### 6.2.2 Tarea RA5 CEe
@@ -393,7 +412,7 @@ Se valorará positivamente el uso de un bucle para definir los nuevos valores de
 3️⃣Recuperar el código del **apartado 6.3.2** e integralo dentro del proyecto. Visualizar varios botones con y sin esa nueva clase.
 **Pregunta:** ¿Qué occure si se aplica esa clase a botones con la clase `btn-secondary`, `btn-success`, etc?
 
-4️⃣Crear código Sass para crear clase que permitan generalizar `la clase btn-highlight` a todas las clases de colores es decir crear un código que defina nuevas clases tipo `btn-highlight-primary`, `btn-highlight-secondary`, ..., `btn-highlight-magenta`.
+4️⃣Crear código Sass para crear unas clases que permitan generalizar `la clase btn-highlight` a todas las clases de colores, es decir, crear un código que defina nuevas clases tipo `btn-highlight-primary`, `btn-highlight-secondary`, ..., `btn-highlight-magenta`.
 
 5️⃣Ampliar el proyecto y añadir el componente `acordeon`.  
 Personalizar el componente para pasar de:  
