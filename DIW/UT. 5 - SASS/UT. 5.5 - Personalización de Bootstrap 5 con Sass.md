@@ -347,6 +347,11 @@ Los **mixins** en Sass son fragmentos reutilizables de código que pueden inclui
 }
 ```
 
+### 6.3.3 Usando funciones
+Bootstrap proporciona algunas funciones para calcular colores, tamaños y proporciones. Se puede utilizar estas funciones para crear valores dinámicos basados en las variables de Bootstrap o en **variables personalizadas**.   
+Por ejemplo, si desea crear un fondo degradado que utilice los colores primario y secundario, puede escribir:
+
+
 ### 6.2.2 Tarea RA5 CEe
 Recuperar el proyecto de la práctica RA5 CEab (o crear un proyecto nuevo) y realizar las siguientes personalización de Boostrap.   
 
