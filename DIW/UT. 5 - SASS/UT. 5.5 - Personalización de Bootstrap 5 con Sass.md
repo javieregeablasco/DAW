@@ -336,7 +336,6 @@ Los **mixins** en Sass son fragmentos reutilizables de código que pueden inclui
   font-size: 1.1rem;  
 
   &:hover {
-    background-color: lighten($color, 10%);
     box-shadow: 0 6px 15px rgba($color, 0.5);
     transform: scale(1.05);
   }
