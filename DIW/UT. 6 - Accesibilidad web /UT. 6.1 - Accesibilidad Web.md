@@ -23,7 +23,7 @@ Las personas que se benefician de la **accesibilidad web** incluyen:
 - 🧑‍🦽 **Personas con discapacidades físicas** (movilidad reducida, temblores).
 - 🧠 **Personas con discapacidades cognitivas o neurológicas** (dificultades de aprendizaje, trastornos del espectro autista).
 - 👵 **Personas mayores**, que pueden experimentar pérdida de visión, audición o destrezas motoras.
-- 🌍 **Personas extranjeras**, al no entender la lengua con la que está diseñada la página web.
+- 🌍 **Personas extranjeras**, al no entender el idioma con la que está diseñada la página web.
 
 
 ## 1.2 Objetivos y beneficios de la accesibilidad web
