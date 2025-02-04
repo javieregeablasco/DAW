@@ -359,22 +359,7 @@ Permiten que los usuarios de lectores de pantalla naveguen rápidamente entre se
 
 
 
-**HASTA AQUI**
+**HASTA AQUI** **revisar y aligerar**
+
 
 https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
-
-
->**Buenas prácticas de uso:**
-- Usar `aria-label` para proporcionar etiquetas adicionales.
-- Utilizar roles ARIA para definir el propósito de los elementos.
-
-**Ejemplo:**
-```
-<nav role="navigation" aria-label="Navegación principal">
-  <ul>
-    <li><a href="#">Inicio</a></li>
-    <li><a href="#">Servicios</a></li>
-    <li><a href="#">Contacto</a></li>
-  </ul>
-</nav>
-```
