@@ -199,6 +199,14 @@ Las <a href="https://developer.mozilla.org/es/docs/Web/Accessibility/ARIA/Attrib
 
 Las **ARIA** permiten que los elementos dinámicos en una página web sean comprensibles para tecnologías asistivas, como lectores de pantalla. Son especialmente útiles cuando usamos JavaScript para crear interfaces complejas con **menús desplegables, carruseles, pestañas o formularios avanzados**.  
 
+Algunas de las técnicas consisten en utilizar los atributos que definen los componentes:
+   
+  
+- aria-required: campos requeridos.
+  
+- state y property para mostrar los estados de los componentes.
+- aria landmarks para establecer las regiones de una página.
+
 ### 1.9.1 Principales atributos de ARIA  
 >🔹 **Roles (`role`)** → Definen la función de un elemento en la página.  
 Ejemplo:  
@@ -206,6 +214,32 @@ Ejemplo:
 <div role="alert">¡Error! Debes completar el formulario.</div>
 ```
 📌 El lector de pantalla interpretará este `div` como una alerta.  
+
+>🔹 **Etiqueta accesible (`aria-label`)** → Proporciona una descripción accesible para un elemento que no tiene texto visible.  
+
+Ejemplo:  
+```html
+<button aria-label="Cerrar ventana">❌</button>
+```
+📌 **Explicación**:  
+- El botón solo muestra un icono (**❌**), lo que puede ser confuso para usuarios con discapacidad visual.  
+- `aria-label="Cerrar ventana"` le indica al lector de pantalla su función real.  
+
+> 🔹 **Campo obligatorio (`aria-required`)** → Indica que un campo de formulario es obligatorio para completar el envío.  
+
+Ejemplo:  
+```html
+<label for="email">Correo electrónico:</label>
+<input type="email" id="email" aria-required="true">
+```
+📌 **Explicación**:  
+- `aria-required="true"` informa a las tecnologías asistivas que este campo es obligatorio.  
+- Un lector de pantalla podría anunciarlo como: **"Correo electrónico, campo obligatorio"**.  
+
+ 
+
+
+
 
 
 >🔹 **Estados y propiedades (`aria-*`)** → Aportan información adicional sobre el estado de los elementos.  
