@@ -236,12 +236,6 @@ Ejemplo:
 - `aria-required="true"` informa a las tecnologías asistivas que este campo es obligatorio.  
 - Un lector de pantalla podría anunciarlo como: **"Correo electrónico, campo obligatorio"**.  
 
- 
-
-
-
-
-
 >🔹 **Estados y propiedades (`aria-*`)** → Aportan información adicional sobre el estado de los elementos.  
 Ejemplo:  
 ```html
