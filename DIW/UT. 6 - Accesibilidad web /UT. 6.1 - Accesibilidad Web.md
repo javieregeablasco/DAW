@@ -32,7 +32,8 @@ Las personas que se benefician de la **accesibilidad web** incluyen:
 >**Beneficios** 
 - 🌍 **Mayor alcance**: Más personas pueden acceder al contenido, incluyendo personas con discapacidades.
 - 💻 **Mejora del SEO**: Un sitio web accesible mejora la experiencia de los usuarios (UI/UX) y facilita la indexación del contenido por parte de los motores de búsqueda. 
-- 📱 **Compatibilidad**: Un contenido accesible debe ser usable en diferentes **dispositivos, navegadores y tecnologías de asistencia**, asegurando que todos los usuarios, independientemente de sus condiciones, puedan interactuar con él de manera eficiente."
+- 📱 **Compatibilidad 1**: Un contenido accesible debe ser usable en diferentes **dispositivos, navegadores y tecnologías de asistencia**, asegurando que todos los usuarios, independientemente de sus condiciones, puedan interactuar con él de manera eficiente."
+- 💾 **Compatibilidad 2**: Un contenido accesible ha de serlo en dispositivos o navegadores obsoletos, conexiones lentas, pantallas pequeñas o moncromáticas.
 - 🔐 **Cumplimiento legal**: Evita problemas legales relacionados con la discriminación digital.
 
 # 2 Legislación aplicable
