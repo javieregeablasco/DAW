@@ -123,7 +123,7 @@ body {
 ```
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/contraste.png">
 
-## 1.5 Navegación accesible con el teclado
+## 1.5 Navegación solamente accesible con el teclado
 Asegura que los usuarios puedan navegar por el sitio utilizando solo el teclado.
 
 >**Buenas prácticas de uso:**
@@ -195,7 +195,54 @@ Por tanto, **como regla general**, no se debe abusar de los elementos multimedia
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/enlace.png">
 
 ## 1.9 Uso de ARIA (Accessible Rich Internet Applications)
-Implementar atributos **ARIA** cuando no sea posible lograr la accesibilidad solo con HTML.
+Las **WAI-ARIA** (**Web Accessibility Initiative – Accessible Rich Internet Applications**) son un conjunto de atributos en HTML diseñados para mejorar la accesibilidad de aplicaciones web interactivas.
+
+Las **ARIA** permiten que los elementos dinámicos en una página web sean comprensibles para tecnologías asistivas, como lectores de pantalla. Son especialmente útiles cuando usamos JavaScript para crear interfaces complejas con **menús desplegables, carruseles, pestañas o formularios avanzados**.  
+
+### 1.9.1 **Principales atributos de ARIA**  
+🔹 **Roles (`role`)** → Definen la función de un elemento en la página.  
+Ejemplo:  
+```html
+<div role="alert">¡Error! Debes completar el formulario.</div>
+```
+📌 El lector de pantalla interpretará este `div` como una alerta.  
+
+🔹 **Estados y propiedades (`aria-*`)** → Aportan información adicional sobre el estado de los elementos.  
+Ejemplo:  
+```html
+<button aria-expanded="false">Mostrar más</button>
+```
+📌 Indica que el botón aún no ha expandido su contenido.  
+
+🔹 **Relaciones (`aria-labelledby`, `aria-describedby`)** → Asocian elementos para dar más contexto.  
+Ejemplo:  
+```html
+<label id="nombreLabel">Nombre:</label>
+<input type="text" aria-labelledby="nombreLabel">
+```
+📌 El lector de pantalla sabrá que este campo de entrada está relacionado con el `label`.  
+
+## **Ejemplo práctico de ARIA en un menú desplegable**  
+```html
+<button id="menuBtn" aria-haspopup="true" aria-expanded="false">
+  Menú
+</button>
+<ul id="menu" role="menu" aria-hidden="true">
+  <li role="menuitem">Opción 1</li>
+  <li role="menuitem">Opción 2</li>
+</ul>
+```
+📌 **Explicación**:  
+- `aria-haspopup="true"` indica que el botón abre un menú.  
+- `aria-expanded="false"` señala que el menú está cerrado.  
+- `aria-hidden="true"` oculta el menú para lectores de pantalla hasta que se abra.  
+
+## **Cuándo usar ARIA y cuándo no**  
+✔ **Usar ARIA** cuando los elementos nativos de HTML no son suficientes para describir la interacción.  
+❌ **No usar ARIA innecesariamente**, ya que HTML5 ya ofrece mucha accesibilidad de forma predeterminada (por ejemplo, los `<button>` y `<input>` ya son accesibles sin ARIA).  
+
+Si necesitas más detalles o ejemplos específicos, dime qué contexto tienes en mente. 😊
+
 
 **HASTA AQUI**
 
