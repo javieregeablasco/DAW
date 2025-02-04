@@ -53,7 +53,9 @@ Las ediciones de las WCAG son:
 - **WCAG 3** (en proceso de aprobación)
 
 ## 5.2 Accesibilidad de las herramientas de autor ATAG (Authoring Tool Accessibility Guidelines)  
-Engloba las normas que atañen al desarrollo de los programas y aplicaciones que se utilizan para crear, gestionar y publicar los contenidos digitales. Estas herramientas abarcan los procesadores de textos, los gestores de bases de datos, los programas de edición de vídeo, etc.
+Las ATAG son un conjunto de normas desarrolladas por el W3C que tienen como objetivo garantizar que las herramientas de creación de contenido web sean accesibles. Estas pautas se centran en dos aspectos principales:
+- Que la herramienta en sí sea accesible para personas con discapacidad.
+- Que la herramienta facilite la creación de contenido accesible.
 
 ## 5.3 Accesibilidad de las herramientas de autor UAAG (User Agent Accessibility Guidelines) 
 Definen las directrices destinadas al desarrollo de los programas necesarios para interactuar con el contenido web, como los navegadores, los reproductores multimedia, los lectores de pantalla, etc , cuya finalidad es:
