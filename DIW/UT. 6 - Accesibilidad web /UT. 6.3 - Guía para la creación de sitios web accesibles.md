@@ -195,7 +195,7 @@ Por tanto, **como regla general**, no se debe abusar de los elementos multimedia
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/enlace.png">
 
 ## 1.9 Uso de ARIA (Accessible Rich Internet Applications)
-Las **WAI-ARIA** (**Web Accessibility Initiative – Accessible Rich Internet Applications**) son un conjunto de atributos en HTML diseñados para mejorar la accesibilidad de aplicaciones web interactivas.
+Las <a href="https://developer.mozilla.org/es/docs/Web/Accessibility/ARIA/Attributes/aria-label">**WAI-ARIA** (**Web Accessibility Initiative – Accessible Rich Internet Applications**)</a> son un conjunto de atributos en HTML diseñados para mejorar la accesibilidad de aplicaciones web interactivas.
 
 Las **ARIA** permiten que los elementos dinámicos en una página web sean comprensibles para tecnologías asistivas, como lectores de pantalla. Son especialmente útiles cuando usamos JavaScript para crear interfaces complejas con **menús desplegables, carruseles, pestañas o formularios avanzados**.  
 
