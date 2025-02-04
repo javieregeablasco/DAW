@@ -199,12 +199,6 @@ Las <a href="https://developer.mozilla.org/es/docs/Web/Accessibility/ARIA/Attrib
 
 Las **ARIA** permiten que los elementos dinámicos en una página web sean comprensibles para tecnologías asistivas, como lectores de pantalla. Son especialmente útiles cuando usamos JavaScript para crear interfaces complejas con **menús desplegables, carruseles, pestañas o formularios avanzados**.  
 
-Algunas de las técnicas consisten en utilizar los atributos que definen los componentes:
-   
-  
-- aria-required: campos requeridos.
-  
-- state y property para mostrar los estados de los componentes.
 - aria landmarks para establecer las regiones de una página.
 
 ### 1.9.1 Principales atributos de ARIA  
@@ -251,6 +245,95 @@ Ejemplo:
 <input type="text" aria-labelledby="nombreLabel">
 ```
 📌 El lector de pantalla sabrá que este campo de entrada está relacionado con el `label`.  
+
+>🔹 **Estados y Propiedades (`aria-state` y `aria-property`)** → Proporcionan información sobre el estado dinámico de un elemento en la página.  
+
+📌 **Diferencia entre estado y propiedad:**  
+- **Estados (`aria-*` de estado)** → Pueden cambiar dinámicamente con la interacción del usuario.  
+- **Propiedades (`aria-*` de propiedad)** → Definen características estáticas del elemento y rara vez cambian.  
+
+### **Ejemplo de un estado (`aria-expanded`)**  
+```html
+<button aria-expanded="false" aria-controls="menu">Menú</button>
+<ul id="menu" hidden>
+  <li>Opción 1</li>
+  <li>Opción 2</li>
+</ul>
+```
+📌 **Explicación:**  
+- `aria-expanded="false"` indica que el menú está contraído.  
+- Cuando el usuario lo abra, el valor debe cambiar dinámicamente a `"true"`.  
+
+✅ **Ejemplos de estados (`state`):**  
+- `aria-checked="true"` → Para checkboxes o radio buttons.  
+- `aria-disabled="true"` → Indica que un botón o campo está deshabilitado.  
+- `aria-hidden="true"` → Oculta el elemento a tecnologías asistivas.  
+
+
+**Ejemplo de una propiedad (`aria-labelledby`)**  
+```html
+<h2 id="titulo">Instrucciones</h2>
+<p aria-labelledby="titulo">Sigue los pasos para completar el formulario.</p>
+```
+📌 **Explicación:**  
+- `aria-labelledby="titulo"` indica que el `<p>` está relacionado con el `<h2>`.  
+- El lector de pantalla leerá "Instrucciones: Sigue los pasos para completar el formulario".  
+
+✅ **Ejemplos de propiedades (`property`):**  
+- `aria-labelledby` → Relaciona elementos con un título.  
+- `aria-describedby` → Proporciona una descripción adicional.  
+- `aria-haspopup` → Indica si un botón abre un menú, diálogo, etc.  
+
+>🔹 **Landmarks ARIA (`role` para regiones)** → Definen áreas importantes en una página web para mejorar la navegación con tecnologías asistivas.  
+
+📌 **¿Para qué sirven?**  
+Permiten que los usuarios de lectores de pantalla naveguen rápidamente entre secciones como encabezados, menús y contenido principal.  
+
+---
+
+### **Ejemplo de landmarks ARIA en una página web**  
+```html
+<header role="banner">
+  <h1>Mi Sitio Web</h1>
+</header>
+
+<nav role="navigation">
+  <ul>
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Servicios</a></li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+</nav>
+
+<main role="main">
+  <article>
+    <h2>Bienvenido</h2>
+    <p>Este es el contenido principal de la página.</p>
+  </article>
+</main>
+
+<aside role="complementary">
+  <h3>Noticias Recientes</h3>
+  <p>Últimas novedades de nuestro blog.</p>
+</aside>
+
+<footer role="contentinfo">
+  <p>&copy; 2025 Mi Sitio Web</p>
+</footer>
+```
+
+📌 **Explicación:**  
+- `role="banner"` → Identifica la cabecera del sitio.  
+- `role="navigation"` → Define el menú de navegación.  
+- `role="main"` → Marca el contenido principal.  
+- `role="complementary"` → Para contenido secundario (como una barra lateral).  
+- `role="contentinfo"` → Especifica la información del pie de página.  
+
+✅ **Ventajas de usar landmarks ARIA:**  
+✔ Facilitan la navegación con teclas rápidas en lectores de pantalla.  
+✔ Mejoran la accesibilidad sin afectar la estructura visual de la página.  
+✔ Se pueden usar junto con etiquetas HTML5 (`<header>`, `<nav>`, `<main>`, etc.).  
+
 
 ### 1.9.2 Ejemplo de uso de ARIA en un menú desplegable  
 ```html
