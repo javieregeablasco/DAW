@@ -43,6 +43,10 @@ La accesibilidad web no solo beneficia a las personas con discapacidades, sino t
 
 # 5 Principales directrices 
 La WAI emite desde 1999 directrices estandarizadas y reconocidas a nivel internacional para crear contenidos y páginas más accesibles. Estas recomendaciones técnicas, especialmente dirigidas a webmasters, diseñadores y desarrolladores, se actualizan de forma periódica y se agrupan en tres bloques.
+<div align="center">
+</br>
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/wcag%20atag%20uaag.png" width=60%>
+</div>
 
 ## 5.1 Directrices WCAG (Web Content Accessibility Guidelines)   
 Las WCAG son una serie de directrices de diseño y desarrollo que definen las pautas para crear contenidos accesibles y compatibles con todo tipo de tecnologías de apoyo, dispositivos, navegadores y lenguajes de programación. Contemplan el uso de letras de gran tamaño, diseños adaptativos, textos predictivos, asistentes a la navegación, etc.  
