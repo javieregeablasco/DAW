@@ -233,7 +233,7 @@ Las <a href="https://developer.mozilla.org/es/docs/Web/Accessibility/ARIA/Attrib
 
 Las **ARIA** permiten que los elementos dinámicos en una página web sean comprensibles para tecnologías asistivas, como lectores de pantalla. Son especialmente útiles cuando usamos JavaScript para crear interfaces complejas con **menús desplegables, carruseles, pestañas o formularios avanzados**.  
 
-- aria landmarks para establecer las regiones de una página.
+La especificación de ARIA establece componentes que definen **roles, estados y propiedades de los elementos de la interfaz de usuario**.
 
 ### 1.9.1 Principales atributos de ARIA  
 :one: **Roles (`role`)** → Definen la función de un elemento en la página.  
