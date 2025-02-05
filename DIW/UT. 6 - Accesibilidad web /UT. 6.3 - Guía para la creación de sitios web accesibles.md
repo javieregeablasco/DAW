@@ -383,7 +383,9 @@ Permiten que los usuarios de lectores de pantalla naveguen rápidamente entre se
 - `role="complementary"` → Para contenido secundario (como una barra lateral).  
 - `role="contentinfo"` → Especifica la información del pie de página.  
 
-:seven: Landmarks (aria-*) → Ayudan a estructurar mejor el contenido de la página para usuarios con tecnologías de asistencia.
+---
+
+:seven: **Landmarks (aria-*)** → Ayudan a estructurar mejor el contenido de la página para usuarios con tecnologías de asistencia.
 **Ejemplo:**  
 ```
 <header aria-labelledby="site-title">
@@ -408,15 +410,6 @@ Permiten que los usuarios de lectores de pantalla naveguen rápidamente entre se
 </footer>
 ```
 📌 Los aria-label y aria-labelledby ayudan a los lectores de pantalla a identificar claramente las secciones principales del sitio.  
-
-
-
-
-✅ **Ventajas de usar landmarks ARIA:**  
-✔ Facilitan la navegación con teclas rápidas en lectores de pantalla.  
-✔ Mejoran la accesibilidad sin afectar la estructura visual de la página.  
-✔ Se pueden usar junto con etiquetas HTML5 (`<header>`, `<nav>`, `<main>`, etc.).  
-
 
 ### 1.9.2 Ejemplo de uso de ARIA en un menú desplegable  
 ```html
