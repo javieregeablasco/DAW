@@ -371,7 +371,7 @@ Bootstrap proporciona algunas funciones para calcular colores, tamaños y propor
 ```
 
 
-### 6.2.2 Tarea RA5 CEe
+### 6.2.2 Práctica RA5 CEe
 Recuperar el proyecto de la práctica RA5 CEab (o crear un proyecto nuevo) y realizar las siguientes personalización de Boostrap.   
 
 :one: Ampliar la clase `.btn-#{$color}` de tal manera que Sass cree 2 nuevos estilos `.btn-rojo` y `.btn-magenta`.  
