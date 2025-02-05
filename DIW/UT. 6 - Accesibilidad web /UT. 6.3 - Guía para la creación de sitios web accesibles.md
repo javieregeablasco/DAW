@@ -55,6 +55,8 @@ La especificación HTML5 introdujo una serie de elementos semánticos que permit
      <p>Derechos reservados © 2023</p>
    </footer>
    ```
+
+---
   
 2️⃣ **Encabezados (`<h1>` a `<h6>`)**  
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/headings.jpg" width=35% />
@@ -66,6 +68,8 @@ La especificación HTML5 introdujo una serie de elementos semánticos que permit
      <h3>Sección</h3>
      ```
 
+---
+
 :three: **Elementos de texto semántico**  
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/text%20semantic.jpg" width=35% />
    - `<p>`: Define un párrafo.
@@ -75,11 +79,15 @@ La especificación HTML5 introdujo una serie de elementos semánticos que permit
    - `<cite>`: Define el título de una obra (por ejemplo, un libro o película).
    - `<time>`: Representa una fecha u hora.
 
+---
+
  :four: **Elementos multimedia**  
  <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/mediaelements_cut.png" width=35% />
    - `<figure>` y `<figcaption>`: Se usan para agrupar imágenes, gráficos o videos con una leyenda.
    - `<img>`: Para imágenes, siempre con el atributo `alt` que describe la imagen.
    - `<audio>` y `<video>`: Para contenido multimedia.
+
+---
 
 :five: **Listas**  
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/listhtml.jpg" width=45% />
@@ -138,7 +146,27 @@ Asegura que los usuarios puedan navegar por el sitio utilizando solo el teclado.
 
 **Ejemplo:**
 ```html
-<a href="#contenido-principal" tabindex="1">Ir al contenido principal</a>
+<header>
+  <a href="#contenido-principal" tabindex="1" class="skip-link">Ir al contenido principal</a>
+  <nav>
+    <ul>
+      <li><a href="#" tabindex="2">Inicio</a></li>
+      <li><a href="#" tabindex="3">Servicios</a></li>
+      <li><a href="#" tabindex="4">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="contenido-principal">
+  <h1>Bienvenido a nuestro sitio</h1>
+  <p>Pulsa "Tab" para navegar entre los enlaces.</p>
+  
+  <button tabindex="5">Botón con tabindex</button>
+  <div tabindex="6" style="border: 1px solid #ccc; padding: 10px;">
+    Puedes enfocar este div con `tabindex="6"`.
+  </div>
+</main>
+
 ```
 
 ## 1.6 Formularios accesibles
@@ -174,7 +202,7 @@ Etiquetar correctamente los campos de los formularios para que los usuarios con 
   </fieldset>
   <br>
 ```
-<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/formulario.png">
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/formulario.png" width=75% />
 
 ## 1.7 Contenidos multimedia accesibles
 Los elementos multimedia que tanto se utilizan en las páginas web hoy en día pueden ocasionar graves problemas de accesibilidad, ya no sólo a las personas con algún tipo de discapacidad, sino a todo el mundo en general. Al ser elementos que no son HTML requieren, en la mayoría de los casos, la instalación de un visor específico (plug-in, add-on o extensión) que sea capaz de interpretar el elemento multimedia.  
@@ -242,22 +270,31 @@ Ejemplo:
 
 ---
 
-4️⃣: **Estados y propiedades (`aria-*`)** → Aportan información adicional sobre el estado de los elementos.  
-Ejemplo:  
-```html
-<button aria-expanded="false">Mostrar más</button>
+4️⃣ **Landmarks (aria-*)** → Ayudan a estructurar mejor el contenido de la página para usuarios con tecnologías de asistencia.
+**Ejemplo:**  
 ```
-📌 Indica que el botón aún no ha expandido su contenido.  
+<header aria-labelledby="site-title">
+  <h1 id="site-title">Mi Sitio Web</h1>
+</header>
 
----
+<nav aria-label="Menú principal">
+  <ul>
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Servicios</a></li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+</nav>
 
-:five: **Relaciones (`aria-labelledby`, `aria-describedby`)** → Asocian elementos para dar más contexto.  
-Ejemplo:  
-```html
-<label id="nombreLabel">Nombre:</label>
-<input type="text" aria-labelledby="nombreLabel">
+<main aria-labelledby="main-content">
+  <h2 id="main-content">Bienvenido a nuestra página</h2>
+  <p>Esta es la sección principal del contenido.</p>
+</main>
+
+<footer aria-label="Pie de página">
+  <p>&copy; 2025 Mi Sitio Web</p>
+</footer>
 ```
-📌 El lector de pantalla sabrá que este campo de entrada está relacionado con el `label`.  
+📌 Los aria-label y aria-labelledby ayudan a los lectores de pantalla a identificar claramente las secciones principales del sitio.  
 
 ---
 
@@ -299,12 +336,14 @@ Ejemplo:
 - `aria-describedby` → Proporciona una descripción adicional.  
 - `aria-haspopup` → Indica si un botón abre un menú, diálogo, etc.  
 
+---
+
 :seven: **Landmarks ARIA (`role` para regiones)** → Definen áreas importantes en una página web para mejorar la navegación con tecnologías asistivas.  
 
 📌 **¿Para qué sirven?**  
 Permiten que los usuarios de lectores de pantalla naveguen rápidamente entre secciones como encabezados, menús y contenido principal.  
 
----
+
 
 **Ejemplo de landmarks ARIA en una página web**  
 ```html
@@ -343,6 +382,35 @@ Permiten que los usuarios de lectores de pantalla naveguen rápidamente entre se
 - `role="main"` → Marca el contenido principal.  
 - `role="complementary"` → Para contenido secundario (como una barra lateral).  
 - `role="contentinfo"` → Especifica la información del pie de página.  
+
+8️⃣ Landmarks (aria-*) → Ayudan a estructurar mejor el contenido de la página para usuarios con tecnologías de asistencia.
+**Ejemplo:**  
+```
+<header aria-labelledby="site-title">
+  <h1 id="site-title">Mi Sitio Web</h1>
+</header>
+
+<nav aria-label="Menú principal">
+  <ul>
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Servicios</a></li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+</nav>
+
+<main aria-labelledby="main-content">
+  <h2 id="main-content">Bienvenido a nuestra página</h2>
+  <p>Esta es la sección principal del contenido.</p>
+</main>
+
+<footer aria-label="Pie de página">
+  <p>&copy; 2025 Mi Sitio Web</p>
+</footer>
+```
+📌 Los aria-label y aria-labelledby ayudan a los lectores de pantalla a identificar claramente las secciones principales del sitio.  
+
+
+
 
 ✅ **Ventajas de usar landmarks ARIA:**  
 ✔ Facilitan la navegación con teclas rápidas en lectores de pantalla.  
