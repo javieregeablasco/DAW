@@ -298,7 +298,7 @@ Ejemplo:
 
 ---
 
-:six: **Estados y Propiedades (`aria-state` y `aria-property`)** → Proporcionan información sobre el estado dinámico de un elemento en la página.  
+:five: **Estados y Propiedades (`aria-state` y `aria-property`)** → Proporcionan información sobre el estado dinámico de un elemento en la página.  
 
 📌 **Diferencia entre estado y propiedad:**  
 - **Estados (`aria-*` de estado)** → Pueden cambiar dinámicamente con la interacción del usuario.  
@@ -338,7 +338,7 @@ Ejemplo:
 
 ---
 
-:seven: **Landmarks ARIA (`role` para regiones)** → Definen áreas importantes en una página web para mejorar la navegación con tecnologías asistivas.  
+:six: **Landmarks ARIA (`role` para regiones)** → Definen áreas importantes en una página web para mejorar la navegación con tecnologías asistivas.  
 
 📌 **¿Para qué sirven?**  
 Permiten que los usuarios de lectores de pantalla naveguen rápidamente entre secciones como encabezados, menús y contenido principal.  
@@ -383,7 +383,7 @@ Permiten que los usuarios de lectores de pantalla naveguen rápidamente entre se
 - `role="complementary"` → Para contenido secundario (como una barra lateral).  
 - `role="contentinfo"` → Especifica la información del pie de página.  
 
-8️⃣ Landmarks (aria-*) → Ayudan a estructurar mejor el contenido de la página para usuarios con tecnologías de asistencia.
+:seven: Landmarks (aria-*) → Ayudan a estructurar mejor el contenido de la página para usuarios con tecnologías de asistencia.
 **Ejemplo:**  
 ```
 <header aria-labelledby="site-title">
