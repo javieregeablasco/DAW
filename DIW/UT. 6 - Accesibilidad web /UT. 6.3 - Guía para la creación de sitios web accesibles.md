@@ -76,18 +76,20 @@ La especificación HTML5 introdujo una serie de elementos semánticos que permit
    - `<time>`: Representa una fecha u hora.
 
  :four: **Elementos multimedia**  
- <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/mediaelements.png" width=50% />
+ <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/mediaelements_cut.png" width=35% />
    - `<figure>` y `<figcaption>`: Se usan para agrupar imágenes, gráficos o videos con una leyenda.
    - `<img>`: Para imágenes, siempre con el atributo `alt` que describe la imagen.
    - `<audio>` y `<video>`: Para contenido multimedia.
 
-:five: **Listas**
+:five: **Listas**  
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/listhtml.jpg" width=45% />
    - `<ul>`: Lista no ordenada.
    - `<ol>`: Lista ordenada.
    - `<li>`: Elemento de lista.
    - `<dl>`, `<dt>`, `<dd>`: Listas de definiciones.
 
 ## 1.3 Textos alternativos para imágenes y animaciones
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/atributo-alt.jpg"  />
 Proporcionar semántica adecuada y descripciones alternativas (atributo <a href="https://html.spec.whatwg.org/multipage/images.html#alt">alt</a>) para todas las imágenes.
 
 El atributo alt especifica un texto alternativo para navegadores que no puedan mostrar imágenes, formularios o aplicaciones. El idioma de este texto alternativo está especificado por el atributo lang.
@@ -206,14 +208,16 @@ Las **ARIA** permiten que los elementos dinámicos en una página web sean compr
 - aria landmarks para establecer las regiones de una página.
 
 ### 1.9.1 Principales atributos de ARIA  
->🔹 **Roles (`role`)** → Definen la función de un elemento en la página.  
+:one: **Roles (`role`)** → Definen la función de un elemento en la página.  
 Ejemplo:  
 ```html
 <div role="alert">¡Error! Debes completar el formulario.</div>
 ```
 📌 El lector de pantalla interpretará este `div` como una alerta.  
 
->🔹 **Etiqueta accesible (`aria-label`)** → Proporciona una descripción accesible para un elemento que no tiene texto visible.  
+---
+  
+:two: **Etiqueta accesible (`aria-label`)** → Proporciona una descripción accesible para un elemento que no tiene texto visible.  
 
 Ejemplo:  
 ```html
@@ -221,9 +225,11 @@ Ejemplo:
 ```
 📌 **Explicación**:  
 - El botón solo muestra un icono (**❌**), lo que puede ser confuso para usuarios con discapacidad visual.  
-- `aria-label="Cerrar ventana"` le indica al lector de pantalla su función real.  
+- `aria-label="Cerrar ventana"` le indica al lector de pantalla su función real.
 
-> 🔹 **Campo obligatorio (`aria-required`)** → Indica que un campo de formulario es obligatorio para completar el envío.  
+---  
+ 
+:three: **Campo obligatorio (`aria-required`)** → Indica que un campo de formulario es obligatorio para completar el envío.  
 
 Ejemplo:  
 ```html
@@ -234,15 +240,18 @@ Ejemplo:
 - `aria-required="true"` informa a las tecnologías asistivas que este campo es obligatorio.  
 - Un lector de pantalla podría anunciarlo como: **"Correo electrónico, campo obligatorio"**.  
 
->🔹 **Estados y propiedades (`aria-*`)** → Aportan información adicional sobre el estado de los elementos.  
+---
+
+4️⃣: **Estados y propiedades (`aria-*`)** → Aportan información adicional sobre el estado de los elementos.  
 Ejemplo:  
 ```html
 <button aria-expanded="false">Mostrar más</button>
 ```
 📌 Indica que el botón aún no ha expandido su contenido.  
 
+---
 
->🔹 **Relaciones (`aria-labelledby`, `aria-describedby`)** → Asocian elementos para dar más contexto.  
+:five: **Relaciones (`aria-labelledby`, `aria-describedby`)** → Asocian elementos para dar más contexto.  
 Ejemplo:  
 ```html
 <label id="nombreLabel">Nombre:</label>
@@ -250,13 +259,15 @@ Ejemplo:
 ```
 📌 El lector de pantalla sabrá que este campo de entrada está relacionado con el `label`.  
 
->🔹 **Estados y Propiedades (`aria-state` y `aria-property`)** → Proporcionan información sobre el estado dinámico de un elemento en la página.  
+---
+
+:six: **Estados y Propiedades (`aria-state` y `aria-property`)** → Proporcionan información sobre el estado dinámico de un elemento en la página.  
 
 📌 **Diferencia entre estado y propiedad:**  
 - **Estados (`aria-*` de estado)** → Pueden cambiar dinámicamente con la interacción del usuario.  
 - **Propiedades (`aria-*` de propiedad)** → Definen características estáticas del elemento y rara vez cambian.  
 
-### **Ejemplo de un estado (`aria-expanded`)**  
+**Ejemplo de un estado (`aria-expanded`)**  
 ```html
 <button aria-expanded="false" aria-controls="menu">Menú</button>
 <ul id="menu" hidden>
@@ -288,14 +299,14 @@ Ejemplo:
 - `aria-describedby` → Proporciona una descripción adicional.  
 - `aria-haspopup` → Indica si un botón abre un menú, diálogo, etc.  
 
->🔹 **Landmarks ARIA (`role` para regiones)** → Definen áreas importantes en una página web para mejorar la navegación con tecnologías asistivas.  
+:seven: **Landmarks ARIA (`role` para regiones)** → Definen áreas importantes en una página web para mejorar la navegación con tecnologías asistivas.  
 
 📌 **¿Para qué sirven?**  
 Permiten que los usuarios de lectores de pantalla naveguen rápidamente entre secciones como encabezados, menús y contenido principal.  
 
 ---
 
-### **Ejemplo de landmarks ARIA en una página web**  
+**Ejemplo de landmarks ARIA en una página web**  
 ```html
 <header role="banner">
   <h1>Mi Sitio Web</h1>
