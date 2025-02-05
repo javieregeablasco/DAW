@@ -432,10 +432,3 @@ Permiten que los usuarios de lectores de pantalla naveguen rápidamente entre se
 
 **Ejemplo:**  
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/aria.png" width=50% />
-
-
-
-**HASTA AQUI** **revisar y aligerar**
-
-
-https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
