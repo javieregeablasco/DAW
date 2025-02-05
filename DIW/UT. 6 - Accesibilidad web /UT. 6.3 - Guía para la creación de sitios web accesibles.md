@@ -20,16 +20,8 @@ Una **estructura semántica correcta** en el desarrollo web se refiere al uso ad
 ## 1.2 Elementos semánticos clave en HTML
 La especificación HTML5 introdujo una serie de elementos semánticos que permiten estructurar el contenido de manera más clara y significativa.
 
-:one: **Encabezados (`<h1>` a `<h6>`)**
-   - Definen la jerarquía del contenido. `<h1>` es el título principal, y `<h6>` es el menos importante.
-   - Ejemplo:
-     ```html
-     <h1>Título principal</h1>
-     <h2>Subtítulo</h2>
-     <h3>Sección</h3>
-     ```
-
-:two: **Etiquetas de sección**
+:one: **Etiquetas de sección**  
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/BEM.png" width=50% />
    - `<header>`: Contiene el encabezado de la página o sección (por ejemplo, el logotipo y el menú de navegación).
    - `<nav>`: Define la sección de navegación (enlaces principales del sitio).
    - `<main>`: Contiene el contenido principal de la página.
@@ -63,8 +55,19 @@ La especificación HTML5 introdujo una serie de elementos semánticos que permit
      <p>Derechos reservados © 2023</p>
    </footer>
    ```
+  
+2️⃣ **Encabezados (`<h1>` a `<h6>`)**  
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/headings.jpg" width=35% />
+   - Definen la jerarquía del contenido. `<h1>` es el título principal, y `<h6>` es el menos importante.
+   - Ejemplo:
+     ```html
+     <h1>Título principal</h1>
+     <h2>Subtítulo</h2>
+     <h3>Sección</h3>
+     ```
 
-:three: **Elementos de texto semántico**
+:three: **Elementos de texto semántico**  
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/text%20semantic.jpg" width=35% />
    - `<p>`: Define un párrafo.
    - `<strong>`: Indica que el texto es importante (semánticamente, no solo visualmente).
    - `<em>`: Indica énfasis (cursiva semántica).
@@ -72,7 +75,8 @@ La especificación HTML5 introdujo una serie de elementos semánticos que permit
    - `<cite>`: Define el título de una obra (por ejemplo, un libro o película).
    - `<time>`: Representa una fecha u hora.
 
- :four: **Elementos multimedia**
+ :four: **Elementos multimedia**  
+ <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/mediaelements.png" width=50% />
    - `<figure>` y `<figcaption>`: Se usan para agrupar imágenes, gráficos o videos con una leyenda.
    - `<img>`: Para imágenes, siempre con el atributo `alt` que describe la imagen.
    - `<audio>` y `<video>`: Para contenido multimedia.
