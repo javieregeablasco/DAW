@@ -5,11 +5,10 @@ Año: 24-25
 Palabras clave: DAW, DIW
 ---
 
-# 1 Guía para crear sitios web accesibles
-A continuación, se presentan las mejores prácticas para crear una página web accesible.  
+# 1 Introducción
+En esta práctica se compone de 2 partes nos iremos familiarizando con las pautas de accesibilidad al contenido, así como los niveles de conformidad.   
 
-https://www.w3.org/TR/WAI-WEBCONTENT/full-checklist
-
+Ir a <a href="https://gist.github.com/selfthinker/4cd7ed16ac2f0fedfc31b8032a1a1d71">**este repositorio**</a>
 
 ## 1.1 Estructura semántica correcta
 Una **estructura semántica correcta** en el desarrollo web se refiere al uso adecuado de elementos HTML que describen el significado y la función del contenido, en lugar de solo su apariencia. Esto no solo mejora la accesibilidad, sino que también facilita el mantenimiento del código, mejora el SEO (optimización para motores de búsqueda) y permite una mejor interpretación del contenido por parte de navegadores y tecnologías de asistencia.
