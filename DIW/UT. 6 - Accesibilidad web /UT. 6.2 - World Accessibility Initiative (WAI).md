@@ -187,14 +187,14 @@ Consultar la **WCAG 2.2 o 2.2** para identificar la pauta correspondiente y los 
 En un sitio web de comercio electrónico, los productos tienen imágenes sin texto alternativo (`alt`). ¿A qué pauta de accesibilidad hace referencia este problema? ¿Qué errores pueden derivarse de esta omisión?  
 
 🔎 **Pista:** Busca pautas relacionadas con la accesibilidad para personas con discapacidad visual.  
-
+<!--
 **Solución:**
 - **Principio WCAG:** Perceptible.
 - **Criterio WCAG:** 1.1.1 Non-text Content
 - **Nivel:** A
 - **Técnicas:** G94, G95, G82, G100, G143.
-- **Fallo(s):** F3, F13, F20, F30, F38, F39, F65, F67, F71, 72.
-
+- **Fallos:** F3, F13, F20, F30, F38, F39, F65, F67, F71, 72.
+-->
 ---
 
 2️⃣ **Uso del color**  
@@ -249,7 +249,7 @@ Un usuario con lector de pantalla no es informado cuando aparece un mensaje de e
 📌 Pregunta:
 Un formulario de registro usa un captcha basado en imágenes con texto distorsionado, pero no ofrece una alternativa accesible para usuarios con discapacidad visual. ¿Qué pautas de accesibilidad abordan este problema?   
 
-🔎 Pista: Busca sobre alternativas accesibles en la verificación de usuarios. 
+🔎 **Pista:** Busca sobre alternativas accesibles en la verificación de usuarios. 
 
 ---
 
@@ -261,7 +261,7 @@ Un formulario de inscripción cierra la sesión tras 30 segundos de inactividad 
 
 ---
 
-:ten: **Estructura incorrecta de encabezados**  
+🔟 **Estructura incorrecta de encabezados**  
 📌 **Pregunta:**  
 Un documento HTML usa `<h1>` para el título principal, pero después salta directamente a `<h4>` sin jerarquía. ¿Qué criterios de accesibilidad tratan de este problema? 
 
