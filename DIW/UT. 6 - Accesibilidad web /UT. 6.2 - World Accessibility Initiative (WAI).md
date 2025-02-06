@@ -178,8 +178,7 @@ La tarea se compone de 10 afirmaciones y la tarea consistirá en lo siguiente.
 2. Determinar las técnicas que permiten alcanzar el criterio de éxito.
 3. Determinar las condiciones de fallo que impiden alcanzar el criterio de éxito.
 
-**Afirmaciones**
-Consultar la **WCAG 2.2 o 2.2** para identificar la pauta correspondiente y los errores comunes relacionados.  
+Consultar la **WCAG 2.2** para identificar la pauta correspondiente y los errores comunes relacionados.  
 
 ---
 
@@ -221,26 +220,26 @@ Un usuario intenta acceder a una web sin usar el ratón, pero algunos botones no
 <!--
 **Solución:**
 - **Principio WCAG:** Perceptible.
-- **Criterio WCAG:** 1.1.1 Non-text Content
-- **Nivel:** A
-- **Técnicas:** G94, G95, G82, G100, G143.
-- **Fallos:** F3, F13, F20, F30, F38, F39, F65, F67, F71, 72.
+- **Criterio WCAG:** 2.1.1
+- **Nivel:** 
+- **Técnicas:** 
+- **Fallos:** 
 -->
 
 ---
 
 4️⃣ **Reproducción automática de contenido con volumen no ajutable**  
 📌 **Pregunta:**  
-En una página de noticias, los videos se **reproducen automáticamente** con **sonido** sin **opción de pausa**. ¿Qué criterios de las WCAG tratan de este problema?
+En una página de noticias, los videos se **reproducen automáticamente** con **sonido** sin **opción de pausa, ni ajuste del volumen de audio**. ¿Qué criterios de las WCAG tratan de este problema?
 
 🔎 **Pista:** Investiga las pautas sobre **control del usuario sobre el contenido multimedia**.  
 <!--
 **Solución:**
-- **Principio WCAG:** Perceptible.
-- **Criterio WCAG:** 1.1.1 Non-text Content
-- **Nivel:** A
-- **Técnicas:** G94, G95, G82, G100, G143.
-- **Fallos:** F3, F13, F20, F30, F38, F39, F65, F67, F71, 72.
+- **Principio WCAG:** 
+- **Criterio WCAG:** 1.4.2, 2.2.2  
+- **Nivel:** 
+- **Técnicas:** 
+- **Fallos:** 
 -->
 
 ---
@@ -252,11 +251,11 @@ Un **formulario** de contacto tiene campos **sin etiquetas `<label>`**, lo que l
 🔎 **Pista:** Revisa las pautas relacionadas con **formularios y entradas de datos**.  
 <!--
 **Solución:**
-- **Principio WCAG:** Perceptible.
-- **Criterio WCAG:** 1.1.1 Non-text Content
-- **Nivel:** A
-- **Técnicas:** G94, G95, G82, G100, G143.
-- **Fallos:** F3, F13, F20, F30, F38, F39, F65, F67, F71, 72.
+- **Principio WCAG:** 
+- **Criterio WCAG:** 3.3.2, 2.5.3
+- **Nivel:** 
+- **Técnicas:** 
+- **Fallos:** 
 -->
 
 ---
@@ -268,27 +267,27 @@ Un banner promocional contiene información clave dentro de **una imagen sin pro
 🔎 **Pista:** Busca sobre **contenido en imágenes y su accesibilidad**.  
 <!--
 **Solución:**
-- **Principio WCAG:** Perceptible.
-- **Criterio WCAG:** 1.1.1 Non-text Content
-- **Nivel:** A
-- **Técnicas:** G94, G95, G82, G100, G143.
-- **Fallos:** F3, F13, F20, F30, F38, F39, F65, F67, F71, 72.
+- **Principio WCAG:** 
+- **Criterio WCAG:** 1.4.5
+- **Nivel:** 
+- **Técnicas:** 
+- **Fallos:** 
 -->
 
 ---
 
-7️⃣ **Cambios de contenido sin aviso**  
+7️⃣ **Cambios de contenido sin aviso, notificación de error**  
 📌 **Pregunta:**  
 Un usuario con lector de pantalla no es informado cuando aparece un mensaje de error en un formulario tras enviarlo. ¿Qué pauta de accesibilidad aborda este problema?   
 
 🔎 **Pista:** Busca sobre **prevención de errores**.  
 <!--
 **Solución:**
-- **Principio WCAG:** Perceptible.
-- **Criterio WCAG:** 1.1.1 Non-text Content
-- **Nivel:** A
-- **Técnicas:** G94, G95, G82, G100, G143.
-- **Fallos:** F3, F13, F20, F30, F38, F39, F65, F67, F71, 72.
+- **Principio WCAG:** 
+- **Criterio WCAG:** 4.1.3, 3.3.1
+- **Nivel:** 
+- **Técnicas:** 
+- **Fallos:** 
 -->
 
 ---
@@ -300,11 +299,11 @@ Un formulario de registro usa un captcha basado en imágenes con texto distorsio
 🔎 **Pista:** Busca sobre alternativas accesibles en la verificación de usuarios. 
 <!--
 **Solución:**
-- **Principio WCAG:** Perceptible.
-- **Criterio WCAG:** 1.1.1 Non-text Content
-- **Nivel:** A
-- **Técnicas:** G94, G95, G82, G100, G143.
-- **Fallos:** F3, F13, F20, F30, F38, F39, F65, F67, F71, 72.
+- **Principio WCAG:** 
+- **Criterio WCAG:** 1.1.1, 2.1.1   
+- **Nivel:** 
+- **Técnicas:** 
+- **Fallos:** 
 -->
 
 ---
@@ -316,11 +315,11 @@ Un formulario de inscripción cierra la sesión tras 30 segundos de inactividad 
 🔎 **Pista:** Busca sobre **gestión del tiempo para los usuarios con dificultades de interacción**.  
 <!--
 **Solución:**
-- **Principio WCAG:** Perceptible.
-- **Criterio WCAG:** 1.1.1 Non-text Content
-- **Nivel:** A
-- **Técnicas:** G94, G95, G82, G100, G143.
-- **Fallos:** F3, F13, F20, F30, F38, F39, F65, F67, F71, 72.
+- **Principio WCAG:** 
+- **Criterio WCAG:** 2.2.1, 2.2.6
+- **Nivel:** 
+- **Técnicas:** 
+- **Fallos:** 
 -->
 
 ---
@@ -330,3 +329,11 @@ Un formulario de inscripción cierra la sesión tras 30 segundos de inactividad 
 Un documento HTML usa `<h1>` para el título principal, pero después salta directamente a `<h4>` sin jerarquía. ¿Qué criterios de accesibilidad tratan de este problema? 
 
 🔎 **Pista:** Busca sobre **estructura semántica de encabezados y navegación**.  
+<!--
+**Solución:**
+- **Principio WCAG:** 
+- **Criterio WCAG:** 2.4.6 2.4.10 1.3.1
+- **Nivel:** 
+- **Técnicas:** 
+- **Fallos:** 
+-->
