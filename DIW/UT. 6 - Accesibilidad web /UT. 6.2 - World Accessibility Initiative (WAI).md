@@ -165,6 +165,7 @@ Las herramientas de validación comprueban si el **código HTML, CSS y ARIA** cu
 - <a href="https://validator.w3.org/#validate_by_uri+with_options">**HTML Validator**</a>: Verifica si el código HTML es válido y semántico.
 - <a href="https://jigsaw.w3.org/css-validator/">**CSS Validator**</a>: Comprueba que el código CSS sea correcto y no contenga errores.
 - **ARIA Validator**: Valida el uso de atributos ARIA en el código (deprecated).
+- Herramientas propias del navegador de internet (p.e. las DevTools de Google Chrome).
 
 ## 9.5 Enlaces de interés 
 La **WAI** pone a disposicion de los usuarios una serie de <a href="https://www.w3.org/WAI/test-evaluate/tools/list/">herramientas de validación</a>.
@@ -180,6 +181,8 @@ La tarea se compone de 10 afirmaciones y la tarea consistirá en lo siguiente.
 **Afirmaciones**
 Consultar la **WCAG 2.2 o 2.2** para identificar la pauta correspondiente y los errores comunes relacionados.  
 
+---
+
 :one: **Alternativas textuales**  
 En un sitio web de comercio electrónico, los productos tienen imágenes sin texto alternativo (`alt`). ¿A qué pauta de accesibilidad hace referencia este problema? ¿Qué errores pueden derivarse de esta omisión?  
 
@@ -189,84 +192,78 @@ En un sitio web de comercio electrónico, los productos tienen imágenes sin tex
 - **Principio WCAG:** Perceptible.
 - **Criterio WCAG:** 1.1.1 Non-text Content
 - **Nivel:** A
+- **Técnicas:** G94, G95, G82, G100, G143.
 - **Fallo(s):** F3, F13, F20, F30, F38, F39, F65, F67, F71, 72.
-
 
 ---
 
-### **Ejercicio 2: Uso del color**  
+2️⃣ **Uso del color**  
 📌 **Pregunta:**  
-Un diseñador usa colores similares para texto y fondo en una web, dificultando la lectura. ¿Qué pauta de las WCAG aborda este problema? ¿Cómo se puede solucionar?  
+Un diseñador usa colores similares para texto y fondo en una web, dificultando la lectura. ¿Qué pauta de las WCAG aborda este problema?
 
 🔎 **Pista:** Busca información sobre **contraste de color** y sus requisitos en diferentes niveles de conformidad.  
 
 ---
 
-### **Ejercicio 3: Navegación solo con teclado**  
+3️⃣ **Navegación solo con teclado**  
 📌 **Pregunta:**  
-Un usuario intenta acceder a una web sin usar el ratón, pero algunos botones no son alcanzables con `Tab`. ¿Qué pauta de las WCAG se está incumpliendo? ¿Qué errores pueden surgir por este problema?  
+Un usuario intenta acceder a una web sin usar el ratón, pero algunos botones no son alcanzables con `Tab`. ¿Qué pauta de las WCAG se está incumpliendo?  
 
 🔎 **Pista:** Busca sobre accesibilidad para personas con discapacidad motora y la importancia del **teclado**.  
 
 ---
 
-### **Ejercicio 4: Reproducción automática de contenido**  
+4️⃣ **Reproducción automática de contenido con volumen no ajutable**  
 📌 **Pregunta:**  
-En una página de noticias, los videos se reproducen automáticamente con sonido sin opción de pausa. ¿Qué criterio de las WCAG trata este problema? ¿Cómo se puede corregir?  
+En una página de noticias, los videos se **reproducen automáticamente** con **sonido** sin **opción de pausa**. ¿Qué criterios de las WCAG tratan de este problema?
 
 🔎 **Pista:** Investiga las pautas sobre **control del usuario sobre el contenido multimedia**.  
 
 ---
 
-### **Ejercicio 5: Formularios sin etiquetas accesibles**  
+5️⃣ **Formularios sin etiquetas accesibles**  
 📌 **Pregunta:**  
-Un formulario de contacto tiene campos sin etiquetas `<label>`. ¿Qué criterio de accesibilidad se está incumpliendo? ¿Qué impacto puede tener en la accesibilidad?  
+Un **formulario** de contacto tiene campos **sin etiquetas `<label>`**, lo que lo hace **difícil de entender**. ¿Qués criterios de accesibilidad se están incumpliendo?
 
 🔎 **Pista:** Revisa las pautas relacionadas con **formularios y entradas de datos**.  
 
 ---
 
-### **Ejercicio 6: Textos en imágenes**  
+6️⃣ **Textos en imágenes**  
 📌 **Pregunta:**  
-Un banner promocional contiene información clave dentro de una imagen sin proporcionar un texto alternativo. ¿A qué criterio de accesibilidad afecta? ¿Cómo se puede mejorar la accesibilidad de este contenido?  
+Un banner promocional contiene información clave dentro de **una imagen sin proporcionar un texto alternativo**. ¿A qué criterio de accesibilidad afecta?   
 
 🔎 **Pista:** Busca sobre **contenido en imágenes y su accesibilidad**.  
 
 ---
 
-### **Ejercicio 7: Cambios de contenido sin aviso**  
+7️⃣ **Cambios de contenido sin aviso**  
 📌 **Pregunta:**  
-Un usuario con lector de pantalla no es informado cuando aparece un mensaje de error en un formulario tras enviarlo. ¿Qué pauta de accesibilidad aborda este problema? ¿Qué solución se puede aplicar?  
+Un usuario con lector de pantalla no es informado cuando aparece un mensaje de error en un formulario tras enviarlo. ¿Qué pauta de accesibilidad aborda este problema?   
 
-🔎 **Pista:** Busca sobre **notificación de cambios en la interfaz sin intervención del usuario**.  
+🔎 **Pista:** Busca sobre **prevención de errores**.  
 
 ---
 
-### **Ejercicio 8: Contraste insuficiente en botones**  
-📌 **Pregunta:**  
-Una web tiene botones de acción con fondo y texto de colores similares, lo que dificulta su lectura. ¿Qué criterio de accesibilidad evalúa este problema? ¿Cuál es el contraste mínimo recomendado?  
+8️⃣ **Captchas inaccesibles**  
+📌 Pregunta:
+Un formulario de registro usa un captcha basado en imágenes con texto distorsionado, pero no ofrece una alternativa accesible para usuarios con discapacidad visual. ¿Qué pautas de accesibilidad abordan este problema?   
 
-🔎 **Pista:** Investiga las **relaciones de contraste mínimo** entre texto y fondo.  
+🔎 Pista: Busca sobre alternativas accesibles en la verificación de usuarios. 
 
 ---
 
-### **Ejercicio 9: Tiempo insuficiente para completar tareas**  
+9️⃣ **Tiempo insuficiente para completar tareas**  
 📌 **Pregunta:**  
-Un formulario de inscripción cierra la sesión tras 30 segundos de inactividad sin advertencia. ¿Qué criterio de accesibilidad trata este problema? ¿Cómo se puede corregir?  
+Un formulario de inscripción cierra la sesión tras 30 segundos de inactividad sin advertencia. ¿Qués criterios de accesibilidad tratan de este problema?
 
 🔎 **Pista:** Busca sobre **gestión del tiempo para los usuarios con dificultades de interacción**.  
 
 ---
 
-### **Ejercicio 10: Estructura incorrecta de encabezados**  
+:ten: **Estructura incorrecta de encabezados**  
 📌 **Pregunta:**  
-Un documento HTML usa `<h1>` para el título principal, pero después salta directamente a `<h4>` sin jerarquía. ¿Qué criterio de accesibilidad trata este problema? ¿Cómo afecta a la navegación con tecnologías de asistencia?  
+Un documento HTML usa `<h1>` para el título principal, pero después salta directamente a `<h4>` sin jerarquía. ¿Qué criterios de accesibilidad tratan de este problema? 
 
 🔎 **Pista:** Busca sobre **estructura semántica de encabezados y navegación**.  
 
----
-
-Estos ejercicios ayudarán a los alumnos a **explorar las WCAG** y entender su aplicación práctica. ¿Quieres que agregue algunos más o que los adapte a un contexto específico? 😊
-
- 
-1 - 
