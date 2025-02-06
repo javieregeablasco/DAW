@@ -202,6 +202,14 @@ En un sitio web de comercio electrónico, los productos tienen imágenes sin tex
 Un diseñador usa colores similares para texto y fondo en una web, dificultando la lectura. ¿Qué pauta de las WCAG aborda este problema?
 
 🔎 **Pista:** Busca información sobre **contraste de color** y sus requisitos en diferentes niveles de conformidad.  
+<!--
+**Solución:**
+- **Principio WCAG:** Perceptible.
+- **Criterio WCAG:** 1.1.1 Non-text Content
+- **Nivel:** A
+- **Técnicas:** G94, G95, G82, G100, G143.
+- **Fallos:** F3, F13, F20, F30, F38, F39, F65, F67, F71, 72.
+-->
 
 ---
 
@@ -210,6 +218,14 @@ Un diseñador usa colores similares para texto y fondo en una web, dificultando 
 Un usuario intenta acceder a una web sin usar el ratón, pero algunos botones no son alcanzables con `Tab`. ¿Qué pauta de las WCAG se está incumpliendo?  
 
 🔎 **Pista:** Busca sobre accesibilidad para personas con discapacidad motora y la importancia del **teclado**.  
+<!--
+**Solución:**
+- **Principio WCAG:** Perceptible.
+- **Criterio WCAG:** 1.1.1 Non-text Content
+- **Nivel:** A
+- **Técnicas:** G94, G95, G82, G100, G143.
+- **Fallos:** F3, F13, F20, F30, F38, F39, F65, F67, F71, 72.
+-->
 
 ---
 
@@ -218,6 +234,14 @@ Un usuario intenta acceder a una web sin usar el ratón, pero algunos botones no
 En una página de noticias, los videos se **reproducen automáticamente** con **sonido** sin **opción de pausa**. ¿Qué criterios de las WCAG tratan de este problema?
 
 🔎 **Pista:** Investiga las pautas sobre **control del usuario sobre el contenido multimedia**.  
+<!--
+**Solución:**
+- **Principio WCAG:** Perceptible.
+- **Criterio WCAG:** 1.1.1 Non-text Content
+- **Nivel:** A
+- **Técnicas:** G94, G95, G82, G100, G143.
+- **Fallos:** F3, F13, F20, F30, F38, F39, F65, F67, F71, 72.
+-->
 
 ---
 
@@ -226,6 +250,14 @@ En una página de noticias, los videos se **reproducen automáticamente** con **
 Un **formulario** de contacto tiene campos **sin etiquetas `<label>`**, lo que lo hace **difícil de entender**. ¿Qués criterios de accesibilidad se están incumpliendo?
 
 🔎 **Pista:** Revisa las pautas relacionadas con **formularios y entradas de datos**.  
+<!--
+**Solución:**
+- **Principio WCAG:** Perceptible.
+- **Criterio WCAG:** 1.1.1 Non-text Content
+- **Nivel:** A
+- **Técnicas:** G94, G95, G82, G100, G143.
+- **Fallos:** F3, F13, F20, F30, F38, F39, F65, F67, F71, 72.
+-->
 
 ---
 
@@ -234,6 +266,14 @@ Un **formulario** de contacto tiene campos **sin etiquetas `<label>`**, lo que l
 Un banner promocional contiene información clave dentro de **una imagen sin proporcionar un texto alternativo**. ¿A qué criterio de accesibilidad afecta?   
 
 🔎 **Pista:** Busca sobre **contenido en imágenes y su accesibilidad**.  
+<!--
+**Solución:**
+- **Principio WCAG:** Perceptible.
+- **Criterio WCAG:** 1.1.1 Non-text Content
+- **Nivel:** A
+- **Técnicas:** G94, G95, G82, G100, G143.
+- **Fallos:** F3, F13, F20, F30, F38, F39, F65, F67, F71, 72.
+-->
 
 ---
 
@@ -242,6 +282,14 @@ Un banner promocional contiene información clave dentro de **una imagen sin pro
 Un usuario con lector de pantalla no es informado cuando aparece un mensaje de error en un formulario tras enviarlo. ¿Qué pauta de accesibilidad aborda este problema?   
 
 🔎 **Pista:** Busca sobre **prevención de errores**.  
+<!--
+**Solución:**
+- **Principio WCAG:** Perceptible.
+- **Criterio WCAG:** 1.1.1 Non-text Content
+- **Nivel:** A
+- **Técnicas:** G94, G95, G82, G100, G143.
+- **Fallos:** F3, F13, F20, F30, F38, F39, F65, F67, F71, 72.
+-->
 
 ---
 
@@ -250,6 +298,14 @@ Un usuario con lector de pantalla no es informado cuando aparece un mensaje de e
 Un formulario de registro usa un captcha basado en imágenes con texto distorsionado, pero no ofrece una alternativa accesible para usuarios con discapacidad visual. ¿Qué pautas de accesibilidad abordan este problema?   
 
 🔎 **Pista:** Busca sobre alternativas accesibles en la verificación de usuarios. 
+<!--
+**Solución:**
+- **Principio WCAG:** Perceptible.
+- **Criterio WCAG:** 1.1.1 Non-text Content
+- **Nivel:** A
+- **Técnicas:** G94, G95, G82, G100, G143.
+- **Fallos:** F3, F13, F20, F30, F38, F39, F65, F67, F71, 72.
+-->
 
 ---
 
@@ -258,6 +314,14 @@ Un formulario de registro usa un captcha basado en imágenes con texto distorsio
 Un formulario de inscripción cierra la sesión tras 30 segundos de inactividad sin advertencia. ¿Qués criterios de accesibilidad tratan de este problema?
 
 🔎 **Pista:** Busca sobre **gestión del tiempo para los usuarios con dificultades de interacción**.  
+<!--
+**Solución:**
+- **Principio WCAG:** Perceptible.
+- **Criterio WCAG:** 1.1.1 Non-text Content
+- **Nivel:** A
+- **Técnicas:** G94, G95, G82, G100, G143.
+- **Fallos:** F3, F13, F20, F30, F38, F39, F65, F67, F71, 72.
+-->
 
 ---
 
@@ -266,4 +330,3 @@ Un formulario de inscripción cierra la sesión tras 30 segundos de inactividad 
 Un documento HTML usa `<h1>` para el título principal, pero después salta directamente a `<h4>` sin jerarquía. ¿Qué criterios de accesibilidad tratan de este problema? 
 
 🔎 **Pista:** Busca sobre **estructura semántica de encabezados y navegación**.  
-
