@@ -204,11 +204,11 @@ Un diseñador usa colores similares para texto y fondo en una web, dificultando 
 🔎 **Pista:** Busca información sobre **contraste de color** y sus requisitos en diferentes niveles de conformidad.  
 <!--
 **Solución:**
-- **Principio WCAG:** Perceptible.
-- **Criterio WCAG:** 1.1.1 Non-text Content
-- **Nivel:** A
-- **Técnicas:** G94, G95, G82, G100, G143.
-- **Fallos:** F3, F13, F20, F30, F38, F39, F65, F67, F71, 72.
+- **Principio WCAG:**
+- **Criterio WCAG:** 1.4.3 y 1.4.1
+- **Nivel:** 
+- **Técnicas:
+- **Fallos:** 
 -->
 
 ---
