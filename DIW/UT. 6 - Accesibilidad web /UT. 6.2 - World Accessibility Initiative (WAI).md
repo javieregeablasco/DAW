@@ -248,7 +248,7 @@ En una página de noticias, los videos se **reproducen automáticamente** con **
 
 5️⃣ **Formularios sin etiquetas accesibles**  
 📌 **Pregunta:**  
-Un **formulario** de contacto tiene campos **sin etiquetas `<label>`**, lo que lo hace **difícil de entender**. ¿Qués criterios de accesibilidad se están incumpliendo?
+Un **formulario** de contacto tiene campos **sin etiquetas `<label>`**, lo que lo hace **difícil de entender**. ¿Qué criterios de accesibilidad se están incumpliendo?
 
 🔎 **Pista:** Revisa las pautas relacionadas con **formularios y entradas de datos**.  
 <!--
