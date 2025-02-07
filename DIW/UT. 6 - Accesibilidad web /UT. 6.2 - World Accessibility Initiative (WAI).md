@@ -173,7 +173,7 @@ Las herramientas de validación comprueban si el **código HTML, CSS y ARIA** cu
 La **WAI** pone a disposicion de los usuarios una serie de <a href="https://www.w3.org/WAI/test-evaluate/tools/list/">herramientas de validación</a>.
 Esas herramientas no son responsabilidad de la **WAI**, lo que significa que no tiene ningún control sobre ellas (derechos de uso, soporte técnico...).
 
-# Tarea RA5 CEcd
+# 10 Tarea RA5 CEcd
 En esta tarea, nos iremos familiarizando con <a href="https://www.w3.org/WAI/WCAG22/quickref/?versions=2.2&showtechniques=111%2C124%2C125%2C126%2C133%2C141%2C211&currentsidebar=%23col_overview&technologies=wai-aria%2Cjs%2Cserver%2Csmil%2Cpdf#character-key-shortcuts">**las pautas de la WAI**</a>.
 La tarea se compone de 10 afirmaciones y la tarea consistirá en lo siguiente.  
 1. Encontrar la pauta de la WAI correspondiente a cada afirmación. 
