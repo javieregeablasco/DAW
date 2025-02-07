@@ -69,6 +69,8 @@ Definen las directrices destinadas al desarrollo de los programas necesarios par
 # 6 WCAG: Pautas de accesibilidad al contenido en la web
 Las directrices de diseño definidas por la WCAG 2.2 están organizadas en torno a cuatro principios básicos llamados **POUR** (perceivable, operable, understandable and robust):
 
+<img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/principios-de-accesibilidad-WCAG.jpg"  />
+
 | **Principio**     | **Descripción**                                                | **Ejemplo**                                          |
 |-------------------|----------------------------------------------------------------|-----------------------------------------------------|
 | **Perceptible**   | El contenido debe ser **fácilmente percibido** por todos los usuarios, incluso aquellos con discapacidades visuales o auditivas. | Proporcionar **textos alternativos** para imágenes. |
@@ -125,7 +127,7 @@ Para más información consultar <a href="https://www.w3.org/WAI/WCAG22/Understa
 <img src="https://github.com/javieregeablasco/DAW/blob/main/DIW/UT.%206%20-%20Accesibilidad%20web%20/img/wcag-map.png">
 
 ## 8.4 Enlaces de interés.
-Para una consulta rápida de cualquier criterio, se puede consultar esta <a href="https://www.w3.org/WAI/WCAG22/quickref/#top">referencia rápida</a>.  
+Para una consulta rápida de cualquier criterio, se puede consultar esta <a href="https://www.w3.org/WAI/WCAG22/quickref/#top">guía rápida</a>.  
 Guía, no oficial de los <a href="https://guia-wcag.com/es/">criterios de éxito</a>.  
 Otra <a href="https://addaw.org/es/wcag">guía</a> ofrecida por **ADDAW**, Asociación para la Defensa del Derecho a la Accesibilidad Web.
 
