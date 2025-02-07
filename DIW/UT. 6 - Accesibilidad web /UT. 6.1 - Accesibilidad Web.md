@@ -24,6 +24,9 @@ Las personas que se benefician de la **accesibilidad web** incluyen:
 - 🧠 **Personas con discapacidades cognitivas o neurológicas** (dificultades de aprendizaje, trastornos del espectro autista).
 - 👵 **Personas mayores**, que pueden experimentar pérdida de visión, audición o destrezas motoras.
 - 🌍 **Personas extranjeras**, al no entender el idioma con el que está diseñada la página web.
+- 🐢 **Conexiones lentas**. Aunque cada vez es menos común, algunas personas con conexiones a internet lentas o inestables pueden experimentar dificultades para acceder a determinadas páginas web.
+- 💾 **Material obsoleto**. El sitio web debe ser retrocompatible para que los usuarios con sistemas informáticos antiguos puedan acceder sin problemas.
+-🔌❌ **Brecha digital**. Se refiere a la desigualdad en el acceso, uso e impacto de las Tecnologías de la Información y la Comunicación (TIC) entre distintos grupos sociales.
 
 
 ## 1.2 Objetivos y beneficios de la accesibilidad web
