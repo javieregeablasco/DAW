@@ -383,33 +383,6 @@ Permiten que los usuarios de lectores de pantalla naveguen rápidamente entre se
 - `role="complementary"` → Para contenido secundario (como una barra lateral).  
 - `role="contentinfo"` → Especifica la información del pie de página.  
 
----
-
-:seven: **Landmarks (aria-*)** → Ayudan a estructurar mejor el contenido de la página para usuarios con tecnologías de asistencia.
-**Ejemplo:**  
-```
-<header aria-labelledby="site-title">
-  <h1 id="site-title">Mi Sitio Web</h1>
-</header>
-
-<nav aria-label="Menú principal">
-  <ul>
-    <li><a href="#">Inicio</a></li>
-    <li><a href="#">Servicios</a></li>
-    <li><a href="#">Contacto</a></li>
-  </ul>
-</nav>
-
-<main aria-labelledby="main-content">
-  <h2 id="main-content">Bienvenido a nuestra página</h2>
-  <p>Esta es la sección principal del contenido.</p>
-</main>
-
-<footer aria-label="Pie de página">
-  <p>&copy; 2025 Mi Sitio Web</p>
-</footer>
-```
-📌 Los aria-label y aria-labelledby ayudan a los lectores de pantalla a identificar claramente las secciones principales del sitio.  
 
 ### 1.9.2 Ejemplo de uso de ARIA en un menú desplegable  
 ```html
