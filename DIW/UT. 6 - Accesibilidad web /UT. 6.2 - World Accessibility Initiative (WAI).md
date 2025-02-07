@@ -175,7 +175,7 @@ Esas herramientas no son responsabilidad de la **WAI**, lo que significa que no 
 
 # 10 Tarea RA5 CEcd
 En esta tarea, nos iremos familiarizando con <a href="https://www.w3.org/WAI/WCAG22/quickref/?versions=2.2&showtechniques=111%2C124%2C125%2C126%2C133%2C141%2C211&currentsidebar=%23col_overview&technologies=wai-aria%2Cjs%2Cserver%2Csmil%2Cpdf#character-key-shortcuts">**las pautas de la WAI**</a>.
-La tarea se compone de 10 afirmaciones y la tarea consistirá en lo siguiente.  
+La tarea se compone de 10 afirmaciones y la tarea consistirá en lo siguiente:  
 1. Encontrar la pauta de la WAI correspondiente a cada afirmación. 
 2. Determinar las técnicas que permiten alcanzar el criterio de éxito.
 3. Determinar las condiciones de fallo que impiden alcanzar el criterio de éxito.
