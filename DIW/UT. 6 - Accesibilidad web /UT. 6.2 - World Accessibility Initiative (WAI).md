@@ -185,17 +185,17 @@ Consultar la **WCAG 2.2** para identificar la pauta correspondiente y los errore
 ---
 
 :one: **Alternativas textuales**  
-En un sitio web de comercio electrónico, los productos tienen imágenes sin texto alternativo (`alt`). ¿A qué pauta de accesibilidad hace referencia este problema? ¿Qué errores pueden derivarse de esta omisión?  
+En un sitio web de comercio electrónico, los productos tienen imágenes sin texto alternativo (`alt`). ¿A qué pauta de accesibilidad hace referencia este problema?  
 
 🔎 **Pista:** Busca pautas relacionadas con la accesibilidad para personas con discapacidad visual.  
-<!--
+
 **Solución:**
 - **Principio WCAG:** Perceptible.
 - **Criterio WCAG:** 1.1.1 Non-text Content
 - **Nivel:** A
 - **Técnicas:** G94, G95, G82, G100, G143.
 - **Fallos:** F3, F13, F20, F30, F38, F39, F65, F67, F71, 72.
--->
+
 ---
 
 2️⃣ **Uso del color**  
