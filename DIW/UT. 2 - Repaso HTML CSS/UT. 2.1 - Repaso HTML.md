@@ -123,4 +123,3 @@
 
 ---
 
-Este listado cubre todas las etiquetas HTML5. Si necesitas detalles sobre alguna en particular, dime y te explico más. 😊
