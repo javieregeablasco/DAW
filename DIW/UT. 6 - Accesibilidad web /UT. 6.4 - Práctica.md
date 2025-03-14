@@ -1,5 +1,5 @@
 ---
-Título: UD. 6.4 - Práctica
+Título: UT. 6.4 - Práctica
 Autor: Javier Egea Blasco
 Año: 24-25
 Palabras clave: DAW, DIW
